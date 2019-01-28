@@ -1,0 +1,15 @@
+/* Bootstrap Custom Theme
+---------------------------------------------------*/
+
+@import 'fonts'; // Optional local fonts
+
+
+/* Import partials
+---------------------------------------------------*/
+
+@import 'common';   // common & index base styles
+@import 'header';   // header & menu styles
+@import 'homepage'; // homepage styles
+@import 'page';     // page styles
+@import 'single';   // blog post styles
+@import 'footer';   // footer styles
