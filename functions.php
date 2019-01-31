@@ -38,7 +38,7 @@ if (! function_exists('sb_setup_theme')) {
         // register navigation menus
 
         register_nav_menus(array(
-            'main' => esc_html__('Main Menu', 'sb-base-theme'),
+            'header' => esc_html__('Header Menu', 'sb-base-theme'),
         ));
 
         // load translations
