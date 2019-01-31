@@ -1,0 +1,18 @@
+/* Custom classes
+---------------------------------------------------*/
+
+// Reference list of custom classes.
+// Activate from style.scss ONLY to highlight structure.
+
+#page,              // full site wrapper
+.site-wrap,         // full site wrapper
+
+.header-wrap,       // header wrapper
+
+.page-wrap,         // main content + sidebars wrapper
+.content-wrap,      // main content wrapper
+.sidebar-r-wrap,    // right sidebar wrapper
+
+.footer-wrap,       // footer wrapper
+
+{ border: 5px solid red; margin: 10px; }

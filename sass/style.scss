@@ -1,15 +1,28 @@
 /* Bootstrap Custom Theme
 ---------------------------------------------------*/
 
-@import 'fonts'; // Optional local fonts
+@import 'theme';    // font & color customization
 
 
 /* Import partials
 ---------------------------------------------------*/
 
-@import 'common';   // common & index base styles
+@import 'common';   // common styles
 @import 'header';   // header & menu styles
+@import 'footer';   // footer styles
+@import 'sidebar';  // sidebar & widgets styles
+@import 'index';    // blog index styles
 @import 'homepage'; // homepage styles
 @import 'page';     // page styles
 @import 'single';   // blog post styles
-@import 'footer';   // footer styles
+@import 'comments'; // comments styles
+@import '404';      // page 404 styles
+
+
+/* Custom classes
+---------------------------------------------------*/
+
+// Reference list of custom classes, leave commented.
+// Decomment ONLY to highlight structure.
+
+// @import 'reference';

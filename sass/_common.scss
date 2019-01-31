@@ -1,0 +1,19 @@
+/* Full height
+---------------------------------------------------*/
+
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-wrap {
+    flex: 1;
+}
+
+/* admin bar layout fix when logged in
+---------------------------------------------------*/
+
+/* .logged-in #page {
+    top: 32px;
+} */
