@@ -4,6 +4,8 @@
 // Reference list of custom classes.
 // Activate from style.scss ONLY to highlight structure.
 
+// Wireframe
+
 #page,              // full site wrapper
 .site-wrap,         // full site wrapper
 
@@ -16,3 +18,9 @@
 .footer-wrap,       // footer wrapper
 
 { border: 5px solid red; margin: 10px; }
+
+// Elements
+
+.page-header,       // page header with image brackground
+
+{ border: 5px solid cyan; margin: 10px; }
