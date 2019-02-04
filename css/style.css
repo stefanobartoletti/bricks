@@ -26,6 +26,16 @@
 /* .logged-in #page {
     top: 32px;
 } */
+.header-wrap .custom-logo {
+  height: 70px;
+  width: auto;
+}
+
+.header-wrap .social-icons a {
+  color: white;
+  padding: 0.5rem;
+}
+
 /* Custom classes
 ---------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */

@@ -25,6 +25,8 @@ if (! function_exists('sb_setup_theme')) {
         
         add_theme_support('title-tag');
 
+        add_theme_support( 'customize-selective-refresh-widgets' );
+
         // custom image sizes
 
         add_image_size('sb_big', 1400, 800, true);
@@ -59,7 +61,7 @@ if(! function_exists('sb_sidebars')) {
 
         register_sidebar(array(
             'name' =>  esc_html__('Right Sidebar', 'sb-base-theme'),
-            'id' => 'right',
+            'id' => 'sidebar-r',
             'description' => esc_html__( 'Right Sidebar', 'sb-base-theme' ),
             'before_widget' => '<div class="widget mb-5 %2$s clearfix">',
             'after_widget' => '</div>',
@@ -72,8 +74,6 @@ if(! function_exists('sb_sidebars')) {
 }
 
 add_action('widgets_init', 'sb_sidebars');
-
-
 
 
 /* Include assets
@@ -108,6 +108,10 @@ if(! function_exists('sb_styles_scripts')) {
 }
 
 add_action('wp_enqueue_scripts', 'sb_styles_scripts');
+
+
+/* Customizer options
+----------------------------------------------------------------------------------------*/
 
 
 ?>
