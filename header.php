@@ -21,20 +21,16 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark container" role="navigation">
 
-        <a class="navbar-brand" href="<?php echo esc_url_raw(home_url()); ?>">
+        <?php if ( has_custom_logo() ) { 
 
-            <?php if ( has_custom_logo() ) { ?>
-                       
-                <img class="site-logo" src="<?php echo wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full' )[0]; ?>" alt="<?php bloginfo('name'); ?>" >
+            the_custom_logo();
 
-            <?php } else { ?>
+        } else { ?>
 
-                <?php bloginfo('name'); ?>
+            <a class="navbar-brand" href="<?php echo esc_url_raw(home_url()); ?>"><?php bloginfo('name'); ?></a>
 
-            <?php } ?>
-
-        </a>
-    
+        <?php } ?>
+ 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
