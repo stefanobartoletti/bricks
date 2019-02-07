@@ -13,6 +13,10 @@
 
 .page-wrap,         // main content + sidebars wrapper
 .content-wrap,      // main content wrapper
+
+.article-wrap,      // blog post wrapper
+.comments-wrap,     // comments wrapper
+
 .sidebar-r-wrap,    // right sidebar wrapper
 
 .footer-wrap,       // footer wrapper
@@ -21,7 +25,7 @@
 
 // Elements
 
-.page-header,       // page header with image brackground
+.page-header,       // page header with image background
 .social-icons,      // social icons block
 
 { border: 5px solid cyan; margin: 10px; }
