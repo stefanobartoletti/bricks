@@ -1,5 +1,7 @@
 <?php get_header() ?>
 
+<!-- main content wrapper -->
+
 <main class="content-wrap">
 
     <?php while ( have_posts() ) : the_post(); ?>
@@ -14,9 +16,7 @@
 
             <div class="container text-center text-light">
 
-                <h1 class="display-4">
-                    <?php the_title(); ?>
-                </h1>
+                <h1 class="display-4"><?php the_title(); ?></h1>
 
             </div>
 
@@ -26,21 +26,17 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row justify-content-center">
 
-                <div class="col">
+                <div class="col-sm-8">
 
                     <?php if (! has_post_thumbnail() ) { ?>
 
-                    <h1>
-                        <?php the_title(); ?>
-                    </h1>
+                    <h1><?php the_title(); ?></h1>
 
                     <?php } ?>
 
-                    <div>
-                        <?php the_content(); ?>
-                    </div>
+                    <div><?php the_content(); ?></div>
 
                 </div>
 

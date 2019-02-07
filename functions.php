@@ -139,7 +139,6 @@ function sb_customizer_options($wp_customize) {
 add_action( 'customize_register', 'sb_customizer_options' );
 
 
-
 /* Meta tags
 ----------------------------------------------------------------------------------------*/
 
