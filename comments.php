@@ -4,11 +4,11 @@
 
 <!-- comments wrapper -->
 
-<div class="comments-wrap">
+<div class="comments-wrap mt-5">
 
     <?php if ( have_comments() ) { ?>
 
-        <h2 class="comments-title">
+        <h2 class="comments-title mb-3">
             <?php comments_number(
                 esc_html__('No comments yet.', 'sb-base-theme'),
                 esc_html__('One comment.', 'sb-base-theme'),
@@ -17,7 +17,7 @@
         </h2>
 
         <ol class="comment-list">
-            <?php wp_list_comments( array(
+            <?php wp_list_comments(array(
                 'style'       => 'ol',
                 'short_ping'  => true,
                 'avatar_size' => 48,

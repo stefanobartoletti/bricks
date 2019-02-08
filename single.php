@@ -8,7 +8,7 @@
     
     <div class="container">
 
-        <div class="row">
+        <div class="row py-5">
 
             <!-- blog post wrapper -->
 

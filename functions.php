@@ -30,7 +30,7 @@ if (! function_exists('sb_setup_theme')) {
         // custom image sizes
 
         add_image_size('sb_big', 1400, 800, true);
-        add_image_size('sb_square', 600, 600, true);
+        add_image_size('sb_square', 400, 400, true);
         add_image_size('sb_single', 800, 500, true);
 
         // Set max content width
@@ -62,10 +62,10 @@ if(! function_exists('sb_sidebars')) {
         register_sidebar(array(
             'name' =>  esc_html__('Right Sidebar', 'sb-base-theme'),
             'id' => 'sidebar-r',
-            'description' => esc_html__( 'Right Sidebar', 'sb-base-theme' ),
-            'before_widget' => '<div class="widget mb-5 %2$s clearfix">',
+            'description' => esc_html__( 'Sidebar to the right of the main content', 'sb-base-theme' ),
+            'before_widget' => '<div class="widget mb-4 %2$s clearfix">',
             'after_widget' => '</div>',
-            'before_title' => '<h3>',
+            'before_title' => '<h3 class="mb-4">',
             'after_title' => '</h3>',
         ));
 

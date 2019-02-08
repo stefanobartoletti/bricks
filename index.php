@@ -6,11 +6,13 @@
 
     <div class="container">
 
-        <div class="row">
+        <div class="row py-5">
 
             <!-- article index wrapper -->
 
             <div class="index-wrap col">
+
+                <!-- TODO add title for date and author -->
 
                 <?php if ( is_category() || is_tag() ) { ?>
 
@@ -22,11 +24,11 @@
 
                 <?php } else { ?>
 
-                    <h1><?php bloginfo('description') ?></h1>
+                    <h1><?php bloginfo('description'); ?></h1>
 
                 <?php } ?>
 
-                <hr>
+                <hr class="mb-5">
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -37,14 +39,14 @@
                         <p><?php the_time('j M, Y'); ?> - <?php the_category(', '); ?></p>
 
                         <a href="<?php the_permalink();?>">
-                            <?php the_post_thumbnail('sb_square', array( 'class' => 'img-fluid mb-3', 'alt' => get_the_title() )); ?>
+                            <?php the_post_thumbnail('sb_single', array( 'class' => 'img-fluid mb-3', 'alt' => get_the_title() )); ?>
                         </a>
 
                         <div><?php the_excerpt(); ?></div>
 
                     </article>
 
-                    <hr>
+                    <hr class="my-4">
                                                
                 <?php endwhile; ?>
 

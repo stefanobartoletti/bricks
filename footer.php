@@ -4,7 +4,7 @@
 
 <footer class="footer-wrap bg-dark text-light">
 
-    <div class="container">
+    <div class="container my-4">
             
         <p><?php esc_html_e( 'Copyright', 'sb-base-theme' ); ?> <?php echo date('o'); ?> - <?php bloginfo('name') ?></p>
 

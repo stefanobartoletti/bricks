@@ -44,17 +44,17 @@
                     'container'         => '',
                     'container_class'   => '',
                     'container_id'      => '',
-                    'menu_class'        => 'nav navbar-nav mr-auto',
+                    'menu_class'        => 'main-menu nav navbar-nav my-3 my-lg-0 ml-lg-2 mr-auto',
                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                     'walker'            => new WP_Bootstrap_Navwalker(),
             )); ?>               
             
             <form class="form-inline my-2 my-lg-0" action="<?php echo esc_url_raw(home_url()); ?>" method="get">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="s">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control w-auto mr-2" type="search" placeholder="Search" aria-label="Search" name="s">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
             </form>
 
-            <ul class="social-icons nav">
+            <ul class="social-icons nav ml-lg-2">
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
