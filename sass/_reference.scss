@@ -14,12 +14,13 @@
 .page-wrap,         // main content + sidebars wrapper
 .content-wrap,      // main content wrapper
 
+.index-wrap,         // article index wrapper
 .article-wrap,      // blog post wrapper
 .comments-wrap,     // comments wrapper
 
 .sidebar-r-wrap,    // right sidebar wrapper
 
-.footer-wrap,       // footer wrapper
+.footer-wrap       // footer wrapper
 
 { border: 5px solid red; margin: 10px; }
 
@@ -27,5 +28,6 @@
 
 .page-header,       // page header with image background
 .social-icons,      // social icons block
+.index-post-pager  // blog post pagination in index page
 
 { border: 5px solid cyan; margin: 10px; }
