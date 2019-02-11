@@ -36,6 +36,14 @@
   padding: 0.5rem;
 }
 
+.carousel-inner {
+  max-height: 500px;
+}
+
+.carousel-inner .carousel-item {
+  max-height: 500px;
+}
+
 .comment-list, .comment-list ol {
   list-style-type: none;
   margin: 0;

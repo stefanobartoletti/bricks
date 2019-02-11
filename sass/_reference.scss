@@ -13,6 +13,7 @@
 
 .page-wrap,         // main content + sidebars wrapper
 .content-wrap,      // main content wrapper
+.section-wrap       // page section wrapper
 
 .index-wrap,         // article index wrapper
 .article-wrap,      // blog post wrapper
@@ -29,6 +30,8 @@
 .page-header,       // page header with image background
 .main-menu,         // header main menu
 .social-icons,      // social icons block
-.index-post-pager   // blog post pagination in index page
+.index-post-pager,  // blog post pagination in index page
+.element-slider,    // slider section
+.element-cards      // cards section
 
 { border: 5px solid cyan; margin: 10px; }

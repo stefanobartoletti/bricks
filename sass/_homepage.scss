@@ -1,0 +1,13 @@
+// Slider section
+
+$slider-height: 500px;
+
+.carousel-inner {
+
+    max-height: $slider-height;
+
+    .carousel-item {
+        max-height: $slider-height;
+    }
+
+}
