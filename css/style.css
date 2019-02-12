@@ -23,17 +23,25 @@
 
 /* admin bar layout fix when logged in
 ---------------------------------------------------*/
-/* .logged-in #page {
-    top: 32px;
-} */
+.admin-bar .site-wrap,
+.admin-bar .header-wrap {
+  top: 32px;
+}
+
 .header-wrap .custom-logo {
   height: 70px;
   width: auto;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
 }
 
 .header-wrap .social-icons a {
   color: white;
   padding: 0.5rem;
+}
+
+.header-scrolled .custom-logo {
+  height: 50px;
 }
 
 .carousel-inner {

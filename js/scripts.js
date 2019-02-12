@@ -1,5 +1,19 @@
 (function($){
 
+/* Site wide
+---------------------------------------------------*/
+
+// Add class to header when scrolled
+
+$(document).scroll(function(){
+    var scroll = $(this).scrollTop();
+    if (scroll > 100) {
+        $('.header-wrap').addClass('header-scrolled');
+    } else {
+        $('.header-wrap').removeClass('header-scrolled');
+    }
+});
+
 /* Blog index page
 ---------------------------------------------------*/
 

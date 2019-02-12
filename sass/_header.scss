@@ -3,11 +3,20 @@
     .custom-logo {
         height: 70px;
         width: auto;
+        transition: height 0.5s;
     }
 
     .social-icons a {
         color: white;
         padding: 0.5rem;
+    }
+
+}
+
+.header-scrolled {
+
+    .custom-logo {
+        height: 50px;
     }
 
 }

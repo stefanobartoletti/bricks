@@ -14,6 +14,7 @@
 /* admin bar layout fix when logged in
 ---------------------------------------------------*/
 
-/* .logged-in #page {
+.admin-bar .site-wrap,
+.admin-bar .header-wrap {
     top: 32px;
-} */
+}

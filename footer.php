@@ -6,7 +6,7 @@
 
     <div class="container my-4">
             
-        <p><?php esc_html_e( 'Copyright', 'sb-base-theme' ); ?> <?php echo date('o'); ?> - <?php bloginfo('name') ?></p>
+        <p><?php echo "&#169; ", date('o'), " - ", bloginfo('name'), " - Via Xxxxxxx 00, 00000 Yyyyyy (YY) - p.i. 00000000000 - Tutti i diritti riservati." ?></p>
 
     </div>
 
