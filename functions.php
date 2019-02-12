@@ -115,7 +115,7 @@ add_action('wp_enqueue_scripts', 'sb_styles_scripts');
 
 function sb_customizer_options($wp_customize) {
 
-    /* Branding section */
+    //* Branding section 
 
     $wp_customize -> add_section ( 'sb_branding', array(
         'title' => __('Branding', 'sb-base-theme'),
@@ -124,9 +124,9 @@ function sb_customizer_options($wp_customize) {
         )
     );
 
-        /* Chrome theme color */
+        // Chrome theme color 
 
-        $wp_customize -> add_setting ( 'sb_chrome_theme', array( 'default' => '#ffffff' ) );
+        $wp_customize -> add_setting ( 'sb_chrome_theme', array( 'default' => '' ) );
         $wp_customize -> add_control ( new WP_Customize_Color_Control ( $wp_customize, 'sb_chrome_theme', array(
             'label' => __('Chrome theme color', 'sb-base-theme'),
             'description' => __('Tab color in Chrome for Android', 'sb-base-theme'),
@@ -142,9 +142,15 @@ add_action( 'customize_register', 'sb_customizer_options' );
 /* Meta tags
 ----------------------------------------------------------------------------------------*/
 
-function sb_chrome_theme_meta() {
+// Chrome theme color meta tag
 
-    echo '<meta name="theme-color" content="' . get_theme_mod( 'sb_chrome_theme', '' ) . '" />';
+function sb_chrome_theme_meta() {
+    
+    if( get_theme_mod('sb_chrome_theme', '')) {
+         
+        echo '<meta name="theme-color" content="', get_theme_mod( 'sb_chrome_theme', '' ), '">';
+
+    }
 
 }
 
