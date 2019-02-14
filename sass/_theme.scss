@@ -1,0 +1,161 @@
+/* Colors
+---------------------------------------------------*/
+
+// $theme-colors: (
+//     "primary":       #37c871,  // $primary,
+//     "secondary":     #c83771,  // $secondary,
+//     "success":       #ffffff,  // $success,
+//     "info":          #ffffff,  // $info,
+//     "warning":       #ffffff,  // $warning,
+//     "danger":        #ffffff,  // $danger,
+//     "light":         #dddddd,  // $light,
+//     "dark":          #333333,  // $dark,
+// );
+
+
+
+/* Typography
+---------------------------------------------------*/
+
+// $font-family-base: Muli, $font-family-sans-serif;
+
+// $font-size-base:                     // 1rem; Assumes browser default, typically `16px`
+// $font-size-lg:                       // $font-size-base * 1.25;
+// $font-size-sm:                       // $font-size-base * .875;
+
+// $font-weight-lighter:                // lighter;
+// $font-weight-light:                  // 300;
+// $font-weight-normal:                 // 400;
+// $font-weight-bold:                   // 700;
+// $font-weight-bolder:                 // bolder;
+
+// $font-weight-base:                   // $font-weight-normal;
+// $line-height-base:                   // 1.5;
+
+// $h1-font-size:                       // $font-size-base * 2.5;
+// $h2-font-size:                       // $font-size-base * 2;
+// $h3-font-size:                       // $font-size-base * 1.75;
+// $h4-font-size:                       // $font-size-base * 1.5;
+// $h5-font-size:                       // $font-size-base * 1.25;
+// $h6-font-size:                       // $font-size-base;
+
+// $headings-margin-bottom:             // $spacer / 2;
+// $headings-font-family: Phenomena;    // null;
+// $headings-font-weight: 700;          // 500;
+// $headings-line-height:               // 1.2;
+// $headings-color:                     // null;
+
+// $display1-size:                      // 6rem;
+// $display2-size:                      // 5.5rem;
+// $display3-size:                      // 4.5rem;
+// $display4-size:                      // 3.5rem;
+
+// $display1-weight:                    // 300;
+// $display2-weight:                    // 300;
+// $display3-weight:                    // 300;
+// $display4-weight:                    // 300;
+// $display-line-height:                // $headings-line-height;
+
+// $lead-font-size:                     // $font-size-base * 1.25;
+// $lead-font-weight:                   // 300;
+
+// $small-font-size:                    // 80%;
+
+// $text-muted:                         // $gray-600;
+
+// $blockquote-small-color:             // $gray-600;
+// $blockquote-small-font-size:         // $small-font-size;
+// $blockquote-font-size:               // $font-size-base * 1.25;
+
+// $hr-border-color:                    // rgba($black, .1);
+// $hr-border-width:                    // $border-width;
+
+// $mark-padding:                       // .2em;
+
+// $dt-font-weight:                     // $font-weight-bold;
+
+// $kbd-box-shadow:                     // inset 0 -.1rem 0 rgba($black, .25);
+// $nested-kbd-font-weight:             // $font-weight-bold;
+
+// $list-inline-padding:                // .5rem;
+
+// $mark-bg:                            // #fcf8e3;
+
+// $hr-margin-y:                        // $spacer;
+
+
+
+/* Options
+---------------------------------------------------*/
+
+// $enable-caret:                                // true; caret on .dropdown-toggle
+// $enable-rounded:                              // true; border-radius on components
+// $enable-shadows:                              // false; box-shadow on components
+// $enable-gradients:                            // false; background-image gradients on components
+// $enable-transitions:                          // true; transitions on components
+// $enable-prefers-reduced-motion-media-query:   // true; no animations/transitions (conditional)
+// $enable-grid-classes:                         // true; CSS classes for grid system
+// $enable-pointer-cursor-for-buttons:           // true; “hand” cursor to buttons
+// $enable-print-styles:                         // true; optimized print styles
+// $enable-responsive-font-sizes:                // false; resposnive fonts
+// $enable-validation-icons:                     // true; background-image icons hin text inputs
+// $enable-deprecation-messages:                 // true; warnings for functions removed in v5
+
+
+
+/* Spacing
+---------------------------------------------------*/
+
+// $spacer:         // 1rem; default spacing
+
+
+
+/* Body
+---------------------------------------------------*/
+
+// $body-bg:         // $white;
+// $body-color:      // $gray-900;
+
+
+
+/* Links
+---------------------------------------------------*/
+
+// $link-color:                     // theme-color("primary");
+// $link-decoration:                // none;
+// $link-hover-color:               // darken($link-color, 15%);
+// $link-hover-decoration:          // underline;
+
+
+
+/* Paragraph
+---------------------------------------------------*/
+
+// $paragraph-margin-bottom:        // 1rem;
+
+
+
+/* Buttons + Forms
+---------------------------------------------------*/
+
+// $input-btn-padding-y:            // .375rem;
+// $input-btn-padding-x:            // .75rem;
+// $input-btn-font-family:          // null;
+// $input-btn-font-size:            // $font-size-base;
+// $input-btn-line-height:          // $line-height-base;
+
+// $input-btn-focus-width:          // .2rem;
+// $input-btn-focus-color:          // rgba($component-active-bg, .25);
+// $input-btn-focus-box-shadow:     // 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+// $input-btn-padding-y-sm:         // .25rem;
+// $input-btn-padding-x-sm:         // .5rem;
+// $input-btn-font-size-sm:         // $font-size-sm;
+// $input-btn-line-height-sm:       // $line-height-sm;
+
+// $input-btn-padding-y-lg:         // .5rem;
+// $input-btn-padding-x-lg:         // 1rem;
+// $input-btn-font-size-lg:         // $font-size-lg;
+// $input-btn-line-height-lg:       // $line-height-lg;
+
+// $input-btn-border-width:         // $border-width;

@@ -1,7 +1,18 @@
 /* Bootstrap Custom Theme
 ---------------------------------------------------*/
 
-@import 'theme';    // font & color customization
+// Optional local fonts
+// @import 'fontface';
+
+// Custom Theme Requirements
+@import "../assets/bootstrap/scss/functions"; 
+@import "../assets/bootstrap/scss/variables";
+
+// Customizations
+@import 'theme';
+
+// Bootstrap 
+@import "../assets/bootstrap/scss/bootstrap";
 
 
 /* Import partials
