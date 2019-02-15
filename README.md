@@ -1,0 +1,1 @@
+# Wordpress + Bootstrap base theme 
