@@ -5,6 +5,8 @@
 <footer class="footer-wrap bg-dark text-light">
 
     <div class="container my-4">
+
+        <!-- FIX escape text -->
             
         <p><?php echo "&#169; ", date('o'), " - ", bloginfo('name'), " - Via Xxxxxxx 00, 00000 Yyyyyy (YY) - p.i. 00000000000 - Tutti i diritti riservati." ?></p>
 

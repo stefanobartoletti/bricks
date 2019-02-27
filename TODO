@@ -1,0 +1,35 @@
+Project:
+
+  ☐ Include NPM
+  ☐ Include Composer?
+  ☐ Include Gulp
+  ☐ Reorganize folder structure
+    ☐ /src
+    ☐ /dist
+    ☐ /template-parts
+      ☐ /sections
+      ☐ /elements
+  ☐ Add gitignore file
+
+ 
+Todo:
+
+  ☐ Widgetize Social Icons
+  ☐ Social icon links from customizer
+  ☐ Contact info from cuistomizer
+  ☐ Page header section (W&B)
+  ☐ functions.php partials
+  ☐ "back to top" to footer
+  ☐ breadcrumbs
+  ☐ prev/next in single
+  ☐ Search filter (see w&b)
+  ☐ social sharing buttons
+
+
+Fix:
+
+  ☐ Limit comment nesting
+  ☐ sidebar > BS list
+  ☐ comments > BS media
+
+Archive:
