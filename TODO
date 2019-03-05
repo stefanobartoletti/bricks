@@ -14,9 +14,9 @@ Project:
  
 Todo:
 
-  ☐ Widgetize Social Icons
+  ✔ Widgetize Social Icons @done(19-03-05 23:22)
   ☐ Social icon links from customizer
-  ☐ Contact info from cuistomizer
+  ☐ Contact info from customizer
   ✔ Page header section (W&B) @done(19-03-05 17:20)
   ✔ functions.php partials @done(19-03-05 17:37)
   ☐ "back to top" to footer
@@ -31,5 +31,6 @@ Fix:
   ☐ Limit comment nesting
   ☐ sidebar > BS list
   ☐ comments > BS media
+  ☐ index > add "category:" "tag:"...
 
 Archive:

@@ -54,20 +54,7 @@
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
             </form>
 
-            <ul class="social-icons nav ml-lg-2">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-            </ul>
+            <?php get_template_part( 'template-parts/elements/socialicons', '' ); ?>
 
         </div>
 
