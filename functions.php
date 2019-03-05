@@ -68,6 +68,12 @@ require_once get_template_directory() . '/assets/navwalker/class-wp-bootstrap-na
 require_once get_template_directory() . '/functions/cssjs.php';
 
 
+/* Search results filter
+----------------------------------------------------------------------------------------*/
+
+// require_once get_template_directory() . '/functions/searchfilter.php';
+
+
 /* Customizer options
 ----------------------------------------------------------------------------------------*/
 
