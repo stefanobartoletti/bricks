@@ -6,10 +6,10 @@ Project:
   ☐ Reorganize folder structure
     ☐ /src
     ☐ /dist
-    ☐ /template-parts
-      ☐ /sections
-      ☐ /elements
-  ☐ Add gitignore file
+    ✔ /template-parts @done(19-03-05 16:55)
+      ✔ /sections @done(19-03-05 16:55)
+      ✔ /elements @done(19-03-05 16:55)
+  ✔ Add gitignore file @done(19-03-05 16:08)
 
  
 Todo:
