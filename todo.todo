@@ -3,9 +3,9 @@ Project:
   ☐ Include NPM
   ☐ Include Composer?
   ☐ Include Gulp
-  ☐ Reorganize folder structure
-    ☐ /src
-    ☐ /dist
+  ✔ Reorganize folder structure @done(19-03-07 16:59)
+    ✔ /src @done(19-03-07 16:58)
+    ✔ /dist @done(19-03-07 16:58)
     ✔ /template-parts @done(19-03-05 16:55)
       ✔ /sections @done(19-03-05 16:55)
       ✔ /elements @done(19-03-05 16:55)

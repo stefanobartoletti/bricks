@@ -5,14 +5,14 @@
 // @import 'fontface';
 
 // Custom Theme Requirements
-@import "../assets/bootstrap/scss/functions"; 
-@import "../assets/bootstrap/scss/variables";
+@import "../../assets/bootstrap/scss/functions"; 
+@import "../../assets/bootstrap/scss/variables";
 
 // Customizations
 @import 'theme';
 
 // Bootstrap 
-@import "../assets/bootstrap/scss/bootstrap";
+@import "../../assets/bootstrap/scss/bootstrap";
 
 
 /* Import partials
