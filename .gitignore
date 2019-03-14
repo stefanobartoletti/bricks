@@ -1,2 +1,15 @@
-/assets/*
-/dist/*
+# NPM
+
+node_modules
+
+# Composer
+
+vendor
+
+# Third Party
+
+assets
+
+# Compiled
+
+dist

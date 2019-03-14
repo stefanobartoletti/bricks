@@ -1,0 +1,17 @@
+{
+  "name": "sb-base-theme",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Stefano Bartoletti",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefano-b/sb-base-theme"
+  },
+  "keywords": [
+    "wordpress",
+    "bootstrap"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
