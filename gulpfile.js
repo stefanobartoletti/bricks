@@ -1,6 +1,6 @@
 // --- Gulp ---
 
-const { src, dest, task, watch, series, parallel } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 
 
 // --- Gulp plugins ---
@@ -15,6 +15,10 @@ var uglify = require('gulp-uglify');
 // Utility
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
+
+// Browser
+var browserSync  = require( 'browser-sync' ).create();
+var cache = require('gulp-cache');
 
 
 // --- Variables ---
@@ -43,19 +47,44 @@ function css(done) {
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(dest(cssDist))
+        .pipe(browserSync.stream())
     done();
 };
 
 
+// --- Browser functions ---
+
+function browser_sync(done) {
+	browserSync.init({
+        open: false,
+        injectChanges: true,
+        // server: { baseDir: './dist/' },
+        proxy: "opensuse-kde:8080/sbbase",
+        // tunnel: "sbbase",
+    });
+    done();
+}
+
+function reload(done) {
+	browserSync.reload();
+	done();
+}
+
+function clear(done) {
+    cache.clearAll();
+	done();
+}
+
+
 // --- Watch functions ---
 
-function watch_files() {
-	watch(cssWatch, series(css));
+function watch_files(done) {
+    watch(cssWatch, series(css, clear, reload));
+    done();
 }
 
 
 // --- Tasks ---
 
-task('default', parallel(css));
-
-task("watch", parallel(watch_files));
+exports.default = parallel(css);
+exports.watch = parallel(browser_sync, watch_files);
