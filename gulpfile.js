@@ -17,7 +17,7 @@ var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
 
 // Browser
-var browserSync  = require( 'browser-sync' ).create();
+var browserSync  = require('browser-sync').create();
 var cache = require('gulp-cache');
 
 
@@ -26,6 +26,10 @@ var cache = require('gulp-cache');
 var cssSrc = 'src/sass/**/*.scss';
 var cssDist = 'dist/css/';
 var cssWatch = 'src/sass/**/*.scss';
+
+var jsSrc = 'src/js/**/*.js';
+var jsDist = 'dist/js/';
+var jsWatch = 'src/js/**/*.js';
 
 
 // --- CSS functions ---
@@ -52,6 +56,22 @@ function css(done) {
 };
 
 
+// --- JS functions ---
+
+function js(done) {
+    src(jsSrc)
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(sourcemaps.write('./'))
+        .pipe(dest(jsDist))
+        .pipe(browserSync.stream())
+    done();
+};
+
+
 // --- Browser functions ---
 
 function browser_sync(done) {
@@ -70,7 +90,7 @@ function reload(done) {
 	done();
 }
 
-function clear(done) {
+function clearCache(done) {
     cache.clearAll();
 	done();
 }
@@ -79,12 +99,16 @@ function clear(done) {
 // --- Watch functions ---
 
 function watch_files(done) {
-    watch(cssWatch, series(css, clear, reload));
+    watch(cssWatch, series(css, clearCache, reload));
+    watch(jsWatch, series(js, clearCache, reload));
     done();
 }
 
 
 // --- Tasks ---
 
-exports.default = parallel(css);
+exports.css = css;
+exports.js = js;
+
+exports.default = parallel(css, js);
 exports.watch = parallel(browser_sync, watch_files);
