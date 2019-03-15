@@ -42,6 +42,9 @@ var fontsSrc = 'src/fonts/**/*.*';
 var fontsDist = 'dist/fonts/';
 var fontsWatch = 'src/fonts/**/*.*';
 
+var navwalkerSrc = 'vendor/**/class-wp-bootstrap-navwalker.php';
+var navwalkerDist = 'assets/navwalker/';
+
 
 // --- CSS functions ---
 
@@ -106,6 +109,16 @@ function fonts(done) {
 };
 
 
+// --- Assets functions ---
+
+function navwalker(done) {
+    src(navwalkerSrc)
+        .pipe(rename({dirname:''}))
+        .pipe(dest(navwalkerDist))
+    done();
+};
+
+
 // --- Browser functions ---
 
 function browser_sync(done) {
@@ -147,6 +160,7 @@ exports.css = css;
 exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
+exports.assets = series(navwalker);
 
 exports.default = parallel(css, js, img, fonts);
 exports.watch = parallel(browser_sync, watch_files);

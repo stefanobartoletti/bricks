@@ -1,8 +1,8 @@
 Project:
 
-  ☐ Include NPM
+  ✔ Include NPM @done(19-03-15 18:22)
   ☐ Include Composer?
-  ☐ Include Gulp
+  ✔ Include Gulp @done(19-03-15 18:22)
   ✔ Reorganize folder structure @done(19-03-07 16:59)
     ✔ /src @done(19-03-07 16:58)
     ✔ /dist @done(19-03-07 16:58)
@@ -10,6 +10,12 @@ Project:
       ✔ /sections @done(19-03-05 16:55)
       ✔ /elements @done(19-03-05 16:55)
   ✔ Add gitignore file @done(19-03-05 16:08)
+  ☐ "del" to clean "dist" old files
+  ☐ critical css
+  ☐ uncss?
+  ☐ ttf2woff
+  ☐ zip package
+  ☐ npm postinstall script
 
  
 Todo:

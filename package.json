@@ -12,7 +12,8 @@
     "bootstrap"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "composer install"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",

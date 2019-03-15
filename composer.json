@@ -1,5 +1,10 @@
 {
     "name": "stefano-b/sb-base-theme",
     "description": "",
-    "require": {}
+    "require": {
+        "wp-bootstrap/wp-bootstrap-navwalker": "^4.2"
+    },
+    "require-dev": {
+        
+    }
 }
