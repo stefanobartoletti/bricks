@@ -12,6 +12,9 @@ var autoprefixer = require('gulp-autoprefixer');
 // JS
 var uglify = require('gulp-uglify');
 
+// Images
+var imagemin = require('gulp-imagemin');
+
 // Utility
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
@@ -30,6 +33,10 @@ var cssWatch = 'src/sass/**/*.scss';
 var jsSrc = 'src/js/**/*.js';
 var jsDist = 'dist/js/';
 var jsWatch = 'src/js/**/*.js';
+
+var imgSrc = 'src/img/**/*.+(png|jpg|gif|svg)';
+var imgDist = 'dist/img/';
+var imgWatch = 'src/img/**/*.+(png|jpg|gif|svg)';
 
 
 // --- CSS functions ---
@@ -72,6 +79,19 @@ function js(done) {
 };
 
 
+// --- Images functions ---
+
+function img(done) {
+    src(imgSrc)
+        .pipe(imagemin({
+            verbose: true
+        }))
+        .pipe(dest(imgDist))
+        .pipe(browserSync.stream())
+    done();
+};
+
+
 // --- Browser functions ---
 
 function browser_sync(done) {
@@ -101,6 +121,7 @@ function clearCache(done) {
 function watch_files(done) {
     watch(cssWatch, series(css, clearCache, reload));
     watch(jsWatch, series(js, clearCache, reload));
+    watch(imgWatch, series(img, clearCache, reload));
     done();
 }
 
@@ -109,6 +130,7 @@ function watch_files(done) {
 
 exports.css = css;
 exports.js = js;
+exports.img = img;
 
-exports.default = parallel(css, js);
+exports.default = parallel(css, js, img);
 exports.watch = parallel(browser_sync, watch_files);
