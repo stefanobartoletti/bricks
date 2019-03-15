@@ -10,6 +10,7 @@ Project:
       ✔ /sections @done(19-03-05 16:55)
       ✔ /elements @done(19-03-05 16:55)
   ✔ Add gitignore file @done(19-03-05 16:08)
+  ☐ run "img" or other function only on a single file
   ☐ "del" to clean "dist" old files
   ☐ critical css
   ☐ uncss?
@@ -26,7 +27,7 @@ Todo:
   ✔ Page header section (W&B) @done(19-03-05 17:20)
   ✔ functions.php partials @done(19-03-05 17:37)
   ☐ "back to top" to footer
-  ☐ breadcrumbs
+  ☐ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs
   ☐ prev/next in single
   ✔ Search filter (see w&b) @done(19-03-05 18:49)
   ☐ social sharing buttons
