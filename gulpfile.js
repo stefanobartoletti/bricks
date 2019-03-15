@@ -38,6 +38,10 @@ var imgSrc = 'src/img/**/*.+(png|jpg|gif|svg)';
 var imgDist = 'dist/img/';
 var imgWatch = 'src/img/**/*.+(png|jpg|gif|svg)';
 
+var fontsSrc = 'src/fonts/**/*.*';
+var fontsDist = 'dist/fonts/';
+var fontsWatch = 'src/fonts/**/*.*';
+
 
 // --- CSS functions ---
 
@@ -92,6 +96,16 @@ function img(done) {
 };
 
 
+// --- Fonts functions ---
+
+function fonts(done) {
+    src(fontsSrc)
+        .pipe(dest(fontsDist))
+        .pipe(browserSync.stream())
+    done();
+};
+
+
 // --- Browser functions ---
 
 function browser_sync(done) {
@@ -122,6 +136,7 @@ function watch_files(done) {
     watch(cssWatch, series(css, clearCache, reload));
     watch(jsWatch, series(js, clearCache, reload));
     watch(imgWatch, series(img, clearCache, reload));
+    watch(fontsWatch, series(fonts, clearCache, reload));
     done();
 }
 
@@ -131,6 +146,7 @@ function watch_files(done) {
 exports.css = css;
 exports.js = js;
 exports.img = img;
+exports.fonts = fonts;
 
-exports.default = parallel(css, js, img);
+exports.default = parallel(css, js, img, fonts);
 exports.watch = parallel(browser_sync, watch_files);
