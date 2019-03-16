@@ -18,6 +18,7 @@ var imagemin = require('gulp-imagemin');
 // Utility
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
+var zip = require('gulp-zip');
 
 // Browser
 var browserSync  = require('browser-sync').create();
@@ -44,6 +45,21 @@ var fontsWatch = 'src/fonts/**/*.*';
 
 var navwalkerSrc = 'vendor/**/class-wp-bootstrap-navwalker.php';
 var navwalkerDist = 'lib/navwalker/';
+
+var pkgSrc = [
+    './**',
+    '!node_modules/**',
+    '!packages/**',
+    '!src/**',
+    '!vendor/**',
+    '!.gitignore',
+    '!gulpfile.js',
+    '!*.json',
+    '!*.lock',
+    '!README.md',
+    '!*.todo',
+];
+var pkgDist = 'packages/';
 
 
 // --- CSS functions ---
@@ -119,6 +135,16 @@ function navwalker(done) {
 };
 
 
+// --- Packages functions ---
+
+function pkg(done) {
+    src(pkgSrc, {base: '..'})
+        .pipe(zip('archive.zip'))
+        .pipe(dest(pkgDist))
+    done();
+};
+
+
 // --- Browser functions ---
 
 function browser_sync(done) {
@@ -160,7 +186,10 @@ exports.css = css;
 exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
+
 exports.lib = series(navwalker);
+
+exports.pkg = pkg;
 
 exports.default = parallel(css, js, img, fonts);
 exports.watch = parallel(browser_sync, watch_files);

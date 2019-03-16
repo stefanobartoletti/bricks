@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "composer install && gulp lib"
+    "postinstall": "composer install && gulp lib && gulp default"
   },
   "devDependencies": {
     "bootstrap": "^4.3.1",
@@ -25,6 +25,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^4.2.0"
   }
 }

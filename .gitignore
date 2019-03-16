@@ -13,3 +13,7 @@ lib
 # Compiled
 
 dist
+
+# Packages
+
+packages

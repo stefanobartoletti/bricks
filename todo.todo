@@ -1,7 +1,7 @@
 Project:
 
   ✔ Include NPM @done(19-03-15 18:22)
-  ☐ Include Composer?
+  ✔ Include Composer? @done(19-03-16 17:14)
   ✔ Include Gulp @done(19-03-15 18:22)
   ✔ Reorganize folder structure @done(19-03-07 16:59)
     ✔ /src @done(19-03-07 16:58)
@@ -10,13 +10,13 @@ Project:
       ✔ /sections @done(19-03-05 16:55)
       ✔ /elements @done(19-03-05 16:55)
   ✔ Add gitignore file @done(19-03-05 16:08)
-  ☐ run "img" or other function only on a single file
+  ☐ run "img" or other function only on a single file https://github.com/gulpjs/gulp#incremental-builds
   ☐ "del" to clean "dist" old files
   ☐ critical css
   ☐ uncss?
   ☐ ttf2woff
-  ☐ zip package
-  ☐ npm postinstall script
+  ✔ zip package @done(19-03-16 17:14)
+  ✔ npm postinstall script @done(19-03-16 17:14)
 
  
 Todo:
