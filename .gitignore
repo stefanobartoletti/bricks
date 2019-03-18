@@ -1,19 +1,19 @@
-# NPM
+# System files
+**/.directory
+**/**.DS_Store
+**/Thumbs.db
 
+# NPM
 node_modules
 
 # Composer
-
 vendor
 
 # Third Party
-
 lib
 
 # Compiled
-
 dist
 
 # Packages
-
 packages
