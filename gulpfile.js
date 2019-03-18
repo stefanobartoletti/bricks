@@ -39,6 +39,13 @@ var jsSrc = './src/js/**/*.js';
 var jsDist = './dist/js/';
 var jsWatch = [ jsSrc ];
 
+var phpWatch = [
+    './**/*.php',
+    '!node_modules/**',
+    '!lib/**',
+    '!vendor/**',
+];
+
 var imgSrc = './src/img/**/*.{png,jpg,gif,svg)}';
 var imgDist = './dist/img/';
 var imgWatch = [ imgSrc ];
@@ -183,6 +190,7 @@ function clearCache(done) {
 function watch_files(done) {
     watch(cssWatch, series(css, clearCache, reload));
     watch(jsWatch, series(js, clearCache, reload));
+    watch(phpWatch, series(clearCache, reload));
     watch(imgWatch, series(img, clearCache, reload));
     watch(fontsWatch, series(fonts, clearCache, reload));
     done();
