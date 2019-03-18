@@ -56,10 +56,10 @@ add_action('after_setup_theme', 'sb_setup_theme');
 require_once get_template_directory() . '/functions/sidebars.php';
 
 
-/* Include assets
+/* Include third party libraries
 ----------------------------------------------------------------------------------------*/
 
-require_once get_template_directory() . '/assets/navwalker/class-wp-bootstrap-navwalker.php';
+require_once get_template_directory() . '/lib/navwalker/class-wp-bootstrap-navwalker.php';
 
 
 /* Include CSS & JavaScript

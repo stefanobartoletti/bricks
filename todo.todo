@@ -1,8 +1,8 @@
 Project:
 
-  ☐ Include NPM
-  ☐ Include Composer?
-  ☐ Include Gulp
+  ✔ Include NPM @done(19-03-15 18:22)
+  ✔ Include Composer? @done(19-03-16 17:14)
+  ✔ Include Gulp @done(19-03-15 18:22)
   ✔ Reorganize folder structure @done(19-03-07 16:59)
     ✔ /src @done(19-03-07 16:58)
     ✔ /dist @done(19-03-07 16:58)
@@ -10,6 +10,13 @@ Project:
       ✔ /sections @done(19-03-05 16:55)
       ✔ /elements @done(19-03-05 16:55)
   ✔ Add gitignore file @done(19-03-05 16:08)
+  ☐ run "img" or other function only on a single file https://github.com/gulpjs/gulp#incremental-builds
+  ☐ "del" to clean "dist" old files
+  ☐ critical css
+  ☐ uncss?
+  ✔ ttf2woff @done(19-03-18 09:40)
+  ✔ zip package @done(19-03-16 17:14)
+  ✔ npm postinstall script @done(19-03-16 17:14)
 
  
 Todo:
@@ -20,7 +27,7 @@ Todo:
   ✔ Page header section (W&B) @done(19-03-05 17:20)
   ✔ functions.php partials @done(19-03-05 17:37)
   ☐ "back to top" to footer
-  ☐ breadcrumbs
+  ☐ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs
   ☐ prev/next in single
   ✔ Search filter (see w&b) @done(19-03-05 18:49)
   ☐ social sharing buttons

@@ -1,2 +1,19 @@
-/assets/*
-/dist/*
+# NPM
+
+node_modules
+
+# Composer
+
+vendor
+
+# Third Party
+
+lib
+
+# Compiled
+
+dist
+
+# Packages
+
+packages
