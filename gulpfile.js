@@ -141,9 +141,16 @@ function fonts(done) {
 };
 
 
-// --- Libraries functions ---
+// --- Setup functions ---
 
-function navwalker(done) {
+function dirs(done) {
+    src('*.*', {read: false})
+        .pipe(dest('./src/fonts'))
+        .pipe(dest('./src/img'))
+    done();
+};
+
+function libs(done) {
     src(navwalkerSrc)
         .pipe(rename({dirname:''}))
         .pipe(dest(navwalkerDist))
@@ -204,7 +211,7 @@ exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
 
-exports.lib = series(navwalker); 
+exports.setup = series(dirs, libs); 
 
 exports.pkg = pkg;
 

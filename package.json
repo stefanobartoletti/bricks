@@ -12,8 +12,7 @@
     "bootstrap"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "composer install && gulp lib && gulp default"
+    "postinstall": "composer install && gulp setup && gulp default"
   },
   "devDependencies": {
     "bootstrap": "^4.3.1",
