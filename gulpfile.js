@@ -15,6 +15,10 @@ var uglify = require('gulp-uglify');
 // Images
 var imagemin = require('gulp-imagemin');
 
+// Images
+var ttf2woff = require('gulp-ttf2woff');
+var ttf2woff2 = require('gulp-ttf2woff2');
+
 // Utility
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
@@ -39,9 +43,9 @@ var imgSrc = 'src/img/**/*.+(png|jpg|gif|svg)';
 var imgDist = 'dist/img/';
 var imgWatch = 'src/img/**/*.+(png|jpg|gif|svg)';
 
-var fontsSrc = 'src/fonts/**/*.*';
+var fontsSrc = 'src/fonts/**/*.ttf';
 var fontsDist = 'dist/fonts/';
-var fontsWatch = 'src/fonts/**/*.*';
+var fontsWatch = 'src/fonts/**/*.ttf';
 
 var navwalkerSrc = 'vendor/**/class-wp-bootstrap-navwalker.php';
 var navwalkerDist = 'lib/navwalker/';
@@ -119,6 +123,11 @@ function img(done) {
 
 function fonts(done) {
     src(fontsSrc)
+        .pipe(ttf2woff())
+        .pipe(dest(fontsDist))
+        .pipe(browserSync.stream())
+    src(fontsSrc)
+        .pipe(ttf2woff2())
         .pipe(dest(fontsDist))
         .pipe(browserSync.stream())
     done();
@@ -187,7 +196,7 @@ exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
 
-exports.lib = series(navwalker);
+exports.lib = series(navwalker); 
 
 exports.pkg = pkg;
 

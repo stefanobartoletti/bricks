@@ -25,6 +25,8 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^2.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^4.2.0"
   }

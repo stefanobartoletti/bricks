@@ -14,7 +14,7 @@ Project:
   ☐ "del" to clean "dist" old files
   ☐ critical css
   ☐ uncss?
-  ☐ ttf2woff
+  ✔ ttf2woff @done(19-03-18 09:40)
   ✔ zip package @done(19-03-16 17:14)
   ✔ npm postinstall script @done(19-03-16 17:14)
 
