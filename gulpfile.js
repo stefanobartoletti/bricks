@@ -15,7 +15,7 @@ var uglify = require('gulp-uglify');
 // Images
 var imagemin = require('gulp-imagemin');
 
-// Images
+// Fonts
 var ttf2woff = require('gulp-ttf2woff');
 var ttf2woff2 = require('gulp-ttf2woff2');
 
@@ -31,24 +31,24 @@ var cache = require('gulp-cache');
 
 // --- Variables ---
 
-var cssSrc = 'src/sass/**/*.scss';
-var cssDist = 'dist/css/';
-var cssWatch = 'src/sass/**/*.scss';
+var cssSrc = './src/sass/**/*.scss';
+var cssDist = './dist/css/';
+var cssWatch = [ cssSrc ];
 
-var jsSrc = 'src/js/**/*.js';
-var jsDist = 'dist/js/';
-var jsWatch = 'src/js/**/*.js';
+var jsSrc = './src/js/**/*.js';
+var jsDist = './dist/js/';
+var jsWatch = [ jsSrc ];
 
-var imgSrc = 'src/img/**/*.+(png|jpg|gif|svg)';
-var imgDist = 'dist/img/';
-var imgWatch = 'src/img/**/*.+(png|jpg|gif|svg)';
+var imgSrc = './src/img/**/*.{png,jpg,gif,svg)}';
+var imgDist = './dist/img/';
+var imgWatch = [ imgSrc ];
 
-var fontsSrc = 'src/fonts/**/*.ttf';
-var fontsDist = 'dist/fonts/';
-var fontsWatch = 'src/fonts/**/*.ttf';
+var fontsSrc = './src/fonts/**/*.ttf';
+var fontsDist = './dist/fonts/';
+var fontsWatch = [ fontsSrc ];
 
-var navwalkerSrc = 'vendor/**/class-wp-bootstrap-navwalker.php';
-var navwalkerDist = 'lib/navwalker/';
+var navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
+var navwalkerDist = './lib/navwalker/';
 
 var pkgSrc = [
     './**',
@@ -58,9 +58,9 @@ var pkgSrc = [
     '!vendor/**',
     '!.gitignore',
     '!gulpfile.js',
+    '!README.md',
     '!*.json',
     '!*.lock',
-    '!README.md',
     '!*.todo',
 ];
 var pkgDist = 'packages/';
