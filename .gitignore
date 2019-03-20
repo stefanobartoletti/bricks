@@ -3,6 +3,9 @@
 **/**.DS_Store
 **/Thumbs.db
 
+# Visual Studio Code
+.vscode
+
 # NPM
 node_modules
 

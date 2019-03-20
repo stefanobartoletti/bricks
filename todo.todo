@@ -17,6 +17,7 @@ Project:
   ✔ ttf2woff @done(19-03-18 09:40)
   ✔ zip package @done(19-03-16 17:14)
   ✔ npm postinstall script @done(19-03-16 17:14)
+  ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
 
  
 Todo:
@@ -31,6 +32,7 @@ Todo:
   ☐ prev/next in single
   ✔ Search filter (see w&b) @done(19-03-05 18:49)
   ☐ social sharing buttons
+  ☐ remove php "?>" closing tags from files
 
 
 Fix:
