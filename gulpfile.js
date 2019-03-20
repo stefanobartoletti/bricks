@@ -59,6 +59,7 @@ var navwalkerDist = './lib/navwalker/';
 
 var pkgSrc = [
     './**',
+    '!.vscode/**',
     '!node_modules/**',
     '!packages/**',
     '!src/**',
