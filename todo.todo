@@ -29,7 +29,7 @@ Todo:
   ✔ functions.php partials @done(19-03-05 17:37)
   ☐ "back to top" to footer
   ☐ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs
-  ☐ prev/next in single
+  ✔ prev/next in single @done(19-07-04 15:26)
   ✔ Search filter (see w&b) @done(19-03-05 18:49)
   ☐ social sharing buttons
   ☐ remove php "?>" closing tags from files

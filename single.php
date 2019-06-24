@@ -29,7 +29,11 @@
                     <?php wp_link_pages('pagelink=Page %'); ?>
 
                 </article>
-              
+
+                <nav>
+                    <?php previous_post_link(); ?> | <?php next_post_link(); ?>
+                </nav>
+                    
                 <?php if ( comments_open() || get_comments_number() ) { comments_template(); } ?>
             
             </div>
