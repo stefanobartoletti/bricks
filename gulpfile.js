@@ -8,6 +8,7 @@ const { src, dest, watch, series, parallel } = require('gulp');
 // CSS
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var purgecss = require('gulp-purgecss');
 
 // JS
 var uglify = require('gulp-uglify');
@@ -85,11 +86,14 @@ function css(done) {
         }))
         .on('error', console.error.bind(console))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions', '> 5%',],
             cascade: false
         }))
         .pipe(rename({
             suffix: '.min'
+        }))
+        .pipe(purgecss({
+            content: ['**/*.php', 'src/**/*.js'],
+            whitelistPatterns: [/carousel-item.*$/],
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(dest(cssDist))
