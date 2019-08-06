@@ -13,11 +13,12 @@ Project:
   ☐ run "img" or other function only on a single file https://github.com/gulpjs/gulp#incremental-builds
   ☐ "del" to clean "dist" old files
   ☐ critical css
-  ☐ uncss?
+  ✔ ~uncss?~ purgecss @done(19-08-06 16:22)
   ✔ ttf2woff @done(19-03-18 09:40)
   ✔ zip package @done(19-03-16 17:14)
   ✔ npm postinstall script @done(19-03-16 17:14)
   ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
+  ☐ Use <?php the_archive_title();?> for index title
 
  
 Todo:
