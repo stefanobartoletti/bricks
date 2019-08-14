@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * https://developer.wordpress.org/themes/functionality/sidebars/
+ * 
+ */
+
 if(! function_exists('sb_sidebars')) {
 
     function sb_sidebars() {
@@ -19,5 +24,3 @@ if(! function_exists('sb_sidebars')) {
 }
 
 add_action('widgets_init', 'sb_sidebars');
-
-?>

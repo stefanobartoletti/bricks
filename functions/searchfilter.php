@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * https://stackoverflow.com/a/9885744/10580177
+ * 
+ */
+
 function sb_search_filter($query) {
 
     if ($query->is_search) {
@@ -14,5 +19,3 @@ function sb_search_filter($query) {
 }
 
 add_filter('pre_get_posts','sb_search_filter');
-
-?>
