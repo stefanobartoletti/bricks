@@ -1,6 +1,6 @@
 {
   "name": "sb-base-theme",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "author": "Stefano Bartoletti",
   "repository": {
@@ -14,9 +14,6 @@
   "scripts": {
     "postinstall": "composer install && gulp setup && gulp default"
   },
-  "browserslist": [
-    "defaults"
-  ],
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",

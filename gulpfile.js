@@ -32,14 +32,17 @@ var cache = require('gulp-cache');
 
 // --- Variables ---
 
+// CSS
 var cssSrc = './src/sass/**/*.scss';
 var cssDist = './dist/css/';
 var cssWatch = [ cssSrc ];
 
+// JS
 var jsSrc = './src/js/**/*.js';
 var jsDist = './dist/js/';
 var jsWatch = [ jsSrc ];
 
+// PHP
 var phpWatch = [
     './**/*.php',
     '!node_modules/**',
@@ -47,17 +50,21 @@ var phpWatch = [
     '!vendor/**',
 ];
 
+// Images
 var imgSrc = './src/img/**/*.{png,jpg,gif,svg)}';
 var imgDist = './dist/img/';
 var imgWatch = [ imgSrc ];
 
+// Fonts
 var fontsSrc = './src/fonts/**/*.ttf';
 var fontsDist = './dist/fonts/';
 var fontsWatch = [ fontsSrc ];
 
+// Libs
 var navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
 var navwalkerDist = './lib/navwalker/';
 
+// Zip package
 var pkgSrc = [
     './**',
     '!.vscode/**',
@@ -65,6 +72,8 @@ var pkgSrc = [
     '!packages/**',
     '!src/**',
     '!vendor/**',
+    '!.browserslistrc',
+    '!.directory',
     '!.gitignore',
     '!gulpfile.js',
     '!README.md',
@@ -73,6 +82,9 @@ var pkgSrc = [
     '!*.todo',
 ];
 var pkgDist = 'packages/';
+
+// Browser Sync
+var siteUrl = 'opensuse-kde:8080/sbbase';
 
 
 // --- CSS functions ---
@@ -180,7 +192,7 @@ function browser_sync(done) {
         open: false,
         injectChanges: true,
         // server: { baseDir: './dist/' },
-        proxy: "opensuse-kde:8080/sbbase",
+        proxy: siteUrl,
         // tunnel: "sbbase",
     });
     done();
