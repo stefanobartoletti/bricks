@@ -12,6 +12,9 @@ function sb_customizer_options($wp_customize) {
     // Branding section
     require_once get_template_directory() . '/functions/customizer/branding.php';
 
+    // Contacts section
+    require_once get_template_directory() . '/functions/customizer/contacts.php';
+
 }
 
 add_action( 'customize_register', 'sb_customizer_options' );

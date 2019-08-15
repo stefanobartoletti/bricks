@@ -29,8 +29,8 @@ Project:
 Todo:
 
   ✔ Widgetize Social Icons @done(19-03-05 23:22)
-  ☐ Social icon links from customizer
-  ☐ Contact info from customizer
+  ✔ Social icon links from customizer @done(19-08-15 13:59)
+  ✔ Contact info from customizer @done(19-08-15 13:59)
   ✔ Page header section (W&B) @done(19-03-05 17:20)
   ✔ functions.php partials @done(19-03-05 17:37)
   ☐ "back to top" to footer
@@ -48,5 +48,8 @@ Fix:
   ☐ sidebar > BS list
   ☐ comments > BS media
   ☐ index > add "category:" "tag:"...
+  ☐ Customizer > sanitize inputs
+  ☐ Customizer > address multiple fields
+  ☐ Customizer > placeholder text
 
 Archive:
