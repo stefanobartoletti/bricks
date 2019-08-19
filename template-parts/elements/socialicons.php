@@ -2,15 +2,11 @@
 
     <?php 
 
-    // ----- Icon entry -----
+    // Custom function from globals.php
 
-/*     $sb_socialnetworks = array(
-        // option name => icon name
-        'facebook' => 'fa-facebook-f',
-        'linkedin' => 'fa-linkedin-in',
-        'instagram' => 'fa-instagram',
-        'twitter' => 'fa-twitter',
-    ); */
+    $sb_socialnetworks = sb_socialnetworks();
+
+    // ----- Single icon -----
 
     foreach ($sb_socialnetworks as $key => $value) {
 

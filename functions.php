@@ -29,6 +29,10 @@ require_once get_template_directory() . '/functions/cssjs.php';
 
 // require_once get_template_directory() . '/functions/searchfilter.php';
 
+// --- Custom global functions --- 
+
+require_once get_template_directory() . '/functions/globals.php';
+
 // --- Customizer options --- 
 
 require_once get_template_directory() . '/functions/customizer.php';

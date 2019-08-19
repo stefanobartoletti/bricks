@@ -12,12 +12,9 @@ $wp_customize -> add_section ( 'sb_social', array(
 
     // --- Social settings ---
 
-    $sb_socialnetworks = array(
-        'facebook' => 'fa-facebook-f',
-        'linkedin' => 'fa-linkedin-in',
-        'instagram' => 'fa-instagram',
-        'twitter' => 'fa-twitter',
-    );
+    // Custom function from globals.php
+
+    $sb_socialnetworks = sb_socialnetworks();
 
     // ----- Social entry -----
 
