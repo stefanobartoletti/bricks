@@ -6,6 +6,7 @@ $wp_customize -> add_section ( 'sb_branding', array(
     'title' => __('Branding', 'sb-base-theme'),
     'description' => __('Branding options', 'sb-base-theme'),
     'priority' => 20,
+    'panel'  => 'sb_options_panel',
     )
 );
 
