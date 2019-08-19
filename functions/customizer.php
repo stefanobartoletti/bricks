@@ -9,11 +9,20 @@
 
 function sb_customizer_options($wp_customize) {
 
+    $wp_customize->add_panel( 'sb_options_panel', array(
+        'title' => __('[sb] Options', 'sb-base-theme'),
+        'description' => __('[sb] Options', 'sb-base-theme'),
+        'priority' => 160,
+    ) );
+
     // Branding section
     require_once get_template_directory() . '/functions/customizer/branding.php';
 
     // Contacts section
     require_once get_template_directory() . '/functions/customizer/contacts.php';
+
+    // Social section
+    require_once get_template_directory() . '/functions/customizer/social.php';
 
 }
 
