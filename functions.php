@@ -9,6 +9,10 @@
 
 require_once get_template_directory() . '/functions/setup.php';
 
+// --- Cleanup ---
+
+require_once get_template_directory() . '/functions/cleanup.php';
+
 // --- Register navmenus --- 
 
 require_once get_template_directory() . '/functions/navmenus.php';
