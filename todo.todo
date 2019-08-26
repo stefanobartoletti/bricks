@@ -45,8 +45,10 @@ Todo:
 Fix:
 
   ☐ Limit comment nesting
-  ☐ sidebar > BS list
-  ☐ comments > BS media
+  ☐ BS styles
+    ☐ sidebar > BS list
+    ☐ comments > BS media
+    ☐ search > BS input
   ☐ index > add "category:" "tag:"...
   ☐ Customizer > sanitize inputs
   ☐ Customizer > address multiple fields

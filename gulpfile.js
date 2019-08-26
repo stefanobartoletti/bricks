@@ -105,8 +105,11 @@ function css(done) {
         }))
         .pipe(purgecss({
             content: ['**/*.php', 'src/**/*.js'],
-            whitelistPatterns: [/carousel-item.*$/],
-            whitelistPatternsChildren: [/admin-bar$/],
+            whitelistPatterns: [
+                /^carousel-item.*/, // Bootstrap Carousel Animation
+                /collapsing/, // Bootstrap Navbar Animation
+                /^admin-bar/, // WP admin bar when logged in
+            ],
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(dest(cssDist))
