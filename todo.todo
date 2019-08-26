@@ -20,10 +20,10 @@ Project:
   ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
   ☐ Use <?php the_archive_title();?> for index title
   ☐ remove unused
-    ☐ wp-block-library CSS
+    ✔ wp-block-library CSS @done(19-08-26 12:24)
     ☐ jquery migrate JS
-    ☐ url query strings
-    ☐ emoji CSS/JS
+    ✔ url query strings @done(19-08-26 12:24)
+    ✔ emoji CSS/JS @done(19-08-26 12:24)
 
  
 Todo:
