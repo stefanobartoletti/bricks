@@ -7,7 +7,7 @@
 
 $(document).scroll(function(){
     var scroll = $(this).scrollTop();
-    if (scroll > 100) {
+    if (scroll > 45) {
         $('.header-wrap').addClass('header-scrolled');
     } else {
         $('.header-wrap').removeClass('header-scrolled');
@@ -31,5 +31,9 @@ $(".comment-form-comment textarea").removeAttr('cols');
 
 
 /*-------------------------------------------------*/
+
+$(".backtotop").click(function() {
+    $("html, body").animate({ scrollTop: 0 });
+});
     
 })(jQuery);

@@ -14,6 +14,8 @@
 
 </footer>
 
+<button class="btn btn-primary backtotop" type="button">Primary</button>
+
 <?php wp_footer() ?>
 
 </div> <!-- #page .site -->
