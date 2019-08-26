@@ -14,6 +14,9 @@
 
 </footer>
 
+<button class="btn btn-primary backtotop hidden" type="button"><i class="fa fa-angle-up"></i></button>
+
+
 <?php wp_footer() ?>
 
 </div> <!-- #page .site -->
