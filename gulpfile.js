@@ -20,6 +20,9 @@ var imagemin = require('gulp-imagemin');
 var ttf2woff = require('gulp-ttf2woff');
 var ttf2woff2 = require('gulp-ttf2woff2');
 
+// Icons
+var faMinify = require('gulp-fa-minify');
+
 // Utility
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
@@ -59,6 +62,15 @@ var imgWatch = [ imgSrc ];
 var fontsSrc = './src/fonts/**/*.ttf';
 var fontsDist = './dist/fonts/';
 var fontsWatch = [ fontsSrc ];
+
+// Icons
+var iconsSrc = './node_modules/@fortawesome/fontawesome-free/js/all.js';
+var iconsUsed = {
+    fal: [],
+    far: [],
+    fas: ['angle-up'], // Solid
+    fab: ['facebook-f', 'linkedin-in', 'instagram', 'twitter'] // Brands
+};
 
 // Libs
 var navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
@@ -162,6 +174,18 @@ function fonts(done) {
 };
 
 
+// --- Icons functions ---
+
+function icons(done) {
+    src(iconsSrc)
+        .pipe(rename('fa5.min.js')) 
+        .pipe(faMinify(iconsUsed))
+        .pipe(uglify())
+        .pipe(dest(jsDist))
+    done();
+};
+
+
 // --- Setup functions ---
 
 function dirs(done) {
@@ -231,10 +255,11 @@ exports.css = css;
 exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
+exports.icons = icons;
 
 exports.setup = series(dirs, libs); 
 
 exports.pkg = pkg;
 
-exports.default = parallel(css, js, img, fonts);
+exports.default = parallel(css, js, img, fonts, icons);
 exports.watch = parallel(browser_sync, watch_files);

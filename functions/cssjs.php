@@ -15,7 +15,7 @@ if(! function_exists('sb_styles_scripts')) {
 
         // wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Muli:400,700');
 
-        wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.6.3/css/all.css');
+        // wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.6.3/css/all.css');
 
         wp_enqueue_style('sb-styles', get_template_directory_uri() .'/dist/css/style.min.css');
 
@@ -26,6 +26,8 @@ if(! function_exists('sb_styles_scripts')) {
         if ( is_singular() && comments_open() && get_option('thread_comments') ) { wp_enqueue_script('comment-reply'); }
 
         wp_enqueue_script('sb-scripts', get_template_directory_uri() .'/dist/js/scripts.min.js', array('jquery'), null, true );
+        
+        wp_enqueue_script('fontawesome', get_template_directory_uri() .'/dist/js/fa5.min.js', array(), null, false );
 
     }
 
