@@ -15,11 +15,13 @@
     "postinstall": "composer install && gulp setup && gulp default"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-cache": "^1.1.2",
+    "gulp-fa-minify": "^1.2.2",
     "gulp-imagemin": "^5.0.3",
     "gulp-purgecss": "^1.2.0",
     "gulp-rename": "^1.4.0",
