@@ -24,6 +24,8 @@ Project:
     ☐ jquery migrate JS
     ✔ url query strings @done(19-08-26 12:24)
     ✔ emoji CSS/JS @done(19-08-26 12:24)
+  ☐ font awesome local JS/SVG & https://www.npmjs.com/package/gulp-fa-minify
+  ☐ webp image format https://www.npmjs.com/package/gulp-webp
 
  
 Todo:
@@ -37,7 +39,7 @@ Todo:
   ☐ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs
   ✔ prev/next in single @done(19-07-04 15:26)
   ✔ Search filter (see w&b) @done(19-03-05 18:49)
-  ☐ social sharing buttons
+  ☐ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls
   ☐ remove php "?>" closing tags from files
   ☐ custom post types & taxonomies
 
