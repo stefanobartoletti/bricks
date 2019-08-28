@@ -10,6 +10,7 @@ var purgeWLP = [
     /^carousel-item.*/,     // Bootstrap Carousel Animation
     /collapsing/,           // Bootstrap Navbar Animation
     /^admin-bar/,           // WP admin bar when logged in
+    /^svg$/,                // For styling Font Awesome
 ];
 exports.purgeWLP = purgeWLP;
 
