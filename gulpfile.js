@@ -1,3 +1,8 @@
+/**
+ * Gulp general setup.
+ * Project related variables are defined in tools/gulp-project.js to keep gulpfile.js clean.
+ */
+
 // --- Gulp ---
 
 const { src, dest, watch, series, parallel } = require('gulp');
@@ -35,17 +40,16 @@ var cache = require('gulp-cache');
 
 // --- Variables ---
 
+// Project variables file
+var projectVars = './tools/gulp-project';
+
 // CSS
 var cssSrc = './src/sass/**/*.scss';
 var cssDist = './dist/css/';
 var cssWatch = [ cssSrc ];
 
 var purgeContent = ['**/*.php', 'src/**/*.js'];
-var purgeWLP = [
-    /^carousel-item.*/, // Bootstrap Carousel Animation
-    /collapsing/, // Bootstrap Navbar Animation
-    /^admin-bar/, // WP admin bar when logged in
-];
+var { purgeWLP } = require(projectVars);
 
 // JS
 var jsSrc = './src/js/**/*.js';
@@ -72,12 +76,7 @@ var fontsWatch = [ fontsSrc ];
 
 // Icons
 var iconsSrc = './node_modules/@fortawesome/fontawesome-free/js/all.js';
-var iconsUsed = {
-    fal: [],
-    far: [],
-    fas: ['angle-up'], // Solid
-    fab: ['facebook-f', 'linkedin-in', 'instagram', 'twitter'] // Brands
-};
+var { iconsUsed } = require(projectVars);
 
 // Libs
 var navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
@@ -87,6 +86,7 @@ var navwalkerDist = './lib/navwalker/';
 var pkgSrc = [
     './**',
     '!.vscode/**',
+    '!tools/**',
     '!node_modules/**',
     '!packages/**',
     '!src/**',
@@ -103,7 +103,7 @@ var pkgSrc = [
 var pkgDist = 'packages/';
 
 // Browser Sync
-var siteUrl = 'opensuse-kde:8080/sbbase';
+var { siteUrl } = require(projectVars);
 
 
 // --- CSS functions ---
