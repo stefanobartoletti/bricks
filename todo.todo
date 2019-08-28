@@ -24,8 +24,16 @@ Project:
     ☐ jquery migrate JS
     ✔ url query strings @done(19-08-26 12:24)
     ✔ emoji CSS/JS @done(19-08-26 12:24)
-  ☐ font awesome local JS/SVG & https://www.npmjs.com/package/gulp-fa-minify
+  ✔ font awesome local JS/SVG & https://www.npmjs.com/package/gulp-fa-minify @done(19-08-28 17:47)
   ☐ webp image format https://www.npmjs.com/package/gulp-webp
+  ☐ gulp-htmlmin ?
+  ☐ gulp-php-minify ?
+  ☐ gulp-preprocess ?
+  ☐ gulp-replace / gulp-string-replace / gulp-html-replace ?
+  ☐ gulp-plumber ?
+  ☐ gulp-load-plugins ?
+  ☐ gulp-changed / gulp-newer ?
+  ☐ gulp-clean-css (after purgecss)
 
  
 Todo:
@@ -57,3 +65,4 @@ Fix:
   ☐ Customizer > placeholder text
 
 Archive:
+  
