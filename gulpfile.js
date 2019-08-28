@@ -40,6 +40,13 @@ var cssSrc = './src/sass/**/*.scss';
 var cssDist = './dist/css/';
 var cssWatch = [ cssSrc ];
 
+var purgeContent = ['**/*.php', 'src/**/*.js'];
+var purgeWLP = [
+    /^carousel-item.*/, // Bootstrap Carousel Animation
+    /collapsing/, // Bootstrap Navbar Animation
+    /^admin-bar/, // WP admin bar when logged in
+];
+
 // JS
 var jsSrc = './src/js/**/*.js';
 var jsDist = './dist/js/';
@@ -116,12 +123,8 @@ function css(done) {
             suffix: '.min'
         }))
         .pipe(purgecss({
-            content: ['**/*.php', 'src/**/*.js'],
-            whitelistPatterns: [
-                /^carousel-item.*/, // Bootstrap Carousel Animation
-                /collapsing/, // Bootstrap Navbar Animation
-                /^admin-bar/, // WP admin bar when logged in
-            ],
+            content: purgeContent,
+            whitelistPatterns: purgeWLP,
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(dest(cssDist))
