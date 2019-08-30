@@ -244,8 +244,8 @@ function clearCache(done) {
 
 function watch_files(done) {
     watch(cssWatch, series(css, clearCache, reload));
-    watch(jsWatch, series(js, clearCache, reload));
-    watch(phpWatch, series(clearCache, reload));
+    watch(jsWatch, series(js, css, clearCache, reload));
+    watch(phpWatch, series(css, clearCache, reload));
     watch(imgWatch, series(img, clearCache, reload));
     watch(fontsWatch, series(fonts, clearCache, reload));
     done();
