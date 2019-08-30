@@ -1,31 +1,15 @@
-Project:
+Project & Tools:
 
   ✔ Include NPM @done(19-03-15 18:22)
-  ✔ Include Composer? @done(19-03-16 17:14)
+  ✔ Include Composer @done(19-03-16 17:14)
   ✔ Include Gulp @done(19-03-15 18:22)
-  ✔ Reorganize folder structure @done(19-03-07 16:59)
-    ✔ /src @done(19-03-07 16:58)
-    ✔ /dist @done(19-03-07 16:58)
-    ✔ /template-parts @done(19-03-05 16:55)
-      ✔ /sections @done(19-03-05 16:55)
-      ✔ /elements @done(19-03-05 16:55)
   ✔ Add gitignore file @done(19-03-05 16:08)
-  ☐ run "img" or other function only on a single file https://github.com/gulpjs/gulp#incremental-builds
+  ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
   ☐ "del" to clean "dist" old files
-  ☐ critical css
-  ✔ ~uncss?~ purgecss @done(19-08-06 16:22)
+  ☐ pug-php ? https://github.com/pug-php/pug
   ✔ ttf2woff @done(19-03-18 09:40)
   ✔ zip package @done(19-03-16 17:14)
   ✔ npm postinstall script @done(19-03-16 17:14)
-  ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
-  ☐ Use <?php the_archive_title();?> for index title
-  ☐ remove unused
-    ✔ wp-block-library CSS @done(19-08-26 12:24)
-    ☐ jquery migrate JS
-    ✔ url query strings @done(19-08-26 12:24)
-    ✔ emoji CSS/JS @done(19-08-26 12:24)
-  ✔ font awesome local JS/SVG & https://www.npmjs.com/package/gulp-fa-minify @done(19-08-28 17:47)
-  ☐ webp image format https://www.npmjs.com/package/gulp-webp
   ☐ gulp-htmlmin ?
   ☐ gulp-php-minify ?
   ☐ gulp-preprocess ?
@@ -35,8 +19,32 @@ Project:
   ☐ gulp-changed / gulp-newer ?
   ☐ gulp-clean-css (after purgecss)
 
- 
-Todo:
+
+Design:
+
+  ☐ sidebar > BS list style
+  ☐ comments > BS media style
+  ☐ search > BS input style
+
+
+Code:
+
+  ☐ Use <?php the_archive_title();?> for index title
+  ☐ remove php "?>" closing tags from files
+  ☐ Limit comment nesting
+
+
+File structure & Templates:
+
+  ✔ Reorganize folder structure @done(19-03-07 16:59)
+    ✔ /src @done(19-03-07 16:58)
+    ✔ /dist @done(19-03-07 16:58)
+    ✔ /template-parts @done(19-03-05 16:55)
+      ✔ /sections @done(19-03-05 16:55)
+      ✔ /elements @done(19-03-05 16:55)
+
+
+Elements & Functions:
 
   ✔ Widgetize Social Icons @done(19-03-05 23:22)
   ✔ Social icon links from customizer @done(19-08-15 13:59)
@@ -48,21 +56,34 @@ Todo:
   ✔ prev/next in single @done(19-07-04 15:26)
   ✔ Search filter (see w&b) @done(19-03-05 18:49)
   ☐ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls
-  ☐ remove php "?>" closing tags from files
-  ☐ custom post types & taxonomies
-
-
-Fix:
-
-  ☐ Limit comment nesting
-  ☐ BS styles
-    ☐ sidebar > BS list
-    ☐ comments > BS media
-    ☐ search > BS input
-  ☐ index > add "category:" "tag:"...
+  ☐ custom post types & taxonomies ?
   ☐ Customizer > sanitize inputs
   ☐ Customizer > address multiple fields
   ☐ Customizer > placeholder text
+
+
+Performance & SEO:
+
+  ✔ remove wp-block-library CSS @done(19-08-26 12:24)
+  ✔ remove url query strings @done(19-08-26 12:24)
+  ✔ remove emoji CSS/JS @done(19-08-26 12:24)
+  ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
+  ✔ ~uncss?~ purgecss @done(19-08-06 16:22)
+  ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
+  ✔ font awesome local JS/SVG & https://www.npmjs.com/package/gulp-fa-minify @done(19-08-28 17:47)
+  ☐ webp image format https://www.npmjs.com/package/gulp-webp
+  ☐ lazyload https://github.com/aFarkas/lazysizes
+  ☐ jquery from CDN into footer ? https://wordpress.stackexchange.com/q/63468/
+
+Security & Fixes:
+
+
+  
+
+
+
+
+
 
 Archive:
   
