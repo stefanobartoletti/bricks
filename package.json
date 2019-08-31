@@ -12,7 +12,8 @@
     "bootstrap"
   ],
   "scripts": {
-    "postinstall": "composer install && gulp setup && gulp default"
+    "postinstall": "composer install && npm run setup && gulp default",
+    "setup": "node tools/npm-setup.js"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.10.2",

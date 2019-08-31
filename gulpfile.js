@@ -80,10 +80,6 @@ const fontsWatch = [ fontsSrc ];
 const iconsSrc = './node_modules/@fortawesome/fontawesome-free/js/all.js';
 const { iconsUsed } = require(projectVars);
 
-// Libs
-const navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
-const navwalkerDist = './lib/navwalker/';
-
 // Zip package
 const { pkgSrc } = require(projectVars);
 const pkgDist = 'packages/';
@@ -195,21 +191,6 @@ function clean() {
 };
 
 
-// --- Setup functions ---
-
-function dirs() {
-    return src('*.*', {read: false})
-        .pipe(dest('./src/fonts'))
-        .pipe(dest('./src/img'));
-};
-
-function libs() {
-    return src(navwalkerSrc)
-        .pipe(rename({dirname:''}))
-        .pipe(dest(navwalkerDist));
-};
-
-
 // --- Packages functions ---
 
 function pkg() {
@@ -259,8 +240,6 @@ exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
 exports.icons = icons;
-
-exports.setup = series(dirs, libs); 
 
 exports.pkg = pkg;
 
