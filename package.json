@@ -12,13 +12,15 @@
     "bootstrap"
   ],
   "scripts": {
-    "postinstall": "composer install && gulp setup && gulp default"
+    "postinstall": "composer install && npm run setup && gulp default",
+    "setup": "node tools/npm-setup.js"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.10.2",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "fs-extra": "^8.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-cache": "^1.1.2",
