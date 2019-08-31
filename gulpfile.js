@@ -93,8 +93,8 @@ const { siteUrl } = require(projectVars);
 
 // --- CSS functions ---
 
-function css(done) {
-    src(cssSrc)
+function css() {
+    return src(cssSrc)
         .pipe(sourcemaps.init())
         .pipe(sass({
             errorLogToConsole: true,
@@ -113,15 +113,14 @@ function css(done) {
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(dest(cssDist))
-        .pipe(browserSync.stream())
-    done();
+        .pipe(browserSync.stream());
 };
 
 
 // --- JS functions ---
 
-function js(done) {
-    src(jsSrc)
+function js() {
+    return src(jsSrc)
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(rename({
@@ -129,21 +128,19 @@ function js(done) {
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(dest(jsDist))
-        .pipe(browserSync.stream())
-    done();
+        .pipe(browserSync.stream());
 };
 
 
 // --- Images functions ---
 
-function img(done) {
-    src(imgSrc)
+function img() {
+    return src(imgSrc)
         .pipe(imagemin({
             verbose: true
         }))
         .pipe(dest(imgDist))
-        .pipe(browserSync.stream())
-    done();
+        .pipe(browserSync.stream());
 };
 
 
@@ -164,72 +161,64 @@ function fonts(done) {
 
 // --- Icons functions ---
 
-function icons(done) {
-    src(iconsSrc)
+function icons() {
+    return src(iconsSrc)
         .pipe(rename('fa5.min.js')) 
         .pipe(faMinify(iconsUsed))
         .pipe(uglify())
-        .pipe(dest(jsDist))
-    done();
+        .pipe(dest(jsDist));
 };
 
 
 // --- Utility functions ---
 
-function clean(done) {
+function clean() {
     return del('dist/**', {force:true});
-    done();
 };
 
 
 // --- Setup functions ---
 
-function dirs(done) {
-    src('*.*', {read: false})
+function dirs() {
+    return src('*.*', {read: false})
         .pipe(dest('./src/fonts'))
-        .pipe(dest('./src/img'))
-    done();
+        .pipe(dest('./src/img'));
 };
 
-function libs(done) {
-    src(navwalkerSrc)
+function libs() {
+    return src(navwalkerSrc)
         .pipe(rename({dirname:''}))
-        .pipe(dest(navwalkerDist))
-    done();
+        .pipe(dest(navwalkerDist));
 };
 
 
 // --- Packages functions ---
 
-function pkg(done) {
-    src(pkgSrc, {base: '..'})
+function pkg() {
+    return src(pkgSrc, {base: '..'})
         .pipe(zip('archive.zip'))
-        .pipe(dest(pkgDist))
-    done();
+        .pipe(dest(pkgDist));
 };
 
 
 // --- Browser functions ---
 
-function browser_sync(done) {
-	browserSync.init({
+function browser_sync() {
+	return browserSync.init({
         open: false,
         injectChanges: true,
         // server: { baseDir: './dist/' },
         proxy: siteUrl,
         // tunnel: "sbbase",
     });
-    done();
 }
 
-function reload(done) {
-	browserSync.reload();
-	done();
+function reload() {
+	return browserSync.reload();
 }
 
-function clearCache(done) {
-    cache.clearAll();
-	done();
+function clearCache() {
+    return cache.clearAll();
 }
 
 

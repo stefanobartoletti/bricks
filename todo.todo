@@ -5,7 +5,7 @@ Project & Tools:
   ✔ Include Gulp @done(19-03-15 18:22)
   ✔ Add gitignore file @done(19-03-05 16:08)
   ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
-  ☐ "del" to clean "dist" old files
+  ✔ "del" to clean "dist" old files @done(19-08-31 13:41)
   ☐ pug-php ? https://github.com/pug-php/pug
   ✔ ttf2woff @done(19-03-18 09:40)
   ✔ zip package @done(19-03-16 17:14)
