@@ -32,6 +32,7 @@ const faMinify = require('gulp-fa-minify');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const zip = require('gulp-zip');
+const del = require('del');
 
 // Browser
 const browserSync  = require('browser-sync').create();
@@ -169,6 +170,14 @@ function icons(done) {
         .pipe(faMinify(iconsUsed))
         .pipe(uglify())
         .pipe(dest(jsDist))
+    done();
+};
+
+
+// --- Utility functions ---
+
+function clean(done) {
+    return del('dist/**', {force:true});
     done();
 };
 
