@@ -3,6 +3,13 @@
  * These are defined here to keep gulpfile.js clean.
  */
 
+// --- Browser ---
+
+// Site URL (Browsersync, critical css)
+const siteUrl = 'http://localhost:8080/sbbase';
+exports.siteUrl = siteUrl;
+
+
 // --- CSS ---
 
 // purgecss whitelists
@@ -34,9 +41,23 @@ const iconsUsed = {
 };
 exports.iconsUsed = iconsUsed;
 
+// --- Zip package ---
 
-// --- Browser ---
-
-// Browsersync proxy
-const siteUrl = 'http://localhost:8080/sbbase';
-exports.siteUrl = siteUrl;
+const pkgSrc = [
+    './**',
+    '!.vscode/**',
+    '!tools/**',
+    '!node_modules/**',
+    '!packages/**',
+    '!src/**',
+    '!vendor/**',
+    '!.browserslistrc',
+    '!.directory',
+    '!.gitignore',
+    '!gulpfile.js',
+    '!README.md',
+    '!*.json',
+    '!*.lock',
+    '!*.todo',
+];
+exports.pkgSrc = pkgSrc;

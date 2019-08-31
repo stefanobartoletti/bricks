@@ -83,23 +83,7 @@ const navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
 const navwalkerDist = './lib/navwalker/';
 
 // Zip package
-const pkgSrc = [
-    './**',
-    '!.vscode/**',
-    '!tools/**',
-    '!node_modules/**',
-    '!packages/**',
-    '!src/**',
-    '!vendor/**',
-    '!.browserslistrc',
-    '!.directory',
-    '!.gitignore',
-    '!gulpfile.js',
-    '!README.md',
-    '!*.json',
-    '!*.lock',
-    '!*.todo',
-];
+const { pkgSrc } = require(projectVars);
 const pkgDist = 'packages/';
 
 // Browser Sync
