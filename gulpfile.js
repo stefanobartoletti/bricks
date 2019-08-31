@@ -11,53 +11,53 @@ const { src, dest, watch, series, parallel } = require('gulp');
 // --- Gulp plugins ---
 
 // CSS
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var purgecss = require('gulp-purgecss');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const purgecss = require('gulp-purgecss');
 
 // JS
-var uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 
 // Images
-var imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 
 // Fonts
-var ttf2woff = require('gulp-ttf2woff');
-var ttf2woff2 = require('gulp-ttf2woff2');
+const ttf2woff = require('gulp-ttf2woff');
+const ttf2woff2 = require('gulp-ttf2woff2');
 
 // Icons
-var faMinify = require('gulp-fa-minify');
+const faMinify = require('gulp-fa-minify');
 
 // Utility
-var rename = require('gulp-rename');
-var sourcemaps = require('gulp-sourcemaps');
-var zip = require('gulp-zip');
+const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps');
+const zip = require('gulp-zip');
 
 // Browser
-var browserSync  = require('browser-sync').create();
-var cache = require('gulp-cache');
+const browserSync  = require('browser-sync').create();
+const cache = require('gulp-cache');
 
 
 // --- Variables ---
 
 // Project variables file
-var projectVars = './tools/gulp-project';
+const projectVars = './tools/gulp-project';
 
 // CSS
-var cssSrc = './src/sass/**/*.scss';
-var cssDist = './dist/css/';
-var cssWatch = [ cssSrc ];
+const cssSrc = './src/sass/**/*.scss';
+const cssDist = './dist/css/';
+const cssWatch = [ cssSrc ];
 
-var purgeContent = ['**/*.php', 'src/**/*.js'];
-var { purgeWLP } = require(projectVars);
+const purgeContent = ['**/*.php', 'src/**/*.js'];
+const { purgeWLP } = require(projectVars);
 
 // JS
-var jsSrc = './src/js/**/*.js';
-var jsDist = './dist/js/';
-var jsWatch = [ jsSrc ];
+const jsSrc = './src/js/**/*.js';
+const jsDist = './dist/js/';
+const jsWatch = [ jsSrc ];
 
 // PHP
-var phpWatch = [
+const phpWatch = [
     './**/*.php',
     '!node_modules/**',
     '!lib/**',
@@ -65,25 +65,25 @@ var phpWatch = [
 ];
 
 // Images
-var imgSrc = './src/img/**/*.{png,jpg,gif,svg)}';
-var imgDist = './dist/img/';
-var imgWatch = [ imgSrc ];
+const imgSrc = './src/img/**/*.{png,jpg,gif,svg)}';
+const imgDist = './dist/img/';
+const imgWatch = [ imgSrc ];
 
 // Fonts
-var fontsSrc = './src/fonts/**/*.ttf';
-var fontsDist = './dist/fonts/';
-var fontsWatch = [ fontsSrc ];
+const fontsSrc = './src/fonts/**/*.ttf';
+const fontsDist = './dist/fonts/';
+const fontsWatch = [ fontsSrc ];
 
 // Icons
-var iconsSrc = './node_modules/@fortawesome/fontawesome-free/js/all.js';
-var { iconsUsed } = require(projectVars);
+const iconsSrc = './node_modules/@fortawesome/fontawesome-free/js/all.js';
+const { iconsUsed } = require(projectVars);
 
 // Libs
-var navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
-var navwalkerDist = './lib/navwalker/';
+const navwalkerSrc = './vendor/**/class-wp-bootstrap-navwalker.php';
+const navwalkerDist = './lib/navwalker/';
 
 // Zip package
-var pkgSrc = [
+const pkgSrc = [
     './**',
     '!.vscode/**',
     '!tools/**',
@@ -100,10 +100,10 @@ var pkgSrc = [
     '!*.lock',
     '!*.todo',
 ];
-var pkgDist = 'packages/';
+const pkgDist = 'packages/';
 
 // Browser Sync
-var { siteUrl } = require(projectVars);
+const { siteUrl } = require(projectVars);
 
 
 // --- CSS functions ---

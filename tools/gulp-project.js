@@ -6,7 +6,7 @@
 // --- CSS ---
 
 // purgecss whitelists
-var purgeWLP = [
+const purgeWLP = [
     /^carousel-item.*/,     // Bootstrap Carousel Animation
     /collapsing/,           // Bootstrap Navbar Animation
     /^admin-bar/,           // WP admin bar when logged in
@@ -18,7 +18,7 @@ exports.purgeWLP = purgeWLP;
 // --- Icons ---
 
 // faMinify used icons
-var iconsUsed = {
+const iconsUsed = {
     // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
     fal: [],
     far: [],
@@ -38,5 +38,5 @@ exports.iconsUsed = iconsUsed;
 // --- Browser ---
 
 // Browsersync proxy
-var siteUrl = 'opensuse-kde:8080/sbbase';
+const siteUrl = 'http://localhost:8080/sbbase';
 exports.siteUrl = siteUrl;
