@@ -33,6 +33,7 @@ const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const zip = require('gulp-zip');
 const del = require('del');
+const gulpif = require('gulp-if');
 
 // Browser
 const browserSync  = require('browser-sync').create();
@@ -90,12 +91,29 @@ const pkgDist = 'packages/';
 // Browser Sync
 const { siteUrl } = require(projectVars);
 
+// Environment
+
+var DEV = true;
+var PROD = false;
+
+function setDEV(done) {
+    DEV = true;
+    PROD = false;
+    done();
+}
+
+function setPROD(done) {
+    DEV = false;
+    PROD = true;
+    done();
+}
+
 
 // --- CSS functions ---
 
 function css() {
     return src(cssSrc)
-        .pipe(sourcemaps.init())
+        .pipe(gulpif(DEV, sourcemaps.init()))
         .pipe(sass({
             errorLogToConsole: true,
             outputStyle: 'compressed',
@@ -107,11 +125,11 @@ function css() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(purgecss({
+        .pipe(gulpif(PROD, purgecss({
             content: purgeContent,
             whitelistPatterns: purgeWLP,
-        }))
-        .pipe(sourcemaps.write('./'))
+        })))
+        .pipe(gulpif(DEV, sourcemaps.write('./')))
         .pipe(dest(cssDist))
         .pipe(browserSync.stream());
 };
@@ -121,12 +139,12 @@ function css() {
 
 function js() {
     return src(jsSrc)
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
+        .pipe(gulpif(DEV, sourcemaps.init()))
+        .pipe(gulpif(PROD, uglify()))
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(sourcemaps.write('./'))
+        .pipe(gulpif(DEV, sourcemaps.write('./')))
         .pipe(dest(jsDist))
         .pipe(browserSync.stream());
 };
@@ -164,8 +182,8 @@ function fonts(done) {
 function icons() {
     return src(iconsSrc)
         .pipe(rename('fa5.min.js')) 
-        .pipe(faMinify(iconsUsed))
-        .pipe(uglify())
+        .pipe(gulpif(PROD, faMinify(iconsUsed)))
+        .pipe(gulpif(PROD, uglify()))
         .pipe(dest(jsDist));
 };
 
@@ -226,8 +244,8 @@ function clearCache() {
 
 function watch_files(done) {
     watch(cssWatch, series(css, clearCache, reload));
-    watch(jsWatch, series(js, css, clearCache, reload));
-    watch(phpWatch, series(css, clearCache, reload));
+    watch(jsWatch, series(js, clearCache, reload));
+    watch(phpWatch, series(clearCache, reload));
     watch(imgWatch, series(img, clearCache, reload));
     watch(fontsWatch, series(fonts, clearCache, reload));
     done();
@@ -246,5 +264,6 @@ exports.setup = series(dirs, libs);
 
 exports.pkg = pkg;
 
-exports.default = parallel(css, js, img, fonts, icons);
+exports.default = series(clean, parallel(css, js, img, fonts, icons));
+exports.prod = series(setPROD, clean, parallel(css, js, img, fonts, icons));
 exports.watch = parallel(browser_sync, watch_files);
