@@ -14,6 +14,7 @@ const { src, dest, watch, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const purgecss = require('gulp-purgecss');
+const cleancss = require('gulp-clean-css');
 
 // JS
 const uglify = require('gulp-uglify');
@@ -112,7 +113,6 @@ function css() {
         .pipe(gulpif(DEV, sourcemaps.init()))
         .pipe(sass({
             errorLogToConsole: true,
-            outputStyle: 'compressed',
         }))
         .on('error', console.error.bind(console))
         .pipe(autoprefixer({
@@ -125,6 +125,7 @@ function css() {
             content: purgeContent,
             whitelistPatterns: purgeWLP,
         })))
+        .pipe(gulpif(PROD, cleancss()))
         .pipe(gulpif(DEV, sourcemaps.write('./')))
         .pipe(dest(cssDist))
         .pipe(browserSync.stream());
