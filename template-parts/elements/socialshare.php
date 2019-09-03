@@ -1,3 +1,39 @@
+<?php 
+
+class sb_share {
+
+    public $sb_share_name;
+    public $sb_share_color;
+    public $sb_share_icon;
+    public $sb_share_url;
+
+    public function __construct($name, $color, $icon, $url) {
+        $this->sb_share_name = $name;
+        $this->sb_share_color = $color;
+        $this->sb_share_icon = $icon;
+        $this->sb_share_url = $url;
+      }
+
+    public function share_button() {
+        echo '<p>This is ' . $this->sb_share_name . ', its brand color is ' . $this->sb_share_color . ', its icon is called ' . $this->sb_share_icon . ' and its URL is ' . $this->sb_share_url . '.';
+    }
+    
+}
+
+$sb_share_facebook = new sb_share(
+    'Facebook',
+    '#3b5998',
+    'facebook-f',
+    'https://www.facebook.com/sharer.php?u=' . get_the_permalink()
+);
+
+$sb_share_facebook->share_button();
+
+// https://stackoverflow.com/a/8612210/10580177
+
+?>
+
+
 <div class="socialshare py-3">
 
     <div class="btn">
