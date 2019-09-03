@@ -203,22 +203,25 @@ function pkg() {
 
 // --- Browser functions ---
 
-function browser_sync() {
-	return browserSync.init({
+function browser_sync(done) {
+	browserSync.init({
         open: false,
         injectChanges: true,
         // server: { baseDir: './dist/' },
         proxy: siteUrl,
         // tunnel: "sbbase",
     });
+    done();
 }
 
-function reload() {
-	return browserSync.reload();
+function reload(done) {
+    browserSync.reload();
+    done();
 }
 
-function clearCache() {
-    return cache.clearAll();
+function clearCache(done) {
+    cache.clearAll();
+    done();
 }
 
 
