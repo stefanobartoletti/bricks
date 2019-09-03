@@ -3,14 +3,19 @@
  * These are defined here to keep gulpfile.js clean.
  */
 
+// --- Browser ---
+
+// Site URL (Browsersync, critical css)
+const siteUrl = 'http://localhost:8080/sbbase';
+exports.siteUrl = siteUrl;
+
+
 // --- CSS ---
 
 // purgecss whitelists
-var purgeWLP = [
+const purgeWLP = [
     /^carousel-item.*/,     // Bootstrap Carousel Animation
     /collapsing/,           // Bootstrap Navbar Animation
-    /^admin-bar/,           // WP admin bar when logged in
-    /^svg$/,                // For styling Font Awesome
 ];
 exports.purgeWLP = purgeWLP;
 
@@ -18,7 +23,7 @@ exports.purgeWLP = purgeWLP;
 // --- Icons ---
 
 // faMinify used icons
-var iconsUsed = {
+const iconsUsed = {
     // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
     fal: [],
     far: [],
@@ -34,9 +39,23 @@ var iconsUsed = {
 };
 exports.iconsUsed = iconsUsed;
 
+// --- Zip package ---
 
-// --- Browser ---
-
-// Browsersync proxy
-var siteUrl = 'opensuse-kde:8080/sbbase';
-exports.siteUrl = siteUrl;
+const pkgSrc = [
+    './**',
+    '!.vscode/**',
+    '!tools/**',
+    '!node_modules/**',
+    '!packages/**',
+    '!src/**',
+    '!vendor/**',
+    '!.browserslistrc',
+    '!.directory',
+    '!.gitignore',
+    '!gulpfile.js',
+    '!README.md',
+    '!*.json',
+    '!*.lock',
+    '!*.todo',
+];
+exports.pkgSrc = pkgSrc;

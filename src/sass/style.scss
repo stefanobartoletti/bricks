@@ -18,6 +18,8 @@
 /* Import partials
 ---------------------------------------------------*/
 
+/* purgecss start ignore */
+
 @import 'common';   // common styles
 @import 'header';   // header & menu styles
 @import 'footer';   // footer styles
@@ -29,6 +31,7 @@
 @import 'comments'; // comments styles
 @import '404';      // page 404 styles
 
+/* purgecss end ignore */
 
 /* Custom classes
 ---------------------------------------------------*/
