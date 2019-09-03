@@ -17,7 +17,7 @@ Project & Tools:
   ☐ gulp-plumber ?
   ☐ gulp-load-plugins ?
   ☐ gulp-changed / gulp-newer ?
-  ☐ gulp-clean-css (after purgecss)
+  ✔ gulp-clean-css (after purgecss) @done(19-09-03 14:27)
 
 
 Design:
@@ -60,6 +60,22 @@ Elements & Functions:
   ☐ Customizer > sanitize inputs
   ☐ Customizer > address multiple fields
   ☐ Customizer > placeholder text
+  ☐ Contact Form 7
+
+Libraries:
+
+  ☐ animate.css
+  ☐ hover.css
+  ☐ aos (animate on scroll)
+  ☐ Slick carousel
+  ☐ fullpage.js
+  ☐ Magnific Popup / fancybox
+  ☐ webfontloader
+  ☐ skrollr
+  ☐ scrollmagic
+  ☐ parallax http://wagerfield.github.io/parallax
+  ☐ pace
+  ☐ odometer
 
 
 Performance & SEO:
