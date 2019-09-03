@@ -29,12 +29,17 @@ const iconsUsed = {
     far: [],
     fas: [ 
         'angle-up',
+        'envelope',
+        'share-alt',
     ],
     fab: [ 
         'facebook-f',
         'linkedin-in',
         'instagram',
         'twitter',
+        'pinterest-p',
+        'get-pocket',
+        'telegram-plane',
     ] 
 };
 exports.iconsUsed = iconsUsed;

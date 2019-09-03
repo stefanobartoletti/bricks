@@ -1,49 +1,30 @@
-// --- margin animation ---
-
-// .socialshare {
-
-//     button{
-
-//         &:focus {
-//             box-shadow: none;
-//         }
-
-//         &:hover span {
-//             margin: 0 1.5rem;
-//         }
-    
-
-//     }
-
-//     span {
-//         margin-left: 0.8rem;
-//         transition: margin 500ms;
-//     }
-
-// }
-
-// --- text animation ---
-
 .socialshare {
-
-    button{
+    
+    .btn {
+        min-width: 3rem;
 
         &:focus {
             box-shadow: none;
         }
 
-        &:hover span {
-            margin-left: 0.8rem;
-            font-size: 1rem;
-            transition: font-size 300ms;
-        }
+        // &:hover span {
+        //     margin: 0 1.1rem;
+        // }
     
 
     }
 
-    span {
-        font-size: 0rem;
-        transition: font-size 150ms;
+    a {
+        color:#fff;
+
+        &:hover {
+            color: #fff;
+        }
     }
+
+    // span {
+    //     margin-left: 0.8rem;
+    //     transition: margin 500ms;
+    // }
 
 }
