@@ -1,15 +1,7 @@
 Project & Tools:
 
-  ✔ Include NPM @done(19-03-15 18:22)
-  ✔ Include Composer @done(19-03-16 17:14)
-  ✔ Include Gulp @done(19-03-15 18:22)
-  ✔ Add gitignore file @done(19-03-05 16:08)
   ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
-  ✔ "del" to clean "dist" old files @done(19-08-31 13:41)
   ☐ pug-php ? https://github.com/pug-php/pug
-  ✔ ttf2woff @done(19-03-18 09:40)
-  ✔ zip package @done(19-03-16 17:14)
-  ✔ npm postinstall script @done(19-03-16 17:14)
   ☐ gulp-htmlmin ?
   ☐ gulp-php-minify ?
   ☐ gulp-preprocess ?
@@ -17,44 +9,28 @@ Project & Tools:
   ☐ gulp-plumber ?
   ☐ gulp-load-plugins ?
   ☐ gulp-changed / gulp-newer ?
-  ✔ gulp-clean-css (after purgecss) @done(19-09-03 14:27)
-
-
+  
 Design:
 
   ☐ sidebar > BS list style
   ☐ comments > BS media style
   ☐ search > BS input style
 
-
 Code:
 
   ☐ Use <?php the_archive_title();?> for index title
   ☐ remove php "?>" closing tags from files
   ☐ Limit comment nesting
-
+  ☐ vanilla js instead of jquery
+  ☐ single place social info > merge socialicons array & socialshare objects
 
 File structure & Templates:
 
-  ✔ Reorganize folder structure @done(19-03-07 16:59)
-    ✔ /src @done(19-03-07 16:58)
-    ✔ /dist @done(19-03-07 16:58)
-    ✔ /template-parts @done(19-03-05 16:55)
-      ✔ /sections @done(19-03-05 16:55)
-      ✔ /elements @done(19-03-05 16:55)
-
+  ☐ template-parts > (templates | components | content | include | layout | plugin)
 
 Elements & Functions:
 
-  ✔ Widgetize Social Icons @done(19-03-05 23:22)
-  ✔ Social icon links from customizer @done(19-08-15 13:59)
-  ✔ Contact info from customizer @done(19-08-15 13:59)
-  ✔ Page header section (W&B) @done(19-03-05 17:20)
-  ✔ functions.php partials @done(19-03-05 17:37)
-  ✔ "back to top" to footer @done(19-08-26 18:47)
   ☐ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs
-  ✔ prev/next in single @done(19-07-04 15:26)
-  ✔ Search filter (see w&b) @done(19-03-05 18:49)
   ☐ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls
   ☐ custom post types & taxonomies ?
   ☐ Customizer > sanitize inputs
@@ -70,36 +46,50 @@ Libraries:
   ☐ Slick carousel
   ☐ fullpage.js
   ☐ Magnific Popup / fancybox
-  ☐ webfontloader
   ☐ skrollr
   ☐ scrollmagic
   ☐ parallax http://wagerfield.github.io/parallax
   ☐ pace
   ☐ odometer
 
-
 Performance & SEO:
 
-  ✔ remove wp-block-library CSS @done(19-08-26 12:24)
-  ✔ remove url query strings @done(19-08-26 12:24)
-  ✔ remove emoji CSS/JS @done(19-08-26 12:24)
   ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
-  ✔ ~uncss?~ purgecss @done(19-08-06 16:22)
   ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
-  ✔ font awesome local JS/SVG & https://www.npmjs.com/package/gulp-fa-minify @done(19-08-28 17:47)
+  ☐ font awesome load from footer
+  ☐ webfontloader
   ☐ webp image format https://www.npmjs.com/package/gulp-webp
   ☐ lazyload https://github.com/aFarkas/lazysizes
   ☐ jquery from CDN into footer ? https://wordpress.stackexchange.com/q/63468/
-
-Security & Fixes:
-
-
-  
-
-
-
-
-
+  ☐ Google Fonts from local ?
 
 Archive:
+  ✔ Include NPM @done(19-03-15 18:22) @project(Project & Tools)
+  ✔ Include Composer @done(19-03-16 17:14) @project(Project & Tools)
+  ✔ Include Gulp @done(19-03-15 18:22) @project(Project & Tools)
+  ✔ Add gitignore file @done(19-03-05 16:08) @project(Project & Tools)
+  ✔ "del" to clean "dist" old files @done(19-08-31 13:41) @project(Project & Tools)
+  ✔ ttf2woff @done(19-03-18 09:40) @project(Project & Tools)
+  ✔ zip package @done(19-03-16 17:14) @project(Project & Tools)
+  ✔ npm postinstall script @done(19-03-16 17:14) @project(Project & Tools)
+  ✔ gulp-clean-css (after purgecss) @done(19-09-03 14:27) @project(Project & Tools)
+  ✔ Reorganize folder structure @done(19-03-07 16:59) @project(File structure & Templates)
+  ✔ /src @done(19-03-07 16:58) @project(File structure & Templates)
+  ✔ /dist @done(19-03-07 16:58) @project(File structure & Templates)
+  ✔ /template-parts @done(19-03-05 16:55) @project(File structure & Templates)
+  ✔ /sections @done(19-03-05 16:55) @project(File structure & Templates)
+  ✔ /elements @done(19-03-05 16:55) @project(File structure & Templates)
+  ✔ Widgetize Social Icons @done(19-03-05 23:22) @project(Elements & Functions)
+  ✔ Social icon links from customizer @done(19-08-15 13:59) @project(Elements & Functions)
+  ✔ Contact info from customizer @done(19-08-15 13:59) @project(Elements & Functions)
+  ✔ Page header section (W&B) @done(19-03-05 17:20) @project(Elements & Functions)
+  ✔ functions.php partials @done(19-03-05 17:37) @project(Elements & Functions)
+  ✔ "back to top" to footer @done(19-08-26 18:47) @project(Elements & Functions)
+  ✔ prev/next in single @done(19-07-04 15:26) @project(Elements & Functions)
+  ✔ Search filter (see w&b) @done(19-03-05 18:49) @project(Elements & Functions)
+  ✔ remove wp-block-library CSS @done(19-08-26 12:24) @project(Performance & SEO)
+  ✔ remove url query strings @done(19-08-26 12:24) @project(Performance & SEO)
+  ✔ remove emoji CSS/JS @done(19-08-26 12:24) @project(Performance & SEO)
+  ✔ ~uncss?~ purgecss @done(19-08-06 16:22) @project(Performance & SEO)
+  ✔ font awesome local JS/SVG & https://www.npmjs.com/package/gulp-fa-minify @done(19-08-28 17:47) @project(Performance & SEO)
   
