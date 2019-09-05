@@ -17,6 +17,7 @@ $shareurl_twitter = 'https://twitter.com/intent/tweet?url='.$url.'&text='.$title
 $shareurl_linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$url.'&title='.$title;
 $shareurl_pinterest = 'https://pinterest.com/pin/create/button/?url='.$url.'&description='.$title.'&media='.$thumbnail;
 $shareurl_pocket = 'https://getpocket.com/edit?url='.$url;
+$shareurl_telegram = 'https://t.me/share/url?url='.$url.'&text='.$title;
 
 
 // --- Social Network Class ---
@@ -45,6 +46,7 @@ $sb_socials[] = new sb_social_network('Twitter', 'fab fa-twitter', $shareurl_twi
 $sb_socials[] = new sb_social_network('LinkedIn', 'fab fa-linkedin-in', $shareurl_linkedin);
 $sb_socials[] = new sb_social_network('Pinterest', 'fab fa-pinterest-p', $shareurl_pinterest);
 $sb_socials[] = new sb_social_network('Pocket', 'fab fa-get-pocket', $shareurl_pocket);
+$sb_socials[] = new sb_social_network('Telegram', 'fab fa-telegram-plane', $shareurl_telegram);
 
 
 // --- Social Buttons HTML ---
