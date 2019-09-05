@@ -27,32 +27,25 @@ class sb_social_network {
         $this->sb_social_name = $sb_social_name;
         $this->sb_social_icon = $sb_social_icon;
         $this->sb_social_shareurl = $sb_social_shareurl;
-      }
-
-    public function share_button() {
-        echo '<p>This is <b>' . $this->sb_social_name . '</b>, its icon is called <b>' . $this->sb_social_icon . '</b> and its URL is <b>' . $this->sb_social_shareurl . '</b>.';
     }
     
 }
 
 // --- Social Networks Objects ---
 
-$sb_social_facebook = new sb_social_network(
-    'facebook',
-    'fab fa-facebook-f',
-    $shareurl_facebook
-);
+// Every single Social Network is an item in the $sb_socials[] array.
+// https://stackoverflow.com/a/8612210
 
-$sb_social_twitter = new sb_social_network(
-    'twitter',
-    'fab fa-twitter',
-    $shareurl_twitter
-);
+$sb_socials[] = new sb_social_network('Facebook', 'fab fa-facebook-f', $shareurl_facebook);
+$sb_socials[] = new sb_social_network('Twitter', 'fab fa-twitter', $shareurl_twitter);
 
-$sb_social_facebook->share_button();
-$sb_social_twitter->share_button();
 
-// https://stackoverflow.com/a/8612210/10580177
+
+foreach ($sb_socials as $sb_social) {
+    echo '<p>This is <b>' . strtolower($sb_social->sb_social_name) . '</b>, its icon is called <b>' . $sb_social->sb_social_icon . '</b> and its URL is <b>' . $sb_social->sb_social_shareurl . '</b>.';
+}
+
+
 
 ?>
 
