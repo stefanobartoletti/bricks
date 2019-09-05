@@ -1,7 +1,9 @@
-.socialshare {
+.share-buttons {
 
-    min-width: 3rem;
     color: #fff;
+    background-color: theme-color("primary");
+    min-width: 3.5rem;
+    transition: min-width 300ms;
 
     &:focus {
         box-shadow: none;
@@ -9,6 +11,7 @@
 
     &:hover {
         color: #fff;
+        min-width: 4.2rem;
     }
 
     // span {
