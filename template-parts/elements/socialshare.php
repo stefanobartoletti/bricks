@@ -13,6 +13,7 @@ $title = rawurlencode(get_the_title());
 
 $shareurl_facebook = 'https://www.facebook.com/shareurl.php?u='.$url;
 $shareurl_twitter = 'https://twitter.com/intent/tweet?url='.$url.'&text='.$title;
+$shareurl_linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$url.'&title='.$title;
 
 
 // --- Social Network Class ---
@@ -38,6 +39,7 @@ class sb_social_network {
 
 $sb_socials[] = new sb_social_network('Facebook', 'fab fa-facebook-f', $shareurl_facebook);
 $sb_socials[] = new sb_social_network('Twitter', 'fab fa-twitter', $shareurl_twitter);
+$sb_socials[] = new sb_social_network('LinkedIn', 'fab fa-linkedin-in', $shareurl_linkedin);
 
 
 // --- Social Buttons HTML ---
@@ -52,7 +54,7 @@ $sb_socials[] = new sb_social_network('Twitter', 'fab fa-twitter', $shareurl_twi
 
     <?php foreach ($sb_socials as $sb_social) { ?>
 
-        <a class="btn socialshare share-<?php echo strtolower($sb_social->sb_social_name) ?>" href="<?php echo $sb_social->sb_social_shareurl ?>" role="button">
+        <a class="btn socialshare share-<?php echo strtolower($sb_social->sb_social_name) ?>" href="<?php echo $sb_social->sb_social_shareurl ?>" role="button" target="_blank">
             <i class="<?php echo $sb_social->sb_social_icon ?>"></i>
         </a>
 
