@@ -7,13 +7,16 @@
 // URL arguments
 
 $url = get_the_permalink();
+$title = rawurlencode(get_the_title());
 
 // Share URLs
 
-$shareurl_facebook = 'https://www.facebook.com/shareurl.php?u=' . $url;
+$shareurl_facebook = 'https://www.facebook.com/shareurl.php?u='.$url;
+$shareurl_twitter = 'https://twitter.com/intent/tweet?url='.$url.'&text='.$title;
 
 
 // --- Social Networks Class ---
+
 class sb_social_network {
 
     public $sb_social_name;
@@ -27,7 +30,7 @@ class sb_social_network {
       }
 
     public function share_button() {
-        echo '<p>This is ' . $this->sb_social_name . ', its icon is called ' . $this->sb_social_icon . ' and its URL is ' . $this->sb_social_shareurl . '.';
+        echo '<p>This is <b>' . $this->sb_social_name . '</b>, its icon is called <b>' . $this->sb_social_icon . '</b> and its URL is <b>' . $this->sb_social_shareurl . '</b>.';
     }
     
 }
@@ -40,7 +43,14 @@ $sb_social_facebook = new sb_social_network(
     $shareurl_facebook
 );
 
+$sb_social_twitter = new sb_social_network(
+    'twitter',
+    'fab fa-twitter',
+    $shareurl_twitter
+);
+
 $sb_social_facebook->share_button();
+$sb_social_twitter->share_button();
 
 // https://stackoverflow.com/a/8612210/10580177
 
