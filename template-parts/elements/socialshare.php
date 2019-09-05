@@ -7,7 +7,7 @@
 // URL arguments
 
 $url = get_the_permalink();
-$title = rawurlencode(get_the_title());
+$title = rawurlencode(get_the_title() . ' - ' . get_bloginfo('name'));
 $thumbnail = get_the_post_thumbnail_url();
 
 // Share URLs
@@ -18,6 +18,7 @@ $shareurl_linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$url
 $shareurl_pinterest = 'https://pinterest.com/pin/create/button/?url='.$url.'&description='.$title.'&media='.$thumbnail;
 $shareurl_pocket = 'https://getpocket.com/edit?url='.$url;
 $shareurl_telegram = 'https://t.me/share/url?url='.$url.'&text='.$title;
+$shareurl_email = 'mailto:?subject='.$title.'&body='.$url;
 
 
 // --- Social Network Class ---
@@ -47,6 +48,7 @@ $sb_socials[] = new sb_social_network('LinkedIn', 'fab fa-linkedin-in', $shareur
 $sb_socials[] = new sb_social_network('Pinterest', 'fab fa-pinterest-p', $shareurl_pinterest);
 $sb_socials[] = new sb_social_network('Pocket', 'fab fa-get-pocket', $shareurl_pocket);
 $sb_socials[] = new sb_social_network('Telegram', 'fab fa-telegram-plane', $shareurl_telegram);
+$sb_socials[] = new sb_social_network('Email', 'fas fa-envelope', $shareurl_email);
 
 
 // --- Social Buttons HTML ---
