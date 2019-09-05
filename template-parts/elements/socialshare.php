@@ -16,6 +16,7 @@ $shareurl_facebook = 'https://www.facebook.com/shareurl.php?u='.$url;
 $shareurl_twitter = 'https://twitter.com/intent/tweet?url='.$url.'&text='.$title;
 $shareurl_linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$url.'&title='.$title;
 $shareurl_pinterest = 'https://pinterest.com/pin/create/button/?url='.$url.'&description='.$title.'&media='.$thumbnail;
+$shareurl_pocket = 'https://getpocket.com/edit?url='.$url;
 
 
 // --- Social Network Class ---
@@ -43,6 +44,7 @@ $sb_socials[] = new sb_social_network('Facebook', 'fab fa-facebook-f', $shareurl
 $sb_socials[] = new sb_social_network('Twitter', 'fab fa-twitter', $shareurl_twitter);
 $sb_socials[] = new sb_social_network('LinkedIn', 'fab fa-linkedin-in', $shareurl_linkedin);
 $sb_socials[] = new sb_social_network('Pinterest', 'fab fa-pinterest-p', $shareurl_pinterest);
+$sb_socials[] = new sb_social_network('Pocket', 'fab fa-get-pocket', $shareurl_pocket);
 
 
 // --- Social Buttons HTML ---
