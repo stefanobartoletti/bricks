@@ -32,7 +32,7 @@ Code:
   ☐ Use <?php the_archive_title();?> for index title
   ☐ remove php "?>" closing tags from files
   ☐ Limit comment nesting
-
+  ☐ single place social info > merge socialicons array & socialshare objects
 
 File structure & Templates:
 
