@@ -8,12 +8,14 @@
 
 $url = get_the_permalink();
 $title = rawurlencode(get_the_title());
+$thumbnail = get_the_post_thumbnail_url();
 
 // Share URLs
 
 $shareurl_facebook = 'https://www.facebook.com/shareurl.php?u='.$url;
 $shareurl_twitter = 'https://twitter.com/intent/tweet?url='.$url.'&text='.$title;
 $shareurl_linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$url.'&title='.$title;
+$shareurl_pinterest = 'https://pinterest.com/pin/create/button/?url='.$url.'&description='.$title.'&media='.$thumbnail;
 
 
 // --- Social Network Class ---
@@ -40,6 +42,7 @@ class sb_social_network {
 $sb_socials[] = new sb_social_network('Facebook', 'fab fa-facebook-f', $shareurl_facebook);
 $sb_socials[] = new sb_social_network('Twitter', 'fab fa-twitter', $shareurl_twitter);
 $sb_socials[] = new sb_social_network('LinkedIn', 'fab fa-linkedin-in', $shareurl_linkedin);
+$sb_socials[] = new sb_social_network('Pinterest', 'fab fa-pinterest-p', $shareurl_pinterest);
 
 
 // --- Social Buttons HTML ---
