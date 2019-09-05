@@ -1,0 +1,62 @@
+.share-buttons {
+
+    color: #fff;
+    background-color: theme-color("primary");
+    min-width: 3.5rem;
+    transition: min-width 300ms;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:hover {
+        color: #fff;
+        min-width: 4.2rem;
+    }
+
+    // span {
+    //     margin-left: 0.8rem;
+    //     transition: margin 500ms;
+    // }
+
+    // &:hover span {
+    //     margin: 0 1.1rem;
+    // }
+
+}
+
+$facebook-color: #3b5998;
+$twitter-color: #1da1f2;
+$linkedin-color: #0077b5;
+$pinterest-color: #bd081c;
+$pocket-color: #ef4056;
+$telegram-color: #0088cc;
+$email-color: #777777;
+
+.share-facebook {
+    background-color: $facebook-color;
+}
+
+.share-twitter {
+    background-color: $twitter-color;
+}
+
+.share-linkedin {
+    background-color: $linkedin-color;
+}
+
+.share-pinterest {
+    background-color: $pinterest-color;
+}
+
+.share-pocket {
+    background-color: $pocket-color;
+}
+
+.share-telegram {
+    background-color: $telegram-color;
+}
+
+.share-email {
+    background-color: $email-color;
+}

@@ -30,6 +30,8 @@
 
                 </article>
 
+                <?php get_template_part( 'template-parts/elements/socialshare', '' ); ?>
+
                 <nav>
                     <?php previous_post_link(); ?> | <?php next_post_link(); ?>
                 </nav>
