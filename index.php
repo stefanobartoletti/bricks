@@ -12,15 +12,9 @@
 
             <div class="index-wrap col">
 
-                <!-- TODO add title for date and author -->
+                <?php if ( ! is_home() ) { ?>
 
-                <?php if ( is_category() || is_tag() ) { ?>
-
-                    <h1><?php single_cat_title() ?></h1>
-
-                <?php } else if ( is_search() ) { ?>
-
-                    <h1><?php esc_html_e( 'Results for: ', 'sb-base-theme' ); ?><?php echo $s; ?></h1>
+                    <h1><?php the_archive_title(); ?></h1>
 
                 <?php } else { ?>
 
