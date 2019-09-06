@@ -64,7 +64,6 @@ Performance & SEO:
   ☐ ---
   ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
   ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
-  ☐ font awesome load from footer
   ☐ webfontloader
   ☐ webp image format https://www.npmjs.com/package/gulp-webp
   ☐ lazyload https://github.com/aFarkas/lazysizes
@@ -76,6 +75,7 @@ Security & Fixes:
   ☐ ---
 
 Archive:
+  ✔ font awesome load from footer @done(19-09-06 17:44) @project(Performance & SEO)
   ✔ Include NPM @done(19-03-15 18:22) @project(Project & Tools)
   ✔ Include Composer @done(19-03-16 17:14) @project(Project & Tools)
   ✔ Include Gulp @done(19-03-15 18:22) @project(Project & Tools)
