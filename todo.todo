@@ -1,5 +1,6 @@
 Project & Tools:
 
+  ☐ ---
   ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
   ☐ pug-php ? https://github.com/pug-php/pug
   ☐ gulp-htmlmin ?
@@ -9,15 +10,18 @@ Project & Tools:
   ☐ gulp-plumber ?
   ☐ gulp-load-plugins ?
   ☐ gulp-changed / gulp-newer ?
+  ☐ gulpfile.js directory
   
 Design:
 
+  ☐ ---
   ☐ sidebar > BS list style
   ☐ comments > BS media style
   ☐ search > BS input style
 
 Code:
 
+  ☐ ---
   ☐ Use <?php the_archive_title();?> for index title
   ☐ remove php "?>" closing tags from files
   ☐ Limit comment nesting
@@ -26,10 +30,12 @@ Code:
 
 File structure & Templates:
 
+  ☐ ---
   ☐ template-parts > (templates | components | content | include | layout | plugin)
 
 Elements & Functions:
 
+  ☐ ---
   ☐ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs
   ☐ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls
   ☐ custom post types & taxonomies ?
@@ -40,6 +46,7 @@ Elements & Functions:
 
 Libraries:
 
+  ☐ ---
   ☐ animate.css
   ☐ hover.css
   ☐ aos (animate on scroll)
@@ -54,6 +61,7 @@ Libraries:
 
 Performance & SEO:
 
+  ☐ ---
   ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
   ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
   ☐ font awesome load from footer
@@ -62,6 +70,10 @@ Performance & SEO:
   ☐ lazyload https://github.com/aFarkas/lazysizes
   ☐ jquery from CDN into footer ? https://wordpress.stackexchange.com/q/63468/
   ☐ Google Fonts from local ?
+
+Security & Fixes:
+
+  ☐ ---
 
 Archive:
   ✔ Include NPM @done(19-03-15 18:22) @project(Project & Tools)

@@ -1,8 +1,12 @@
 Before:
     
+  ☐ update style.css
+  ☐ update screenshot.png
   ☐ update textdomain
+  ☐ setup from functions
 
 
 After:
 
+  ☐ report from theme check plugin
   ☐ remove unused template files
