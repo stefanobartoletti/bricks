@@ -16,7 +16,7 @@ devDependencies:
   gulp-sass: 4.0.2
   gulp-sourcemaps: 2.6.5
   gulp-ttf2woff: 1.1.1
-  gulp-ttf2woff2: 2.0.2
+  gulp-ttf2woff2: 3.0.0
   gulp-uglify: 3.0.2
   gulp-zip: 5.0.0_gulp@4.0.2
 lockfileVersion: 5.1
@@ -843,6 +843,14 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha512-HaJnVuslRF4g2kSDeyl++AaVizoitCpL9PglzCYwy0uHHyvWerfvEb8jWmYbF1z4kiVFolGomnxSGl+GUQp2jg==
+  /bufferstreams/2.0.1:
+    dependencies:
+      readable-stream: 2.3.6
+    dev: true
+    engines:
+      node: '>=6.9.5'
+    resolution:
+      integrity: sha512-ZswyIoBfFb3cVDsnZLLj2IDJ/0ppYdil/v2EGlZXvoefO689FokEmFEldhN5dV7R2QBxFneqTJOMIpfqhj+n0g==
   /bytes/3.1.0:
     dev: true
     engines:
@@ -982,6 +990,10 @@ packages:
       fsevents: 1.2.9
     resolution:
       integrity: sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==
+  /chownr/1.1.2:
+    dev: true
+    resolution:
+      integrity: sha512-GkfeAQh+QNy3wquu9oIZr6SS5x7wGdSgNQvD10X3r+AZr1Oys22HW8kAmDMvNg2+Dm0TeGaEuO8gFwdBXxwO8A==
   /class-utils/0.3.6:
     dependencies:
       arr-union: 3.1.0
@@ -2375,6 +2387,12 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+  /fs-minipass/1.2.6:
+    dependencies:
+      minipass: 2.5.0
+    dev: true
+    resolution:
+      integrity: sha512-crhvyXcMejjv3Z5d2Fa9sf5xLYVCF5O1c71QxbVnbLsmYMBEvDAftewesN/HhY03YRoA7zOMxjNGrF5svGaaeQ==
   /fs-mkdirp-stream/1.0.0:
     dependencies:
       graceful-fs: 4.2.2
@@ -2871,17 +2889,19 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha1-4iym5xvZrRBXUWRPixx+O+Owhqw=
-  /gulp-ttf2woff2/2.0.2:
+  /gulp-ttf2woff2/3.0.0:
     dependencies:
       bufferstreams: 1.1.3
-      gulp-util: 3.0.8
+      plugin-error: 1.0.1
       readable-stream: 2.3.6
-      ttf2woff2: 2.0.3
+      replace-ext: 1.0.0
+      ttf2woff2: 3.0.0
+      vinyl: 2.2.0
     dev: true
     engines:
       node: '>= 4'
     resolution:
-      integrity: sha1-8QGxUg8jaqZ2fsRb9HVByxWe6zI=
+      integrity: sha512-6z8cDWHD/BVyVfzX1uOja7tpVdYhms4NRJasNqtpYtHYRZ+dbt+k97OZBDkZOEvk/57em9Fy6fiOL9XKRHGpeQ==
   /gulp-uglify/3.0.2:
     dependencies:
       array-each: 1.0.1
@@ -4224,6 +4244,19 @@ packages:
     dev: true
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
+  /minipass/2.5.0:
+    dependencies:
+      safe-buffer: 5.2.0
+      yallist: 3.0.3
+    dev: true
+    resolution:
+      integrity: sha512-9FwMVYhn6ERvMR8XFdOavRz4QK/VJV8elU1x50vYexf9lslDcWe/f4HBRxCPd185ekRSjU6CfYyJCECa/CQy7Q==
+  /minizlib/1.2.1:
+    dependencies:
+      minipass: 2.5.0
+    dev: true
+    resolution:
+      integrity: sha512-7+4oTUOWKg7AuL3vloEWekXY2/D20cevzsrNT2kGWm+39J9hGTCBv8VI5Pm5lXZ/o3/mdR4f8rflAPhnQb8mPA==
   /mitt/1.1.3:
     dev: true
     resolution:
@@ -4321,6 +4354,25 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-3g8lYefrRRzvGeSowdJKAKyks8oUpLEd/DyPV4eMhVlhJ0aNaZqIrNUIPuEWWTAoPqyFkfGrM67MC69baqn6vA==
+  /node-gyp/4.0.0:
+    dependencies:
+      glob: 7.1.4
+      graceful-fs: 4.2.2
+      mkdirp: 0.5.1
+      nopt: 3.0.6
+      npmlog: 4.1.2
+      osenv: 0.1.5
+      request: 2.88.0
+      rimraf: 2.7.1
+      semver: 5.3.0
+      tar: 4.4.10
+      which: 1.3.1
+    dev: true
+    engines:
+      node: '>= 4.0.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-2XiryJ8sICNo6ej8d0idXDEMKfVfFK7kekGCtJAuelGsYHQxhj13KTf95swTCN2dZ/4lTfZ84Fu31jqJEEgjWA==
   /node-releases/1.1.29:
     dependencies:
       semver: 5.7.1
@@ -6133,6 +6185,20 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FCEhQ/4rE1zYv9rYXJw/msRqsnmlje5jHP6huWeBZ704jUTy02c5AZyWujpMR1ax6mVw9NyJMfuK2CMDWVIfgA==
+  /tar/4.4.10:
+    dependencies:
+      chownr: 1.1.2
+      fs-minipass: 1.2.6
+      minipass: 2.5.0
+      minizlib: 1.2.1
+      mkdirp: 0.5.1
+      safe-buffer: 5.2.0
+      yallist: 3.0.3
+    dev: true
+    engines:
+      node: '>=4.5'
+    resolution:
+      integrity: sha512-g2SVs5QIxvo6OLp0GudTqEf05maawKUxXru104iaayWA09551tFCTI8f1Asb4lPfkBr91k07iL4c11XO3/b0tA==
   /temp-dir/1.0.0:
     dev: true
     engines:
@@ -6331,19 +6397,19 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-hxgyJAAksJ25VwkEx8GSi4BXyWk=
-  /ttf2woff2/2.0.3:
+  /ttf2woff2/3.0.0:
     dependencies:
       bindings: 1.5.0
-      bufferstreams: 1.1.3
+      bufferstreams: 2.0.1
       nan: 2.14.0
-      node-gyp: 3.8.0
+      node-gyp: 4.0.0
     dev: true
     engines:
-      node: '>=0.12'
+      node: '>= 4.0.0'
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha1-XgIK/m5kMofzrXaHq+0g/mVOsyk=
+      integrity: sha512-5/Web6B0lF/STNAQ0d5vAlRRquuWsNj8wOmKQ9ql9Bsgbx8MsLnNzaBG9vBcSE4s4Ry1QOr/MyUrDUIVgVPEfw==
   /tunnel-agent/0.6.0:
     dependencies:
       safe-buffer: 5.2.0
@@ -6721,6 +6787,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
+  /yallist/3.0.3:
+    dev: true
+    resolution:
+      integrity: sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==
   /yargs-parser/13.1.1:
     dependencies:
       camelcase: 5.3.1
@@ -6847,6 +6917,6 @@ specifiers:
   gulp-sass: ^4.0.2
   gulp-sourcemaps: ^2.6.5
   gulp-ttf2woff: ^1.1.1
-  gulp-ttf2woff2: ^2.0.2
+  gulp-ttf2woff2: ^3.0.0
   gulp-uglify: ^3.0.2
   gulp-zip: ^5.0.0
