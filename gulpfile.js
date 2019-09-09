@@ -68,7 +68,7 @@ const phpWatch = [
 ];
 
 // Images
-const imgSrc = './src/img/**/*.{png,jpg,gif,svg)}';
+const imgSrc = './src/img/**/*.{png,jpg,gif,svg}';
 const imgDist = './dist/img/';
 const imgWatch = [ imgSrc ];
 

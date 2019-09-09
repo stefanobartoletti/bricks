@@ -62,5 +62,6 @@ const pkgSrc = [
     '!*.json',
     '!*.lock',
     '!*.todo',
+    '!pnpm-lock.yaml',
 ];
 exports.pkgSrc = pkgSrc;
