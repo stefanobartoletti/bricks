@@ -16,7 +16,7 @@
 
 <button class="btn btn-primary backtotop hidden" type="button"><i class="fas fa-angle-up"></i></button>
 
-<?php wp_footer() ?>
+<?php wp_footer(); ?>
 
 </div> <!-- #page .site -->
 

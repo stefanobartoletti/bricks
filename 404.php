@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
 <!-- main content wrapper -->
 
@@ -26,4 +26,4 @@
 
 </main>
 
-<?php get_footer() ?>
+<?php get_footer();

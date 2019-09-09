@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
 <!-- main content wrapper -->
 
@@ -40,7 +40,7 @@
             
             </div>
 
-            <?php get_sidebar() ?>
+            <?php get_sidebar(); ?>
 
         </div>
 
@@ -50,4 +50,4 @@
 
 </main>
 
-<?php get_footer() ?>
+<?php get_footer();

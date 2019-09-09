@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
 <main class="content-wrap">
 
@@ -46,4 +46,4 @@
  
 </main>
 
-<?php get_footer() ?>
+<?php get_footer();

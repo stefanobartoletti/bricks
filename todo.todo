@@ -22,7 +22,6 @@ Design:
 Code:
 
   ☐ ---
-  ☐ remove php "?>" closing tags from files
   ☐ Limit comment nesting
   ☐ vanilla js instead of jquery
   ☐ single place social info > merge socialicons array & socialshare objects
@@ -74,6 +73,7 @@ Security & Fixes:
   ☐ ---
 
 Archive:
+  ✔ remove php "?>" closing tags from files @done(19-09-09 11:38) @project(Code)
   ✔ Use <?php the_archive_title();?> for index title @done(19-09-06 17:51) @project(Code)
   ✔ font awesome load from footer @done(19-09-06 17:44) @project(Performance & SEO)
   ✔ Include NPM @done(19-03-15 18:22) @project(Project & Tools)
