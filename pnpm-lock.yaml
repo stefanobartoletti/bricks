@@ -10,7 +10,7 @@ devDependencies:
   gulp-clean-css: 4.2.0
   gulp-fa-minify: 1.2.2
   gulp-if: 3.0.0
-  gulp-imagemin: 5.0.3_gulp@4.0.2
+  gulp-imagemin: 6.1.0_gulp@4.0.2
   gulp-purgecss: 1.2.0
   gulp-rename: 1.4.0
   gulp-sass: 4.0.2
@@ -54,15 +54,6 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha1-iQrnxdjId/bThIYCFazp1+yUW9o=
-  /@mrmlnc/readdir-enhanced/2.2.1:
-    dependencies:
-      call-me-maybe: 1.0.1
-      glob-to-regexp: 0.3.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-bPHp6Ji8b41szTOcaP63VlnbbO5Ny6dwAATtY6JTjh5N2OLrb5Qk/Th5cRkRQhkWCt+EJsYrNB0MiL+Gpn6e3g==
   /@nodelib/fs.scandir/2.1.2:
     dependencies:
       '@nodelib/fs.stat': 2.0.2
@@ -72,12 +63,6 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-wrIBsjA5pl13f0RN4Zx4FNWmU71lv03meGKnqRUoCyan17s4V3WL92f3w3AIuWbNnpcrQyFBU5qMavJoB8d27w==
-  /@nodelib/fs.stat/1.1.3:
-    dev: true
-    engines:
-      node: '>= 6'
-    resolution:
-      integrity: sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
   /@nodelib/fs.stat/2.0.2:
     dev: true
     engines:
@@ -362,14 +347,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-ihLeJkonmdiAsD7vpgN3CRcx2J2S0TiYW+IS/5zHBI7mKUq3ySvBdzzBfD236ubDBQFiiyG3SWCPc+msQ9KoYg==
-  /array-union/1.0.2:
-    dependencies:
-      array-uniq: 1.0.3
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-mjRBDk9OPaI96jdb5b5w8kd47Dk=
   /array-union/2.1.0:
     dev: true
     engines:
@@ -399,12 +376,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-wGUIVQXuehL5TCqQun8OW81jGzAWycqzFF8lFp+GOM5BXLYj3bKNsYC4daB7n6XjCqxQA/qgTJ+8ANR3acjrog==
-  /arrify/1.0.1:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
   /asn1/0.2.4:
     dependencies:
       safer-buffer: 2.1.2
@@ -895,10 +866,6 @@ packages:
     optional: true
     resolution:
       integrity: sha1-DYCIAbY0KtM8kd+dC0TcCbkeXD0=
-  /call-me-maybe/1.0.1:
-    dev: true
-    resolution:
-      integrity: sha1-JtII6onje1y95gJQoV8DHBak1ms=
   /callsite/1.0.0:
     dev: true
     resolution:
@@ -1594,15 +1561,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-p2o+0YVb56ASu4rBbLgPPADcKPA=
-  /dir-glob/2.0.0:
-    dependencies:
-      arrify: 1.0.1
-      path-type: 3.0.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-37qirFDz8cA5fimp9feo43fSuRo2gHwaIn6dXL8Ber1dGwUosDrGZeCCXq57WnIqE4aQ+u3eQZzsk1yOzhdwag==
   /dir-glob/3.0.1:
     dependencies:
       path-type: 4.0.0
@@ -2079,19 +2037,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
-  /fast-glob/2.2.7:
-    dependencies:
-      '@mrmlnc/readdir-enhanced': 2.2.1
-      '@nodelib/fs.stat': 1.1.3
-      glob-parent: 3.1.0
-      is-glob: 4.0.1
-      merge2: 1.2.4
-      micromatch: 3.1.10
-    dev: true
-    engines:
-      node: '>=4.0.0'
-    resolution:
-      integrity: sha512-g1KuQwHOZAmOZMuBtHdxDtju+T2RT8jgCC9aANsbpdiDDTSnjgfuVsIBNKbUeJI3oKMRExcfNDtJl4OhbffMsw==
   /fast-glob/3.0.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.2
@@ -2136,8 +2081,15 @@ packages:
     dev: true
     engines:
       node: '>=6'
+    optional: true
     resolution:
       integrity: sha512-uzk64HRpUZyTGZtVuvrjP0FYxzQrBf4rojot6J65YMEbwBLB0CWm0CLojVpwpmFmxcE/lkvYICgfcGozbBq6rw==
+  /file-type/12.3.0:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-4E4Esq9KLwjYCY32E7qSmd0h7LefcniZHX+XcdJ4Wfx1uGJX7QCigiqw/U0yT7WOslm28yhxl87DJ0wHYv0RAA==
   /file-type/3.9.0:
     dev: true
     engines:
@@ -2571,10 +2523,6 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha1-cEXJlBOz65SIjYOrRtC0BMx73eQ=
-  /glob-to-regexp/0.3.0:
-    dev: true
-    resolution:
-      integrity: sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
   /glob-watcher/5.0.3:
     dependencies:
       anymatch: 2.0.0
@@ -2636,20 +2584,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-sSs4inE1FB2YQiymcmTv6NWENryABjUNPeWhOvmn4SjtKybglsyPZxFB3U1/+L1bYi0rNZDqCLlHyLYDl1Pq5A==
-  /globby/8.0.2:
-    dependencies:
-      array-union: 1.0.2
-      dir-glob: 2.0.0
-      fast-glob: 2.2.7
-      glob: 7.1.4
-      ignore: 3.3.10
-      pify: 3.0.0
-      slash: 1.0.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-yTzMmKygLp8RUpG1Ymu2VXPSJQZjNAZPD4ywgYEaG7e4tBJeUQBO8OpXrf1RCNcEs5alsoJYPAMiIHP0cmeC7w==
   /globule/1.2.1:
     dependencies:
       glob: 7.1.4
@@ -2802,28 +2736,28 @@ packages:
     dev: true
     resolution:
       integrity: sha512-fCUEngzNiEZEK2YuPm+sdMpO6ukb8+/qzbGfJBXyNOXz85bCG7yBI+pPSl+N90d7gnLvMsarthsAImx0qy7BAw==
-  /gulp-imagemin/5.0.3_gulp@4.0.2:
+  /gulp-imagemin/6.1.0_gulp@4.0.2:
     dependencies:
       chalk: 2.4.2
       fancy-log: 1.3.3
       gulp: 4.0.2
-      imagemin: 6.1.0
+      imagemin: 7.0.0
       plugin-error: 1.0.1
       plur: 3.1.1
       pretty-bytes: 5.3.0
       through2-concurrent: 2.0.0
     dev: true
     engines:
-      node: '>=6'
+      node: '>=8'
     optionalDependencies:
       imagemin-gifsicle: 6.0.1
       imagemin-jpegtran: 6.0.0
-      imagemin-optipng: 6.0.0
+      imagemin-optipng: 7.0.0
       imagemin-svgo: 7.0.0
     peerDependencies:
       gulp: '>=4'
     resolution:
-      integrity: sha512-bKJMix4r6EQPVV2u8sUglw6Rn0PSp6i70pSK2ECN7j0dRy0w/Lz5SBbynY3MfGBZ0cTMZlaUq+6LyKlZgP74Ew==
+      integrity: sha512-0TPkak5BsiRfw+kfcKwIcODbOHHcTyvBM9arlRSwXdUVzrGAcq/7urZoOQD5n4uWvKhjg+l9/yn1GDZsDuWUow==
   /gulp-match/1.1.0:
     dependencies:
       minimatch: 3.0.4
@@ -3169,10 +3103,6 @@ packages:
     optional: true
     resolution:
       integrity: sha512-4vf7I2LYV/HaWerSo3XmlMkp5eZ83i+/CDluXi/IGTs/O1sejBNhTtnxzmRZfvOUqj7lZjqHkeTvpgSFDlWZTg==
-  /ignore/3.3.10:
-    dev: true
-    resolution:
-      integrity: sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug==
   /ignore/5.1.4:
     dev: true
     engines:
@@ -3201,17 +3131,17 @@ packages:
     optional: true
     resolution:
       integrity: sha512-Ih+NgThzqYfEWv9t58EItncaaXIHR0u9RuhKa8CtVBlMBvY0dCIxgQJQCfwImA4AV1PMfmUKlkyIHJjb7V4z1g==
-  /imagemin-optipng/6.0.0:
+  /imagemin-optipng/7.0.0:
     dependencies:
       exec-buffer: 3.2.0
-      is-png: 1.1.0
-      optipng-bin: 5.1.0
+      is-png: 2.0.0
+      optipng-bin: 6.0.0
     dev: true
     engines:
-      node: '>=6'
+      node: '>=8'
     optional: true
     resolution:
-      integrity: sha512-FoD2sMXvmoNm/zKPOWdhKpWdFdF9qiJmKC17MxZJPH42VMAp17/QENI/lIuP7LCUnLVAloO3AUoTSNzfhpyd8A==
+      integrity: sha512-N40bmLgiyv5H8xFp/RYmWKdg6Z19MGqzcNW+IWXG7VPrLV75NbcOn8y6A7eZcSHOCNW+DqBx+b95yw+Tf6Sl/g==
   /imagemin-svgo/7.0.0:
     dependencies:
       is-svg: 3.0.0
@@ -3222,19 +3152,19 @@ packages:
     optional: true
     resolution:
       integrity: sha512-+iGJFaPIMx8TjFW6zN+EkOhlqcemdL7F3N3Y0wODvV2kCUBuUtZK7DRZc1+Zfu4U2W/lTMUyx2G8YMOrZntIWg==
-  /imagemin/6.1.0:
+  /imagemin/7.0.0:
     dependencies:
-      file-type: 10.11.0
-      globby: 8.0.2
-      make-dir: 1.3.0
-      p-pipe: 1.2.0
-      pify: 4.0.1
+      file-type: 12.3.0
+      globby: 10.0.1
+      junk: 3.1.0
+      make-dir: 3.0.0
+      p-pipe: 3.0.0
       replace-ext: 1.0.0
     dev: true
     engines:
-      node: '>=6'
+      node: '>=8'
     resolution:
-      integrity: sha512-8ryJBL1CN5uSHpiBMX0rJw79C9F9aJqMnjGnrd/1CafegpNuA81RBAAru/jQQEOWlOJJlpRnlcVFF6wq+Ist0A==
+      integrity: sha512-TXvCSSIYl4KQUASur9S0+E4olVECzvxvZABU9rNqsza7vzIrUQMRTjyczGf8OmtcgvZ9jOYyinXW3epOpd/04A==
   /immutable/3.8.2:
     dev: true
     engines:
@@ -3562,13 +3492,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==
-  /is-png/1.1.0:
+  /is-png/2.0.0:
     dev: true
     engines:
-      node: '>=0.10.0'
+      node: '>=8'
     optional: true
     resolution:
-      integrity: sha1-1XSxK/J1wDUEVVcLDltXqwYgd84=
+      integrity: sha512-4KPGizaVGj2LK7xwJIz8o5B2ubu1D/vcQsgOGFEDlpcvgZHto4gBnyd0ig7Ws+67ixmwKoNmu0hYnpo6AaKb5g==
   /is-promise/2.1.0:
     dev: true
     resolution:
@@ -3774,6 +3704,12 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-MT5mvB5cwG5Di8G3SZwuXFastqI=
+  /junk/3.1.0:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
   /just-debounce/1.0.0:
     dev: true
     resolution:
@@ -4063,8 +3999,17 @@ packages:
     dev: true
     engines:
       node: '>=4'
+    optional: true
     resolution:
       integrity: sha512-2w31R7SJtieJJnQtGc7RVL2StM2vGYVfqUOvUDxH6bC6aJTxPxTF0GnIgCyu7tjockiUWAYQRbxa7vKn34s5sQ==
+  /make-dir/3.0.0:
+    dependencies:
+      semver: 6.3.0
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-grNJDhb8b1Jm1qeqW5R/O63wUo4UXo2v2HMic6YT9i/HBlF93S8jkMgH7yugvY9ABDShH4VZMn8I+U8+fCNegw==
   /make-error-cause/1.2.2:
     dependencies:
       make-error: 1.3.5
@@ -4656,19 +4601,19 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-bYJHo/LOmoTd+pfiYhfZDnf9zekVJrY+cnS2a5F2x+w5ppvTqObojTP7WiFG+kVZs9Inw+qQ/lw7TroWwhdd2g==
-  /optipng-bin/5.1.0:
+  /optipng-bin/6.0.0:
     dependencies:
       bin-build: 3.0.0
       bin-wrapper: 4.1.0
       logalot: 2.1.0
     dev: true
     engines:
-      node: '>=6'
+      node: '>=8'
     hasBin: true
     optional: true
     requiresBuild: true
     resolution:
-      integrity: sha512-9baoqZTNNmXQjq/PQTWEXbVV3AMO2sI/GaaqZJZ8SExfAzjijeAP7FEeT+TtyumSw7gr0PZtSUYB/Ke7iHQVKA==
+      integrity: sha512-95bB4y8IaTsa/8x6QH4bLUuyvyOoGBCLDA7wOgDL8UFqJpSUh1Hob8JRJhit+wC1ZLN3tQ7mFt7KuBj0x8F2Wg==
   /ordered-read-streams/1.0.1:
     dependencies:
       readable-stream: 2.3.6
@@ -4790,12 +4735,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-d3qXVTF/s+W+CdJ5A29wywV2n8CQQYahlgz2bFiA+4eVNJbHJodPZ+/gXwPGh0bOqA+j8S+6+ckmvLGPk1QpxQ==
-  /p-pipe/1.2.0:
+  /p-pipe/3.0.0:
     dev: true
     engines:
-      node: '>=4'
+      node: '>=8'
     resolution:
-      integrity: sha1-SxoROZoRUgpneQ7loMHViB1r7+k=
+      integrity: sha512-gwwdRFmaxsT3IU+Tl3vYKVRdjfhg8Bbdjw7B+E0y6F7Yz6l+eaQLn0BRmGMXIhcPDONPtOkMoNwx1etZh4zPJA==
   /p-reduce/1.0.0:
     dev: true
     engines:
@@ -4944,14 +4889,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-WcRPfuSR2nBNpBXaWkBwuk+P5EE=
-  /path-type/3.0.0:
-    dependencies:
-      pify: 3.0.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-T2ZUsdZFHgA3u4e5PfPbjd7HDDpxPnQb5jN0SrDsjNSuVXHJqtwTnWqG0B1jZrgmJ/7lj1EmVIByWt1gxGkWvg==
   /path-type/4.0.0:
     dev: true
     engines:
@@ -4983,12 +4920,14 @@ packages:
     dev: true
     engines:
       node: '>=4'
+    optional: true
     resolution:
       integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
   /pify/4.0.1:
     dev: true
     engines:
       node: '>=6'
+    optional: true
     resolution:
       integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
   /pinkie-promise/2.0.1:
@@ -5568,6 +5507,11 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
+  /semver/6.3.0:
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
   /send/0.16.2:
     dependencies:
       debug: 2.6.9
@@ -5660,12 +5604,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
-  /slash/1.0.0:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=
   /slash/3.0.0:
     dev: true
     engines:
@@ -6911,7 +6849,7 @@ specifiers:
   gulp-clean-css: ^4.2.0
   gulp-fa-minify: ^1.2.2
   gulp-if: ^3.0.0
-  gulp-imagemin: ^5.0.3
+  gulp-imagemin: ^6.1.0
   gulp-purgecss: ^1.2.0
   gulp-rename: ^1.4.0
   gulp-sass: ^4.0.2
