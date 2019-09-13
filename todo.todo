@@ -35,7 +35,6 @@ Elements & Functions:
 
   ☐ ---
   ☐ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs
-  ☐ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls
   ☐ custom post types & taxonomies ?
   ☐ Customizer > sanitize inputs
   ☐ Customizer > address multiple fields
@@ -67,12 +66,14 @@ Performance & SEO:
   ☐ lazyload https://github.com/aFarkas/lazysizes
   ☐ resposive images with srcset
   ☐ Google Fonts from local ?
+  ☐ <head><link> preload/prefetch hero background images
 
 Security & Fixes:
 
   ☐ ---
 
 Archive:
+  ✔ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls @done(19-09-14 10:49) @project(Elements & Functions)
   ✔ jquery from CDN into footer ? https://wordpress.stackexchange.com/q/63468/ @done(19-09-13 16:46) @project(Performance & SEO)
   ✔ remove php "?>" closing tags from files @done(19-09-09 11:38) @project(Code)
   ✔ Use <?php the_archive_title();?> for index title @done(19-09-06 17:51) @project(Code)
