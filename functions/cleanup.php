@@ -40,6 +40,14 @@ if(! function_exists('sb_cleanup_init')) {
         remove_action('wp_head', 'wp_oembed_add_discovery_links');
         remove_action('wp_head', 'wp_oembed_add_host_js');
         add_filter('rewrite_rules_array', 'disable_embeds_rewrites');
+        function disable_embeds_rewrites( $rules ) {
+            foreach ( $rules as $rule => $rewrite ) {
+                if ( false !== strpos( $rewrite, 'embed=true' ) ) {
+                    unset( $rules[ $rule ] );
+                }
+            }
+            return $rules;
+        }
 
         // Disable Emojis // https://wordpress.stackexchange.com/q/185577/
         remove_action('admin_print_styles', 'print_emoji_styles');
