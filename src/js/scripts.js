@@ -14,13 +14,6 @@ $(document).scroll(function(){
     }
 });
 
-/* Blog index page
----------------------------------------------------*/
-
-// BS nav class to post pagination
-
-$('.index-post-pager .page-numbers').addClass('nav-link');
-
 
 /* Comments template
 ---------------------------------------------------*/
@@ -52,3 +45,12 @@ $(document).scroll(function(){
 
     
 })(jQuery);
+
+// --- Vanilla JS ---
+
+// BS nav class to post pagination
+
+const pager = document.querySelectorAll('.index-post-pager .page-numbers');
+pager.forEach(function(item) {
+    item.classList.add('nav-link');
+});
