@@ -15,14 +15,6 @@ $(document).scroll(function(){
 });
 
 
-/* Comments template
----------------------------------------------------*/
-
-// Comment form textarea remove cols
-
-$(".comment-form-comment textarea").removeAttr('cols');
-
-
 /* Back to top button
 ---------------------------------------------------*/
 
@@ -50,7 +42,15 @@ $(document).scroll(function(){
 
 // BS nav class to post pagination
 
-const pager = document.querySelectorAll('.index-post-pager .page-numbers');
-pager.forEach(function(item) {
+const postPager = document.querySelectorAll('.index-post-pager .page-numbers');
+
+postPager.forEach(function(item) {
     item.classList.add('nav-link');
 });
+
+
+// Comment form textarea remove cols
+
+const commentBox = document.querySelector('.comment-form-comment textarea');
+
+commentBox.removeAttribute('cols');
