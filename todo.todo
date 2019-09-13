@@ -65,6 +65,7 @@ Performance & SEO:
   ☐ webfontloader
   ☐ webp image format https://www.npmjs.com/package/gulp-webp
   ☐ lazyload https://github.com/aFarkas/lazysizes
+  ☐ resposive images with srcset
   ☐ jquery from CDN into footer ? https://wordpress.stackexchange.com/q/63468/
   ☐ Google Fonts from local ?
 
