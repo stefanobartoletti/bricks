@@ -21,7 +21,7 @@ if(! function_exists('sb_styles_scripts')) {
 
         // --- JS ---
                
-        wp_enqueue_script('fontawesome', get_template_directory_uri() .'/dist/js/fa5.min.js', array(), null, true );
+        wp_enqueue_script('fontawesome', get_template_directory_uri() .'/dist/js/fa5.min.js', false, null, true );
 
         wp_enqueue_script('sb-bootstrap-bundle-js', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js', array('jquery'), null, true );
 

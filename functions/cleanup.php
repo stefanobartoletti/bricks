@@ -10,12 +10,16 @@
 if(! function_exists('sb_cleanup_init')) {
 
     function sb_cleanup_init() {  
-
-        // Disable Gutenberg CSS // https://stackoverflow.com/q/52277629/
-        function rm_gutenberg_css() {      
+        
+        function sb_cleanup_scripts() { 
+            // Disable Gutenberg CSS // https://stackoverflow.com/q/52277629/
             wp_dequeue_style('wp-block-library');
+            
+            // Jquery from footer, remove migrate // https://wordpress.stackexchange.com/a/173605/
+            wp_deregister_script('jquery');
+            wp_enqueue_script('jquery', includes_url('/js/jquery/jquery.js'), false, null, true);
         }
-        add_action('wp_enqueue_scripts', 'rm_gutenberg_css');
+        add_action('wp_enqueue_scripts', 'sb_cleanup_scripts');
         
         // Disable XML-RPC, RSD, WLW links // https://wordpress.stackexchange.com/q/219181/   
         remove_action('wp_head', 'rsd_link');
