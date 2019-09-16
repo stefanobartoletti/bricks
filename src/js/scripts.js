@@ -15,40 +15,29 @@ $(document).scroll(function(){
         $('.header-wrap').removeClass('header-scrolled');
     }
 });
-
-
-/* Back to top button
----------------------------------------------------*/
-
-// Back to top
-
-// $(".backtotop").click(function() {
-//     $("html, body").animate({ scrollTop: 0 }, 400, 'linear');
-// });
-
-// Set visibility
-
-$(document).scroll(function(){
-    var scroll = $(this).scrollTop();
-    if (scroll > 200) {
-        $('#backtotop').removeClass('hidden');
-    } else {
-        $('#backtotop').addClass('hidden');
-    }
-});
-
-    
+   
 })(jQuery);
 
 // --- Vanilla JS ---
 
 // Back to top
 
+var html = document.querySelector('html');
 var backToTop = document.querySelector('#backtotop');
+
+document.addEventListener('scroll', function() {
+    var scrolled = html.scrollTop;
+    if (scrolled > 200) {
+        backToTop.classList.remove('hidden');
+    } else {
+        backToTop.classList.add('hidden');
+    }
+});
 
 backToTop.addEventListener('click', function() {
     window.scrollTo(0, 0);
 });
+
 
 // BS nav class to post pagination
 
