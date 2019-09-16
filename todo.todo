@@ -23,7 +23,6 @@ Code:
 
   ☐ ---
   ☐ Limit comment nesting
-  ☐ vanilla js instead of jquery
   ☐ single place social info > merge socialicons array & socialshare objects
 
 File structure & Templates:
@@ -73,6 +72,7 @@ Security & Fixes:
   ☐ ---
 
 Archive:
+  ✔ vanilla js instead of jquery @done(19-09-16 16:34) @project(Code)
   ✔ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls @done(19-09-14 10:49) @project(Elements & Functions)
   ✔ jquery from CDN into footer ? https://wordpress.stackexchange.com/q/63468/ @done(19-09-13 16:46) @project(Performance & SEO)
   ✔ remove php "?>" closing tags from files @done(19-09-09 11:38) @project(Code)
