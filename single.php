@@ -12,7 +12,9 @@
 
             <!-- blog post wrapper -->
 
-            <div class="article-wrap col">
+            <div class="article-wrap col">       
+
+                <?php get_template_part( 'template-parts/elements/breadcrumbs', '' ); ?>
 
                 <article <?php post_class(); ?> >
 
