@@ -1,3 +1,5 @@
+"use strict";
+
 (function($){
 
 /* Site wide
@@ -20,18 +22,18 @@ $(document).scroll(function(){
 
 // Back to top
 
-$(".backtotop").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 400, 'linear');
-});
+// $(".backtotop").click(function() {
+//     $("html, body").animate({ scrollTop: 0 }, 400, 'linear');
+// });
 
 // Set visibility
 
 $(document).scroll(function(){
     var scroll = $(this).scrollTop();
     if (scroll > 200) {
-        $('.backtotop').removeClass('hidden');
+        $('#backtotop').removeClass('hidden');
     } else {
-        $('.backtotop').addClass('hidden');
+        $('#backtotop').addClass('hidden');
     }
 });
 
@@ -40,17 +42,25 @@ $(document).scroll(function(){
 
 // --- Vanilla JS ---
 
+// Back to top
+
+var backToTop = document.querySelector('#backtotop');
+
+backToTop.addEventListener('click', function() {
+    window.scrollTo(0, 0);
+});
+
 // BS nav class to post pagination
 
-const postPager = document.querySelectorAll('.index-post-pager .page-numbers');
+var postPager = document.querySelectorAll('.index-post-pager .page-numbers');
 
-postPager.forEach(function(item) {
-    item.classList.add('nav-link');
+postPager.forEach(function(el) {
+    el.classList.add('nav-link');
 });
 
 
 // Comment form textarea remove cols
 
-const commentBox = document.querySelector('.comment-form-comment textarea');
+var commentBox = document.querySelector('.comment-form-comment textarea');
 
 commentBox.removeAttribute('cols');
