@@ -15,9 +15,7 @@ Project & Tools:
 Design:
 
   ☐ ---
-  ☐ sidebar > BS list style
   ☐ comments > BS media style
-  ☐ search > BS input style
 
 Code:
 
@@ -72,6 +70,8 @@ Security & Fixes:
   ☐ ---
 
 Archive:
+  ✔ sidebar > BS list style @done(19-09-16 17:46) @project(Design)
+  ✔ search > BS input style @done(19-09-16 17:25) @project(Design)
   ✔ vanilla js instead of jquery @done(19-09-16 16:34) @project(Code)
   ✔ social sharing buttons https://www.sharelinkgenerator.com/ https://github.com/bradvin/social-share-urls @done(19-09-14 10:49) @project(Elements & Functions)
   ✔ jquery from CDN into footer ? https://wordpress.stackexchange.com/q/63468/ @done(19-09-13 16:46) @project(Performance & SEO)
