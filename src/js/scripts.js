@@ -1,54 +1,53 @@
-(function($){
+"use strict";
 
-/* Site wide
----------------------------------------------------*/
+// --- Common Variables ---
 
-// Add class to header when scrolled
+var html = document.querySelector('html');
 
-$(document).scroll(function(){
-    var scroll = $(this).scrollTop();
-    if (scroll > 50) {
-        $('.header-wrap').addClass('header-scrolled');
+
+// --- Header Scroll ---
+
+var header = document.querySelector('.header-wrap');
+
+document.addEventListener('scroll', function() {
+    var scrolled = html.scrollTop;
+    if (scrolled > 50) {
+        header.classList.add('header-scrolled');
     } else {
-        $('.header-wrap').removeClass('header-scrolled');
+        header.classList.remove('header-scrolled');
     }
 });
 
-/* Blog index page
----------------------------------------------------*/
 
-// BS nav class to post pagination
+// --- Back to Top ---
 
-$('.index-post-pager .page-numbers').addClass('nav-link');
+var backToTop = document.querySelector('#backtotop');
 
-
-/* Comments template
----------------------------------------------------*/
-
-// Comment form textarea remove cols
-
-$(".comment-form-comment textarea").removeAttr('cols');
-
-
-/* Back to top button
----------------------------------------------------*/
-
-// Back to top
-
-$(".backtotop").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 400, 'linear');
-});
-
-// Set visibility
-
-$(document).scroll(function(){
-    var scroll = $(this).scrollTop();
-    if (scroll > 200) {
-        $('.backtotop').removeClass('hidden');
+document.addEventListener('scroll', function() {
+    var scrolled = html.scrollTop;
+    if (scrolled > 200) {
+        backToTop.classList.remove('hidden');
     } else {
-        $('.backtotop').addClass('hidden');
+        backToTop.classList.add('hidden');
     }
 });
 
-    
-})(jQuery);
+backToTop.addEventListener('click', function() {
+    window.scrollTo(0, 0);
+});
+
+
+// --- Bootstrap classes to Wordpress code ---
+
+var postPager = document.querySelectorAll('.index-post-pager .page-numbers');
+
+postPager.forEach(function(el) {
+    el.classList.add('nav-link');
+});
+
+
+// --- Wordpress code ---
+
+var commentBox = document.querySelector('.comment-form-comment textarea');
+
+commentBox.removeAttribute('cols');
