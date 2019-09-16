@@ -49,10 +49,7 @@
                     'walker'            => new WP_Bootstrap_Navwalker(),
             )); ?>               
             
-            <form class="form-inline my-2 my-lg-0" action="<?php echo esc_url_raw(home_url()); ?>" method="get">
-                <input class="form-control w-auto mr-2" type="search" placeholder="Search" aria-label="Search" name="s">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <?php get_search_form(); ?>
 
             <?php get_template_part( 'template-parts/elements/socialicons', '' ); ?>
 
