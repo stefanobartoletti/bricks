@@ -1,28 +1,26 @@
 "use strict";
 
-(function($){
-
-/* Site wide
----------------------------------------------------*/
-
-// Add class to header when scrolled
-
-$(document).scroll(function(){
-    var scroll = $(this).scrollTop();
-    if (scroll > 50) {
-        $('.header-wrap').addClass('header-scrolled');
-    } else {
-        $('.header-wrap').removeClass('header-scrolled');
-    }
-});
-   
-})(jQuery);
-
-// --- Vanilla JS ---
-
-// Back to top
+// --- Common Variables ---
 
 var html = document.querySelector('html');
+
+
+// --- Header Scroll ---
+
+var header = document.querySelector('.header-wrap');
+
+document.addEventListener('scroll', function() {
+    var scrolled = html.scrollTop;
+    if (scrolled > 50) {
+        header.classList.add('header-scrolled');
+    } else {
+        header.classList.remove('header-scrolled');
+    }
+});
+
+
+// --- Back to Top ---
+
 var backToTop = document.querySelector('#backtotop');
 
 document.addEventListener('scroll', function() {
@@ -39,7 +37,7 @@ backToTop.addEventListener('click', function() {
 });
 
 
-// BS nav class to post pagination
+// --- Bootstrap classes to Wordpress code ---
 
 var postPager = document.querySelectorAll('.index-post-pager .page-numbers');
 
@@ -48,7 +46,7 @@ postPager.forEach(function(el) {
 });
 
 
-// Comment form textarea remove cols
+// --- Wordpress code ---
 
 var commentBox = document.querySelector('.comment-form-comment textarea');
 
