@@ -18,7 +18,7 @@
     
     set_query_var( 'sb_slider_args', $sb_slider_args );
         
-    get_template_part( 'template-parts/sections/slider', '' ); ?>
+    get_template_part( 'templates/sections/slider', '' ); ?>
 
 </section>
 
@@ -40,7 +40,7 @@
     
     set_query_var( 'sb_cards_args', $sb_cards_args );
         
-    get_template_part( 'template-parts/sections/cards', '' ); ?>
+    get_template_part( 'templates/sections/cards', '' ); ?>
 
 </section>
  

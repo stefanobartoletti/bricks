@@ -51,7 +51,7 @@
             
             <?php get_search_form(); ?>
 
-            <?php get_template_part( 'template-parts/elements/socialicons', '' ); ?>
+            <?php get_template_part( 'templates/elements/socialicons', '' ); ?>
 
         </div>
 

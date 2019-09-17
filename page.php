@@ -10,7 +10,7 @@
 
         <?php if (has_post_thumbnail()) {
 
-            get_template_part( 'template-parts/sections/pageheader', '' );
+            get_template_part( 'templates/sections/pageheader', '' );
 
         } ?>
 

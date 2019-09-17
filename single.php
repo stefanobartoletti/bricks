@@ -14,7 +14,14 @@
 
             <div class="article-wrap col">       
 
-                <?php get_template_part( 'template-parts/elements/breadcrumbs', '' ); ?>
+                <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
+                
+
+                <?php if (is_file(get_theme_file_path('templates/elements/socialshare-copy.php'))) {
+
+                    get_template_part( 'templates/elements/socialshare', 'copy' );
+                
+                } ?>
 
                 <article <?php post_class(); ?> >
 
@@ -32,7 +39,7 @@
 
                 </article>
 
-                <?php get_template_part( 'template-parts/elements/socialshare', '' ); ?>
+                <?php get_template_part( 'templates/elements/socialshare', '' ); ?>
 
                 <nav>
                     <?php previous_post_link(); ?> | <?php next_post_link(); ?>
