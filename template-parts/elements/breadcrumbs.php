@@ -12,7 +12,7 @@ if (function_exists('yoast_breadcrumb')) {
 // --- Rank Math ---
 // https://s.rankmath.com/breadcrumbs
 
-if (function_exists('rank_math_the_breadcrumbs')) {
+elseif (function_exists('rank_math_the_breadcrumbs')) {
 
     add_filter( 'rank_math/frontend/breadcrumb/args', function( $args ) {
         $args = array(
@@ -28,3 +28,7 @@ if (function_exists('rank_math_the_breadcrumbs')) {
     rank_math_the_breadcrumbs();
 
 }
+
+// --- Nothing ---
+
+else {}
