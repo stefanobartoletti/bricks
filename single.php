@@ -2,7 +2,7 @@
 
 <!-- main content wrapper -->
 
-<main class="content-wrap">
+<main id="content-wrap">
 
     <?php while ( have_posts() ) : the_post(); ?>
     
@@ -12,17 +12,10 @@
 
             <!-- blog post wrapper -->
 
-            <div class="article-wrap col">       
+            <div id="article-wrap" class="col">       
 
                 <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
                 
-
-                <?php if (is_file(get_theme_file_path('templates/elements/socialshare-copy.php'))) {
-
-                    get_template_part( 'templates/elements/socialshare', 'copy' );
-                
-                } ?>
-
                 <article <?php post_class(); ?> >
 
                     <h1><?php the_title(); ?></h1>

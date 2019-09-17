@@ -2,7 +2,7 @@
 
 <!-- main content wrapper -->
 
-<main class="content-wrap">
+<main id="content-wrap">
 
     <?php while ( have_posts() ) : the_post(); ?>
 

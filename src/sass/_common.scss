@@ -5,20 +5,20 @@ html {
 /* Full height
 ---------------------------------------------------*/
 
-#page {
+#site-wrap {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.page-wrap {
+#page-wrap {
     flex: 1;
 }
 
 /* admin bar layout fix when logged in
 ---------------------------------------------------*/
 
-.admin-bar .site-wrap,
-.admin-bar .header-wrap {
+.admin-bar #site-wrap,
+.admin-bar #header-wrap {
     top: 32px;
 }

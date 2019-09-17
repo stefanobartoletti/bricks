@@ -14,11 +14,11 @@
 
 <!-- full site wrapper -->
 
-<div id="page" class="site-wrap">
+<div id="site-wrap">
 
 <!-- header wrapper -->
 
-<header class="header-wrap sticky-top bg-primary">
+<header id="header-wrap" class="sticky-top bg-primary">
 
     <nav class="navbar navbar-expand-lg navbar-dark container" role="navigation">
 
@@ -45,7 +45,7 @@
                     'container'         => '',
                     'container_class'   => '',
                     'container_id'      => '',
-                    'menu_class'        => 'main-menu nav navbar-nav my-3 my-lg-0 ml-lg-2 mr-auto',
+                    'menu_class'        => 'header-menu nav navbar-nav my-3 my-lg-0 ml-lg-2 mr-auto',
                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                     'walker'            => new WP_Bootstrap_Navwalker(),
             )); ?>               
@@ -62,4 +62,4 @@
 
 <!-- main content + sidebars wrapper -->
 
-<div class="page-wrap">
+<div id="page-wrap">

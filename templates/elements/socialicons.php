@@ -1,4 +1,4 @@
-<ul class="social-icons nav ml-lg-2">
+<ul class="elem-socialicons nav ml-lg-2">
 
     <?php 
 

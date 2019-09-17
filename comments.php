@@ -4,7 +4,7 @@
 
 <!-- comments wrapper -->
 
-<div class="comments-wrap mt-5">
+<div id="comments-wrap" class="mt-5">
 
     <?php if ( have_comments() ) { ?>
 

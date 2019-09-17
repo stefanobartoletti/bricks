@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<main class="content-wrap">
+<main id="content-wrap">
 
-<section class="section-wrap element-slider">
+<section class="sect-slider">
 
     <?php $sb_slider_args = array(
         'post_type' => 'post',
@@ -22,7 +22,7 @@
 
 </section>
 
-<section class="section-wrap element-cards container py-5">
+<section class="sect-cards container py-5">
 
     <h2>News</h2>
 

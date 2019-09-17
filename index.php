@@ -2,7 +2,7 @@
 
 <!-- main content wrapper -->
 
-<main class="content-wrap">
+<main id="content-wrap">
 
     <div class="container">
 
@@ -10,7 +10,7 @@
 
             <!-- article index wrapper -->
 
-            <div class="index-wrap col">
+            <div id="index-wrap" class="col">
 
                 <?php if ( ! is_home() ) { ?>
 
@@ -44,7 +44,7 @@
                                                
                 <?php endwhile; ?>
 
-                    <div class="index-post-pager nav">
+                    <div class="index-pager nav">
                 
                         <?php global $wp_query; $big = 999999999; // need an unlikely integer
 

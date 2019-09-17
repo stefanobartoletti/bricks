@@ -1,8 +1,8 @@
-</div> <!-- .page-wrap -->
+</div> <!-- #page-wrap -->
 
 <!-- footer wrapper -->
 
-<footer class="footer-wrap bg-dark text-light">
+<footer id="footer-wrap" class="bg-dark text-light">
 
     <div class="container my-4">
 
@@ -18,6 +18,6 @@
 
 <?php wp_footer(); ?>
 
-</div> <!-- #page .site -->
+</div> <!-- #site-wrap -->
 
 </body>
