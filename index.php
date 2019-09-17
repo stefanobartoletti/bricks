@@ -44,7 +44,7 @@
                                                
                 <?php endwhile; ?>
 
-                    <div class="index-pager nav">
+                    <nav class="index-pager nav">
                 
                         <?php global $wp_query; $big = 999999999; // need an unlikely integer
 
@@ -60,7 +60,7 @@
                         
                         ?>
 
-                    </div>
+                    </nav>
             
                 <?php else : ?>
 

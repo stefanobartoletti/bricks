@@ -34,8 +34,9 @@
 
                 <?php get_template_part( 'templates/elements/socialshare', '' ); ?>
 
-                <nav>
-                    <?php previous_post_link(); ?> | <?php next_post_link(); ?>
+                <nav class="nav">
+                    <?php previous_post_link('<span class="nav-link mr-auto">&laquo; %link</span>');
+                        next_post_link('<span class="nav-link ml-auto">%link &raquo;</span>'); ?>
                 </nav>
                     
                 <?php if ( comments_open() || get_comments_number() ) { comments_template(); } ?>
