@@ -16,6 +16,8 @@ Design:
 
   ☐ ---
   ☐ comments > BS media style
+  ☐ comment box & fields > BS style
+  ☐ selected text style
 
 Code:
 
@@ -36,6 +38,7 @@ Elements & Functions:
   ☐ Customizer > address multiple fields
   ☐ Customizer > placeholder text
   ☐ Contact Form 7
+  ☐ ACF instead of Pods?
 
 Libraries:
 
