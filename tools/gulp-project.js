@@ -16,6 +16,7 @@ exports.siteUrl = siteUrl;
 const purgeWLP = [
     /^carousel-item.*/,     // Bootstrap Carousel Animation
     /collapsing/,           // Bootstrap Navbar Animation
+    /show/,                 // Bootstrap Dropdown
 ];
 exports.purgeWLP = purgeWLP;
 
