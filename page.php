@@ -1,14 +1,10 @@
 <?php get_header(); ?>
 
-<!-- main content wrapper -->
-
 <main id="content-wrap">
 
-    <?php while ( have_posts() ) : the_post(); ?>
+    <?php while ( have_posts() ) : the_post();
 
-    <article <?php post_class(); ?> >
-
-        <?php if (has_post_thumbnail()) {
+        if (has_post_thumbnail()) {
 
             get_template_part( 'templates/sections/pageheader', '' );
 
@@ -16,28 +12,34 @@
 
         <div class="container">
 
-            <div class="row py-5 justify-content-center">
+            <div class="row">
 
-                <div class="col-sm-8">
+                <div class="col">
 
-                    <?php if (! has_post_thumbnail() ) { ?>
-
-                    <h1><?php the_title(); ?></h1>
-
-                    <?php } ?>
-
-                    <div><?php the_content(); ?></div>
+                    <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
 
                 </div>
 
             </div>
+        
+            <div class="row py-5 justify-content-center">
 
+                <div class="col-sm-8">
+
+                    <?php get_template_part( 'templates/content/page', '' );
+
+                    if ( comments_open() || get_comments_number() ) {
+                        comments_template(); }
+                    ?>
+
+                </div>
+
+            </div>
+            
         </div>
-
-    </article>
 
     <?php endwhile ?>
 
-</main>
+</main> <!-- #content-wrap -->
 
 <?php get_footer();

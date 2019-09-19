@@ -27,6 +27,21 @@ File structure & Templates:
 
   ☐ ---
   ☐ template-parts > (templates | components | content | include | layout | plugin)
+  ✔ page @done(19-09-19 18:56)
+  ☐ page-{slug}
+  ☐ single
+  ☐ header
+  ☐ header sections
+  ☐ footer
+  ☐ footer sections
+  ☐ home
+  ☐ home sections
+  ☐ 404
+  ☐ index
+  ☐ comments
+  ☐ searchform
+  ☐ sidebars
+
 
 Elements & Functions:
 
