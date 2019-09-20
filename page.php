@@ -26,10 +26,24 @@
 
                 <div class="col-sm-8">
 
-                    <?php get_template_part( 'templates/content/page', '' );
+                    <?php 
+
+                    // Get this page slug                    
+                    $slug = $post->post_name;
+                    
+                    if (is_file(get_theme_file_path('templates/content/page-'.$slug.'.php'))) {
+                        
+                        get_template_part( 'templates/content/page', $slug );
+                        
+                    } else { 
+
+                        get_template_part( 'templates/content/page', '' );                       
+                    
+                    };
 
                     if ( comments_open() || get_comments_number() ) {
                         comments_template(); }
+                    
                     ?>
 
                 </div>
