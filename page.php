@@ -12,16 +12,8 @@
 
         <div class="container">
 
-            <div class="row">
-
-                <div class="col">
-
-                    <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
-
-                </div>
-
-            </div>
-        
+            <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
+       
             <div class="row py-5 justify-content-center">
 
                 <div class="col-sm-8">
