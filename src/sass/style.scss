@@ -15,6 +15,11 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
+/* WP Core required styles
+---------------------------------------------------*/
+
+@import 'wpcore';
+
 /* Import partials
 ---------------------------------------------------*/
 
