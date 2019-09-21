@@ -36,9 +36,7 @@
                         
                     get_template_part( 'templates/content/page', $template_name );
  
-
-                    if ( comments_open() || get_comments_number() ) {
-                        comments_template(); }
+                    if ( comments_open() || get_comments_number() ) { comments_template(); }
                     
                     ?>
 
