@@ -12,54 +12,52 @@
 <body <?php body_class(); ?>> 
 <?php wp_body_open(); ?>
 
-<!-- full site wrapper -->
-
 <div id="site-wrap">
 
-<!-- header wrapper -->
+    <header id="header-wrap" class="sticky-top bg-primary">
 
-<header id="header-wrap" class="sticky-top bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark container" role="navigation">
 
-    <nav class="navbar navbar-expand-lg navbar-dark container" role="navigation">
+            <?php if ( has_custom_logo() ) { 
 
-        <?php if ( has_custom_logo() ) { 
+                the_custom_logo();
 
-            the_custom_logo();
+            } else { ?>
 
-        } else { ?>
+                <a class="navbar-brand" href="<?php echo esc_url_raw(home_url()); ?>"><?php bloginfo('name'); ?></a>
 
-            <a class="navbar-brand" href="<?php echo esc_url_raw(home_url()); ?>"><?php bloginfo('name'); ?></a>
+            <?php } ?>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu-header"
+                aria-controls="navbar-menu-header" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <?php } ?>
- 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu-header"
-            aria-controls="navbar-menu-header" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <div id="navbar-menu-header" class="collapse navbar-collapse">
 
-        <div id="navbar-menu-header" class="collapse navbar-collapse">
+                <?php
+                
+                wp_nav_menu(array(
+                        'theme_location'    => 'header',
+                        'depth'             => 2,
+                        'container'         => '',
+                        'container_class'   => '',
+                        'container_id'      => '',
+                        'menu_class'        => 'header-menu nav navbar-nav my-3 my-lg-0 ml-lg-2 mr-auto',
+                        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'            => new WP_Bootstrap_Navwalker(),
+                ));
+                
+                get_search_form();
+                
+                get_template_part( 'templates/elements/socialicons', '' );
+                
+                ?>
 
-            <?php wp_nav_menu(array(
-                    'theme_location'    => 'header',
-                    'depth'             => 2,
-                    'container'         => '',
-                    'container_class'   => '',
-                    'container_id'      => '',
-                    'menu_class'        => 'header-menu nav navbar-nav my-3 my-lg-0 ml-lg-2 mr-auto',
-                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                    'walker'            => new WP_Bootstrap_Navwalker(),
-            )); ?>               
-            
-            <?php get_search_form(); ?>
+            </div>
 
-            <?php get_template_part( 'templates/elements/socialicons', '' ); ?>
+        </nav>
 
-        </div>
+    </header> <!-- #header-wrap -->
 
-    </nav>
-
-</header>
-
-<!-- main content + sidebars wrapper -->
-
-<div id="page-wrap">
+    <div id="page-wrap">
