@@ -32,9 +32,9 @@ add_action( 'customize_register', 'sb_customizer_options' );
 
 function sb_head_meta() {
     
-    if( get_theme_mod('sb_chrome_theme', '')) {
+    if( get_theme_mod('sb_chrome_theme')) {
           
-        echo '<meta name="theme-color" content="', get_theme_mod( 'sb_chrome_theme', '' ), '">';
+        echo '<meta name="theme-color" content="', get_theme_mod('sb_chrome_theme'), '">';
 
     }
 
