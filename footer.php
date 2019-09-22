@@ -14,7 +14,7 @@
 
 </footer>
 
-<button id="backtotop" class="btn btn-primary hidden" type="button"><i class="fas fa-angle-up"></i></button>
+<?php get_template_part( 'templates/elements/backtotop', '' ); ?>
 
 <?php wp_footer(); ?>
 
