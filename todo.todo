@@ -25,6 +25,7 @@ Code:
   ☐ ---
   ☐ Limit comment nesting
   ☐ single place social info > merge socialicons array & socialshare objects
+  ☐ custom template tags
 
 File structure & Templates:
 
