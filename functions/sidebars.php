@@ -23,7 +23,7 @@ if(! function_exists('sb_sidebars')) {
             'name' =>  esc_html__('Footer Widgets', 'sb-base-theme'),
             'id' => 'sidebar-footer',
             'description' => esc_html__('Footer Widgets', 'sb-base-theme'),
-            'before_widget' => '<div class="widget col-md-4 mb-4 %2$s clearfix">',
+            'before_widget' => '<div class="widget col-md mb-4 %2$s clearfix">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="h4 mb-3">',
             'after_title' => '</h3>',

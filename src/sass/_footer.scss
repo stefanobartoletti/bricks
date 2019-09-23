@@ -17,3 +17,21 @@
     }
 
 }
+
+
+#footer-sidebar {
+
+    ul {
+        list-style-type: none;
+        padding-left: 0rem;
+
+        li {
+            margin-bottom: 0.25rem;
+        }
+        
+    }
+
+    a {
+        color: theme-color("light");
+    }
+}
