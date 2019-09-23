@@ -2,12 +2,12 @@
                
     <span class="navbar-text">
         <?php echo 
-        "&#169; ", date('o'), " - ",
-        bloginfo('name'), " - ",
-        get_theme_mod('sb_address_1'), ", ",
-        get_theme_mod('sb_address_2'), " - ",
-        "c.f. ", get_theme_mod('sb_cfisc'), " - ",
-        "p.i. ", get_theme_mod('sb_piva')
+        "&#169; ".date('o')." - ".
+        get_theme_mod('sb_company')." - ".
+        get_theme_mod('sb_address_1').", ".
+        get_theme_mod('sb_address_2')." - ".
+        "c.f. ".get_theme_mod('sb_cfisc')." - ".
+        "p.i. ".get_theme_mod('sb_piva')
         ?>
     </span>
 
@@ -22,4 +22,4 @@
         'walker'            => new WP_Bootstrap_Navwalker(),
     )); ?>
    
-</div> <!-- #footer-simple -->
+</div> <!-- #footer-simple --> 
