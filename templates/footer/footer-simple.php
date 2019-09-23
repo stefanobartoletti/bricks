@@ -1,4 +1,4 @@
-<div id="footer-simple" class="navbar navbar-expand navbar-dark container flex-column flex-md-row my-3 small">
+<div id="footer-simple" class="navbar navbar-expand navbar-dark container flex-column flex-md-row my-3">
                
     <span class="navbar-text">
         <?php echo 
