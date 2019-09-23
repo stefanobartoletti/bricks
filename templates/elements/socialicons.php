@@ -1,4 +1,4 @@
-<ul class="elem-socialicons nav ml-lg-2">
+<ul class="elem-socialicons nav">
 
     <?php 
 
@@ -12,7 +12,7 @@
 
         if ( get_theme_mod('sb_'.$key, '')) { ?>
 
-            <li class="nav-item">
+            <li class="socialicon nav-item">
                 <a class="nav-link" href="<?php echo get_theme_mod('sb_'.$key, '') ?>" target="_blank"><i class="fab <?php echo $value ?>"></i></a>
             </li>
     
