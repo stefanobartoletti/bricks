@@ -17,3 +17,55 @@
     }
 
 }
+
+
+#footer-simple {
+
+    .custom-logo {
+        max-height: 40px;
+        width: auto;
+    }
+
+}
+
+
+#footer-sidebar {
+
+    ul {
+        list-style-type: none;
+        padding-left: 0rem;
+
+        li {
+            margin-bottom: 0.25rem;
+        }
+        
+    }
+
+    a {
+        color: theme-color("light");
+    }
+
+}
+
+#footer-columns {
+
+    .custom-logo {
+        max-width: 100%;
+        height: auto;        
+    }
+
+    .footer-menu .nav-link {
+        margin-bottom: 0.25rem;
+        padding: 0rem;
+
+    }
+
+    .socialicon:first-child .nav-link {
+        padding-left: 0.3rem;
+    }
+
+    a {
+        color: theme-color("light");
+    }
+    
+}
