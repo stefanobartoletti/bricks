@@ -11,6 +11,6 @@
         ?>
     </span>
 
-    <a class="navbar-text ml-md-auto" href="https://www.stefanobartoletti.it" target="_blank">Made by [sb]</a>
+    <span class="navbar-text ml-md-auto" >Made by <a class="text-white-50" href="https://www.stefanobartoletti.it" target="_blank">Stefano Bartoletti</a></span>
    
 </div> <!-- #footer-copyright --> 
