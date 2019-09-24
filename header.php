@@ -14,7 +14,7 @@
 
 <div id="site-wrap">
 
-    <header id="header-wrap" class="sticky-top bg-primary">
+    <header id="header-wrap" class="sticky-top bg-dark">
 
         <nav class="navbar navbar-expand-lg navbar-dark container" role="navigation">
 

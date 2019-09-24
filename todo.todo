@@ -26,7 +26,7 @@ Code:
 File structure & Templates:
 
   ☐ ---
-  ☐ template-parts > (templates | components | content | include | layout | plugin)
+  ☐ template-parts > templates
   ✔ page @done(19-09-19 18:56)
   ✔ page-{slug} @done(19-09-20 17:15)
   ✔ single @done(19-09-21 12:10)
