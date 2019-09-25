@@ -14,7 +14,7 @@ $searchtext = esc_html__( 'Search', 'sb-base-theme' );
         </div>
 
         <div class="col-3">
-            <button class="btn btn-sm btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
+            <button class="btn btn-sm btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
         </div>
 
     </div>

@@ -7,8 +7,13 @@
     }
 
     .socialicon a {
-        color: theme-color("light");
+        color: #ffffff80;
         padding: 0.5rem;
+
+        &:hover {
+            color: #ffffffbf;
+        }
+
     }
 
     &.header-scrolled {
@@ -17,6 +22,14 @@
             height: 50px;
         }
     
+    }
+
+}
+
+#header-topbar {
+
+    .socialicon a {
+        padding: 0 0.5rem;   
     }
 
 }
