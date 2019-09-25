@@ -16,7 +16,11 @@
 
     <header id="header-wrap" class="sticky-top bg-dark">
 
-        <?php get_template_part('templates/header/header', 'simple') ?>
+        <?php
+        
+        get_template_part('templates/header/header', 'simple');
+        
+        ?>
 
     </header> <!-- #header-wrap -->
 
