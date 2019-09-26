@@ -30,3 +30,15 @@ function sb_socialnetworks() {
     );
     return $sb_socialnetworks;
 }
+
+
+// --- Thumbnail alt ---
+
+// Echoes the "alt" value of a post thumbnail as inserted in the media gallery
+
+function sb_thumb_alt() {
+
+    $sb_thumb_alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
+    echo $sb_thumb_alt;
+
+}
