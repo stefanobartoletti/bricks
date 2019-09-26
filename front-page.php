@@ -27,8 +27,6 @@
 
     <section id="sect-services" class="container py-5">
 
-        <h2>News</h2>
-
         <?php
         
         $sb_args = array(
@@ -51,8 +49,6 @@
     </section> <!-- #sect-services -->
 
     <section id="sect-news" class="container py-5">
-
-        <h2>News</h2>
 
         <?php
         
