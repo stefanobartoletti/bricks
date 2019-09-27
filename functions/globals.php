@@ -52,7 +52,7 @@ function sb_signature($sigType = 'text') {
             break;
 
         case 'text':
-            echo '<span class="navbar-text ml-md-auto">Made by <a class="navbar-text" href="'.$sigURL.'" target="_blank">Stefano Bartoletti</a></span>';
+            echo '<span class="navbar-text ml-md-auto">Made by <a class="text-white-50" " href="'.$sigURL.'" target="_blank">Stefano Bartoletti</a></span>';
             break;
 
     }
