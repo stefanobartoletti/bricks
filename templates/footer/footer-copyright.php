@@ -11,6 +11,6 @@
         ?>
     </span>
 
-    <span class="navbar-text ml-md-auto" >Made by <a class="text-white-50" href="https://www.stefanobartoletti.it" target="_blank">Stefano Bartoletti</a></span>
+    <?php sb_signature('logo-small'); ?>
    
 </div> <!-- #footer-copyright --> 

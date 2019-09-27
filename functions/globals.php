@@ -30,3 +30,32 @@ function sb_socialnetworks() {
     );
     return $sb_socialnetworks;
 }
+
+
+// --- [sb] signature ---
+
+function sb_signature($sigType = 'text') {
+
+    $sigURL         = 'https://www.stefanobartoletti.it';
+    $sigLogoFull    = get_template_directory_uri().'/dist/img/sb-logo-full.svg';
+    $sigLogoSmall   = get_template_directory_uri().'/dist/img/sb-logo-small.svg';
+    $sigLogoAlt     = 'Stefano Bartoletti Web Design';
+
+    switch ($sigType) {
+
+        case 'logo-full':
+            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank"><img class="sb-logo" src="'.$sigLogoFull.'" alt="'.$sigLogoAlt.'"></a>';
+            break;
+
+        case 'logo-small':
+            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank"><img class="sb-logo" src="'.$sigLogoSmall.'" alt="'.$sigLogoAlt.'"></a>';
+            break;
+
+        case 'text':
+            echo '<span class="navbar-text ml-md-auto">Made by <a class="navbar-text" href="'.$sigURL.'" target="_blank">Stefano Bartoletti</a></span>';
+            break;
+
+    }
+
+}
+
