@@ -48,6 +48,29 @@
 
     </section> <!-- #sect-services -->
 
+    <section id="sect-cta">
+
+        <?php
+        
+        $sb_args = array(
+            'post_type' => 'post',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => 'slider',
+                ),
+            ),
+            'posts_per_page'    => 1,
+        );
+        
+        set_query_var( 'sb_args', $sb_args );    
+        get_template_part( 'templates/sections/cta', '' );
+        
+        ?>
+
+    </section> <!-- #sect-news -->
+ 
     <section id="sect-news" class="container py-5">
 
         <?php
