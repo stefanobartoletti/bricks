@@ -18,7 +18,7 @@
     
     ?>
 
-    <div class="col-sm text-center">
+    <div class="col-sm text-center pb-5">
 
         <img class="img-fluid rounded-circle w-50 mb-4" src="<?php the_post_thumbnail_url('sb_square'); ?>" alt="<?php sb_thumb_alt(); ?>">
 
