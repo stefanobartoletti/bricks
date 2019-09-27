@@ -2,48 +2,98 @@
 
 <main id="content-wrap">
 
-<section class="sect-slider">
+    <section id="sect-slider">
 
-    <?php $sb_slider_args = array(
-        'post_type' => 'post',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'category',
-                'field'    => 'slug',
-                'terms'    => 'slider',
-            ),
-        ),
-        'posts_per_page'    => 3,
-    );
-    
-    set_query_var( 'sb_slider_args', $sb_slider_args );
+        <?php
         
-    get_template_part( 'templates/sections/slider', '' ); ?>
-
-</section>
-
-<section class="sect-cards container py-5">
-
-    <h2>News</h2>
-
-    <?php $sb_cards_args = array(
-        'post_type' => 'post',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'category',
-                'field'    => 'slug',
-                'terms'    => 'news',
+        $sb_args = array(
+            'post_type' => 'post',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => 'slider',
+                ),
             ),
-        ),
-        'posts_per_page'    => 3,
-    );
-    
-    set_query_var( 'sb_cards_args', $sb_cards_args );
+            'posts_per_page'    => 3,
+        );
         
-    get_template_part( 'templates/sections/cards', '' ); ?>
+        set_query_var( 'sb_args', $sb_args );          
+        get_template_part( 'templates/sections/slider', '' );
+        
+        ?>
 
-</section>
+    </section> <!-- #sect-slider -->
+
+    <section id="sect-services" class="container py-5">
+
+        <?php
+        
+        $sb_args = array(
+            'post_type' => 'post',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => 'news',
+                ),
+            ),
+            'posts_per_page'    => 3,
+        );
+        
+        set_query_var( 'sb_args', $sb_args );         
+        get_template_part( 'templates/sections/services', '' );
+        
+        ?>
+
+    </section> <!-- #sect-services -->
+
+    <section id="sect-cta">
+
+        <?php
+        
+        $sb_args = array(
+            'post_type' => 'post',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => 'slider',
+                ),
+            ),
+            'posts_per_page'    => 1,
+        );
+        
+        set_query_var( 'sb_args', $sb_args );    
+        get_template_part( 'templates/sections/cta', '' );
+        
+        ?>
+
+    </section> <!-- #sect-news -->
  
-</main>
+    <section id="sect-news" class="container py-5">
+
+        <?php
+        
+        $sb_args = array(
+            'post_type' => 'post',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => 'news',
+                ),
+            ),
+            'posts_per_page'    => 3,
+        );
+        
+        set_query_var( 'sb_args', $sb_args );    
+        get_template_part( 'templates/sections/news', '' );
+        
+        ?>
+
+    </section> <!-- #sect-news -->
+ 
+</main> <!-- #content-wrap -->
 
 <?php get_footer();
