@@ -29,16 +29,25 @@
 
 @import 'elements/backtotop';
 @import 'elements/breadcrumbs';
+@import 'elements/socialicons';
 @import 'elements/socialshare';
 
 @import 'header/header';
+@import 'header/logobar';
+@import 'header/menubar';
+@import 'header/simple';
 @import 'header/topbar';
 
 @import 'footer/footer';
 @import 'footer/columns';
+@import 'footer/copyright';
 @import 'footer/sidebar';
 @import 'footer/simple';
 
+@import 'sections/cta';
+@import 'sections/news';
+@import 'sections/pageheader';
+@import 'sections/services';
 @import 'sections/slider';
 
 @import 'templates/homepage';
