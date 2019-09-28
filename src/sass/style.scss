@@ -1,48 +1,50 @@
-/* Bootstrap Custom Theme
----------------------------------------------------*/
+// --- Bootstrap Custom Theme ---
 
-// Optional local fonts
+// ---- Optional local fonts ---
+
 // @import 'fontface';
 
-// Custom Theme Requirements
+// ---- Custom Theme Requirements ---
+
 @import "../../node_modules/bootstrap/scss/functions"; 
 @import "../../node_modules/bootstrap/scss/variables";
 
-// Customizations
+// ---- Customizations ---
+
 @import 'theme';
 
-// Bootstrap 
+// ---- Bootstrap ---
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-
-/* WP Core required styles
----------------------------------------------------*/
+// --- WP Core required styles ---
 
 @import 'wpcore';
 
-/* Import partials
----------------------------------------------------*/
+// --- Custom styles ---
 
 /* purgecss start ignore */
 
-@import 'elements/breadcrumbs';	  // elements styles
-@import 'elements/socialshare';   // elements styles
+@import 'common';
 
-@import 'common';   // common styles
-@import 'header';   // header & menu styles
-@import 'footer';   // footer styles
-@import 'sidebar';  // sidebar & widgets styles
-@import 'index';    // blog index styles
-@import 'homepage'; // homepage styles
-@import 'page';     // page styles
-@import 'single';   // blog post styles
-@import 'comments'; // comments styles
-@import '404';      // page 404 styles
+@import 'elements/breadcrumbs';
+@import 'elements/socialshare';
+
+@import 'header/header';
+
+@import 'footer/footer';
+
+@import 'templates/homepage';
+@import 'templates/page';
+@import 'templates/index';
+@import 'templates/single';
+@import 'templates/sidebar';
+@import 'templates/comments';
+@import 'templates/404';
 
 /* purgecss end ignore */
 
-/* Custom classes
----------------------------------------------------*/
+// --- Custom class reference ---
 
 // Reference list of custom classes, leave commented.
 // Decomment ONLY to highlight structure.
