@@ -2,8 +2,6 @@
 	return;
 } ?>
 
-<!-- comments wrapper -->
-
 <div id="comments-wrap" class="mt-5">
 
     <?php if ( have_comments() ) { ?>
@@ -24,15 +22,13 @@
             )); ?>
         </ol>
 
-        <!-- comments navigation -->
-
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { ?>
 
             <nav class="navigation comment-navigation" role="navigation">
 
-                <h1 class="screen-reader-text section-heading">
+                <h2 class="screen-reader-text section-heading">
                     <?php esc_html_e('Comment navigation', 'sb-base-theme'); ?>
-                </h1>
+                </h2>
 
                 <div class="nav-previous">
                     <?php previous_comments_link(esc_html__('&larr; Older Comments', 'sb-base-theme')); ?>
@@ -44,22 +40,20 @@
 
             </nav>
         
-        <?php } ?>        
+        <?php }      
 
-    <?php } ?>
+    }
 
-    <!-- if closed comments -->
-
-    <?php if ( ! comments_open() && get_comments_number() ) { ?>
+    if ( ! comments_open() && get_comments_number() ) { ?>
 
         <p class="no-comments"><?php esc_html_e('Comments are closed.', 'sb-base-theme'); ?></p>
 
-    <?php } ?>
+    <?php }
 
-    <!-- comment form -->
-
-    <?php comment_form( array(
+    comment_form( array(
         'class_submit'  => 'submit btn btn-primary',
-    )); ?>
+    ));
+    
+    ?>
 
-</div>
+</div> <!-- #comments-wrap -->
