@@ -32,9 +32,12 @@
 @import 'elements/socialshare';
 
 @import 'header/header';
-// @import 'header/topbar';
+@import 'header/topbar';
 
 @import 'footer/footer';
+@import 'footer/columns';
+@import 'footer/sidebar';
+@import 'footer/simple';
 
 @import 'templates/homepage';
 @import 'templates/page';
