@@ -4,34 +4,38 @@
 // Reference list of custom classes.
 // Activate from style.scss ONLY to highlight structure.
 
-// Wireframe
+// Wrappers
 
-#page,              // full site wrapper
-.site-wrap,         // full site wrapper
+#site-wrap,         // full site wrapper
 
-.header-wrap,       // header wrapper
+#header-wrap,       // header wrapper
 
-.page-wrap,         // main content + sidebars wrapper
-.content-wrap,      // main content wrapper
-.section-wrap       // page section wrapper
+#page-wrap,         // main content + sidebars wrapper
+#content-wrap,      // main content wrapper
 
-.index-wrap,         // article index wrapper
-.article-wrap,      // blog post wrapper
-.comments-wrap,     // comments wrapper
+#loop-wrap,         // article index wrapper
+#article-wrap,      // blog post wrapper
+#comments-wrap,     // comments wrapper
 
-.sidebar-r-wrap,    // right sidebar wrapper
+#sidebar-main-wrap, // main sidebar wrapper
 
-.footer-wrap       // footer wrapper
+#footer-wrap        // footer wrapper
 
 { border: 5px solid red; margin: 10px; }
 
-// Elements
+// Sections
 
-.page-header,       // page header with image background
-.main-menu,         // header main menu
-.social-icons,      // social icons block
-.index-post-pager,  // blog post pagination in index page
-.element-slider,    // slider section
-.element-cards      // cards section
+.sect-pageheader,   // page header with image background
+.sect-slider,       // slider section
+.sect-cards         // cards section
 
 { border: 5px solid cyan; margin: 10px; }
+
+// Elements
+
+.header-menu,       // header menu
+.footer-menu,       // footer menu
+.elem-socialicons,  // social icons block
+.elem-socialshare,  // social share buttons
+
+{ border: 5px solid yellow; margin: 10px; }

@@ -1,0 +1,27 @@
+#header-wrap {
+
+    .custom-logo {
+        height: 70px;
+        width: auto;
+        transition: height 0.5s;
+    }
+
+    .socialicon a {
+        color: #ffffff80;
+        padding: 0.5rem;
+
+        &:hover {
+            color: #ffffffbf;
+        }
+
+    }
+
+    &.header-scrolled {
+
+        .custom-logo {
+            height: 50px;
+        }
+    
+    }
+
+}

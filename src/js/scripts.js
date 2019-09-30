@@ -7,7 +7,7 @@ var html = document.querySelector('html');
 
 // --- Header Scroll ---
 
-var header = document.querySelector('.header-wrap');
+var header = document.querySelector('#header-wrap');
 
 document.addEventListener('scroll', function() {
     var scrolled = html.scrollTop;
@@ -39,9 +39,15 @@ backToTop.addEventListener('click', function() {
 
 // --- Bootstrap classes to Wordpress code ---
 
-var postPager = document.querySelectorAll('.index-post-pager .page-numbers');
+var pagerNav = document.querySelectorAll('.nav-links');
 
-postPager.forEach(function(el) {
+pagerNav.forEach(function(el) {
+    el.classList.add('nav');
+});
+
+var pagerNavLink = document.querySelectorAll('.nav-links .page-numbers');
+
+pagerNavLink.forEach(function(el) {
     el.classList.add('nav-link');
 });
 

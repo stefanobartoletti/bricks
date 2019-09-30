@@ -55,7 +55,7 @@ $sb_socials[] = new sb_social_network('Email', 'fas fa-envelope', $shareurl_emai
 
 ?>
 
-<div class="social-share media py-3">
+<div class="elem-socialshare media py-3">
 
     <div class="btn btn-lg align-self-center mb-1 py-1 mr-1">
         <i class="fas fa-share-alt"></i>
@@ -65,7 +65,7 @@ $sb_socials[] = new sb_social_network('Email', 'fas fa-envelope', $shareurl_emai
 
         <?php foreach ($sb_socials as $sb_social) { ?>
 
-            <a class="btn btn-lg share-buttons share-<?php echo strtolower($sb_social->sb_social_name) ?> py-1 mb-1" href="<?php echo $sb_social->sb_social_shareurl ?>" role="button" target="_blank">
+            <a class="share-button share-<?php echo strtolower($sb_social->sb_social_name) ?> btn btn-lg py-1 mb-1" href="<?php echo $sb_social->sb_social_shareurl ?>" role="button" target="_blank">
                 <i class="<?php echo $sb_social->sb_social_icon ?>"></i>
             </a>
 

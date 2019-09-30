@@ -1,24 +1,24 @@
+// Smooth scroll
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Full height
----------------------------------------------------*/
+// Forces full height on pages with little content
 
-#page {
+#site-wrap {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.page-wrap {
+#page-wrap {
     flex: 1;
 }
 
-/* admin bar layout fix when logged in
----------------------------------------------------*/
+// Layout fix when logged in and admin bar is present
 
-.admin-bar .site-wrap,
-.admin-bar .header-wrap {
+.admin-bar #site-wrap,
+.admin-bar #header-wrap {
     top: 32px;
 }
