@@ -30,25 +30,8 @@ Code:
 File structure & Templates:
 
   ☐ ---
-  ✔ template-parts > templates @done(19-09-28 12:35)
-  ✔ page @done(19-09-19 18:56)
-  ✔ page-{slug} @done(19-09-20 17:15)
-  ✔ single @done(19-09-21 12:10)
-  ✔ header @done(19-09-22 17:44)
-  ✔ header sections @done(19-09-25 13:38)
   ☐ header vertical
-  ✔ footer @done(19-09-22 17:44)
-  ✔ footer sections @done(19-09-23 18:06)
-  ✔ home @done(19-09-27 19:31)
-  ✔ home sections @done(19-09-27 19:31)
-  ✔ 404 @done(19-09-19 20:15)
-  ✔ index @done(19-09-21 18:06)
-  ✔ comments @done(19-09-28 12:35)
-  ✔ searchform @done(19-09-20 19:21)
-  ✔ sidebars @done(19-09-22 16:08)
-  ✔ sass partials @done(19-09-30 20:32)
   ☐ js partials
-
 
 Elements & Functions:
 
@@ -95,6 +78,22 @@ Security & Fixes:
   ☐ ---
 
 Archive:
+  ✔ template-parts > templates @done(19-09-28 12:35) @project(File structure & Templates)
+  ✔ page @done(19-09-19 18:56) @project(File structure & Templates)
+  ✔ page-{slug} @done(19-09-20 17:15) @project(File structure & Templates)
+  ✔ single @done(19-09-21 12:10) @project(File structure & Templates)
+  ✔ header @done(19-09-22 17:44) @project(File structure & Templates)
+  ✔ header sections @done(19-09-25 13:38) @project(File structure & Templates)
+  ✔ footer @done(19-09-22 17:44) @project(File structure & Templates)
+  ✔ footer sections @done(19-09-23 18:06) @project(File structure & Templates)
+  ✔ home @done(19-09-27 19:31) @project(File structure & Templates)
+  ✔ home sections @done(19-09-27 19:31) @project(File structure & Templates)
+  ✔ 404 @done(19-09-19 20:15) @project(File structure & Templates)
+  ✔ index @done(19-09-21 18:06) @project(File structure & Templates)
+  ✔ comments @done(19-09-28 12:35) @project(File structure & Templates)
+  ✔ searchform @done(19-09-20 19:21) @project(File structure & Templates)
+  ✔ sidebars @done(19-09-22 16:08) @project(File structure & Templates)
+  ✔ sass partials @done(19-09-30 20:32) @project(File structure & Templates)
   ✔ breadcrumbs https://github.com/justintadlock/hybrid-breadcrumbs @done(19-09-17 12:32) @project(Elements & Functions)
   ✔ sidebar > BS list style @done(19-09-16 17:46) @project(Design)
   ✔ search > BS input style @done(19-09-16 17:25) @project(Design)
