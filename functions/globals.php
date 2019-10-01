@@ -57,11 +57,11 @@ function sb_signature($sigType = 'text') {
     switch ($sigType) {
 
         case 'logo-full':
-            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank"><img class="sb-logo" src="'.$sigLogoFull.'" alt="'.$sigLogoAlt.'"></a>';
+            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoFull).'</a>';
             break;
 
         case 'logo-small':
-            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank"><img class="sb-logo" src="'.$sigLogoSmall.'" alt="'.$sigLogoAlt.'"></a>';
+            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoSmall).'</a>';
             break;
 
         case 'text':
@@ -71,4 +71,3 @@ function sb_signature($sigType = 'text') {
     }
 
 }
-
