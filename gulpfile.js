@@ -90,18 +90,13 @@ const { siteUrl } = require(projectVars);
 
 // Environment
 
-var DEV = true;
-var PROD = false;
-
 function setDEV(done) {
-    DEV = true;
-    PROD = false;
+    process.env.NODE_ENV = 'development';
     done();
 }
 
 function setPROD(done) {
-    DEV = false;
-    PROD = true;
+    process.env.NODE_ENV = 'production';
     done();
 }
 
@@ -110,7 +105,7 @@ function setPROD(done) {
 
 function css() {
     return src(cssSrc)
-        .pipe(gulpif(DEV, sourcemaps.init()))
+        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.init()))
         .pipe(sass({
             errorLogToConsole: true,
         }))
@@ -121,12 +116,12 @@ function css() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulpif(PROD, purgecss({
+        .pipe(gulpif(process.env.NODE_ENV === 'production', purgecss({
             content: purgeContent,
             whitelistPatterns: purgeWLP,
         })))
-        .pipe(gulpif(PROD, cleancss()))
-        .pipe(gulpif(DEV, sourcemaps.write('./')))
+        .pipe(gulpif(process.env.NODE_ENV === 'production', cleancss()))
+        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.write('./')))
         .pipe(dest(cssDist))
         .pipe(browserSync.stream());
 };
@@ -136,12 +131,12 @@ function css() {
 
 function js() {
     return src(jsSrc)
-        .pipe(gulpif(DEV, sourcemaps.init()))
-        .pipe(gulpif(PROD, uglify()))
+        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.init()))
+        .pipe(gulpif(process.env.NODE_ENV === 'production', uglify()))
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulpif(DEV, sourcemaps.write('./')))
+        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.write('./')))
         .pipe(dest(jsDist))
         .pipe(browserSync.stream());
 };
@@ -179,8 +174,8 @@ function fonts(done) {
 function icons() {
     return src(iconsSrc)
         .pipe(rename('fa5.min.js')) 
-        .pipe(gulpif(PROD, faMinify(iconsUsed)))
-        .pipe(gulpif(PROD, uglify()))
+        .pipe(gulpif(process.env.NODE_ENV === 'production', faMinify(iconsUsed)))
+        .pipe(gulpif(process.env.NODE_ENV === 'production', uglify()))
         .pipe(dest(jsDist));
 };
 
@@ -247,6 +242,6 @@ exports.icons = icons;
 
 exports.pkg = pkg;
 
-exports.default = series(clean, parallel(css, js, img, fonts, icons));
+exports.default = series(setDEV, clean, parallel(css, js, img, fonts, icons));
 exports.prod = series(setPROD, clean, parallel(css, js, img, fonts, icons));
 exports.watch = parallel(browser_sync, watch_files);
