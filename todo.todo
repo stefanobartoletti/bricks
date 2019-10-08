@@ -1,23 +1,13 @@
-Project & Tools:
+Security & Fixes:
 
   ☐ ---
-  ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
-  ☐ pug-php ? https://github.com/pug-php/pug
-  ☐ gulp-htmlmin ?
-  ☐ gulp-php-minify ?
-  ☐ gulp-preprocess ?
-  ☐ gulp-replace / gulp-string-replace / gulp-html-replace ?
-  ☐ gulp-plumber ?
-  ☐ gulp-load-plugins ?
-  ☐ gulp-changed / gulp-newer ?
-  ☐ gulpfile.js directory
-  
+  ☐ Footer: Check if fields are not empty before echoing them
+ 
 Design:
 
   ☐ ---
   ☐ comments > BS media style
   ☐ comment box & fields > BS style
-  ☐ selected text style
   ☐ submenu style
 
 Code:
@@ -26,6 +16,7 @@ Code:
   ☐ Limit comment nesting
   ☐ single place social info > merge socialicons array & socialshare objects
   ☐ custom template tags
+  ☐ sass classes for svg logo
 
 File structure & Templates:
 
@@ -45,6 +36,32 @@ Elements & Functions:
   ☐ Contact Form 7
   ☐ ACF instead of Pods?
 
+Performance & SEO:
+
+  ☐ ---
+  ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
+  ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
+  ☐ webfontloader
+  ☐ webp image format https://www.npmjs.com/package/gulp-webp
+  ☐ lazyload https://github.com/aFarkas/lazysizes
+  ☐ resposive images with srcset
+  ☐ Google Fonts from local ?
+  ☐ <head><link> preload/prefetch hero background images
+
+Project & Tools:
+
+  ☐ ---
+  ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
+  ☐ pug-php ? https://github.com/pug-php/pug
+  ☐ gulp-htmlmin ?
+  ☐ gulp-php-minify ?
+  ☐ gulp-preprocess ?
+  ☐ gulp-replace / gulp-string-replace / gulp-html-replace ?
+  ☐ gulp-plumber ?
+  ☐ gulp-load-plugins ?
+  ☐ gulp-changed / gulp-newer ?
+  ☐ gulpfile.js directory
+
 Libraries:
 
   ☐ ---
@@ -61,23 +78,8 @@ Libraries:
   ☐ odometer
   ☐ swup.js
 
-Performance & SEO:
-
-  ☐ ---
-  ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
-  ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
-  ☐ webfontloader
-  ☐ webp image format https://www.npmjs.com/package/gulp-webp
-  ☐ lazyload https://github.com/aFarkas/lazysizes
-  ☐ resposive images with srcset
-  ☐ Google Fonts from local ?
-  ☐ <head><link> preload/prefetch hero background images
-
-Security & Fixes:
-
-  ☐ ---
-
 Archive:
+  ✔ selected text style @done(19-10-08 19:24) @project(Design)
   ✔ template-parts > templates @done(19-09-28 12:35) @project(File structure & Templates)
   ✔ page @done(19-09-19 18:56) @project(File structure & Templates)
   ✔ page-{slug} @done(19-09-20 17:15) @project(File structure & Templates)
