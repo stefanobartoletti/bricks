@@ -4,7 +4,7 @@ $searchtext = esc_html__( 'Search', 'sb-base-theme' );
 
 ?>
 
-<form action="<?php echo esc_url_raw(home_url()); ?>" method="get">
+<form class="search-form" action="<?php echo esc_url_raw(home_url()); ?>" method="get">
 
     <div class="form-row">
 
