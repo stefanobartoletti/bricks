@@ -17,6 +17,10 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// --- Third party ---
+
+@import "../../node_modules/brand-colors/dist/latest/scss/brand-colors.latest";
+
 // --- WP Core required styles ---
 
 @import 'wpcore';

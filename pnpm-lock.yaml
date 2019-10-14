@@ -1,6 +1,7 @@
 devDependencies:
   '@fortawesome/fontawesome-free': 5.10.2
   bootstrap: 4.3.1
+  brand-colors: 2.0.1
   browser-sync: 2.26.7
   del: 5.1.0
   fs-extra: 8.1.0
@@ -689,6 +690,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
+  /brand-colors/2.0.1:
+    dev: true
+    resolution:
+      integrity: sha512-h4TgRn5hbu+oYJF+ZrSP/gwQmm4yD5z+5zmlurR9eTHd0Ut2o9KJlN3LxY+pZvGH4fqDmNwNyI7d6+e3I174mA==
   /browser-sync-client/2.26.6:
     dependencies:
       etag: 1.8.1
@@ -6843,6 +6848,7 @@ packages:
 specifiers:
   '@fortawesome/fontawesome-free': ^5.10.2
   bootstrap: ^4.3.1
+  brand-colors: ^2.0.1
   browser-sync: ^2.26.7
   del: ^5.1.0
   fs-extra: ^8.1.0

@@ -16,38 +16,32 @@
 
 }
 
-$facebook-color: #3b5998;
-$twitter-color: #1da1f2;
-$linkedin-color: #0077b5;
-$pinterest-color: #bd081c;
-$pocket-color: #ef4056;
-$telegram-color: #0088cc;
-$email-color: #777777;
+// Colors from "brand-colors" npm package
 
 .share-facebook {
-    background-color: $facebook-color;
+    background-color: $bc-facebook;
 }
 
 .share-twitter {
-    background-color: $twitter-color;
+    background-color: $bc-twitter;
 }
 
 .share-linkedin {
-    background-color: $linkedin-color;
+    background-color: $bc-linkedin;
 }
 
 .share-pinterest {
-    background-color: $pinterest-color;
+    background-color: $bc-pinterest;
 }
 
 .share-pocket {
-    background-color: $pocket-color;
+    background-color: $bc-pocket;
 }
 
 .share-telegram {
-    background-color: $telegram-color;
+    background-color: $bc-telegram;
 }
 
 .share-email {
-    background-color: $email-color;
+    background-color: #777;
 }
