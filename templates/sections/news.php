@@ -18,7 +18,7 @@
     
     ?>
 
-    <div class="card border-0">
+    <article id="post-<?php the_ID(); ?>" <?php post_class('card border-0'); ?> >
 
         <div class="card-body">
 
@@ -40,8 +40,7 @@
 
         </div>
 
-
-    </div>
+    </article> <!-- #post-<?php the_ID(); ?> -->
 
     <?php endwhile; 
 
