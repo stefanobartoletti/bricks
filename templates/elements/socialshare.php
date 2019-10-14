@@ -12,7 +12,7 @@ $thumbnail = get_the_post_thumbnail_url();
 
 // Share URLs
 
-$shareurl_facebook = 'https://www.facebook.com/shareurl.php?u='.$url;
+$shareurl_facebook = 'https://www.facebook.com/sharer.php?u='.$url;
 $shareurl_twitter = 'https://twitter.com/intent/tweet?url='.$url.'&text='.$title;
 $shareurl_linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$url.'&title='.$title;
 $shareurl_pinterest = 'https://pinterest.com/pin/create/button/?url='.$url.'&description='.$title.'&media='.$thumbnail;
