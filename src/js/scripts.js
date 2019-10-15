@@ -5,25 +5,12 @@
 var html = document.querySelector('html');
 
 
-// --- Header Scroll ---
+// --- Header ---
 
-var header = document.querySelector('#header-wrap');
-
-if (header) {
-
-    document.addEventListener('scroll', function () {
-        var scrolled = html.scrollTop;
-        if (scrolled > 50) {
-            header.classList.add('header-scrolled');
-        } else {
-            header.classList.remove('header-scrolled');
-        }
-    });
-
-};
+import "./header/headerscroll"
 
 
-// --- Back to Top ---
+// --- Elements ---
 
 import "./elements/backtotop"
 
