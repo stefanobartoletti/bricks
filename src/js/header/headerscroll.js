@@ -1,3 +1,5 @@
+var html = document.querySelector('html');
+
 var header = document.querySelector('#header-wrap');
 
 if (header) {

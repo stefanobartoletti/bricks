@@ -1,10 +1,5 @@
 "use strict";
 
-// --- Common Variables ---
-
-var html = document.querySelector('html');
-
-
 // --- Header ---
 
 import "./header/headerscroll"

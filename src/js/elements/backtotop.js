@@ -1,3 +1,5 @@
+var html = document.querySelector('html');
+
 var backToTop = document.querySelector('#backtotop');
 
 if (backToTop) {
