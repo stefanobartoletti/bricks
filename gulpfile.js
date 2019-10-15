@@ -55,9 +55,10 @@ const purgeContent = ['**/*.php', 'src/**/*.js'];
 const { purgeWLP } = require(projectVars);
 
 // JS
-const jsSrc = './src/js/**/*.js';
+const jsSrc = './src/js/';
 const jsDist = './dist/js/';
-const jsWatch = [ jsSrc ];
+const jsEntry = [ jsSrc ] + 'scripts.js';
+const jsWatch = [ jsSrc ] + '**/*.js';
 
 // PHP
 const phpWatch = [
