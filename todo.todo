@@ -40,7 +40,6 @@ Performance & SEO:
 
   ☐ ---
   ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
-  ☐ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display
   ☐ webfontloader
   ☐ webp image format https://www.npmjs.com/package/gulp-webp
   ☐ lazyload https://github.com/aFarkas/lazysizes
@@ -79,6 +78,7 @@ Libraries:
   ☐ swup.js
 
 Archive:
+  ✔ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display @done(19-10-15 13:10) @project(Performance & SEO)
   ✔ selected text style @done(19-10-08 19:24) @project(Design)
   ✔ template-parts > templates @done(19-09-28 12:35) @project(File structure & Templates)
   ✔ page @done(19-09-19 18:56) @project(File structure & Templates)
