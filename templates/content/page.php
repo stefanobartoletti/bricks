@@ -1,23 +1,31 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php if (! has_post_thumbnail() ) { 
-        
-        the_title('<h1>', '</h1>');
+    <div class="row py-5 justify-content-center">
 
-    } ?>
+        <div class="col-sm-8">
 
-    <div>
-    
-        <?php the_content(); 
+            <?php if (! has_post_thumbnail() ) { 
+                
+                the_title('<h1>', '</h1>');
 
-        wp_link_pages(array(
-            'before'        => '<nav class="nav"><span class="nav-link">' . esc_html__( 'Part:', 'sb-base-theme' ) . '</span>',
-			'after'         => '</nav>',
-			'link_before'   => '<span class="nav-link">',
-			'link_after'    => '</span>',
-		));
-        
-        ?>
+            } ?>
+
+            <div>
+            
+                <?php the_content(); 
+
+                wp_link_pages(array(
+                    'before'        => '<nav class="nav"><span class="nav-link">' . esc_html__( 'Part:', 'sb-base-theme' ) . '</span>',
+                    'after'         => '</nav>',
+                    'link_before'   => '<span class="nav-link">',
+                    'link_after'    => '</span>',
+                ));
+                
+                ?>
+
+            </div>
+
+        </div>
 
     </div>
 
