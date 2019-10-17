@@ -10,6 +10,8 @@
 
         <div class="col-12 d-flex justify-content-center">
 
+            <button type="button" class="btn btn-primary mx-1"><?php esc_html_e('All', 'sb-base-theme') ?></button>
+
             <?php
             
             $sb_portfolio_cats = get_terms( array(
