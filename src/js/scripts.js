@@ -69,6 +69,23 @@ if (pagerNavLink.length) {
 };
 
 
+// --- Portfolio filters ---
+
+var portfolioCats = document.querySelectorAll('#portfolio-filter button');
+
+if (portfolioCats.length) {
+
+    portfolioCats.forEach(function (el) {
+        
+        var id = el.id;
+
+        el.classList.add(id);
+        
+    });
+
+};
+
+
 // --- Wordpress code ---
 
 var commentBox = document.querySelector('.comment-form-comment textarea');
