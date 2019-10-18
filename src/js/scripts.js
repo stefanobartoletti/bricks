@@ -71,16 +71,36 @@ if (pagerNavLink.length) {
 
 // --- Portfolio filters ---
 
-var portfolioCats = document.querySelectorAll('#portfolio-filter button');
+// TODO add functionality to "All" Button
 
-if (portfolioCats.length) {
+var filterButtons = document.querySelectorAll('#portfolio-filter button');
 
-    portfolioCats.forEach(function (el) {
+var portfolioItems = document.querySelectorAll('.portfolio-item');
+
+if (filterButtons.length) {
+
+    filterButtons.forEach(function (el) {
         
-        var id = el.id;
+        var portfolioCat = el.id;
 
-        el.classList.add(id);
-        
+        el.addEventListener('click', function () {
+
+            portfolioItems.forEach(function (item) {
+
+                if (item.classList.contains(portfolioCat)) {
+
+                    item.classList.remove('portfolio-hidden');
+                
+                } else {
+
+                    item.classList.add('portfolio-hidden');
+
+                }
+
+            });
+
+        });
+
     });
 
 };
