@@ -10,7 +10,7 @@
 
         <div class="col-12 d-flex justify-content-center">
 
-            <button type="button" class="btn btn-primary mx-1"><?php esc_html_e('All', 'sb-base-theme') ?></button>
+            <button id="category-all" class="btn btn-primary mx-1" type="button"><?php esc_html_e('All', 'sb-base-theme') ?></button>
 
             <?php
             
@@ -18,19 +18,17 @@
                 'taxonomy' => 'category',
             ));
 
-            foreach ($sb_portfolio_cats as $sb_portfolio_cat) {
+            foreach ($sb_portfolio_cats as $sb_portfolio_cat) { ?>
               
-                echo '<button type="button" class="btn btn-primary mx-1">' . $sb_portfolio_cat->name . '</button>';
+            <button id="category-<?php echo strtolower($sb_portfolio_cat->name) ?>" class="btn btn-primary mx-1" type="button" ><?php echo $sb_portfolio_cat->name ?></button>
 
-            };
-
-            ?>
+            <?php }; ?>
 
         </div>
 
     </div>
 
-    <div id="portfolio-items" class="row py-5">
+    <div id="portfolio-items" class="row pb-5">
 
         <?php 
 
@@ -48,20 +46,17 @@
         
         ?>
 
-        <div class="col-sm-12 col-md-3">
+        <div <?php post_class('portfolio-item col-sm-12 col-md-3 my-3'); ?>>
 
-            <div>
+            <div class="card">
+
+            <?php the_post_thumbnail('sb_square', array( 'class' => 'card-img h-auto' )); ?>
             
-                <?php the_content(); 
-
-                wp_link_pages(array(
-                    'before'        => '<nav class="nav"><span class="nav-link">' . esc_html__( 'Part:', 'sb-base-theme' ) . '</span>',
-                    'after'         => '</nav>',
-                    'link_before'   => '<span class="nav-link">',
-                    'link_after'    => '</span>',
-                ));
-                
-                ?>
+            <a href="<?php the_permalink(); ?>">
+                <div class="card-img-overlay">
+                    <h2 class="card-title h4 text-white"><?php the_title(); ?></h2>
+                </div>
+            </a>
 
             </div>
 
