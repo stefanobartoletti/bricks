@@ -8,9 +8,9 @@
 
     <div id="portfolio-filter" class="row py-5">
 
-        <div class="col-12 d-flex justify-content-center">
+        <div class="col text-center">
 
-            <button id="category-all" class="btn btn-primary mx-1" type="button"><?php esc_html_e('All', 'sb-base-theme') ?></button>
+            <button id="category-all" class="btn btn-primary mx-1 mt-2" type="button"><?php esc_html_e('All', 'sb-base-theme') ?></button>
 
             <?php
             
@@ -20,7 +20,7 @@
 
             foreach ($sb_portfolio_cats as $sb_portfolio_cat) { ?>
               
-            <button id="category-<?php echo strtolower($sb_portfolio_cat->name) ?>" class="btn btn-primary mx-1" type="button" ><?php echo $sb_portfolio_cat->name ?></button>
+            <button id="category-<?php echo strtolower($sb_portfolio_cat->name) ?>" class="btn btn-primary mx-1 mt-2" type="button" ><?php echo $sb_portfolio_cat->name ?></button>
 
             <?php }; ?>
 
