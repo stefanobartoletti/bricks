@@ -71,8 +71,6 @@ if (pagerNavLink.length) {
 
 // --- Portfolio filters ---
 
-// TODO add functionality to "All" Button
-
 var filterButtons = document.querySelectorAll('#portfolio-filter button');
 
 var portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -80,26 +78,42 @@ var portfolioItems = document.querySelectorAll('.portfolio-item');
 if (filterButtons.length) {
 
     filterButtons.forEach(function (el) {
-        
+
         var portfolioCat = el.id;
 
-        el.addEventListener('click', function () {
+        if (portfolioCat == 'category-all') {
 
-            portfolioItems.forEach(function (item) {
+            el.addEventListener('click', function () {
 
-                if (item.classList.contains(portfolioCat)) {
+                portfolioItems.forEach(function (item) {
 
                     item.classList.remove('portfolio-hidden');
-                
-                } else {
 
-                    item.classList.add('portfolio-hidden');
-
-                }
+                });
 
             });
 
-        });
+        } else {
+
+            el.addEventListener('click', function () {
+
+                portfolioItems.forEach(function (item) {
+
+                    if (item.classList.contains(portfolioCat)) {
+
+                        item.classList.remove('portfolio-hidden');
+
+                    } else {
+
+                        item.classList.add('portfolio-hidden');
+
+                    }
+
+                });
+
+            });
+
+        };
 
     });
 
