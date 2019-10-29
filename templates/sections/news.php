@@ -1,6 +1,6 @@
 <div class="row justify-content-center pb-4">
 
-    <h2><?php esc_html_e('News', 'sb-base-theme') ?></h2>
+    <h2><?php esc_html_e('News', 'bricks') ?></h2>
 
 </div>
 
@@ -32,11 +32,11 @@
                 <img class="img-fluid pb-3" src="<?php the_post_thumbnail_url('sb_single'); ?>" alt="<?php sb_thumb_alt(); ?>">
             </a>
 
-            <p class="card-text"><small class="text-muted"><?php esc_html_e('By ', 'sb-base-theme'); the_author(); ?></small></p>
+            <p class="card-text"><small class="text-muted"><?php esc_html_e('By ', 'bricks'); the_author(); ?></small></p>
 
             <div class="card-text"><?php the_excerpt(); ?></div>
 
-            <a href="<?php the_permalink(); ?>" class="card-link"><?php esc_html_e('Read more', 'sb-base-theme'); ?></a>
+            <a href="<?php the_permalink(); ?>" class="card-link"><?php esc_html_e('Read more', 'bricks'); ?></a>
 
         </div>
 

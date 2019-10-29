@@ -17,7 +17,7 @@
 
                     } elseif ( is_search() ) {
 
-                        esc_html_e( 'Results for: ', 'sb-base-theme' ); the_search_query();
+                        esc_html_e( 'Results for: ', 'bricks' ); the_search_query();
 
                     } else {
 
@@ -34,8 +34,8 @@
 
                     the_posts_pagination(array(
                         'mid_size'  => 2,
-                        'prev_text' => esc_html__('« Previous', 'sb-base-theme'),
-                        'next_text' => esc_html__('Next »', 'sb-base-theme'),
+                        'prev_text' => esc_html__('« Previous', 'bricks'),
+                        'next_text' => esc_html__('Next »', 'bricks'),
                     ));
             
                 else :

@@ -25,7 +25,7 @@
             <div class="carousel-caption">
                 <h2><?php the_title(); ?></h2>
                 <div class="d-none d-md-block"><?php the_excerpt(); ?></div>
-                <a class="btn btn-light" href="<?php the_permalink(); ?>"><?php esc_html_e('Read more', 'sb-base-theme'); ?></a>
+                <a class="btn btn-light" href="<?php the_permalink(); ?>"><?php esc_html_e('Read more', 'bricks'); ?></a>
             </div>
 
         </div>

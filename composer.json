@@ -1,5 +1,5 @@
 {
-    "name": "stefano-b/sb-base-theme",
+    "name": "stefano-b/bricks",
     "description": "",
     "require": {
         "wp-bootstrap/wp-bootstrap-navwalker": "^4.2"
