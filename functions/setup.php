@@ -40,7 +40,7 @@ if (! function_exists('sb_setup_theme')) {
         if (! isset($content_width)) { $content_width = 1400;}
 
         // Load translations 
-        load_theme_textdomain( 'sb-base-theme', get_template_directory().'/languages' );
+        load_theme_textdomain( 'bricks', get_template_directory().'/languages' );
 
     }
 

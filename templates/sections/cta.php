@@ -20,7 +20,7 @@ while ( $sb_cta_query->have_posts() ) : $sb_cta_query->the_post();
 
                 <h2><?php the_title(); ?></h2>
                 <div class="lead my-3"><?php the_excerpt(); ?></div>
-                <a class="btn btn-primary" href="<?php the_permalink(); ?>" role="button"><?php esc_html_e( 'Read more', 'sb-base-theme' ); ?></a>
+                <a class="btn btn-primary" href="<?php the_permalink(); ?>" role="button"><?php esc_html_e( 'Read more', 'bricks' ); ?></a>
             
             </div>
 

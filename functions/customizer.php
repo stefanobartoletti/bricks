@@ -10,8 +10,8 @@
 function sb_customizer_options($wp_customize) {
 
     $wp_customize->add_panel( 'sb_options_panel', array(
-        'title' => __('[sb] Options', 'sb-base-theme'),
-        'description' => __('[sb] Options', 'sb-base-theme'),
+        'title' => __('[sb] Options', 'bricks'),
+        'description' => __('[sb] Options', 'bricks'),
         'priority' => 0,
     ) );
 

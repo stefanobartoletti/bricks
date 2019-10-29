@@ -1,11 +1,11 @@
 {
-  "name": "sb-base-theme",
+  "name": "bricks",
   "version": "0.1.0",
   "description": "",
   "author": "Stefano Bartoletti",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefano-b/sb-base-theme"
+    "url": "https://gitlab.com/stefano-b/bricks"
   },
   "keywords": [
     "wordpress",

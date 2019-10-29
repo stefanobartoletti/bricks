@@ -1,6 +1,6 @@
 <?php 
 
-$searchtext = esc_html__( 'Search', 'sb-base-theme' );
+$searchtext = esc_html__( 'Search', 'bricks' );
 
 ?>
 

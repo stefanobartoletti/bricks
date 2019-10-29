@@ -10,7 +10,7 @@
 
         <div class="col text-center">
 
-            <button id="category-all" class="btn btn-primary mx-1 mt-2" type="button"><?php esc_html_e('All', 'sb-base-theme') ?></button>
+            <button id="category-all" class="btn btn-primary mx-1 mt-2" type="button"><?php esc_html_e('All', 'bricks') ?></button>
 
             <?php
             

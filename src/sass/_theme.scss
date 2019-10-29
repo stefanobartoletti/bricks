@@ -1,16 +1,16 @@
 /* Colors
 ---------------------------------------------------*/
 
-// $theme-colors: (
-//     "primary":       #37c871,  // $primary,
-//     "secondary":     #c83771,  // $secondary,
-//     "success":       #ffffff,  // $success,
-//     "info":          #ffffff,  // $info,
-//     "warning":       #ffffff,  // $warning,
-//     "danger":        #ffffff,  // $danger,
-//     "light":         #dddddd,  // $light,
-//     "dark":          #333333,  // $dark,
-// );
+$theme-colors: (
+    "primary":       #37c871,  // $primary,
+    // "secondary":     #c83771,  // $secondary,
+    // "success":       #ffffff,  // $success,
+    // "info":          #ffffff,  // $info,
+    // "warning":       #ffffff,  // $warning,
+    // "danger":        #ffffff,  // $danger,
+    // "light":         #dddddd,  // $light,
+    // "dark":          #333333,  // $dark,
+);
 
 // $theme-colors: map-remove($theme-colors, "success", "info", "warning", "danger");
 
@@ -19,7 +19,7 @@
 /* Typography
 ---------------------------------------------------*/
 
-// $font-family-base: Muli, $font-family-sans-serif;
+$font-family-base: Rubik, $font-family-sans-serif;
 
 // $font-size-base:                     // 1rem; Assumes browser default, typically `16px`
 // $font-size-lg:                       // $font-size-base * 1.25;
@@ -43,7 +43,7 @@
 
 // $headings-margin-bottom:             // $spacer / 2;
 // $headings-font-family: Phenomena;    // null;
-// $headings-font-weight: 700;          // 500;
+$headings-font-weight: 700;          // 500;
 // $headings-line-height:               // 1.2;
 // $headings-color:                     // null;
 
@@ -123,10 +123,10 @@
 /* Links
 ---------------------------------------------------*/
 
-// $link-color:                     // theme-color("primary");
-// $link-decoration:                // none;
-// $link-hover-color:               // darken($link-color, 15%);
-// $link-hover-decoration:          // underline;
+$link-color:            theme-color("primary");     // theme-color("primary");
+$link-decoration:       none;                       // none;
+$link-hover-color:      darken($link-color, 15%);   // darken($link-color, 15%);
+$link-hover-decoration: underline;                  // underline;
 
 
 
