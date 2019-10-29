@@ -19,7 +19,7 @@ $theme-colors: (
 /* Typography
 ---------------------------------------------------*/
 
-// $font-family-base: Muli, $font-family-sans-serif;
+$font-family-base: Rubik, $font-family-sans-serif;
 
 // $font-size-base:                     // 1rem; Assumes browser default, typically `16px`
 // $font-size-lg:                       // $font-size-base * 1.25;
@@ -43,7 +43,7 @@ $theme-colors: (
 
 // $headings-margin-bottom:             // $spacer / 2;
 // $headings-font-family: Phenomena;    // null;
-// $headings-font-weight: 700;          // 500;
+$headings-font-weight: 700;          // 500;
 // $headings-line-height:               // 1.2;
 // $headings-color:                     // null;
 

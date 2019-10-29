@@ -13,7 +13,7 @@ if(! function_exists('sb_styles_scripts')) {
 
         // wp_enqueue_style('bootstrap-css', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 
-        // wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Muli:400,700');
+        wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Rubik:400,700&display=swap');
 
         // wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.6.3/css/all.css');
 
