@@ -16,6 +16,8 @@
     "setup": "node tools/npm-setup.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "bootstrap": "^4.3.1",
     "brand-colors": "^2.0.1",
