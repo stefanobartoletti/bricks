@@ -1,48 +1,13 @@
 "use strict";
 
-// --- Common Variables ---
+// --- Header ---
 
-var html = document.querySelector('html');
-
-
-// --- Header Scroll ---
-
-var header = document.querySelector('#header-wrap');
-
-if (header) {
-
-    document.addEventListener('scroll', function () {
-        var scrolled = html.scrollTop;
-        if (scrolled > 50) {
-            header.classList.add('header-scrolled');
-        } else {
-            header.classList.remove('header-scrolled');
-        }
-    });
-
-};
+import "./header/headerscroll"
 
 
-// --- Back to Top ---
+// --- Elements ---
 
-var backToTop = document.querySelector('#backtotop');
-
-if (backToTop) {
-
-    document.addEventListener('scroll', function () {
-        var scrolled = html.scrollTop;
-        if (scrolled > 200) {
-            backToTop.classList.remove('hidden');
-        } else {
-            backToTop.classList.add('hidden');
-        }
-    });
-
-    backToTop.addEventListener('click', function () {
-        window.scrollTo(0, 0);
-    });
-
-};
+import "./elements/backtotop"
 
 
 // --- Bootstrap classes to Wordpress code ---

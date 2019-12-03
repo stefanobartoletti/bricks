@@ -16,6 +16,8 @@
     "setup": "node tools/npm-setup.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "bootstrap": "^4.3.1",
     "brand-colors": "^2.0.1",
@@ -24,6 +26,7 @@
     "fs-extra": "^8.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
+    "gulp-better-rollup": "^4.0.1",
     "gulp-cache": "^1.1.3",
     "gulp-clean-css": "^4.2.0",
     "gulp-fa-minify": "^1.2.2",
@@ -36,6 +39,8 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-zip": "^5.0.0"
+    "gulp-zip": "^5.0.0",
+    "rollup": "^1.27.8",
+    "rollup-plugin-babel": "^4.3.3"
   }
 }
