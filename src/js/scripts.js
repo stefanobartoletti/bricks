@@ -15,6 +15,7 @@ import "./elements/backtotop"
 import "./templates/page-portfolio"
 
 
-// --- Bootstrap / Wordpress integration ---
+// --- Libs integrations ---
 
-import "./bswp/bswp"
+import "./libs/bs-classes"
+import "./libs/wp-classes"
