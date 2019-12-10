@@ -17,7 +17,7 @@ if(! function_exists('sb_styles_scripts')) {
 
         // wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.6.3/css/all.css');
         
-        wp_enqueue_style('aos', '//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
+        // wp_enqueue_style('aos', '//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
 
         wp_enqueue_style('sb-styles', get_template_directory_uri() .'/dist/css/style.min.css');
 
