@@ -2,6 +2,7 @@ devDependencies:
   '@babel/core': 7.7.4
   '@babel/preset-env': 7.7.4_@babel+core@7.7.4
   '@fortawesome/fontawesome-free': 5.10.2
+  aos: 2.3.4
   bootstrap: 4.3.1
   brand-colors: 2.0.1
   browser-sync: 2.26.7
@@ -957,6 +958,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-5teOsQWABXHHBFP9y3skS5P3d/WfWXpv3FUpy+LorMrNYaT9pI4oLMQX7jzQ2KklNpGpWHzdCXTDT2Y3XGlZBw==
+  /aos/2.3.4:
+    dependencies:
+      classlist-polyfill: 1.2.0
+      lodash.debounce: 4.0.8
+      lodash.throttle: 4.1.1
+    dev: true
+    resolution:
+      integrity: sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==
   /append-buffer/1.0.2:
     dependencies:
       buffer-equal: 1.0.0
@@ -1733,6 +1742,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-qOhPa/Fj7s6TY8H8esGu5QNpMMQxz79h+urzrNYN6mn+9BnxlDGf5QZ+XeCDsxSjPqsSR56XOZOJmpeurnLMeg==
+  /classlist-polyfill/1.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-k1vC39lFiodrJ5YXUUY4vKqWSi4=
   /clean-css/4.2.1:
     dependencies:
       source-map: 0.6.1
@@ -4724,6 +4737,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+  /lodash.debounce/4.0.8:
+    dev: true
+    resolution:
+      integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=
   /lodash.escape/3.2.0:
     dependencies:
       lodash._root: 3.0.1
@@ -4775,6 +4792,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-+zB4RHU7Zrnxr6VOJix0UwfbqOU=
+  /lodash.throttle/4.1.1:
+    dev: true
+    resolution:
+      integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
   /lodash/4.17.15:
     dev: true
     resolution:
@@ -7820,6 +7841,7 @@ specifiers:
   '@babel/core': ^7.7.4
   '@babel/preset-env': ^7.7.4
   '@fortawesome/fontawesome-free': ^5.10.2
+  aos: ^2.3.4
   bootstrap: ^4.3.1
   brand-colors: ^2.0.1
   browser-sync: ^2.26.7
