@@ -19,6 +19,7 @@ const cleancss = require('gulp-clean-css');
 // JS
 const rollup = require('gulp-better-rollup');
 const babel = require('rollup-plugin-babel');
+const resolve = require('@rollup/plugin-node-resolve');
 const uglify = require('gulp-uglify');
 
 // Images
@@ -135,7 +136,7 @@ function css() {
 function js() {
     return src(jsEntry)
         .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.init()))
-        .pipe(rollup({plugins: [babel()]}, 'umd'))
+        .pipe(rollup({plugins: [babel(), resolve()]}, 'umd'))
         .pipe(gulpif(process.env.NODE_ENV === 'production', uglify()))
         .pipe(rename({
             suffix: '.min'
