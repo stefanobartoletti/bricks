@@ -31,7 +31,6 @@ Elements & Functions:
   ☐ gutenberg blocks ?
   ☐ custom nav walker ?
   ☐ Customizer > sanitize inputs
-  ☐ Customizer > address multiple fields
   ☐ Customizer > placeholder text
   ☐ Contact Form 7
   ☐ ACF instead of Pods?
@@ -66,7 +65,6 @@ Libraries:
   ☐ ---
   ☐ animate.css
   ☐ hover.css
-  ☐ aos (animate on scroll)
   ☐ Slick carousel
   ☐ fullpage.js
   ☐ Magnific Popup / fancybox
@@ -78,6 +76,8 @@ Libraries:
   ☐ swup.js
 
 Archive:
+  ✔ Customizer > address multiple fields @done(19-12-10 18:30) @project(Elements & Functions)
+  ✔ aos (animate on scroll) @done(19-12-10 18:30) @project(Libraries)
   ✔ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display @done(19-10-15 13:10) @project(Performance & SEO)
   ✔ selected text style @done(19-10-08 19:24) @project(Design)
   ✔ template-parts > templates @done(19-09-28 12:35) @project(File structure & Templates)

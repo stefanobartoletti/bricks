@@ -2,6 +2,7 @@ devDependencies:
   '@babel/core': 7.7.4
   '@babel/preset-env': 7.7.4_@babel+core@7.7.4
   '@fortawesome/fontawesome-free': 5.10.2
+  '@rollup/plugin-node-resolve': 6.0.0_rollup@1.27.8
   aos: 2.3.4
   bootstrap: 4.3.1
   brand-colors: 2.0.1
@@ -802,6 +803,32 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-l6t8xEhfK9Sa4YO5mIRdau7XSOADfmh3jCr0evNHdY+HNkW6xuQhgMH7D73VV6WpZOagrW0UludvMTiifiwTfA==
+  /@rollup/plugin-node-resolve/6.0.0_rollup@1.27.8:
+    dependencies:
+      '@rollup/pluginutils': 3.0.0_rollup@1.27.8
+      '@types/resolve': 0.0.8
+      builtin-modules: 3.1.0
+      is-module: 1.0.0
+      resolve: 1.13.1
+      rollup: 1.27.8
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0
+    resolution:
+      integrity: sha512-GqWz1CfXOsqpeVMcoM315+O7zMxpRsmhWyhJoxLFHVSp9S64/u02i7len/FnbTNbmgYs+sZyilasijH8UiuboQ==
+  /@rollup/pluginutils/3.0.0_rollup@1.27.8:
+    dependencies:
+      estree-walker: 0.6.1
+      rollup: 1.27.8
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0
+    resolution:
+      integrity: sha512-qBbGQQaUUiId/lBU9VMeYlVLOoRNvz1fV8HWY5tiGDpI2gdPZHbmOfCjzSdXPhdq3XOfyWvXEBlIPbnM3+9ogQ==
   /@sindresorhus/is/0.7.0:
     dev: true
     engines:
@@ -833,6 +860,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
+  /@types/node/12.12.17:
+    dev: true
+    resolution:
+      integrity: sha512-Is+l3mcHvs47sKy+afn2O1rV4ldZFU7W8101cNlOd+MRbjM4Onida8jSZnJdTe/0Pcf25g9BNIUsuugmE6puHA==
   /@types/node/12.7.4:
     dev: true
     resolution:
@@ -842,6 +873,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
+  /@types/resolve/0.0.8:
+    dependencies:
+      '@types/node': 12.12.17
+    dev: true
+    resolution:
+      integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==
   /abbrev/1.1.1:
     dev: true
     resolution:
@@ -1588,6 +1625,12 @@ packages:
       node: '>=6.9.5'
     resolution:
       integrity: sha512-ZswyIoBfFb3cVDsnZLLj2IDJ/0ppYdil/v2EGlZXvoefO689FokEmFEldhN5dV7R2QBxFneqTJOMIpfqhj+n0g==
+  /builtin-modules/3.1.0:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-k0KL0aWZuBt2lrxrcASWDfwOLMnodeQjodT/1SxEQAXsHANgo6ZC/VEaSEHCXt7aSTZ4/4H5LKa+tBXmW7Vtvw==
   /bytes/3.1.0:
     dev: true
     engines:
@@ -4253,6 +4296,10 @@ packages:
     optional: true
     resolution:
       integrity: sha1-LhmX+m6RZuqsAkLarkQ0A+TvHZc=
+  /is-module/1.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-Mlj7afeMFNW4FdZkM2tM/7ZEFZE=
   /is-natural-number/4.0.1:
     dev: true
     optional: true
@@ -7841,6 +7888,7 @@ specifiers:
   '@babel/core': ^7.7.4
   '@babel/preset-env': ^7.7.4
   '@fortawesome/fontawesome-free': ^5.10.2
+  '@rollup/plugin-node-resolve': ^6.0.0
   aos: ^2.3.4
   bootstrap: ^4.3.1
   brand-colors: ^2.0.1
