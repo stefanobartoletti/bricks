@@ -3,6 +3,8 @@
 
 // Settings: https://github.com/michalsnik/aos
 
+import AOS from "aos";
+
 AOS.init({
 
     offset: 200,
