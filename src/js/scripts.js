@@ -5,7 +5,7 @@
 
 // --- Third Party ---
 
-// import "../../node_modules/aos/dist/aos"
+// import "./integrations/aos"
 
 
 // --- Custom elements ---
@@ -17,8 +17,7 @@ import "./elements/backtotop"
 import "./templates/page-portfolio"
 
 
-// --- Libs integrations ---
+// --- Integrations ---
 
-import "./libs/bs-classes"
-import "./libs/wp-classes"
-import "./libs/aos-init"
+import "./integrations/bs-classes"
+import "./integrations/wp-classes"

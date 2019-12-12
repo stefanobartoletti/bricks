@@ -1,7 +1,9 @@
 
-// --- Animate on Scroll init ---
+// --- Animate on Scroll import & init ---
 
 // Settings: https://github.com/michalsnik/aos
+
+import AOS from "aos";
 
 AOS.init({
 
