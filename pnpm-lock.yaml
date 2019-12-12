@@ -28,6 +28,7 @@ devDependencies:
   rollup: 1.27.8
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.4+rollup@1.27.8
   rollup-plugin-commonjs: 10.1.0_rollup@1.27.8
+  vinyl-ftp: 0.6.1
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -2160,6 +2161,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-mI3zP+qxke95mmE2nddsF635V+o=
+  /cyclist/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
   /d/1.0.1:
     dependencies:
       es5-ext: 0.10.51
@@ -3230,6 +3235,15 @@ packages:
       node: '>=0.6'
     resolution:
       integrity: sha512-WvJ193OHa0GHPEL+AycEJgxvBEwyfRkN1vhjca23OaPVMCaLCXTd5qAu82AjTcgP1UJmytkOKb63Ypde7raDIg==
+  /ftp/0.3.10:
+    dependencies:
+      readable-stream: 1.1.14
+      xregexp: 2.0.0
+    dev: true
+    engines:
+      node: '>=0.8.0'
+    resolution:
+      integrity: sha1-kZfYYa2BQvPmPVqDv+TFn3MwiF0=
   /function-bind/1.1.1:
     dev: true
     resolution:
@@ -5726,6 +5740,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
+  /parallel-transform/1.2.0:
+    dependencies:
+      cyclist: 1.0.1
+      inherits: 2.0.4
+      readable-stream: 2.3.6
+    dev: true
+    resolution:
+      integrity: sha512-P2vSmIu38uIlvdcU7fDkyrxj33gTUy/ABO5ZUbGowxNCopBq/OoD42bP4UmMrJoPyk4Uqf0mu3mtWBhHCZD8yg==
   /parse-filepath/1.0.2:
     dependencies:
       is-absolute: 1.0.0
@@ -7674,6 +7696,19 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-vIu34EkyNyJxmP0jscNzWBSygh7VWhqun6RmqVfXePrOwi9lhvRs//dOaGOTRUQr4tx7/zd26Tk5WeSVZitgng==
+  /vinyl-ftp/0.6.1:
+    dependencies:
+      ftp: 0.3.10
+      minimatch: 3.0.4
+      object-assign: 4.1.1
+      parallel-transform: 1.2.0
+      through2: 2.0.5
+      vinyl: 2.2.0
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-HVp7xuWx9xQC+tzsCCYCnpd3ZVXK8wa4sMEhdkiGY6rY7P1sIm71YkfLjzdYXGS4hseOiSBSS75jPxZBozol6A==
   /vinyl-sourcemap/1.1.0:
     dependencies:
       append-buffer: 1.0.2
@@ -7788,6 +7823,10 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4=
+  /xregexp/2.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-UqY+VsoLhKfzpfPWGHLxJq16WUM=
   /xtend/4.0.2:
     dev: true
     engines:
@@ -7948,3 +7987,4 @@ specifiers:
   rollup: ^1.27.8
   rollup-plugin-babel: ^4.3.3
   rollup-plugin-commonjs: ^10.1.0
+  vinyl-ftp: ^0.6.1
