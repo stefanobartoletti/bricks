@@ -39,6 +39,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const zip = require('gulp-zip');
 const del = require('del');
 const gulpif = require('gulp-if');
+const ftp = require('vinyl-ftp');
 
 // Browser
 const browserSync  = require('browser-sync').create();
@@ -49,6 +50,7 @@ const cache = require('gulp-cache');
 
 // Project variables file
 const projectVars = './tools/gulp-project';
+const ftpVars = './tools/gulp-ftp';
 
 // CSS
 const cssSrc = './src/sass/**/*.scss';
@@ -86,8 +88,11 @@ const fontsWatch = [ fontsSrc ];
 const iconsSrc = './node_modules/@fortawesome/fontawesome-free/js/all.js';
 const { iconsUsed } = require(projectVars);
 
-// Zip package
-const { pkgSrc } = require(projectVars);
+// Production
+const { prodFiles } = require(projectVars);
+const { ftpLogin } = require(ftpVars);
+const { ftpPath } = require(ftpVars);
+const conn = ftp.create(ftpLogin);
 const pkgDist = 'packages/';
 
 // Browser Sync
@@ -193,12 +198,18 @@ function clean() {
 };
 
 
-// --- Packages functions ---
+// --- Production functions ---
 
 function pkg() {
-    return src(pkgSrc, {base: '..'})
+    return src(prodFiles, {base: '..'})
         .pipe(zip('archive.zip'))
         .pipe(dest(pkgDist));
+};
+
+function deploy() {
+    return src(prodFiles, {base: '.', buffer: false})
+        .pipe(conn.newerOrDifferentSize(ftpPath))
+        .pipe(conn.dest(ftpPath));
 };
 
 
@@ -247,6 +258,7 @@ exports.fonts = fonts;
 exports.icons = icons;
 
 exports.pkg = pkg;
+exports.deploy = deploy;
 
 exports.default = series(setDEV, clean, parallel(css, js, img, fonts, icons));
 exports.prod = series(setPROD, clean, parallel(css, js, img, fonts, icons));
