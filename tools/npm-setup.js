@@ -12,6 +12,10 @@ const fs = require('fs-extra');
 fs.ensureDir('./src/fonts/');
 fs.ensureDir('./src/img/');
 
+// --- Files ---
+
+fs.copy('./tools/gulp-ftp.js.sample', './tools/gulp-ftp.js', { overwrite: false })
+
 
 // --- Libs ---
 

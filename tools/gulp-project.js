@@ -45,24 +45,15 @@ const iconsUsed = {
 };
 exports.iconsUsed = iconsUsed;
 
-// --- Zip package ---
+// --- Production files ---
 
-const pkgSrc = [
-    './**',
-    '!.vscode/**',
-    '!tools/**',
-    '!node_modules/**',
-    '!packages/**',
-    '!src/**',
-    '!vendor/**',
-    '!.browserslistrc',
-    '!.directory',
-    '!.gitignore',
-    '!gulpfile.js',
-    '!README.md',
-    '!*.json',
-    '!*.lock',
-    '!*.todo',
-    '!pnpm-lock.yaml',
+const prodFiles = [
+    'dist/**/*',
+    'functions/**/*',
+    'lib/**/*',
+    'templates/**/*',
+    '*.php',
+    'screenshot.png',
+    'style.css',
 ];
-exports.pkgSrc = pkgSrc;
+exports.prodFiles = prodFiles;

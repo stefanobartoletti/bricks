@@ -1,0 +1,20 @@
+/**
+ * FTP credentials for Gulp FTP tasks.
+ * Rename this file to gulp.ftp.js and use your login info.
+ */
+
+// --- FTP Login ---
+
+const ftpLogin = {
+    host:       'www.mywebsite.tld',
+    port:       21,
+    secure:     false,
+    user:       'user',
+    password:   'password',
+    parallel:   10,
+    log:        console.log,
+};
+exports.ftpLogin = ftpLogin;
+
+const ftpPath = "/path/to/remote/dir";
+exports.ftpPath = ftpPath;
