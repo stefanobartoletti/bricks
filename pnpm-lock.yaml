@@ -27,6 +27,7 @@ devDependencies:
   gulp-zip: 5.0.0_gulp@4.0.2
   rollup: 1.27.8
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.4+rollup@1.27.8
+  rollup-plugin-commonjs: 10.1.0_rollup@1.27.8
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -836,6 +837,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
+  /@types/estree/0.0.39:
+    dev: true
+    resolution:
+      integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
   /@types/estree/0.0.40:
     dev: true
     resolution:
@@ -4380,6 +4385,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
+  /is-reference/1.1.4:
+    dependencies:
+      '@types/estree': 0.0.39
+    dev: true
+    resolution:
+      integrity: sha512-uJA/CDPO3Tao3GTrxYn6AwkM4nUPJiGGYu5+cB8qbC7WGFlrKZbiRo7SFKxUAEpFUfiHofWCXBUNhvYJMh+6zw==
   /is-regex/1.0.4:
     dependencies:
       has: 1.0.3
@@ -4920,6 +4931,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Jzi9nw089PhEkMVzbEhpmsYyzaM=
+  /magic-string/0.25.4:
+    dependencies:
+      sourcemap-codec: 1.4.6
+    dev: true
+    resolution:
+      integrity: sha512-oycWO9nEVAP2RVPbIoDoA4Y7LFIJ3xRYov93gAyJhZkET1tNuB0u7uWkZS2LpBWTJUWnmau/To8ECWRC+jKNfw==
   /make-dir/1.3.0:
     dependencies:
       pify: 3.0.0
@@ -6408,6 +6425,19 @@ packages:
       rollup: '>=0.60.0 <2'
     resolution:
       integrity: sha512-tKzWOCmIJD/6aKNz0H1GMM+lW1q9KyFubbWzGiOG540zxPPifnEAHTZwjo0g991Y+DyOZcLqBgqOdqazYE5fkw==
+  /rollup-plugin-commonjs/10.1.0_rollup@1.27.8:
+    dependencies:
+      estree-walker: 0.6.1
+      is-reference: 1.1.4
+      magic-string: 0.25.4
+      resolve: 1.13.1
+      rollup: 1.27.8
+      rollup-pluginutils: 2.8.2
+    dev: true
+    peerDependencies:
+      rollup: '>=1.12.0'
+    resolution:
+      integrity: sha512-jlXbjZSQg8EIeAAvepNwhJj++qJWNJw1Cl0YnOqKtP5Djx+fFGkp3WRh+W0ASCaFG5w1jhmzDxgu3SJuVxPF4Q==
   /rollup-pluginutils/2.8.2:
     dependencies:
       estree-walker: 0.6.1
@@ -6787,6 +6817,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+  /sourcemap-codec/1.4.6:
+    dev: true
+    resolution:
+      integrity: sha512-1ZooVLYFxC448piVLBbtOxFcXwnymH9oUF8nRd3CuYDVvkRBxRl6pB4Mtas5a4drtL+E8LDgFkQNcgIw6tc8Hg==
   /sparkles/1.0.1:
     dev: true
     engines:
@@ -7913,3 +7947,4 @@ specifiers:
   gulp-zip: ^5.0.0
   rollup: ^1.27.8
   rollup-plugin-babel: ^4.3.3
+  rollup-plugin-commonjs: ^10.1.0
