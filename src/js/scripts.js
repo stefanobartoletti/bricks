@@ -5,7 +5,7 @@
 
 // --- Third Party ---
 
-import "./integrations/aos"
+// import "./integrations/aos"
 
 
 // --- Custom elements ---
