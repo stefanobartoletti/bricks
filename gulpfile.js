@@ -55,7 +55,7 @@ const cssSrc = './src/sass/**/*.scss';
 const cssDist = './dist/css/';
 const cssWatch = [ cssSrc ];
 
-const purgeContent = ['**/*.php', 'src/**/*.js'];
+const purgeContent = ['**/*.php', 'src/**/*.js', 'src/**/*.mjs'];
 const { purgeWLP } = require(projectVars);
 
 // JS
