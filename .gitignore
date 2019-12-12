@@ -20,3 +20,6 @@ dist
 
 # Packages
 packages
+
+# Personal data
+tools/gulp-ftp.js
