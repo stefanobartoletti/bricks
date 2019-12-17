@@ -18,7 +18,7 @@ devDependencies:
   gulp-if: 3.0.0
   gulp-imagemin: 6.2.0_gulp@4.0.2
   gulp-purgecss: 1.2.0
-  gulp-rename: 1.4.0
+  gulp-rename: 2.0.0
   gulp-sass: 4.0.2
   gulp-sourcemaps: 2.6.5
   gulp-ttf2woff: 1.1.1
@@ -3546,6 +3546,9 @@ packages:
       node: '>=8'
     peerDependencies:
       gulp: '>=4'
+    peerDependenciesMeta:
+      gulp:
+        optional: true
     resolution:
       integrity: sha512-QJGEmHw+bEt7FSqvmbAUTxbCuNLJYx4sz3ox9WouYqT/7j5FH5CQ8ZnpL1M7H5npX1bUJa7lUVY1w20jXxhOxg==
   /gulp-better-rollup/4.0.1_rollup@1.27.8:
@@ -3667,12 +3670,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MCd00oPCmwwxCpayrVz4yzz/w7bH5ahQGr3F7tjVCXaK1Z9T1GWwPAv4syq502oHuFRnW1/F153lQMIRiUIVdA==
-  /gulp-rename/1.4.0:
+  /gulp-rename/2.0.0:
     dev: true
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-swzbIGb/arEoFK89tPY58vg3Ok1bw+d35PfUNwWqdo7KM4jkmuGA78JiDNqR+JeZFaeeHnRg9N7aihX3YPmsyg==
+      integrity: sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
   /gulp-sass/4.0.2:
     dependencies:
       chalk: 2.4.2
@@ -7994,7 +7997,7 @@ specifiers:
   gulp-if: ^3.0.0
   gulp-imagemin: ^6.2.0
   gulp-purgecss: ^1.2.0
-  gulp-rename: ^1.4.0
+  gulp-rename: ^2.0.0
   gulp-sass: ^4.0.2
   gulp-sourcemaps: ^2.6.5
   gulp-ttf2woff: ^1.1.1
