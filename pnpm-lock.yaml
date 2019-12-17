@@ -24,7 +24,7 @@ devDependencies:
   gulp-ttf2woff: 1.1.1
   gulp-ttf2woff2: 3.0.0
   gulp-uglify: 3.0.2
-  gulp-zip: 5.0.0_gulp@4.0.2
+  gulp-zip: 5.0.1_gulp@4.0.2
   rollup: 1.27.8
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.4+rollup@1.27.8
   rollup-plugin-commonjs: 10.1.0_rollup@1.27.8
@@ -2561,6 +2561,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1MkrZNvWTKCaigbn+W15elq2BB/L22nqrSY5DKlo3X6+vclJm8Bb5djXJBmEX6fS3+zCh/F4VBK5Z2KxJt4s2Q==
+  /end-of-stream/1.4.4:
+    dependencies:
+      once: 1.4.0
+    dev: true
+    resolution:
+      integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==
   /engine.io-client/3.2.1:
     dependencies:
       component-emitter: 1.2.1
@@ -3763,7 +3769,7 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-AFTh50RQLifATBh8PsxQXdVLu08=
-  /gulp-zip/5.0.0_gulp@4.0.2:
+  /gulp-zip/5.0.1_gulp@4.0.2:
     dependencies:
       get-stream: 5.1.0
       gulp: 4.0.2
@@ -3777,7 +3783,7 @@ packages:
     peerDependencies:
       gulp: '>=4'
     resolution:
-      integrity: sha512-oR3t8kn+ccHkSyRcBV5kBLPXrhqTh5d6wBAR7r7wqjNQNBhYvOwPedCwlAaGcNl1qSeXNDn6qOk1Qyxvx9Wrow==
+      integrity: sha512-M/IWLh9RvOpuofDZkgDirtiyz9J3yIqnDOJ3muzk2D/XnZ1ruqPlPLRIpXnl/aZU+xXwKPdOIxjRzkUcVEQyZQ==
   /gulp/4.0.2:
     dependencies:
       glob-watcher: 5.0.3
@@ -6033,7 +6039,7 @@ packages:
       integrity: sha512-ruPMNRkN3MHP1cWJc9OWr+T/xDP0jhXYCLfJcBuX54hhfIBnaQmAUMfDcG4DM5UMWByBbJY69QSphm3jtDKIkA==
   /pump/3.0.0:
     dependencies:
-      end-of-stream: 1.4.1
+      end-of-stream: 1.4.4
       once: 1.4.0
     dev: true
     resolution:
@@ -7983,7 +7989,7 @@ specifiers:
   gulp-ttf2woff: ^1.1.1
   gulp-ttf2woff2: ^3.0.0
   gulp-uglify: ^3.0.2
-  gulp-zip: ^5.0.0
+  gulp-zip: ^5.0.1
   rollup: ^1.27.8
   rollup-plugin-babel: ^4.3.3
   rollup-plugin-commonjs: ^10.1.0

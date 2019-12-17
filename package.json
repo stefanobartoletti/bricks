@@ -41,7 +41,7 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-zip": "^5.0.0",
+    "gulp-zip": "^5.0.1",
     "rollup": "^1.27.8",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
