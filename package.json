@@ -21,7 +21,7 @@
     "@fortawesome/fontawesome-free": "^5.10.2",
     "@rollup/plugin-node-resolve": "^6.0.0",
     "aos": "^2.3.4",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "brand-colors": "^2.1.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
