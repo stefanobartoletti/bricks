@@ -1,6 +1,6 @@
 /**
  * FTP credentials for Gulp FTP tasks.
- * Rename this file to gulp.ftp.js and use your login info.
+ * Rename this file to gulp-ftp.js and use your login info.
  */
 
 // --- FTP Login ---
