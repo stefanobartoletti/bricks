@@ -16,8 +16,8 @@
     "setup": "node tools/npm-setup.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "@rollup/plugin-node-resolve": "^6.0.0",
     "aos": "^2.3.4",
