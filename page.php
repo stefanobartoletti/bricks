@@ -1,43 +1,37 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
-<!-- main content wrapper -->
+<main id="content-wrap">
 
-<main class="content-wrap">
+    <?php while ( have_posts() ) : the_post();
 
-    <?php while ( have_posts() ) : the_post(); ?>
+        if (has_post_thumbnail()) {
 
-    <article <?php post_class(); ?> >
-
-        <?php if (has_post_thumbnail()) {
-
-            get_template_part( 'template-parts/sections/pageheader', '' );
+            get_template_part( 'templates/sections/pageheader', '' );
 
         } ?>
 
         <div class="container">
 
-            <div class="row py-5 justify-content-center">
+            <?php 
+            
+            get_template_part( 'templates/elements/breadcrumbs', '' );
 
-                <div class="col-sm-8">
+            // Get this page slug                    
+            $slug = $post->post_name;
+            
+            // Check if template file exists, set the template to be used
+            $template_name = (is_file(get_theme_file_path('templates/content/page-'.$slug.'.php'))) ? $slug : '';
+                
+            get_template_part( 'templates/content/page', $template_name );
 
-                    <?php if (! has_post_thumbnail() ) { ?>
-
-                    <h1><?php the_title(); ?></h1>
-
-                    <?php } ?>
-
-                    <div><?php the_content(); ?></div>
-
-                </div>
-
-            </div>
-
+            if ( comments_open() || get_comments_number() ) { comments_template(); }
+            
+            ?>
+            
         </div>
-
-    </article>
 
     <?php endwhile ?>
 
-</main>
+</main> <!-- #content-wrap -->
 
-<?php get_footer() ?>
+<?php get_footer();

@@ -1,33 +1,50 @@
 {
-  "name": "sb-base-theme",
+  "name": "bricks",
   "version": "0.1.0",
   "description": "",
   "author": "Stefano Bartoletti",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefano-b/sb-base-theme"
+    "url": "https://gitlab.com/stefano-b/bricks"
   },
   "keywords": [
     "wordpress",
     "bootstrap"
   ],
   "scripts": {
-    "postinstall": "composer install && gulp setup && gulp default"
+    "postinstall": "composer install && npm run setup && gulp default",
+    "setup": "node tools/npm-setup.js"
   },
   "devDependencies": {
-    "bootstrap": "^4.3.1",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.4.1",
+    "brand-colors": "^2.1.1",
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "fs-extra": "^8.1.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-cache": "^1.1.2",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-fa-minify": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.2.0",
     "gulp-purgecss": "^1.2.0",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-ttf2woff": "^1.1.1",
-    "gulp-ttf2woff2": "^2.0.2",
+    "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-zip": "^4.2.0"
+    "gulp-zip": "^5.0.1",
+    "rollup": "^1.27.13",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "vinyl-ftp": "^0.6.1"
   }
 }

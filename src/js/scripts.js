@@ -1,35 +1,23 @@
-(function($){
+"use strict";
 
-/* Site wide
----------------------------------------------------*/
-
-// Add class to header when scrolled
-
-$(document).scroll(function(){
-    var scroll = $(this).scrollTop();
-    if (scroll > 100) {
-        $('.header-wrap').addClass('header-scrolled');
-    } else {
-        $('.header-wrap').removeClass('header-scrolled');
-    }
-});
-
-/* Blog index page
----------------------------------------------------*/
-
-// BS nav class to post pagination
-
-$('.index-post-pager .page-numbers').addClass('nav-link');
+// --- Bootstrap ---
 
 
-/* Comments template
----------------------------------------------------*/
+// --- Third Party ---
 
-// Comment form textarea remove cols
-
-$(".comment-form-comment textarea").removeAttr('cols');
+// import "./integrations/aos"
 
 
-/*-------------------------------------------------*/
-    
-})(jQuery);
+// --- Custom elements ---
+
+import "./header/headerscroll"
+
+import "./elements/backtotop"
+
+import "./templates/page-portfolio"
+
+
+// --- Integrations ---
+
+import "./integrations/bs-classes"
+import "./integrations/wp-classes"

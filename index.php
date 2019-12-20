@@ -1,87 +1,57 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
-<!-- main content wrapper -->
-
-<main class="content-wrap">
+<main id="content-wrap">
 
     <div class="container">
 
+        <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
+
         <div class="row py-5">
 
-            <!-- article index wrapper -->
+            <div id="loop-wrap" class="col">
+                   
+                <h1 class="mb-5 border-bottom">
+                    <?php if ( is_home() ) {
 
-            <div class="index-wrap col">
+                        bloginfo('description');
 
-                <!-- TODO add title for date and author -->
+                    } elseif ( is_search() ) {
 
-                <?php if ( is_category() || is_tag() ) { ?>
+                        esc_html_e( 'Results for: ', 'bricks' ); the_search_query();
 
-                    <h1><?php single_cat_title() ?></h1>
+                    } else {
 
-                <?php } else if ( is_search() ) { ?>
+                        the_archive_title();
 
-                    <h1><?php esc_html_e( 'Results for: ', 'sb-base-theme' ); ?><?php echo $s; ?></h1>
-
-                <?php } else { ?>
-
-                    <h1><?php bloginfo('description'); ?></h1>
-
-                <?php } ?>
-
-                <hr class="mb-5">
-
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-                    <article <?php post_class(); ?> >
-
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-                        <p><?php the_time('j M, Y'); ?> - <?php the_category(', '); ?></p>
-
-                        <a href="<?php the_permalink();?>">
-                            <?php the_post_thumbnail('sb_single', array( 'class' => 'img-fluid mb-3', 'alt' => get_the_title() )); ?>
-                        </a>
-
-                        <div><?php the_excerpt(); ?></div>
-
-                    </article>
-
-                    <hr class="my-4">
-                                               
-                <?php endwhile; ?>
-
-                    <div class="index-post-pager nav">
+                    } ?>
+                </h1>
+            
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
                 
-                        <?php global $wp_query; $big = 999999999; // need an unlikely integer
+                    get_template_part( 'templates/content/loop', '' );
+                                
+                    endwhile;
 
-                        echo paginate_links(array(
-                            'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                            'format' => '?paged=%#%',
-                            'current' => max( 1, get_query_var('paged') ),
-                            'total' => $wp_query->max_num_pages,
-                            'prev_next' => true,
-                            'prev_text' => esc_html__('« Previous', 'sb-base-theme'),
-                            'next_text' => esc_html__('Next »', 'sb-base-theme'),
-                        ));
-                        
-                        ?>
-
-                    </div>
+                    the_posts_pagination(array(
+                        'mid_size'  => 2,
+                        'prev_text' => esc_html__('« Previous', 'bricks'),
+                        'next_text' => esc_html__('Next »', 'bricks'),
+                    ));
             
-                <?php else : ?>
+                else :
 
-                    <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'sb-base-theme'); ?></p>
+                    get_template_part( 'templates/content/loop', 'none' );
 
-                <?php endif; ?>
+                endif; ?>
             
-            </div>
+            </div> <!-- #loop-wrap -->
 
-            <?php get_sidebar() ?>
+            <?php get_sidebar(); ?>
 
         </div>
 
     </div>
            
-</main>
+</main> <!-- #content-wrap -->
 
-<?php get_footer() ?>
+<?php get_footer();

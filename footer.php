@@ -1,21 +1,24 @@
-</div> <!-- .page-wrap -->
+    </div> <!-- #page-wrap -->
 
-<!-- footer wrapper -->
+    <footer id="footer-wrap" class="bg-dark text-light">
 
-<footer class="footer-wrap bg-dark text-light">
+        <?php
 
-    <div class="container my-4">
+        get_template_part( 'templates/footer/footer', 'simple' ); 
+        get_template_part( 'templates/footer/footer', 'copyright' ); 
+        
+        ?>
 
-        <!-- FIX escape text -->
-            
-        <p><?php echo "&#169; ", date('o'), " - ", bloginfo('name'), " - Via Xxxxxxx 00, 00000 Yyyyyy (YY) - p.i. 00000000000 - Tutti i diritti riservati." ?></p>
+    </footer> <!-- #footer-wrap -->
 
-    </div>
+    <?php 
+    
+    get_template_part( 'templates/elements/backtotop', '' );
+    
+    wp_footer(); 
+    
+    ?>
 
-</footer>
-
-<?php wp_footer() ?>
-
-</div> <!-- #page .site -->
+</div> <!-- #site-wrap -->
 
 </body>

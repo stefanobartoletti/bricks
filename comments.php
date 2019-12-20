@@ -2,17 +2,15 @@
 	return;
 } ?>
 
-<!-- comments wrapper -->
-
-<div class="comments-wrap mt-5">
+<div id="comments-wrap" class="mt-5">
 
     <?php if ( have_comments() ) { ?>
 
         <h2 class="comments-title mb-3">
             <?php comments_number(
-                esc_html__('No comments yet.', 'sb-base-theme'),
-                esc_html__('One comment.', 'sb-base-theme'),
-                esc_html__('% comments.', 'sb-base-theme')
+                esc_html__('No comments yet.', 'bricks'),
+                esc_html__('One comment.', 'bricks'),
+                esc_html__('% comments.', 'bricks')
             ); ?>
         </h2>
 
@@ -24,42 +22,38 @@
             )); ?>
         </ol>
 
-        <!-- comments navigation -->
-
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { ?>
 
             <nav class="navigation comment-navigation" role="navigation">
 
-                <h1 class="screen-reader-text section-heading">
-                    <?php esc_html_e('Comment navigation', 'sb-base-theme'); ?>
-                </h1>
+                <h2 class="screen-reader-text section-heading">
+                    <?php esc_html_e('Comment navigation', 'bricks'); ?>
+                </h2>
 
                 <div class="nav-previous">
-                    <?php previous_comments_link(esc_html__('&larr; Older Comments', 'sb-base-theme')); ?>
+                    <?php previous_comments_link(esc_html__('&larr; Older Comments', 'bricks')); ?>
                 </div>
 
                 <div class="nav-next">
-                    <?php next_comments_link(esc_html__('Newer Comments &rarr;', 'sb-base-theme')); ?>
+                    <?php next_comments_link(esc_html__('Newer Comments &rarr;', 'bricks')); ?>
                 </div>
 
             </nav>
         
-        <?php } ?>        
+        <?php }      
 
-    <?php } ?>
+    }
 
-    <!-- if closed comments -->
+    if ( ! comments_open() && get_comments_number() ) { ?>
 
-    <?php if ( ! comments_open() && get_comments_number() ) { ?>
+        <p class="no-comments"><?php esc_html_e('Comments are closed.', 'bricks'); ?></p>
 
-        <p class="no-comments"><?php esc_html_e('Comments are closed.', 'sb-base-theme'); ?></p>
+    <?php }
 
-    <?php } ?>
-
-    <!-- comment form -->
-
-    <?php comment_form( array(
+    comment_form( array(
         'class_submit'  => 'submit btn btn-primary',
-    )); ?>
+    ));
+    
+    ?>
 
-</div>
+</div> <!-- #comments-wrap -->

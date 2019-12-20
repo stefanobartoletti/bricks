@@ -4,29 +4,28 @@
 
         <?php
 
-            $sb_slidecount = 0;
+        $sb_slidecount = 0;
 
-            // WP Query 
-            $args = get_query_var('sb_slider_args');
+        // WP Query 
+        $args = get_query_var('sb_args');
 
-            $sb_slider_query = new WP_Query( $args ); 
+        $sb_slider_query = new WP_Query( $args ); 
 
-            // WP Loop
-            while ( $sb_slider_query->have_posts() ) :
-                $sb_slider_query->the_post(); 
+        // WP Loop
+        while ( $sb_slider_query->have_posts() ) : $sb_slider_query->the_post(); 
 
-                $sb_slidecount++; 
+        $sb_slidecount++; 
         
         ?>
 
-        <div class="carousel-item <?php if($sb_slidecount == 1){echo 'active';} ?>">
+        <div class="carousel-item <?php if($sb_slidecount == 1) { echo 'active'; } ?>">
 
-            <img class="d-block w-100" src="<?php the_post_thumbnail_url('sb_big'); ?>" alt="<?php the_title(); ?>">
+            <img class="d-block w-100" src="<?php the_post_thumbnail_url('sb_big'); ?>" alt="<?php sb_thumb_alt(); ?>">
 
             <div class="carousel-caption">
-                <h3><?php the_title(); ?></h3>
+                <h2><?php the_title(); ?></h2>
                 <div class="d-none d-md-block"><?php the_excerpt(); ?></div>
-                <a class="btn btn-light" href="<?php the_permalink(); ?>"><?php esc_html_e('Read more', 'sb-base-theme'); ?></a>
+                <a class="btn btn-light" href="<?php the_permalink(); ?>"><?php esc_html_e('Read more', 'bricks'); ?></a>
             </div>
 
         </div>

@@ -1,28 +1,43 @@
 <?php
 
+/**
+ * https://developer.wordpress.org/themes/customize-api/customizer-objects/
+ * 
+ */
+
+// --- Customizer setup ---
+
 function sb_customizer_options($wp_customize) {
 
-//* Branding section 
+    $wp_customize->add_panel( 'sb_options_panel', array(
+        'title' => __('[sb] Options', 'bricks'),
+        'description' => __('[sb] Options', 'bricks'),
+        'priority' => 0,
+    ) );
 
-$wp_customize -> add_section ( 'sb_branding', array(
-    'title' => __('Branding', 'sb-base-theme'),
-    'description' => __('Branding options', 'sb-base-theme'),
-    'priority' => 20,
-    )
-);
+    // Branding section
+    require_once get_template_directory() . '/functions/customizer/branding.php';
 
-    // Chrome theme color 
+    // Contacts section
+    require_once get_template_directory() . '/functions/customizer/contacts.php';
 
-    $wp_customize -> add_setting ( 'sb_chrome_theme', array( 'default' => '' ) );
-    $wp_customize -> add_control ( new WP_Customize_Color_Control ( $wp_customize, 'sb_chrome_theme', array(
-        'label' => __('Chrome theme color', 'sb-base-theme'),
-        'description' => __('Tab color in Chrome for Android', 'sb-base-theme'),
-        'section' => 'sb_branding',
-        'settings' => 'sb_chrome_theme',
-    )));
+    // Social section
+    require_once get_template_directory() . '/functions/customizer/social.php';
 
 }
 
 add_action( 'customize_register', 'sb_customizer_options' );
 
-?>
+// --- Customizer actions ---
+
+function sb_head_meta() {
+    
+    if( get_theme_mod('sb_chrome_theme')) {
+          
+        echo '<meta name="theme-color" content="', get_theme_mod('sb_chrome_theme'), '">';
+
+    }
+
+}
+
+add_action('wp_head', 'sb_head_meta');
