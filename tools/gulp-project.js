@@ -32,6 +32,7 @@ const iconsUsed = {
         'angle-up',
         'envelope',
         'share-alt',
+        'search',
     ],
     fab: [ 
         'facebook-f',
