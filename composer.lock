@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "301bd6d6d1d7ab71452261c17ec31fa6",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "a8cc1f85fbe9c140d7b8515b76203976",
+    "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+                "reference": "141b272484481432cda342727a427dc1e206bfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
+                "reference": "141b272484481432cda342727a427dc1e206bfa0",
                 "shasum": ""
             },
             "require": {
@@ -74,6 +73,7 @@
                 "RadPHP",
                 "SMF",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -96,6 +96,7 @@
                 "installer",
                 "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
                 "lavalite",
@@ -125,20 +126,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-08-27T06:10:37+00:00"
+            "time": "2019-08-12T15:00:31+00:00"
         },
         {
             "name": "wp-bootstrap/wp-bootstrap-navwalker",
-            "version": "v4.2.0",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-bootstrap/wp-bootstrap-navwalker.git",
-                "reference": "26a280ad71ad877042fb73b3aa35dc721b0e6a73"
+                "reference": "5d39044bcee8703d1402f7371b033c460b2e0a71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-bootstrap/wp-bootstrap-navwalker/zipball/26a280ad71ad877042fb73b3aa35dc721b0e6a73",
-                "reference": "26a280ad71ad877042fb73b3aa35dc721b0e6a73",
+                "url": "https://api.github.com/repos/wp-bootstrap/wp-bootstrap-navwalker/zipball/5d39044bcee8703d1402f7371b033c460b2e0a71",
+                "reference": "5d39044bcee8703d1402f7371b033c460b2e0a71",
                 "shasum": ""
             },
             "require": {
@@ -162,9 +163,10 @@
                 }
             ],
             "description": "A custom WordPress nav walker class to fully implement the Bootstrap 4 navigation style in a custom theme using the WordPress built in menu manager.",
-            "time": "2018-10-30T18:28:10+00:00"
+            "time": "2019-10-02T18:15:47+00:00"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

@@ -2,7 +2,7 @@
     "name": "stefano-b/bricks",
     "description": "",
     "require": {
-        "wp-bootstrap/wp-bootstrap-navwalker": "^4.2"
+        "wp-bootstrap/wp-bootstrap-navwalker": "^4.3"
     },
     "require-dev": {
         
