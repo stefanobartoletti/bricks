@@ -1,7 +1,6 @@
 Security & Fixes:
 
   ☐ ---
-  ☐ Footer: Check if fields are not empty before echoing them
  
 Design:
 
@@ -22,7 +21,6 @@ File structure & Templates:
 
   ☐ ---
   ☐ header vertical
-  ☐ js partials
 
 Elements & Functions:
 
@@ -76,6 +74,8 @@ Libraries:
   ☐ swup.js
 
 Archive:
+  ✔ Footer: Check if fields are not empty before echoing them @done(19-12-27 13:43) @project(Security & Fixes)
+  ✔ js partials @done(19-12-27 13:43) @project(File structure & Templates)
   ✔ Customizer > address multiple fields @done(19-12-10 18:30) @project(Elements & Functions)
   ✔ aos (animate on scroll) @done(19-12-10 18:30) @project(Libraries)
   ✔ font-face font-display property https://developers.google.com/web/updates/2016/02/font-display @done(19-10-15 13:10) @project(Performance & SEO)
