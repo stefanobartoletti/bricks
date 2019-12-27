@@ -40,3 +40,9 @@ require_once get_template_directory() . '/functions/globals.php';
 // --- Customizer options --- 
 
 require_once get_template_directory() . '/functions/customizer.php';
+
+// --- Custom Post Types & Taxonomies --- 
+
+foreach (glob(get_template_directory() . '/functions/cpt/*.php') as $cpt) {
+    require_once $cpt;
+}
