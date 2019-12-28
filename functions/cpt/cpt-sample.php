@@ -11,8 +11,10 @@
 if ( ! function_exists('sb_cpt_sample') ) {
 
     function sb_cpt_sample() {
-      
-        register_post_type('cpt_sample', array(
+
+        $slug = 'cpt-sample';
+                  
+        $args = array(
 
             // ---- Labels ---
 
@@ -57,7 +59,7 @@ if ( ! function_exists('sb_cpt_sample') ) {
             'can_export'            => true,
             'has_archive'           => true,
             'rewrite'               => array(
-                'slug'          => 'cpt_sample',
+                'slug'          => $slug,
                 // 'with_front'    => true,
                 // 'feeds'         => true,
                 // 'pages'         => true,
@@ -82,8 +84,8 @@ if ( ! function_exists('sb_cpt_sample') ) {
             // ---- Taxonomies ---
 
             'taxonomies'    => array(
-                'category',
-                'post_tag',
+                // 'category',
+                // 'post_tag',
             ),
 
             // ---- Admin UI ---
@@ -111,10 +113,12 @@ if ( ! function_exists('sb_cpt_sample') ) {
             // ---- REST API ---
 
             'show_in_rest'          => true,
-            // 'rest_base'             => 'cpt_sample',
+            // 'rest_base'             => $slug,
             // 'rest_controller_class' => 'WP_REST_Posts_Controller',
 
-        ));
+        );
+    
+        register_post_type($slug, $args);
 
     }
 
