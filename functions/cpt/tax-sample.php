@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * Custom Taxonomy Sample
+ * 
+ * https://developer.wordpress.org/reference/functions/register_taxonomy/
+ * https://generatewp.com/taxonomy/
+ * 
+ */
+
+if ( ! function_exists('sb_tax_sample') ) {
+
+    function sb_tax_sample() { 
+        
+        $slug = 'tax-sample';
+
+        $objects = array(
+            // 'post',
+            // 'page',
+        );
+        
+        $args = array(
+
+            // ---- Labels ---
+
+            'labels'                     => array(
+                'name'                       => _x( 'Custom Taxonomy Samples', 'Taxonomy General Name', 'bricks' ),
+                'singular_name'              => _x( 'Custom Taxonomy Sample', 'Taxonomy Singular Name', 'bricks' ),
+                // 'menu_name'                  => __( 'Taxonomy', 'bricks' ),
+                // 'all_items'                  => __( 'All Items', 'bricks' ),
+                // 'parent_item'                => __( 'Parent Item', 'bricks' ),
+                // 'parent_item_colon'          => __( 'Parent Item:', 'bricks' ),
+                // 'new_item_name'              => __( 'New Item Name', 'bricks' ),
+                // 'add_new_item'               => __( 'Add New Item', 'bricks' ),
+                // 'edit_item'                  => __( 'Edit Item', 'bricks' ),
+                // 'update_item'                => __( 'Update Item', 'bricks' ),
+                // 'view_item'                  => __( 'View Item', 'bricks' ),
+                // 'separate_items_with_commas' => __( 'Separate items with commas', 'bricks' ),
+                // 'add_or_remove_items'        => __( 'Add or remove items', 'bricks' ),
+                // 'choose_from_most_used'      => __( 'Choose from the most used', 'bricks' ),
+                // 'popular_items'              => __( 'Popular Items', 'bricks' ),
+                // 'search_items'               => __( 'Search Items', 'bricks' ),
+                // 'not_found'                  => __( 'Not Found', 'bricks' ),
+                // 'no_terms'                   => __( 'No items', 'bricks' ),
+                // 'items_list'                 => __( 'Items list', 'bricks' ),
+                // 'items_list_navigation'      => __( 'Items list navigation', 'bricks' ),
+            ),
+
+            // ---- Options ---
+
+            'public'                => true,
+            'publicly_queryable'    => true,
+            'hierarchical'          => true,		
+            'rewrite'               => array(
+                'slug'          => $slug,
+                // 'with_front'    => true,
+                // 'hierarchical'  => false,
+            ),
+
+            // ---- Admin UI ---
+
+            'show_ui'               => true,
+            'show_admin_column'     => false,
+            'show_in_nav_menus'     => true,
+            'show_tagcloud'         => true,
+            'show_in_quick_edit'    => true,
+            
+            // ---- Capabilities ---
+
+            // 'capabilities'  => array(
+            //     'manage_terms'  => 'manage_categories',
+            //     'edit_terms'    => 'manage_categories',
+            //     'delete_terms'  => 'manage_categories',
+            //     'assign_terms'  => 'edit_posts',
+            // ),
+
+            // ---- REST API ---
+
+            'show_in_rest'          => true,
+            // 'rest_base'             => $slug,
+            // 'rest_controller_class' => 'WP_REST_Terms_Controller',
+            
+        );
+
+        register_taxonomy( $slug, $objects, $args);
+
+    }
+
+    add_action('init', 'sb_tax_sample');
+
+}

@@ -25,7 +25,6 @@ File structure & Templates:
 Elements & Functions:
 
   ☐ ---
-  ☐ custom post types & taxonomies ?
   ☐ gutenberg blocks ?
   ☐ custom nav walker ?
   ☐ Customizer > sanitize inputs
@@ -74,6 +73,7 @@ Libraries:
   ☐ swup.js
 
 Archive:
+  ✔ custom post types & taxonomies ? @done(19-12-28 20:38) @project(Elements & Functions)
   ✔ Footer: Check if fields are not empty before echoing them @done(19-12-27 13:43) @project(Security & Fixes)
   ✔ js partials @done(19-12-27 13:43) @project(File structure & Templates)
   ✔ Customizer > address multiple fields @done(19-12-10 18:30) @project(Elements & Functions)
