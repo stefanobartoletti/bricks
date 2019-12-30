@@ -19,7 +19,7 @@ const cleancss = require('gulp-clean-css');
 // JS
 const rollup = require('gulp-better-rollup');
 const babel = require('rollup-plugin-babel');
-const commonjs = require('rollup-plugin-commonjs');
+const commonjs = require('@rollup/plugin-commonjs');
 const resolve = require('@rollup/plugin-node-resolve');
 const uglify = require('gulp-uglify');
 

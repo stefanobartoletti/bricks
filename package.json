@@ -19,6 +19,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@fortawesome/fontawesome-free": "^5.12.0",
+    "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^6.0.0",
     "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
@@ -42,9 +43,8 @@
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.1",
-    "rollup": "^1.27.13",
+    "rollup": "^1.27.14",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.1.0",
     "vinyl-ftp": "^0.6.1"
   }
 }
