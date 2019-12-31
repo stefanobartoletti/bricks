@@ -98,7 +98,7 @@ function sb_socialnetworks() {
             'has-share'     => true,
             'share-url'     => 'https://t.me/share/url?url='.$post_url.'&text='.$post_title,
         ),
-        'email' => array(
+        'mail' => array(
             'nice-name'     => 'E-Mail',
             'icon-style'    => 'fas',
             'icon-name'     => 'fa-envelope',
