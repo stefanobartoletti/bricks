@@ -14,18 +14,17 @@ $wp_customize -> add_section ( 'sb_social', array(
 
     // Custom function from globals.php
 
-    $sb_socialnetworks = sb_socialnetworks();
+    $sb_socialprofiles = sb_socialnetworks();
 
     // ----- Social entry -----
 
-    foreach ($sb_socialnetworks as $key => $value) {
+    foreach ($sb_socialprofiles as $key => $value) { if ($value['has-profile'] == true) {
 
         $wp_customize -> add_setting ( 'sb_'.$key, array( 'default' => '' ) );
         $wp_customize -> add_control ( 'sb_'.$key, array(
             'type' => 'url',
-            'label' => __(ucfirst($key), 'bricks'),
+            'label' => $value['nice-name'],
             'section' => 'sb_social',
         ));
         
-    }
-
+    }};
