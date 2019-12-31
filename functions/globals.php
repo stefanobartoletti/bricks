@@ -98,6 +98,13 @@ function sb_socialnetworks() {
             'has-share'     => true,
             'share-url'     => 'https://t.me/share/url?url='.$post_url.'&text='.$post_title,
         ),
+        'github' => array(
+            'nice-name'     => 'GitHub',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-github',
+            'has-profile'   => true,
+            'has-share'     => false,
+        ),
         'mail' => array(
             'nice-name'     => 'E-Mail',
             'icon-style'    => 'fas',
