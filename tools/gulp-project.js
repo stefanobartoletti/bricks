@@ -42,6 +42,7 @@ const iconsUsed = {
         'pinterest-p',
         'get-pocket',
         'telegram-plane',
+        'whatsapp',
     ] 
 };
 exports.iconsUsed = iconsUsed;
