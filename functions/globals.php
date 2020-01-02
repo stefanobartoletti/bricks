@@ -8,25 +8,111 @@
 
 // --- Social networks ---
 
-// Used in Customizer and Social Icons element
-// social name => icon name (FontAwesome 5)
+// Used in Customizer, Social Icons element, Social Share buttons
+// https://github.com/bradvin/social-share-urls
+
 
 function sb_socialnetworks() {
     
+    global $post;
+
+    $post_url      = get_the_permalink($post->ID);
+    $post_title    = rawurlencode(get_the_title($post->ID).' - '.get_bloginfo('name'));
+    $post_thumb    = get_the_post_thumbnail_url($post->ID);
+    
     $sb_socialnetworks = array(
-        'facebook' => 'fa-facebook-f',
-        'linkedin' => 'fa-linkedin-in',
-        'instagram' => 'fa-instagram',
-        'twitter' => 'fa-twitter',
-        // 'youtube' => 'fa-youtube',
-        // 'pinterest' => 'fa-pinterest-p',
-        // 'tripadvisor' => 'fa-tripadvisor',
-        // 'telegram' => 'fa-telegram-plane',
-        // 'behance' => 'fa-behance',
-        // 'dribbble' => 'fa-dribbble',
-        // 'flickr' => 'fa-flickr',
-        // 'github' => 'fa-github',
-        // 'gitlab' => 'fa-gitlab',
+        'facebook' => array(
+            'social-name'   => 'Facebook',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-facebook-f',
+            'has-profile'   => true,
+            'has-share'     => true,
+            'share-url'     => 'https://www.facebook.com/sharer.php?u='.$post_url,
+        ),
+        'twitter' => array(
+            'social-name'   => 'Twitter',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-twitter',
+            'has-profile'   => true,
+            'has-share'     => true,
+            'share-url'     => 'https://twitter.com/intent/tweet?url='.$post_url.'&text='.$post_title,
+        ),
+        'linkedin' => array(
+            'social-name'   => 'LinkedIn',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-linkedin-in',
+            'has-profile'   => true,
+            'has-share'     => true,
+            'share-url'     => 'https://www.linkedin.com/shareArticle?mini=true&url='.$post_url.'&title='.$post_title,
+        ),
+        'instagram' => array(
+            'social-name'   => 'Instagram',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-instagram',
+            'has-profile'   => true,
+            'has-share'     => false,
+        ),
+        'pinterest' => array(
+            'social-name'   => 'Pinterest',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-pinterest-p',
+            'has-profile'   => false,
+            'has-share'     => true,
+            'share-url'     => 'https://pinterest.com/pin/create/button/?url='.$post_url.'&description='.$post_title.'&media='.$post_thumb,
+        ),
+        'youtube' => array(
+            'social-name'   => 'YouTube',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-youtube',
+            'has-profile'   => false,
+            'has-share'     => false,
+        ),
+        'tripadvisor' => array(
+            'social-name'   => 'TripAdvisor',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-tripadvisor',
+            'has-profile'   => false,
+            'has-share'     => false,
+        ),
+        'pocket' => array(
+            'social-name'   => 'Pocket',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-get-pocket',
+            'has-profile'   => false,
+            'has-share'     => true,
+            'share-url'     => 'https://getpocket.com/edit?url='.$post_url,
+        ),
+        'whatsapp' => array(
+            'social-name'   => 'WhatsApp',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-whatsapp',
+            'has-profile'   => false,
+            'has-share'     => true,
+            'share-url'     => 'whatsapp://send?text='.$post_url,
+        ),
+        'telegram' => array(
+            'social-name'   => 'Telegram',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-telegram-plane',
+            'has-profile'   => false,
+            'has-share'     => true,
+            'share-url'     => 'https://t.me/share/url?url='.$post_url.'&text='.$post_title,
+        ),
+        'github' => array(
+            'social-name'   => 'GitHub',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-github',
+            'has-profile'   => false,
+            'has-share'     => false,
+        ),
+        'mail' => array(
+            'social-name'   => 'E-Mail',
+            'icon-style'    => 'fas',
+            'icon-name'     => 'fa-envelope',
+            'has-profile'   => false,
+            'has-share'     => true,
+            'share-url'     => 'mailto:?subject='.$title.'&body='.$url,
+        ),
     );
     return $sb_socialnetworks;
 }
