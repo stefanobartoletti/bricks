@@ -22,7 +22,7 @@ function sb_socialnetworks() {
     
     $sb_socialnetworks = array(
         'facebook' => array(
-            'nice-name'     => 'Facebook',
+            'social-name'   => 'Facebook',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-facebook-f',
             'has-profile'   => true,
@@ -30,7 +30,7 @@ function sb_socialnetworks() {
             'share-url'     => 'https://www.facebook.com/sharer.php?u='.$post_url,
         ),
         'twitter' => array(
-            'nice-name'     => 'Twitter',
+            'social-name'   => 'Twitter',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-twitter',
             'has-profile'   => true,
@@ -38,7 +38,7 @@ function sb_socialnetworks() {
             'share-url'     => 'https://twitter.com/intent/tweet?url='.$post_url.'&text='.$post_title,
         ),
         'linkedin' => array(
-            'nice-name'     => 'LinkedIn',
+            'social-name'   => 'LinkedIn',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-linkedin-in',
             'has-profile'   => true,
@@ -46,14 +46,14 @@ function sb_socialnetworks() {
             'share-url'     => 'https://www.linkedin.com/shareArticle?mini=true&url='.$post_url.'&title='.$post_title,
         ),
         'instagram' => array(
-            'nice-name'     => 'Instagram',
+            'social-name'   => 'Instagram',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-instagram',
             'has-profile'   => true,
             'has-share'     => false,
         ),
         'pinterest' => array(
-            'nice-name'     => 'Pinterest',
+            'social-name'   => 'Pinterest',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-pinterest-p',
             'has-profile'   => false,
@@ -61,21 +61,21 @@ function sb_socialnetworks() {
             'share-url'     => 'https://pinterest.com/pin/create/button/?url='.$post_url.'&description='.$post_title.'&media='.$post_thumb,
         ),
         'youtube' => array(
-            'nice-name'     => 'YouTube',
+            'social-name'   => 'YouTube',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-youtube',
             'has-profile'   => false,
             'has-share'     => false,
         ),
         'tripadvisor' => array(
-            'nice-name'     => 'TripAdvisor',
+            'social-name'   => 'TripAdvisor',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-tripadvisor',
             'has-profile'   => false,
             'has-share'     => false,
         ),
         'pocket' => array(
-            'nice-name'     => 'Pocket',
+            'social-name'   => 'Pocket',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-get-pocket',
             'has-profile'   => false,
@@ -83,7 +83,7 @@ function sb_socialnetworks() {
             'share-url'     => 'https://getpocket.com/edit?url='.$post_url,
         ),
         'whatsapp' => array(
-            'nice-name'     => 'WhatsApp',
+            'social-name'   => 'WhatsApp',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-whatsapp',
             'has-profile'   => false,
@@ -91,7 +91,7 @@ function sb_socialnetworks() {
             'share-url'     => 'whatsapp://send?text='.$post_url,
         ),
         'telegram' => array(
-            'nice-name'     => 'Telegram',
+            'social-name'   => 'Telegram',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-telegram-plane',
             'has-profile'   => false,
@@ -99,14 +99,14 @@ function sb_socialnetworks() {
             'share-url'     => 'https://t.me/share/url?url='.$post_url.'&text='.$post_title,
         ),
         'github' => array(
-            'nice-name'     => 'GitHub',
+            'social-name'   => 'GitHub',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-github',
             'has-profile'   => false,
             'has-share'     => false,
         ),
         'mail' => array(
-            'nice-name'     => 'E-Mail',
+            'social-name'   => 'E-Mail',
             'icon-style'    => 'fas',
             'icon-name'     => 'fa-envelope',
             'has-profile'   => false,

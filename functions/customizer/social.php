@@ -25,7 +25,7 @@ $wp_customize -> add_section ( 'sb_social', array(
         $wp_customize -> add_setting ( 'sb_'.$key, array( 'default' => '' ) );
         $wp_customize -> add_control ( 'sb_'.$key, array(
             'type' => 'url',
-            'label' => $value['nice-name'],
+            'label' => $value['social-name'],
             'section' => 'sb_social',
         ));
         
