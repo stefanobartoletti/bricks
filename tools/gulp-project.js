@@ -3,6 +3,12 @@
  * These are defined here to keep gulpfile.js clean.
  */
 
+// --- Project ---
+
+const textdomain = 'bricks';
+exports.textdomain = textdomain;
+
+
 // --- Browser ---
 
 // Site URL (Browsersync, critical css)
