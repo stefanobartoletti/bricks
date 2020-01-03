@@ -52,6 +52,7 @@ exports.iconsUsed = iconsUsed;
 const prodFiles = [
     'dist/**/*',
     'functions/**/*',
+    'languages/**/*',
     'lib/**/*',
     'templates/**/*',
     '*.php',
