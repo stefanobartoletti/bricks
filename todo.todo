@@ -20,6 +20,7 @@ File structure & Templates:
 
   ☐ ---
   ☐ header vertical
+  ☐ Smarty/Twig/Laravel Blade templates?
 
 Elements & Functions:
 
@@ -47,6 +48,7 @@ Project & Tools:
   ☐ ---
   ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
   ☐ pug-php ? https://github.com/pug-php/pug
+  ☐ gulp-environments
   ☐ gulp-htmlmin ?
   ☐ gulp-php-minify ?
   ☐ gulp-preprocess ?
@@ -55,6 +57,7 @@ Project & Tools:
   ☐ gulp-load-plugins ?
   ☐ gulp-changed / gulp-newer ?
   ☐ gulpfile.js directory
+  ☐ config & project vars from json files?
 
 Libraries:
 
