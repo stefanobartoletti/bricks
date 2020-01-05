@@ -38,7 +38,9 @@ const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const zip = require('gulp-zip');
 const del = require('del');
-const gulpif = require('gulp-if');
+const environments = require('gulp-environments');
+const development = environments.development;
+const production = environments.production;
 const ftp = require('vinyl-ftp');
 const wpPot = require('gulp-wp-pot');
 
@@ -103,13 +105,13 @@ const { siteUrl } = require(projectVars);
 
 // Environment
 
-function setDEV(done) {
-    process.env.NODE_ENV = 'development';
+function setDev(done) {
+    environments.current(development);
     done();
 }
 
-function setPROD(done) {
-    process.env.NODE_ENV = 'production';
+function setProd(done) {
+    environments.current(production);
     done();
 }
 
@@ -118,7 +120,7 @@ function setPROD(done) {
 
 function css() {
     return src(cssSrc)
-        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.init()))
+        .pipe(development(sourcemaps.init()))
         .pipe(sass({
             errorLogToConsole: true,
         }))
@@ -129,12 +131,12 @@ function css() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulpif(process.env.NODE_ENV === 'production', purgecss({
+        .pipe(production(purgecss({
             content: purgeContent,
             whitelistPatterns: purgeWLP,
         })))
-        .pipe(gulpif(process.env.NODE_ENV === 'production', cleancss()))
-        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.write('./')))
+        .pipe(production(cleancss()))
+        .pipe(development(sourcemaps.write('./')))
         .pipe(dest(cssDist))
         .pipe(browserSync.stream());
 };
@@ -144,13 +146,13 @@ function css() {
 
 function js() {
     return src(jsEntry)
-        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.init()))
+        .pipe(development(sourcemaps.init()))
         .pipe(rollup({plugins: [babel(), commonjs(), resolve()]}, 'umd'))
-        .pipe(gulpif(process.env.NODE_ENV === 'production', uglify()))
+        .pipe(production(uglify()))
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulpif(process.env.NODE_ENV === 'development', sourcemaps.write('./')))
+        .pipe(development(sourcemaps.write('./')))
         .pipe(dest(jsDist))
         .pipe(browserSync.stream());
 };
@@ -188,8 +190,8 @@ function fonts(done) {
 function icons() {
     return src(iconsSrc)
         .pipe(rename('fa5.min.js')) 
-        .pipe(gulpif(process.env.NODE_ENV === 'production', faMinify(iconsUsed)))
-        .pipe(gulpif(process.env.NODE_ENV === 'production', uglify()))
+        .pipe(production(faMinify(iconsUsed)))
+        .pipe(production(uglify()))
         .pipe(dest(jsDist));
 };
 
@@ -271,6 +273,6 @@ exports.pkg = pkg;
 exports.deploy = deploy;
 exports.pot = pot;
 
-exports.default = series(setDEV, clean, parallel(css, js, img, fonts, icons));
-exports.prod = series(setPROD, clean, parallel(css, js, img, fonts, icons, pot));
+exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
+exports.prod = series(setProd, clean, parallel(css, js, img, fonts, icons, pot));
 exports.watch = parallel(browser_sync, watch_files);
