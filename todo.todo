@@ -48,7 +48,6 @@ Project & Tools:
   ☐ ---
   ☐ run "img" or other functions only on a single file https://github.com/gulpjs/gulp#incremental-builds
   ☐ pug-php ? https://github.com/pug-php/pug
-  ☐ gulp-environments
   ☐ gulp-htmlmin ?
   ☐ gulp-php-minify ?
   ☐ gulp-preprocess ?
@@ -57,7 +56,6 @@ Project & Tools:
   ☐ gulp-load-plugins ?
   ☐ gulp-changed / gulp-newer ?
   ☐ gulpfile.js directory
-  ☐ config & project vars from json files?
 
 Libraries:
 
@@ -75,6 +73,8 @@ Libraries:
   ☐ swup.js
 
 Archive:
+  ✔ gulp-environments @done(20-01-06 00:37) @project(Project & Tools)
+  ✔ config & project vars from json files? @done(20-01-06 00:37) @project(Project & Tools)
   ✔ single place social info > merge socialicons array & socialshare objects @done(19-12-31 17:08) @project(Code)
   ✔ custom post types & taxonomies ? @done(19-12-28 20:38) @project(Elements & Functions)
   ✔ Footer: Check if fields are not empty before echoing them @done(19-12-27 13:43) @project(Security & Fixes)
