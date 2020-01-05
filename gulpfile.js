@@ -40,6 +40,7 @@ const zip = require('gulp-zip');
 const del = require('del');
 const gulpif = require('gulp-if');
 const ftp = require('vinyl-ftp');
+const wpPot = require('gulp-wp-pot');
 
 // Browser
 const browserSync  = require('browser-sync').create();
@@ -94,6 +95,8 @@ const { ftpLogin } = require(ftpVars);
 const { ftpPath } = require(ftpVars);
 const conn = ftp.create(ftpLogin);
 const pkgDist = 'packages/';
+const localeDist = 'languages/';
+const { textdomain } = require(projectVars);
 
 // Browser Sync
 const { siteUrl } = require(projectVars);
@@ -212,6 +215,13 @@ function deploy() {
         .pipe(conn.dest(ftpPath));
 };
 
+function pot() {
+    return src(phpWatch)
+        .pipe(wpPot({
+            domain: textdomain,
+        }))
+        .pipe(dest(localeDist+textdomain+'.pot'));
+};
 
 // --- Browser functions ---
 
@@ -259,7 +269,8 @@ exports.icons = icons;
 
 exports.pkg = pkg;
 exports.deploy = deploy;
+exports.pot = pot;
 
 exports.default = series(setDEV, clean, parallel(css, js, img, fonts, icons));
-exports.prod = series(setPROD, clean, parallel(css, js, img, fonts, icons));
+exports.prod = series(setPROD, clean, parallel(css, js, img, fonts, icons, pot));
 exports.watch = parallel(browser_sync, watch_files);
