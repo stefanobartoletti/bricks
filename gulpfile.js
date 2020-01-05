@@ -1,6 +1,6 @@
 /**
  * Gulp general setup.
- * Project related variables are defined in tools/gulp-project.js to keep gulpfile.js clean.
+ * Configuration & Project variables are defined in "config" directory.
  */
 
 // --- Gulp ---
@@ -49,59 +49,16 @@ const browserSync  = require('browser-sync').create();
 const cache = require('gulp-cache');
 
 
-// --- Variables ---
+// --- Configuration Variables ---
 
-// Project variables file
-const projectVars = './tools/gulp-project';
-const ftpVars = './tools/gulp-ftp';
+const config = require('./config/config.json');
+const project = require('./config/project.json');
+const ftpConfig = require('./config/ftp.json');
 
-// CSS
-const cssSrc = './src/sass/**/*.scss';
-const cssDist = './dist/css/';
-const cssWatch = [ cssSrc ];
+const wlp = project.css.purge.wlp.map(item => new RegExp(item))
 
-const purgeContent = ['**/*.php', 'src/**/*.js', 'src/**/*.mjs'];
-const { purgeWLP } = require(projectVars);
+const conn = ftp.create(ftpConfig.login);
 
-// JS
-const jsSrc = './src/js/';
-const jsDist = './dist/js/';
-const jsEntry = [ jsSrc ] + 'scripts.js';
-const jsWatch = [ jsSrc ] + '**/*.js';
-
-// PHP
-const phpWatch = [
-    './**/*.php',
-    '!node_modules/**',
-    '!lib/**',
-    '!vendor/**',
-];
-
-// Images
-const imgSrc = './src/img/**/*.{png,jpg,gif,svg}';
-const imgDist = './dist/img/';
-const imgWatch = [ imgSrc ];
-
-// Fonts
-const fontsSrc = './src/fonts/**/*.ttf';
-const fontsDist = './dist/fonts/';
-const fontsWatch = [ fontsSrc ];
-
-// Icons
-const iconsSrc = './node_modules/@fortawesome/fontawesome-free/js/all.js';
-const { iconsUsed } = require(projectVars);
-
-// Production
-const { prodFiles } = require(projectVars);
-const { ftpLogin } = require(ftpVars);
-const { ftpPath } = require(ftpVars);
-const conn = ftp.create(ftpLogin);
-const pkgDist = 'packages/';
-const localeDist = 'languages/';
-const { textdomain } = require(projectVars);
-
-// Browser Sync
-const { siteUrl } = require(projectVars);
 
 // Environment
 
@@ -119,7 +76,7 @@ function setProd(done) {
 // --- CSS functions ---
 
 function css() {
-    return src(cssSrc)
+    return src(config.css.src)
         .pipe(development(sourcemaps.init()))
         .pipe(sass({
             errorLogToConsole: true,
@@ -132,12 +89,12 @@ function css() {
             suffix: '.min'
         }))
         .pipe(production(purgecss({
-            content: purgeContent,
-            whitelistPatterns: purgeWLP,
+            content: config.css.purge.content,
+            whitelistPatterns: wlp,
         })))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
-        .pipe(dest(cssDist))
+        .pipe(dest(config.css.dist))
         .pipe(browserSync.stream());
 };
 
@@ -145,7 +102,7 @@ function css() {
 // --- JS functions ---
 
 function js() {
-    return src(jsEntry)
+    return src(config.js.src)
         .pipe(development(sourcemaps.init()))
         .pipe(rollup({plugins: [babel(), commonjs(), resolve()]}, 'umd'))
         .pipe(production(uglify()))
@@ -153,7 +110,7 @@ function js() {
             suffix: '.min'
         }))
         .pipe(development(sourcemaps.write('./')))
-        .pipe(dest(jsDist))
+        .pipe(dest(config.js.dist))
         .pipe(browserSync.stream());
 };
 
@@ -161,11 +118,11 @@ function js() {
 // --- Images functions ---
 
 function img() {
-    return src(imgSrc)
+    return src(config.img.src)
         .pipe(imagemin({
             verbose: true
         }))
-        .pipe(dest(imgDist))
+        .pipe(dest(config.img.dist))
         .pipe(browserSync.stream());
 };
 
@@ -173,13 +130,13 @@ function img() {
 // --- Fonts functions ---
 
 function fonts(done) {
-    src(fontsSrc)
+    src(config.fonts.src)
         .pipe(ttf2woff())
-        .pipe(dest(fontsDist))
+        .pipe(dest(config.fonts.dist))
         .pipe(browserSync.stream())
-    src(fontsSrc)
+    src(config.fonts.src)
         .pipe(ttf2woff2())
-        .pipe(dest(fontsDist))
+        .pipe(dest(config.fonts.dist))
         .pipe(browserSync.stream())
     done();
 };
@@ -188,11 +145,11 @@ function fonts(done) {
 // --- Icons functions ---
 
 function icons() {
-    return src(iconsSrc)
+    return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
-        .pipe(production(faMinify(iconsUsed)))
+        .pipe(production(faMinify(project.icons.used)))
         .pipe(production(uglify()))
-        .pipe(dest(jsDist));
+        .pipe(dest(config.js.dist));
 };
 
 
@@ -206,24 +163,25 @@ function clean() {
 // --- Production functions ---
 
 function pkg() {
-    return src(prodFiles, {base: '..'})
-        .pipe(zip('archive.zip'))
-        .pipe(dest(pkgDist));
+    return src(project.files.production, {base: '..'})
+        .pipe(zip(project.textdomain+'.zip'))
+        .pipe(dest(config.pkg.dist));
 };
 
 function deploy() {
-    return src(prodFiles, {base: '.', buffer: false})
-        .pipe(conn.newerOrDifferentSize(ftpPath))
-        .pipe(conn.dest(ftpPath));
+    return src(project.files.production, {base: '.', buffer: false})
+        .pipe(conn.newerOrDifferentSize(ftpConfig.path))
+        .pipe(conn.dest(ftpConfig.path));
 };
 
 function pot() {
-    return src(phpWatch)
+    return src(config.php.watch)
         .pipe(wpPot({
-            domain: textdomain,
+            domain: project.textdomain,
         }))
-        .pipe(dest(localeDist+textdomain+'.pot'));
+        .pipe(dest(config.i18n.dist+project.textdomain+'.pot'));
 };
+
 
 // --- Browser functions ---
 
@@ -232,7 +190,7 @@ function browser_sync(done) {
         open: false,
         injectChanges: true,
         // server: { baseDir: './dist/' },
-        proxy: siteUrl,
+        proxy: project.siteurl,
         // tunnel: "sbbase",
     });
     done();
@@ -252,11 +210,11 @@ function clearCache(done) {
 // --- Watch functions ---
 
 function watch_files(done) {
-    watch(cssWatch, series(css, clearCache, reload));
-    watch(jsWatch, series(js, clearCache, reload));
-    watch(phpWatch, series(clearCache, reload));
-    watch(imgWatch, series(img, clearCache, reload));
-    watch(fontsWatch, series(fonts, clearCache, reload));
+    watch(config.css.watch, series(css, clearCache, reload));
+    watch(config.js.watch, series(js, clearCache, reload));
+    watch(config.php.watch, series(clearCache, reload));
+    watch(config.img.watch, series(img, clearCache, reload));
+    watch(config.fonts.watch, series(fonts, clearCache, reload));
     done();
 }
 
