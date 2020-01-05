@@ -25,6 +25,7 @@ devDependencies:
   gulp-ttf2woff: 1.1.1
   gulp-ttf2woff2: 3.0.0
   gulp-uglify: 3.0.2
+  gulp-wp-pot: 2.3.6
   gulp-zip: 5.0.1_gulp@4.0.2
   rollup: 1.27.14
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.7+rollup@1.27.14
@@ -3783,6 +3784,17 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-AFTh50RQLifATBh8PsxQXdVLu08=
+  /gulp-wp-pot/2.3.6:
+    dependencies:
+      plugin-error: 1.0.1
+      through2: 3.0.1
+      vinyl: 2.2.0
+      wp-pot: 1.8.0
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-RaS7MiT8w9HdfmH8c6l7QKeeZeWDMDoyWUb//vFXGH05XY1t2w4iv22k0AIWyZ9w2ceX6W2ia3jC5hH+5wn2rA==
   /gulp-zip/5.0.1_gulp@4.0.2:
     dependencies:
       get-stream: 5.1.0
@@ -5041,6 +5053,15 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha1-xvNINKDY28OzfCfui7yyfHd1WC4=
+  /matched/4.0.0:
+    dependencies:
+      glob: 7.1.6
+      picomatch: 2.1.1
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-mD08ireECeLL/CCgum8EeLx/SZiAmhbbt4FPlCZ4GG2xKBJ/yB8qn0uvuvouQzCORknElll2jSNVdtCWNQdR2g==
   /mdn-data/2.0.4:
     dev: true
     optional: true
@@ -5864,6 +5885,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-mkpoFMrBwM1zNgqV8yCDyOpHRbc=
+  /path-sort/0.1.0:
+    dev: true
+    resolution:
+      integrity: sha1-ywF11Oy/paGP5nTMbXIL/hXguAU=
   /path-type/1.1.0:
     dependencies:
       graceful-fs: 4.2.3
@@ -5889,6 +5914,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+  /php-parser/3.0.0-prerelease.9:
+    dev: true
+    resolution:
+      integrity: sha512-QTVGKeiGZyRq7NpXMx15Dkiq9+B2KLGStck1Wrik+Hui+vb70rDBF+dY1RD6/IC8Wy/tUAhcKiCfKWVJUjymDA==
   /picomatch/2.1.1:
     dev: true
     engines:
@@ -7801,6 +7830,16 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-tDFbtCFKPXBY6+7okuE/ok2YsHU=
+  /wp-pot/1.8.0:
+    dependencies:
+      matched: 4.0.0
+      path-sort: 0.1.0
+      php-parser: 3.0.0-prerelease.9
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-/mAX/emTaZ8IByXLVWHILzP6Epm22kk09S5vaUD20xpirqV6EzTF4Cn5JPivcbanczo6Bb98JR6B/mL8EHHQMA==
   /wrap-ansi/2.1.0:
     dependencies:
       string-width: 1.0.2
@@ -8005,6 +8044,7 @@ specifiers:
   gulp-ttf2woff: ^1.1.1
   gulp-ttf2woff2: ^3.0.0
   gulp-uglify: ^3.0.2
+  gulp-wp-pot: ^2.3.6
   gulp-zip: ^5.0.1
   rollup: ^1.27.14
   rollup-plugin-babel: ^4.3.3
