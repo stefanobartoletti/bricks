@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "postinstall": "composer install && npm run setup && gulp default",
-    "setup": "node tools/npm-setup.js"
+    "setup": "node tasks/setup.js"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
