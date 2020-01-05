@@ -23,3 +23,4 @@ packages
 
 # Personal data
 tools/gulp-ftp.js
+config/ftp.json
