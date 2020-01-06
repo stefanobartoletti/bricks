@@ -3,11 +3,13 @@
     "siteurl": "http://localhost:8080/sbbase",
     "css": {
         "purge": {
+            "wl": [],
             "wlp": [
                 "^carousel-item.*",
                 "collapsing",
                 "show"
-            ]
+            ],
+            "wlpc": []
         }
     },
     "icons": {

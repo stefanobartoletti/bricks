@@ -55,12 +55,10 @@ const config = require('./config/config.json');
 const project = require('./config/project.json');
 const ftpConfig = require('./config/ftp.json');
 
-const wlp = project.css.purge.wlp.map(item => new RegExp(item))
-
 const conn = ftp.create(ftpConfig.login);
 
 
-// Environment
+// --- Environment functions ---
 
 function setDev(done) {
     environments.current(development);
@@ -90,7 +88,11 @@ function css() {
         }))
         .pipe(production(purgecss({
             content: config.css.purge.content,
-            whitelistPatterns: wlp,
+            whitelist: project.css.purge.wl,
+            whitelistPatterns: project.css.purge.wlp
+                .map(item => new RegExp(item)),
+            whitelistPatternsChildren: project.css.purge.wlpc
+                .map(item => new RegExp(item)),
         })))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
