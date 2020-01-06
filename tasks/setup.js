@@ -14,7 +14,7 @@ fs.ensureDir('./src/img/');
 
 // --- Files ---
 
-fs.copy('./tools/gulp-ftp.js.sample', './tools/gulp-ftp.js', { overwrite: false })
+fs.copy('./config/ftp.json.sample', './config/ftp.json', { overwrite: false })
 
 
 // --- Libs ---

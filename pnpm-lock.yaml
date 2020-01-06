@@ -15,8 +15,8 @@ devDependencies:
   gulp-better-rollup: 4.0.1_rollup@1.27.14
   gulp-cache: 1.1.3
   gulp-clean-css: 4.2.0
+  gulp-environments: 1.0.0
   gulp-fa-minify: 1.2.2
-  gulp-if: 3.0.0
   gulp-imagemin: 6.2.0_gulp@4.0.2
   gulp-purgecss: 1.2.0
   gulp-rename: 2.0.0
@@ -2493,15 +2493,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-07z8uv2wMyS51kKhD1KsdXJg5WQ6t93RneqRxUHnskXVtlYYkLqM0gqStQZ3pj073g687jPCHrqNfCzawLYh5g==
-  /duplexify/4.1.1:
-    dependencies:
-      end-of-stream: 1.4.1
-      inherits: 2.0.4
-      readable-stream: 3.4.0
-      stream-shift: 1.0.0
-    dev: true
-    resolution:
-      integrity: sha512-DY3xVEmVHTv1wSzKNbwoU6nVjzI369Y6sPoqfYr0/xlx3IdX2n94xIszTcjPO8W8ZIv0Wb0PXNcjuZyT4wiICA==
   /each-props/1.3.2:
     dependencies:
       is-plain-object: 2.0.4
@@ -3624,6 +3615,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-rGs3bVYHdyJpLqR0TUBnlcZ1O5O++Zs4bA0ajm+zr3WFCfiSLjGwoCBqFs18wzN+ZxahT9DkOK5nDf26iDsWjA==
+  /gulp-environments/1.0.0:
+    dependencies:
+      gulp-if: 2.0.2
+      yargs: 5.0.0
+    dev: true
+    resolution:
+      integrity: sha512-LESfoAUledEF4zahP2pLluCzXdh91jFjpRCp3SmRw171TyIUQuquLQITNP+9n+9C9ASuBZMNn3rAUoWoi60hqw==
   /gulp-fa-minify/1.2.2:
     dependencies:
       fa-minify: 5.8.2
@@ -3632,14 +3630,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tauPzlxl2x1IUE1uzCATDbkyFVpUsbxMNNyNOGnfqmNO0F4vHTtB0AGtjYFPk42jJHuvWg6P71GfrI3R7vgkAA==
-  /gulp-if/3.0.0:
+  /gulp-if/2.0.2:
     dependencies:
       gulp-match: 1.1.0
-      ternary-stream: 3.0.0
-      through2: 3.0.1
+      ternary-stream: 2.1.1
+      through2: 2.0.5
     dev: true
+    engines:
+      node: '>= 0.10.0'
     resolution:
-      integrity: sha512-fCUEngzNiEZEK2YuPm+sdMpO6ukb8+/qzbGfJBXyNOXz85bCG7yBI+pPSl+N90d7gnLvMsarthsAImx0qy7BAw==
+      integrity: sha1-pJe351cwBQQcqivIt92jyARE1ik=
   /gulp-imagemin/6.2.0_gulp@4.0.2:
     dependencies:
       chalk: 2.4.2
@@ -4837,6 +4837,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-+6HEUkwZ7ppfgTa0YJ8BfPTe1pI=
+  /lodash.assign/4.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-DZnzzNem0mHRm9rrkkUAXShYCOc=
   /lodash.camelcase/4.3.0:
     dev: true
     resolution:
@@ -5097,10 +5101,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-cstmi0JSKCkKu/qFaJJYcwioAfs=
-  /merge-stream/2.0.0:
+  /merge-stream/1.0.1:
+    dependencies:
+      readable-stream: 2.3.6
     dev: true
     resolution:
-      integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==
+      integrity: sha1-QEEgLVCKNCugAXQAjfDCUbjBNeE=
   /merge2/1.3.0:
     dev: true
     engines:
@@ -7274,15 +7280,17 @@ packages:
     optional: true
     resolution:
       integrity: sha1-awRGhWqbERTRhW/8vlCczLCXcmU=
-  /ternary-stream/3.0.0:
+  /ternary-stream/2.1.1:
     dependencies:
-      duplexify: 4.1.1
+      duplexify: 3.7.1
       fork-stream: 0.0.4
-      merge-stream: 2.0.0
-      through2: 3.0.1
+      merge-stream: 1.0.1
+      through2: 2.0.5
     dev: true
+    engines:
+      node: '>= 0.10.0'
     resolution:
-      integrity: sha512-oIzdi+UL/JdktkT+7KU5tSIQjj8pbShj3OASuvDEhm0NT5lppsm7aXWAmAq4/QMaBIyfuEcNLbAQA+HpaISobQ==
+      integrity: sha512-j6ei9hxSoyGlqTmoMjOm+QNvUKDOIY6bNl4Uh1lhBvl6yjPW2iLqxDUYyfDPZknQ4KdRziFl+ec99iT4l7g0cw==
   /tfunk/3.1.0:
     dependencies:
       chalk: 1.1.3
@@ -7916,6 +7924,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
+  /yargs-parser/3.2.0:
+    dependencies:
+      camelcase: 3.0.0
+      lodash.assign: 4.2.0
+    dev: true
+    resolution:
+      integrity: sha1-UIE1XRnZ0MjF2BrakIy05tGGZk8=
   /yargs-parser/4.2.1:
     dependencies:
       camelcase: 3.0.0
@@ -7944,6 +7959,25 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ssa5JuRjMeZEUjg7bEL99AwpitxU/zWGAGpdj0di41pOEmJti8NR6kyUIJBkR78DTYNPZOU08luUo0GTHuB+ow==
+  /yargs/5.0.0:
+    dependencies:
+      cliui: 3.2.0
+      decamelize: 1.2.0
+      get-caller-file: 1.0.3
+      lodash.assign: 4.2.0
+      os-locale: 1.4.0
+      read-pkg-up: 1.0.1
+      require-directory: 2.1.1
+      require-main-filename: 1.0.1
+      set-blocking: 2.0.0
+      string-width: 1.0.2
+      which-module: 1.0.0
+      window-size: 0.2.0
+      y18n: 3.2.1
+      yargs-parser: 3.2.0
+    dev: true
+    resolution:
+      integrity: sha1-M1UUSXfQV1fbuG1uOOwFYSOzpm4=
   /yargs/6.4.0:
     dependencies:
       camelcase: 3.0.0
@@ -8034,8 +8068,8 @@ specifiers:
   gulp-better-rollup: ^4.0.1
   gulp-cache: ^1.1.3
   gulp-clean-css: ^4.2.0
+  gulp-environments: ^1.0.0
   gulp-fa-minify: ^1.2.2
-  gulp-if: ^3.0.0
   gulp-imagemin: ^6.2.0
   gulp-purgecss: ^1.2.0
   gulp-rename: ^2.0.0
