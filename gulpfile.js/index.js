@@ -51,9 +51,9 @@ const cache = require('gulp-cache');
 
 // --- Configuration Variables ---
 
-const config = require('./config/config.json');
-const project = require('./config/project.json');
-const ftpConfig = require('./config/ftp.json');
+const config = require('../config/config.json');
+const project = require('../config/project.json');
+const ftpConfig = require('../config/ftp.json');
 
 const conn = ftp.create(ftpConfig.login);
 
