@@ -14,7 +14,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
 
     // ----- Address -----
 
-    $wp_customize -> add_setting ( 'sb_company', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_company', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
     $wp_customize -> add_control ( 'sb_company', array(
         'type' => 'text',
         'label' => __('Company Name', 'bricks'),
@@ -22,7 +26,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    $wp_customize -> add_setting ( 'sb_address_1', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_address_1', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
     $wp_customize -> add_control ( 'sb_address_1', array(
         'type' => 'text',
         'label' => __('Address - Line 1', 'bricks'),
@@ -30,7 +38,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    $wp_customize -> add_setting ( 'sb_address_2', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_address_2', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
     $wp_customize -> add_control ( 'sb_address_2', array(
         'type' => 'text',
         'label' => __('Address - Line 2', 'bricks'),
@@ -38,7 +50,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    $wp_customize -> add_setting ( 'sb_mapurl', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_mapurl', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
     $wp_customize -> add_control ( 'sb_mapurl', array(
         'type' => 'url',
         'label' => __('Map URL', 'bricks'),
@@ -48,7 +64,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
 
     // ----- Phone -----
 
-    $wp_customize -> add_setting ( 'sb_phone', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_phone', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
     $wp_customize -> add_control ( 'sb_phone', array(
         'type' => 'tel',
         'label' => __('Phone number', 'bricks'),
@@ -57,7 +77,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
 
     // ----- Email -----
 
-    $wp_customize -> add_setting ( 'sb_email', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_email', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'sanitize_email',
+    ));
     $wp_customize -> add_control ( 'sb_email', array(
         'type' => 'email',
         'label' => __('Email Address', 'bricks'),
@@ -66,7 +90,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
 
     // ----- Italian Fiscal Code -----
 
-    $wp_customize -> add_setting ( 'sb_cfisc', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_cfisc', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
     $wp_customize -> add_control ( 'sb_cfisc', array(
         'type' => 'text',
         'label' => __('Italian Fiscal Code', 'bricks'),
@@ -75,7 +103,11 @@ $wp_customize -> add_section ( 'sb_contacts', array(
 
     // ----- VAT Identification Number -----
 
-    $wp_customize -> add_setting ( 'sb_piva', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_piva', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'absint',
+    ));
     $wp_customize -> add_control ( 'sb_piva', array(
         'type' => 'text',
         'label' => __('VAT Number', 'bricks'),
