@@ -27,8 +27,6 @@ Elements & Functions:
   ☐ ---
   ☐ gutenberg blocks ?
   ☐ custom nav walker ?
-  ☐ Customizer > sanitize inputs
-  ☐ Customizer > placeholder text
   ☐ Contact Form 7
   ☐ ACF instead of Pods?
 
@@ -72,6 +70,8 @@ Libraries:
   ☐ swup.js
 
 Archive:
+  ✔ Customizer > sanitize inputs @done(20-01-07 18:19) @project(Elements & Functions)
+  ✘ Customizer > placeholder text @cancelled(20-01-07 18:20) @project(Elements & Functions)
   ✔ gulpfile.js directory @done(20-01-06 18:20) @project(Project & Tools)
   ✔ gulp-environments @done(20-01-06 00:37) @project(Project & Tools)
   ✔ config & project vars from json files? @done(20-01-06 00:37) @project(Project & Tools)
