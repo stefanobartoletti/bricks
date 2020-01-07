@@ -18,6 +18,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
     $wp_customize -> add_control ( 'sb_company', array(
         'type' => 'text',
         'label' => __('Company Name', 'bricks'),
+        'description' => __('Full Company formal name', 'bricks' ),
         'section' => 'sb_contacts',
     ));
 
@@ -25,6 +26,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
     $wp_customize -> add_control ( 'sb_address_1', array(
         'type' => 'text',
         'label' => __('Address - Line 1', 'bricks'),
+        'description' => __('i.e. "Street, Number"', 'bricks' ),
         'section' => 'sb_contacts',
     ));
 
@@ -32,6 +34,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
     $wp_customize -> add_control ( 'sb_address_2', array(
         'type' => 'text',
         'label' => __('Address - Line 2', 'bricks'),
+        'description' => __('i.e. "Postal Code, City, State"', 'bricks'),
         'section' => 'sb_contacts',
     ));
 
@@ -39,6 +42,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
     $wp_customize -> add_control ( 'sb_mapurl', array(
         'type' => 'url',
         'label' => __('Map URL', 'bricks'),
+        'description' => __('Online Map Service URL, i.e. "https://goo.gl/maps/sNAFh8SNCLH5cYyL7" for Google Maps', 'bricks' ),
         'section' => 'sb_contacts',
     ));
 
@@ -60,20 +64,20 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    // ----- Codice Fiscale -----
+    // ----- Italian Fiscal Code -----
 
     $wp_customize -> add_setting ( 'sb_cfisc', array( 'default' => '' ) );
     $wp_customize -> add_control ( 'sb_cfisc', array(
         'type' => 'text',
-        'label' => __('Codice Fiscale', 'bricks'),
+        'label' => __('Italian Fiscal Code', 'bricks'),
         'section' => 'sb_contacts',
     ));
 
-    // ----- Partita IVA -----
+    // ----- VAT Identification Number -----
 
     $wp_customize -> add_setting ( 'sb_piva', array( 'default' => '' ) );
     $wp_customize -> add_control ( 'sb_piva', array(
         'type' => 'text',
-        'label' => __('Partita IVA', 'bricks'),
+        'label' => __('VAT Number', 'bricks'),
         'section' => 'sb_contacts',
     ));
