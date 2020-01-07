@@ -22,39 +22,39 @@
 
             <ul class="list-unstyled">
 
-                <?php if( get_theme_mod('sb_address_1')) { ?>
+                <?php if( get_option('sb_address_1')) { ?>
 
                     <li class="media mb-3">
                         <i class="fas fa-map-marker-alt fa-fw mt-1"></i>
                         <div class="media-body ml-3">
                             <?php                           
-                            if( get_theme_mod('sb_mapurl')) {
-                                echo '<a href="', get_theme_mod('sb_mapurl'), '" target="_blank">';
+                            if( get_option('sb_mapurl')) {
+                                echo '<a href="', get_option('sb_mapurl'), '" target="_blank">';
                             } else {
                                 echo '<p>';
                             }
-                            if( get_theme_mod('sb_company')) {echo get_theme_mod('sb_company'), ', <br>'; };
-                            if( get_theme_mod('sb_address_1')) {echo get_theme_mod('sb_address_1'); };
-                            if( get_theme_mod('sb_address_2')) {echo ', <br>', get_theme_mod('sb_address_2'); };
-                            if( get_theme_mod('sb_mapurl')) {echo '</a>'; } else {echo '</p>';} ?>
+                            if( get_option('sb_company')) {echo get_option('sb_company'), ', <br>'; };
+                            if( get_option('sb_address_1')) {echo get_option('sb_address_1'); };
+                            if( get_option('sb_address_2')) {echo ', <br>', get_option('sb_address_2'); };
+                            if( get_option('sb_mapurl')) {echo '</a>'; } else {echo '</p>';} ?>
                         </div>
                     </li>
 
-                <?php }; if( get_theme_mod('sb_phone')) { ?>
+                <?php }; if( get_option('sb_phone')) { ?>
 
                     <li class="media mb-3">
                         <i class="fas fa-phone fa-fw mt-1"></i>
                         <div class="media-body ml-3">
-                            <a href="tel:<?php echo get_theme_mod('sb_phone') ?>"><?php echo get_theme_mod('sb_phone') ?></a>
+                            <a href="tel:<?php echo get_option('sb_phone') ?>"><?php echo get_option('sb_phone') ?></a>
                         </div>
                     </li>
 
-                <?php }; if( get_theme_mod('sb_email')) { ?>
+                <?php }; if( get_option('sb_email')) { ?>
 
                     <li class="media mb-3">
                         <i class="fas fa-envelope fa-fw mt-1"></i>
                         <div class="media-body ml-3">
-                            <a href="mailto:<?php echo get_theme_mod('sb_email', '') ?>"><?php echo get_theme_mod('sb_email', '') ?></a>
+                            <a href="mailto:<?php echo get_option('sb_email', '') ?>"><?php echo get_option('sb_email', '') ?></a>
                         </div>
                     </li>
 

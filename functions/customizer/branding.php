@@ -14,7 +14,11 @@ $wp_customize -> add_section ( 'sb_branding', array(
 
     // Chrome mobile theme color
 
-    $wp_customize -> add_setting ( 'sb_chrome_theme', array( 'default' => '' ) );
+    $wp_customize -> add_setting ( 'sb_chrome_theme', array(
+        'default' => '',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
     $wp_customize -> add_control ( new WP_Customize_Color_Control ( $wp_customize, 'sb_chrome_theme', array(
         'label' => __('Chrome theme color', 'bricks'),
         'description' => __('Tab color in Chrome for Android', 'bricks'),

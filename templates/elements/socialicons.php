@@ -10,10 +10,10 @@
 
     foreach ($sb_socialicons as $key => $value) {
 
-        if ( get_theme_mod('sb_'.$key, '')) { ?>
+        if ( get_option('sb_'.$key, '')) { ?>
 
             <li class="socialicon nav-item">
-                <a class="nav-link" href="<?php echo get_theme_mod('sb_'.$key, '') ?>" target="_blank"><i class="<?php echo $value['icon-style'].' '.$value['icon-name'] ?>"></i></a>
+                <a class="nav-link" href="<?php echo get_option('sb_'.$key, '') ?>" target="_blank"><i class="<?php echo $value['icon-style'].' '.$value['icon-name'] ?>"></i></a>
             </li>
     
         <?php };
