@@ -85,30 +85,6 @@ msgstr ""
 msgid "Footer Widgets"
 msgstr ""
 
-#: functions/cpt/cpt-sample.php:21, functions/cpt/cpt-sample.php:22
-msgid "CPT Sample"
-msgstr ""
-
-#: functions/cpt/cpt-sample.php:24
-msgctxt "Post Type General Name"
-msgid "CPT Samples"
-msgstr ""
-
-#: functions/cpt/cpt-sample.php:25
-msgctxt "Post Type Singular Name"
-msgid "CPT Sample"
-msgstr ""
-
-#: functions/cpt/tax-sample.php:27
-msgctxt "Taxonomy General Name"
-msgid "Custom Taxonomy Samples"
-msgstr ""
-
-#: functions/cpt/tax-sample.php:28
-msgctxt "Taxonomy Singular Name"
-msgid "Custom Taxonomy Sample"
-msgstr ""
-
 #: functions/customizer/branding.php:6
 msgid "Branding"
 msgstr ""
@@ -117,11 +93,11 @@ msgstr ""
 msgid "Branding options"
 msgstr ""
 
-#: functions/customizer/branding.php:19
+#: functions/customizer/branding.php:23
 msgid "Chrome theme color"
 msgstr ""
 
-#: functions/customizer/branding.php:20
+#: functions/customizer/branding.php:24
 msgid "Tab color in Chrome for Android"
 msgstr ""
 
@@ -133,36 +109,52 @@ msgstr ""
 msgid "Contacts info"
 msgstr ""
 
-#: functions/customizer/contacts.php:20
+#: functions/customizer/contacts.php:24
 msgid "Company Name"
 msgstr ""
 
-#: functions/customizer/contacts.php:27
+#: functions/customizer/contacts.php:25
+msgid "Full Company formal name"
+msgstr ""
+
+#: functions/customizer/contacts.php:36
 msgid "Address - Line 1"
 msgstr ""
 
-#: functions/customizer/contacts.php:34
+#: functions/customizer/contacts.php:37
+msgid "i.e. \"Street, Number\""
+msgstr ""
+
+#: functions/customizer/contacts.php:48
 msgid "Address - Line 2"
 msgstr ""
 
-#: functions/customizer/contacts.php:41
+#: functions/customizer/contacts.php:49
+msgid "i.e. \"Postal Code, City, State\""
+msgstr ""
+
+#: functions/customizer/contacts.php:60
 msgid "Map URL"
 msgstr ""
 
-#: functions/customizer/contacts.php:50
+#: functions/customizer/contacts.php:61
+msgid "Online Map Service URL, i.e. \"https://goo.gl/maps/sNAFh8SNCLH5cYyL7\" for Google Maps"
+msgstr ""
+
+#: functions/customizer/contacts.php:74
 msgid "Phone number"
 msgstr ""
 
-#: functions/customizer/contacts.php:59
+#: functions/customizer/contacts.php:87
 msgid "Email Address"
 msgstr ""
 
-#: functions/customizer/contacts.php:68
-msgid "Codice Fiscale"
+#: functions/customizer/contacts.php:100
+msgid "Italian Fiscal Code"
 msgstr ""
 
-#: functions/customizer/contacts.php:77
-msgid "Partita IVA"
+#: functions/customizer/contacts.php:113
+msgid "VAT Number"
 msgstr ""
 
 #: functions/customizer/social.php:6
@@ -170,7 +162,7 @@ msgid "Social"
 msgstr ""
 
 #: functions/customizer/social.php:7
-msgid "Insert full addresses for Social Network profiles. Only filled fields will be displayed on the site as icons. For better layout, only use about 4~5 of them at most."
+msgid "Insert full addresses for Social Network profiles. Only filled fields will be displayed on the site as icons. For better layout, only use about 3~4 of them at most."
 msgstr ""
 
 #: templates/content/loop-none.php:6
