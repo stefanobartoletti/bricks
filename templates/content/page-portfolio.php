@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <?php if (! has_post_thumbnail() ) { 
         
@@ -28,7 +28,7 @@
 
     </div>
 
-    <div id="portfolio-items" class="row pb-5">
+    <div id="portfolio-items" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 pb-5">
 
         <?php 
 
@@ -41,28 +41,11 @@
         )); 
 
         // WP Loop
-        while ( $sb_portfolio_query->have_posts() ) :
-            $sb_portfolio_query->the_post(); 
+        while ( $sb_portfolio_query->have_posts() ) : $sb_portfolio_query->the_post(); 
         
-        ?>
+            get_template_part( 'templates/content/loop', 'portfolio' );
 
-        <div <?php post_class('portfolio-item col-sm-12 col-md-3 my-3'); ?>>
-
-            <div class="card">
-
-            <?php the_post_thumbnail('sb_square', array( 'class' => 'card-img h-auto' )); ?>
-            
-            <a href="<?php the_permalink(); ?>">
-                <div class="card-img-overlay">
-                    <h2 class="card-title h4 text-white"><?php the_title(); ?></h2>
-                </div>
-            </a>
-
-            </div>
-
-        </div>
-
-        <?php endwhile; 
+        endwhile; 
 
         // WP Query Reset
         wp_reset_query();
@@ -70,4 +53,4 @@
 
     </div>
 
-</article> <!-- #post-<?php the_ID(); ?> -->
+</section> <!-- #post-<?php the_ID(); ?> -->
