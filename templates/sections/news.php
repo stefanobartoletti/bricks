@@ -22,7 +22,7 @@
 
         <div class="card-body">
 
-            <p class="card-subtitle mb-2"><small><?php the_category(', '); ?> | <?php the_time('j F Y'); ?></small></p>
+            <p class="card-subtitle mb-2"><small><?php the_category(', '); ?> | <?php the_time(get_option('date_format')); ?></small></p>
 
             <a href="<?php the_permalink(); ?>">
                 <h3 class="card-title"><?php the_title(); ?></h3>
