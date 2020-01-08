@@ -1,7 +1,10 @@
 // --- Local fonts ---
 
+/* purgecss start ignore */
+
 // @import 'fontface';
 
+/* purgecss end ignore */
 
 // --- Bootstrap Custom Theme ---
 
@@ -22,9 +25,10 @@
 // --- Third party ---
 
 @import "../../node_modules/brand-colors/dist/latest/scss/brand-colors.latest";
+
 /* purgecss start ignore */
+
 // @import "../../node_modules/aos/src/sass/aos";
-/* purgecss end ignore */
 
 
 // --- WP Core required styles ---
@@ -33,8 +37,6 @@
 
 
 // --- Custom styles ---
-
-/* purgecss start ignore */
 
 @import 'common';
 
