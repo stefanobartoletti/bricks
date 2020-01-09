@@ -17,7 +17,7 @@ const production = environments.production;
 
 const config = require('../config/config');
 const project = require('../config/project');
-const ftpConfig = require('../config/ftp.json');
+const ftpConfig = require('../config/ftp');
 
 const conn = ftp.create(ftpConfig.login);
 
