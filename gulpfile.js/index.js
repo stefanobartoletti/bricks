@@ -23,8 +23,9 @@ const { browser_sync, reload, clearCache } = require('./browser');
 
 // --- Configuration ---
 
-const config = require('../config/config.json');
-const project = require('../config/project.json');
+
+const config = require('../config/config');
+const project = require('../config/project');
 
 
 // --- Functions ---

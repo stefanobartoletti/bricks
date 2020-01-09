@@ -1,12 +1,12 @@
-{
-    "login": {
-        "host":       "www.mywebsite.tld",
-        "port":       21,
-        "secure":     false,
-        "user":       "user",
-        "password":   "password",
-        "parallel":   10,
-        "log":        "console.log"
+module.exports = {
+    login: {
+        host:       'www.mywebsite.tld',
+        port:       21,
+        secure:     false,
+        user:       'user',
+        password:   'password',
+        parallel:   10,
+        log:        console.log,
     },
-    "path": "/path/to/remote/dir"
+    path: '/path/to/remote/dir',
 }
