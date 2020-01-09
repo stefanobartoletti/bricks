@@ -27,7 +27,7 @@ function browser_sync(done) {
         open: false,
         injectChanges: true,
         // server: { baseDir: './dist/' },
-        proxy: project.siteurl,
+        proxy: project.siteURL,
         // tunnel: "sbbase",
     });
     done();

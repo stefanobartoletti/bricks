@@ -2,8 +2,17 @@ module.exports = {
 
     // --- Project details ---
 
+    name: 'Bricks',
+    URL: '',
+    desc: 'A modular starter theme built with Boostrap.',
+    author: 'Stefano Bartoletti',
+    authorEmail: 'stefano@stefanobartoletti.it',
+    authorURL: 'https://www.stefanobartoletti.it',
+    license: '',
+    licenseURL: '',
     textdomain: 'bricks',
-    siteurl: 'http://localhost:8080/sbbase',
+
+    siteURL: 'http://localhost:8080/sbbase',
 
     // --- CSS ---
 
@@ -24,6 +33,8 @@ module.exports = {
 
     icons: {
         used: {
+            // faMinify used icons
+            // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
             fal: [],
             far: [],
             fas: [ 
@@ -44,5 +55,5 @@ module.exports = {
             ] 
         }
     }
-    
+
 }
