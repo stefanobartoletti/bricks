@@ -14,7 +14,7 @@ fs.ensureDir('./src/img/');
 
 // --- Files ---
 
-fs.copy('./config/ftp.json.sample', './config/ftp.json', { overwrite: false })
+fs.copy('./config/ftp.js.sample', './config/ftp.js', { overwrite: false })
 
 
 // --- Libs ---
