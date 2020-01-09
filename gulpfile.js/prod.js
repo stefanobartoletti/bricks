@@ -25,13 +25,13 @@ const conn = ftp.create(ftpConfig.login);
 // --- Functions ---
 
 function pkg() {
-    return src(project.files.production, {base: '..'})
+    return src(config.prod.files, {base: '..'})
         .pipe(zip(project.textdomain+'.zip'))
-        .pipe(dest(config.pkg.dist));
+        .pipe(dest(config.prod.pkg.dist));
 };
 
 function deploy() {
-    return src(project.files.production, {base: '.', buffer: false})
+    return src(config.prod.files, {base: '.', buffer: false})
         .pipe(conn.newerOrDifferentSize(ftpConfig.path))
         .pipe(conn.dest(ftpConfig.path));
 };

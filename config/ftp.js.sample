@@ -1,4 +1,7 @@
 module.exports = {
+
+    // --- FTP login info ---
+
     login: {
         host:       'www.mywebsite.tld',
         port:       21,
@@ -8,5 +11,7 @@ module.exports = {
         parallel:   10,
         log:        console.log,
     },
+    
     path: '/path/to/remote/dir',
+
 }

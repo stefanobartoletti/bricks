@@ -1,20 +1,27 @@
 module.exports = {
+
+    // --- Project details ---
+
     textdomain: 'bricks',
     siteurl: 'http://localhost:8080/sbbase',
+
+    // --- CSS ---
+
     css: {
         purge: {
+            // Purgecss whitelists
             wl: [],
-
-            // Whitelist Pattern
-
             wlp: [
-                /^carousel-item.*/,
-                /collapsing/,
-                /show/,
+                /^carousel-item.*/,     // Bootstrap Carousel Animation
+                /collapsing/,           // Bootstrap Navbar Animation
+                /show/,                 // Bootstrap Dropdown
             ],
             wlpc: []
         }
     },
+
+    // --- Icons ---
+
     icons: {
         used: {
             fal: [],
@@ -36,17 +43,6 @@ module.exports = {
                 'whatsapp',
             ] 
         }
-    },
-    files: {
-        production: [
-            'dist/**/*',
-            'functions/**/*',
-            'languages/**/*',
-            'lib/**/*',
-            'templates/**/*',
-            '*.php',
-            'screenshot.png',
-            'style.css',
-        ]
     }
+    
 }

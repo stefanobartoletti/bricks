@@ -1,4 +1,7 @@
 module.exports = {
+
+    // --- CSS ---
+
     css: {
         src: './src/sass/**/*.scss',
         dist: './dist/css/',
@@ -11,6 +14,9 @@ module.exports = {
             ]
         }
     },
+
+    // --- JS ---
+
     js: {
         src: './src/js/**/*.js',
         dist: './dist/js/',
@@ -19,6 +25,9 @@ module.exports = {
             './src/js/**/*.mjs',
         ]
     },
+
+    // --- PHP ---
+
     php: {
         watch: [
             './**/*.php',
@@ -27,24 +36,51 @@ module.exports = {
             '!vendor/**',
         ]
     },
+
+    // --- Images ---
+
     img: {
         src: './src/img/**/*.{png,jpg,gif,svg}',
         dist: './dist/img/',
         watch: './src/img/**/*.{png,jpg,gif,svg}',
     },
+
+    // --- Fonts ---
+
     fonts: {
         src: './src/fonts/**/*.ttf',
         dist: './dist/fonts/',
         watch: './src/fonts/**/*.ttf',
     },
+
+    // --- Icons ---
+
     icons: {
         src: './node_modules/@fortawesome/fontawesome-free/js/all.js',
-        dist: './dist/js/',
     },
+
+    // --- Translations ---
+
     i18n: {
         dist: './languages/',
     },
-    pkg: {
-        dist: './packages/',
+
+    // --- Production ---
+
+    prod: {
+        files: [
+            'dist/**/*',
+            'functions/**/*',
+            'languages/**/*',
+            'lib/**/*',
+            'templates/**/*',
+            '*.php',
+            'screenshot.png',
+            'style.css',
+        ],
+        pkg: {
+            dist: './packages/',
+        }   
     }
+    
 }
