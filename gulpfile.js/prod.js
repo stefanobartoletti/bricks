@@ -7,6 +7,10 @@ const { src, dest } = require('gulp');
 
 const zip = require('gulp-zip');
 const ftp = require('vinyl-ftp');
+const fs = require('fs-extra');
+const path = require('path');
+const notify = require('gulp-notify');
+const gulpif = require('gulp-if');
 
 const environments = require('gulp-environments');
 const development = environments.development;
@@ -17,9 +21,10 @@ const production = environments.production;
 
 const config = require('../config/config');
 const project = require('../config/project');
-const ftpConfig = require('../config/ftp');
-
-const conn = ftp.create(ftpConfig.login);
+const ftpFile = '../config/ftp';
+const ftpFileCheck = fs.existsSync(path.join(__dirname, ftpFile+'.js'));
+const ftpConfig = require( ftpFileCheck ? ftpFile+'.js' : ftpFile+'.js.sample');
+const ftpConn = ftp.create(ftpConfig.login);
 
 
 // --- Functions ---
@@ -32,8 +37,9 @@ function pkg() {
 
 function deploy() {
     return src(config.prod.files, {base: '.', buffer: false})
-        .pipe(conn.newerOrDifferentSize(ftpConfig.path))
-        .pipe(conn.dest(ftpConfig.path));
+        .pipe(gulpif(ftpFileCheck, ftpConn.newerOrDifferentSize(ftpConfig.path)))          
+        .pipe(gulpif(ftpFileCheck, ftpConn.dest(ftpConfig.path)))
+        .pipe(gulpif(!ftpFileCheck, notify({ message: ftpConfig.warning, onLast: true })));
 };
 
 
