@@ -12,8 +12,7 @@
     "bootstrap"
   ],
   "scripts": {
-    "postinstall": "composer install && npm run setup && gulp default",
-    "setup": "node tasks/setup.js"
+    "postinstall": "composer install && gulp setup && gulp default"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

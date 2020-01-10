@@ -81,6 +81,24 @@ module.exports = {
         pkg: {
             dist: './packages/',
         }   
+    },
+
+    // --- Setup ---
+
+    setup: {
+        dirs: [
+            './src/fonts/',
+            './src/img/',
+        ],
+        ftpconf: {
+            src: './config/ftp.js.sample',
+            dist: './config/ftp.js',
+        },
+        navwalker: {
+            src: './vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php',
+            dist: './lib/class-wp-bootstrap-navwalker.php',
+        },
+
     }
     
 }

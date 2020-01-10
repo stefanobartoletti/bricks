@@ -17,6 +17,7 @@ const { fonts } = require('./fonts');
 const { icons } = require('./icons');
 const { pot } = require('./i18n');
 const { setDev, setProd, clean } = require('./utils');
+const { setup } = require('./setup');
 const { pkg, deploy } = require('./prod');
 const { browser_sync, reload, clearCache } = require('./browser');
 
@@ -51,6 +52,8 @@ exports.pot = pot;
 
 exports.pkg = pkg;
 exports.deploy = deploy;
+
+exports.setup = setup;
 
 exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
 exports.prod = series(setProd, clean, parallel(css, js, img, fonts, icons, pot));
