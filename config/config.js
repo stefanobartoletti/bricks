@@ -1,3 +1,5 @@
+const project = require('../config/project');
+
 module.exports = {
 
     // --- CSS ---
@@ -97,6 +99,22 @@ module.exports = {
         navwalker: {
             src: './vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php',
             dist: './lib/class-wp-bootstrap-navwalker.php',
+        },
+        stylecss: {
+            content: [
+                '/*'+
+                '\nTheme Name: '+project.name+
+                '\nTheme URI: '+project.URL+
+                '\nAuthor: '+project.author+' <'+project.authorEmail+'>'+
+                '\nAuthor URI: '+project.authorURL+
+                '\nDescription: '+project.desc+
+                '\nVersion: '+//version+
+                '\nLicense: '+project.license+
+                '\nLicense URI: '+project.licenseURL+
+                '\nText Domain: '+project.textdomain+
+                '\n*/'
+            ],
+            dist: './style.css',
         },
 
     }

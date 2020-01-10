@@ -27,7 +27,13 @@ function setup(done) {
     done();
 };
 
+function conf(done) {
+    fs.writeFile(config.setup.stylecss.dist, config.setup.stylecss.content)
+    done();
+};
+
 
 // --- Exports ---
 
 exports.setup = setup;
+exports.conf = conf;
