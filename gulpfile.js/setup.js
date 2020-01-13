@@ -1,6 +1,6 @@
 // --- Gulp ---
 
-const { src, dest } = require('gulp');
+const { src, dest, parallel } = require('gulp');
 
 
 // --- Plugins ---
@@ -28,9 +28,13 @@ function setup(done) {
     done();
 };
 
-function conf() {
+function stylecss(done) {
     // write style.css
     fs.writeFile(config.setup.stylecss.dist, config.setup.stylecss.content)
+    done();
+};
+
+function domain() {
     // update textdomain instances
     return src(config.php.watch)
         .pipe(checktextdomain({
@@ -44,4 +48,4 @@ function conf() {
 // --- Exports ---
 
 exports.setup = setup;
-exports.conf = conf;
+exports.conf = parallel(stylecss, domain);

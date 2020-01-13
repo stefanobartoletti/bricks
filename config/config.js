@@ -124,7 +124,7 @@ module.exports = {
                 '\nAuthor: '+project.author+' <'+project.authorEmail+'>'+
                 '\nAuthor URI: '+project.authorURL+
                 '\nDescription: '+project.desc+
-                '\nVersion: '+//version+
+                '\nVersion: '+project.version+
                 '\nLicense: '+project.license+
                 '\nLicense URI: '+project.licenseURL+
                 '\nText Domain: '+project.textdomain+
