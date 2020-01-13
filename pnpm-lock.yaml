@@ -14,6 +14,7 @@ devDependencies:
   gulp-autoprefixer: 7.0.1_gulp@4.0.2
   gulp-better-rollup: 4.0.1_rollup@1.27.14
   gulp-cache: 1.1.3
+  gulp-checktextdomain: 2.2.1
   gulp-clean-css: 4.2.0
   gulp-environments: 1.0.0
   gulp-fa-minify: 1.2.2
@@ -3222,6 +3223,16 @@ packages:
     optional: true
     resolution:
       integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
+  /fs-extra/0.26.7:
+    dependencies:
+      graceful-fs: 4.2.3
+      jsonfile: 2.4.0
+      klaw: 1.3.1
+      path-is-absolute: 1.0.1
+      rimraf: 2.7.1
+    dev: true
+    resolution:
+      integrity: sha1-muH92UiXeY7at20JGM9C0MMYT6k=
   /fs-extra/3.0.1:
     dependencies:
       graceful-fs: 4.2.2
@@ -3640,6 +3651,18 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-NE814LdX1NWQn2sMzn+Rf673o4mqlgg7OyLf92oQ4KEl6DdPfduEGLNH+HexLVcFZXH93DBuxFOvpv4/Js5VaA==
+  /gulp-checktextdomain/2.2.1:
+    dependencies:
+      chalk: 1.1.3
+      fs-extra: 0.26.7
+      php-parser: 2.2.0
+      plugin-error: 1.0.1
+      ramda: 0.20.1
+      text-table: 0.2.0
+      through2: 2.0.5
+    dev: true
+    resolution:
+      integrity: sha512-di5ptVL+KiiLq20K7sotl8Y4V7MnaSoCaiZYcJXTOFUALUIrB15+5fssPT2WfdxgT/IdyXPednEVbaJ5/1n2+A==
   /gulp-clean-css/4.2.0:
     dependencies:
       clean-css: 4.2.1
@@ -4736,6 +4759,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-l+3HXD0GEI3huGq1njuqtzYK8OYJyXMkOLtQ53pjWh89tvWS2h6l+1zMkYWqlb57+SiQodKZyvMEFb2X+KrFhQ==
+  /jsonfile/2.4.0:
+    dev: true
+    optionalDependencies:
+      graceful-fs: 4.2.3
+    resolution:
+      integrity: sha1-NzaitCi4e72gzIO1P6PWM6NcKug=
   /jsonfile/3.0.1:
     dev: true
     optionalDependencies:
@@ -4810,6 +4839,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
+  /klaw/1.3.1:
+    dev: true
+    optionalDependencies:
+      graceful-fs: 4.2.3
+    resolution:
+      integrity: sha1-QIhDO0azsbolnXh4XY6W9zugJDk=
   /last-run/1.1.1:
     dependencies:
       default-resolution: 2.0.0
@@ -6048,6 +6083,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+  /php-parser/2.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-ZzhPClkz2770C+qwqzHQuMWC/4g=
   /php-parser/3.0.0-prerelease.9:
     dev: true
     resolution:
@@ -6298,6 +6337,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
+  /ramda/0.20.1:
+    dev: true
+    resolution:
+      integrity: sha1-yB6PteeLXv8iaTSe4ENBN7THRlE=
   /range-parser/1.2.1:
     dev: true
     engines:
@@ -6355,6 +6398,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
+  /readable-stream/2.3.7:
+    dependencies:
+      core-util-is: 1.0.2
+      inherits: 2.0.4
+      isarray: 1.0.0
+      process-nextick-args: 2.0.1
+      safe-buffer: 5.1.2
+      string_decoder: 1.1.1
+      util-deprecate: 1.0.2
+    dev: true
+    resolution:
+      integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==
   /readable-stream/3.4.0:
     dependencies:
       inherits: 2.0.4
@@ -7448,6 +7503,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-oIzdi+UL/JdktkT+7KU5tSIQjj8pbShj3OASuvDEhm0NT5lppsm7aXWAmAq4/QMaBIyfuEcNLbAQA+HpaISobQ==
+  /text-table/0.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
   /tfunk/3.1.0:
     dependencies:
       chalk: 1.1.3
@@ -7482,7 +7541,7 @@ packages:
       integrity: sha1-AARWmzfHx0ujnEPzzteNGtlBQL4=
   /through2/2.0.5:
     dependencies:
-      readable-stream: 2.3.6
+      readable-stream: 2.3.7
       xtend: 4.0.2
     dev: true
     resolution:
@@ -8224,6 +8283,7 @@ specifiers:
   gulp-autoprefixer: ^7.0.1
   gulp-better-rollup: ^4.0.1
   gulp-cache: ^1.1.3
+  gulp-checktextdomain: ^2.2.1
   gulp-clean-css: ^4.2.0
   gulp-environments: ^1.0.0
   gulp-fa-minify: ^1.2.2

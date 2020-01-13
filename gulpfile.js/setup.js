@@ -6,6 +6,7 @@ const { src, dest } = require('gulp');
 // --- Plugins ---
 
 const fs = require('fs-extra')
+const checktextdomain = require('gulp-checktextdomain')
 
 
 // --- Configuration ---
@@ -27,9 +28,16 @@ function setup(done) {
     done();
 };
 
-function conf(done) {
+function conf() {
+    // write style.css
     fs.writeFile(config.setup.stylecss.dist, config.setup.stylecss.content)
-    done();
+    // update textdomain instances
+    return src(config.php.watch)
+        .pipe(checktextdomain({
+            text_domain: project.textdomain,
+            keywords: config.i18n.functions,
+            correct_domain: true,
+        }))
 };
 
 
