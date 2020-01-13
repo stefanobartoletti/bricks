@@ -22,8 +22,8 @@ const browserSync  = require('browser-sync').create();
 
 // --- Configuration ---
 
-const config = require('../config/config.json');
-const project = require('../config/project.json');
+const config = require('../config/config');
+const project = require('../config/project');
 
 
 // --- Functions ---
@@ -44,10 +44,8 @@ function css() {
         .pipe(production(purgecss({
             content: config.css.purge.content,
             whitelist: project.css.purge.wl,
-            whitelistPatterns: project.css.purge.wlp
-                .map(item => new RegExp(item)),
-            whitelistPatternsChildren: project.css.purge.wlpc
-                .map(item => new RegExp(item)),
+            whitelistPatterns: project.css.purge.wlp,
+            whitelistPatternsChildren: project.css.purge.wlpc,
         })))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))

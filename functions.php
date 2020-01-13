@@ -23,7 +23,7 @@ require_once get_template_directory() . '/functions/sidebars.php';
 
 // --- Include third party code --- 
 
-require_once get_template_directory() . '/lib/navwalker/class-wp-bootstrap-navwalker.php';
+require_once get_template_directory() . '/lib/class-wp-bootstrap-navwalker.php';
 
 // --- Include CSS & JavaScript --- 
 

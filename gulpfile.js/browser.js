@@ -16,8 +16,8 @@ const browserSync  = require('browser-sync').create();
 
 // --- Configuration ---
 
-const config = require('../config/config.json');
-const project = require('../config/project.json');
+const config = require('../config/config');
+const project = require('../config/project');
 
 
 // --- Functions ---
@@ -27,7 +27,7 @@ function browser_sync(done) {
         open: false,
         injectChanges: true,
         // server: { baseDir: './dist/' },
-        proxy: project.siteurl,
+        proxy: project.siteURL,
         // tunnel: "sbbase",
     });
     done();

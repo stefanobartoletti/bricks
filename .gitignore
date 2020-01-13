@@ -22,4 +22,4 @@ dist
 packages
 
 # Personal data
-config/ftp.json
+config/ftp.js

@@ -14,10 +14,13 @@ devDependencies:
   gulp-autoprefixer: 7.0.1_gulp@4.0.2
   gulp-better-rollup: 4.0.1_rollup@1.27.14
   gulp-cache: 1.1.3
+  gulp-checktextdomain: 2.2.1
   gulp-clean-css: 4.2.0
   gulp-environments: 1.0.0
   gulp-fa-minify: 1.2.2
+  gulp-if: 3.0.0
   gulp-imagemin: 6.2.0_gulp@4.0.2
+  gulp-notify: 3.2.0
   gulp-purgecss: 1.2.0
   gulp-rename: 2.0.0
   gulp-sass: 4.0.2
@@ -975,6 +978,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==
+  /ansi-cyan/0.1.1:
+    dependencies:
+      ansi-wrap: 0.1.0
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-U4rlKK+JgvKK4w2G8vF0VtJgmHM=
   /ansi-gray/0.1.1:
     dependencies:
       ansi-wrap: 0.1.0
@@ -983,6 +994,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-KWLPVOyXksSFEKPetSRDaGHvclE=
+  /ansi-red/0.1.1:
+    dependencies:
+      ansi-wrap: 0.1.0
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-jGOPnRCAgAo1PJwoyKgcpHBdlGw=
   /ansi-regex/2.1.1:
     dev: true
     engines:
@@ -1079,6 +1098,15 @@ packages:
     dev: true
     resolution:
       integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  /arr-diff/1.1.0:
+    dependencies:
+      arr-flatten: 1.1.0
+      array-slice: 0.2.3
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-aHwydYFjWI/vfeezb6vklesaOZo=
   /arr-diff/4.0.0:
     dev: true
     engines:
@@ -1107,6 +1135,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Onc0X/wc814qkYJWAfnljy4kysQ=
+  /arr-union/2.1.0:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-IPnqtexw9cfSFbEHexw5Fh0pLH0=
   /arr-union/3.1.0:
     dev: true
     engines:
@@ -1148,6 +1182,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-eOCut5rXlI6aCOS7Z7kCplKRKyiFQ6dHFBem4PwlwKeNFk2/XxTrhRh5T9PyaEWGy/NHTZWbY+nsZlNFJu9rYg==
+  /array-slice/0.2.3:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-3Tz7gO15c6dRF82sabC5nshhhvU=
   /array-slice/1.1.0:
     dev: true
     engines:
@@ -2493,6 +2533,15 @@ packages:
     dev: true
     resolution:
       integrity: sha512-07z8uv2wMyS51kKhD1KsdXJg5WQ6t93RneqRxUHnskXVtlYYkLqM0gqStQZ3pj073g687jPCHrqNfCzawLYh5g==
+  /duplexify/4.1.1:
+    dependencies:
+      end-of-stream: 1.4.4
+      inherits: 2.0.4
+      readable-stream: 3.4.0
+      stream-shift: 1.0.1
+    dev: true
+    resolution:
+      integrity: sha512-DY3xVEmVHTv1wSzKNbwoU6nVjzI369Y6sPoqfYr0/xlx3IdX2n94xIszTcjPO8W8ZIv0Wb0PXNcjuZyT4wiICA==
   /each-props/1.3.2:
     dependencies:
       is-plain-object: 2.0.4
@@ -2817,6 +2866,14 @@ packages:
     optional: true
     resolution:
       integrity: sha512-yblEwXAbGv1VQDmow7s38W77hzAgJAO50ztBLMcUyUBfxv1HC+LGwtiEN+Co6LtlqT/5uwVOxsD4TNIilWhwdQ==
+  /extend-shallow/1.1.4:
+    dependencies:
+      kind-of: 1.1.0
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-Gda/lN/AnXa6cR85uHLSH/TdkHE=
   /extend-shallow/2.0.1:
     dependencies:
       is-extendable: 0.1.1
@@ -3166,6 +3223,16 @@ packages:
     optional: true
     resolution:
       integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
+  /fs-extra/0.26.7:
+    dependencies:
+      graceful-fs: 4.2.3
+      jsonfile: 2.4.0
+      klaw: 1.3.1
+      path-is-absolute: 1.0.1
+      rimraf: 2.7.1
+    dev: true
+    resolution:
+      integrity: sha1-muH92UiXeY7at20JGM9C0MMYT6k=
   /fs-extra/3.0.1:
     dependencies:
       graceful-fs: 4.2.2
@@ -3533,6 +3600,10 @@ packages:
     optional: true
     resolution:
       integrity: sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
+  /growly/1.3.0:
+    dev: true
+    resolution:
+      integrity: sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
   /gulp-autoprefixer/7.0.1_gulp@4.0.2:
     dependencies:
       autoprefixer: 9.7.3
@@ -3580,6 +3651,18 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-NE814LdX1NWQn2sMzn+Rf673o4mqlgg7OyLf92oQ4KEl6DdPfduEGLNH+HexLVcFZXH93DBuxFOvpv4/Js5VaA==
+  /gulp-checktextdomain/2.2.1:
+    dependencies:
+      chalk: 1.1.3
+      fs-extra: 0.26.7
+      php-parser: 2.2.0
+      plugin-error: 1.0.1
+      ramda: 0.20.1
+      text-table: 0.2.0
+      through2: 2.0.5
+    dev: true
+    resolution:
+      integrity: sha512-di5ptVL+KiiLq20K7sotl8Y4V7MnaSoCaiZYcJXTOFUALUIrB15+5fssPT2WfdxgT/IdyXPednEVbaJ5/1n2+A==
   /gulp-clean-css/4.2.0:
     dependencies:
       clean-css: 4.2.1
@@ -3640,6 +3723,14 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha1-pJe351cwBQQcqivIt92jyARE1ik=
+  /gulp-if/3.0.0:
+    dependencies:
+      gulp-match: 1.1.0
+      ternary-stream: 3.0.0
+      through2: 3.0.1
+    dev: true
+    resolution:
+      integrity: sha512-fCUEngzNiEZEK2YuPm+sdMpO6ukb8+/qzbGfJBXyNOXz85bCG7yBI+pPSl+N90d7gnLvMsarthsAImx0qy7BAw==
   /gulp-imagemin/6.2.0_gulp@4.0.2:
     dependencies:
       chalk: 2.4.2
@@ -3671,6 +3762,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-DlyVxa1Gj24DitY2OjEsS+X6tDpretuxD6wTfhXE/Rw2hweqc1f6D/XtsJmoiCwLWfXgR87W9ozEityPCVzGtQ==
+  /gulp-notify/3.2.0:
+    dependencies:
+      ansi-colors: 1.1.0
+      fancy-log: 1.3.3
+      lodash.template: 4.5.0
+      node-notifier: 5.4.3
+      node.extend: 2.0.2
+      plugin-error: 0.1.2
+      through2: 2.0.5
+    dev: true
+    engines:
+      node: '>=0.8.0'
+      npm: '>=1.2.10'
+    resolution:
+      integrity: sha512-qEocs1UVoDKKUjfsxJNMNwkRla0PbsyJwsqNNXpzYWsLQ29LhxRMY3wnTGZcc4hMHtalnvah/Dwlwb4NijH/0A==
   /gulp-purgecss/1.2.0:
     dependencies:
       glob: 7.1.4
@@ -3943,7 +4049,6 @@ packages:
     dev: true
     engines:
       node: '>= 0.4.0'
-    optional: true
     resolution:
       integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   /homedir-polyfill/1.0.3:
@@ -4524,6 +4629,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-HxbkqiKwTRM2tmGIpmrzxgDDpm0=
+  /is/3.3.0:
+    dev: true
+    resolution:
+      integrity: sha512-nW24QBoPcFGGHJGUwnfpI7Yc5CdqWNdsyHQszVE/z2pKHXzh7FZ5GWhJqSyaQ9wMkQnsTx+kAI8bHlCX4tKdbg==
   /isarray/0.0.1:
     dev: true
     resolution:
@@ -4650,6 +4759,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-l+3HXD0GEI3huGq1njuqtzYK8OYJyXMkOLtQ53pjWh89tvWS2h6l+1zMkYWqlb57+SiQodKZyvMEFb2X+KrFhQ==
+  /jsonfile/2.4.0:
+    dev: true
+    optionalDependencies:
+      graceful-fs: 4.2.3
+    resolution:
+      integrity: sha1-NzaitCi4e72gzIO1P6PWM6NcKug=
   /jsonfile/3.0.1:
     dev: true
     optionalDependencies:
@@ -4690,6 +4805,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-eguHnq22OE3uVoSYG0LVWNP+4ppamWr9+zWBe1bsNcovIMy6huUJFPgy4mGwCd/rnl3vOLGW1MTlu4c57CT1xA==
+  /kind-of/1.1.0:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-FAo9LUGjbS78+pN3tiwk+ElaXEQ=
   /kind-of/3.2.2:
     dependencies:
       is-buffer: 1.1.6
@@ -4718,6 +4839,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
+  /klaw/1.3.1:
+    dev: true
+    optionalDependencies:
+      graceful-fs: 4.2.3
+    resolution:
+      integrity: sha1-QIhDO0azsbolnXh4XY6W9zugJDk=
   /last-run/1.1.1:
     dependencies:
       default-resolution: 2.0.0
@@ -4897,6 +5024,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-+M3sxhaaJVvpCYrosMU9N4kx0U8=
+  /lodash.template/4.5.0:
+    dependencies:
+      lodash._reinterpolate: 3.0.0
+      lodash.templatesettings: 4.2.0
+    dev: true
+    resolution:
+      integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
   /lodash.templatesettings/3.1.1:
     dependencies:
       lodash._reinterpolate: 3.0.0
@@ -4904,6 +5038,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-+zB4RHU7Zrnxr6VOJix0UwfbqOU=
+  /lodash.templatesettings/4.2.0:
+    dependencies:
+      lodash._reinterpolate: 3.0.0
+    dev: true
+    resolution:
+      integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   /lodash.throttle/4.1.1:
     dev: true
     resolution:
@@ -5107,6 +5247,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-QEEgLVCKNCugAXQAjfDCUbjBNeE=
+  /merge-stream/2.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==
   /merge2/1.3.0:
     dev: true
     engines:
@@ -5322,6 +5466,16 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-2XiryJ8sICNo6ej8d0idXDEMKfVfFK7kekGCtJAuelGsYHQxhj13KTf95swTCN2dZ/4lTfZ84Fu31jqJEEgjWA==
+  /node-notifier/5.4.3:
+    dependencies:
+      growly: 1.3.0
+      is-wsl: 1.1.0
+      semver: 5.7.1
+      shellwords: 0.1.1
+      which: 1.3.1
+    dev: true
+    resolution:
+      integrity: sha512-M4UBGcs4jeOK9CjTsYwkvH6/MzuUmGCyTW+kCY7uO+1ZVr0+FHGdPdIf5CCLqAaxnRrWidyoQlNkMIIVwbKB8Q==
   /node-releases/1.1.43:
     dependencies:
       semver: 6.3.0
@@ -5354,6 +5508,15 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-A1Iv4oN+Iel6EPv77/HddXErL2a+gZ4uBeZUy+a8O35CFYTXhgA8MgLCWBtwpGZdCvTvQ9d+bQxX/QC36GDPpQ==
+  /node.extend/2.0.2:
+    dependencies:
+      has: 1.0.3
+      is: 3.3.0
+    dev: true
+    engines:
+      node: '>=0.4.0'
+    resolution:
+      integrity: sha512-pDT4Dchl94/+kkgdwyS2PauDFjZG0Hk0IcHIB+LkW27HLDtdoeMxHTxZh39DYbPP8UflWXWj9JcdDozF+YDOpQ==
   /nopt/3.0.6:
     dependencies:
       abbrev: 1.1.1
@@ -5920,6 +6083,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+  /php-parser/2.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-ZzhPClkz2770C+qwqzHQuMWC/4g=
   /php-parser/3.0.0-prerelease.9:
     dev: true
     resolution:
@@ -5964,6 +6131,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+  /plugin-error/0.1.2:
+    dependencies:
+      ansi-cyan: 0.1.1
+      ansi-red: 0.1.1
+      arr-diff: 1.1.0
+      arr-union: 2.1.0
+      extend-shallow: 1.1.4
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-O5uzM1zPAPQl4HQ34ZJ2ln2kes4=
   /plugin-error/1.0.1:
     dependencies:
       ansi-colors: 1.1.0
@@ -6158,6 +6337,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
+  /ramda/0.20.1:
+    dev: true
+    resolution:
+      integrity: sha1-yB6PteeLXv8iaTSe4ENBN7THRlE=
   /range-parser/1.2.1:
     dev: true
     engines:
@@ -6215,6 +6398,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
+  /readable-stream/2.3.7:
+    dependencies:
+      core-util-is: 1.0.2
+      inherits: 2.0.4
+      isarray: 1.0.0
+      process-nextick-args: 2.0.1
+      safe-buffer: 5.1.2
+      string_decoder: 1.1.1
+      util-deprecate: 1.0.2
+    dev: true
+    resolution:
+      integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==
   /readable-stream/3.4.0:
     dependencies:
       inherits: 2.0.4
@@ -6722,6 +6917,10 @@ packages:
     optional: true
     resolution:
       integrity: sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
+  /shellwords/0.1.1:
+    dev: true
+    resolution:
+      integrity: sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
   /signal-exit/3.0.2:
     dev: true
     resolution:
@@ -7017,6 +7216,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-1cdSgl5TZ+eG944Y5EXqIjoVWVI=
+  /stream-shift/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha512-AiisoFqQ0vbGcZgQPY1cdP2I76glaVA/RauYR4G4thNFgkTqr90yXTo4LYX60Jl+sIlPNHHdGSwo01AvbKUSVQ==
   /stream-throttle/0.1.3:
     dependencies:
       commander: 2.20.0
@@ -7291,6 +7494,19 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha512-j6ei9hxSoyGlqTmoMjOm+QNvUKDOIY6bNl4Uh1lhBvl6yjPW2iLqxDUYyfDPZknQ4KdRziFl+ec99iT4l7g0cw==
+  /ternary-stream/3.0.0:
+    dependencies:
+      duplexify: 4.1.1
+      fork-stream: 0.0.4
+      merge-stream: 2.0.0
+      through2: 3.0.1
+    dev: true
+    resolution:
+      integrity: sha512-oIzdi+UL/JdktkT+7KU5tSIQjj8pbShj3OASuvDEhm0NT5lppsm7aXWAmAq4/QMaBIyfuEcNLbAQA+HpaISobQ==
+  /text-table/0.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
   /tfunk/3.1.0:
     dependencies:
       chalk: 1.1.3
@@ -7325,7 +7541,7 @@ packages:
       integrity: sha1-AARWmzfHx0ujnEPzzteNGtlBQL4=
   /through2/2.0.5:
     dependencies:
-      readable-stream: 2.3.6
+      readable-stream: 2.3.7
       xtend: 4.0.2
     dev: true
     resolution:
@@ -8067,10 +8283,13 @@ specifiers:
   gulp-autoprefixer: ^7.0.1
   gulp-better-rollup: ^4.0.1
   gulp-cache: ^1.1.3
+  gulp-checktextdomain: ^2.2.1
   gulp-clean-css: ^4.2.0
   gulp-environments: ^1.0.0
   gulp-fa-minify: ^1.2.2
+  gulp-if: ^3.0.0
   gulp-imagemin: ^6.2.0
+  gulp-notify: ^3.2.0
   gulp-purgecss: ^1.2.0
   gulp-rename: ^2.0.0
   gulp-sass: ^4.0.2
