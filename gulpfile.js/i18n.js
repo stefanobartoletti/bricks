@@ -27,7 +27,7 @@ function pot() {
             package: project.name,
             lastTranslator: project.author+' <'+project.authorEmail+'>',
         }))
-        .pipe(dest(config.i18n.dist+project.textdomain+'.pot'));
+        .pipe(dest(config.i18n.dist+'template.pot'));
 };
 
 
