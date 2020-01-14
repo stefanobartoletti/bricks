@@ -1,12 +1,15 @@
 // --- Gulp ---
 
-const { src, dest, parallel } = require('gulp');
+const { src, dest, series } = require('gulp');
 
 
 // --- Plugins ---
 
 const fs = require('fs-extra')
 const checktextdomain = require('gulp-checktextdomain')
+const jsonedit = require('gulp-json-editor')
+const bump = require('gulp-bump')
+const prompt = require('gulp-prompt')
 
 
 // --- Configuration ---
@@ -28,9 +31,23 @@ function setup(done) {
     done();
 };
 
-function stylecss(done) {
+function projectfiles(done) {
     // write style.css
     fs.writeFile(config.setup.stylecss.dist, config.setup.stylecss.content)
+    // update package.json
+    src('./package.json')
+        .pipe(jsonedit(
+            config.setup.jsonfiles.package,
+        ))
+        .pipe(dest('./'))
+    // update composer.json
+    src('./composer.json')
+        .pipe(jsonedit(
+            config.setup.jsonfiles.composer,
+            {},
+            { arrayMerge: function (dist,source,options) {return source;} }
+        ))
+        .pipe(dest('./'))
     done();
 };
 
@@ -48,4 +65,4 @@ function domain() {
 // --- Exports ---
 
 exports.setup = setup;
-exports.conf = parallel(stylecss, domain);
+exports.conf = series(projectfiles, domain);

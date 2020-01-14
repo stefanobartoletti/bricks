@@ -1,16 +1,12 @@
 {
   "name": "bricks",
   "version": "0.9.0",
-  "description": "",
-  "author": "Stefano Bartoletti",
+  "description": "A modular starter theme built with Boostrap.",
+  "author": "Stefano Bartoletti <stefano@stefanobartoletti.it>",
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/stefano-b/bricks"
   },
-  "keywords": [
-    "wordpress",
-    "bootstrap"
-  ],
   "scripts": {
     "postinstall": "composer install && gulp setup && gulp default"
   },
