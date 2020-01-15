@@ -98,7 +98,13 @@ module.exports = {
         ],
         pkg: {
             dist: './packages/',
-        }   
+        },
+        versioned: [
+            './config/project.js',
+            './package.json',
+            './composer.json',
+            './style.css',
+        ]   
     },
 
     // --- Setup ---
@@ -132,6 +138,24 @@ module.exports = {
             ],
             dist: './style.css',
         },
+        jsonfiles: {
+            package: {
+                'name': project.textdomain,
+                'description': project.desc,
+                'author': project.author+' <'+project.authorEmail+'>',
+                'version': project.version,
+            },
+            composer: {
+                'name': 'stefano-b/'+project.textdomain,
+                'description': project.desc,
+                'authors': [{
+                    'name': project.author,
+                    'email': project.authorEmail,
+                    'homepage': project.authorURL,
+                    }],
+                'version': project.version,
+            },
+        }
 
     }
     
