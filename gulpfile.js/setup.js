@@ -62,9 +62,9 @@ function domain() {
 };
 
 function resetversion() {
-    return src('.').pipe(prompt.prompt({
+    return src('.').pipe(gulpif(project.textdomain != 'bricks', prompt.prompt({
             type: 'list',
-            message: 'If you are initiating a new project, should I reset the version to 0.1.0?',
+            message: 'This seems a new project, should I reset the version to 0.1.0?',
             choices: [ 'yes', 'no' ],
             name: 'reset',
         }, function(res) {
@@ -72,7 +72,7 @@ function resetversion() {
                 .pipe(gulpif(res.reset === 'yes', bump({version: '0.1.0'})))
                 .pipe(dest('./'))
         }
-    ))
+    )))
 };
 
 
