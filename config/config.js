@@ -98,7 +98,13 @@ module.exports = {
         ],
         pkg: {
             dist: './packages/',
-        }   
+        },
+        versioned: [
+            './config/project.js',
+            './package.json',
+            './composer.json',
+            './style.css',
+        ]   
     },
 
     // --- Setup ---

@@ -6,6 +6,7 @@ const { src, dest, series } = require('gulp');
 // --- Plugins ---
 
 const fs = require('fs-extra')
+const gulpif = require('gulp-if')
 const checktextdomain = require('gulp-checktextdomain')
 const jsonedit = require('gulp-json-editor')
 const bump = require('gulp-bump')
@@ -52,7 +53,6 @@ function projectfiles(done) {
 };
 
 function domain() {
-    // update textdomain instances
     return src(config.php.watch)
         .pipe(checktextdomain({
             text_domain: project.textdomain,
@@ -61,8 +61,22 @@ function domain() {
         }))
 };
 
+function resetversion() {
+    return src('.').pipe(prompt.prompt({
+            type: 'list',
+            message: 'If you are initiating a new project, should I reset the version to 0.1.0?',
+            choices: [ 'yes', 'no' ],
+            name: 'reset',
+        }, function(res) {
+            src(config.prod.versioned, {base: './'})
+                .pipe(gulpif(res.reset === 'yes', bump({version: '0.1.0'})))
+                .pipe(dest('./'))
+        }
+    ))
+};
+
 
 // --- Exports ---
 
 exports.setup = setup;
-exports.conf = series(projectfiles, domain);
+exports.conf = series(projectfiles, domain, resetversion);
