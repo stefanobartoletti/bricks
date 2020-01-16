@@ -2,7 +2,7 @@
 
     <?php if ( has_custom_logo() ) { 
 
-        the_custom_logo();
+        sb_custom_logo_svg();
 
     } else { ?>
 
