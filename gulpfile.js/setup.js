@@ -28,7 +28,6 @@ function setup(done) {
     })
     // copy required files
     fs.copy(config.setup.ftpconf.src, config.setup.ftpconf.dist, { overwrite: false })
-    fs.copy(config.setup.navwalker.src, config.setup.navwalker.dist)
     done();
 };
 

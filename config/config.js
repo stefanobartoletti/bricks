@@ -34,7 +34,6 @@ module.exports = {
         watch: [
             './**/*.php',
             '!node_modules/**',
-            '!lib/**',
             '!vendor/**',
         ]
     },
@@ -90,8 +89,8 @@ module.exports = {
             'dist/**/*',
             'functions/**/*',
             'languages/**/*',
-            'lib/**/*',
             'templates/**/*',
+            'vendor/**/*',
             '*.php',
             'screenshot.png',
             'style.css',
@@ -117,10 +116,6 @@ module.exports = {
         ftpconf: {
             src: './config/ftp.js.sample',
             dist: './config/ftp.js',
-        },
-        navwalker: {
-            src: './vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php',
-            dist: './lib/class-wp-bootstrap-navwalker.php',
         },
         stylecss: {
             content: [
