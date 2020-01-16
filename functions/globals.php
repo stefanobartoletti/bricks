@@ -128,6 +128,20 @@ function sb_thumb_alt() {
 
 }
 
+// --- Sanitize SVG ---
+
+// Sanitize SVG before inlining https://github.com/darylldoyle/svg-sanitizer
+
+use enshrined\svgSanitize\Sanitizer;
+
+function sb_sanitize_svg($sourceSVG) {
+
+    $sanitizer = new Sanitizer();
+    $dirtySVG = file_get_contents($sourceSVG);
+    $cleanSVG = $sanitizer->sanitize($dirtySVG);
+    return $cleanSVG;
+
+}
 
 // --- [sb] signature ---
 
@@ -143,11 +157,11 @@ function sb_signature($sigType = 'text') {
     switch ($sigType) {
 
         case 'logo-full':
-            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoFull).'</a>';
+            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_sanitize_svg($sigLogoFull).'</a>';
             break;
 
         case 'logo-small':
-            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoSmall).'</a>';
+            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_sanitize_svg($sigLogoSmall).'</a>';
             break;
 
         case 'text':
