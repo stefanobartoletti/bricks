@@ -128,18 +128,40 @@ function sb_thumb_alt() {
 
 }
 
-// --- Sanitize SVG ---
+// --- Sanitize & inline SVG ---
 
 // Sanitize SVG before inlining https://github.com/darylldoyle/svg-sanitizer
 
 use enshrined\svgSanitize\Sanitizer;
 
-function sb_sanitize_svg($sourceSVG) {
+function sb_safe_inline_svg($sourceSVG) {
 
     $sanitizer = new Sanitizer();
     $dirtySVG = file_get_contents($sourceSVG);
     $cleanSVG = $sanitizer->sanitize($dirtySVG);
     return $cleanSVG;
+
+}
+
+// --- Custom logo SVG ---
+
+// Inlines custom logo if it is in SVG format
+
+function sb_custom_logo_svg() {
+
+    $logourl = wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full');
+    $logoid = attachment_url_to_postid($logourl);
+    $logomime = get_post_mime_type($logoid);
+
+    if ($logomime == 'image/svg+xml') { ?>
+
+        <a href="<?php echo esc_url_raw(home_url()); ?>" class="custom-logo-link" rel="home"><div class="custom-logo"><?php echo sb_safe_inline_svg($logourl) ?></div></a>     
+        
+    <?php } else {
+
+        return the_custom_logo();
+
+    }   
 
 }
 
@@ -157,15 +179,15 @@ function sb_signature($sigType = 'text') {
     switch ($sigType) {
 
         case 'logo-full':
-            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_sanitize_svg($sigLogoFull).'</a>';
+            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_safe_inline_svg($sigLogoFull).'</a>';
             break;
 
         case 'logo-small':
-            echo '<a class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_sanitize_svg($sigLogoSmall).'</a>';
+            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_safe_inline_svg($sigLogoSmall).'</a>';
             break;
 
         case 'text':
-            echo '<span class="navbar-text ml-md-auto">Made by <a class="text-white-50" " href="'.$sigURL.'" target="_blank">Stefano Bartoletti</a></span>';
+            echo '<span id="sb-signature" class="navbar-text ml-md-auto">Made by <a class="text-white-50" " href="'.$sigURL.'" target="_blank">Stefano Bartoletti</a></span>';
             break;
 
     }
