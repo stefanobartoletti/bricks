@@ -21,6 +21,7 @@ File structure & Templates:
   ☐ ---
   ☐ header vertical
   ☐ Smarty/Twig/Laravel Blade templates?
+  ☐ PHP files in a sigle directory?
 
 Elements & Functions:
 
@@ -33,6 +34,7 @@ Elements & Functions:
 Performance & SEO:
 
   ☐ ---
+  ☐ Gulp task to enable importing modules for sass/js
   ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
   ☐ webfontloader
   ☐ webp image format https://www.npmjs.com/package/gulp-webp
