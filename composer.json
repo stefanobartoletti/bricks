@@ -1,10 +1,20 @@
 {
     "name": "stefano-b/bricks",
-    "description": "",
+    "version": "0.9.0",
+    "description": "A modular starter theme built with Boostrap.",
+    "authors": [{
+        "name": "Stefano Bartoletti",
+        "email": "stefano@stefanobartoletti.it",
+        "homepage": "https://www.stefanobartoletti.it"
+    }],
     "require": {
-        "wp-bootstrap/wp-bootstrap-navwalker": "^4.3"
+        "wp-bootstrap/wp-bootstrap-navwalker": "^4.3",
+        "enshrined/svg-sanitize": "^0.13.2"
     },
-    "require-dev": {
-        
+    "require-dev": {},
+    "autoload": {
+        "files": [
+            "vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php"
+        ]
     }
 }

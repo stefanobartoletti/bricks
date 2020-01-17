@@ -1,5 +1,13 @@
-/* Colors
----------------------------------------------------*/
+/*
+ * Bootstrap Custom Theme
+ * 
+ * https://getbootstrap.com/docs/4.4/getting-started/theming/
+ * https://uxplanet.org/how-to-customize-bootstrap-b8078a011203
+ * https://stackoverflow.com/a/50410667/10580177
+ */
+
+
+// --- Colors ---
 
 $theme-colors: (
     "primary":       #37c871,  // $primary,
@@ -15,9 +23,7 @@ $theme-colors: (
 // $theme-colors: map-remove($theme-colors, "success", "info", "warning", "danger");
 
 
-
-/* Typography
----------------------------------------------------*/
+// --- Typography ---
 
 $font-family-base: Rubik, $font-family-sans-serif;
 
@@ -86,9 +92,7 @@ $headings-font-weight: 700;          // 500;
 // $hr-margin-y:                        // $spacer;
 
 
-
-/* Options
----------------------------------------------------*/
+// --- Options ---
 
 // $enable-caret:                                // true; caret on .dropdown-toggle
 // $enable-rounded:                              // true; border-radius on components
@@ -104,24 +108,18 @@ $headings-font-weight: 700;          // 500;
 // $enable-deprecation-messages:                 // true; warnings for functions removed in v5
 
 
-
-/* Spacing
----------------------------------------------------*/
+// --- Spacing ---
 
 // $spacer:         // 1rem; default spacing
 
 
-
-/* Body
----------------------------------------------------*/
+// --- Body ---
 
 // $body-bg:         // $white;
 // $body-color:      // $gray-900;
 
 
-
-/* Links
----------------------------------------------------*/
+// --- Links ---
 
 $link-color:            theme-color("primary");     // theme-color("primary");
 $link-decoration:       none;                       // none;
@@ -129,16 +127,12 @@ $link-hover-color:      darken($link-color, 15%);   // darken($link-color, 15%);
 $link-hover-decoration: underline;                  // underline;
 
 
-
-/* Paragraph
----------------------------------------------------*/
+// --- Paragraph ---
 
 // $paragraph-margin-bottom:        // 1rem;
 
 
-
-/* Buttons + Forms
----------------------------------------------------*/
+// --- Buttons & Forms ---
 
 // $input-btn-padding-y:            // .375rem;
 // $input-btn-padding-x:            // .75rem;

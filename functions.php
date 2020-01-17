@@ -23,7 +23,7 @@ require_once get_template_directory() . '/functions/sidebars.php';
 
 // --- Include third party code --- 
 
-require_once get_template_directory() . '/lib/navwalker/class-wp-bootstrap-navwalker.php';
+require_once get_template_directory() . '/vendor/autoload.php';
 
 // --- Include CSS & JavaScript --- 
 
@@ -40,3 +40,7 @@ require_once get_template_directory() . '/functions/globals.php';
 // --- Customizer options --- 
 
 require_once get_template_directory() . '/functions/customizer.php';
+
+// --- Custom Post Types & Taxonomies --- 
+
+foreach (glob(get_template_directory() . '/functions/cpt/*.php') as $cpt) { require_once $cpt; };

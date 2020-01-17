@@ -2,7 +2,7 @@
 
     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-    <p><?php the_time('j M, Y'); ?> - <?php the_category(', '); ?></p>
+    <p><?php the_time(get_option('date_format')); ?> - <?php the_category(', '); ?></p>
 
     <a href="<?php the_permalink();?>">
         <?php the_post_thumbnail('sb_single', array( 'class' => 'img-fluid mb-3', 'alt' => get_the_title() )); ?>

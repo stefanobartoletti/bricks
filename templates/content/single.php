@@ -2,7 +2,7 @@
 
     <h1><?php the_title(); ?></h1>
 
-    <p><?php the_author(); ?> - <?php the_time('j M, Y'); ?></p>
+    <p><?php the_author(); ?> - <?php the_time(get_option('date_format')); ?></p>
 
     <p><?php the_category(', '); ?> - <?php the_tags('', ', ', ''); ?></p>
 

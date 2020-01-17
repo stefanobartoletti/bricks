@@ -1,36 +1,42 @@
-// --- Bootstrap Custom Theme ---
+// --- Local fonts ---
 
-// ---- Optional local fonts ---
+/* purgecss start ignore */
 
 // @import 'fontface';
 
-// ---- Custom Theme Requirements ---
+/* purgecss end ignore */
 
-@import "../../node_modules/bootstrap/scss/functions"; 
-@import "../../node_modules/bootstrap/scss/variables";
+// --- Bootstrap Custom Theme ---
 
-// ---- Customizations ---
+    // ---- Requirements ---
 
-@import 'theme';
+    @import "../../node_modules/bootstrap/scss/functions"; 
+    @import "../../node_modules/bootstrap/scss/variables";
 
-// ---- Bootstrap ---
+    // ---- Customizations ---
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+    @import 'theme';
+
+    // ---- Bootstrap ---
+
+    @import "../../node_modules/bootstrap/scss/bootstrap";
+
 
 // --- Third party ---
 
 @import "../../node_modules/brand-colors/dist/latest/scss/brand-colors.latest";
+
 /* purgecss start ignore */
+
 // @import "../../node_modules/aos/src/sass/aos";
-/* purgecss end ignore */
+
 
 // --- WP Core required styles ---
 
 @import 'wpcore';
 
-// --- Custom styles ---
 
-/* purgecss start ignore */
+// --- Custom styles ---
 
 @import 'common';
 
