@@ -111,7 +111,7 @@ function sb_socialnetworks() {
             'icon-name'     => 'fa-envelope',
             'has-profile'   => false,
             'has-share'     => true,
-            'share-url'     => 'mailto:?subject='.$title.'&body='.$url,
+            'share-url'     => 'mailto:?subject='.$post_title.'&body='.$post_url,
         ),
     );
     return $sb_socialnetworks;

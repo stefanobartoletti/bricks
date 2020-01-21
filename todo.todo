@@ -34,6 +34,7 @@ Elements & Functions:
 Performance & SEO:
 
   ☐ ---
+  ☐ Gulp conf > add gulp pot & rm todo.todo @high
   ☐ Gulp task to enable importing modules for sass/js
   ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
   ☐ webfontloader
