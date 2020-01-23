@@ -33,6 +33,7 @@ devDependencies:
   gulp-uglify: 3.0.2
   gulp-wp-pot: 2.3.6
   gulp-zip: 5.0.1_gulp@4.0.2
+  material-colors: 1.2.6
   rollup: 1.27.14
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.7+rollup@1.27.14
   vinyl-ftp: 0.6.1
@@ -5375,6 +5376,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-mD08ireECeLL/CCgum8EeLx/SZiAmhbbt4FPlCZ4GG2xKBJ/yB8qn0uvuvouQzCORknElll2jSNVdtCWNQdR2g==
+  /material-colors/1.2.6:
+    dev: true
+    resolution:
+      integrity: sha512-6qE4B9deFBIa9YSpOc9O0Sgc43zTeVYbgDT5veRKSlB2+ZuHNoVVxA1L/ckMUayV9Ay9y7Z/SZCLcGteW9i7bg==
   /mdn-data/2.0.4:
     dev: true
     optional: true
@@ -8561,6 +8566,7 @@ specifiers:
   gulp-uglify: ^3.0.2
   gulp-wp-pot: ^2.3.6
   gulp-zip: ^5.0.1
+  material-colors: ^1.2.6
   rollup: ^1.27.14
   rollup-plugin-babel: ^4.3.3
   vinyl-ftp: ^0.6.1

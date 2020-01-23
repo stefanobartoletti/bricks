@@ -73,9 +73,9 @@ Libraries:
   ☐ pace
   ☐ odometer
   ☐ swup.js
-  ☐ material colors sass library @high 
 
 Archive:
+  ✔ material colors sass library @high @done(20-01-23 23:13) @project(Libraries)
   ✔ submenu style (done from BS theme) @done(20-01-23 22:57) @project(Design)
   ✔ fix color of logos from #ddd to #eee @high @done(20-01-23 22:54) @project(Security & Fixes)
   ✔ Breadcrumbs margin bottom from BS theme file @high @done(20-01-23 22:51) @project(Security & Fixes)
