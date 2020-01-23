@@ -15,7 +15,7 @@ $theme-colors: (
   // "info":          #ffffff,  // $info,
   // "warning":       #ffffff,  // $warning,
   // "danger":        #ffffff,  // $danger,
-  // "light":         #dddddd,  // $light,
+  // "light":         #eeeeee,  // $light,
   // "dark":          #333333,  // $dark,
 );
 
@@ -25,6 +25,7 @@ $theme-colors: (
 // --- Typography ---
 
 $font-family-base: Rubik, $font-family-sans-serif;
+// $font-family-primary: Phenomena, $font-family-base; // custom non-bootstrap variable
 
 // $font-size-base:                     // 1rem; Assumes browser default, typically `16px`
 // $font-size-lg:                       // $font-size-base * 1.25;
@@ -118,6 +119,14 @@ $headings-font-weight: 700;          // 500;
 //     3: $spacer,
 //     4: ($spacer * 1.5),
 //     5: ($spacer * 3)
+// );
+
+// $sizes: (
+//     25: 25%,
+//     50: 50%,
+//     75: 75%,
+//     100: 100%,
+//     auto: auto
 // );
 
 

@@ -7,7 +7,6 @@ Design:
   ☐ ---
   ☐ comments > BS media style
   ☐ comment box & fields > BS style
-  ☐ submenu style
 
 Code:
 
@@ -19,7 +18,8 @@ Code:
 File structure & Templates:
 
   ☐ ---
-  ☐ header vertical
+  ☐ header vertical (add support like W&B) @high 
+  ☐ better organization of sass files for optional content
   ☐ Smarty/Twig/Laravel Blade templates?
   ☐ PHP files in a sigle directory?
 
@@ -56,6 +56,8 @@ Project & Tools:
   ☐ gulp-plumber ?
   ☐ gulp-load-plugins ?
   ☐ gulp-changed / gulp-newer ?
+  ☐ VS Code Anchor extension support @high 
+  ☐ Set special comment to mark files to be edited, and remove it when done
 
 Libraries:
 
@@ -73,6 +75,10 @@ Libraries:
   ☐ swup.js
 
 Archive:
+  ✔ material colors sass library @high @done(20-01-23 23:13) @project(Libraries)
+  ✔ submenu style (done from BS theme) @done(20-01-23 22:57) @project(Design)
+  ✔ fix color of logos from #ddd to #eee @high @done(20-01-23 22:54) @project(Security & Fixes)
+  ✔ Breadcrumbs margin bottom from BS theme file @high @done(20-01-23 22:51) @project(Security & Fixes)
   ✔ Customizer > sanitize inputs @done(20-01-07 18:19) @project(Elements & Functions)
   ✘ Customizer > placeholder text @cancelled(20-01-07 18:20) @project(Elements & Functions)
   ✔ gulpfile.js directory @done(20-01-06 18:20) @project(Project & Tools)

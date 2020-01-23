@@ -45,6 +45,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-wp-pot": "^2.3.6",
     "gulp-zip": "^5.0.1",
+    "material-colors": "^1.2.6",
     "rollup": "^1.27.14",
     "rollup-plugin-babel": "^4.3.3",
     "vinyl-ftp": "^0.6.1"
