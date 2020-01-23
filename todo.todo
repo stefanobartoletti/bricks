@@ -7,7 +7,6 @@ Design:
   ☐ ---
   ☐ comments > BS media style
   ☐ comment box & fields > BS style
-  ☐ submenu style
 
 Code:
 
@@ -77,6 +76,7 @@ Libraries:
   ☐ material colors sass library @high 
 
 Archive:
+  ✔ submenu style (done from BS theme) @done(20-01-23 22:57) @project(Design)
   ✔ fix color of logos from #ddd to #eee @high @done(20-01-23 22:54) @project(Security & Fixes)
   ✔ Breadcrumbs margin bottom from BS theme file @high @done(20-01-23 22:51) @project(Security & Fixes)
   ✔ Customizer > sanitize inputs @done(20-01-07 18:19) @project(Elements & Functions)
