@@ -1,7 +1,6 @@
 Security & Fixes:
 
   ☐ ---
-  ☐ Breadcrumbs margin bottom from BS theme file @high 
   ☐ fix color of logos from #ddd to #eee @high
  
 Design:
@@ -62,7 +61,6 @@ Project & Tools:
   ☐ VS Code Anchor extension support @high 
   ☐ Set special comment to mark files to be edited, and remove it when done
 
-
 Libraries:
 
   ☐ ---
@@ -80,6 +78,7 @@ Libraries:
   ☐ material colors sass library @high 
 
 Archive:
+  ✔ Breadcrumbs margin bottom from BS theme file @high @done(20-01-23 22:51) @project(Security & Fixes)
   ✔ Customizer > sanitize inputs @done(20-01-07 18:19) @project(Elements & Functions)
   ✘ Customizer > placeholder text @cancelled(20-01-07 18:20) @project(Elements & Functions)
   ✔ gulpfile.js directory @done(20-01-06 18:20) @project(Project & Tools)
