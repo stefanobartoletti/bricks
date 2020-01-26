@@ -25,6 +25,12 @@ module.exports = {
                 /^carousel-item.*/,     // Bootstrap Carousel Animation
                 /collapsing/,           // Bootstrap Navbar Animation
                 /show/,                 // Bootstrap Dropdown
+                               
+                /form-group/,           // Used in cf7
+                /form-control/,
+                /form-check/,
+                /form-check-input/,
+                /btn-block/,
             ],
             wlpc: []
         }

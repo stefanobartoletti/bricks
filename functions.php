@@ -25,6 +25,10 @@ require_once get_template_directory() . '/functions/sidebars.php';
 
 require_once get_template_directory() . '/vendor/autoload.php';
 
+// --- Plugin integrations --- 
+
+require_once get_template_directory() . '/functions/integrations.php';
+
 // --- Include CSS & JavaScript --- 
 
 require_once get_template_directory() . '/functions/cssjs.php';
