@@ -13,8 +13,6 @@
     },
     "require-dev": {},
     "autoload": {
-        "files": [
-            "vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php"
-        ]
+        "files": ["vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php"]
     }
 }

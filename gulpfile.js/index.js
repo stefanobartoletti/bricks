@@ -54,7 +54,7 @@ exports.pkg = pkg;
 exports.deploy = deploy;
 
 exports.setup = setup;
-exports.conf = conf;
+exports.conf = series(conf, pot);
 
 exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
 exports.prod = series(setProd, clean, parallel(css, js, img, fonts, icons, pot));
