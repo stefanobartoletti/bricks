@@ -70,6 +70,7 @@ function resetversion() {
             src(config.prod.versioned, {base: './'})
                 .pipe(gulpif(res.reset === 'yes', bump({version: '0.1.0'})))
                 .pipe(dest('./'))
+            fs.unlink('./todo.todo')
         }
     )))
 };
