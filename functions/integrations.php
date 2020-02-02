@@ -5,6 +5,17 @@
  * 
  */
 
+// --- Advanced Custom Fields ---
+
+// https://www.advancedcustomfields.com/resources/options-page/
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
+
 // --- Contact Form 7 ---
 
 // Load CSS & JS only when needed
@@ -13,20 +24,16 @@
 
 function sb_cf7_styles_scripts(){
 
-    if ( function_exists( 'wpcf7_enqueue_scripts' )) {
+    wp_dequeue_script('contact-form-7');
+    wp_dequeue_style('contact-form-7');
 
-        wp_dequeue_script('contact-form-7');
-        wp_dequeue_style('contact-form-7');
+    if ( is_page( array('contatti', 'contacts'))) {
 
-        if ( is_page( array('contatti', 'contacts'))) {
-
-            wp_enqueue_script('contact-form-7');
-            wp_enqueue_style('contact-form-7');
-
-        }
+        wp_enqueue_script('contact-form-7');
+        wp_enqueue_style('contact-form-7');
 
     }
 
 }
 
-add_action('wp_enqueue_scripts', 'sb_cf7_styles_scripts' ); 
+add_action('wp_enqueue_scripts', 'sb_cf7_styles_scripts' );
