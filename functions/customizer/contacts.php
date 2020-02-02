@@ -106,7 +106,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
     $wp_customize -> add_setting ( 'sb_piva', array(
         'default' => '',
         'type' => 'option',
-        'sanitize_callback' => 'absint',
+        'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize -> add_control ( 'sb_piva', array(
         'type' => 'text',
