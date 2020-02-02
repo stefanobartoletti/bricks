@@ -10,17 +10,19 @@
 
         <div class="col text-center">
 
-            <button id="category-all" class="btn btn-primary mx-1 mt-2" type="button"><?php esc_html_e('All', 'bricks') ?></button>
+            <?php $taxonomy_name = 'category'; ?>
+
+            <button id="<?php echo $taxonomy_name ?>-all" class="btn btn-primary mx-1 mt-2" type="button"><?php esc_html_e('All', 'bricks') ?></button>
 
             <?php
             
             $sb_portfolio_cats = get_terms( array(
-                'taxonomy' => 'category',
+                'taxonomy' => $taxonomy_name,
             ));
 
             foreach ($sb_portfolio_cats as $sb_portfolio_cat) { ?>
               
-            <button id="category-<?php echo strtolower($sb_portfolio_cat->name) ?>" class="btn btn-primary mx-1 mt-2" type="button" ><?php echo $sb_portfolio_cat->name ?></button>
+            <button id="<?php echo $taxonomy_name.'-'.$sb_portfolio_cat->slug ?>" class="btn btn-primary mx-1 mt-2" type="button" ><?php echo $sb_portfolio_cat->name ?></button>
 
             <?php }; ?>
 
