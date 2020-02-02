@@ -174,7 +174,7 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: templates/content/page-portfolio.php:13
+#: templates/content/page-portfolio.php:15
 msgid "All"
 msgstr ""
 
