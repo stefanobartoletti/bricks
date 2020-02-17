@@ -33,6 +33,15 @@ devDependencies:
   gulp-uglify: 3.0.2
   gulp-wp-pot: 2.3.6
   gulp-zip: 5.0.1_gulp@4.0.2
+  lg-autoplay.js: 1.0.0
+  lg-fullscreen.js: 1.1.0
+  lg-hash.js: 1.0.0
+  lg-pager.js: 1.0.0
+  lg-share.js: 1.2.2
+  lg-thumbnail.js: 1.1.0
+  lg-video.js: 1.0.0
+  lg-zoom.js: 1.0.1
+  lightgallery.js: 1.1.3
   material-colors: 1.2.6
   rollup: 1.27.14
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.7+rollup@1.27.14
@@ -5044,6 +5053,38 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha1-bxT5mje+Op3XhPVJVpDlkDRm7kI=
+  /lg-autoplay.js/1.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-CDB91Bg+w9OiPDRYkKQaXGT+N1E=
+  /lg-fullscreen.js/1.1.0:
+    dev: true
+    resolution:
+      integrity: sha512-/GVqIWyF4+gSeIllPksmpS+ukTljY1xder2Fgn4Y8y7o1yPZY0yuS2JuNMIQspkF0KiZu1PBQOgBUkgQm5eO4w==
+  /lg-hash.js/1.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-LcVuEGbDAhHjek7ELjKTstmefGI=
+  /lg-pager.js/1.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-YqXwf5+XbK58/bHb0+IItsEvx6s=
+  /lg-share.js/1.2.2:
+    dev: true
+    resolution:
+      integrity: sha1-fREOWdNr42gqk4yQq4M9ivTrdkU=
+  /lg-thumbnail.js/1.1.0:
+    dev: true
+    resolution:
+      integrity: sha512-QyYrSaT3q003iOjR1AM8+L1Jh3fhpLaNvvRpNLeE+RltjLEJPwIVMVqy1UMb3C7xyWy7TdyOfIKJxsCVP3yIbA==
+  /lg-video.js/1.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-nxF2Fd8jOGi9jrPkQr6FRwpuccs=
+  /lg-zoom.js/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha1-XhzcV0CfXjMbVz0P2T3CZHnIDN4=
   /liftoff/3.1.0:
     dependencies:
       extend: 3.0.2
@@ -5059,6 +5100,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-DlIPlJUkCV0Ips2zf2pJP0unEoT1kwYhiiPUGF3s/jtxTCjziNLoiVVh+jqWOWeFi6mmwQ5fNxvAUyPad4Dfog==
+  /lightgallery.js/1.1.3:
+    dev: true
+    resolution:
+      integrity: sha512-eo96ApfhSyb+Gv421ntAKxkw3CvJ9UBF9/XjiUfwz0rNWYszSsauG3se+FL606+wrMpsp/wFweqSMPTzoiLbnQ==
   /limiter/1.1.4:
     dev: true
     resolution:
@@ -8566,6 +8611,15 @@ specifiers:
   gulp-uglify: ^3.0.2
   gulp-wp-pot: ^2.3.6
   gulp-zip: ^5.0.1
+  lg-autoplay.js: ^1.0.0
+  lg-fullscreen.js: ^1.1.0
+  lg-hash.js: ^1.0.0
+  lg-pager.js: ^1.0.0
+  lg-share.js: ^1.2.2
+  lg-thumbnail.js: ^1.1.0
+  lg-video.js: ^1.0.0
+  lg-zoom.js: ^1.0.1
+  lightgallery.js: ^1.1.3
   material-colors: ^1.2.6
   rollup: ^1.27.14
   rollup-plugin-babel: ^4.3.3
