@@ -15,6 +15,12 @@ module.exports = {
 
     siteURL: 'http://localhost:8080/sbbase',
 
+    // --- Third Party ---
+
+    use: {
+        lightgallery: false,
+    },
+
     // --- CSS ---
 
     css: {

@@ -1,0 +1,7 @@
+// override variables from lightgallery.js/src/sass/lg-variables.scss
+
+$backdrop-opacity: 0.9;
+
+// load soruce
+
+@import "../../node_modules/lightgallery.js/src/sass/lightgallery";

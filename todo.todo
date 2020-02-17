@@ -71,7 +71,8 @@ Libraries:
   ☐ hover.css
   ☐ Slick carousel
   ☐ fullpage.js
-  ☐ Magnific Popup / fancybox
+  ✔ ~Magnific Popup / fancybox~ used lightgallery @done(20-02-17 20:09)
+  ☐ laxxx
   ☐ skrollr
   ☐ scrollmagic
   ☐ parallax http://wagerfield.github.io/parallax
