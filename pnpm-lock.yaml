@@ -1,7 +1,7 @@
 devDependencies:
   '@babel/core': 7.7.7
   '@babel/preset-env': 7.7.7_@babel+core@7.7.7
-  '@fortawesome/fontawesome-free': 5.12.0
+  '@fortawesome/fontawesome-free': 5.13.1
   '@rollup/plugin-commonjs': 11.0.0_rollup@1.27.14
   '@rollup/plugin-node-resolve': 6.0.0_rollup@1.27.14
   aos: 2.3.4
@@ -771,12 +771,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-cz5Ji23KCi4T+YIE/BolWosrJuSmoZeN1EFnRtBwF+KKLi8GG/Z2c2hOJJeCXPk4mwk4QFvTmwIodJowXgttRA==
-  /@fortawesome/fontawesome-free/5.12.0:
+  /@fortawesome/fontawesome-free/5.13.1:
     dev: true
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-vKDJUuE2GAdBERaQWmmtsciAMzjwNrROXA5KTGSZvayAsmuTGjam5z6QNqNPCwDfVljLWuov1nEC3mEQf/n6fQ==
+      integrity: sha512-D819f34FLHeBN/4xvw0HR0u7U2G7RqjPSggXqf7LktsxWQ48VAfGwvMrhcVuaZV2fF069c/619RdgCCms0DHhw==
   /@gulp-sourcemaps/identity-map/1.0.2:
     dependencies:
       acorn: 5.7.4
@@ -8878,7 +8878,7 @@ packages:
 specifiers:
   '@babel/core': ^7.7.7
   '@babel/preset-env': ^7.7.7
-  '@fortawesome/fontawesome-free': ^5.12.0
+  '@fortawesome/fontawesome-free': ^5.13.1
   '@rollup/plugin-commonjs': ^11.0.0
   '@rollup/plugin-node-resolve': ^6.0.0
   aos: ^2.3.4
