@@ -9,7 +9,7 @@ devDependencies:
   brand-colors: 2.1.1
   browser-sync: 2.26.7
   del: 5.1.0
-  fs-extra: 8.1.0
+  fs-extra: 9.0.1
   gulp: 4.0.2
   gulp-autoprefixer: 7.0.1_gulp@4.0.2
   gulp-better-rollup: 4.0.1_rollup@1.27.14
@@ -1338,6 +1338,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=
+  /at-least-node/1.0.0:
+    dev: true
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /atob/2.1.2:
     dev: true
     engines:
@@ -3487,16 +3493,17 @@ packages:
     dev: true
     resolution:
       integrity: sha1-N5TzeMWLNC6n27sjCVEJxLO2IpE=
-  /fs-extra/8.1.0:
+  /fs-extra/9.0.1:
     dependencies:
-      graceful-fs: 4.2.2
-      jsonfile: 4.0.0
-      universalify: 0.1.2
+      at-least-node: 1.0.0
+      graceful-fs: 4.2.4
+      jsonfile: 6.0.1
+      universalify: 1.0.0
     dev: true
     engines:
-      node: '>=6 <7 || >=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+      integrity: sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   /fs-minipass/1.2.7:
     dependencies:
       minipass: 2.9.0
@@ -5110,12 +5117,14 @@ packages:
       graceful-fs: 4.2.2
     resolution:
       integrity: sha1-pezG9l9T9mLEQVx2daAzHQmS7GY=
-  /jsonfile/4.0.0:
+  /jsonfile/6.0.1:
+    dependencies:
+      universalify: 1.0.0
     dev: true
     optionalDependencies:
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.4
     resolution:
-      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+      integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /jsprim/1.4.1:
     dependencies:
       assert-plus: 1.0.0
@@ -8405,6 +8414,12 @@ packages:
       node: '>= 4.0.0'
     resolution:
       integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+  /universalify/1.0.0:
+    dev: true
+    engines:
+      node: '>= 10.0.0'
+    resolution:
+      integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
   /unpipe/1.0.0:
     dev: true
     engines:
@@ -8871,7 +8886,7 @@ specifiers:
   brand-colors: ^2.1.1
   browser-sync: ^2.26.7
   del: ^5.1.0
-  fs-extra: ^8.1.0
+  fs-extra: ^9.0.1
   gulp: ^4.0.2
   gulp-autoprefixer: ^7.0.1
   gulp-better-rollup: ^4.0.1

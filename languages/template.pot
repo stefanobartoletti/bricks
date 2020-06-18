@@ -166,12 +166,12 @@ msgstr ""
 msgid "Insert full addresses for Social Network profiles. Only filled fields will be displayed on the site as icons. For better layout, only use about 3~4 of them at most."
 msgstr ""
 
-#: templates/content/loop-none.php:6
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
 #: templates/content/loop-none.php:10
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: templates/content/loop-none.php:6
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
 #: templates/content/page-portfolio.php:15
