@@ -17,7 +17,7 @@ const { fonts } = require('./fonts');
 const { icons } = require('./icons');
 const { pot } = require('./i18n');
 const { setDev, setProd, clean } = require('./utils');
-const { setup, conf } = require('./setup');
+const { setup, domain, conf } = require('./setup');
 const { pkg, deploy } = require('./prod');
 const { browser_sync, reload, clearCache } = require('./browser');
 
@@ -48,7 +48,7 @@ exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
 exports.icons = icons;
-exports.pot = pot;
+exports.pot = series(domain, pot);
 
 exports.pkg = pkg;
 exports.deploy = deploy;
@@ -57,5 +57,5 @@ exports.setup = setup;
 exports.conf = series(conf, pot);
 
 exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
-exports.prod = series(setProd, clean, parallel(css, js, img, fonts, icons, pot));
+exports.prod = series(setProd, clean, parallel(css, js, img, fonts, icons, domain, pot));
 exports.watch = parallel(browser_sync, watch_files);

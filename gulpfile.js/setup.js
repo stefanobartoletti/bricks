@@ -79,4 +79,5 @@ function resetversion() {
 // --- Exports ---
 
 exports.setup = setup;
+exports.domain = domain;
 exports.conf = series(projectfiles, domain, resetversion);
