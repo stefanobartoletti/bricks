@@ -8,8 +8,7 @@
         "homepage": "https://www.stefanobartoletti.it"
     }],
     "require": {
-        "wp-bootstrap/wp-bootstrap-navwalker": "^4.3",
-        "enshrined/svg-sanitize": "^0.13.2"
+        "wp-bootstrap/wp-bootstrap-navwalker": "^4.3"
     },
     "require-dev": {},
     "autoload": {
