@@ -2,8 +2,9 @@ devDependencies:
   '@babel/core': 7.10.3
   '@babel/preset-env': 7.10.3_@babel+core@7.10.3
   '@fortawesome/fontawesome-free': 5.13.1
-  '@rollup/plugin-commonjs': 11.1.0_rollup@1.32.1
-  '@rollup/plugin-node-resolve': 6.1.0_rollup@1.32.1
+  '@rollup/plugin-babel': 5.0.3_@babel+core@7.10.3+rollup@2.18.0
+  '@rollup/plugin-commonjs': 13.0.0_rollup@2.18.0
+  '@rollup/plugin-node-resolve': 8.0.1_rollup@2.18.0
   aos: 2.3.4
   bootstrap: 4.5.0
   brand-colors: 2.1.1
@@ -12,7 +13,6 @@ devDependencies:
   fs-extra: 9.0.1
   gulp: 4.0.2
   gulp-autoprefixer: 7.0.1_gulp@4.0.2
-  gulp-better-rollup: 4.0.1_rollup@1.32.1
   gulp-bump: 3.1.3
   gulp-cache: 1.1.3
   gulp-checktextdomain: 2.2.2
@@ -26,6 +26,7 @@ devDependencies:
   gulp-prompt: 1.2.0
   gulp-purgecss: 2.3.0
   gulp-rename: 2.0.0
+  gulp-rollup-each: 3.0.2
   gulp-sass: 4.1.0
   gulp-sourcemaps: 2.6.5
   gulp-ttf2woff: 1.1.1
@@ -43,8 +44,7 @@ devDependencies:
   lg-zoom.js: 1.2.0
   lightgallery.js: 1.2.0
   material-colors: 1.2.6
-  rollup: 1.32.1
-  rollup-plugin-babel: 4.4.0_@babel+core@7.10.3+rollup@1.32.1
+  rollup: 2.18.0
   vinyl-ftp: 0.6.1
 lockfileVersion: 5.1
 packages:
@@ -985,44 +985,60 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
-  /@rollup/plugin-commonjs/11.1.0_rollup@1.32.1:
+  /@rollup/plugin-babel/5.0.3_@babel+core@7.10.3+rollup@2.18.0:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@1.32.1
+      '@babel/core': 7.10.3
+      '@babel/helper-module-imports': 7.10.3
+      '@rollup/pluginutils': 3.1.0_rollup@2.18.0
+      rollup: 2.18.0
+    dev: true
+    engines:
+      node: '>= 10.0.0'
+    peerDependencies:
+      '@babel/core': ^7.0.0
+      rollup: ^1.20.0||^2.0.0
+    resolution:
+      integrity: sha512-NlaPf4E6YFxeOCbqc+A2PTkB1BSy3rfKu6EJuQ1MGhMHpTVvMqKi6Rf0DlwtnEsTNK9LueUgsGEgp5Occ4KDVA==
+  /@rollup/plugin-commonjs/13.0.0_rollup@2.18.0:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.18.0
       commondir: 1.0.1
       estree-walker: 1.0.1
       glob: 7.1.6
       is-reference: 1.2.0
       magic-string: 0.25.7
       resolve: 1.17.0
-      rollup: 1.32.1
+      rollup: 2.18.0
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^2.3.4
+    resolution:
+      integrity: sha512-Anxc3qgkAi7peAyesTqGYidG5GRim9jtg8xhmykNaZkImtvjA7Wsqep08D2mYsqw1IF7rA3lYfciLgzUSgRoqw==
+  /@rollup/plugin-node-resolve/8.0.1_rollup@2.18.0:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.18.0
+      '@types/resolve': 0.0.8
+      builtin-modules: 3.1.0
+      deep-freeze: 0.0.1
+      deepmerge: 4.2.2
+      is-module: 1.0.0
+      resolve: 1.17.0
+      rollup: 2.18.0
     dev: true
     engines:
       node: '>= 8.0.0'
     peerDependencies:
       rollup: ^1.20.0||^2.0.0
     resolution:
-      integrity: sha512-Ycr12N3ZPN96Fw2STurD21jMqzKwL9QuFhms3SD7KKRK7oaXUsBU9Zt0jL/rOPHiPYisI21/rXGO3jr9BnLHUA==
-  /@rollup/plugin-node-resolve/6.1.0_rollup@1.32.1:
-    dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@1.32.1
-      '@types/resolve': 0.0.8
-      builtin-modules: 3.1.0
-      is-module: 1.0.0
-      resolve: 1.17.0
-      rollup: 1.32.1
-    dev: true
-    engines:
-      node: '>= 8.0.0'
-    peerDependencies:
-      rollup: ^1.20.0
-    resolution:
-      integrity: sha512-Cv7PDIvxdE40SWilY5WgZpqfIUEaDxFxs89zCAHjqyRwlTSuql4M5hjIuc5QYJkOH0/vyiyNXKD72O+LhRipGA==
-  /@rollup/pluginutils/3.1.0_rollup@1.32.1:
+      integrity: sha512-KIeAmueDDaYMqMBnUngLVVZhURwxA12nq/YB6nGm5/JpVyOMwI1fCVU3oL/dAnnLBG7oiPXntO5LHOiMrfNXCA==
+  /@rollup/pluginutils/3.1.0_rollup@2.18.0:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.2.2
-      rollup: 1.32.1
+      rollup: 2.18.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -2617,6 +2633,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-e48kc2IjU+2Zw8cTb6VZcJQ3lgVbS4uuB1TfCHbiZIP/haNXm+SVyhu+87jts5/3ROpd82GSVCoNs/z8l4ZOaQ==
+  /deep-freeze/0.0.1:
+    dev: true
+    resolution:
+      integrity: sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
   /deepmerge/4.2.2:
     dev: true
     engines:
@@ -3069,10 +3089,6 @@ packages:
     optional: true
     resolution:
       integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
-  /estree-walker/0.6.1:
-    dev: true
-    resolution:
-      integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==
   /estree-walker/1.0.1:
     dev: true
     resolution:
@@ -3674,6 +3690,15 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-oeyj2H3EjjonWcFjD5NvZNE9Rqe4UW+nQBU2HNeKw0koVLEFIhtyETyAakeAM3de7Z/SW5kcA+fZUait9EApnw==
+  /fsevents/2.1.3:
+    dev: true
+    engines:
+      node: ^8.16.0 || ^10.6.0 || >=11.0.0
+    optional: true
+    os:
+      - darwin
+    resolution:
+      integrity: sha512-Auw9a4AxqWpa9GUfj370BMPzzyncfBABW8Mab7BGWBYDj4Isgq+cDKtx0i6u9jcX9pQDnswsaaOTgTmA5pEjuQ==
   /fstream/1.0.12:
     dependencies:
       graceful-fs: 4.2.4
@@ -4044,20 +4069,6 @@ packages:
         optional: true
     resolution:
       integrity: sha512-QJGEmHw+bEt7FSqvmbAUTxbCuNLJYx4sz3ox9WouYqT/7j5FH5CQ8ZnpL1M7H5npX1bUJa7lUVY1w20jXxhOxg==
-  /gulp-better-rollup/4.0.1_rollup@1.32.1:
-    dependencies:
-      lodash.camelcase: 4.3.0
-      plugin-error: 1.0.1
-      rollup: 1.32.1
-      vinyl: 2.2.0
-      vinyl-sourcemaps-apply: 0.2.1
-    dev: true
-    engines:
-      node: '>=8'
-    peerDependencies:
-      rollup: ^1.4.1
-    resolution:
-      integrity: sha512-oUGrMd+p9umBPoIPYVDxFT4EwCzywh3o8q++eswJyAxrRgYCEM6OOGGxJLG+AmzzjEoiq0cc/ndgF5SH2qW3Fg==
   /gulp-bump/3.1.3:
     dependencies:
       bump-regex: 3.1.1
@@ -4243,6 +4254,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
+  /gulp-rollup-each/3.0.2:
+    dependencies:
+      plugin-error: 1.0.1
+      rollup: 1.32.1
+      vinyl-sourcemaps-apply: 0.2.1
+    dev: true
+    resolution:
+      integrity: sha512-yXTyl4b2xvC2rfq92LZtWHOMvM2tbW/X7wuYRfrYLN2d2BT7AV4H09o3SLgw+xPa/t3RFatP3uZQ5QPtMpGcLA==
   /gulp-sass/4.1.0:
     dependencies:
       chalk: 2.4.2
@@ -5518,10 +5537,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-+6HEUkwZ7ppfgTa0YJ8BfPTe1pI=
-  /lodash.camelcase/4.3.0:
-    dev: true
-    resolution:
-      integrity: sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
   /lodash.debounce/4.0.8:
     dev: true
     resolution:
@@ -7349,25 +7364,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-NDGVxTsjqfunkds7CqsOiEnxln4Bo7Nddl3XhS4pXg5OzwkLqJ971ZVAAnB+DDLnF76N+VnDEiBHaVV8I06SUg==
-  /rollup-plugin-babel/4.4.0_@babel+core@7.10.3+rollup@1.32.1:
-    dependencies:
-      '@babel/core': 7.10.3
-      '@babel/helper-module-imports': 7.10.3
-      rollup: 1.32.1
-      rollup-pluginutils: 2.8.2
-    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-babel.
-    dev: true
-    peerDependencies:
-      '@babel/core': 7 || ^7.0.0-rc.2
-      rollup: '>=0.60.0 <3'
-    resolution:
-      integrity: sha512-Lek/TYp1+7g7I+uMfJnnSJ7YWoD58ajo6Oarhlex7lvUce+RCKRuGRSgztDO3/MF/PuGKmUL5iTHKf208UNszw==
-  /rollup-pluginutils/2.8.2:
-    dependencies:
-      estree-walker: 0.6.1
-    dev: true
-    resolution:
-      integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
   /rollup/1.32.1:
     dependencies:
       '@types/estree': 0.0.44
@@ -7377,6 +7373,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-/2HA0Ec70TvQnXdzynFffkjA6XN+1e2pEv/uKS5Ulca40g2L7KuOE3riasHoNVHOsFD5KKZgDsMk1CP3Tw9s+A==
+  /rollup/2.18.0:
+    dev: true
+    engines:
+      node: '>=10.0.0'
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.1.3
+    resolution:
+      integrity: sha512-LhuQQp3WpnHo3HlKCRrdMXpB6jdLsGOoXXSfMjbv74s5VdV3WZhkYJT0Z6w/EH3UgPH+g/S9T4GJrKW/5iD8TA==
   /run-async/2.4.1:
     dev: true
     engines:
@@ -9012,8 +9017,9 @@ specifiers:
   '@babel/core': ^7.10.3
   '@babel/preset-env': ^7.10.3
   '@fortawesome/fontawesome-free': ^5.13.1
-  '@rollup/plugin-commonjs': ^11.1.0
-  '@rollup/plugin-node-resolve': ^6.1.0
+  '@rollup/plugin-babel': ^5.0.3
+  '@rollup/plugin-commonjs': ^13.0.0
+  '@rollup/plugin-node-resolve': ^8.0.1
   aos: ^2.3.4
   bootstrap: ^4.5.0
   brand-colors: ^2.1.1
@@ -9022,7 +9028,6 @@ specifiers:
   fs-extra: ^9.0.1
   gulp: ^4.0.2
   gulp-autoprefixer: ^7.0.1
-  gulp-better-rollup: ^4.0.1
   gulp-bump: ^3.1.3
   gulp-cache: ^1.1.3
   gulp-checktextdomain: ^2.2.2
@@ -9036,6 +9041,7 @@ specifiers:
   gulp-prompt: ^1.2.0
   gulp-purgecss: ^2.3.0
   gulp-rename: ^2.0.0
+  gulp-rollup-each: ^3.0.2
   gulp-sass: ^4.1.0
   gulp-sourcemaps: ^2.6.5
   gulp-ttf2woff: ^1.1.1
@@ -9053,6 +9059,5 @@ specifiers:
   lg-zoom.js: ^1.2.0
   lightgallery.js: ^1.2.0
   material-colors: ^1.2.6
-  rollup: ^1.32.1
-  rollup-plugin-babel: ^4.4.0
+  rollup: ^2.18.0
   vinyl-ftp: ^0.6.1
