@@ -130,7 +130,9 @@ function sb_thumb_alt() {
 
 // --- Sanitize & inline SVG ---
 
-// Sanitize SVG before inlining https://github.com/darylldoyle/svg-sanitizer
+// Sanitize SVG before inlining;
+// "Sanitizer" comes from "Safe SVG" (https://wordpress.org/plugins/safe-svg/) if active.
+// If not, "SVG Sanitizer" (https://github.com/darylldoyle/svg-sanitizer) must be installed from Composer
 
 use enshrined\svgSanitize\Sanitizer;
 

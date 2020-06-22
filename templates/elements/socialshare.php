@@ -1,6 +1,6 @@
 <div class="elem-socialshare media py-3">
 
-    <div class="btn btn-lg align-self-center mb-1 py-1 mr-1">
+    <div class="share-label btn btn-lg align-self-center mb-1 py-1 mr-1">
         <i class="fas fa-share-alt"></i>
     </div>
 

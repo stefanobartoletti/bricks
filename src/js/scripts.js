@@ -6,6 +6,7 @@
 // --- Third Party ---
 
 // import "./integrations/aos"
+// import "./integrations/lightgallery"
 
 
 // --- Custom elements ---

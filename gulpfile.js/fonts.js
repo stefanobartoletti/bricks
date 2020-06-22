@@ -1,12 +1,14 @@
 // --- Gulp ---
 
-const { src, dest } = require('gulp');
+const { src, dest, parallel } = require('gulp');
 
 
 // --- Plugins ---
 
 const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
+
+const gulpif = require('gulp-if');
 
 const environments = require('gulp-environments');
 const development = environments.development;
@@ -23,7 +25,7 @@ const project = require('../config/project');
 
 // --- Functions ---
 
-function fonts(done) {
+function localfonts(done) {
     src(config.fonts.src)
         .pipe(ttf2woff())
         .pipe(dest(config.fonts.dist))
@@ -35,7 +37,13 @@ function fonts(done) {
     done();
 };
 
+function libfonts() {
+    return src(config.fonts.lg)
+        .pipe(gulpif(project.use.lightgallery, dest(config.fonts.dist)))
+        .pipe(browserSync.stream());
+};
+
 
 // --- Exports ---
 
-exports.fonts = fonts;
+exports.fonts = parallel(localfonts, libfonts);

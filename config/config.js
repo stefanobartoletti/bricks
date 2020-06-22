@@ -44,6 +44,7 @@ module.exports = {
         src: './src/img/**/*.{png,jpg,gif,svg}',
         dist: './dist/img/',
         watch: './src/img/**/*.{png,jpg,gif,svg}',
+        lg: './node_modules/lightgallery.js/src/img/*.*',
     },
 
     // --- Fonts ---
@@ -52,6 +53,7 @@ module.exports = {
         src: './src/fonts/**/*.ttf',
         dist: './dist/fonts/',
         watch: './src/fonts/**/*.ttf',
+        lg: './node_modules/lightgallery.js/src/fonts/*.*',
     },
 
     // --- Icons ---

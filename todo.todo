@@ -1,6 +1,8 @@
 Security & Fixes:
 
   ☐ ---
+  ☐ no containers in front-page, only inside sections
+
  
 Design:
 
@@ -15,6 +17,8 @@ Code:
   ☐ custom template tags
   ☐ sass classes for svg logo
   ☐ phpcs wordpress rules
+  ☐ svg for thumbnail (not just logo)
+  ☐ add page support for excerpts
 
 File structure & Templates:
 
@@ -38,10 +42,11 @@ Performance & SEO:
   ☐ critical css https://web.dev/extract-critical-css https://www.npmjs.com/package/criticalcss https://www.npmjs.com/package/gulp-penthouse https://www.sitepoint.com/community/t/echo-contents-of-stylesheet/
   ☐ webfontloader
   ☐ webp image format https://www.npmjs.com/package/gulp-webp
-  ☐ lazyload https://github.com/aFarkas/lazysizes
+  ☐ lazyload https://github.com/aFarkas/lazysizes https://web.dev/native-lazy-loading/
   ☐ resposive images with srcset
   ☐ Google Fonts from local ?
   ☐ <head><link> preload/prefetch hero background images
+  ☐ add Quicklink? https://www.npmjs.com/package/quicklink
   
 Project & Tools:
 
@@ -67,7 +72,8 @@ Libraries:
   ☐ hover.css
   ☐ Slick carousel
   ☐ fullpage.js
-  ☐ Magnific Popup / fancybox
+  ✔ ~Magnific Popup / fancybox~ used lightgallery @done(20-02-17 20:09)
+  ☐ laxxx
   ☐ skrollr
   ☐ scrollmagic
   ☐ parallax http://wagerfield.github.io/parallax

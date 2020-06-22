@@ -1,11 +1,13 @@
 // --- Gulp ---
 
-const { src, dest } = require('gulp');
+const { src, dest, parallel } = require('gulp');
 
 
 // --- Plugins ---
 
 const imagemin = require('gulp-imagemin');
+
+const gulpif = require('gulp-if');
 
 const environments = require('gulp-environments');
 const development = environments.development;
@@ -22,7 +24,7 @@ const project = require('../config/project');
 
 // --- Functions ---
 
-function img() {
+function localimg() {
     return src(config.img.src)
         .pipe(imagemin({
             verbose: true
@@ -31,7 +33,13 @@ function img() {
         .pipe(browserSync.stream());
 };
 
+function libimg() {
+    return src(config.img.lg)
+        .pipe(gulpif(project.use.lightgallery, dest(config.img.dist)))
+        .pipe(browserSync.stream());
+};
+
 
 // --- Exports ---
 
-exports.img = img;
+exports.img = parallel(localimg, libimg);

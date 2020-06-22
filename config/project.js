@@ -13,7 +13,13 @@ module.exports = {
     licenseURL: '',
     textdomain: 'bricks',
 
-    siteURL: 'http://localhost:8080/sbbase',
+    siteURL: 'http://bricks.test',
+
+    // --- Third Party ---
+
+    use: {
+        lightgallery: false,
+    },
 
     // --- CSS ---
 
