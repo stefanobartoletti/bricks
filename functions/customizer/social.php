@@ -16,7 +16,7 @@ $wp_customize -> add_section ( 'sb_social', array(
 
     $sb_socialprofiles = sb_socialnetworks();
 
-    // ----- Social entry -----
+    // --- Social entry ---
 
     foreach ($sb_socialprofiles as $key => $value) { 
 

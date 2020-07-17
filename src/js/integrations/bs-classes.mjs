@@ -1,6 +1,6 @@
 // --- Bootstrap classes to Wordpress ---
 
-// ---- WP pagination > BS nav ---
+// --- WP pagination > BS nav ---
 
 var pagerNav = document.querySelectorAll('.nav-links');
 
