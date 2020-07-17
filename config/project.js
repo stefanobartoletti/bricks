@@ -3,7 +3,7 @@ module.exports = {
     // --- Project details ---
 
     name: 'Bricks',
-    version: '0.13.0',
+    version: '0.14.0',
     URL: '',
     desc: 'A modular starter theme built with Boostrap.',
     author: 'Stefano Bartoletti',
