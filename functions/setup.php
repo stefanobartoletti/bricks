@@ -42,6 +42,9 @@ if (! function_exists('sb_setup_theme')) {
         // Load translations 
         load_theme_textdomain( 'bricks', get_template_directory().'/languages' );
 
+        // Add excerpt to pages
+        // add_post_type_support( 'page', 'excerpt' );
+        
     }
 
 }
