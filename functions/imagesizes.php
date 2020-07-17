@@ -12,3 +12,10 @@
 add_image_size('sb_big', 1400, 800, true);
 add_image_size('sb_square', 400, 400, true);
 add_image_size('sb_single', 800, 500, true);
+
+// remove_image_size('large');
+// remove_image_size('thumbnail');
+// remove_image_size('medium');
+// remove_image_size('medium_large');
+remove_image_size('1536x1536');
+remove_image_size('2048x2048');
