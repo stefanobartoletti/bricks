@@ -6,7 +6,7 @@
 
     $sb_socialicons = sb_socialnetworks();
 
-    // ----- Single icon -----
+    // --- Single icon -----
 
     foreach ($sb_socialicons as $key => $value) {
 
