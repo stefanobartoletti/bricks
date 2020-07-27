@@ -88,6 +88,7 @@ module.exports = {
 
     prod: {
         files: [
+            'acf-json/**/*',
             'dist/**/*',
             'functions/**/*',
             'languages/**/*',
