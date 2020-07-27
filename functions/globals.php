@@ -27,7 +27,7 @@ function sb_socialnetworks() {
             'icon-name'     => 'fa-facebook-f',
             'has-profile'   => true,
             'has-share'     => true,
-            'share-url'     => 'https://www.facebook.com/sharer.php?u='.$post_url,
+            'share-url'     => 'https://www.facebook.com/sharer/sharer.php?u='.$post_url,
         ),
         'twitter' => array(
             'social-name'   => 'Twitter',
