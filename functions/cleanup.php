@@ -15,6 +15,11 @@ if(! function_exists('sb_cleanup_init')) {
             // Disable Gutenberg CSS // https://stackoverflow.com/q/52277629/
             wp_dequeue_style('wp-block-library');
             
+            // Remove dashicons in frontend for unauthenticated users // https://wordpress.stackexchange.com/a/281482/
+            if ( ! is_user_logged_in() ) {
+                wp_deregister_style( 'dashicons' );
+            }
+
             // Jquery from footer, remove migrate // https://wordpress.stackexchange.com/a/173605/
             wp_deregister_script('jquery');
             wp_enqueue_script('jquery', includes_url('/js/jquery/jquery.js'), false, null, true);

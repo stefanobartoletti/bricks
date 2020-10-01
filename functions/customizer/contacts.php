@@ -12,7 +12,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
 
     // --- Contacts settings ---
 
-    // ----- Address -----
+    // --- Address ---
 
     $wp_customize -> add_setting ( 'sb_company', array(
         'default' => '',
@@ -62,7 +62,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    // ----- Phone -----
+    // --- Phone ---
 
     $wp_customize -> add_setting ( 'sb_phone', array(
         'default' => '',
@@ -75,7 +75,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    // ----- Email -----
+    // --- Email ---
 
     $wp_customize -> add_setting ( 'sb_email', array(
         'default' => '',
@@ -88,7 +88,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    // ----- Italian Fiscal Code -----
+    // --- Italian Fiscal Code ---
 
     $wp_customize -> add_setting ( 'sb_cfisc', array(
         'default' => '',
@@ -101,7 +101,7 @@ $wp_customize -> add_section ( 'sb_contacts', array(
         'section' => 'sb_contacts',
     ));
 
-    // ----- VAT Identification Number -----
+    // --- VAT Identification Number ---
 
     $wp_customize -> add_setting ( 'sb_piva', array(
         'default' => '',

@@ -1,6 +1,6 @@
 // --- Wordpress customizations ---
 
-// ---- Comment form ---
+// --- Comment form ---
 
 var commentBox = document.querySelector('.comment-form-comment textarea');
 

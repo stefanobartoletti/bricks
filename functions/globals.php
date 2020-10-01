@@ -27,7 +27,7 @@ function sb_socialnetworks() {
             'icon-name'     => 'fa-facebook-f',
             'has-profile'   => true,
             'has-share'     => true,
-            'share-url'     => 'https://www.facebook.com/sharer.php?u='.$post_url,
+            'share-url'     => 'https://www.facebook.com/sharer/sharer.php?u='.$post_url,
         ),
         'twitter' => array(
             'social-name'   => 'Twitter',
@@ -88,7 +88,7 @@ function sb_socialnetworks() {
             'icon-name'     => 'fa-whatsapp',
             'has-profile'   => false,
             'has-share'     => true,
-            'share-url'     => 'whatsapp://send?text='.$post_url,
+            'share-url'     => 'https://api.whatsapp.com/send?text='.$post_title.'%20'.$post_url,
         ),
         'telegram' => array(
             'social-name'   => 'Telegram',

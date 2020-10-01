@@ -16,7 +16,7 @@ if ( ! function_exists('sb_cpt_sample') ) {
                   
         $args = array(
 
-            // ---- Labels ---
+            // --- Labels ---
 
             'label'         => __('CPT Sample', 'bricks'),
             'description'   => __('CPT Sample', 'bricks'),
@@ -50,7 +50,7 @@ if ( ! function_exists('sb_cpt_sample') ) {
                 // 'filter_items_list'     => __('Filter items list', 'bricks'),
             ),
             
-            // ---- Options ---
+            // --- Options ---
 
             'public'                => true,
             'publicly_queryable'    => true,
@@ -65,7 +65,7 @@ if ( ! function_exists('sb_cpt_sample') ) {
                 // 'pages'         => true,
             ),
 
-            // ---- Supports ---
+            // --- Supports ---
 
             'supports'      => array(
                 'title',
@@ -81,14 +81,14 @@ if ( ! function_exists('sb_cpt_sample') ) {
                 // 'post-formats',
             ),
 
-            // ---- Taxonomies ---
+            // --- Taxonomies ---
 
             'taxonomies'    => array(
                 // 'category',
                 // 'post_tag',
             ),
 
-            // ---- Admin UI ---
+            // --- Admin UI ---
 
             'show_ui'               => true,
             'show_in_menu'          => true,
@@ -97,7 +97,7 @@ if ( ! function_exists('sb_cpt_sample') ) {
             'show_in_admin_bar'     => true,
             'show_in_nav_menus'     => true,
 
-            // ---- Capabilities ---
+            // --- Capabilities ---
 
             'capability_type'   => 'post',
             // 'capabilities'      => array(
@@ -110,7 +110,7 @@ if ( ! function_exists('sb_cpt_sample') ) {
             //     'read_private_posts'    => 'read_private_posts',
             // ),
             
-            // ---- REST API ---
+            // --- REST API ---
 
             'show_in_rest'          => true,
             // 'rest_base'             => $slug,

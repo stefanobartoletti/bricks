@@ -62,7 +62,7 @@ Project & Tools:
   ☐ gulp-plumber ?
   ☐ gulp-load-plugins ?
   ☐ gulp-changed / gulp-newer ?
-  ☐ VS Code Anchor extension support @high 
+  ✔ VS Code Anchor extension support @high @done(20-07-17 12:13)
   ☐ Set special comment to mark files to be edited, and remove it when done
 
 Libraries:
