@@ -13,7 +13,7 @@ devDependencies:
   fs-extra: 9.0.1
   gulp: 4.0.2
   gulp-autoprefixer: 7.0.1_gulp@4.0.2
-  gulp-bump: 3.1.3
+  gulp-bump: 3.2.0
   gulp-cache: 1.1.3
   gulp-checktextdomain: 2.2.2
   gulp-clean-css: 4.3.0
@@ -33,7 +33,7 @@ devDependencies:
   gulp-ttf2woff2: 3.0.0
   gulp-uglify: 3.0.2
   gulp-wp-pot: 2.4.3
-  gulp-zip: 5.0.1_gulp@4.0.2
+  gulp-zip: 5.0.2_gulp@4.0.2
   lg-autoplay.js: 1.2.0
   lg-fullscreen.js: 1.2.0
   lg-hash.js: 1.0.0
@@ -1927,15 +1927,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-k0KL0aWZuBt2lrxrcASWDfwOLMnodeQjodT/1SxEQAXsHANgo6ZC/VEaSEHCXt7aSTZ4/4H5LKa+tBXmW7Vtvw==
-  /bump-regex/3.1.1:
+  /bump-regex/4.1.0:
     dependencies:
       semver: 5.7.1
-      xtend: 4.0.2
     dev: true
     engines:
-      node: '>= 0.12.0'
+      node: '>= 4.0.0'
     resolution:
-      integrity: sha512-NinFibU11G1ad/2Ji3J04lRC9mLpUGr3C0vtt4Yp049cDeW21NRkmUaZZc+snwlL6gE+Ja5cQfe/hf86Ahj+WQ==
+      integrity: sha512-75Kr/Iw6lqnOKF/7YpE0WyOMBaaSpdrXTquIxR0qbTgZxwJos6563zNSn+w/LPJUoL4DXq20QX9AQy4+UJbyhw==
   /bytes/3.1.0:
     dev: true
     engines:
@@ -4136,9 +4135,9 @@ packages:
         optional: true
     resolution:
       integrity: sha512-QJGEmHw+bEt7FSqvmbAUTxbCuNLJYx4sz3ox9WouYqT/7j5FH5CQ8ZnpL1M7H5npX1bUJa7lUVY1w20jXxhOxg==
-  /gulp-bump/3.1.3:
+  /gulp-bump/3.2.0:
     dependencies:
-      bump-regex: 3.1.1
+      bump-regex: 4.1.0
       plugin-error: 1.0.1
       plugin-log: 0.1.0
       semver: 5.7.1
@@ -4147,7 +4146,7 @@ packages:
     engines:
       node: '>= 0.9.0'
     resolution:
-      integrity: sha512-mhu6IvwMl2lHU2EUSkcgYG+Gd0Hwzn2B5ve4OXwaIg4SgmtVLTJ1graKD4t82ExhkU+TGoK/DHAdMJJ5isFe9g==
+      integrity: sha512-j3Yvi0QQZEN1HsXArQCBMdX5jedQZ1Cul3W1VZrvKal/Z4Slb6Z7UQLQyPaLm0heNdJKCjpKHgkYSR8VhfPlTA==
   /gulp-cache/1.1.3:
     dependencies:
       '@babel/runtime': 7.10.2
@@ -4438,7 +4437,7 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-1vbftC7VPZVxbsSYdJrnFkYj+ic858uitVAsu6vYd3mZ/5cxjq6lpVOkLAf3ZOQlwE5gxkqbwcIhyORLvlEhEQ==
-  /gulp-zip/5.0.1_gulp@4.0.2:
+  /gulp-zip/5.0.2_gulp@4.0.2:
     dependencies:
       get-stream: 5.1.0
       gulp: 4.0.2
@@ -4455,7 +4454,7 @@ packages:
       gulp:
         optional: true
     resolution:
-      integrity: sha512-M/IWLh9RvOpuofDZkgDirtiyz9J3yIqnDOJ3muzk2D/XnZ1ruqPlPLRIpXnl/aZU+xXwKPdOIxjRzkUcVEQyZQ==
+      integrity: sha512-rZd0Ppuc8Bf7J2/WzcdNaeb+lcEXf1R8mV/PJ9Kdu7PmnInWVeLSmiXIka/2QSe6uhAsGVFAMffWSaMzAPGTBg==
   /gulp/4.0.2:
     dependencies:
       glob-watcher: 5.0.3
@@ -9177,7 +9176,7 @@ specifiers:
   fs-extra: ^9.0.1
   gulp: ^4.0.2
   gulp-autoprefixer: ^7.0.1
-  gulp-bump: ^3.1.3
+  gulp-bump: ^3.2.0
   gulp-cache: ^1.1.3
   gulp-checktextdomain: ^2.2.2
   gulp-clean-css: ^4.3.0
@@ -9197,7 +9196,7 @@ specifiers:
   gulp-ttf2woff2: ^3.0.0
   gulp-uglify: ^3.0.2
   gulp-wp-pot: ^2.4.3
-  gulp-zip: ^5.0.1
+  gulp-zip: ^5.0.2
   lg-autoplay.js: ^1.2.0
   lg-fullscreen.js: ^1.2.0
   lg-hash.js: ^1.0.0
