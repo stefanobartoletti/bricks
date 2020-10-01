@@ -40,9 +40,9 @@ devDependencies:
   lg-pager.js: 1.0.0
   lg-share.js: 1.3.0
   lg-thumbnail.js: 1.2.0
-  lg-video.js: 1.2.0
+  lg-video.js: 1.2.1
   lg-zoom.js: 1.2.0
-  lightgallery.js: 1.2.0
+  lightgallery.js: 1.3.1
   material-colors: 1.2.6
   rollup: 2.18.0
   vinyl-ftp: 0.6.1
@@ -5504,10 +5504,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-qmNFbjLv1spCf3sB8HRX9vW8UtKcgq7qJIg10jLqCozSquhTJwSPUb5vyPgl3cZpgLFjRMiOpIRgBjGrX4inNQ==
-  /lg-video.js/1.2.0:
+  /lg-video.js/1.2.1:
     dev: true
     resolution:
-      integrity: sha512-BkitJqHmWFEm2jwIYv3+vrnwJZ1aDWqfb67QJdYY/eGyf0f+84qWylbMWoJHyZDpdN5wsBR3gF1/I6z0ZDoPqQ==
+      integrity: sha512-eFq7q4gWNu/8MCd/iiph8Ls4P+U3913cq0xqDSXc62BrGtF4lemdUsX49ekLO+fngveFXpFlgLeG+OE9JeMTbA==
   /lg-zoom.js/1.2.0:
     dev: true
     resolution:
@@ -5527,10 +5527,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-DlIPlJUkCV0Ips2zf2pJP0unEoT1kwYhiiPUGF3s/jtxTCjziNLoiVVh+jqWOWeFi6mmwQ5fNxvAUyPad4Dfog==
-  /lightgallery.js/1.2.0:
+  /lightgallery.js/1.3.1:
     dev: true
     resolution:
-      integrity: sha512-Zc3zytzCOb7das1Ru8JxE/McfCBPvoVnjuAGlXFaVks4FfyS4xTphzTunQU4Goc6LaPdf0hD5hQfWGyDwSsPKw==
+      integrity: sha512-U2XSkjvIZ0PEN+UYq2B9sFFzUu/JnAnc/sKaHorL+Ux8PbVEFm0skmwGjhoaW//LCsjyZwQZfS1yMKSwOS31OA==
   /limiter/1.1.5:
     dev: true
     resolution:
@@ -9203,9 +9203,9 @@ specifiers:
   lg-pager.js: ^1.0.0
   lg-share.js: ^1.3.0
   lg-thumbnail.js: ^1.2.0
-  lg-video.js: ^1.2.0
+  lg-video.js: ^1.2.1
   lg-zoom.js: ^1.2.0
-  lightgallery.js: ^1.2.0
+  lightgallery.js: ^1.3.1
   material-colors: ^1.2.6
   rollup: ^2.18.0
   vinyl-ftp: ^0.6.1
