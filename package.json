@@ -44,7 +44,7 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-wp-pot": "^2.4.3",
+    "gulp-wp-pot": "^2.5.0",
     "gulp-zip": "^5.0.2",
     "lg-autoplay.js": "^1.2.0",
     "lg-fullscreen.js": "^1.2.0",

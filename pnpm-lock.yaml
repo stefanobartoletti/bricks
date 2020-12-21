@@ -32,7 +32,7 @@ devDependencies:
   gulp-ttf2woff: 1.1.1
   gulp-ttf2woff2: 3.0.0
   gulp-uglify: 3.0.2
-  gulp-wp-pot: 2.4.3
+  gulp-wp-pot: 2.5.0
   gulp-zip: 5.0.2_gulp@4.0.2
   lg-autoplay.js: 1.2.0
   lg-fullscreen.js: 1.2.0
@@ -4581,17 +4581,16 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-AFTh50RQLifATBh8PsxQXdVLu08=
-  /gulp-wp-pot/2.4.3:
+  /gulp-wp-pot/2.5.0:
     dependencies:
       plugin-error: 1.0.1
-      through2: 3.0.1
-      vinyl: 2.2.0
-      wp-pot: 1.9.3
+      vinyl: 2.2.1
+      wp-pot: 1.9.8
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-1vbftC7VPZVxbsSYdJrnFkYj+ic858uitVAsu6vYd3mZ/5cxjq6lpVOkLAf3ZOQlwE5gxkqbwcIhyORLvlEhEQ==
+      integrity: sha512-3IIVEsgAaRFi4DWv5hRZcM7VEsCtGD4ZxgPL8qPdX+yrSpwD8I2+Q1cP3olXhn7KLJsnGSNuqor5sxo97H5pmQ==
   /gulp-zip/5.0.2_gulp@4.0.2:
     dependencies:
       get-stream: 5.1.0
@@ -6023,15 +6022,15 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha1-xvNINKDY28OzfCfui7yyfHd1WC4=
-  /matched/5.0.0:
+  /matched/5.0.1:
     dependencies:
       glob: 7.1.6
       picomatch: 2.2.2
     dev: true
     engines:
-      node: '>=12'
+      node: '>=10'
     resolution:
-      integrity: sha512-O0LCuxYYBNBjP2dmAg0i6PME0Mb0dvjulpMC0tTIeMRh6kXYsugOT5GOWpFkSzqjQjgOUs/eiyvpVhXdN2La4g==
+      integrity: sha512-E1fhSTPRyhAlNaNvGXAgZQlq1hL0bgYMTk/6bktVlIhzUnX/SZs7296ACdVeNJE8xFNGSuvd9IpI7vSnmcqLvw==
   /material-colors/1.2.6:
     dev: true
     resolution:
@@ -7080,10 +7079,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-ZzhPClkz2770C+qwqzHQuMWC/4g=
-  /php-parser/3.0.1:
+  /php-parser/3.0.2:
     dev: true
     resolution:
-      integrity: sha512-m6CBPHOoMkzEHoXG0rhEg/VegSNemUNQepHnYtrRgTAh8rsqoO65KqQ32KJ5xe2iplhO0jdwd1UJ9Ea0yHsgYQ==
+      integrity: sha512-a7y1+odEGsceLDLpu7oNyspZ0pK8FMWJOoim4/yd82AtnEZNLdCLZ67arnOQZ9K0lHJiSp4/7lVUpGELVxE14w==
   /picomatch/2.2.2:
     dev: true
     engines:
@@ -9121,6 +9120,19 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-MBH+yP0kC/GQ5GwBqrTPTzEfiiLjta7hTtvQtbxBgTeSXsmKQRQecjibMbxIXzVT3Y9KJK+drOz1/k+vsu8Nkg==
+  /vinyl/2.2.1:
+    dependencies:
+      clone: 2.1.2
+      clone-buffer: 1.0.0
+      clone-stats: 1.0.0
+      cloneable-readable: 1.1.3
+      remove-trailing-separator: 1.1.0
+      replace-ext: 1.0.1
+    dev: true
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha512-LII3bXRFBZLlezoG5FfZVcXflZgWP/4dCwKtxd5ky9+LOtM4CS3bIRQsmR1KMnMW07jpE8fqR2lcxPZ+8sJIcw==
   /which-module/1.0.0:
     dev: true
     resolution:
@@ -9142,16 +9154,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-QGkOQc8XL6Bt5PwnsExKBPuMKBxnGxWWW3fU55Xt4feHozMUhdUMaBCk290qpm/wG5u/RSKzwdAC4i51YigihA==
-  /wp-pot/1.9.3:
+  /wp-pot/1.9.8:
     dependencies:
-      matched: 5.0.0
+      matched: 5.0.1
       path-sort: 0.1.0
-      php-parser: 3.0.1
+      php-parser: 3.0.2
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-PvWxTZpG9geOyon68wFPCk70D0pYrUxafRSEtB8gYoDnPKf86Tar9PnzS9x/IX62UGNKtT4zDFFIyQU1L9wyLA==
+      integrity: sha512-F861Rx872AW57paoX9Pi8yQA9GW4grw/g7Koe//LSL2G1W0z3T+M/xMSFd2e//vWv2DAsoeiIkNpztpWhLxkTg==
   /wrap-ansi/2.1.0:
     dependencies:
       string-width: 1.0.2
@@ -9389,7 +9401,7 @@ specifiers:
   gulp-ttf2woff: ^1.1.1
   gulp-ttf2woff2: ^3.0.0
   gulp-uglify: ^3.0.2
-  gulp-wp-pot: ^2.4.3
+  gulp-wp-pot: ^2.5.0
   gulp-zip: ^5.0.2
   lg-autoplay.js: ^1.2.0
   lg-fullscreen.js: ^1.2.0
