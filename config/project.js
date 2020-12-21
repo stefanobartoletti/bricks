@@ -26,8 +26,7 @@ module.exports = {
     css: {
         purge: {
             // Purgecss whitelists
-            wl: [],
-            wlp: [
+            safelist: [
                 /^carousel-item.*/,     // Bootstrap Carousel Animation
                 /collapsing/,           // Bootstrap Navbar Animation
                 /show/,                 // Bootstrap Dropdown
@@ -37,8 +36,7 @@ module.exports = {
                 /form-check/,
                 /form-check-input/,
                 /btn-block/,
-            ],
-            wlpc: []
+            ]
         }
     },
 
