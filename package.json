@@ -18,7 +18,7 @@
     "@rollup/plugin-commonjs": "^13.0.2",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "aos": "^2.3.4",
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^4.5.3",
     "brand-colors": "^2.1.1",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
