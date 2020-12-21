@@ -20,7 +20,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
     "brand-colors": "^2.1.1",
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.13",
     "del": "^5.1.0",
     "fs-extra": "^9.0.1",
     "gulp": "^4.0.2",
