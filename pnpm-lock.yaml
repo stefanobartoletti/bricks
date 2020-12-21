@@ -2,9 +2,10 @@ devDependencies:
   '@babel/core': 7.12.10
   '@babel/preset-env': 7.12.11_@babel+core@7.12.10
   '@fortawesome/fontawesome-free': 5.15.1
+  '@rbnlffl/gulp-rollup': 0.1.1_gulp@4.0.2
   '@rollup/plugin-babel': 5.2.2_909c1d41167457e73a96bf33c609a9e9
-  '@rollup/plugin-commonjs': 13.0.2_rollup@2.35.1
-  '@rollup/plugin-node-resolve': 8.4.0_rollup@2.35.1
+  '@rollup/plugin-commonjs': 17.0.0_rollup@2.35.1
+  '@rollup/plugin-node-resolve': 11.0.1_rollup@2.35.1
   aos: 2.3.4
   bootstrap: 4.5.3
   brand-colors: 2.1.1
@@ -26,7 +27,6 @@ devDependencies:
   gulp-prompt: 1.2.0
   gulp-purgecss: 2.3.0
   gulp-rename: 2.0.0
-  gulp-rollup-each: 3.0.2
   gulp-sass: 4.1.0
   gulp-sourcemaps: 2.6.5
   gulp-ttf2woff: 1.1.1
@@ -1096,6 +1096,19 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
+  /@rbnlffl/gulp-rollup/0.1.1_gulp@4.0.2:
+    dependencies:
+      gulp: 4.0.2
+      plugin-error: 1.0.1
+      rollup: 2.35.1
+      vinyl-sourcemaps-apply: 0.2.1
+    dev: true
+    engines:
+      node: '>=10'
+    peerDependencies:
+      gulp: ^4.0.2
+    resolution:
+      integrity: sha512-NnBsVmsj87g5mvB14aHNY1rAZCgpGquANOCSkNy/+QqDJsC8jnR4bVyVUE8FUlTvvaORlXzQ6MGzkh08b5T91A==
   /@rollup/plugin-babel/5.2.2_909c1d41167457e73a96bf33c609a9e9:
     dependencies:
       '@babel/core': 7.12.10
@@ -1114,40 +1127,39 @@ packages:
         optional: true
     resolution:
       integrity: sha512-MjmH7GvFT4TW8xFdIeFS3wqIX646y5tACdxkTO+khbHvS3ZcVJL6vkAHLw2wqPmkhwCfWHoNsp15VYNwW6JEJA==
-  /@rollup/plugin-commonjs/13.0.2_rollup@2.35.1:
+  /@rollup/plugin-commonjs/17.0.0_rollup@2.35.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.35.1
       commondir: 1.0.1
-      estree-walker: 1.0.1
+      estree-walker: 2.0.2
       glob: 7.1.6
-      is-reference: 1.2.0
+      is-reference: 1.2.1
       magic-string: 0.25.7
-      resolve: 1.17.0
+      resolve: 1.19.0
       rollup: 2.35.1
     dev: true
     engines:
       node: '>= 8.0.0'
     peerDependencies:
-      rollup: ^2.3.4
+      rollup: ^2.30.0
     resolution:
-      integrity: sha512-9JXf2k8xqvMYfqmhgtB6eCgMN9fbxwF1XDF3mGKJc6pkAmt0jnsqurxQ0tC1akQKNSXCm7c3unQxa3zuxtZ7mQ==
-  /@rollup/plugin-node-resolve/8.4.0_rollup@2.35.1:
+      integrity: sha512-/omBIJG1nHQc+bgkYDuLpb/V08QyutP9amOrJRUSlYJZP+b/68gM//D8sxJe3Yry2QnYIr3QjR3x4AlxJEN3GA==
+  /@rollup/plugin-node-resolve/11.0.1_rollup@2.35.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.35.1
       '@types/resolve': 1.17.1
       builtin-modules: 3.1.0
-      deep-freeze: 0.0.1
       deepmerge: 4.2.2
       is-module: 1.0.0
-      resolve: 1.17.0
+      resolve: 1.19.0
       rollup: 2.35.1
     dev: true
     engines:
-      node: '>= 8.0.0'
+      node: '>= 10.0.0'
     peerDependencies:
       rollup: ^1.20.0||^2.0.0
     resolution:
-      integrity: sha512-LFqKdRLn0ShtQyf6SBYO69bGE1upV6wUhBX0vFOUnLAyzx5cwp8svA0eHUnu8+YU57XOkrMtfG63QOpQx25pHQ==
+      integrity: sha512-ltlsj/4Bhwwhb+Nb5xCz/6vieuEj2/BAkkqVIKmZwC7pIdl8srmgmglE4S0jFlZa32K4qvdQ6NHdmpRKD/LwoQ==
   /@rollup/pluginutils/3.1.0_rollup@2.35.1:
     dependencies:
       '@types/estree': 0.0.39
@@ -1176,10 +1188,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
-  /@types/estree/0.0.44:
+  /@types/estree/0.0.45:
     dev: true
     resolution:
-      integrity: sha512-iaIVzr+w2ZJ5HkidlZ3EJM8VTZb2MJLCjw3V+505yVts0gRC4UMvjw0d1HPtGqI/HQC/KdsYtayfzl+AXY2R8g==
+      integrity: sha512-jnqIUKDUqJbDIUxm0Uj7bnlMnRm1T/eZ9N+AVMqhPgzrba2GhGG5o/jCTwmdPK709nEZsGoMzXEDUjcXHa3W0g==
   /@types/events/3.0.0:
     dev: true
     resolution:
@@ -1211,10 +1223,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-rouEWBImiRaSJsVA+ITTFM6ZxibuAlTuNOCyxVbwreu6k6+ujs7DfnU9o+PShFhET78pMBl3eH+AGSI5eOTkPA==
-  /@types/node/14.11.2:
+  /@types/node/14.14.14:
     dev: true
     resolution:
-      integrity: sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
+      integrity: sha512-UHnOPWVWV1z+VV8k6L1HhG7UbGBgIdghqF3l9Ny9ApPghbjICXkUJSd/b9gOgQfjM1r+37cipdw/HJ3F6ICEnQ==
   /@types/q/1.5.4:
     dev: true
     optional: true
@@ -1222,7 +1234,7 @@ packages:
       integrity: sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
   /@types/resolve/1.17.1:
     dependencies:
-      '@types/node': 14.11.2
+      '@types/node': 14.14.14
     dev: true
     resolution:
       integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==
@@ -1246,13 +1258,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
-  /acorn/7.3.1:
-    dev: true
-    engines:
-      node: '>=0.4.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-tLc0wSnatxAQHVHUapaHdz72pi9KUyHjq5KyHjGg9Y8Ifdc79pTh2XvI6I1/chZbnM7QtNKzh66ooDogPZSleA==
   /after/0.8.2:
     dev: true
     resolution:
@@ -2819,10 +2824,6 @@ packages:
     optional: true
     resolution:
       integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
-  /deep-freeze/0.0.1:
-    dev: true
-    resolution:
-      integrity: sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
   /deepmerge/4.2.2:
     dev: true
     engines:
@@ -3350,6 +3351,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==
+  /estree-walker/2.0.2:
+    dev: true
+    resolution:
+      integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
   /esutils/2.0.3:
     dev: true
     engines:
@@ -4528,14 +4533,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
-  /gulp-rollup-each/3.0.2:
-    dependencies:
-      plugin-error: 1.0.1
-      rollup: 1.32.1
-      vinyl-sourcemaps-apply: 0.2.1
-    dev: true
-    resolution:
-      integrity: sha512-yXTyl4b2xvC2rfq92LZtWHOMvM2tbW/X7wuYRfrYLN2d2BT7AV4H09o3SLgw+xPa/t3RFatP3uZQ5QPtMpGcLA==
   /gulp-sass/4.1.0:
     dependencies:
       chalk: 2.4.2
@@ -5124,6 +5121,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-dnMqspv5nU3LoewK2N/y7KLtxtakvTuaCsU9FU50/QDmdbHNy/4/JuRtMHqRU22o3q+W89YQndQEeCVwK+3qrA==
+  /is-core-module/2.2.0:
+    dependencies:
+      has: 1.0.3
+    dev: true
+    resolution:
+      integrity: sha512-XRAfAdyyY5F5cOXn7hYQDqh2Xmii+DEfIcQGxK/uNwMHhIkPWO0g8msXcbzLe+MpGoR951MlqM/2iIlU4vKDdQ==
   /is-data-descriptor/0.1.4:
     dependencies:
       kind-of: 3.2.2
@@ -5336,12 +5339,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==
-  /is-reference/1.2.0:
+  /is-reference/1.2.1:
     dependencies:
-      '@types/estree': 0.0.44
+      '@types/estree': 0.0.45
     dev: true
     resolution:
-      integrity: sha512-ZVxq+5TkOx6GQdnoMm2aRdCKADdcrOWXLGzGT+vIA8DMpqEJaRk5AL1bS80zJ2bjHunVmjdzfCt0e4BymIEqKQ==
+      integrity: sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==
   /is-regex/1.1.0:
     dependencies:
       has-symbols: 1.0.1
@@ -7720,6 +7723,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==
+  /resolve/1.19.0:
+    dependencies:
+      is-core-module: 2.2.0
+      path-parse: 1.0.6
+    dev: true
+    resolution:
+      integrity: sha512-rArEXAgsBG4UgRGcynxWIWKFvh/XZCcS8UJdHhwy91zwAvCZIbcs+vAbflgBnNjYMs/i/i+/Ux6IZhML1yPvxg==
   /resp-modifier/6.0.2:
     dependencies:
       debug: 2.6.9
@@ -7772,15 +7782,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-NDGVxTsjqfunkds7CqsOiEnxln4Bo7Nddl3XhS4pXg5OzwkLqJ971ZVAAnB+DDLnF76N+VnDEiBHaVV8I06SUg==
-  /rollup/1.32.1:
-    dependencies:
-      '@types/estree': 0.0.44
-      '@types/node': 14.0.13
-      acorn: 7.3.1
-    dev: true
-    hasBin: true
-    resolution:
-      integrity: sha512-/2HA0Ec70TvQnXdzynFffkjA6XN+1e2pEv/uKS5Ulca40g2L7KuOE3riasHoNVHOsFD5KKZgDsMk1CP3Tw9s+A==
   /rollup/2.35.1:
     dev: true
     engines:
@@ -9425,9 +9426,10 @@ specifiers:
   '@babel/core': ^7.12.10
   '@babel/preset-env': ^7.12.11
   '@fortawesome/fontawesome-free': ^5.15.1
+  '@rbnlffl/gulp-rollup': ^0.1.1
   '@rollup/plugin-babel': ^5.2.2
-  '@rollup/plugin-commonjs': ^13.0.2
-  '@rollup/plugin-node-resolve': ^8.4.0
+  '@rollup/plugin-commonjs': ^17.0.0
+  '@rollup/plugin-node-resolve': ^11.0.1
   aos: ^2.3.4
   bootstrap: ^4.5.3
   brand-colors: ^2.1.1
@@ -9449,7 +9451,6 @@ specifiers:
   gulp-prompt: ^1.2.0
   gulp-purgecss: ^2.3.0
   gulp-rename: ^2.0.0
-  gulp-rollup-each: ^3.0.2
   gulp-sass: ^4.1.0
   gulp-sourcemaps: ^2.6.5
   gulp-ttf2woff: ^1.1.1

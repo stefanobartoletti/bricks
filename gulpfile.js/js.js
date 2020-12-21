@@ -5,7 +5,7 @@ const { src, dest } = require('gulp');
 
 // --- Plugins ---
 
-const rollup = require('gulp-rollup-each');
+const rollup = require('@rbnlffl/gulp-rollup');
 const babel = require('@rollup/plugin-babel').babel;
 const commonjs = require('@rollup/plugin-commonjs');
 const resolve = require('@rollup/plugin-node-resolve').nodeResolve;
