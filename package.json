@@ -23,7 +23,7 @@
     "brand-colors": "^2.1.1",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
-    "fs-extra": "^9.0.1",
+    "fs-extra": "^9.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-bump": "^3.2.0",
