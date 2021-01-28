@@ -57,6 +57,7 @@
     "lightgallery.js": "^1.4.0",
     "material-colors": "^1.2.6",
     "rollup": "^2.38.0",
+    "swiper": "^6.4.8",
     "vinyl-ftp": "^0.6.1"
   }
 }
