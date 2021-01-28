@@ -195,3 +195,10 @@ function sb_signature($sigType = 'text') {
     }
 
 }
+
+// --- Excerpt lenght ---
+
+// function sb_excerpt_length( $length ) {
+//     return 40;
+// }
+// add_filter( 'excerpt_length', 'sb_excerpt_length', 999 );
