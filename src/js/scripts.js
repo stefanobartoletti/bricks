@@ -7,6 +7,7 @@
 
 // import "./integrations/aos"
 // import "./integrations/lightgallery"
+// import "./integrations/swiper"
 
 
 // --- Custom elements ---

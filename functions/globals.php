@@ -174,8 +174,8 @@ function sb_custom_logo_svg() {
 function sb_signature($sigType = 'text') {
 
     $sigURL         = 'https://www.stefanobartoletti.it';
-    $sigLogoFull    = get_template_directory_uri().'/dist/img/sb-logo-full.svg';
-    $sigLogoSmall   = get_template_directory_uri().'/dist/img/sb-logo-small.svg';
+    $sigLogoFull    = get_template_directory().'/dist/img/sb-logo-full.svg';
+    $sigLogoSmall   = get_template_directory().'/dist/img/sb-logo-small.svg';
     $sigLogoAlt     = 'Stefano Bartoletti Web Design';
 
     switch ($sigType) {
@@ -195,3 +195,10 @@ function sb_signature($sigType = 'text') {
     }
 
 }
+
+// --- Excerpt lenght ---
+
+// function sb_excerpt_length( $length ) {
+//     return 40;
+// }
+// add_filter( 'excerpt_length', 'sb_excerpt_length', 999 );

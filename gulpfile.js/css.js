@@ -43,9 +43,7 @@ function css() {
         }))
         .pipe(production(purgecss({
             content: config.css.purge.content,
-            whitelist: project.css.purge.wl,
-            whitelistPatterns: project.css.purge.wlp,
-            whitelistPatternsChildren: project.css.purge.wlpc,
+            safelist: project.css.purge.safelist,
         })))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
