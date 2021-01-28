@@ -13,7 +13,7 @@ module.exports = {
     licenseURL: '',
     textdomain: 'bricks',
 
-    siteURL: 'http://bricks.test',
+    siteURL: 'http://localhost',
 
     // --- Third Party ---
 
