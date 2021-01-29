@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Bricks
+# Copyright (C) 2021 Bricks
 # This file is distributed under the same license as the Bricks package.
 msgid ""
 msgstr ""
@@ -66,10 +66,6 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: functions/customizer.php:13, functions/customizer.php:14
-msgid "[sb] Options"
-msgstr ""
-
 #: functions/navmenus.php:13
 msgid "Header Menu"
 msgstr ""
@@ -84,86 +80,6 @@ msgstr ""
 
 #: functions/sidebars.php:23, functions/sidebars.php:25
 msgid "Footer Widgets"
-msgstr ""
-
-#: functions/customizer/branding.php:6
-msgid "Branding"
-msgstr ""
-
-#: functions/customizer/branding.php:7
-msgid "Branding options"
-msgstr ""
-
-#: functions/customizer/branding.php:23
-msgid "Chrome theme color"
-msgstr ""
-
-#: functions/customizer/branding.php:24
-msgid "Tab color in Chrome for Android"
-msgstr ""
-
-#: functions/customizer/contacts.php:6, templates/footer/footer-columns.php:21
-msgid "Contacts"
-msgstr ""
-
-#: functions/customizer/contacts.php:7
-msgid "Contacts info"
-msgstr ""
-
-#: functions/customizer/contacts.php:24
-msgid "Company Name"
-msgstr ""
-
-#: functions/customizer/contacts.php:25
-msgid "Full Company formal name"
-msgstr ""
-
-#: functions/customizer/contacts.php:36
-msgid "Address - Line 1"
-msgstr ""
-
-#: functions/customizer/contacts.php:37
-msgid "i.e. \"Street, Number\""
-msgstr ""
-
-#: functions/customizer/contacts.php:48
-msgid "Address - Line 2"
-msgstr ""
-
-#: functions/customizer/contacts.php:49
-msgid "i.e. \"Postal Code, City, State\""
-msgstr ""
-
-#: functions/customizer/contacts.php:60
-msgid "Map URL"
-msgstr ""
-
-#: functions/customizer/contacts.php:61
-msgid "Online Map Service URL, i.e. \"https://goo.gl/maps/sNAFh8SNCLH5cYyL7\" for Google Maps"
-msgstr ""
-
-#: functions/customizer/contacts.php:74
-msgid "Phone number"
-msgstr ""
-
-#: functions/customizer/contacts.php:87
-msgid "Email Address"
-msgstr ""
-
-#: functions/customizer/contacts.php:100
-msgid "Italian Fiscal Code"
-msgstr ""
-
-#: functions/customizer/contacts.php:113
-msgid "VAT Number"
-msgstr ""
-
-#: functions/customizer/social.php:6
-msgid "Social"
-msgstr ""
-
-#: functions/customizer/social.php:7
-msgid "Insert full addresses for Social Network profiles. Only filled fields will be displayed on the site as icons. For better layout, only use about 3~4 of them at most."
 msgstr ""
 
 #: templates/content/loop-none.php:10
@@ -186,15 +102,19 @@ msgstr ""
 msgid "Share with "
 msgstr ""
 
-#: templates/footer/footer-columns.php:71
+#: templates/footer/footer-columns.php:21
+msgid "Contacts"
+msgstr ""
+
+#: templates/footer/footer-columns.php:79
 msgid "Pages"
 msgstr ""
 
-#: templates/footer/footer-columns.php:88
+#: templates/footer/footer-columns.php:96
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/cta.php:23, templates/sections/news.php:39, templates/sections/services.php:29, templates/sections/slider.php:28
+#: templates/sections/cta.php:21, templates/sections/news.php:37, templates/sections/services.php:27, templates/sections/slider.php:26
 msgid "Read more"
 msgstr ""
 
@@ -202,7 +122,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: templates/sections/news.php:35
+#: templates/sections/news.php:33
 msgid "By "
 msgstr ""
 
