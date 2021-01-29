@@ -8,7 +8,7 @@
     "url": "https://gitlab.com/stefano-b/bricks"
   },
   "scripts": {
-    "postinstall": "composer install && gulp setup && gulp default"
+    "postinstall": "gulp setup && gulp default"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

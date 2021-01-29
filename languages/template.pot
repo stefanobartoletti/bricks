@@ -81,6 +81,10 @@ msgstr ""
 msgid "Footer Widgets"
 msgstr ""
 
+#: functions/lib/class-wp-bootstrap-navwalker.php:366, functions/lib/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr ""
+
 #: templates/content/loop-none.php:10
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
@@ -127,8 +131,4 @@ msgstr ""
 
 #: templates/sections/services.php:3
 msgid "Services"
-msgstr ""
-
-#: vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php:366, vendor/wp-bootstrap/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php:366
-msgid "Add a menu"
 msgstr ""
