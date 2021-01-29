@@ -5,9 +5,9 @@
  * 
  */
 
-if(! function_exists('sb_sidebars')) {
+if(! function_exists('brk_sidebars')) {
 
-    function sb_sidebars() {
+    function brk_sidebars() {
 
         register_sidebar(array(
             'name' =>  esc_html__('Main Sidebar', 'bricks'),
@@ -33,4 +33,4 @@ if(! function_exists('sb_sidebars')) {
 
 }
 
-add_action('widgets_init', 'sb_sidebars');
+add_action('widgets_init', 'brk_sidebars');

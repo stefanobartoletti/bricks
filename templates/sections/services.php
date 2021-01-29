@@ -9,16 +9,16 @@
     <?php
 
     // WP Query 
-    $sb_services_query = new WP_Query( $args ); 
+    $brk_services_query = new WP_Query( $args ); 
 
     // WP Loop
-    while ( $sb_services_query->have_posts() ) : $sb_services_query->the_post(); 
+    while ( $brk_services_query->have_posts() ) : $brk_services_query->the_post(); 
     
     ?>
 
     <div class="col-sm text-center pb-5">
 
-        <img class="img-fluid rounded-circle w-50 mb-4" src="<?php the_post_thumbnail_url('sb_square'); ?>" alt="<?php sb_thumb_alt(); ?>">
+        <img class="img-fluid rounded-circle w-50 mb-4" src="<?php the_post_thumbnail_url('brk_square'); ?>" alt="<?php brk_thumb_alt(); ?>">
 
         <h3><?php the_title(); ?></h3>
 

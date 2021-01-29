@@ -16,13 +16,13 @@
 
             <?php
             
-            $sb_portfolio_cats = get_terms( array(
+            $brk_portfolio_cats = get_terms( array(
                 'taxonomy' => $taxonomy_name,
             ));
 
-            foreach ($sb_portfolio_cats as $sb_portfolio_cat) { ?>
+            foreach ($brk_portfolio_cats as $brk_portfolio_cat) { ?>
               
-            <button id="<?php echo $taxonomy_name.'-'.$sb_portfolio_cat->slug ?>" class="btn btn-primary mx-1 mt-2" type="button" ><?php echo $sb_portfolio_cat->name ?></button>
+            <button id="<?php echo $taxonomy_name.'-'.$brk_portfolio_cat->slug ?>" class="btn btn-primary mx-1 mt-2" type="button" ><?php echo $brk_portfolio_cat->name ?></button>
 
             <?php }; ?>
 
@@ -35,7 +35,7 @@
         <?php 
 
         // WP Query 
-        $sb_portfolio_query = new WP_Query( array(
+        $brk_portfolio_query = new WP_Query( array(
             'post_type'         => 'post',
             'posts_per_page'    => 100,
             'orderby'           => 'title',
@@ -43,7 +43,7 @@
         )); 
 
         // WP Loop
-        while ( $sb_portfolio_query->have_posts() ) : $sb_portfolio_query->the_post(); 
+        while ( $brk_portfolio_query->have_posts() ) : $brk_portfolio_query->the_post(); 
         
             get_template_part( 'templates/content/loop', 'portfolio' );
 

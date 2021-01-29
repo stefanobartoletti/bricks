@@ -7,11 +7,11 @@
  * https://kinsta.com/knowledge_categories/general-wordpress/
  */
 
-if(! function_exists('sb_cleanup_init')) {
+if(! function_exists('brk_cleanup_init')) {
 
-    function sb_cleanup_init() {  
+    function brk_cleanup_init() {  
         
-        function sb_cleanup_scripts() { 
+        function brk_cleanup_scripts() { 
             // Disable Gutenberg CSS // https://stackoverflow.com/q/52277629/
             wp_dequeue_style('wp-block-library');
             
@@ -24,7 +24,7 @@ if(! function_exists('sb_cleanup_init')) {
             wp_deregister_script('jquery');
             wp_enqueue_script('jquery', includes_url('/js/jquery/jquery.js'), false, null, true);
         }
-        add_action('wp_enqueue_scripts', 'sb_cleanup_scripts');
+        add_action('wp_enqueue_scripts', 'brk_cleanup_scripts');
 
         // Disable Gutenberg CSS // https://stackoverflow.com/q/52277629/
         add_filter('use_block_editor_for_post', '__return_false');
@@ -93,4 +93,4 @@ if(! function_exists('sb_cleanup_init')) {
 
 }
 
-add_action('init', 'sb_cleanup_init');
+add_action('init', 'brk_cleanup_init');

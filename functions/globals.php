@@ -12,7 +12,7 @@
 // https://github.com/bradvin/social-share-urls
 
 
-function sb_socialnetworks() {
+function brk_socialnetworks() {
     
     global $post;
 
@@ -20,7 +20,7 @@ function sb_socialnetworks() {
     $post_title    = rawurlencode(get_the_title($post->ID).' - '.get_bloginfo('name'));
     $post_thumb    = get_the_post_thumbnail_url($post->ID);
     
-    $sb_socialnetworks = array(
+    $brk_socialnetworks = array(
         'facebook' => array(
             'social-name'   => 'Facebook',
             'icon-style'    => 'fab',
@@ -114,17 +114,17 @@ function sb_socialnetworks() {
             'share-url'     => 'mailto:?subject='.$post_title.'&body='.$post_url,
         ),
     );
-    return $sb_socialnetworks;
+    return $brk_socialnetworks;
 }
 
 // --- Thumbnail alt ---
 
 // Echoes the "alt" value of a post thumbnail as inserted in the media gallery
 
-function sb_thumb_alt() {
+function brk_thumb_alt() {
 
-    $sb_thumb_alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
-    echo $sb_thumb_alt;
+    $brk_thumb_alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
+    echo $brk_thumb_alt;
 
 }
 
@@ -136,7 +136,7 @@ function sb_thumb_alt() {
 
 use enshrined\svgSanitize\Sanitizer;
 
-function sb_safe_inline_svg($sourceSVG) {
+function brk_safe_inline_svg($sourceSVG) {
 
     $sanitizer = new Sanitizer();
     $dirtySVG = file_get_contents($sourceSVG);
@@ -149,7 +149,7 @@ function sb_safe_inline_svg($sourceSVG) {
 
 // Inlines custom logo if it is in SVG format
 
-function sb_custom_logo_svg() {
+function brk_custom_logo_svg() {
 
     $logourl = wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full');
     $logoid = attachment_url_to_postid($logourl);
@@ -157,7 +157,7 @@ function sb_custom_logo_svg() {
 
     if ($logomime == 'image/svg+xml') { ?>
 
-        <a href="<?php echo esc_url_raw(home_url()); ?>" class="custom-logo-link" rel="home"><div class="custom-logo"><?php echo sb_safe_inline_svg($logourl) ?></div></a>     
+        <a href="<?php echo esc_url_raw(home_url()); ?>" class="custom-logo-link" rel="home"><div class="custom-logo"><?php echo brk_safe_inline_svg($logourl) ?></div></a>     
         
     <?php } else {
 
@@ -171,7 +171,7 @@ function sb_custom_logo_svg() {
 
 // Used to print signature in the footer
 
-function sb_signature($sigType = 'text') {
+function brk_signature($sigType = 'text') {
 
     $sigURL         = 'https://www.stefanobartoletti.it';
     $sigLogoFull    = get_template_directory().'/dist/img/sb-logo-full.svg';
@@ -181,11 +181,11 @@ function sb_signature($sigType = 'text') {
     switch ($sigType) {
 
         case 'logo-full':
-            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_safe_inline_svg($sigLogoFull).'</a>';
+            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.brk_safe_inline_svg($sigLogoFull).'</a>';
             break;
 
         case 'logo-small':
-            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.sb_safe_inline_svg($sigLogoSmall).'</a>';
+            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.brk_safe_inline_svg($sigLogoSmall).'</a>';
             break;
 
         case 'text':
@@ -198,7 +198,7 @@ function sb_signature($sigType = 'text') {
 
 // --- Excerpt lenght ---
 
-// function sb_excerpt_length( $length ) {
+// function brk_excerpt_length( $length ) {
 //     return 40;
 // }
-// add_filter( 'excerpt_length', 'sb_excerpt_length', 999 );
+// add_filter( 'excerpt_length', 'brk_excerpt_length', 999 );

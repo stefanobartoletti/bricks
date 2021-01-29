@@ -8,7 +8,7 @@
 
         <?php 
         
-        $socialshare = sb_socialnetworks();
+        $socialshare = brk_socialnetworks();
 
         foreach ($socialshare as $key => $value) { 
             

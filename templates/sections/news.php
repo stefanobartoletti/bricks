@@ -9,10 +9,10 @@
     <?php
 
     // WP Query 
-    $sb_cards_query = new WP_Query( $args ); 
+    $brk_cards_query = new WP_Query( $args ); 
 
     // WP Loop
-    while ( $sb_cards_query->have_posts() ) : $sb_cards_query->the_post(); 
+    while ( $brk_cards_query->have_posts() ) : $brk_cards_query->the_post(); 
     
     ?>
 
@@ -27,7 +27,7 @@
             </a>
 
             <a href="<?php the_permalink(); ?>">
-                <img class="img-fluid pb-3" src="<?php the_post_thumbnail_url('sb_single'); ?>" alt="<?php sb_thumb_alt(); ?>">
+                <img class="img-fluid pb-3" src="<?php the_post_thumbnail_url('brk_single'); ?>" alt="<?php brk_thumb_alt(); ?>">
             </a>
 
             <p class="card-text"><small class="text-muted"><?php esc_html_e('By ', 'bricks'); the_author(); ?></small></p>

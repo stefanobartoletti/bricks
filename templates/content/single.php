@@ -6,7 +6,7 @@
 
     <p><?php the_category(', '); ?> - <?php the_tags('', ', ', ''); ?></p>
 
-    <?php the_post_thumbnail('sb_single', array( 'class' => 'img-fluid' )); ?>
+    <?php the_post_thumbnail('brk_single', array( 'class' => 'img-fluid' )); ?>
 
     <div>
     

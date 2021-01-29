@@ -6,7 +6,7 @@
             
             <?php if ( has_custom_logo() ) { 
 
-                sb_custom_logo_svg();
+                brk_custom_logo_svg();
 
             } else { ?>
 

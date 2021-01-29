@@ -23,7 +23,7 @@
         
     </span>
 
-    <?php sb_signature('logo-small'); ?>
+    <?php brk_signature('logo-small'); ?>
    
 </div> <!-- #footer-copyright --> 
 

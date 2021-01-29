@@ -9,7 +9,7 @@ $themecolor = get_field('meta_theme_color', 'option');
 
 // --- Set metadata ---
 
-function sb_head_meta() {
+function brk_head_meta() {
 
     global $analyticsID;
     global $gtagID;
@@ -57,9 +57,9 @@ function sb_head_meta() {
     }
 
 }
-add_action('wp_head', 'sb_head_meta');
+add_action('wp_head', 'brk_head_meta');
 
-function sb_body_open() { 
+function brk_body_open() { 
 
     global $gtagID;
 
@@ -76,4 +76,4 @@ function sb_body_open() {
     }
 
 };
-add_action('wp_body_open', 'sb_body_open');
+add_action('wp_body_open', 'brk_body_open');

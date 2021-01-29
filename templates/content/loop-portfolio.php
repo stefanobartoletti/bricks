@@ -2,7 +2,7 @@
 
     <div class="card">
 
-        <?php the_post_thumbnail('sb_square', array( 'class' => 'card-img h-auto' )); ?>
+        <?php the_post_thumbnail('brk_square', array( 'class' => 'card-img h-auto' )); ?>
 
         <a href="<?php the_permalink(); ?>">
             <div class="card-img-overlay">

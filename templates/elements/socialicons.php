@@ -4,11 +4,11 @@
 
     // Custom function from globals.php
 
-    $sb_socialicons = sb_socialnetworks();
+    $brk_socialicons = brk_socialnetworks();
 
     // --- Single icon -----
 
-    foreach ($sb_socialicons as $key => $value) {
+    foreach ($brk_socialicons as $key => $value) {
 
         if ( get_field('social_'.$key, 'option') ) { ?>
 

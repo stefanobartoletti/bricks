@@ -1,14 +1,14 @@
 <?php
 
 // WP Query 
-$sb_cta_query = new WP_Query( $args ); 
+$brk_cta_query = new WP_Query( $args ); 
 
 // WP Loop
-while ( $sb_cta_query->have_posts() ) : $sb_cta_query->the_post(); 
+while ( $brk_cta_query->have_posts() ) : $brk_cta_query->the_post(); 
 
 ?>
 
-<div class="jumbotron jumbotron-fluid mb-0" style="background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 1)), url(<?php the_post_thumbnail_url('sb_big'); ?>); background-size: cover; background-position: center center; background-attachment: fixed;">
+<div class="jumbotron jumbotron-fluid mb-0" style="background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 1)), url(<?php the_post_thumbnail_url('brk_big'); ?>); background-size: cover; background-position: center center; background-attachment: fixed;">
 
     <div class="container py-4 text-center text-light">
         
