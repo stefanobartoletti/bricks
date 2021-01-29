@@ -5,8 +5,7 @@ const { src, dest, watch, series, parallel } = require('gulp');
 
 // --- Configuration ---
 
-const config = require('./config/config');
-const project = require('./config/project');
+const config = require('./.config');
 
 
 // --- Plugins ---
@@ -70,8 +69,8 @@ function css() {
             suffix: '.min'
         }))
         .pipe(production(purgecss({
-            content: config.css.purge.content,
-            safelist: project.css.purge.safelist,
+            content: config.css.content,
+            safelist: config.csspurge.safelist,
         })))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
@@ -114,7 +113,7 @@ function localimg() {
 
 function libimg() {
     return src(config.img.lg)
-        .pipe(gulpif(project.use.lightgallery, dest(config.img.dist)))
+        .pipe(gulpif(config.use.lightgallery, dest(config.img.dist)))
         .pipe(browserSync.stream());
 };
 
@@ -135,7 +134,7 @@ function localfonts(done) {
 
 function libfonts() {
     return src(config.fonts.lg)
-        .pipe(gulpif(project.use.lightgallery, dest(config.fonts.dist)))
+        .pipe(gulpif(config.use.lightgallery, dest(config.fonts.dist)))
         .pipe(browserSync.stream());
 };
 
@@ -144,7 +143,7 @@ function libfonts() {
 function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
-        .pipe(production(faMinify(project.icons.used)))
+        .pipe(production(faMinify(config.icons.used)))
         .pipe(production(uglify()))
         .pipe(dest(config.js.dist));
 };
@@ -155,7 +154,7 @@ function icons() {
 function domain() {
     return src(config.php.watch)
         .pipe(checktextdomain({
-            text_domain: project.textdomain,
+            text_domain: config.textdomain,
             keywords: config.i18n.functions,
             correct_domain: true,
         }))
@@ -164,9 +163,7 @@ function domain() {
 function pot() {
     return src(config.php.watch)
         .pipe(wpPot({
-            domain: project.textdomain,
-            package: project.name,
-            lastTranslator: project.author+' <'+project.authorEmail+'>',
+            domain: config.textdomain,
         }))
         .pipe(dest(config.i18n.dist+'template.pot'));
 };
@@ -195,7 +192,7 @@ function browser_sync(done) {
         open: false,
         injectChanges: true,
         // server: { baseDir: './dist/' },
-        proxy: project.siteURL,
+        proxy: config.siteURL,
         // tunnel: "sbbase",
     });
     done();
