@@ -6,20 +6,12 @@
 
         <?php
         
-        $sb_args = array(
+        $args = array(
             'post_type' => 'post',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'category',
-                    'field'    => 'slug',
-                    'terms'    => 'slider',
-                ),
-            ),
             'posts_per_page'    => 3,
         );
-        
-        set_query_var( 'sb_args', $sb_args );          
-        get_template_part( 'templates/sections/slider', '' );
+            
+        get_template_part( 'templates/sections/slider', '', $args );
         
         ?>
 
@@ -29,20 +21,12 @@
 
         <?php
         
-        $sb_args = array(
+        $args = array(
             'post_type' => 'post',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'category',
-                    'field'    => 'slug',
-                    'terms'    => 'news',
-                ),
-            ),
             'posts_per_page'    => 3,
         );
-        
-        set_query_var( 'sb_args', $sb_args );         
-        get_template_part( 'templates/sections/services', '' );
+              
+        get_template_part( 'templates/sections/services', '', $args );
         
         ?>
 
@@ -52,20 +36,12 @@
 
         <?php
         
-        $sb_args = array(
+        $args = array(
             'post_type' => 'post',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'category',
-                    'field'    => 'slug',
-                    'terms'    => 'slider',
-                ),
-            ),
             'posts_per_page'    => 1,
         );
         
-        set_query_var( 'sb_args', $sb_args );    
-        get_template_part( 'templates/sections/cta', '' );
+        get_template_part( 'templates/sections/cta', '', $args );
         
         ?>
 
@@ -75,20 +51,12 @@
 
         <?php
         
-        $sb_args = array(
+        $args = array(
             'post_type' => 'post',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'category',
-                    'field'    => 'slug',
-                    'terms'    => 'news',
-                ),
-            ),
             'posts_per_page'    => 3,
         );
         
-        set_query_var( 'sb_args', $sb_args );    
-        get_template_part( 'templates/sections/news', '' );
+        get_template_part( 'templates/sections/news', '', $args );
         
         ?>
 

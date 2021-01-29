@@ -7,8 +7,6 @@
         $sb_slidecount = 0;
 
         // WP Query 
-        $args = get_query_var('sb_args');
-
         $sb_slider_query = new WP_Query( $args ); 
 
         // WP Loop

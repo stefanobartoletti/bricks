@@ -9,8 +9,6 @@
     <?php
 
     // WP Query 
-    $args = get_query_var('sb_args');
-
     $sb_cards_query = new WP_Query( $args ); 
 
     // WP Loop
