@@ -1,1 +1,1 @@
-# Wordpress + Bootstrap base theme 
+# A modular starter theme built with Boostrap.
