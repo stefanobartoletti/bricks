@@ -25,6 +25,9 @@ if(! function_exists('sb_cleanup_init')) {
             wp_enqueue_script('jquery', includes_url('/js/jquery/jquery.js'), false, null, true);
         }
         add_action('wp_enqueue_scripts', 'sb_cleanup_scripts');
+
+        // Disable Gutenberg CSS // https://stackoverflow.com/q/52277629/
+        add_filter('use_block_editor_for_post', '__return_false');
         
         // Disable XML-RPC, RSD, WLW links // https://wordpress.stackexchange.com/q/219181/   
         remove_action('wp_head', 'rsd_link');
