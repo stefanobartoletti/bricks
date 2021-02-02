@@ -16,8 +16,6 @@ import "./header/headerscroll"
 
 import "./elements/backtotop"
 
-import "./templates/page-portfolio"
-
 
 // --- Integrations ---
 

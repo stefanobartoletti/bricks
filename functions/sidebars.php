@@ -19,16 +19,6 @@ if(! function_exists('brk_sidebars')) {
             'after_title' => '</h3>',
         ));
 
-        register_sidebar(array(
-            'name' =>  esc_html__('Footer Widgets', 'bricks'),
-            'id' => 'sidebar-footer',
-            'description' => esc_html__('Footer Widgets', 'bricks'),
-            'before_widget' => '<div class="widget col-md mb-4 %2$s clearfix">',
-            'after_widget' => '</div>',
-            'before_title' => '<h3 class="h4 mb-3">',
-            'after_title' => '</h3>',
-        ));
-
     }
 
 }
