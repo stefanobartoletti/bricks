@@ -8,7 +8,7 @@
 
 // --- Social networks ---
 
-// Used in Customizer, Social Icons element, Social Share buttons
+// Used in Social Icons and Social Share buttons
 // https://github.com/bradvin/social-share-urls
 
 
@@ -25,7 +25,6 @@ function brk_socialnetworks() {
             'social-name'   => 'Facebook',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-facebook-f',
-            'has-profile'   => true,
             'has-share'     => true,
             'share-url'     => 'https://www.facebook.com/sharer/sharer.php?u='.$post_url,
         ),
@@ -33,7 +32,6 @@ function brk_socialnetworks() {
             'social-name'   => 'Twitter',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-twitter',
-            'has-profile'   => true,
             'has-share'     => true,
             'share-url'     => 'https://twitter.com/intent/tweet?url='.$post_url.'&text='.$post_title,
         ),
@@ -41,7 +39,6 @@ function brk_socialnetworks() {
             'social-name'   => 'LinkedIn',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-linkedin-in',
-            'has-profile'   => true,
             'has-share'     => true,
             'share-url'     => 'https://www.linkedin.com/shareArticle?mini=true&url='.$post_url.'&title='.$post_title,
         ),
@@ -49,14 +46,12 @@ function brk_socialnetworks() {
             'social-name'   => 'Instagram',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-instagram',
-            'has-profile'   => true,
             'has-share'     => false,
         ),
         'pinterest' => array(
             'social-name'   => 'Pinterest',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-pinterest-p',
-            'has-profile'   => false,
             'has-share'     => true,
             'share-url'     => 'https://pinterest.com/pin/create/button/?url='.$post_url.'&description='.$post_title.'&media='.$post_thumb,
         ),
@@ -64,21 +59,18 @@ function brk_socialnetworks() {
             'social-name'   => 'YouTube',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-youtube',
-            'has-profile'   => false,
             'has-share'     => false,
         ),
         'tripadvisor' => array(
             'social-name'   => 'TripAdvisor',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-tripadvisor',
-            'has-profile'   => false,
             'has-share'     => false,
         ),
         'pocket' => array(
             'social-name'   => 'Pocket',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-get-pocket',
-            'has-profile'   => false,
             'has-share'     => true,
             'share-url'     => 'https://getpocket.com/edit?url='.$post_url,
         ),
@@ -86,7 +78,6 @@ function brk_socialnetworks() {
             'social-name'   => 'WhatsApp',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-whatsapp',
-            'has-profile'   => false,
             'has-share'     => true,
             'share-url'     => 'https://api.whatsapp.com/send?text='.$post_title.'%20'.$post_url,
         ),
@@ -94,7 +85,6 @@ function brk_socialnetworks() {
             'social-name'   => 'Telegram',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-telegram-plane',
-            'has-profile'   => false,
             'has-share'     => true,
             'share-url'     => 'https://t.me/share/url?url='.$post_url.'&text='.$post_title,
         ),
@@ -128,23 +118,6 @@ function brk_thumb_alt() {
 
 }
 
-// --- Sanitize & inline SVG ---
-
-// Sanitize SVG before inlining;
-// "Sanitizer" comes from "Safe SVG" (https://wordpress.org/plugins/safe-svg/) if active.
-// If not, "SVG Sanitizer" (https://github.com/darylldoyle/svg-sanitizer) must be installed from Composer
-
-use enshrined\svgSanitize\Sanitizer;
-
-function brk_safe_inline_svg($sourceSVG) {
-
-    $sanitizer = new Sanitizer();
-    $dirtySVG = file_get_contents($sourceSVG);
-    $cleanSVG = $sanitizer->sanitize($dirtySVG);
-    return $cleanSVG;
-
-}
-
 // --- Custom logo SVG ---
 
 // Inlines custom logo if it is in SVG format
@@ -157,7 +130,7 @@ function brk_custom_logo_svg() {
 
     if ($logomime == 'image/svg+xml') { ?>
 
-        <a href="<?php echo esc_url_raw(home_url()); ?>" class="custom-logo-link" rel="home"><div class="custom-logo"><?php echo brk_safe_inline_svg($logourl) ?></div></a>     
+        <a href="<?php echo esc_url_raw(home_url()); ?>" class="custom-logo-link" rel="home"><div class="custom-logo"><?php echo file_get_contents($logourl) ?></div></a>     
         
     <?php } else {
 
@@ -181,11 +154,11 @@ function brk_signature($sigType = 'text') {
     switch ($sigType) {
 
         case 'logo-full':
-            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.brk_safe_inline_svg($sigLogoFull).'</a>';
+            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoFull).'</a>';
             break;
 
         case 'logo-small':
-            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.brk_safe_inline_svg($sigLogoSmall).'</a>';
+            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoSmall).'</a>';
             break;
 
         case 'text':
