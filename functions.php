@@ -21,9 +21,9 @@ require_once get_template_directory() . '/functions/navmenus.php';
 
 require_once get_template_directory() . '/functions/sidebars.php';
 
-// --- Include third party code --- 
+// --- Nav Walker --- 
 
-require_once get_template_directory() . '/vendor/autoload.php';
+require_once get_template_directory() . '/functions/lib/class-wp-bootstrap-navwalker.php';
 
 // --- Plugin integrations --- 
 
