@@ -34,7 +34,7 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 const faMinify = require('gulp-fa-minify');
 
 // i18n
-const checktextdomain = require('gulp-checktextdomain')
+const checktextdomain = require('gulp-checktextdomain');
 const wpPot = require('gulp-wp-pot');
 
 // Utils
@@ -102,7 +102,7 @@ function js() {
 
 // --- Images ---
 
-function localimg() {
+function img() {
     return src(config.img.src)
         .pipe(imagemin({
             verbose: true
@@ -111,16 +111,10 @@ function localimg() {
         .pipe(browserSync.stream());
 };
 
-function libimg() {
-    return src(config.img.lg)
-        .pipe(gulpif(config.use.lightgallery, dest(config.img.dist)))
-        .pipe(browserSync.stream());
-};
-
 
 // --- Fonts ---
 
-function localfonts(done) {
+function fonts(done) {
     src(config.fonts.src)
         .pipe(ttf2woff())
         .pipe(dest(config.fonts.dist))
@@ -132,14 +126,9 @@ function localfonts(done) {
     done();
 };
 
-function libfonts() {
-    return src(config.fonts.lg)
-        .pipe(gulpif(config.use.lightgallery, dest(config.fonts.dist)))
-        .pipe(browserSync.stream());
-};
-
 
 // --- Icons ---
+
 function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
@@ -169,6 +158,19 @@ function pot() {
 };
 
 
+// --- Libs ---
+
+function libs(done) {
+    src(config.img.lg)
+        .pipe(gulpif(config.use.lightgallery, dest(config.img.dist)))
+        .pipe(browserSync.stream());
+    src(config.fonts.lg)
+        .pipe(gulpif(config.use.lightgallery, dest(config.fonts.dist)))
+        .pipe(browserSync.stream());
+    done();
+};
+
+
 // --- Utils ---
 
 function setDev(done) {
@@ -185,15 +187,14 @@ function clean() {
     return del('dist/**', {force:true});
 };
 
+
 // --- Browser ---
 
 function browser_sync(done) {
 	browserSync.init({
         open: false,
         injectChanges: true,
-        // server: { baseDir: './dist/' },
         proxy: config.siteURL,
-        // tunnel: "sbbase",
     });
     done();
 };
@@ -212,10 +213,11 @@ function watch_files(done) {
     watch(config.css.watch, series(css, clearCache, reload));
     watch(config.js.watch, series(js, clearCache, reload));
     watch(config.php.watch, series(clearCache, reload));
-    watch(config.img.watch, series(parallel(localimg, libimg), clearCache, reload));
-    watch(config.fonts.watch, series(parallel(localfonts, libfonts), clearCache, reload));
+    watch(config.img.watch, series(img, clearCache, reload));
+    watch(config.fonts.watch, series(fonts, clearCache, reload));
     done();
 };
+
 
 // --- Setup ---
 
@@ -232,13 +234,14 @@ function setup(done) {
 
 exports.css = css;
 exports.js = js;
-exports.img = parallel(localimg, libimg);
-exports.fonts = parallel(localfonts, libfonts);
+exports.img = img;
+exports.fonts = fonts;
 exports.icons = icons;
+exports.libs = libs;
 exports.pot = series(domain, pot);
 
 exports.setup = setup;
 
-exports.default = series(setDev, clean, parallel(css, js, parallel(localimg, libimg), parallel(localfonts, libfonts), icons));
-exports.prod = series(setProd, clean, parallel(css, js, parallel(localimg, libimg), parallel(localfonts, libfonts), icons, domain, pot));
+exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons, libs));
+exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, libs, domain, pot));
 exports.watch = parallel(browser_sync, watch_files);
