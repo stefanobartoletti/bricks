@@ -17,6 +17,3 @@ dist
 
 # Packages
 packages
-
-# Personal data
-config/ftp.js
