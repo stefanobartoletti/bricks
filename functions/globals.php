@@ -124,7 +124,7 @@ function brk_thumb_alt() {
 
 function brk_custom_logo_svg() {
 
-    $logourl = wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full');
+    $logourl = rawurlencode(wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full'));
     $logoid = attachment_url_to_postid($logourl);
     $logomime = get_post_mime_type($logoid);
 
