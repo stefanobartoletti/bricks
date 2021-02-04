@@ -11,7 +11,7 @@
             'posts_per_page'    => 3,
         );
             
-        get_template_part( 'templates/sections/slider', '', $args );
+        get_template_part( 'templates/sections/home', 'slider', $args );
         
         ?>
 
@@ -26,7 +26,7 @@
             'posts_per_page'    => 3,
         );
               
-        get_template_part( 'templates/sections/services', '', $args );
+        get_template_part( 'templates/sections/home', 'services', $args );
         
         ?>
 
@@ -41,7 +41,7 @@
             'posts_per_page'    => 1,
         );
         
-        get_template_part( 'templates/sections/cta', '', $args );
+        get_template_part( 'templates/sections/home', 'cta', $args );
         
         ?>
 
@@ -56,7 +56,7 @@
             'posts_per_page'    => 3,
         );
         
-        get_template_part( 'templates/sections/news', '', $args );
+        get_template_part( 'templates/sections/home', 'news', $args );
         
         ?>
 

@@ -6,7 +6,7 @@
 
         if (has_post_thumbnail()) {
 
-            get_template_part( 'templates/sections/pageheader', '' );
+            get_template_part( 'templates/sections/common', 'pageheader' );
 
         } ?>
 
