@@ -162,10 +162,10 @@ function pot() {
 
 function libs(done) {
     src(config.img.lg)
-        .pipe(gulpif(config.use.lightgallery, dest(config.img.dist)))
+        .pipe(gulpif(fs.existsSync(config.libs.lg), dest(config.img.dist)))
         .pipe(browserSync.stream());
     src(config.fonts.lg)
-        .pipe(gulpif(config.use.lightgallery, dest(config.fonts.dist)))
+        .pipe(gulpif(fs.existsSync(config.libs.lg), dest(config.fonts.dist)))
         .pipe(browserSync.stream());
     done();
 };

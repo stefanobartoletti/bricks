@@ -5,10 +5,6 @@ module.exports = {
     textdomain: 'bricks',
     siteURL: 'http://localhost',
 
-    use: {
-        lightgallery: false,
-    },
-
     csspurge: {
         // Purgecss whitelists
         safelist: [
@@ -115,6 +111,10 @@ module.exports = {
             '_nx_noop:1,2,3c,4d'
         ],
     },
+
+    libs: {
+        lg: './node_modules/lightgallery.js',
+    }, 
 
     setup: {
         dirs: [
