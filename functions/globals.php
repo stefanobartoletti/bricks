@@ -118,6 +118,34 @@ function brk_thumb_alt() {
 
 }
 
+// --- Enable SVG support ---
+
+function brk_svg_upload( $mimes ) {
+    $mimes['svg']  = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'brk_svg_upload' );
+
+function brk_svg_mimetype( $data = null, $file = null, $filename = null, $mimes = null ) {
+    $ext = isset( $data['ext'] ) ? $data['ext'] : '';
+    if ( strlen( $ext ) < 1 ) {
+        $exploded = explode( '.', $filename );
+        $ext      = strtolower( end( $exploded ) );
+    }
+    if ( $ext === 'svg' ) {
+        $data['type'] = 'image/svg+xml';
+        $data['ext']  = 'svg';
+    } elseif ( $ext === 'svgz' ) {
+        $data['type'] = 'image/svg+xml';
+        $data['ext']  = 'svgz';
+    }
+
+    return $data;
+}
+add_filter( 'wp_check_filetype_and_ext', 'brk_svg_mimetype', 10, 4 );
+
 // --- Custom logo SVG ---
 
 // Inlines custom logo if it is in SVG format
