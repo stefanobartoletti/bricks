@@ -5,9 +5,9 @@
 
 // --- Third Party ---
 
-// import "./integrations/aos"
-// import "./integrations/lightgallery"
-// import "./integrations/swiper"
+// import "./integrations/aos"  // required npm package: 'aos'
+// import "./integrations/lightgallery"  // required npm package: 'lightgallery.js' and optional modules
+// import "./integrations/swiper"  // required npm package: 'swiper'
 
 
 // --- Custom elements ---
