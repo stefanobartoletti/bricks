@@ -77,10 +77,6 @@ msgstr ""
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions/sidebars.php:23, functions/sidebars.php:25
-msgid "Footer Widgets"
-msgstr ""
-
 #: functions/lib/class-wp-bootstrap-navwalker.php:366, functions/lib/class-wp-bootstrap-navwalker.php:366
 msgid "Add a menu"
 msgstr ""
@@ -91,10 +87,6 @@ msgstr ""
 
 #: templates/content/loop-none.php:6
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: templates/content/page-portfolio.php:15
-msgid "All"
 msgstr ""
 
 #: templates/content/page.php:18, templates/content/single.php:16
@@ -117,18 +109,18 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/cta.php:21, templates/sections/news.php:37, templates/sections/services.php:27, templates/sections/slider.php:26
+#: templates/sections/home-cta.php:21, templates/sections/home-news.php:37, templates/sections/home-services.php:27, templates/sections/home-slider.php:26
 msgid "Read more"
 msgstr ""
 
-#: templates/sections/news.php:3
+#: templates/sections/home-news.php:3
 msgid "News"
 msgstr ""
 
-#: templates/sections/news.php:33
+#: templates/sections/home-news.php:33
 msgid "By "
 msgstr ""
 
-#: templates/sections/services.php:3
+#: templates/sections/home-services.php:3
 msgid "Services"
 msgstr ""
