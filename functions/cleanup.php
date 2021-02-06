@@ -32,7 +32,7 @@ if(! function_exists('brk_cleanup_init')) {
         // Disable XML-RPC, RSD, WLW links // https://wordpress.stackexchange.com/q/219181/   
         remove_action('wp_head', 'rsd_link');
         remove_action('wp_head', 'wlwmanifest_link');
-        // add_filter('xmlrpc_enabled’, ‘__return_false');
+        // add_filter('xmlrpc_enabled’, ‘__return_false'); // BUG disablig this causes errors
         
         // Disable shortlink // https://wordpress.stackexchange.com/q/288089/
         remove_action('wp_head', 'wp_shortlink_wp_head');
