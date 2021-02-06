@@ -105,7 +105,7 @@ function js() {
 function img() {
     return src(config.img.src)
         .pipe(imagemin({
-            verbose: true
+            // verbose: true
         }))
         .pipe(dest(config.img.dist))
         .pipe(browserSync.stream());
