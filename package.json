@@ -14,8 +14,8 @@
     "watch": "gulp watch"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@rbnlffl/gulp-rollup": "^0.1.1",
     "@rollup/plugin-babel": "^5.2.2",
@@ -43,6 +43,6 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-wp-pot": "^2.5.0",
-    "rollup": "^2.38.0"
+    "rollup": "^2.38.5"
   }
 }
