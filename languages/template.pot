@@ -93,7 +93,7 @@ msgstr ""
 msgid "Part:"
 msgstr ""
 
-#: templates/elements/socialshare.php:17
+#: templates/components/socialshare.php:17
 msgid "Share with "
 msgstr ""
 

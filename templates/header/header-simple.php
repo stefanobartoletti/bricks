@@ -31,7 +31,7 @@
         
         get_search_form();
         
-        get_template_part( 'templates/elements/socialicons', '' );
+        get_template_part( 'templates/components/socialicons', '' );
         
         ?>
 

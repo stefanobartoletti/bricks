@@ -14,7 +14,7 @@
 
             <?php 
             
-            get_template_part( 'templates/elements/breadcrumbs', '' );
+            get_template_part( 'templates/components/breadcrumbs', '' );
 
             // Get this page slug                    
             $slug = $post->post_name;

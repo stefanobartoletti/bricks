@@ -13,7 +13,7 @@
 
     <?php 
     
-    get_template_part( 'templates/elements/backtotop', '' );
+    get_template_part( 'templates/components/backtotop', '' );
     
     wp_footer(); 
     

@@ -70,7 +70,7 @@
 
             </ul>
 
-            <?php get_template_part( 'templates/elements/socialicons', '' ); ?>
+            <?php get_template_part( 'templates/components/socialicons', '' ); ?>
             
         </div>
 

@@ -4,7 +4,7 @@
 
     <div class="container">
 
-        <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
+        <?php get_template_part( 'templates/components/breadcrumbs', '' ); ?>
 
         <div class="row py-5">
 
