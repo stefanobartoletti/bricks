@@ -81,8 +81,8 @@ function css() {
 
 // --- JS ---
 
-function js() {
-    return src(config.js.src)
+function js(done) {
+    src(config.js.src)
         .pipe(development(sourcemaps.init()))
         .pipe(rollup({
             plugins: [
@@ -96,7 +96,10 @@ function js() {
         }))
         .pipe(development(sourcemaps.write('./')))
         .pipe(dest(config.js.dist))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream())
+    src(config.libs.bs)
+        .pipe(dest(config.js.dist))
+    done();
 };
 
 
