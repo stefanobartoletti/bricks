@@ -29,7 +29,7 @@
                 </a>
     
                 <a href="<?php the_permalink(); ?>">
-                    <img class="img-fluid pb-3" src="<?php the_post_thumbnail_url('brk_single'); ?>" alt="<?php brk_thumb_alt(); ?>" loading="lazy">
+                    <img class="img-fluid pb-3" src="<?php the_post_thumbnail_url('brk_single'); ?>" alt="<?php brk_thumbnail_alt(); ?>" loading="lazy">
                 </a>
     
                 <p class="card-text"><small class="text-muted"><?php esc_html_e('By ', 'bricks'); the_author(); ?></small></p>

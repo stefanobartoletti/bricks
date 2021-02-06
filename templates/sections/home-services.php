@@ -20,7 +20,7 @@
     
         <div class="col-sm text-center pb-5">
     
-            <img class="img-fluid rounded-circle w-50 mb-4" src="<?php the_post_thumbnail_url('brk_square'); ?>" alt="<?php brk_thumb_alt(); ?>" loading="lazy">
+            <img class="img-fluid rounded-circle w-50 mb-4" src="<?php the_post_thumbnail_url('brk_square'); ?>" alt="<?php brk_thumbnail_alt(); ?>" loading="lazy">
     
             <h3><?php the_title(); ?></h3>
     

@@ -18,7 +18,7 @@
 
         <div class="carousel-item <?php if($brk_slidecount == 1) { echo 'active'; } ?>">
 
-            <img class="d-block w-100" src="<?php the_post_thumbnail_url('brk_big'); ?>" alt="<?php brk_thumb_alt(); ?>" loading="lazy">
+            <img class="d-block w-100" src="<?php the_post_thumbnail_url('brk_big'); ?>" alt="<?php brk_thumbnail_alt(); ?>" loading="lazy">
 
             <div class="carousel-caption">
                 <h2><?php the_title(); ?></h2>

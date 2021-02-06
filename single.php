@@ -12,13 +12,7 @@
 
             <div id="article-wrap" class="col">       
 
-                <?php
-                
-                get_template_part( 'templates/content/single', '' ); 
-                
-                get_template_part( 'templates/components/socialshare', '' );
-                
-                ?>
+                <?php get_template_part( 'templates/content/single', '' ); ?>
 
                 <nav class="nav">
                     <?php previous_post_link('<span class="nav-link mr-auto">&laquo; %link</span>');
