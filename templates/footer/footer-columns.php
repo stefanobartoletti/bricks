@@ -30,8 +30,8 @@
                 $mapurl = get_field('contacts_map_url', 'option');
                 $phone = get_field('contacts_phone', 'option');
                 $email = get_field('contacts_email', 'option');
-                $fiscalcode = get_field('contacs_fiscal_code', 'option');
-                $vat = get_field('contacs_vat_number', 'option');               
+                $idnumber = get_field('contacts_id_number', 'option');
+                $vatnumber = get_field('contacts_vat_number', 'option');               
                 
                 if( $address1 ) { ?>
 
