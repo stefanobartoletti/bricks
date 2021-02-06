@@ -17,7 +17,7 @@
 
     </section> <!-- #sect-slider -->
 
-    <section id="sect-services" class="container py-5">
+    <section id="sect-services">
 
         <?php
         
@@ -47,7 +47,7 @@
 
     </section> <!-- #sect-news -->
  
-    <section id="sect-news" class="container py-5">
+    <section id="sect-news">
 
         <?php
         
