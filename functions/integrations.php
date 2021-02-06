@@ -36,4 +36,4 @@ function brk_cf7_styles_scripts(){
 
 }
 
-add_action('wp_enqueue_scripts', 'brk_cf7_styles_scripts' );
+// add_action('wp_enqueue_scripts', 'brk_cf7_styles_scripts' );
