@@ -1,19 +1,12 @@
 <?php
 
-// --- Get values ---
-
-$analyticsID = get_field('meta_google_analytics_id', 'option');
-$gtagID = get_field('meta_gtag_id', 'option');
-$themecolor = get_field('meta_theme_color', 'option');
-
-
 // --- Set metadata ---
 
 function brk_head_meta() {
 
-    global $analyticsID;
-    global $gtagID;
-    global $themecolor;
+    $analyticsID = get_field('meta_google_analytics_id', 'option');
+    $gtagID = get_field('meta_gtag_id', 'option');
+    $themecolor = get_field('meta_theme_color', 'option');
 
     // --- Google Analytics ---
 
@@ -61,7 +54,9 @@ add_action('wp_head', 'brk_head_meta');
 
 function brk_body_open() { 
 
-    global $gtagID;
+    $gtagID = get_field('meta_gtag_id', 'option');  
+    
+    // --- Google Tag Manager noscript ---
 
     if ( $gtagID ) {
 
