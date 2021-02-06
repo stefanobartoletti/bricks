@@ -81,6 +81,10 @@ msgstr ""
 msgid "Add a menu"
 msgstr ""
 
+#: templates/components/socialshare.php:17
+msgid "Share with "
+msgstr ""
+
 #: templates/content/loop-none.php:10
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
@@ -91,10 +95,6 @@ msgstr ""
 
 #: templates/content/page.php:18, templates/content/single.php:16
 msgid "Part:"
-msgstr ""
-
-#: templates/components/socialshare.php:17
-msgid "Share with "
 msgstr ""
 
 #: templates/footer/footer-columns.php:21
@@ -109,18 +109,18 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/home-cta.php:21, templates/sections/home-news.php:37, templates/sections/home-services.php:27, templates/sections/home-slider.php:26
+#: templates/sections/home-cta.php:21, templates/sections/home-news.php:39, templates/sections/home-services.php:29, templates/sections/home-slider.php:26
 msgid "Read more"
 msgstr ""
 
-#: templates/sections/home-news.php:3
+#: templates/sections/home-news.php:5
 msgid "News"
 msgstr ""
 
-#: templates/sections/home-news.php:33
+#: templates/sections/home-news.php:35
 msgid "By "
 msgstr ""
 
-#: templates/sections/home-services.php:3
+#: templates/sections/home-services.php:5
 msgid "Services"
 msgstr ""

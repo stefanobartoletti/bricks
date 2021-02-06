@@ -1,7 +1,5 @@
 // --- Bootstrap classes to Wordpress ---
 
-// --- WP pagination > BS nav ---
-
 var pagerNav = document.querySelectorAll('.nav-links');
 
 if (pagerNav.length) {
@@ -20,5 +18,16 @@ if (pagerNavLink.length) {
     pagerNavLink.forEach(function (el) {
         el.classList.add('nav-link');
     });
+
+};
+
+
+// --- Wordpress customizations ---
+
+var commentBox = document.querySelector('.comment-form-comment textarea');
+
+if (commentBox) {
+
+    commentBox.removeAttribute('cols');
 
 };

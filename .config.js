@@ -54,17 +54,13 @@ module.exports = {
         content: [
             './**/*.php',
             './src/js/**/*.js',
-            './src/js/**/*.mjs',
         ]
     },
 
     js: {
-        src: './src/js/**/*.js',
+        src: './src/js/*.js',
         dist: './dist/js/',
-        watch: [
-            './src/js/**/*.js',
-            './src/js/**/*.mjs',
-        ]
+        watch: './src/js/**/*.js',
     },
 
     php: {
