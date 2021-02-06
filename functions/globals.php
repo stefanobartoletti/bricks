@@ -146,56 +146,6 @@ function brk_svg_mimetype( $data = null, $file = null, $filename = null, $mimes 
 }
 add_filter( 'wp_check_filetype_and_ext', 'brk_svg_mimetype', 10, 4 );
 
-// --- Custom logo SVG ---
-
-// Inlines custom logo if it is in SVG format
-
-function brk_custom_logo_svg() {
-
-    $logourl = rawurlencode(wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full'));
-    $logoid = attachment_url_to_postid($logourl);
-    $logomime = get_post_mime_type($logoid);
-
-    if ($logomime == 'image/svg+xml') { ?>
-
-        <a href="<?php echo esc_url_raw(home_url()); ?>" class="custom-logo-link" rel="home"><div class="custom-logo"><?php echo file_get_contents($logourl) ?></div></a>     
-        
-    <?php } else {
-
-        return the_custom_logo();
-
-    }   
-
-}
-
-// --- [sb] signature ---
-
-// Used to print signature in the footer
-
-function brk_signature($sigType = 'text') {
-
-    $sigURL         = 'https://www.stefanobartoletti.it';
-    $sigLogoFull    = get_template_directory().'/dist/img/sb-logo-full.svg';
-    $sigLogoSmall   = get_template_directory().'/dist/img/sb-logo-small.svg';
-    $sigLogoAlt     = 'Stefano Bartoletti Web Design';
-
-    switch ($sigType) {
-
-        case 'logo-full':
-            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoFull).'</a>';
-            break;
-
-        case 'logo-small':
-            echo '<a id="sb-signature" class="ml-md-auto" href="'.$sigURL.'" target="_blank">'.file_get_contents($sigLogoSmall).'</a>';
-            break;
-
-        case 'text':
-            echo '<span id="sb-signature" class="navbar-text ml-md-auto">Made by <a class="text-white-50" " href="'.$sigURL.'" target="_blank">Stefano Bartoletti</a></span>';
-            break;
-
-    }
-
-}
 
 // --- Excerpt lenght ---
 
