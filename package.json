@@ -1,11 +1,11 @@
 {
   "name": "bricks",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "A modular starter theme built with Boostrap.",
   "author": "Stefano Bartoletti <stefano@stefanobartoletti.it>",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/stefano-b/bricks"
+    "url": "https://github.com/stefanobartoletti/bricks"
   },
   "scripts": {
     "postinstall": "gulp setup && gulp default",
