@@ -28,8 +28,6 @@ module.exports = {
             far: [],
             fas: [ 
                 'angle-up',
-                'envelope',
-                'share-alt',
                 'search',
             ],
             fab: [ 
@@ -37,10 +35,6 @@ module.exports = {
                 'linkedin-in',
                 'instagram',
                 'twitter',
-                'pinterest-p',
-                'get-pocket',
-                'telegram-plane',
-                'whatsapp',
             ] 
         }
     },

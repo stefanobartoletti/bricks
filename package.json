@@ -22,7 +22,6 @@
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.1.0",
     "bootstrap": "^4.6.0",
-    "brand-colors": "^2.1.1",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "fs-extra": "^9.1.0",

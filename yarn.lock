@@ -1556,11 +1556,6 @@ braces@^3.0.1, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-brand-colors@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/brand-colors/-/brand-colors-2.1.1.tgz#47be3854ad4ffa6c494750a5e79646ecfb68b58d"
-  integrity sha512-O5pmBXZYtQlWVR0Xl4hdU3aRSs9RkNoKcx6pmQVnXW1GyQLIZaHDKbTEAQNNwuczPiXymjbcDOUBz3sKy5ZL/Q==
-
 browser-sync-client@^2.26.14:
   version "2.26.14"
   resolved "https://registry.yarnpkg.com/browser-sync-client/-/browser-sync-client-2.26.14.tgz#f2f0a8e5febc65b725fb38c8d648389214a38947"
