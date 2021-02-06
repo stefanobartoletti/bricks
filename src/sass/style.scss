@@ -2,27 +2,19 @@
 
 /* purgecss start ignore */
 
-// @import 'fontface';
+// @import 'globals/fontface';
 
 /* purgecss end ignore */
 
 // --- Bootstrap Custom Theme ---
 
-    // --- Requirements ---
-
-    @import "../../node_modules/bootstrap/scss/functions"; 
-    @import "../../node_modules/bootstrap/scss/variables";
-
-    // --- Customizations ---
-
-    @import 'theme';
-
-    // --- Bootstrap ---
-
-    @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/functions"; 
+@import "../../node_modules/bootstrap/scss/variables";
+@import 'globals/theme'; // Bootstrap custom theme variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 
-// --- Third party ---
+// --- Integrations ---
 
 @import "../../node_modules/brand-colors/dist/latest/scss/brand-colors.latest";
 
@@ -35,50 +27,23 @@
 
 // --- WP Core required styles ---
 
-@import 'wpcore';
+@import 'globals/wpcore';
 
 
 // --- Custom styles ---
 
-@import 'utils';
+@import 'globals/globals';
 
-@import 'common';
-
-@import 'elements/backtotop';
-@import 'elements/breadcrumbs';
-@import 'elements/socialicons';
-@import 'elements/socialshare';
+@import 'components/backtotop';
 
 @import 'header/header';
-@import 'header/logobar';
-@import 'header/menubar';
-@import 'header/simple';
-@import 'header/topbar';
 
 @import 'footer/footer';
-@import 'footer/columns';
-@import 'footer/copyright';
 @import 'footer/simple';
-
-@import 'sections/cta';
-@import 'sections/news';
-@import 'sections/pageheader';
-@import 'sections/services';
-@import 'sections/slider';
+// @import 'footer/columns';
 
 @import 'templates/homepage';
-@import 'templates/page';
-@import 'templates/index';
-@import 'templates/single';
 @import 'templates/sidebar';
 @import 'templates/comments';
-@import 'templates/404';
 
 /* purgecss end ignore */
-
-// --- Custom class reference ---
-
-// Reference list of custom classes, leave commented.
-// Decomment ONLY to highlight structure.
-
-// @import 'reference';
