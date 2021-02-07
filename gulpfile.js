@@ -246,5 +246,5 @@ exports.pot = series(domain, pot);
 exports.setup = setup;
 
 exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons, libs));
-exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, libs, domain, pot));
+exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, libs, series(domain, pot)));
 exports.watch = parallel(browser_sync, watch_files);

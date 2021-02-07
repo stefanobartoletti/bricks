@@ -9,7 +9,7 @@
   },
   "scripts": {
     "postinstall": "gulp setup && gulp default",
-    "dev": "gulp",
+    "dev": "gulp default",
     "build": "gulp build",
     "watch": "gulp watch"
   },
