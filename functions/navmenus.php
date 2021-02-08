@@ -5,9 +5,9 @@
  * 
  */
 
-if (! function_exists('sb_navmenus')) {
+if (! function_exists('brk_navmenus')) {
 
-    function sb_navmenus() {
+    function brk_navmenus() {
 
         register_nav_menus(array(
             'header' => esc_html__('Header Menu', 'bricks'),
@@ -18,4 +18,4 @@ if (! function_exists('sb_navmenus')) {
 
 }
 
-add_action('after_setup_theme', 'sb_navmenus');
+add_action('after_setup_theme', 'brk_navmenus');

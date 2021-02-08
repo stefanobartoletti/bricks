@@ -1,6 +1,6 @@
-    </div> <!-- #page-wrap -->
+    </div> <!-- #page-wrapper -->
 
-    <footer id="footer-wrap" class="bg-dark text-light">
+    <footer id="footer-wrapper" class="bg-dark text-light">
 
         <?php
 
@@ -9,16 +9,16 @@
         
         ?>
 
-    </footer> <!-- #footer-wrap -->
+    </footer> <!-- #footer-wrapper -->
 
     <?php 
     
-    get_template_part( 'templates/elements/backtotop', '' );
+    get_template_part( 'templates/components/backtotop', '' );
     
     wp_footer(); 
     
     ?>
 
-</div> <!-- #site-wrap -->
+</div> <!-- #site-wrapper -->
 
 </body>

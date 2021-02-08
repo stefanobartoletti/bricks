@@ -1,0 +1,21 @@
+// Smooth scroll
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Flex classes on #site-wrapper and #page-wrapper (header.php) are used to force fulle height on pages with little content
+
+// Layout fix when logged in and admin bar is present
+
+.admin-bar #site-wrapper,
+.admin-bar #header-wrapper {
+    top: 32px;
+}
+
+// Selected text styles
+
+::selection {
+    background-color: lighten(theme-color("primary"), 15%);
+    color: theme-color("light");
+}

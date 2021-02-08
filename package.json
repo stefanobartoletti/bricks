@@ -1,42 +1,39 @@
 {
   "name": "bricks",
-  "version": "0.15.0",
-  "description": "A modular starter theme built with Boostrap.",
+  "version": "0.17.0",
+  "description": "A modular WordPress starter theme built with Boostrap",
   "author": "Stefano Bartoletti <stefano@stefanobartoletti.it>",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/stefano-b/bricks"
+    "url": "https://github.com/stefanobartoletti/bricks"
   },
   "scripts": {
-    "postinstall": "composer install && gulp setup && gulp default"
+    "postinstall": "gulp setup && gulp default",
+    "dev": "gulp default",
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@rbnlffl/gulp-rollup": "^0.1.1",
     "@rollup/plugin-babel": "^5.2.2",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.1.0",
-    "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
-    "brand-colors": "^2.1.1",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "fs-extra": "^9.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-bump": "^3.2.0",
     "gulp-cache": "^1.1.3",
     "gulp-checktextdomain": "^2.2.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-environments": "^1.0.1",
     "gulp-fa-minify": "^1.2.2",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-json-editor": "^2.5.4",
-    "gulp-notify": "^3.2.0",
-    "gulp-prompt": "^1.2.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-purgecss": "^4.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
@@ -45,19 +42,6 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-wp-pot": "^2.5.0",
-    "gulp-zip": "^5.0.2",
-    "lg-autoplay.js": "^1.2.0",
-    "lg-fullscreen.js": "^1.2.0",
-    "lg-hash.js": "^1.0.0",
-    "lg-pager.js": "^1.0.0",
-    "lg-share.js": "^1.3.0",
-    "lg-thumbnail.js": "^1.2.0",
-    "lg-video.js": "^1.3.0",
-    "lg-zoom.js": "^1.3.0",
-    "lightgallery.js": "^1.4.0",
-    "material-colors": "^1.2.6",
-    "rollup": "^2.38.0",
-    "swiper": "^6.4.8",
-    "vinyl-ftp": "^0.6.1"
+    "rollup": "^2.38.5"
   }
 }

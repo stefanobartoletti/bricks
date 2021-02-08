@@ -4,7 +4,7 @@
     
     if ( has_custom_logo() ) { 
 
-        sb_custom_logo_svg();
+        the_custom_logo();
 
     }
 

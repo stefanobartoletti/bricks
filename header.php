@@ -12,9 +12,9 @@
 <body <?php body_class(); ?>> 
 <?php wp_body_open(); ?>
 
-<div id="site-wrap">
+<div id="site-wrapper" class="d-flex flex-column min-vh-100">
 
-    <header id="header-wrap" class="sticky-top bg-dark">
+    <header id="header-wrapper" class="sticky-top bg-dark">
 
         <?php
         
@@ -22,6 +22,6 @@
         
         ?>
 
-    </header> <!-- #header-wrap -->
+    </header> <!-- #header-wrapper -->
 
-    <div id="page-wrap">
+    <div id="page-wrapper" class="flex-grow-1">

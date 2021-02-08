@@ -8,9 +8,9 @@
  * 
  */
 
-if ( ! function_exists('sb_cpt_sample') ) {
+if ( ! function_exists('brk_cpt_sample') ) {
 
-    function sb_cpt_sample() {
+    function brk_cpt_sample() {
 
         $slug = 'cpt-sample';
                   
@@ -122,6 +122,6 @@ if ( ! function_exists('sb_cpt_sample') ) {
 
     }
 
-    add_action('init', 'sb_cpt_sample');
+    add_action('init', 'brk_cpt_sample');
 
 }
