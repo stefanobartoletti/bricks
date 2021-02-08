@@ -6,7 +6,7 @@ module.exports = {
     siteURL: 'http://localhost',
 
     csspurge: {
-        // Purgecss whitelists
+        // Purgecss safelist https://purgecss.com/safelisting.html
         safelist: [
             /^carousel-item.*/,     // Bootstrap Carousel Animation
             /collapsing/,           // Bootstrap Navbar Animation
@@ -22,7 +22,7 @@ module.exports = {
 
     icons: {
         used: {
-            // faMinify used icons
+            // gulp-fa-minify whitelisted icons https://github.com/FA-Minify/gulp-fa-minify
             // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
             fal: [],
             far: [],
