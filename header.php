@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>> 
 <?php wp_body_open(); ?>
 
-<div id="site-wrap">
+<div id="site-wrap" class="d-flex flex-column min-vh-100">
 
     <header id="header-wrap" class="sticky-top bg-dark">
 
@@ -24,4 +24,4 @@
 
     </header> <!-- #header-wrap -->
 
-    <div id="page-wrap">
+    <div id="page-wrap" class="flex-grow-1">

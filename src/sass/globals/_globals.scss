@@ -4,17 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-// Forces full height on pages with little content
-
-#site-wrap {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-#page-wrap {
-    flex: 1;
-}
+// Flex classes on #site-wrap and #page-wrap (header.php) are used to force fulle height on pages with little content
 
 // Layout fix when logged in and admin bar is present
 
