@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="content-wrap">
+<main id="content-wrapper">
 
     <?php while ( have_posts() ) : the_post();
 
@@ -32,6 +32,6 @@
 
     <?php endwhile ?>
 
-</main> <!-- #content-wrap -->
+</main> <!-- #content-wrapper -->
 
 <?php get_footer();

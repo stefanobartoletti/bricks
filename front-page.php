@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="content-wrap">
+<main id="content-wrapper">
 
     <section id="section-slider">
 
@@ -62,6 +62,6 @@
 
     </section> <!-- #section-news -->
  
-</main> <!-- #content-wrap -->
+</main> <!-- #content-wrapper -->
 
 <?php get_footer();

@@ -2,7 +2,7 @@
 
 var html = document.querySelector('html');
 
-var header = document.querySelector('#header-wrap');
+var header = document.querySelector('#header-wrapper');
 
 if (header) {
 

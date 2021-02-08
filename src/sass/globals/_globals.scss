@@ -4,12 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
-// Flex classes on #site-wrap and #page-wrap (header.php) are used to force fulle height on pages with little content
+// Flex classes on #site-wrapper and #page-wrapper (header.php) are used to force fulle height on pages with little content
 
 // Layout fix when logged in and admin bar is present
 
-.admin-bar #site-wrap,
-.admin-bar #header-wrap {
+.admin-bar #site-wrapper,
+.admin-bar #header-wrapper {
     top: 32px;
 }
 

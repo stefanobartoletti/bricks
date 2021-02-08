@@ -1,6 +1,6 @@
-    </div> <!-- #page-wrap -->
+    </div> <!-- #page-wrapper -->
 
-    <footer id="footer-wrap" class="bg-dark text-light">
+    <footer id="footer-wrapper" class="bg-dark text-light">
 
         <?php
 
@@ -9,7 +9,7 @@
         
         ?>
 
-    </footer> <!-- #footer-wrap -->
+    </footer> <!-- #footer-wrapper -->
 
     <?php 
     
@@ -19,6 +19,6 @@
     
     ?>
 
-</div> <!-- #site-wrap -->
+</div> <!-- #site-wrapper -->
 
 </body>

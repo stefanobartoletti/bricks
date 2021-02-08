@@ -2,7 +2,7 @@
 	return;
 } ?>
 
-<div id="comments-wrap" class="mt-5">
+<div id="comments-wrapper" class="mt-5">
 
     <?php if ( have_comments() ) { ?>
 
@@ -56,4 +56,4 @@
     
     ?>
 
-</div> <!-- #comments-wrap -->
+</div> <!-- #comments-wrapper -->

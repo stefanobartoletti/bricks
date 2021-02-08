@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="content-wrap">
+<main id="content-wrapper">
 
     <?php while ( have_posts() ) : the_post(); ?>
     
@@ -10,7 +10,7 @@
 
         <div class="row py-5">
 
-            <div id="article-wrap" class="col">       
+            <div id="article-wrapper" class="col">       
 
                 <?php get_template_part( 'templates/content/single', '' ); ?>
 
@@ -21,7 +21,7 @@
                     
                 <?php if ( comments_open() || get_comments_number() ) { comments_template(); } ?>
             
-            </div> <!-- #article-wrap -->
+            </div> <!-- #article-wrapper -->
 
             <?php get_sidebar(); ?>
 
@@ -31,6 +31,6 @@
   
     <?php endwhile ?>
 
-</main> <!-- #content-wrap -->
+</main> <!-- #content-wrapper -->
 
 <?php get_footer();
