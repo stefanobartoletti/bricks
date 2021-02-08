@@ -2,17 +2,17 @@
 
 _A modular WordPress starter theme built with Boostrap_
 
-## Requirements
+## 📦 Requirements
 
 - [Git](https://git-scm.com/) to clone this repository.
 - [Npm](https://nodejs.org/) or [Yarn](https://yarnpkg.com/) to manage dependencies and run tasks (Yarn is the preferred tool and will be used in the examples inside this documentation).
-## Installation
+## 🛠️ Installation
 
 - Run `git clone https://github.com/stefanobartoletti/bricks.git` inside the `wp-content/themes` directory in your WordPress installation
 - (Optional) delete `.git` directory inside the newly created `bricks` theme folder and run `git init` to initialize a new repository from scratch.
 - Run `yarn` to install dependencies and perform the initial setup.
 
-## Scripts
+## 📃 Scripts
 
 Yarn is the preferred way to run development tasks:
 - **`yarn dev`** quickly compiles all resources for a local development environment (it is also run as a post-install script after the initial installation).
@@ -20,10 +20,10 @@ Yarn is the preferred way to run development tasks:
 - **`yarn build`** compiles all resources with all the optimizations required for a production environment (minification, treeshaking).
 
 These scripts run individual sub-tasks, which manage CSS (Sass compilation, Autoprefixer, PurgeCSS, minification), JavaScript (Rollup, Babel, minification), images (imagemin), 
-## Configuration
+## ⚙️ Configuration
 
 Some configuration variables are available in `.config.js`.
-Options listed under *Project Variables* can be edited on a per-project basis, while *Path Variables* define paths used by Gulp tasks and they usyally should be left unmodified.
+Options listed under *Project Variables* can be edited on a per-project basis, while *Path Variables* define paths used by Gulp tasks and they usually should be left unmodified.
 
 *Project Variables* are:
 
@@ -32,7 +32,7 @@ Options listed under *Project Variables* can be edited on a per-project basis, w
 - **`csspurge.safelist`**: an array of values used as a [safelist for PurgeCSS](https://purgecss.com/safelisting.html).
 - **`icons.used`**: a whitelist of icons used by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify), a Gulp plugin which removes unused icons from FontAwesome 5 when using _SVG with JavaScript_, to reduce the bundle size.
 
-## Features
+## 🪄 Features
 
 This starter theme features:
 - [Bootstrap](https://getbootstrap.com/) (compilation from source Sass files).
@@ -45,7 +45,7 @@ This starter theme features:
 - Automatic conversion of custom fonts into *woff/woff2* web formats.
 - Support for localization, with a task that creates a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/).
   
-## Folder structure
+## 🗂️ Folder structure
 
 - **`acf-json`**: support for ACF [local JSON](https://www.advancedcustomfields.com/resources/local-json/) (delete this directory if you don't use this feature).
 - **`dist`**: compiled resources built by Gulp and directly loaded into the theme.
