@@ -2,7 +2,7 @@
 
 <main id="content-wrap">
 
-    <section id="sect-slider">
+    <section id="section-slider">
 
         <?php
         
@@ -15,9 +15,9 @@
         
         ?>
 
-    </section> <!-- #sect-slider -->
+    </section> <!-- #section-slider -->
 
-    <section id="sect-services">
+    <section id="section-services">
 
         <?php
         
@@ -30,9 +30,9 @@
         
         ?>
 
-    </section> <!-- #sect-services -->
+    </section> <!-- #section-services -->
 
-    <section id="sect-cta">
+    <section id="section-cta">
 
         <?php
         
@@ -45,9 +45,9 @@
         
         ?>
 
-    </section> <!-- #sect-news -->
+    </section> <!-- #section-news -->
  
-    <section id="sect-news">
+    <section id="section-news">
 
         <?php
         
@@ -60,7 +60,7 @@
         
         ?>
 
-    </section> <!-- #sect-news -->
+    </section> <!-- #section-news -->
  
 </main> <!-- #content-wrap -->
 
