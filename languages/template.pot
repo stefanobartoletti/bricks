@@ -1,12 +1,11 @@
-# Copyright (C) 2020 Bricks
-# This file is distributed under the same license as the Bricks package.
+# Copyright (C) 2021 bricks
+# This file is distributed under the same license as the bricks package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Bricks\n"
+"Project-Id-Version: bricks\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Stefano Bartoletti <stefano@stefanobartoletti.it>\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -66,8 +65,104 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: functions/customizer.php:13, functions/customizer.php:14
-msgid "[sb] Options"
+#: functions/integrations.php:25
+msgid "Options Page"
+msgstr ""
+
+#: functions/integrations.php:29, templates/footer/footer-columns.php:21
+msgid "Contacts"
+msgstr ""
+
+#: functions/integrations.php:32
+msgid "Displayed in the site footer"
+msgstr ""
+
+#: functions/integrations.php:44
+msgid "Company"
+msgstr ""
+
+#: functions/integrations.php:47
+msgid "Example: Full Company Name"
+msgstr ""
+
+#: functions/integrations.php:63
+msgid "Address - Line 1"
+msgstr ""
+
+#: functions/integrations.php:66
+msgid "Example: Street, Number"
+msgstr ""
+
+#: functions/integrations.php:82
+msgid "Address - Line 2"
+msgstr ""
+
+#: functions/integrations.php:85
+msgid "Example => Postal Code, City, State"
+msgstr ""
+
+#: functions/integrations.php:101
+msgid "Map URL"
+msgstr ""
+
+#: functions/integrations.php:104
+msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
+msgstr ""
+
+#: functions/integrations.php:117
+msgid "Phone number"
+msgstr ""
+
+#: functions/integrations.php:136
+msgid "E-mail address"
+msgstr ""
+
+#: functions/integrations.php:154
+msgid "ID Number"
+msgstr ""
+
+#: functions/integrations.php:157
+msgid "Example: Social Security Number, Fiscal Code, etc."
+msgstr ""
+
+#: functions/integrations.php:173
+msgid "VAT Number"
+msgstr ""
+
+#: functions/integrations.php:194
+msgid "Social profiles"
+msgstr ""
+
+#: functions/integrations.php:197
+msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
+msgstr ""
+
+#: functions/integrations.php:323
+msgid "Meta"
+msgstr ""
+
+#: functions/integrations.php:338
+msgid "Google Analytics ID"
+msgstr ""
+
+#: functions/integrations.php:341
+msgid "Google Analytics tracking code. Example: UA-000000000-0"
+msgstr ""
+
+#: functions/integrations.php:357
+msgid "Google Tag Manager ID"
+msgstr ""
+
+#: functions/integrations.php:360
+msgid "Google Tag Manager tracking code. Example: GTM-0000000"
+msgstr ""
+
+#: functions/integrations.php:376
+msgid "Chrome Theme"
+msgstr ""
+
+#: functions/integrations.php:379
+msgid "Tab color in Chrome for Android"
 msgstr ""
 
 #: functions/navmenus.php:13
@@ -82,88 +177,8 @@ msgstr ""
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions/sidebars.php:23, functions/sidebars.php:25
-msgid "Footer Widgets"
-msgstr ""
-
-#: functions/customizer/branding.php:6
-msgid "Branding"
-msgstr ""
-
-#: functions/customizer/branding.php:7
-msgid "Branding options"
-msgstr ""
-
-#: functions/customizer/branding.php:23
-msgid "Chrome theme color"
-msgstr ""
-
-#: functions/customizer/branding.php:24
-msgid "Tab color in Chrome for Android"
-msgstr ""
-
-#: functions/customizer/contacts.php:6, templates/footer/footer-columns.php:21
-msgid "Contacts"
-msgstr ""
-
-#: functions/customizer/contacts.php:7
-msgid "Contacts info"
-msgstr ""
-
-#: functions/customizer/contacts.php:24
-msgid "Company Name"
-msgstr ""
-
-#: functions/customizer/contacts.php:25
-msgid "Full Company formal name"
-msgstr ""
-
-#: functions/customizer/contacts.php:36
-msgid "Address - Line 1"
-msgstr ""
-
-#: functions/customizer/contacts.php:37
-msgid "i.e. \"Street, Number\""
-msgstr ""
-
-#: functions/customizer/contacts.php:48
-msgid "Address - Line 2"
-msgstr ""
-
-#: functions/customizer/contacts.php:49
-msgid "i.e. \"Postal Code, City, State\""
-msgstr ""
-
-#: functions/customizer/contacts.php:60
-msgid "Map URL"
-msgstr ""
-
-#: functions/customizer/contacts.php:61
-msgid "Online Map Service URL, i.e. \"https://goo.gl/maps/sNAFh8SNCLH5cYyL7\" for Google Maps"
-msgstr ""
-
-#: functions/customizer/contacts.php:74
-msgid "Phone number"
-msgstr ""
-
-#: functions/customizer/contacts.php:87
-msgid "Email Address"
-msgstr ""
-
-#: functions/customizer/contacts.php:100
-msgid "Italian Fiscal Code"
-msgstr ""
-
-#: functions/customizer/contacts.php:113
-msgid "VAT Number"
-msgstr ""
-
-#: functions/customizer/social.php:6
-msgid "Social"
-msgstr ""
-
-#: functions/customizer/social.php:7
-msgid "Insert full addresses for Social Network profiles. Only filled fields will be displayed on the site as icons. For better layout, only use about 3~4 of them at most."
+#: functions/lib/class-wp-bootstrap-navwalker.php:366, functions/lib/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
 msgstr ""
 
 #: templates/content/loop-none.php:10
@@ -174,38 +189,30 @@ msgstr ""
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: templates/content/page-portfolio.php:15
-msgid "All"
-msgstr ""
-
 #: templates/content/page.php:18, templates/content/single.php:16
 msgid "Part:"
 msgstr ""
 
-#: templates/elements/socialshare.php:17
-msgid "Share with "
-msgstr ""
-
-#: templates/footer/footer-columns.php:71
+#: templates/footer/footer-columns.php:79
 msgid "Pages"
 msgstr ""
 
-#: templates/footer/footer-columns.php:88
+#: templates/footer/footer-columns.php:96
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/cta.php:23, templates/sections/news.php:39, templates/sections/services.php:29, templates/sections/slider.php:28
+#: templates/sections/home-cta.php:21, templates/sections/home-news.php:39, templates/sections/home-services.php:29, templates/sections/home-slider.php:26
 msgid "Read more"
 msgstr ""
 
-#: templates/sections/news.php:3
+#: templates/sections/home-news.php:5
 msgid "News"
 msgstr ""
 
-#: templates/sections/news.php:35
+#: templates/sections/home-news.php:35
 msgid "By "
 msgstr ""
 
-#: templates/sections/services.php:3
+#: templates/sections/home-services.php:5
 msgid "Services"
 msgstr ""

@@ -6,7 +6,7 @@
             
             <?php if ( has_custom_logo() ) { 
 
-                sb_custom_logo_svg();
+                the_custom_logo();
 
             } else { ?>
 
@@ -22,39 +22,47 @@
 
             <ul class="list-unstyled">
 
-                <?php if( get_option('sb_address_1')) { ?>
+                <?php 
+                
+                $company = get_field('contacts_company', 'option');
+                $address1 = get_field('contacts_address_1', 'option');
+                $address2 = get_field('contacts_address_2', 'option');
+                $mapurl = get_field('contacts_map_url', 'option');
+                $phone = get_field('contacts_phone', 'option');
+                $email = get_field('contacts_email', 'option');
+                $idnumber = get_field('contacts_id_number', 'option');
+                $vatnumber = get_field('contacts_vat_number', 'option');               
+                
+                if( $address1 ) { ?>
 
                     <li class="media mb-3">
                         <i class="fas fa-map-marker-alt fa-fw mt-1"></i>
                         <div class="media-body ml-3">
-                            <?php                           
-                            if( get_option('sb_mapurl')) {
-                                echo '<a href="', get_option('sb_mapurl'), '" target="_blank">';
-                            } else {
-                                echo '<p>';
-                            }
-                            if( get_option('sb_company')) {echo get_option('sb_company'), ', <br>'; };
-                            if( get_option('sb_address_1')) {echo get_option('sb_address_1'); };
-                            if( get_option('sb_address_2')) {echo ', <br>', get_option('sb_address_2'); };
-                            if( get_option('sb_mapurl')) {echo '</a>'; } else {echo '</p>';} ?>
+                            <?php                                                   
+                            echo $mapurl ? '<a href="' . $mapurl . '" target="_blank">' : '<p>';
+                            echo $company ? $company . ', <br>' : '';
+                            echo $address1 ? $address1 : '';
+                            echo $address2 ? ', <br>' . $address2 : '';
+                            echo $mapurl ? '</a>' : '<p>';
+                            ?>
                         </div>
                     </li>
 
-                <?php }; if( get_option('sb_phone')) { ?>
+                <?php }; if( $phone ) { ?>
 
                     <li class="media mb-3">
                         <i class="fas fa-phone fa-fw mt-1"></i>
                         <div class="media-body ml-3">
-                            <a href="tel:<?php echo get_option('sb_phone') ?>"><?php echo get_option('sb_phone') ?></a>
+                            <a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
                         </div>
                     </li>
 
-                <?php }; if( get_option('sb_email')) { ?>
+                <?php }; if( $email ) { ?>
 
                     <li class="media mb-3">
                         <i class="fas fa-envelope fa-fw mt-1"></i>
                         <div class="media-body ml-3">
-                            <a href="mailto:<?php echo get_option('sb_email', '') ?>"><?php echo get_option('sb_email', '') ?></a>
+                            <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
                         </div>
                     </li>
 
@@ -62,7 +70,7 @@
 
             </ul>
 
-            <?php get_template_part( 'templates/elements/socialicons', '' ); ?>
+            <?php get_template_part( 'templates/components/socialicons', '' ); ?>
             
         </div>
 

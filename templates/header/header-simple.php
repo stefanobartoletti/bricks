@@ -2,7 +2,7 @@
 
     <?php if ( has_custom_logo() ) { 
 
-        sb_custom_logo_svg();
+        the_custom_logo();
 
     } else { ?>
 
@@ -31,7 +31,7 @@
         
         get_search_form();
         
-        get_template_part( 'templates/elements/socialicons', '' );
+        get_template_part( 'templates/components/socialicons', '' );
         
         ?>
 

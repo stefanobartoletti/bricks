@@ -5,9 +5,9 @@
  * 
  */
 
-if (! function_exists('sb_setup_theme')) {
+if (! function_exists('brk_setup_theme')) {
 
-    function sb_setup_theme() {
+    function brk_setup_theme() {
 
         // Enable featured images
         add_theme_support('post-thumbnails');
@@ -49,4 +49,4 @@ if (! function_exists('sb_setup_theme')) {
 
 }
 
-add_action('after_setup_theme', 'sb_setup_theme');
+add_action('after_setup_theme', 'brk_setup_theme');

@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<main id="content-wrap">
+<main id="content-wrapper">
 
     <?php while ( have_posts() ) : the_post();
 
         if (has_post_thumbnail()) {
 
-            get_template_part( 'templates/sections/pageheader', '' );
+            get_template_part( 'templates/sections/common', 'pageheader' );
 
         } ?>
 
@@ -14,7 +14,7 @@
 
             <?php 
             
-            get_template_part( 'templates/elements/breadcrumbs', '' );
+            get_template_part( 'templates/components/breadcrumbs', '' );
 
             // Get this page slug                    
             $slug = $post->post_name;
@@ -32,6 +32,6 @@
 
     <?php endwhile ?>
 
-</main> <!-- #content-wrap -->
+</main> <!-- #content-wrapper -->
 
 <?php get_footer();

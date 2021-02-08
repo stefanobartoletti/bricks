@@ -3,23 +3,16 @@
 // --- Bootstrap ---
 
 
-// --- Third Party ---
-
-// import "./integrations/aos"
-// import "./integrations/lightgallery"
-// import "./integrations/swiper"
-
-
-// --- Custom elements ---
-
-import "./header/headerscroll"
-
-import "./elements/backtotop"
-
-import "./templates/page-portfolio"
-
-
 // --- Integrations ---
 
-import "./integrations/bs-classes"
-import "./integrations/wp-classes"
+import "./integrations/bootstrap" // integrates some bootstrap classes into wordpress
+// import "./integrations/aos"  // required npm package: 'aos'
+// import "./integrations/lightgallery"  // required npm package: 'lightgallery.js' and optional modules
+// import "./integrations/swiper"  // required npm package: 'swiper'
+
+// --- Custom components ---
+
+import "./components/backtotop"
+import "./header/headerscroll"
+
+

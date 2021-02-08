@@ -5,7 +5,7 @@
  * 
  */
 
-function sb_search_filter($query) {
+function brk_search_filter($query) {
 
     if ($query->is_search) {
 
@@ -18,4 +18,4 @@ function sb_search_filter($query) {
     return $query;
 }
 
-add_filter('pre_get_posts','sb_search_filter');
+add_filter('pre_get_posts','brk_search_filter');

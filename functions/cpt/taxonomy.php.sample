@@ -8,9 +8,9 @@
  * 
  */
 
-if ( ! function_exists('sb_tax_sample') ) {
+if ( ! function_exists('brk_tax_sample') ) {
 
-    function sb_tax_sample() { 
+    function brk_tax_sample() { 
         
         $slug = 'tax-sample';
 
@@ -86,6 +86,6 @@ if ( ! function_exists('sb_tax_sample') ) {
 
     }
 
-    add_action('init', 'sb_tax_sample');
+    add_action('init', 'brk_tax_sample');
 
 }

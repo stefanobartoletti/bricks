@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<main id="content-wrap">
+<main id="content-wrapper">
 
     <div class="container">
 
-        <?php get_template_part( 'templates/elements/breadcrumbs', '' ); ?>
+        <?php get_template_part( 'templates/components/breadcrumbs', '' ); ?>
 
         <div class="row py-5">
 
-            <div id="loop-wrap" class="col">
+            <div id="loop-wrapper" class="col">
                    
                 <h1 class="mb-5 border-bottom">
                     <?php if ( is_home() ) {
@@ -44,7 +44,7 @@
 
                 endif; ?>
             
-            </div> <!-- #loop-wrap -->
+            </div> <!-- #loop-wrapper -->
 
             <?php get_sidebar(); ?>
 
@@ -52,6 +52,6 @@
 
     </div>
            
-</main> <!-- #content-wrap -->
+</main> <!-- #content-wrapper -->
 
 <?php get_footer();
