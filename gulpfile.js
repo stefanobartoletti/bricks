@@ -118,14 +118,21 @@ function img() {
 // --- Fonts ---
 
 function fonts(done) {
-    src(config.fonts.src)
-        .pipe(ttf2woff())
+    src(config.fonts.src.ttf)
+        .pipe(ttf2woff({
+            ignoreExt: true,
+        }))
         .pipe(dest(config.fonts.dist))
         .pipe(browserSync.stream())
-    src(config.fonts.src)
-        .pipe(ttf2woff2())
+    src(config.fonts.src.ttf)
+        .pipe(ttf2woff2({
+            ignoreExt: true,
+        }))
         .pipe(dest(config.fonts.dist))
         .pipe(browserSync.stream())
+    src(config.fonts.src.woff)
+        .pipe(dest(config.fonts.dist))
+        .pipe(browserSync.stream())       
     done();
 };
 

@@ -72,9 +72,12 @@ module.exports = {
     },
 
     fonts: {
-        src: './src/fonts/**/*.ttf',
+        src: {
+            ttf: './src/fonts/**/*.{otf,ttf}',
+            woff: './src/fonts/**/*.{woff,woff2}',
+        },
         dist: './dist/fonts/',
-        watch: './src/fonts/**/*.ttf',
+        watch: './src/fonts/**/*',
         lg: './node_modules/lightgallery.js/src/fonts/*.*',
     },
 
