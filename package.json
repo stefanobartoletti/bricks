@@ -1,7 +1,7 @@
 {
   "name": "bricks",
-  "version": "0.16.0",
-  "description": "A modular starter theme built with Boostrap.",
+  "version": "0.17.0",
+  "description": "A modular WordPress starter theme built with Boostrap",
   "author": "Stefano Bartoletti <stefano@stefanobartoletti.it>",
   "repository": {
     "type": "git",
