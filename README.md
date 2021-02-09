@@ -19,7 +19,7 @@ Yarn is the preferred way to run development tasks:
 - **`yarn watch`** starts both the watcher and BrowserSync to automatically compile resources during local development.
 - **`yarn build`** compiles all resources with all the optimizations required for a production environment (minification, treeshaking).
 
-These scripts run individual sub-tasks, which manage CSS (Sass compilation, Autoprefixer, PurgeCSS, minification), JavaScript (Rollup, Babel, minification), images (imagemin), 
+These scripts run individual sub-tasks, which manage CSS (Sass compilation, Autoprefixer, PurgeCSS, minification), JavaScript (Rollup, Babel, minification), images (imagemin), fonts (conversion into web formats), icons (*Font Awesome 5* optimization) and localization.
 ## ⚙️ Configuration
 
 Some configuration variables are available in `.config.js`.
@@ -44,6 +44,7 @@ This starter theme features:
 - [BrowserSync](https://www.browsersync.io/).
 - Automatic conversion of custom fonts into *woff/woff2* web formats.
 - Support for localization, with a task that creates a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/).
+- Support for integration of some optional libraries ([aos](https://michalsnik.github.io/aos/), [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/), [swiper](https://swiperjs.com/)).
   
 ## 🗂️ Folder structure
 
