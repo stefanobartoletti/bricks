@@ -142,7 +142,7 @@ function fonts(done) {
 function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
-        .pipe(production(faMinify(config.icons.used)))
+        .pipe(production(faMinify(config.usedicons)))
         .pipe(production(uglify()))
         .pipe(dest(config.js.dist));
 };
