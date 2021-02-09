@@ -20,23 +20,21 @@ module.exports = {
         ]
     },
 
-    icons: {
-        used: {
-            // gulp-fa-minify whitelisted icons https://github.com/FA-Minify/gulp-fa-minify
-            // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
-            fal: [],
-            far: [],
-            fas: [ 
-                'angle-up',
-                'search',
-            ],
-            fab: [ 
-                'facebook-f',
-                'linkedin-in',
-                'instagram',
-                'twitter',
-            ] 
-        }
+    usedicons: {
+        // gulp-fa-minify whitelisted icons https://github.com/FA-Minify/gulp-fa-minify
+        // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
+        fal: [],
+        far: [],
+        fas: [ 
+            'angle-up',
+            'search',
+        ],
+        fab: [ 
+            'facebook-f',
+            'linkedin-in',
+            'instagram',
+            'twitter',
+        ] 
     },
 
     // --- Path variables ---
