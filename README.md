@@ -2,6 +2,20 @@
 
 _A modular WordPress starter theme built with Boostrap_
 
+## 🪄 Features
+
+Bricks features:
+- [Bootstrap](https://getbootstrap.com/) (compiled from source Sass files).
+- [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker).
+- [Font Awesome 5](https://fontawesome.com/) (_SVG with Javascript_ version, parsed and minified by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify)).
+- [Autoprefixer](https://autoprefixer.github.io/).
+- [PurgeCSS](https://purgecss.com/).
+- [Rollup](https://www.rollupjs.org/) and [Babel](https://babeljs.io/).
+- [BrowserSync](https://www.browsersync.io/).
+- Automatic conversion of custom fonts into *woff/woff2* web formats.
+- Support for localization, with a task that creates a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/).
+- Support for integration of some optional libraries ([aos](https://michalsnik.github.io/aos/), [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/), [swiper](https://swiperjs.com/)).
+
 ## 📦 Requirements
 
 - [Git](https://git-scm.com/) to clone this repository.
@@ -12,14 +26,6 @@ _A modular WordPress starter theme built with Boostrap_
 - (Optional) delete `.git` directory inside the newly created `bricks` theme folder and run `git init` to initialize a new repository from scratch.
 - Run `yarn` to install dependencies and perform the initial setup.
 
-## 📃 Scripts
-
-Yarn is the preferred way to run development tasks:
-- **`yarn dev`** quickly compiles all resources for a local development environment (it is also run as a post-install script after the initial installation).
-- **`yarn watch`** starts both the watcher and BrowserSync to automatically compile resources during local development.
-- **`yarn build`** compiles all resources with all the optimizations required for a production environment (minification, treeshaking).
-
-These scripts run individual sub-tasks, which manage CSS (Sass compilation, Autoprefixer, PurgeCSS, minification), JavaScript (Rollup, Babel, minification), images (imagemin), fonts (conversion into web formats), icons (*Font Awesome 5* optimization) and localization.
 ## ⚙️ Configuration
 
 Some configuration variables are available in `.config.js`.
@@ -32,19 +38,14 @@ Options listed under *Project Variables* can be edited on a per-project basis, w
 - **`csspurge.safelist`**: an array of values used as a [safelist for PurgeCSS](https://purgecss.com/safelisting.html).
 - **`usedicons`**: a whitelist of icons used by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify), a Gulp plugin which removes unused icons from FontAwesome 5 when using _SVG with JavaScript_, to reduce the bundle size.
 
-## 🪄 Features
+## 📃 Scripts
 
-This starter theme features:
-- [Bootstrap](https://getbootstrap.com/) (compilation from source Sass files).
-- [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker).
-- [Font Awesome 5](https://fontawesome.com/) (_SVG with Javascript_ version, parsed and minified by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify)).
-- [Autoprefixer](https://autoprefixer.github.io/).
-- [PurgeCSS](https://purgecss.com/).
-- [Rollup](https://www.rollupjs.org/) and [Babel](https://babeljs.io/).
-- [BrowserSync](https://www.browsersync.io/).
-- Automatic conversion of custom fonts into *woff/woff2* web formats.
-- Support for localization, with a task that creates a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/).
-- Support for integration of some optional libraries ([aos](https://michalsnik.github.io/aos/), [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/), [swiper](https://swiperjs.com/)).
+Yarn is the preferred way to run development tasks:
+- **`yarn dev`** quickly compiles all resources for a local development environment (it is also run as a post-install script after the initial installation).
+- **`yarn watch`** starts both the watcher and BrowserSync to automatically compile resources during local development.
+- **`yarn build`** compiles all resources with all the optimizations required for a production environment (minification, treeshaking).
+
+These scripts run individual sub-tasks, which manage CSS (Sass compilation, Autoprefixer, PurgeCSS, minification), JavaScript (Rollup, Babel, minification), images (imagemin), fonts (conversion into web formats), icons (*Font Awesome 5* optimization) and localization.
   
 ## 🗂️ Folder structure
 
