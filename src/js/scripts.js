@@ -1,8 +1,5 @@
 "use strict";
 
-// --- Bootstrap ---
-
-
 // --- Integrations ---
 
 import "./integrations/bootstrap" // integrates some bootstrap classes into wordpress
