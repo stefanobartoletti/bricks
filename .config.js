@@ -104,11 +104,6 @@ module.exports = {
     },
 
     libs: {
-        bs: [
-            // './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-            './node_modules/bootstrap.native/dist/bootstrap-native.min.js',
-            './node_modules/@popperjs/core/dist/umd/popper.min.js',
-        ],
         lg: './node_modules/lightgallery.js',
     }, 
 

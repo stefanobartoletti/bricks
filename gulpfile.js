@@ -97,8 +97,6 @@ function js(done) {
         .pipe(development(sourcemaps.write('./')))
         .pipe(dest(config.js.dist))
         .pipe(browserSync.stream())
-    src(config.libs.bs)
-        .pipe(dest(config.js.dist))
     done();
 };
 
