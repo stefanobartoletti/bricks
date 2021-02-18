@@ -901,10 +901,10 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@popperjs/core@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
-  integrity sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
+"@popperjs/core@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.7.0.tgz#5f7760965170f7f1e2910d2498c5be88b47a2a8c"
+  integrity sha512-V3WyEc8ZyAuOQ2fpFuTuYYOd2tV4NePeSdxaHYgYAOs7ERLxlcFi2XsmgI5LJFdAUmJKXsg8jaIiVTkTHQygQw==
 
 "@rbnlffl/gulp-rollup@^0.1.1":
   version "0.1.1"
@@ -1525,10 +1525,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap.native@^3.0.14-e:
-  version "3.0.14-e"
-  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-3.0.14-e.tgz#bc1aca157275833742beaf251d513aed63f8bf9e"
-  integrity sha512-IDWB3JBdKlscP0JUln7GVy117W/H8o2mpvrxIYjGK3TzhowaF0q9aIJgCbprsxxFMQT6ZKChGd0m5pngJtjFDg==
+bootstrap.native@^3.0.14-f:
+  version "3.0.14-f"
+  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-3.0.14-f.tgz#c2f20cd18c231172bd27471e92a05041fd61397d"
+  integrity sha512-aywZwNNv2ExeIR191FLelUG0cFPu2ePLArP1HTO4BBLEaRznC9sMl+5HZ+yE8f50bwPcEey6dI1XkL4Utv1g+A==
   dependencies:
     minifill "^0.0.14"
     shorter-js "^0.1.10b"
