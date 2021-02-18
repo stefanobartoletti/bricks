@@ -104,7 +104,6 @@ module.exports = {
     },
 
     libs: {
-        bs: './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
         lg: './node_modules/lightgallery.js',
     }, 
 

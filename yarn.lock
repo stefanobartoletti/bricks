@@ -901,6 +901,11 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@popperjs/core@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.7.0.tgz#5f7760965170f7f1e2910d2498c5be88b47a2a8c"
+  integrity sha512-V3WyEc8ZyAuOQ2fpFuTuYYOd2tV4NePeSdxaHYgYAOs7ERLxlcFi2XsmgI5LJFdAUmJKXsg8jaIiVTkTHQygQw==
+
 "@rbnlffl/gulp-rollup@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@rbnlffl/gulp-rollup/-/gulp-rollup-0.1.1.tgz#626f0ca4f2dd13fff1e014a8a25f0f882343cc17"
@@ -1519,6 +1524,14 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap.native@^3.0.14-f:
+  version "3.0.14-f"
+  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-3.0.14-f.tgz#c2f20cd18c231172bd27471e92a05041fd61397d"
+  integrity sha512-aywZwNNv2ExeIR191FLelUG0cFPu2ePLArP1HTO4BBLEaRznC9sMl+5HZ+yE8f50bwPcEey6dI1XkL4Utv1g+A==
+  dependencies:
+    minifill "^0.0.14"
+    shorter-js "^0.1.10b"
 
 bootstrap@^4.6.0:
   version "4.6.0"
@@ -5187,6 +5200,11 @@ mimic-response@^1.0.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
   integrity sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
 
+minifill@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/minifill/-/minifill-0.0.14.tgz#34879e369b1b586689f827ea6dd931c737765b92"
+  integrity sha512-4s1twSnTRcIwk0ogQfXmXtwjewlv0hI9WiGMkh7aSW5+zPBMzot+X3F9Eqt3YWgwh4nDdhpnW8hESb7yHrcYNQ==
+
 minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
@@ -6671,6 +6689,11 @@ shebang-regex@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
+
+shorter-js@^0.1.10b:
+  version "0.1.10-b"
+  resolved "https://registry.yarnpkg.com/shorter-js/-/shorter-js-0.1.10-b.tgz#4dc75577bec2f2d45d3f715c235c472248ecdbd0"
+  integrity sha512-bEWafNEUpV8IUUUl9w3l1fX7oT5TYPHoA4F5EsrlckClJsowJORiPJHHnqpa3uaiqecvXbTL0BuJxqAf+Vdv8Q==
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
