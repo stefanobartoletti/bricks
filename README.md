@@ -5,9 +5,9 @@ _A modular WordPress starter theme built with Boostrap_
 ## 🪄 Features
 
 Bricks features:
-- [Bootstrap](https://getbootstrap.com/) (compiled from source Sass files).
+- [Bootstrap 4](https://getbootstrap.com/) (compiled from source Sass files, JavaScript with [Bootstrap Native](https://github.com/thednp/bootstrap.native/)).
 - [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker).
-- [Font Awesome 5](https://fontawesome.com/) (_SVG with Javascript_ version, parsed and minified by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify)).
+- [Font Awesome 5](https://fontawesome.com/) (_SVG with JavaScript_ version, parsed and minified by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify)).
 - [Autoprefixer](https://autoprefixer.github.io/).
 - [PurgeCSS](https://purgecss.com/).
 - [Rollup](https://www.rollupjs.org/) and [Babel](https://babeljs.io/).
