@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-// Flex classes on #site-wrapper and #page-wrapper (header.php) are used to force fulle height on pages with little content
+// Flex classes on #site-wrapper and #page-wrapper (header.php) are used to force full height on pages with little content
 
 // Layout fix when logged in and admin bar is present
 
@@ -18,4 +18,20 @@ html {
 ::selection {
     background-color: lighten(theme-color("primary"), 15%);
     color: theme-color("light");
+}
+
+// Utility class to use img tag as a background
+
+.img-as-background {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.5));
+    
+    img:first-child {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+    }
 }
