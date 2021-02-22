@@ -38,7 +38,7 @@ Options listed under *Project Variables* can be edited on a per-project basis, w
 - **`csspurge.safelist`**: an array of values used as a [safelist for PurgeCSS](https://purgecss.com/safelisting.html).
 - **`usedicons`**: a whitelist of icons used by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify), a Gulp plugin which removes unused icons from FontAwesome 5 when using _SVG with JavaScript_, to reduce the bundle size.
 
-## 📃 Scripts
+## 📜 Scripts
 
 Yarn is the preferred way to run development tasks:
 - **`yarn dev`** quickly compiles all resources for a local development environment (it is also run as a post-install script after the initial installation).
@@ -61,3 +61,7 @@ These scripts run individual sub-tasks, which manage CSS (Sass compilation, Auto
   - **`src/js`**: source JavaScript files (will be bundled by [Rollup](https://www.rollupjs.org)).
   - **`src/sass`**: source Sass files.
 - **`templates`**: modularization of template files, to be called with *get_template_part()*;
+
+## 📝 License
+
+[GNU GPLv3](https://github.com/stefanobartoletti/bricks/blob/master/LICENSE.txt)

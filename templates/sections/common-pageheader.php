@@ -1,6 +1,8 @@
-<div class="section-pageheader jumbotron jumbotron-fluid mb-0" style="background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 1)), url(<?php the_post_thumbnail_url('brk_big'); ?>); background-size: cover; background-position: center center">
+<div class="section-pageheader py-5 mb-0 img-as-background">
 
-    <div class="container py-5 text-center text-light">
+    <img src="<?php the_post_thumbnail_url('brk_big'); ?>" alt="<?php the_title(); ?>">
+
+    <div class="container my-5 py-5 text-center text-light">
 
         <h1 class="display-4"><?php the_title(); ?></h1>
 

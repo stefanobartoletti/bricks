@@ -8,9 +8,11 @@ while ( $brk_cta_query->have_posts() ) : $brk_cta_query->the_post();
 
 ?>
 
-<div class="jumbotron jumbotron-fluid mb-0" style="background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 1)), url(<?php the_post_thumbnail_url('brk_big'); ?>); background-size: cover; background-position: center center; background-attachment: fixed;">
+<div class="img-as-background py-5">
 
-    <div class="container py-4 text-center text-light">
+    <img src="<?php the_post_thumbnail_url('brk_big'); ?>" alt="<?php the_title(); ?>">
+
+    <div class="container py-5 text-center text-light">
         
         <div class="row justify-content-center">
             
