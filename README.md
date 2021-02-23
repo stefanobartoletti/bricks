@@ -1,6 +1,13 @@
-# Bricks
+![Bricks](https://repository-images.githubusercontent.com/170774557/10d31c80-75ea-11eb-8adc-1b7b7d15f46c)
 
-_A modular WordPress starter theme built with Boostrap_
+
+<div align="center">
+
+_A modular WordPress starter theme built with Bootstrap_
+
+---
+
+</div>
 
 ## 🪄 Features
 
