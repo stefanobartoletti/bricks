@@ -11,7 +11,7 @@ if(! function_exists('brk_styles_scripts')) {
 
         // --- CSS ---
 
-        wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Rubik:400,700&display=swap');
+        wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
         wp_enqueue_style('brk-styles', get_template_directory_uri() .'/dist/css/style.min.css');
 
@@ -30,3 +30,11 @@ if(! function_exists('brk_styles_scripts')) {
 }
 
 add_action('wp_enqueue_scripts', 'brk_styles_scripts');
+
+
+// Disable this action if not loading Google Fonts from their external server
+
+function brk_google_fonts_preconnect() {
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com/">'."\n";
+}
+add_action( 'wp_head', 'brk_google_fonts_preconnect', 7 );
