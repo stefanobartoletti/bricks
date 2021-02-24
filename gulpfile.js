@@ -70,7 +70,7 @@ function css() {
         }))
         .pipe(production(purgecss({
             content: config.css.content,
-            safelist: config.csspurge.safelist,
+            safelist: config.cssSafelist,
         })))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
@@ -140,7 +140,7 @@ function fonts(done) {
 function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
-        .pipe(production(faMinify(config.usedicons)))
+        .pipe(production(faMinify(config.usedIcons)))
         .pipe(production(uglify()))
         .pipe(dest(config.js.dist));
 };

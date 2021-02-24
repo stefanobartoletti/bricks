@@ -4,25 +4,23 @@ module.exports = {
 
     textdomain: 'bricks',
     siteURL: 'http://localhost',
+    
+    // Purgecss safelist https://purgecss.com/safelisting.html
+    cssSafelist: [
+        /^carousel-item.*/,     // Bootstrap Carousel Animation
+        /collapsing/,           // Bootstrap Navbar Animation
+        /show/,                 // Bootstrap Dropdown
+                        
+        /form-group/,           // Used in cf7
+        /form-control/,
+        /form-check/,
+        /form-check-input/,
+        /btn-block/,
+    ],
 
-    csspurge: {
-        // Purgecss safelist https://purgecss.com/safelisting.html
-        safelist: [
-            /^carousel-item.*/,     // Bootstrap Carousel Animation
-            /collapsing/,           // Bootstrap Navbar Animation
-            /show/,                 // Bootstrap Dropdown
-                            
-            /form-group/,           // Used in cf7
-            /form-control/,
-            /form-check/,
-            /form-check-input/,
-            /btn-block/,
-        ]
-    },
-
-    usedicons: {
-        // gulp-fa-minify whitelisted icons https://github.com/FA-Minify/gulp-fa-minify
-        // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
+    // gulp-fa-minify whitelisted icons https://github.com/FA-Minify/gulp-fa-minify
+    // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
+    usedIcons: {
         fal: [],
         far: [],
         fas: [ 
