@@ -201,7 +201,7 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/home-cta.php:21, templates/sections/home-news.php:39, templates/sections/home-services.php:29, templates/sections/home-slider.php:26
+#: templates/sections/home-cta.php:23, templates/sections/home-news.php:39, templates/sections/home-services.php:29, templates/sections/home-slider.php:26
 msgid "Read more"
 msgstr ""
 
