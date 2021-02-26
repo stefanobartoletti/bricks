@@ -1,4 +1,3 @@
-
 // --- Animate on Scroll import & init ---
 
 // Settings: https://github.com/michalsnik/aos
