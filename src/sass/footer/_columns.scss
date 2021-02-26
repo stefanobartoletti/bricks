@@ -1,22 +1,12 @@
 #footer-columns {
 
-    .custom-logo {
-        max-height: 50px;
-        width: auto;      
-    }
+    nav {
 
-    .footer-menu .nav-link {
-        margin-bottom: 0.25rem;
-        padding: 0rem;
+        .nav-link {
+            margin-bottom: 0.5rem;
+            padding: 0rem;
+        }
 
-    }
-
-    .socialicon:first-child .nav-link {
-        padding-left: 0.3rem;
-    }
-
-    a {
-        color: theme-color("light");
     }
     
 }

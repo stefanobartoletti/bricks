@@ -1,6 +1,6 @@
-<div id="footer-columns" class="container mt-5">
+<div id="footer-columns" class="container navbar navbar-expand navbar-dark mt-5">
 
-    <div class="row">
+    <div class="row w-100">
 
         <div class="col-md-3 mb-4">
             
@@ -20,7 +20,7 @@
 
             <h3 class="h4 mb-4"><?php esc_html_e('Contacts', 'bricks') ?></h3>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled navbar-nav flex-column">
 
                 <?php 
                 
@@ -36,10 +36,10 @@
                 if( $address1 ) { ?>
 
                     <li class="media mb-3">
-                        <i class="fas fa-map-marker-alt fa-fw mt-1"></i>
+                        <i class="fas fa-map-marker-alt fa-fw mt-1 nav-link p-0"></i>
                         <div class="media-body ml-3">
                             <?php                                                   
-                            echo $mapurl ? '<a href="' . $mapurl . '" target="_blank">' : '<p>';
+                            echo $mapurl ? '<a class="nav-link p-0" href="' . $mapurl . '" target="_blank">' : '<p>';
                             echo $company ? $company . ', <br>' : '';
                             echo $address1 ? $address1 : '';
                             echo $address2 ? ', <br>' . $address2 : '';
@@ -51,18 +51,18 @@
                 <?php }; if( $phone ) { ?>
 
                     <li class="media mb-3">
-                        <i class="fas fa-phone fa-fw mt-1"></i>
+                        <i class="fas fa-phone fa-fw mt-1 nav-link p-0"></i>
                         <div class="media-body ml-3">
-                            <a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
+                            <a class="nav-link p-0" href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
                         </div>
                     </li>
 
                 <?php }; if( $email ) { ?>
 
                     <li class="media mb-3">
-                        <i class="fas fa-envelope fa-fw mt-1"></i>
+                        <i class="fas fa-envelope fa-fw mt-1 nav-link p-0"></i>
                         <div class="media-body ml-3">
-                            <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
+                            <a class="nav-link p-0" href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
                         </div>
                     </li>
 
@@ -82,7 +82,7 @@
                 'theme_location'    => 'header',
                 'depth'             => 1,
                 'container'         => 'nav',
-                'container_class'   => '',
+                'container_class'   => 'navbar-nav',
                 'container_id'      => '',
                 'menu_class'        => 'footer-menu list-unstyled',
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -99,7 +99,7 @@
                 'theme_location'    => 'footer',
                 'depth'             => 1,
                 'container'         => 'nav',
-                'container_class'   => '',
+                'container_class'   => 'navbar-nav',
                 'container_id'      => '',
                 'menu_class'        => 'footer-menu list-unstyled',
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',

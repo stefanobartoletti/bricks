@@ -1,4 +1,4 @@
-<ul class="socialicons nav">
+<ul class="socialicons navbar-nav flex-row">
 
     <?php 
 
