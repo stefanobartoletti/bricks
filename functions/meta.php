@@ -6,6 +6,7 @@ function brk_head_meta() {
 
     $analyticsID = get_field('meta_google_analytics_id', 'option');
     $gtagID = get_field('meta_gtag_id', 'option');
+    $fbpixelID = get_field('meta_fb_pixel_id', 'option');
     $themecolor = get_field('meta_theme_color', 'option');
 
     // --- Google Analytics ---
@@ -39,6 +40,33 @@ function brk_head_meta() {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','" . $gtagID . "');</script>
         <!-- End Google Tag Manager -->
+        ";
+    
+    }
+
+    // --- Facebook Pixel ---
+
+    if ( $fbpixelID ) {
+    
+        echo
+        "
+        <!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '" . $fbpixelID . "'); 
+        fbq('track', 'PageView');
+        </script>
+        <noscript>
+        <img height=\"1\" width=\"1\" 
+        src=\"https://www.facebook.com/tr?id=" . $fbpixelID . "&ev=PageView&noscript=1\"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
         ";
     
     }

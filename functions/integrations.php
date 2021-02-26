@@ -372,6 +372,25 @@ function brk_acf_options() {
                         'maxlength' => ''
                     ),
                     array(
+                        'key' => 'field_60141285d0106',
+                        'label' => __('Facebook Pixel ID', 'bricks'),
+                        'name' => 'fb_pixel_id',
+                        'type' => 'text',
+                        'instructions' => __('Facebook Pixel tracking code. Example: 000000000000000', 'bricks'),
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '25',
+                            'class' => '',
+                            'id' => ''
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'maxlength' => ''
+                    ),
+                    array(
                         'key' => 'field_60140662ee8f2',
                         'label' => __('Chrome Theme', 'bricks'),
                         'name' => 'theme_color',
@@ -380,7 +399,7 @@ function brk_acf_options() {
                         'required' => 0,
                         'conditional_logic' => 0,
                         'wrapper' => array(
-                            'width' => '27',
+                            'width' => '25',
                             'class' => '',
                             'id' => ''
                         ),
