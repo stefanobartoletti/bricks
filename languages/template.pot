@@ -158,10 +158,18 @@ msgid "Google Tag Manager tracking code. Example: GTM-0000000"
 msgstr ""
 
 #: functions/integrations.php:376
-msgid "Chrome Theme"
+msgid "Facebook Pixel ID"
 msgstr ""
 
 #: functions/integrations.php:379
+msgid "Facebook Pixel tracking code. Example: 000000000000000"
+msgstr ""
+
+#: functions/integrations.php:395
+msgid "Chrome Theme"
+msgstr ""
+
+#: functions/integrations.php:398
 msgid "Tab color in Chrome for Android"
 msgstr ""
 
