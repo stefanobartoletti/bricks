@@ -3,7 +3,7 @@
 
 <div align="center">
 
-_A modular WordPress starter theme powered by Boostrap and Gulp_
+_A modular WordPress starter theme powered by Bootstrap and Gulp_
 
 ---
 
