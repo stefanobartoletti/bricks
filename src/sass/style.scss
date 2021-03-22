@@ -2,7 +2,7 @@
 
 /* purgecss start ignore */
 
-// @import 'globals/fontface';
+// @import 'fontface';
 
 /* purgecss end ignore */
 
@@ -10,7 +10,7 @@
 
 @import "../../node_modules/bootstrap/scss/functions"; 
 @import "../../node_modules/bootstrap/scss/variables";
-@import 'globals/theme'; // Bootstrap custom theme variables
+@import 'theme'; // Bootstrap custom theme variables
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
@@ -25,12 +25,12 @@
 
 // --- WP Core required styles ---
 
-@import 'globals/wpcore';
+@import 'integrations/wpcore';
 
 
 // --- Custom styles ---
 
-@import 'globals/globals';
+@import 'globals';
 
 @import 'components/backtotop';
 
