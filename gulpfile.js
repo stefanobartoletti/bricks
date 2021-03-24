@@ -5,7 +5,7 @@ const { src, dest, watch, series, parallel } = require('gulp');
 
 // --- Configuration ---
 
-const config = require('./.config');
+const config = require('./bricks.config');
 
 
 // --- Plugins ---

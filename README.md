@@ -35,7 +35,7 @@ Bricks features:
 
 ## ⚙️ Configuration
 
-Some configuration variables are available in `.config.js`.
+Some configuration variables are available in `bricks.config.js`.
 Options listed under *Project Variables* can be edited on a per-project basis, while *Path Variables* define paths used by Gulp tasks and they usually should be left unmodified.
 
 *Project Variables* are:
