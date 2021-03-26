@@ -3890,14 +3890,14 @@ gulp-match@^1.0.3, gulp-match@^1.1.0:
   dependencies:
     minimatch "^3.0.3"
 
-gulp-purgecss@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-purgecss/-/gulp-purgecss-4.0.0.tgz#8819696c1d251d16c7e1362710cd85add04dd74f"
-  integrity sha512-17yZrAzXmvxtaPlOA7JaC9Rcq1kUaQ5/vjeYx/e4k/Hn+DvhagYOEMqOLiTO/vuyYIOEOJor0dMn4y2bjpPrvg==
+gulp-purgecss@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/gulp-purgecss/-/gulp-purgecss-4.0.3.tgz#8f4cbc741798eab3f924d7daaf990000a3b9be6f"
+  integrity sha512-MyLL/zqy90e6ADNC30MoZ+THm/XtDCtZwnrMDB49rXKovd56Z3KS/PKA8Y2Br3gUzwAz9ACvfb3V4Gz4OZPQdg==
   dependencies:
     glob "^7.1.6"
     plugin-error "^1.0.1"
-    purgecss "^4.0.0"
+    purgecss "^4.0.3"
     through2 "^4.0.1"
 
 gulp-rename@^2.0.0:
@@ -6052,10 +6052,10 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-purgecss@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-4.0.0.tgz#25446199df2ec40d418caf4b95c7548a011be3f1"
-  integrity sha512-j/y6OtNpEiggw/ipCJUOMNLgLpeAv9L8q+SqzEdDzyVEZOfdWjg8yvgOxhBflNyYgJ8SZ+tTwPxrHT9vQUpEPw==
+purgecss@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-4.0.3.tgz#8147b429f9c09db719e05d64908ea8b672913742"
+  integrity sha512-PYOIn5ibRIP34PBU9zohUcCI09c7drPJJtTDAc0Q6QlRz2/CHQ8ywGLdE7ZhxU2VTqB7p5wkvj5Qcm05Rz3Jmw==
   dependencies:
     commander "^6.0.0"
     glob "^7.0.0"
