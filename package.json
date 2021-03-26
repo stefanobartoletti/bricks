@@ -13,14 +13,14 @@
     "watch": "gulp watch"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.17",
-    "@babel/preset-env": "^7.12.17",
+    "@babel/core": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@popperjs/core": "^2.9.1",
     "@rbnlffl/gulp-rollup": "^0.1.1",
     "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
     "bootstrap": "^4.6.0",
     "bootstrap.native": "^3.0.14-f",
     "browser-sync": "^2.26.14",
@@ -42,6 +42,6 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-wp-pot": "^2.5.0",
-    "rollup": "^2.39.0"
+    "rollup": "^2.42.4"
   }
 }
