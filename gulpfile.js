@@ -27,7 +27,6 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 
 // Fonts
-const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 
 // Icons
@@ -116,12 +115,6 @@ function img() {
 // --- Fonts ---
 
 function fonts(done) {
-    src(config.fonts.src.ttf)
-        .pipe(ttf2woff({
-            ignoreExt: true,
-        }))
-        .pipe(dest(config.fonts.dist))
-        .pipe(browserSync.stream())
     src(config.fonts.src.ttf)
         .pipe(ttf2woff2({
             ignoreExt: true,
