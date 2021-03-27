@@ -31,7 +31,7 @@ require_once get_template_directory() . '/functions/integrations.php';
 
 // --- Include CSS & JavaScript --- 
 
-require_once get_template_directory() . '/functions/cssjs.php';
+require_once get_template_directory() . '/functions/enqueues.php';
 
 // --- Search results filter --- 
 
