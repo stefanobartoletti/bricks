@@ -30,7 +30,8 @@ Bricks features:
 ## 🛠️ Installation
 
 - Run `git clone https://github.com/stefanobartoletti/bricks.git` inside the `wp-content/themes` directory in your WordPress installation
-- (Optional) delete `.git` directory inside the newly created `bricks` theme folder and run `git init` to initialize a new repository from scratch.
+- Delete `.git` and `.github` directories inside the newly created `bricks` theme folder.
+- (Optional) run `git init` to initialize a new repository from scratch.
 - Run `yarn` to install dependencies and perform the initial setup.
 
 ## ⚙️ Configuration
