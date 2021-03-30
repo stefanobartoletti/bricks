@@ -43,8 +43,9 @@ Options listed under *Project Variables* can be edited on a per-project basis, w
 
 - **`textdomain`**: WordPress theme [text domain](https://developer.wordpress.org/themes/functionality/internationalization/#text-domain), used for localizations. You don't always need to edit this, `yarn build` will update all localization functions with this value if modified. Please note that you also need to manually set this value in `load_theme_textdomain()` inside `functions/setup.php` if you modify it.
 - **`siteURL`**: local development URL, used by BrowserSync as the [local proxy](https://www.browsersync.io/docs/api#api-init).
+- **`enable.purgecss`**: enable use of [PurgeCSS](https://purgecss.com/) when bundling CSS for Production.
 - **`cssSafelist`**: an array of values used as a [safelist for PurgeCSS](https://purgecss.com/safelisting.html).
-- **`usedIcons`**: a whitelist of icons used by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify), a Gulp plugin which removes unused icons from FontAwesome 5 when using _SVG with JavaScript_, to reduce the bundle size.
+- **`faIconSafelist`**: a whitelist of icons used by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify), a Gulp plugin which removes unused icons from FontAwesome 5 when using _SVG with JavaScript_, to reduce the bundle size.
 
 ## 📜 Scripts
 

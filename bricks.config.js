@@ -4,6 +4,10 @@ module.exports = {
 
     textdomain: 'bricks',
     siteURL: 'http://localhost',
+
+    enable: {
+        purgecss: true,
+    },
     
     // Purgecss safelist https://purgecss.com/safelisting.html
     cssSafelist: [
@@ -20,7 +24,7 @@ module.exports = {
 
     // gulp-fa-minify whitelisted icons https://github.com/FA-Minify/gulp-fa-minify
     // Light (Pro), Regular (Pro), Solid (Free), Brands (Free)
-    usedIcons: {
+    faIconSafelist: {
         fal: [],
         far: [],
         fas: [ 

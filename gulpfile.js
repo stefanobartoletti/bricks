@@ -67,10 +67,10 @@ function css() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(production(purgecss({
+        .pipe(production(gulpif(config.enable.purgecss, purgecss({
             content: config.css.content,
             safelist: config.cssSafelist,
-        })))
+        }))))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
         .pipe(dest(config.css.dist))
@@ -133,7 +133,7 @@ function fonts(done) {
 function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
-        .pipe(production(faMinify(config.usedIcons)))
+        .pipe(production(faMinify(config.faIconSafelist)))
         .pipe(production(uglify()))
         .pipe(dest(config.js.dist));
 };
