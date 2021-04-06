@@ -5,46 +5,55 @@
  * 
  */
 
-// --- Theme setup ---
+require_once get_template_directory() . '/functions/setup.php'; // --- Theme setup ---
 
-require_once get_template_directory() . '/functions/setup.php';
+require_once get_template_directory() . '/functions/enqueues.php'; // --- Include CSS & JavaScript ---
 
-// --- Cleanup ---
+require_once get_template_directory() . '/functions/navmenus.php'; // --- Register navmenus ---
 
-require_once get_template_directory() . '/functions/cleanup.php';
+require_once get_template_directory() . '/functions/sidebars.php'; // --- Register sidebars ---
 
-// --- Register navmenus --- 
+require_once get_template_directory() . '/functions/lib/class-wp-bootstrap-navwalker.php'; // --- Nav Walker ---
 
-require_once get_template_directory() . '/functions/navmenus.php';
+foreach ( glob( get_template_directory() . '/functions/cpt/*.php' ) as $cpt ) { require_once $cpt; }; // --- Register Custom Post Types & Taxonomies ---
 
-// --- Register sidebars --- 
+require_once get_template_directory() . '/functions/global.php'; // --- Various global functions ---
 
-require_once get_template_directory() . '/functions/sidebars.php';
+// require_once get_template_directory() . '/functions/integrations/acf.php'; // --- ACF integration ---
 
-// --- Nav Walker --- 
+// require_once get_template_directory() . '/functions/integrations/cf7.php'; // --- Contact Form 7 integration ---
 
-require_once get_template_directory() . '/functions/lib/class-wp-bootstrap-navwalker.php';
+// require_once get_template_directory() . '/functions/meta.php'; // --- HTML Meta --- 
 
-// --- Plugin integrations --- 
+// require_once get_template_directory() . '/functions/searchfilter.php'; // --- Search results filter ---
 
-require_once get_template_directory() . '/functions/integrations.php';
+// require_once get_template_directory() . '/functions/cleanup.php'; // --- Cleanup ---
 
-// --- Include CSS & JavaScript --- 
+require_once get_template_directory() . '/functions/custom.php'; // --- Custom user functions ---
 
-require_once get_template_directory() . '/functions/enqueues.php';
 
-// --- Search results filter --- 
 
-// require_once get_template_directory() . '/functions/searchfilter.php';
 
-// --- Custom global functions --- 
 
-require_once get_template_directory() . '/functions/globals.php';
 
-// --- HTML Meta --- 
 
-require_once get_template_directory() . '/functions/meta.php';
 
-// --- Custom Post Types & Taxonomies --- 
 
-foreach (glob(get_template_directory() . '/functions/cpt/*.php') as $cpt) { require_once $cpt; };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
