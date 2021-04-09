@@ -19,11 +19,11 @@ foreach ( glob( get_template_directory() . '/functions/cpt/*.php' ) as $cpt ) { 
 
 require_once get_template_directory() . '/functions/global.php'; // --- Various global functions ---
 
-// require_once get_template_directory() . '/functions/integrations/acf.php'; // --- ACF integration ---
+require_once get_template_directory() . '/functions/integrations/acf.php'; // --- ACF integration ---
 
 // require_once get_template_directory() . '/functions/integrations/cf7.php'; // --- Contact Form 7 integration ---
 
-// require_once get_template_directory() . '/functions/meta.php'; // --- HTML Meta --- 
+require_once get_template_directory() . '/functions/meta.php'; // --- HTML Meta --- 
 
 // require_once get_template_directory() . '/functions/searchfilter.php'; // --- Search results filter ---
 
