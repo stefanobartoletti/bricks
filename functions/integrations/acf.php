@@ -428,3 +428,50 @@ function brk_acf_options() {
 }
 
 add_action('acf/init', 'brk_acf_options');
+
+
+// --- Social networks ---
+
+// Used in Social Icons
+
+function brk_socialnetworks() {
+      
+    $brk_socialnetworks = array(
+        'facebook' => array(
+            'social-name'   => 'Facebook',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-facebook-f',
+        ),
+        'twitter' => array(
+            'social-name'   => 'Twitter',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-twitter',
+        ),
+        'linkedin' => array(
+            'social-name'   => 'LinkedIn',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-linkedin-in',
+        ),
+        'instagram' => array(
+            'social-name'   => 'Instagram',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-instagram',
+        ),
+        'pinterest' => array(
+            'social-name'   => 'Pinterest',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-pinterest-p',
+        ),
+        'youtube' => array(
+            'social-name'   => 'YouTube',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-youtube',
+        ),
+        'tripadvisor' => array(
+            'social-name'   => 'TripAdvisor',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-tripadvisor',
+        ),
+    );
+    return $brk_socialnetworks;
+}
