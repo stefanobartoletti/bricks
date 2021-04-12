@@ -34,6 +34,14 @@ function brk_svg_mimetype( $data = null, $file = null, $filename = null, $mimes 
 add_filter( 'wp_check_filetype_and_ext', 'brk_svg_mimetype', 10, 4 );
 
 
+// --- Excerpt lenght ---
+
+function brk_excerpt_length( $length ) {
+    return 40;
+}
+// add_filter( 'excerpt_length', 'brk_excerpt_length', 999 );
+
+
 // --- Thumbnail alt ---
 
 // Echoes the "alt" value of a post thumbnail as inserted in the media gallery
@@ -44,9 +52,35 @@ function brk_thumbnail_alt() {
 }
 
 
-// --- Excerpt lenght ---
+// --- Breadcrumbs ---
 
-function brk_excerpt_length( $length ) {
-    return 40;
+function brk_breadcrumbs() {
+
+    // http://yoa.st/breadcrumbs
+
+    if (function_exists('yoast_breadcrumb')) {
+
+        yoast_breadcrumb( '<nav class="breadcrumb">','</nav>' );
+    
+    }
+    
+    // https://s.rankmath.com/breadcrumbs
+    
+    elseif (function_exists('rank_math_the_breadcrumbs')) {
+    
+        add_filter( 'rank_math/frontend/breadcrumb/args', function( $args ) {
+            $args = array(
+                'delimiter'   => '&nbsp;&#47;&nbsp;',
+                'wrap_before' => '<nav class="breadcrumb"><span>',
+                'wrap_after'  => '</span></nav>',
+                'before'      => '',
+                'after'       => '',
+            );
+            return $args;
+        });
+    
+        rank_math_the_breadcrumbs();
+    
+    }
+
 }
-// add_filter( 'excerpt_length', 'brk_excerpt_length', 999 );
