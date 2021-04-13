@@ -29,7 +29,7 @@ Bricks features:
 - [Npm](https://nodejs.org/) or [Yarn](https://yarnpkg.com/) to manage dependencies and run tasks (Yarn is the preferred tool and will be used in the examples inside this documentation).
 ## 🛠️ Installation
 
-- Run `git clone https://github.com/stefanobartoletti/bricks.git` inside the `wp-content/themes` directory in your WordPress installation
+- Run `git clone -b master https://github.com/stefanobartoletti/bricks.git` inside the `wp-content/themes` directory in your WordPress installation
 - (Optional) delete `.git` directory inside the newly created `bricks` theme folder and run `git init` to initialize a new repository from scratch.
 - Run `yarn` to install dependencies and perform the initial setup.
 
