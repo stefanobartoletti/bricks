@@ -2,13 +2,9 @@
 
     <?php 
 
-    // Custom function from globals.php
-
-    $brk_socialicons = brk_socialnetworks();
-
     // --- Single icon -----
 
-    foreach ($brk_socialicons as $key => $value) {
+    foreach ( brk_socialicons() as $key => $value) {
 
         if ( get_field('social_'.$key, 'option') ) { ?>
 

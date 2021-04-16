@@ -430,11 +430,9 @@ function brk_acf_options() {
 add_action('acf/init', 'brk_acf_options');
 
 
-// --- Social networks ---
+// --- Social icons ---
 
-// Used in Social Icons
-
-function brk_socialnetworks() {
+function brk_socialicons() {
       
     $brk_socialnetworks = array(
         'facebook' => array(
