@@ -22,7 +22,7 @@
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "bootstrap": "^4.6.0",
-    "bootstrap.native": "^3.0.14-f",
+    "bootstrap.native": "^3.0.14",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "fs-extra": "^9.1.0",
