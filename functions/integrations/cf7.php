@@ -14,7 +14,9 @@ function brk_cf7_styles_scripts(){
     wp_dequeue_script('contact-form-7');
     wp_dequeue_style('contact-form-7');
 
-    if ( is_page( array( 'contacts' ))) {
+    $has_cf7_form = is_front_page() || is_page( array( 'contacts' ));
+
+    if ( $has_cf7_form ) {
 
         wp_enqueue_script('contact-form-7');
         wp_enqueue_style('contact-form-7');
