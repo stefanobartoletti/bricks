@@ -1,11 +1,9 @@
 <?php
 
 /**
- * Integrations with some plugins
+ * Integration with Advanced Custom Fields
  * 
  */
-
-// --- Advanced Custom Fields ---
 
 // https://www.advancedcustomfields.com/resources/options-page/
 
@@ -428,26 +426,50 @@ function brk_acf_options() {
     ));
 	
 }
+
 add_action('acf/init', 'brk_acf_options');
 
-// --- Contact Form 7 ---
 
-// Load CSS & JS only when needed
-// https://contactform7.com/loading-javascript-and-stylesheet-only-when-it-is-necessary/
-// https://orbitingweb.com/blog/prevent-cf7-from-loading-css-js/
+// --- Social icons ---
 
-function brk_cf7_styles_scripts(){
-
-    wp_dequeue_script('contact-form-7');
-    wp_dequeue_style('contact-form-7');
-
-    if ( is_page( array('contatti', 'contacts'))) {
-
-        wp_enqueue_script('contact-form-7');
-        wp_enqueue_style('contact-form-7');
-
-    }
-
+function brk_socialicons() {
+      
+    $brk_socialnetworks = array(
+        'facebook' => array(
+            'social-name'   => 'Facebook',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-facebook-f',
+        ),
+        'twitter' => array(
+            'social-name'   => 'Twitter',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-twitter',
+        ),
+        'linkedin' => array(
+            'social-name'   => 'LinkedIn',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-linkedin-in',
+        ),
+        'instagram' => array(
+            'social-name'   => 'Instagram',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-instagram',
+        ),
+        'pinterest' => array(
+            'social-name'   => 'Pinterest',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-pinterest-p',
+        ),
+        'youtube' => array(
+            'social-name'   => 'YouTube',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-youtube',
+        ),
+        'tripadvisor' => array(
+            'social-name'   => 'TripAdvisor',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-tripadvisor',
+        ),
+    );
+    return $brk_socialnetworks;
 }
-
-// add_action('wp_enqueue_scripts', 'brk_cf7_styles_scripts' );
