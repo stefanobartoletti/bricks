@@ -3,10 +3,14 @@
 // Settings: https://swiperjs.com/get-started/
 
 import Swiper, {
-    Navigation
-} from 'swiper';
+    Navigation,
+    Pagination,
+} from 'swiper/core';
 
-Swiper.use([Navigation]);
+Swiper.use([
+    Navigation,
+    Pagination,
+]);
 
 
 // --- Swiper settings ---
@@ -19,6 +23,10 @@ var swiperSettings = {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
     },
     breakpoints: {
         0: {
