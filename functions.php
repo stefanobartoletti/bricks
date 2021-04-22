@@ -23,8 +23,6 @@ require_once get_template_directory() . '/functions/integrations/acf.php'; // --
 
 // require_once get_template_directory() . '/functions/integrations/cf7.php'; // --- Contact Form 7 integration ---
 
-require_once get_template_directory() . '/functions/meta.php'; // --- HTML Meta --- 
-
 // require_once get_template_directory() . '/functions/searchfilter.php'; // --- Search results filter ---
 
 // require_once get_template_directory() . '/functions/cleanup.php'; // --- Cleanup ---

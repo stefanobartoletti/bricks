@@ -332,63 +332,6 @@ function brk_acf_options() {
                 'layout' => 'block',
                 'sub_fields' => array(
                     array(
-                        'key' => 'field_60141233d0104',
-                        'label' => __('Google Analytics ID', 'bricks'),
-                        'name' => 'google_analytics_id',
-                        'type' => 'text',
-                        'instructions' => __('Google Analytics tracking code. Example: UA-000000000-0', 'bricks'),
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '25',
-                            'class' => '',
-                            'id' => ''
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => ''
-                    ),
-                    array(
-                        'key' => 'field_60141285d0105',
-                        'label' => __('Google Tag Manager ID', 'bricks'),
-                        'name' => 'gtag_id',
-                        'type' => 'text',
-                        'instructions' => __('Google Tag Manager tracking code. Example: GTM-0000000', 'bricks'),
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '25',
-                            'class' => '',
-                            'id' => ''
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => ''
-                    ),
-                    array(
-                        'key' => 'field_60141285d0106',
-                        'label' => __('Facebook Pixel ID', 'bricks'),
-                        'name' => 'fb_pixel_id',
-                        'type' => 'text',
-                        'instructions' => __('Facebook Pixel tracking code. Example: 000000000000000', 'bricks'),
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '25',
-                            'class' => '',
-                            'id' => ''
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => ''
-                    ),
-                    array(
                         'key' => 'field_60140662ee8f2',
                         'label' => __('Chrome Theme', 'bricks'),
                         'name' => 'theme_color',
@@ -426,8 +369,23 @@ function brk_acf_options() {
     ));
 	
 }
-
 add_action('acf/init', 'brk_acf_options');
+
+
+// --- Metadata ---
+
+function brk_head_meta() {
+
+    // --- Chrome theme ---
+
+    $themecolor = get_field('meta_theme_color', 'option');
+   
+    if( $themecolor ) {          
+        echo '<meta name="theme-color" content="', $themecolor, '">';
+    }
+
+}
+add_action('wp_head', 'brk_head_meta');
 
 
 // --- Social icons ---
