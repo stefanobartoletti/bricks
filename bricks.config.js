@@ -68,7 +68,6 @@ module.exports = {
         src: './src/img/**/*.{png,jpg,gif,svg}',
         dist: './dist/img/',
         watch: './src/img/**/*.{png,jpg,gif,svg}',
-        lg: './node_modules/lightgallery.js/src/img/*.*',
     },
 
     fonts: {
@@ -78,7 +77,6 @@ module.exports = {
         },
         dist: './dist/fonts/',
         watch: './src/fonts/**/*',
-        lg: './node_modules/lightgallery.js/src/fonts/*.*',
     },
 
     icons: {
@@ -105,16 +103,11 @@ module.exports = {
         ],
     },
 
-    libs: {
-        lg: './node_modules/lightgallery.js',
-    }, 
-
     setup: {
         dirs: [
             './src/fonts/',
             './src/img/',
         ]
-    }
-    
+    } 
 
 }

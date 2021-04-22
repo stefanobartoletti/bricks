@@ -159,19 +159,6 @@ function pot() {
 };
 
 
-// --- Libs ---
-
-function libs(done) {
-    src(config.img.lg)
-        .pipe(gulpif(fs.existsSync(config.libs.lg), dest(config.img.dist)))
-        .pipe(browserSync.stream());
-    src(config.fonts.lg)
-        .pipe(gulpif(fs.existsSync(config.libs.lg), dest(config.fonts.dist)))
-        .pipe(browserSync.stream());
-    done();
-};
-
-
 // --- Utils ---
 
 function setDev(done) {
@@ -238,11 +225,10 @@ exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
 exports.icons = icons;
-exports.libs = libs;
 exports.pot = series(domain, pot);
 
 exports.setup = setup;
 
-exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons, libs));
-exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, libs, series(domain, pot)));
+exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
+exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
 exports.watch = parallel(browser_sync, watch_files);

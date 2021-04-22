@@ -21,7 +21,7 @@ Bricks features:
 - [BrowserSync](https://www.browsersync.io/).
 - Automatic conversion of custom fonts into *woff2* web format.
 - Support for localization, with a task that creates a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/).
-- Support for integration of some optional libraries ([aos](https://michalsnik.github.io/aos/), [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/), [swiper](https://swiperjs.com/)).
+- Support for integration of some optional libraries: ([aos](https://michalsnik.github.io/aos/), [swiper](https://swiperjs.com/)).
 
 ## 📦 Requirements
 
