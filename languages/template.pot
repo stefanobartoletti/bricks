@@ -154,34 +154,10 @@ msgid "Meta"
 msgstr ""
 
 #: functions/integrations/acf.php:336
-msgid "Google Analytics ID"
-msgstr ""
-
-#: functions/integrations/acf.php:339
-msgid "Google Analytics tracking code. Example: UA-000000000-0"
-msgstr ""
-
-#: functions/integrations/acf.php:355
-msgid "Google Tag Manager ID"
-msgstr ""
-
-#: functions/integrations/acf.php:358
-msgid "Google Tag Manager tracking code. Example: GTM-0000000"
-msgstr ""
-
-#: functions/integrations/acf.php:374
-msgid "Facebook Pixel ID"
-msgstr ""
-
-#: functions/integrations/acf.php:377
-msgid "Facebook Pixel tracking code. Example: 000000000000000"
-msgstr ""
-
-#: functions/integrations/acf.php:393
 msgid "Chrome Theme"
 msgstr ""
 
-#: functions/integrations/acf.php:396
+#: functions/integrations/acf.php:339
 msgid "Tab color in Chrome for Android"
 msgstr ""
 
