@@ -28,30 +28,3 @@ require_once get_template_directory() . '/functions/integrations/acf.php'; // --
 // require_once get_template_directory() . '/functions/cleanup.php'; // --- Cleanup ---
 
 require_once get_template_directory() . '/functions/custom.php'; // --- Custom user functions ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
