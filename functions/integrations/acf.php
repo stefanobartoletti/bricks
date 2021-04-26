@@ -1,11 +1,9 @@
 <?php
 
 /**
- * Integrations with some plugins
+ * Integration with Advanced Custom Fields
  * 
  */
-
-// --- Advanced Custom Fields ---
 
 // https://www.advancedcustomfields.com/resources/options-page/
 
@@ -334,63 +332,6 @@ function brk_acf_options() {
                 'layout' => 'block',
                 'sub_fields' => array(
                     array(
-                        'key' => 'field_60141233d0104',
-                        'label' => __('Google Analytics ID', 'bricks'),
-                        'name' => 'google_analytics_id',
-                        'type' => 'text',
-                        'instructions' => __('Google Analytics tracking code. Example: UA-000000000-0', 'bricks'),
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '25',
-                            'class' => '',
-                            'id' => ''
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => ''
-                    ),
-                    array(
-                        'key' => 'field_60141285d0105',
-                        'label' => __('Google Tag Manager ID', 'bricks'),
-                        'name' => 'gtag_id',
-                        'type' => 'text',
-                        'instructions' => __('Google Tag Manager tracking code. Example: GTM-0000000', 'bricks'),
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '25',
-                            'class' => '',
-                            'id' => ''
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => ''
-                    ),
-                    array(
-                        'key' => 'field_60141285d0106',
-                        'label' => __('Facebook Pixel ID', 'bricks'),
-                        'name' => 'fb_pixel_id',
-                        'type' => 'text',
-                        'instructions' => __('Facebook Pixel tracking code. Example: 000000000000000', 'bricks'),
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '25',
-                            'class' => '',
-                            'id' => ''
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => ''
-                    ),
-                    array(
                         'key' => 'field_60140662ee8f2',
                         'label' => __('Chrome Theme', 'bricks'),
                         'name' => 'theme_color',
@@ -430,24 +371,63 @@ function brk_acf_options() {
 }
 add_action('acf/init', 'brk_acf_options');
 
-// --- Contact Form 7 ---
 
-// Load CSS & JS only when needed
-// https://contactform7.com/loading-javascript-and-stylesheet-only-when-it-is-necessary/
-// https://orbitingweb.com/blog/prevent-cf7-from-loading-css-js/
+// --- Metadata ---
 
-function brk_cf7_styles_scripts(){
+function brk_head_meta() {
 
-    wp_dequeue_script('contact-form-7');
-    wp_dequeue_style('contact-form-7');
+    // --- Chrome theme ---
 
-    if ( is_page( array('contatti', 'contacts'))) {
-
-        wp_enqueue_script('contact-form-7');
-        wp_enqueue_style('contact-form-7');
-
+    $themecolor = get_field('meta_theme_color', 'option');
+   
+    if( $themecolor ) {          
+        echo '<meta name="theme-color" content="', $themecolor, '">';
     }
 
 }
+add_action('wp_head', 'brk_head_meta');
 
-// add_action('wp_enqueue_scripts', 'brk_cf7_styles_scripts' );
+
+// --- Social icons ---
+
+function brk_socialicons() {
+      
+    $brk_socialnetworks = array(
+        'facebook' => array(
+            'social-name'   => 'Facebook',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-facebook-f',
+        ),
+        'twitter' => array(
+            'social-name'   => 'Twitter',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-twitter',
+        ),
+        'linkedin' => array(
+            'social-name'   => 'LinkedIn',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-linkedin-in',
+        ),
+        'instagram' => array(
+            'social-name'   => 'Instagram',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-instagram',
+        ),
+        'pinterest' => array(
+            'social-name'   => 'Pinterest',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-pinterest-p',
+        ),
+        'youtube' => array(
+            'social-name'   => 'YouTube',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-youtube',
+        ),
+        'tripadvisor' => array(
+            'social-name'   => 'TripAdvisor',
+            'icon-style'    => 'fab',
+            'icon-name'     => 'fa-tripadvisor',
+        ),
+    );
+    return $brk_socialnetworks;
+}

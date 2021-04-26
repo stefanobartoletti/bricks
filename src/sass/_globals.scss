@@ -22,16 +22,18 @@ html {
 
 // Utility class to use img tag as a background
 
-.img-as-background {
+.has-img-background {
     position: relative;
-    background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.5));
+    // background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.5));
+    background-color: rgba(theme-color("dark"), 0.5);
     
-    img:first-child {
+    img.is-background {
         object-fit: cover;
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
+        left: 0;
         z-index: -1;
     }
 }

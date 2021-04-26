@@ -2,7 +2,7 @@
 
 /* purgecss start ignore */
 
-// @import 'globals/fontface';
+// @import 'fontface';
 
 /* purgecss end ignore */
 
@@ -10,7 +10,7 @@
 
 @import "../../node_modules/bootstrap/scss/functions"; 
 @import "../../node_modules/bootstrap/scss/variables";
-@import 'globals/theme'; // Bootstrap custom theme variables
+@import 'theme'; // Bootstrap custom theme variables
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
@@ -19,18 +19,17 @@
 /* purgecss start ignore */
 
 // @import 'integrations/aos';  // required npm packages: 'aos'
-// @import 'integrations/lightgallery';  // required npm package: 'lightgallery.js' and optional modules
 // @import 'integrations/swiper';  // required npm package: 'swiper'
 
 
 // --- WP Core required styles ---
 
-@import 'globals/wpcore';
+@import 'integrations/wpcore';
 
 
 // --- Custom styles ---
 
-@import 'globals/globals';
+@import 'globals';
 
 @import 'components/backtotop';
 

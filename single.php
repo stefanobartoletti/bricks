@@ -6,7 +6,7 @@
     
     <div class="container">
 
-        <?php get_template_part( 'templates/components/breadcrumbs', '' ); ?>
+        <?php brk_breadcrumbs(); ?>
 
         <div class="row py-5">
 

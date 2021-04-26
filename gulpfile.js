@@ -5,7 +5,7 @@ const { src, dest, watch, series, parallel } = require('gulp');
 
 // --- Configuration ---
 
-const config = require('./.config');
+const config = require('./bricks.config');
 
 
 // --- Plugins ---
@@ -27,7 +27,6 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 
 // Fonts
-const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 
 // Icons
@@ -68,10 +67,10 @@ function css() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(production(purgecss({
+        .pipe(production(gulpif(config.enable.purgecss, purgecss({
             content: config.css.content,
             safelist: config.cssSafelist,
-        })))
+        }))))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
         .pipe(dest(config.css.dist))
@@ -117,12 +116,6 @@ function img() {
 
 function fonts(done) {
     src(config.fonts.src.ttf)
-        .pipe(ttf2woff({
-            ignoreExt: true,
-        }))
-        .pipe(dest(config.fonts.dist))
-        .pipe(browserSync.stream())
-    src(config.fonts.src.ttf)
         .pipe(ttf2woff2({
             ignoreExt: true,
         }))
@@ -140,7 +133,7 @@ function fonts(done) {
 function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
-        .pipe(production(faMinify(config.usedIcons)))
+        .pipe(production(faMinify(config.faIconSafelist)))
         .pipe(production(uglify()))
         .pipe(dest(config.js.dist));
 };
@@ -163,19 +156,6 @@ function pot() {
             domain: config.textdomain,
         }))
         .pipe(dest(config.i18n.dist+'template.pot'));
-};
-
-
-// --- Libs ---
-
-function libs(done) {
-    src(config.img.lg)
-        .pipe(gulpif(fs.existsSync(config.libs.lg), dest(config.img.dist)))
-        .pipe(browserSync.stream());
-    src(config.fonts.lg)
-        .pipe(gulpif(fs.existsSync(config.libs.lg), dest(config.fonts.dist)))
-        .pipe(browserSync.stream());
-    done();
 };
 
 
@@ -245,11 +225,10 @@ exports.js = js;
 exports.img = img;
 exports.fonts = fonts;
 exports.icons = icons;
-exports.libs = libs;
 exports.pot = series(domain, pot);
 
 exports.setup = setup;
 
-exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons, libs));
-exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, libs, series(domain, pot)));
+exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
+exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
 exports.watch = parallel(browser_sync, watch_files);

@@ -65,114 +65,6 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: functions/integrations.php:25
-msgid "Options Page"
-msgstr ""
-
-#: functions/integrations.php:29, templates/footer/footer-columns.php:21
-msgid "Contacts"
-msgstr ""
-
-#: functions/integrations.php:32
-msgid "Displayed in the site footer"
-msgstr ""
-
-#: functions/integrations.php:44
-msgid "Company"
-msgstr ""
-
-#: functions/integrations.php:47
-msgid "Example: Full Company Name"
-msgstr ""
-
-#: functions/integrations.php:63
-msgid "Address - Line 1"
-msgstr ""
-
-#: functions/integrations.php:66
-msgid "Example: Street, Number"
-msgstr ""
-
-#: functions/integrations.php:82
-msgid "Address - Line 2"
-msgstr ""
-
-#: functions/integrations.php:85
-msgid "Example => Postal Code, City, State"
-msgstr ""
-
-#: functions/integrations.php:101
-msgid "Map URL"
-msgstr ""
-
-#: functions/integrations.php:104
-msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
-msgstr ""
-
-#: functions/integrations.php:117
-msgid "Phone number"
-msgstr ""
-
-#: functions/integrations.php:136
-msgid "E-mail address"
-msgstr ""
-
-#: functions/integrations.php:154
-msgid "ID Number"
-msgstr ""
-
-#: functions/integrations.php:157
-msgid "Example: Social Security Number, Fiscal Code, etc."
-msgstr ""
-
-#: functions/integrations.php:173
-msgid "VAT Number"
-msgstr ""
-
-#: functions/integrations.php:194
-msgid "Social profiles"
-msgstr ""
-
-#: functions/integrations.php:197
-msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
-msgstr ""
-
-#: functions/integrations.php:323
-msgid "Meta"
-msgstr ""
-
-#: functions/integrations.php:338
-msgid "Google Analytics ID"
-msgstr ""
-
-#: functions/integrations.php:341
-msgid "Google Analytics tracking code. Example: UA-000000000-0"
-msgstr ""
-
-#: functions/integrations.php:357
-msgid "Google Tag Manager ID"
-msgstr ""
-
-#: functions/integrations.php:360
-msgid "Google Tag Manager tracking code. Example: GTM-0000000"
-msgstr ""
-
-#: functions/integrations.php:376
-msgid "Facebook Pixel ID"
-msgstr ""
-
-#: functions/integrations.php:379
-msgid "Facebook Pixel tracking code. Example: 000000000000000"
-msgstr ""
-
-#: functions/integrations.php:395
-msgid "Chrome Theme"
-msgstr ""
-
-#: functions/integrations.php:398
-msgid "Tab color in Chrome for Android"
-msgstr ""
-
 #: functions/navmenus.php:13
 msgid "Header Menu"
 msgstr ""
@@ -183,6 +75,90 @@ msgstr ""
 
 #: functions/sidebars.php:13, functions/sidebars.php:15
 msgid "Main Sidebar"
+msgstr ""
+
+#: functions/integrations/acf.php:23
+msgid "Options Page"
+msgstr ""
+
+#: functions/integrations/acf.php:27, templates/footer/footer-columns.php:21
+msgid "Contacts"
+msgstr ""
+
+#: functions/integrations/acf.php:30
+msgid "Displayed in the site footer"
+msgstr ""
+
+#: functions/integrations/acf.php:42
+msgid "Company"
+msgstr ""
+
+#: functions/integrations/acf.php:45
+msgid "Example: Full Company Name"
+msgstr ""
+
+#: functions/integrations/acf.php:61
+msgid "Address - Line 1"
+msgstr ""
+
+#: functions/integrations/acf.php:64
+msgid "Example: Street, Number"
+msgstr ""
+
+#: functions/integrations/acf.php:80
+msgid "Address - Line 2"
+msgstr ""
+
+#: functions/integrations/acf.php:83
+msgid "Example => Postal Code, City, State"
+msgstr ""
+
+#: functions/integrations/acf.php:99
+msgid "Map URL"
+msgstr ""
+
+#: functions/integrations/acf.php:102
+msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
+msgstr ""
+
+#: functions/integrations/acf.php:115
+msgid "Phone number"
+msgstr ""
+
+#: functions/integrations/acf.php:134
+msgid "E-mail address"
+msgstr ""
+
+#: functions/integrations/acf.php:152
+msgid "ID Number"
+msgstr ""
+
+#: functions/integrations/acf.php:155
+msgid "Example: Social Security Number, Fiscal Code, etc."
+msgstr ""
+
+#: functions/integrations/acf.php:171
+msgid "VAT Number"
+msgstr ""
+
+#: functions/integrations/acf.php:192
+msgid "Social profiles"
+msgstr ""
+
+#: functions/integrations/acf.php:195
+msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
+msgstr ""
+
+#: functions/integrations/acf.php:321
+msgid "Meta"
+msgstr ""
+
+#: functions/integrations/acf.php:336
+msgid "Chrome Theme"
+msgstr ""
+
+#: functions/integrations/acf.php:339
+msgid "Tab color in Chrome for Android"
 msgstr ""
 
 #: functions/lib/class-wp-bootstrap-navwalker.php:366, functions/lib/class-wp-bootstrap-navwalker.php:366
