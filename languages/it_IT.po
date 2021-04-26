@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bricks\n"
-"POT-Creation-Date: 2021-02-26 23:37+0100\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: 404.php:12
 msgid "Oops, that page can&#39;t be found"
-msgstr "Oops, la pagina non può essere trovata."
+msgstr "Oops, la pagina non può essere trovata"
 
 #: 404.php:16
 msgid "Error 404"
@@ -38,7 +38,6 @@ msgid "One comment."
 msgstr "Un commento."
 
 #: comments.php:13
-#, php-format
 msgid "% comments."
 msgstr "% commenti."
 
@@ -58,137 +57,9 @@ msgstr "Commenti più recenti &rarr;"
 msgid "Comments are closed."
 msgstr "Commenti disabilitati."
 
-#: functions/integrations.php:25
-msgid "Options Page"
-msgstr "Pagina Opzioni"
-
-#: functions/integrations.php:29 templates/footer/footer-columns.php:21
-msgid "Contacts"
-msgstr "Contatti"
-
-#: functions/integrations.php:32
-msgid "Displayed in the site footer"
-msgstr "Mostrati nel footer del sito"
-
-#: functions/integrations.php:44
-msgid "Company"
-msgstr "Azienda"
-
-#: functions/integrations.php:47
-msgid "Example: Full Company Name"
-msgstr "Esempio: Nome legale completo dell'azienda"
-
-#: functions/integrations.php:63
-msgid "Address - Line 1"
-msgstr "Indirizzo - Linea 1"
-
-#: functions/integrations.php:66
-msgid "Example: Street, Number"
-msgstr "Esempio: Via, Numero"
-
-#: functions/integrations.php:82
-msgid "Address - Line 2"
-msgstr "Indirizzo - Linea 2"
-
-#: functions/integrations.php:85
-msgid "Example => Postal Code, City, State"
-msgstr "Esempio: CAP, Città, Provincia"
-
-#: functions/integrations.php:101
-msgid "Map URL"
-msgstr "URL della mappa"
-
-#: functions/integrations.php:104
-msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
-msgstr "Esempio: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 per Google Maps"
-
-#: functions/integrations.php:117
-msgid "Phone number"
-msgstr "Numero di telefono"
-
-#: functions/integrations.php:136
-msgid "E-mail address"
-msgstr "Indirizzo e-mail"
-
-#: functions/integrations.php:154
-msgid "ID Number"
-msgstr "Codice Fiscale"
-
-#: functions/integrations.php:157
-msgid "Example: Social Security Number, Fiscal Code, etc."
-msgstr "Esempio: codice fiscale"
-
-#: functions/integrations.php:173
-msgid "VAT Number"
-msgstr "Partita IVA"
-
-#: functions/integrations.php:194
-msgid "Social profiles"
-msgstr "Profili social"
-
-#: functions/integrations.php:197
-msgid ""
-"Full social profile addresses. Not all fields are required, only filled "
-"fields will be displayed on the site as icons"
-msgstr ""
-"Indirizzi completi dei profili social. Non è necessario riempire tutti i "
-"campi, solo quelli compilati verranno mostrati nel sito come icone."
-
-#: functions/integrations.php:323
-msgid "Meta"
-msgstr "Meta"
-
-#: functions/integrations.php:338
-msgid "Google Analytics ID"
-msgstr "Google Analytics ID"
-
-#: functions/integrations.php:341
-msgid "Google Analytics tracking code. Example: UA-000000000-0"
-msgstr "Codice di tracciamento Google Analytics. Esempio: UA-000000000-0"
-
-#: functions/integrations.php:357
-msgid "Google Tag Manager ID"
-msgstr "ID Google Tag Manager"
-
-#: functions/integrations.php:360
-msgid "Google Tag Manager tracking code. Example: GTM-0000000"
-msgstr "Codice di tracciamento Google Tag Manager. Esempio: GTM-0000000"
-
-#: functions/integrations.php:376
-msgid "Facebook Pixel ID"
-msgstr "ID Facebook Pixel"
-
-#: functions/integrations.php:379
-msgid "Facebook Pixel tracking code. Example: 000000000000000"
-msgstr "Codice di tracciamento Facebook Pixel. Esempio: 000000000000000"
-
-#: functions/integrations.php:395
-msgid "Chrome Theme"
-msgstr "Tema Chrome"
-
-#: functions/integrations.php:398
-msgid "Tab color in Chrome for Android"
-msgstr "Colore della tab in Chrome per Android"
-
-#: functions/lib/class-wp-bootstrap-navwalker.php:366
-msgid "Add a menu"
-msgstr "Aggiungi un menu"
-
-#: functions/navmenus.php:13
-msgid "Header Menu"
-msgstr "Menu Header"
-
-#: functions/navmenus.php:14
-msgid "Footer Menu"
-msgstr "Menu Footer"
-
-#: functions/sidebars.php:13 functions/sidebars.php:15
-msgid "Main Sidebar"
-msgstr "Sidebar Principale"
-
 #: index.php:20
 msgid "Results for: "
-msgstr "Risultati della ricerca per: %s"
+msgstr "Risultati della ricerca per: "
 
 #: index.php:37
 msgid "&laquo; Previous"
@@ -202,13 +73,110 @@ msgstr "Seguente &raquo;"
 msgid "Search"
 msgstr "Cerca"
 
-#: templates/content/loop-none.php:6
+#: functions/navmenus.php:13
+msgid "Header Menu"
+msgstr "Menu Header"
+
+#: functions/navmenus.php:14
+msgid "Footer Menu"
+msgstr "Menu Footer"
+
+#: functions/sidebars.php:13, functions/sidebars.php:15
+msgid "Main Sidebar"
+msgstr "Sidebar Principale"
+
+#: functions/integrations/acf.php:23
+msgid "Options Page"
+msgstr "Pagina Opzioni"
+
+#: functions/integrations/acf.php:27, templates/footer/footer-columns.php:21
+msgid "Contacts"
+msgstr "Contatti"
+
+#: functions/integrations/acf.php:30
+msgid "Displayed in the site footer"
+msgstr "Mostrati nel footer del sito"
+
+#: functions/integrations/acf.php:42
+msgid "Company"
+msgstr "Azienda"
+
+#: functions/integrations/acf.php:45
+msgid "Example: Full Company Name"
+msgstr "Esempio: Nome legale completo dell'azienda"
+
+#: functions/integrations/acf.php:61
+msgid "Address - Line 1"
+msgstr "Indirizzo - Linea 1"
+
+#: functions/integrations/acf.php:64
+msgid "Example: Street, Number"
+msgstr "Esempio: Via, Numero"
+
+#: functions/integrations/acf.php:80
+msgid "Address - Line 2"
+msgstr "Indirizzo - Linea 2"
+
+#: functions/integrations/acf.php:83
+msgid "Example => Postal Code, City, State"
+msgstr "Esempio: CAP, Città, Provincia"
+
+#: functions/integrations/acf.php:99
+msgid "Map URL"
+msgstr "URL della mappa"
+
+#: functions/integrations/acf.php:102
+msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
+msgstr "Esempio: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 per Google Maps"
+
+#: functions/integrations/acf.php:115
+msgid "Phone number"
+msgstr "Numero di telefono"
+
+#: functions/integrations/acf.php:134
+msgid "E-mail address"
+msgstr "Indirizzo e-mail"
+
+#: functions/integrations/acf.php:152
+msgid "ID Number"
+msgstr "Codice Fiscale"
+
+#: functions/integrations/acf.php:155
+msgid "Example: Social Security Number, Fiscal Code, etc."
+msgstr "Esempio: codice fiscale"
+
+#: functions/integrations/acf.php:171
+msgid "VAT Number"
+msgstr "Partita IVA"
+
+#: functions/integrations/acf.php:192
+msgid "Social profiles"
+msgstr "Profili social"
+
+#: functions/integrations/acf.php:195
 msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+"Full social profile addresses. Not all fields are required, only filled "
+"fields will be displayed on the site as icons"
 msgstr ""
-"Spiacente, ma non ci sono riscontri con i tuoi termini di ricerca. Per "
-"favore riprova con altre parole chiavi."
+"Indirizzi completi dei profili social. Non è necessario riempire tutti i "
+"campi, solo quelli compilati verranno mostrati nel sito come icone"
+
+#: functions/integrations/acf.php:321
+msgid "Meta"
+msgstr "Meta"
+
+#: functions/integrations/acf.php:336
+msgid "Chrome Theme"
+msgstr "Tema Chrome"
+
+#: functions/integrations/acf.php:339
+msgid "Tab color in Chrome for Android"
+msgstr "Colore della tab in Chrome per Android"
+
+#: functions/lib/class-wp-bootstrap-navwalker.php:366,
+#: functions/lib/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr "Aggiungi un menu"
 
 #: templates/content/loop-none.php:10
 msgid ""
@@ -217,7 +185,15 @@ msgid ""
 msgstr ""
 "Sembra che non troviamo quello che cerchi. Forse una ricerca può aiutare."
 
-#: templates/content/page.php:18 templates/content/single.php:16
+#: templates/content/loop-none.php:6
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Spiacente, ma non ci sono riscontri con i tuoi termini di ricerca. Per "
+"favore riprova con altre parole chiavi."
+
+#: templates/content/page.php:18, templates/content/single.php:16
 msgid "Part:"
 msgstr "Parte:"
 
@@ -229,11 +205,11 @@ msgstr "Pagine"
 msgid "Privacy"
 msgstr "Privacy"
 
-#: templates/sections/home-cta.php:23 templates/sections/home-news.php:39
-#: templates/sections/home-services.php:29
+#: templates/sections/home-cta.php:23, templates/sections/home-news.php:39,
+#: templates/sections/home-services.php:29,
 #: templates/sections/home-slider.php:26
 msgid "Read more"
-msgstr "Leggi tutto..."
+msgstr "Leggi tutto"
 
 #: templates/sections/home-news.php:5
 msgid "News"
@@ -246,3 +222,21 @@ msgstr "By "
 #: templates/sections/home-services.php:5
 msgid "Services"
 msgstr "Servizi"
+
+#~ msgid "Google Analytics ID"
+#~ msgstr "Google Analytics ID"
+
+#~ msgid "Google Analytics tracking code. Example: UA-000000000-0"
+#~ msgstr "Codice di tracciamento Google Analytics. Esempio: UA-000000000-0"
+
+#~ msgid "Google Tag Manager ID"
+#~ msgstr "ID Google Tag Manager"
+
+#~ msgid "Google Tag Manager tracking code. Example: GTM-0000000"
+#~ msgstr "Codice di tracciamento Google Tag Manager. Esempio: GTM-0000000"
+
+#~ msgid "Facebook Pixel ID"
+#~ msgstr "ID Facebook Pixel"
+
+#~ msgid "Facebook Pixel tracking code. Example: 000000000000000"
+#~ msgstr "Codice di tracciamento Facebook Pixel. Esempio: 000000000000000"
