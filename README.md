@@ -22,7 +22,6 @@ _A modular WordPress starter theme powered by Bootstrap and Gulp_
 - Support for localization by generation of a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/)
 - Support for integration of some optional JavaScript libraries
 
-
 ## 📖 Documentation
 
 Installation and configuration instructions and all features are documented on the [Bricks Documentation](https://bricks.stefanobartoletti.it/) website.
