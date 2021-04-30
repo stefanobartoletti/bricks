@@ -26,6 +26,10 @@ _A modular WordPress starter theme powered by Bootstrap and Gulp_
 
 Installation and configuration instructions and all features are documented on the [Bricks Documentation](https://bricks.stefanobartoletti.it/) website.
 
+## 📃 Changelog
+
+All updates up to the latest released version are documented in the [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md) file.
+
 ## 📝 License
 
 [GNU GPLv3](https://github.com/stefanobartoletti/bricks/blob/master/LICENSE.txt)
