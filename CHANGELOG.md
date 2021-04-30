@@ -5,10 +5,13 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ## [Unreleased]
 
+### Added
+- Added [release-it](https://github.com/release-it/release-it) config file
 
----
-
-## [Released]
+### Changed 
+- bump @babel/core from 7.13.16 to 7.14.0
+- bump @babel/preset-env from 7.13.15 to 7.14.0
+- bump rollup from 2.45.2 to 2.46.0
 
 ## [0.20.0] - 2021-04-27
 
