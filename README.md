@@ -5,6 +5,11 @@
 
 _A modular WordPress starter theme powered by Bootstrap and Gulp_
 
+![](https://img.shields.io/github/v/release/stefanobartoletti/bricks)
+![](https://img.shields.io/github/last-commit/stefanobartoletti/bricks)
+
+[Documentation](https://bricks.stefanobartoletti.it/) | [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md)
+
 ---
 
 </div>
