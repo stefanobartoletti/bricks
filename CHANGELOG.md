@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed 
+- Minor updates to `README.md`
+
+### Fixed
+- Minor fixes to `release-it` config
+
 ## [0.20.1] - 2021-04-30
 
 ### Added

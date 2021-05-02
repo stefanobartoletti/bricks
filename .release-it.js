@@ -4,6 +4,7 @@ module.exports = {
     },
     github: {
       release: true,
+      releaseName: null,
     },
     npm: {
       skipChecks: true,
