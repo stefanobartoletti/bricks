@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 
 ### Changed 
+- bump fs-extra from 9.1.0 to 10.0.0
 - Minor updates to `README.md`
 
 ### Fixed
