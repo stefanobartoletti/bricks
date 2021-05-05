@@ -43,6 +43,6 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-wp-pot": "^2.5.0",
-    "rollup": "^2.46.0"
+    "rollup": "^2.47.0"
   }
 }
