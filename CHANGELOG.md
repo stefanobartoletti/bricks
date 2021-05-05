@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 
 ### Changed 
+- bump rollup from 2.46.0 to 2.47.0
+- bump @rollup/plugin-node-resolve from 11.2.1 to 13.0.0
+- bump @rollup/plugin-commonjs from 18.0.0 to 18.1.0
+- bump @babel/preset-env from 7.14.0 to 7.14.1
 - bump fs-extra from 9.1.0 to 10.0.0
 - Minor updates to `README.md`
 
