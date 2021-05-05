@@ -6,12 +6,15 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 
 ### Changed 
-- bump rollup from 2.46.0 to 2.47.0
-- bump @rollup/plugin-node-resolve from 11.2.1 to 13.0.0
-- bump @rollup/plugin-commonjs from 18.0.0 to 18.1.0
-- bump @babel/preset-env from 7.14.0 to 7.14.1
-- bump fs-extra from 9.1.0 to 10.0.0
+- Bump rollup from 2.46.0 to 2.47.0
+- Bump @rollup/plugin-node-resolve from 11.2.1 to 13.0.0
+- Bump @rollup/plugin-commonjs from 18.0.0 to 18.1.0
+- Bump @babel/preset-env from 7.14.0 to 7.14.1
 - Minor updates to `README.md`
+
+### Removed
+- Removed unneeded `setup` task from Gulp
+- Removed `fs-extra` dependency
 
 ### Fixed
 - Minor fixes to `release-it` config
@@ -22,14 +25,13 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 - Added [release-it](https://github.com/release-it/release-it) config file
 
 ### Changed 
-- bump @babel/core from 7.13.16 to 7.14.0
-- bump @babel/preset-env from 7.13.15 to 7.14.0
-- bump rollup from 2.45.2 to 2.46.0
+- Bump @babel/core from 7.13.16 to 7.14.0
+- Bump @babel/preset-env from 7.13.15 to 7.14.0
+- Bump rollup from 2.45.2 to 2.46.0
 
 ## [0.20.0] - 2021-04-27
 
 ### Added
-
 - First public and documented version
 - Adoption of a changelog under [Keep a Changelog][Keep a Changelog] standard
 

@@ -103,11 +103,4 @@ module.exports = {
         ],
     },
 
-    setup: {
-        dirs: [
-            './src/fonts/',
-            './src/img/',
-        ]
-    } 
-
 }
