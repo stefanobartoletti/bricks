@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Security
+
+- Security update of some dependencies in yarn.lock (`ua-parser-js`, `hosted-git-info`, `lodash`)
+
 ## [0.20.1] - 2021-04-30
 
 ### Added
