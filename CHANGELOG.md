@@ -19,6 +19,12 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ### Fixed
 - Minor fixes to `release-it` config
 
+## [0.20.2] - 2021-05-09
+
+### Security
+
+- Security update of some dependencies in yarn.lock (`ua-parser-js`, `hosted-git-info`, `lodash`)
+
 ## [0.20.1] - 2021-04-30
 
 ### Added
@@ -43,5 +49,6 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.20.2]: https://github.com/stefanobartoletti/bricks/compare/v0.20.1...v0.20.2
 [0.20.1]: https://github.com/stefanobartoletti/bricks/compare/v0.20.0...v0.20.1
 [0.20.0]: https://github.com/stefanobartoletti/bricks/releases/v0.20.0
