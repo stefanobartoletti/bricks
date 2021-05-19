@@ -21,7 +21,7 @@ const rollup = require('@rbnlffl/gulp-rollup');
 const babel = require('@rollup/plugin-babel').babel;
 const commonjs = require('@rollup/plugin-commonjs');
 const resolve = require('@rollup/plugin-node-resolve').nodeResolve;
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 
 // Images
 const imagemin = require('gulp-imagemin');
@@ -88,7 +88,11 @@ function js(done) {
                 commonjs(),
                 resolve()
             ]},{ format: 'umd' }))
-        .pipe(production(uglify()))
+        .pipe(production(terser({
+            format: {
+                comments: false,
+            },
+        })))
         .pipe(rename({
             suffix: '.min'
         }))
@@ -133,7 +137,11 @@ function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
         .pipe(production(faMinify(config.faIconSafelist)))
-        .pipe(production(uglify()))
+        .pipe(production(terser({
+            format: {
+                comments: false,
+            },
+        })))
         .pipe(dest(config.js.dist));
 };
 

@@ -6,11 +6,13 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 
 ### Changed 
-- Bump rollup from 2.46.0 to 2.47.0
+- Replaced outdated `gulp-uglify` with `gulp-terser` as JavaScript minifier
+- Bump rollup from 2.46.0 to 2.48.0
 - Bump @rollup/plugin-node-resolve from 11.2.1 to 13.0.0
 - Bump @rollup/plugin-commonjs from 18.0.0 to 19.1.0
 - Bump @babel/preset-env from 7.14.0 to 7.14.2
-- Bump @babel/core from 7.14.0 to 7.14.2
+- Bump @babel/core from 7.14.0 to 7.14.3
+- Bump bootstrap.native from 3.0.14 to 3.0.15
 - Minor updates to `README.md`
 
 ### Removed
