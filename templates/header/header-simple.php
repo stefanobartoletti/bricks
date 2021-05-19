@@ -31,7 +31,9 @@
         
         get_search_form();
         
-        get_template_part( 'templates/components/socialicons', '' );
+        if ( class_exists('ACF') ) { 
+            get_template_part( 'templates/components/socialicons', '' );
+        };
         
         ?>
 

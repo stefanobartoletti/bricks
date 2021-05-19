@@ -22,55 +22,59 @@
 
             <ul class="list-unstyled navbar-nav flex-column">
 
+                <?php if ( class_exists('ACF') ) {
+
+                    $company = get_field('contacts_company', 'option');
+                    $address1 = get_field('contacts_address_1', 'option');
+                    $address2 = get_field('contacts_address_2', 'option');
+                    $mapurl = get_field('contacts_map_url', 'option');
+                    $phone = get_field('contacts_phone', 'option');
+                    $email = get_field('contacts_email', 'option');
+                    $idnumber = get_field('contacts_id_number', 'option');
+                    $vatnumber = get_field('contacts_vat_number', 'option');               
+                    
+                    if( $address1 ) { ?>
+
+                        <li class="media mb-3">
+                            <i class="fas fa-map-marker-alt fa-fw mt-1 nav-link p-0"></i>
+                            <div class="media-body ml-3">
+                                <?php                                                   
+                                echo $mapurl ? '<a class="nav-link p-0" href="' . $mapurl . '" target="_blank">' : '<p>';
+                                echo $company ? $company . ', <br>' : '';
+                                echo $address1 ? $address1 : '';
+                                echo $address2 ? ', <br>' . $address2 : '';
+                                echo $mapurl ? '</a>' : '<p>';
+                                ?>
+                            </div>
+                        </li>
+
+                    <?php }; if( $phone ) { ?>
+
+                        <li class="media mb-3">
+                            <i class="fas fa-phone fa-fw mt-1 nav-link p-0"></i>
+                            <div class="media-body ml-3">
+                                <a class="nav-link p-0" href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
+                            </div>
+                        </li>
+
+                    <?php }; if( $email ) { ?>
+
+                        <li class="media mb-3">
+                            <i class="fas fa-envelope fa-fw mt-1 nav-link p-0"></i>
+                            <div class="media-body ml-3">
+                                <a class="nav-link p-0" href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
+                            </div>
+                        </li>
+
+                    <?php }; ?>
+
+                </ul>
+
                 <?php 
                 
-                $company = get_field('contacts_company', 'option');
-                $address1 = get_field('contacts_address_1', 'option');
-                $address2 = get_field('contacts_address_2', 'option');
-                $mapurl = get_field('contacts_map_url', 'option');
-                $phone = get_field('contacts_phone', 'option');
-                $email = get_field('contacts_email', 'option');
-                $idnumber = get_field('contacts_id_number', 'option');
-                $vatnumber = get_field('contacts_vat_number', 'option');               
+                get_template_part( 'templates/components/socialicons', '' );
                 
-                if( $address1 ) { ?>
-
-                    <li class="media mb-3">
-                        <i class="fas fa-map-marker-alt fa-fw mt-1 nav-link p-0"></i>
-                        <div class="media-body ml-3">
-                            <?php                                                   
-                            echo $mapurl ? '<a class="nav-link p-0" href="' . $mapurl . '" target="_blank">' : '<p>';
-                            echo $company ? $company . ', <br>' : '';
-                            echo $address1 ? $address1 : '';
-                            echo $address2 ? ', <br>' . $address2 : '';
-                            echo $mapurl ? '</a>' : '<p>';
-                            ?>
-                        </div>
-                    </li>
-
-                <?php }; if( $phone ) { ?>
-
-                    <li class="media mb-3">
-                        <i class="fas fa-phone fa-fw mt-1 nav-link p-0"></i>
-                        <div class="media-body ml-3">
-                            <a class="nav-link p-0" href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
-                        </div>
-                    </li>
-
-                <?php }; if( $email ) { ?>
-
-                    <li class="media mb-3">
-                        <i class="fas fa-envelope fa-fw mt-1 nav-link p-0"></i>
-                        <div class="media-body ml-3">
-                            <a class="nav-link p-0" href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
-                        </div>
-                    </li>
-
-                <?php }; ?>
-
-            </ul>
-
-            <?php get_template_part( 'templates/components/socialicons', '' ); ?>
+                } // closes "if ( class_exists('ACF') )" ?>
             
         </div>
 

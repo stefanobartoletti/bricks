@@ -21,7 +21,7 @@ const rollup = require('@rbnlffl/gulp-rollup');
 const babel = require('@rollup/plugin-babel').babel;
 const commonjs = require('@rollup/plugin-commonjs');
 const resolve = require('@rollup/plugin-node-resolve').nodeResolve;
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 
 // Images
 const imagemin = require('gulp-imagemin');
@@ -40,7 +40,6 @@ const wpPot = require('gulp-wp-pot');
 const rename = require('gulp-rename');
 const gulpif = require('gulp-if');
 const del = require('del');
-const fs = require('fs-extra')
 const sourcemaps = require('gulp-sourcemaps');
 
 const environments = require('gulp-environments');
@@ -89,7 +88,11 @@ function js(done) {
                 commonjs(),
                 resolve()
             ]},{ format: 'umd' }))
-        .pipe(production(uglify()))
+        .pipe(production(terser({
+            format: {
+                comments: false,
+            },
+        })))
         .pipe(rename({
             suffix: '.min'
         }))
@@ -134,7 +137,11 @@ function icons() {
     return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
         .pipe(production(faMinify(config.faIconSafelist)))
-        .pipe(production(uglify()))
+        .pipe(production(terser({
+            format: {
+                comments: false,
+            },
+        })))
         .pipe(dest(config.js.dist));
 };
 
@@ -197,23 +204,12 @@ function clearCache(done) {
     done();
 };
 
-function watch_files(done) {
+function watchFiles(done) {
     watch(config.css.watch, series(css, clearCache, reload));
     watch(config.js.watch, series(js, clearCache, reload));
     watch(config.php.watch, series(clearCache, reload));
     watch(config.img.watch, series(img, clearCache, reload));
     watch(config.fonts.watch, series(fonts, clearCache, reload));
-    done();
-};
-
-
-// --- Setup ---
-
-function setup(done) {
-    // create required directories
-    config.setup.dirs.forEach(function (dir) {
-        fs.ensureDir(dir);
-    })
     done();
 };
 
@@ -227,8 +223,6 @@ exports.fonts = fonts;
 exports.icons = icons;
 exports.pot = series(domain, pot);
 
-exports.setup = setup;
-
 exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
 exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
-exports.watch = parallel(browser_sync, watch_files);
+exports.watch = parallel(browser_sync, watchFiles);
