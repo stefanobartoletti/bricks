@@ -2,24 +2,25 @@
                
     <span class="navbar-text">
 
-        <?php
-        
-        $company = get_field('contacts_company', 'option');
-        $address1 = get_field('contacts_address_1', 'option');
-        $address2 = get_field('contacts_address_2', 'option');
-        $mapurl = get_field('contacts_map_url', 'option');
-        $phone = get_field('contacts_phone', 'option');
-        $email = get_field('contacts_email', 'option');
-        $idnumber = get_field('contacts_id_number', 'option');
-        $vatnumber = get_field('contacts_vat_number', 'option');  
+        <?php if ( class_exists('ACF') ) {
 
-        echo "&#169; ".date('o'); 
-        echo $company ? ' | ' . $company : '';
-        echo $address1 ? ' | ' . $address1 : '';
-        echo $address2 ? ', ' . $address2 : '';
-        echo $idnumber ? ' | c.f. ' . $idnumber : '';
-        echo $vatnumber ? ' | p.i. ' . $vatnumber : '';
-        ?>
+                $company = get_field('contacts_company', 'option');
+                $address1 = get_field('contacts_address_1', 'option');
+                $address2 = get_field('contacts_address_2', 'option');
+                $mapurl = get_field('contacts_map_url', 'option');
+                $phone = get_field('contacts_phone', 'option');
+                $email = get_field('contacts_email', 'option');
+                $idnumber = get_field('contacts_id_number', 'option');
+                $vatnumber = get_field('contacts_vat_number', 'option');  
+
+                echo "&#169; ".date('o'); 
+                echo $company ? ' | ' . $company : '';
+                echo $address1 ? ' | ' . $address1 : '';
+                echo $address2 ? ', ' . $address2 : '';
+                echo $idnumber ? ' | c.f. ' . $idnumber : '';
+                echo $vatnumber ? ' | p.i. ' . $vatnumber : '';
+            
+            } ?>
         
     </span>
 

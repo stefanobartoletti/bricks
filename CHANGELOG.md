@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 - Removed `fs-extra` dependency
 
 ### Fixed
+- Add a condition that checks ACF existence before using its functions
 - Minor fixes to `release-it` config
 
 ## [0.20.2] - 2021-05-09
