@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
-## [Unreleased]
+## [0.21.1] - 2021-05-26
 
 ### Changed 
 - Bump rollup from 2.48.0 to 2.50.0
@@ -61,6 +61,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.21.1]: https://github.com/stefanobartoletti/bricks/compare/v0.21.0...v0.21.1
 [0.21.0]: https://github.com/stefanobartoletti/bricks/compare/v0.20.2...v0.21.0
 [0.20.2]: https://github.com/stefanobartoletti/bricks/compare/v0.20.1...v0.20.2
 [0.20.1]: https://github.com/stefanobartoletti/bricks/compare/v0.20.0...v0.20.1
