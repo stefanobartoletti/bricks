@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed 
+- Bump rollup from 2.48.0 to 2.50.0
+
+### Fixed
+- Security update browserslist from 4.16.1 to 4.16.6
+
 ## [0.21.0] - 2021-05-19
 
 ### Changed 
