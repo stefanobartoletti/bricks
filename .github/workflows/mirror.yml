@@ -1,15 +1,14 @@
 name: Mirroring
 
-on: [push, delete]
+on: [ push, delete, create ]
 
 jobs:
-  to_gitlab:
+  git-mirror:
     runs-on: ubuntu-latest
-    steps:                                     
-    - uses: actions/checkout@v1
-    - uses: pixta-dev/repository-mirroring-action@v1
-      with:
-        target_repo_url:
-          git@gitlab.com:stefanobartoletti/bricks.git
-        ssh_private_key:                               
-          ${{ secrets.ID_STEFANO }}
+    steps:
+      - uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.ID_STEFANO }}
+        with:
+          source-repo: "git@github.com:stefanobartoletti/bricks.git"
+          destination-repo: "git@gitlab.com:stefanobartoletti/bricks.git"
