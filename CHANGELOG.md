@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed 
+- Bump gulp-autoprefixer from 7.0.1 to 8.0.0
+- Bump rollup from 2.50.0 to 2.50.5
+- Bump @babel/preset-env from 7.14.2 to 7.14.4
+
+### Fixed
+- Security update ws from 7.4.2 to 7.4.6
+
 ## [0.21.1] - 2021-05-26
 
 ### Changed 
