@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Fixed
+- Revert bootstrap.native to version 3.0.14
+
 ## [0.21.2] - 2021-05-31
 
 ### Changed 

@@ -7,8 +7,7 @@ var backToTop = document.querySelector('#backtotop');
 if (backToTop) {
 
     document.addEventListener('scroll', function () {
-        var scrolled = html.scrollTop;
-        if (scrolled > 200) {
+        if (html.scrollTop > 200) {
             backToTop.classList.remove('hidden');
         } else {
             backToTop.classList.add('hidden');

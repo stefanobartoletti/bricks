@@ -7,8 +7,7 @@ var header = document.querySelector('#header-wrapper');
 if (header) {
 
     document.addEventListener('scroll', function () {
-        var scrolled = html.scrollTop;
-        if (scrolled > 50) {
+        if (html.scrollTop > 50) {
             header.classList.add('header-scrolled');
         } else {
             header.classList.remove('header-scrolled');
