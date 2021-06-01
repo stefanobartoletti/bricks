@@ -25,7 +25,7 @@
     </span>
 
     <span id="brk-signature" class="navbar-text ml-md-auto">
-        <a class="text-white-50" href="https://github.com/stefanobartoletti/bricks" target="_blank">
+        <a class="text-white-50" href="https://bricks.stefanobartoletti.it" target="_blank">
             Made with <?php echo file_get_contents(get_template_directory().'/dist/img/logo-small.svg') ?> Bricks
         </a>
     </span>
