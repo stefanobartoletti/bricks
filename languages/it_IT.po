@@ -94,63 +94,63 @@ msgstr "Contatti"
 msgid "Displayed in the site footer"
 msgstr "Mostrati nel footer del sito"
 
-#: functions/integrations/acf.php:44
+#: functions/integrations/acf.php:37
 msgid "Company"
 msgstr "Azienda"
 
-#: functions/integrations/acf.php:47
+#: functions/integrations/acf.php:40
 msgid "Example: Full Company Name"
 msgstr "Esempio: Nome legale completo dell'azienda"
 
-#: functions/integrations/acf.php:63
+#: functions/integrations/acf.php:47
 msgid "Address - Line 1"
 msgstr "Indirizzo - Linea 1"
 
-#: functions/integrations/acf.php:66
+#: functions/integrations/acf.php:50
 msgid "Example: Street, Number"
 msgstr "Esempio: Via, Numero"
 
-#: functions/integrations/acf.php:82
+#: functions/integrations/acf.php:57
 msgid "Address - Line 2"
 msgstr "Indirizzo - Linea 2"
 
-#: functions/integrations/acf.php:85
+#: functions/integrations/acf.php:60
 msgid "Example => Postal Code, City, State"
 msgstr "Esempio: CAP, Città, Provincia"
 
-#: functions/integrations/acf.php:101
+#: functions/integrations/acf.php:67
 msgid "Map URL"
 msgstr "URL della mappa"
 
-#: functions/integrations/acf.php:104
+#: functions/integrations/acf.php:70
 msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
 msgstr "Esempio: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 per Google Maps"
 
-#: functions/integrations/acf.php:117
+#: functions/integrations/acf.php:77
 msgid "Phone number"
 msgstr "Numero di telefono"
 
-#: functions/integrations/acf.php:136
+#: functions/integrations/acf.php:86
 msgid "E-mail address"
 msgstr "Indirizzo e-mail"
 
-#: functions/integrations/acf.php:154
+#: functions/integrations/acf.php:95
 msgid "ID Number"
 msgstr "Codice Fiscale"
 
-#: functions/integrations/acf.php:157
+#: functions/integrations/acf.php:98
 msgid "Example: Social Security Number, Fiscal Code, etc."
 msgstr "Esempio: codice fiscale"
 
-#: functions/integrations/acf.php:173
+#: functions/integrations/acf.php:105
 msgid "VAT Number"
 msgstr "Partita IVA"
 
-#: functions/integrations/acf.php:224, functions/integrations/acf.php:228
+#: functions/integrations/acf.php:146, functions/integrations/acf.php:150
 msgid "Social profiles"
 msgstr "Profili social"
 
-#: functions/integrations/acf.php:231
+#: functions/integrations/acf.php:153
 msgid ""
 "Full social profile addresses. Not all fields are required, only filled "
 "fields will be displayed on the site as icons"
@@ -158,15 +158,15 @@ msgstr ""
 "Indirizzi completi dei profili social. Non è necessario riempire tutti i "
 "campi, solo quelli compilati verranno mostrati nel sito come icone"
 
-#: functions/integrations/acf.php:387, functions/integrations/acf.php:391
+#: functions/integrations/acf.php:253, functions/integrations/acf.php:257
 msgid "Meta"
 msgstr "Meta"
 
-#: functions/integrations/acf.php:406
+#: functions/integrations/acf.php:264
 msgid "Chrome Theme"
 msgstr "Tema Chrome"
 
-#: functions/integrations/acf.php:409
+#: functions/integrations/acf.php:267
 msgid "Tab color in Chrome for Android"
 msgstr "Colore della tab in Chrome per Android"
 
