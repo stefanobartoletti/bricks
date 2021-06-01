@@ -17,7 +17,7 @@ msgstr ""
 "esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -85,75 +85,72 @@ msgstr "Menu Footer"
 msgid "Main Sidebar"
 msgstr "Sidebar Principale"
 
-#: functions/integrations/acf.php:23
-msgid "Options Page"
-msgstr "Pagina Opzioni"
-
-#: functions/integrations/acf.php:27, templates/footer/footer-columns.php:21
+#: functions/integrations/acf.php:25, functions/integrations/acf.php:29,
+#: templates/footer/footer-columns.php:21
 msgid "Contacts"
 msgstr "Contatti"
 
-#: functions/integrations/acf.php:30
+#: functions/integrations/acf.php:32
 msgid "Displayed in the site footer"
 msgstr "Mostrati nel footer del sito"
 
-#: functions/integrations/acf.php:42
+#: functions/integrations/acf.php:37
 msgid "Company"
 msgstr "Azienda"
 
-#: functions/integrations/acf.php:45
+#: functions/integrations/acf.php:40
 msgid "Example: Full Company Name"
 msgstr "Esempio: Nome legale completo dell'azienda"
 
-#: functions/integrations/acf.php:61
+#: functions/integrations/acf.php:47
 msgid "Address - Line 1"
 msgstr "Indirizzo - Linea 1"
 
-#: functions/integrations/acf.php:64
+#: functions/integrations/acf.php:50
 msgid "Example: Street, Number"
 msgstr "Esempio: Via, Numero"
 
-#: functions/integrations/acf.php:80
+#: functions/integrations/acf.php:57
 msgid "Address - Line 2"
 msgstr "Indirizzo - Linea 2"
 
-#: functions/integrations/acf.php:83
+#: functions/integrations/acf.php:60
 msgid "Example => Postal Code, City, State"
 msgstr "Esempio: CAP, Città, Provincia"
 
-#: functions/integrations/acf.php:99
+#: functions/integrations/acf.php:67
 msgid "Map URL"
 msgstr "URL della mappa"
 
-#: functions/integrations/acf.php:102
+#: functions/integrations/acf.php:70
 msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
 msgstr "Esempio: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 per Google Maps"
 
-#: functions/integrations/acf.php:115
+#: functions/integrations/acf.php:77
 msgid "Phone number"
 msgstr "Numero di telefono"
 
-#: functions/integrations/acf.php:134
+#: functions/integrations/acf.php:86
 msgid "E-mail address"
 msgstr "Indirizzo e-mail"
 
-#: functions/integrations/acf.php:152
+#: functions/integrations/acf.php:95
 msgid "ID Number"
 msgstr "Codice Fiscale"
 
-#: functions/integrations/acf.php:155
+#: functions/integrations/acf.php:98
 msgid "Example: Social Security Number, Fiscal Code, etc."
 msgstr "Esempio: codice fiscale"
 
-#: functions/integrations/acf.php:171
+#: functions/integrations/acf.php:105
 msgid "VAT Number"
 msgstr "Partita IVA"
 
-#: functions/integrations/acf.php:192
+#: functions/integrations/acf.php:146, functions/integrations/acf.php:150
 msgid "Social profiles"
 msgstr "Profili social"
 
-#: functions/integrations/acf.php:195
+#: functions/integrations/acf.php:153
 msgid ""
 "Full social profile addresses. Not all fields are required, only filled "
 "fields will be displayed on the site as icons"
@@ -161,15 +158,15 @@ msgstr ""
 "Indirizzi completi dei profili social. Non è necessario riempire tutti i "
 "campi, solo quelli compilati verranno mostrati nel sito come icone"
 
-#: functions/integrations/acf.php:321
+#: functions/integrations/acf.php:253, functions/integrations/acf.php:257
 msgid "Meta"
 msgstr "Meta"
 
-#: functions/integrations/acf.php:336
+#: functions/integrations/acf.php:264
 msgid "Chrome Theme"
 msgstr "Tema Chrome"
 
-#: functions/integrations/acf.php:339
+#: functions/integrations/acf.php:267
 msgid "Tab color in Chrome for Android"
 msgstr "Colore della tab in Chrome per Android"
 
@@ -197,11 +194,11 @@ msgstr ""
 msgid "Part:"
 msgstr "Parte:"
 
-#: templates/footer/footer-columns.php:79
+#: templates/footer/footer-columns.php:83
 msgid "Pages"
 msgstr "Pagine"
 
-#: templates/footer/footer-columns.php:96
+#: templates/footer/footer-columns.php:100
 msgid "Privacy"
 msgstr "Privacy"
 
@@ -222,21 +219,3 @@ msgstr "By "
 #: templates/sections/home-services.php:5
 msgid "Services"
 msgstr "Servizi"
-
-#~ msgid "Google Analytics ID"
-#~ msgstr "Google Analytics ID"
-
-#~ msgid "Google Analytics tracking code. Example: UA-000000000-0"
-#~ msgstr "Codice di tracciamento Google Analytics. Esempio: UA-000000000-0"
-
-#~ msgid "Google Tag Manager ID"
-#~ msgstr "ID Google Tag Manager"
-
-#~ msgid "Google Tag Manager tracking code. Example: GTM-0000000"
-#~ msgstr "Codice di tracciamento Google Tag Manager. Esempio: GTM-0000000"
-
-#~ msgid "Facebook Pixel ID"
-#~ msgstr "ID Facebook Pixel"
-
-#~ msgid "Facebook Pixel tracking code. Example: 000000000000000"
-#~ msgstr "Codice di tracciamento Facebook Pixel. Esempio: 000000000000000"
