@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Refactored `functions/integrations/acf.php` for cleaner code.
+- Refactored `functions/cleanup.php` for cleaner code; separated functions in smaller scopes.
+
 ## [0.21.3] - 2021-06-01
 
 ### Fixed
