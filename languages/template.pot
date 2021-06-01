@@ -77,87 +77,83 @@ msgstr ""
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions/integrations/acf.php:23
-msgid "Options Page"
-msgstr ""
-
-#: functions/integrations/acf.php:27, templates/footer/footer-columns.php:21
+#: functions/integrations/acf.php:25, functions/integrations/acf.php:29, templates/footer/footer-columns.php:21
 msgid "Contacts"
 msgstr ""
 
-#: functions/integrations/acf.php:30
+#: functions/integrations/acf.php:32
 msgid "Displayed in the site footer"
 msgstr ""
 
-#: functions/integrations/acf.php:42
+#: functions/integrations/acf.php:44
 msgid "Company"
 msgstr ""
 
-#: functions/integrations/acf.php:45
+#: functions/integrations/acf.php:47
 msgid "Example: Full Company Name"
 msgstr ""
 
-#: functions/integrations/acf.php:61
+#: functions/integrations/acf.php:63
 msgid "Address - Line 1"
 msgstr ""
 
-#: functions/integrations/acf.php:64
+#: functions/integrations/acf.php:66
 msgid "Example: Street, Number"
 msgstr ""
 
-#: functions/integrations/acf.php:80
+#: functions/integrations/acf.php:82
 msgid "Address - Line 2"
 msgstr ""
 
-#: functions/integrations/acf.php:83
+#: functions/integrations/acf.php:85
 msgid "Example => Postal Code, City, State"
 msgstr ""
 
-#: functions/integrations/acf.php:99
+#: functions/integrations/acf.php:101
 msgid "Map URL"
 msgstr ""
 
-#: functions/integrations/acf.php:102
+#: functions/integrations/acf.php:104
 msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
 msgstr ""
 
-#: functions/integrations/acf.php:115
+#: functions/integrations/acf.php:117
 msgid "Phone number"
 msgstr ""
 
-#: functions/integrations/acf.php:134
+#: functions/integrations/acf.php:136
 msgid "E-mail address"
 msgstr ""
 
-#: functions/integrations/acf.php:152
+#: functions/integrations/acf.php:154
 msgid "ID Number"
 msgstr ""
 
-#: functions/integrations/acf.php:155
+#: functions/integrations/acf.php:157
 msgid "Example: Social Security Number, Fiscal Code, etc."
 msgstr ""
 
-#: functions/integrations/acf.php:171
+#: functions/integrations/acf.php:173
 msgid "VAT Number"
 msgstr ""
 
-#: functions/integrations/acf.php:192
+#: functions/integrations/acf.php:224, functions/integrations/acf.php:228
 msgid "Social profiles"
 msgstr ""
 
-#: functions/integrations/acf.php:195
+#: functions/integrations/acf.php:231
 msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
 msgstr ""
 
-#: functions/integrations/acf.php:321
+#: functions/integrations/acf.php:387, functions/integrations/acf.php:391
 msgid "Meta"
 msgstr ""
 
-#: functions/integrations/acf.php:336
+#: functions/integrations/acf.php:406
 msgid "Chrome Theme"
 msgstr ""
 
-#: functions/integrations/acf.php:339
+#: functions/integrations/acf.php:409
 msgid "Tab color in Chrome for Android"
 msgstr ""
 
@@ -177,11 +173,11 @@ msgstr ""
 msgid "Part:"
 msgstr ""
 
-#: templates/footer/footer-columns.php:79
+#: templates/footer/footer-columns.php:83
 msgid "Pages"
 msgstr ""
 
-#: templates/footer/footer-columns.php:96
+#: templates/footer/footer-columns.php:100
 msgid "Privacy"
 msgstr ""
 

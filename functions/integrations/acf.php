@@ -17,12 +17,12 @@ if( function_exists('acf_add_options_page') ) {
 
 if ( class_exists('ACF') ) {
 
-    function brk_acf_options() {
+    function brk_acf_contacts() {
         
         acf_add_local_field_group(array(
 
-            'key' => 'group_theme_options',
-            'title' => __('Options Page', 'bricks'),
+            'key' => 'group_theme_contacts',
+            'title' => __('Contacts', 'bricks'),
             'fields' => array(
                 array(
                     'key' => 'field_6013f4fcd2434',
@@ -188,7 +188,41 @@ if ( class_exists('ACF') ) {
                             'maxlength' => ''
                         )
                     )
-                ),
+                )
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'options_page',
+                        'operator' => '==',
+                        'value' => 'acf-options'
+                    )
+                )
+            ),
+            'menu_order' => 0,
+            'position' => 'normal',
+            'style' => 'seamless',
+            'label_placement' => 'top',
+            'instruction_placement' => 'label',
+            'hide_on_screen' => '',
+            'active' => true,
+            'description' => '',
+        ));
+        
+    }
+    add_action('acf/init', 'brk_acf_contacts');
+
+}
+
+if ( class_exists('ACF') ) {
+
+    function brk_acf_social() {
+        
+        acf_add_local_field_group(array(
+
+            'key' => 'group_theme_social',
+            'title' => __('Social profiles', 'bricks'),
+            'fields' => array(
                 array(
                     'key' => 'field_601400d769ba3',
                     'label' => __('Social profiles', 'bricks'),
@@ -317,7 +351,41 @@ if ( class_exists('ACF') ) {
                             'placeholder' => ''
                         )
                     )
-                ),
+                )
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'options_page',
+                        'operator' => '==',
+                        'value' => 'acf-options'
+                    )
+                )
+            ),
+            'menu_order' => 1,
+            'position' => 'normal',
+            'style' => 'seamless',
+            'label_placement' => 'top',
+            'instruction_placement' => 'label',
+            'hide_on_screen' => '',
+            'active' => true,
+            'description' => '',
+        ));
+        
+    }
+    add_action('acf/init', 'brk_acf_social');
+
+}
+
+if ( class_exists('ACF') ) {
+
+    function brk_acf_meta() {
+        
+        acf_add_local_field_group(array(
+
+            'key' => 'group_theme_meta',
+            'title' => __('Meta', 'bricks'),
+            'fields' => array(
                 array(
                     'key' => 'field_60140651ee8f1',
                     'label' => __('Meta', 'bricks'),
@@ -360,7 +428,7 @@ if ( class_exists('ACF') ) {
                     )
                 )
             ),
-            'menu_order' => 0,
+            'menu_order' => 2,
             'position' => 'normal',
             'style' => 'seamless',
             'label_placement' => 'top',
@@ -371,8 +439,7 @@ if ( class_exists('ACF') ) {
         ));
         
     }
-    add_action('acf/init', 'brk_acf_options');
-
+    add_action('acf/init', 'brk_acf_meta');
 
     // --- Metadata ---
 
