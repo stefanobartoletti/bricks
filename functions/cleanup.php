@@ -10,8 +10,7 @@
 add_action('init', 'brk_disable_gutenberg');        // https://metabox.io/disable-gutenberg-without-using-plugins/
 add_action('init', 'brk_disable_emojis');           // https://wordpress.stackexchange.com/q/185577/
 add_action('init', 'brk_disable_oembed');           // https://wordpress.stackexchange.com/q/211467/
-add_action('init', 'brk_disable_query_strings');    // https://stackoverflow.com/q/38288476/
-add_action('wp_enqueue_scripts', 'brk_disable_dashicons');    // https://wordpress.stackexchange.com/a/281482/
+// add_action('init', 'brk_disable_query_strings');    // https://stackoverflow.com/q/38288476/
 add_action('wp_enqueue_scripts', 'brk_jquery_footer');    // https://wordpress.stackexchange.com/a/173605/
 add_action('init', 'brk_disable_head_links');
 
@@ -70,12 +69,6 @@ function brk_disable_query_strings() {
     if ( !is_admin() ) {
         add_filter('script_loader_src', 'rm_query_string', 15, 1);
         add_filter('style_loader_src', 'rm_query_string', 15, 1);
-    }
-}
-
-function brk_disable_dashicons() {
-    if ( ! is_user_logged_in() ) {
-        wp_deregister_style( 'dashicons' );
     }
 }
 
