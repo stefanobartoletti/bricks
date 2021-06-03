@@ -12,7 +12,7 @@
         'theme_location'    => 'footer',
         'depth'             => 1,
         'container'         => 'nav',
-        'container_class'   => 'mt-5 mt-md-0 ml-md-auto',
+        'container_class'   => 'mt-5 mt-md-0 ms-md-auto',
         'container_id'      => '',
         'menu_class'        => 'footer-menu navbar-nav',
         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',

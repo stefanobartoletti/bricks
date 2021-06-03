@@ -37,7 +37,7 @@
 
                         <li class="media mb-3">
                             <i class="fas fa-map-marker-alt fa-fw mt-1 nav-link p-0"></i>
-                            <div class="media-body ml-3">
+                            <div class="media-body ms-3">
                                 <?php                                                   
                                 echo $mapurl ? '<a class="nav-link p-0" href="' . $mapurl . '" target="_blank">' : '<p>';
                                 echo $company ? $company . ', <br>' : '';
@@ -52,7 +52,7 @@
 
                         <li class="media mb-3">
                             <i class="fas fa-phone fa-fw mt-1 nav-link p-0"></i>
-                            <div class="media-body ml-3">
+                            <div class="media-body ms-3">
                                 <a class="nav-link p-0" href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
                             </div>
                         </li>
@@ -61,7 +61,7 @@
 
                         <li class="media mb-3">
                             <i class="fas fa-envelope fa-fw mt-1 nav-link p-0"></i>
-                            <div class="media-body ml-3">
+                            <div class="media-body ms-3">
                                 <a class="nav-link p-0" href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
                             </div>
                         </li>
