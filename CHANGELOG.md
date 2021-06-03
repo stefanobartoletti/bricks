@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ## [Unreleased]
 
+### Added
+- Added version strings to the theme static resources.
+
 ### Changed
 - Refactored `functions/integrations/acf.php` for cleaner code.
 - Refactored `functions/cleanup.php` for cleaner code; separated functions in smaller scopes.
