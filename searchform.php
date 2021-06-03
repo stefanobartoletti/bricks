@@ -6,7 +6,7 @@ $searchtext = esc_html__( 'Search', 'bricks' );
 
 <form class="search-form" action="<?php echo esc_url_raw(home_url()); ?>" method="get">
 
-    <div class="form-row">
+    <div class="row g-2">
 
         <div class="col">
             <input class="form-control form-control-sm" type="search" placeholder="<?php echo $searchtext ?>"
