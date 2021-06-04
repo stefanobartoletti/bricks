@@ -3,7 +3,7 @@
 
 <div align="center">
 
-_A modular WordPress starter theme powered by Bootstrap and Gulp_
+_A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 
 [![](https://img.shields.io/github/v/release/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/releases/latest)
 [![](https://img.shields.io/github/last-commit/stefanobartoletti/bricks/devel)](https://github.com/stefanobartoletti/bricks/commits/devel)
