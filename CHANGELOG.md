@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ### Changed
 - Refactored `functions/integrations/acf.php` for cleaner code.
 - Refactored `functions/cleanup.php` for cleaner code; separated functions in smaller scopes.
-- Bump rollup from 2.50.5 to 2.51.0
+- Bump rollup from 2.50.5 to 2.51.1
 
 ## [0.21.3] - 2021-06-01
 
