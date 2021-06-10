@@ -11,7 +11,10 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ### Changed
 - Refactored `functions/integrations/acf.php` for cleaner code.
 - Refactored `functions/cleanup.php` for cleaner code; separated functions in smaller scopes.
+- Bump bootstrap.native from 3.0.14 to 4.0.0
 - Bump rollup from 2.50.5 to 2.51.1
+- Bump @babel/preset-env from 7.14.4 to 7.14.5
+- Bump @babel/core from 7.14.3 to 7.14.5
 
 ## [0.21.3] - 2021-06-01
 
