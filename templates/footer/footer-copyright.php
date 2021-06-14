@@ -27,7 +27,7 @@
         </span>
 
         <span id="brk-signature" class="navbar-text ms-md-auto">
-            <a class="text-white-50" href="https://github.com/stefanobartoletti/bricks" target="_blank">
+            <a class="text-white-50" href="<?php echo wp_get_theme()->get( 'ThemeURI' ); ?>" target="_blank">
                 Made with <?php echo file_get_contents(get_template_directory().'/dist/img/logo-small.svg') ?> Bricks
             </a>
         </span>
