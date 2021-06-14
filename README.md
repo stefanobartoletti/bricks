@@ -7,9 +7,9 @@ _A modular WordPress starter theme powered by Bootstrap and Gulp_
 
 [![](https://img.shields.io/github/v/release/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/releases/latest)
 [![](https://img.shields.io/github/last-commit/stefanobartoletti/bricks/devel)](https://github.com/stefanobartoletti/bricks/commits/devel)
-<!-- [![](https://img.shields.io/github/contributors/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors) -->
-<!-- [![](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks) -->
+[![](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks)
 [![](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev)
+<!-- [![](https://img.shields.io/github/contributors/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors) -->
 
 [Documentation](https://bricks.stefanobartoletti.it/) | [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md)
 

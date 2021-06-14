@@ -11,7 +11,7 @@ const config = require('./bricks.config');
 // --- Plugins ---
 
 // CSS
-const sass = require('gulp-sass');
+const { sass } = require('@mr-hope/gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const purgecss = require('gulp-purgecss');
 const cleancss = require('gulp-clean-css');
@@ -57,9 +57,8 @@ function css() {
     return src(config.css.src)
         .pipe(development(sourcemaps.init()))
         .pipe(sass({
-            errorLogToConsole: true,
-        }))
-        .on('error', console.error.bind(console))
+            quietDeps: true
+        }).on("error", sass.logError))
         .pipe(autoprefixer({
             cascade: false
         }))

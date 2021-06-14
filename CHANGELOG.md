@@ -5,16 +5,13 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ## [Unreleased]
 
-### Added
-- Added version strings to the theme static resources.
-
 ### Changed
 - Refactored `functions/integrations/acf.php` for cleaner code.
 - Refactored `functions/cleanup.php` for cleaner code; separated functions in smaller scopes.
 - Bump bootstrap.native from 3.0.14 to 4.0.1
-- Bump rollup from 2.50.5 to 2.51.2
-- Bump @babel/preset-env from 7.14.4 to 7.14.5
-- Bump @babel/core from 7.14.3 to 7.14.5
+- Added version strings to static resources.
+- Replaced `gulp-sass` with `@mr-hope/gulp-sass`, which uses `dart-sass` instead of the deprecated `node-sass`
+- Updated Dev Dependencies
 
 ## [0.21.3] - 2021-06-01
 
@@ -24,9 +21,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [0.21.2] - 2021-05-31
 
 ### Changed 
-- Bump gulp-autoprefixer from 7.0.1 to 8.0.0
-- Bump rollup from 2.50.0 to 2.50.5
-- Bump @babel/preset-env from 7.14.2 to 7.14.4
+- Updated Dev Dependencies
 
 ### Fixed
 - Security update ws from 7.4.2 to 7.4.6
@@ -34,7 +29,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [0.21.1] - 2021-05-26
 
 ### Changed 
-- Bump rollup from 2.48.0 to 2.50.0
+- Updated Dev Dependencies
 
 ### Fixed
 - Security update browserslist from 4.16.1 to 4.16.6
@@ -42,13 +37,9 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [0.21.0] - 2021-05-19
 
 ### Changed 
-- Replaced outdated `gulp-uglify` with `gulp-terser` as JavaScript minifier
-- Bump rollup from 2.46.0 to 2.48.0
-- Bump @rollup/plugin-node-resolve from 11.2.1 to 13.0.0
-- Bump @rollup/plugin-commonjs from 18.0.0 to 19.1.0
-- Bump @babel/preset-env from 7.14.0 to 7.14.2
-- Bump @babel/core from 7.14.0 to 7.14.3
 - Bump bootstrap.native from 3.0.14 to 3.0.15
+- Replaced outdated `gulp-uglify` with `gulp-terser` as JavaScript minifier
+- Updated Dev Dependencies
 - Minor updates to `README.md`
 
 ### Removed
@@ -71,9 +62,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 - Added [release-it](https://github.com/release-it/release-it) config file
 
 ### Changed 
-- Bump @babel/core from 7.13.16 to 7.14.0
-- Bump @babel/preset-env from 7.13.15 to 7.14.0
-- Bump rollup from 2.45.2 to 2.46.0
+- Updated Dev Dependencies
 
 ## [0.20.0] - 2021-04-27
 
