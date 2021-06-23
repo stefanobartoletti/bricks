@@ -1,6 +1,6 @@
 <div class="container py-5">
 
-    <div class="row justify-content-center pb-4">
+    <div class="row text-center pb-4">
     
         <h2><?php esc_html_e('News', 'bricks') ?></h2>
     

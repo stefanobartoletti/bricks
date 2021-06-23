@@ -60,7 +60,7 @@ function brk_breadcrumbs() {
 
     if (function_exists('yoast_breadcrumb')) {
 
-        yoast_breadcrumb( '<nav class="breadcrumb">','</nav>' );
+        yoast_breadcrumb( '<nav class="breadcrumb mt-3">','</nav>' );
     
     }
     
@@ -71,7 +71,7 @@ function brk_breadcrumbs() {
         add_filter( 'rank_math/frontend/breadcrumb/args', function( $args ) {
             $args = array(
                 'delimiter'   => '&nbsp;&#47;&nbsp;',
-                'wrap_before' => '<nav class="breadcrumb"><span>',
+                'wrap_before' => '<nav class="breadcrumb mt-3"><span>',
                 'wrap_after'  => '</span></nav>',
                 'before'      => '',
                 'after'       => '',
