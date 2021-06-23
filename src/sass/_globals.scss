@@ -16,7 +16,7 @@ html {
 // Selected text styles
 
 ::selection {
-    background-color: tint-color($primary, 15%);
+    background-color: tint-color($secondary, 15%);
     color: $light;
 }
 
