@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Updated Dev Dependencies
+
+### Security
+
+- Security update of secondary dependencies in yarn.lock
+
 ## [0.22.0] - 2021-06-14
 
 ### Changed
