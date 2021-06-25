@@ -9,6 +9,15 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 - Updated Bootstrap to version 5.
 - Updated theme template files to new Bootstrap standards and best practices.
 - Removed bootstrap.native (no longer needed as Bootstrap 5 dont0 have jQuery as dependency)
+- 
+## [0.22.1] - 2021-06-25
+
+### Changed
+- Updated Dev Dependencies
+
+### Security
+
+- Security update of secondary dependencies in yarn.lock
 
 ## [0.22.0] - 2021-06-14
 
@@ -85,6 +94,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.22.1]: https://github.com/stefanobartoletti/bricks/compare/v0.22.0...v0.22.1
 [0.22.0]: https://github.com/stefanobartoletti/bricks/compare/v0.21.3...v0.22.0
 [0.21.3]: https://github.com/stefanobartoletti/bricks/compare/v0.21.2...v0.21.3
 [0.21.2]: https://github.com/stefanobartoletti/bricks/compare/v0.21.1...v0.21.2
