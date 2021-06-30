@@ -17,7 +17,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^4.6.0",
-    "bootstrap.native": "4.0.2"
+    "bootstrap.native": "4.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

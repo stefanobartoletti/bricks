@@ -1551,10 +1551,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap.native@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-4.0.2.tgz#b3580ae696c4f5b600eaab700350681b7df290d7"
-  integrity sha512-WW1zvbN0h0BVD3h7PUDdeLZzUvcIgrCDS+JEz5EgjUawS/mzy9ixUO3esFYjsF0babIoRI0mZtKI2ciSfA4YTg==
+bootstrap.native@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-4.0.3.tgz#1e958f65c27b2d6914750d13fba18343deeecf3a"
+  integrity sha512-BhWTiU1mjltvFJ+q+OfmR3pUvAA31R85s0gP3U4uyIYZA5I3W6dVyTG48jPcJ5662drMAHh2ZeGwXeCR0HrY1g==
   dependencies:
     minifill "^0.0.16"
     shorter-js "^0.2.1"
