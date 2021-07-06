@@ -1,4 +1,4 @@
-# Changelog
+- Updated Dev Dependencies# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
@@ -9,7 +9,8 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 - Updated Bootstrap to version 5.
 - Updated theme template files to new Bootstrap standards and best practices.
 - Removed bootstrap.native (no longer needed as Bootstrap 5 dont0 have jQuery as dependency)
-- 
+- Updated Dev Dependencies
+
 ## [0.22.1] - 2021-06-25
 
 ### Changed
