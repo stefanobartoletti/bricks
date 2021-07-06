@@ -60,7 +60,7 @@ function brk_breadcrumbs() {
 
     if (function_exists('yoast_breadcrumb')) {
 
-        yoast_breadcrumb( '<nav class="breadcrumb">','</nav>' );
+        yoast_breadcrumb( '<nav class="breadcrumb mt-3">','</nav>' );
     
     }
     
@@ -71,7 +71,7 @@ function brk_breadcrumbs() {
         add_filter( 'rank_math/frontend/breadcrumb/args', function( $args ) {
             $args = array(
                 'delimiter'   => '&nbsp;&#47;&nbsp;',
-                'wrap_before' => '<nav class="breadcrumb"><span>',
+                'wrap_before' => '<nav class="breadcrumb mt-3"><span>',
                 'wrap_after'  => '</span></nav>',
                 'before'      => '',
                 'after'       => '',
@@ -84,3 +84,17 @@ function brk_breadcrumbs() {
     }
 
 }
+
+
+// --- Nav Walker attributes fix for Bootstrap 5 ---
+
+function brk_bs5_navwalker_fix( $atts ) {
+
+    if ( array_key_exists( 'data-toggle', $atts ) ) {
+        unset( $atts['data-toggle'] );
+        $atts['data-bs-toggle'] = 'dropdown';
+    }
+    return $atts;
+    
+}
+add_filter( 'nav_menu_link_attributes', 'brk_bs5_navwalker_fix' );

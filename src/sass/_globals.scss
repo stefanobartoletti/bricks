@@ -16,8 +16,8 @@ html {
 // Selected text styles
 
 ::selection {
-    background-color: lighten(theme-color("primary"), 15%);
-    color: theme-color("light");
+    background-color: tint-color($secondary, 15%);
+    color: $light;
 }
 
 // Utility class to use img tag as a background
@@ -25,7 +25,7 @@ html {
 .has-img-background {
     position: relative;
     // background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.5));
-    background-color: rgba(theme-color("dark"), 0.5);
+    background-color: rgba($dark, 0.5);
     
     img.is-background {
         object-fit: cover;
