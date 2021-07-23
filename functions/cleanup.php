@@ -20,7 +20,9 @@ function brk_disable_gutenberg() {
         wp_dequeue_style('wp-block-library');
     }
     add_action('wp_enqueue_scripts', 'brk_disable_gutenberg_scripts');
-    add_filter('use_block_editor_for_post', '__return_false');
+    add_filter('use_block_editor_for_post', '__return_false'); // Disables the block editor for editing posts.   
+    add_filter( 'gutenberg_use_widgets_block_editor', '__return_false' ); // Disables the block editor from managing widgets in the Gutenberg plugin.
+    add_filter( 'use_widgets_block_editor', '__return_false' ); // Disables the block editor from managing widgets.
 }
 
 function brk_disable_emojis() {
