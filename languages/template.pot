@@ -77,7 +77,7 @@ msgstr ""
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions/integrations/acf.php:25, functions/integrations/acf.php:29, templates/footer/footer-columns.php:21
+#: functions/integrations/acf.php:25, functions/integrations/acf.php:29, templates/footer/footer-columns.php:23
 msgid "Contacts"
 msgstr ""
 
@@ -173,15 +173,15 @@ msgstr ""
 msgid "Part:"
 msgstr ""
 
-#: templates/footer/footer-columns.php:83
+#: templates/footer/footer-columns.php:91
 msgid "Pages"
 msgstr ""
 
-#: templates/footer/footer-columns.php:100
+#: templates/footer/footer-columns.php:108
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/home-cta.php:23, templates/sections/home-news.php:39, templates/sections/home-services.php:29, templates/sections/home-slider.php:26
+#: templates/sections/home-cta.php:23, templates/sections/home-news.php:41, templates/sections/home-services.php:29, templates/sections/home-slider.php:26
 msgid "Read more"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: templates/sections/home-news.php:35
+#: templates/sections/home-news.php:37
 msgid "By "
 msgstr ""
 

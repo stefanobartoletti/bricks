@@ -17,7 +17,7 @@ msgstr ""
 "esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -86,7 +86,7 @@ msgid "Main Sidebar"
 msgstr "Sidebar Principale"
 
 #: functions/integrations/acf.php:25, functions/integrations/acf.php:29,
-#: templates/footer/footer-columns.php:21
+#: templates/footer/footer-columns.php:23
 msgid "Contacts"
 msgstr "Contatti"
 
@@ -194,15 +194,15 @@ msgstr ""
 msgid "Part:"
 msgstr "Parte:"
 
-#: templates/footer/footer-columns.php:83
+#: templates/footer/footer-columns.php:91
 msgid "Pages"
 msgstr "Pagine"
 
-#: templates/footer/footer-columns.php:100
+#: templates/footer/footer-columns.php:108
 msgid "Privacy"
 msgstr "Privacy"
 
-#: templates/sections/home-cta.php:23, templates/sections/home-news.php:39,
+#: templates/sections/home-cta.php:23, templates/sections/home-news.php:41,
 #: templates/sections/home-services.php:29,
 #: templates/sections/home-slider.php:26
 msgid "Read more"
@@ -212,7 +212,7 @@ msgstr "Leggi tutto"
 msgid "News"
 msgstr "News"
 
-#: templates/sections/home-news.php:35
+#: templates/sections/home-news.php:37
 msgid "By "
 msgstr "By "
 
