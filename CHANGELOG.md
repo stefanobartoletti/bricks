@@ -5,9 +5,16 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ## [Unreleased]
 
+### Added
+- Added filters to disable the block editor for widgets (introduced by WordPress 5.8)
+
 ### Changed
 - Updated localizations files
 - Updated Dev Dependencies
+
+### Security
+
+- Security update of secondDvary dependencies in yarn.lock
 
 ## [0.23.0] - 2021-07-07
 
