@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
     "@mr-hope/gulp-sass": "^2.0.0",
     "@rbnlffl/gulp-rollup": "^0.1.1",
     "@rollup/plugin-babel": "^5.3.0",
