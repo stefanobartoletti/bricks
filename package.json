@@ -43,6 +43,6 @@
     "gulp-terser": "^2.0.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-wp-pot": "^2.5.0",
-    "rollup": "^2.56.0"
+    "rollup": "^2.56.1"
   }
 }
