@@ -206,15 +206,6 @@ if ( class_exists('ACF') ) {
                             'wrapper' => array(
                                 'width' => '33',
                             ),
-                        ),
-                        array(
-                            'key' => 'field_6014027e69bb1',
-                            'label' => 'TripAdvisor',
-                            'name' => 'tripadvisor',
-                            'type' => 'url',
-                            'wrapper' => array(
-                                'width' => '33',
-                            ),
                         )
                     )
                 )
@@ -345,11 +336,6 @@ function brk_socialicons() {
             'social-name'   => 'YouTube',
             'icon-style'    => 'fab',
             'icon-name'     => 'fa-youtube',
-        ),
-        'tripadvisor' => array(
-            'social-name'   => 'TripAdvisor',
-            'icon-style'    => 'fab',
-            'icon-name'     => 'fa-tripadvisor',
         ),
     );
     return $brk_socialnetworks;
