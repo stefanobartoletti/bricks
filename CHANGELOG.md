@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Added empty localization files for some additional languages
+- Updated Dev Dependencies
+
+### Removed
+- Removed TripAdisor icon and custom field (no longer supported by FontAwesome)
+
 ## [0.24.0] - 2021-08-04
 
 ### Added
