@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 
 ### Changed
+- Updated Bootstrap to version 5.1.0
+- Updated FontAwesome to version 5.15.4
 - Added empty localization files for some additional languages
 - Updated Dev Dependencies
 
