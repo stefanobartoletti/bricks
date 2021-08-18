@@ -158,15 +158,15 @@ msgstr ""
 "Indirizzi completi dei profili social. Non è necessario riempire tutti i "
 "campi, solo quelli compilati verranno mostrati nel sito come icone"
 
-#: functions/integrations/acf.php:253, functions/integrations/acf.php:257
+#: functions/integrations/acf.php:244, functions/integrations/acf.php:248
 msgid "Meta"
 msgstr "Meta"
 
-#: functions/integrations/acf.php:264
+#: functions/integrations/acf.php:255
 msgid "Chrome Theme"
 msgstr "Tema Chrome"
 
-#: functions/integrations/acf.php:267
+#: functions/integrations/acf.php:258
 msgid "Tab color in Chrome for Android"
 msgstr "Colore della tab in Chrome per Android"
 
