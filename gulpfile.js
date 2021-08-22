@@ -18,7 +18,7 @@ import cleancss from 'gulp-clean-css';
 
 // JS
 import rollup from '@rbnlffl/gulp-rollup';
-import babel from '@rollup/plugin-babel';
+import { babel } from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import terser from 'gulp-terser';
