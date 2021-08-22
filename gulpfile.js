@@ -1,6 +1,7 @@
 // --- Gulp ---
 
 import gulp from 'gulp';
+const { src, dest, watch, series, parallel } = gulp;
 
 
 // --- Configuration ---
@@ -54,7 +55,7 @@ import browserSync from 'browser-sync';
 // --- CSS ---
 
 function css() {
-    return gulp.src(config.css.src)
+    return src(config.css.src)
         .pipe(development(sourcemaps.init()))
         .pipe(sass({
             quietDeps: true
@@ -71,7 +72,7 @@ function css() {
         }))))
         .pipe(production(cleancss()))
         .pipe(development(sourcemaps.write('./')))
-        .pipe(gulp.dest(config.css.dist))
+        .pipe(dest(config.css.dist))
         .pipe(browserSync.stream());
 };
 
@@ -79,7 +80,7 @@ function css() {
 // --- JS ---
 
 function js(done) {
-    gulp.src(config.js.src)
+    src(config.js.src)
         .pipe(development(sourcemaps.init()))
         .pipe(rollup({
             plugins: [
@@ -96,7 +97,7 @@ function js(done) {
             suffix: '.min'
         }))
         .pipe(development(sourcemaps.write('./')))
-        .pipe(gulp.dest(config.js.dist))
+        .pipe(dest(config.js.dist))
         .pipe(browserSync.stream())
     done();
 };
@@ -105,11 +106,11 @@ function js(done) {
 // --- Images ---
 
 function img() {
-    return gulp.src(config.img.src)
+    return src(config.img.src)
         .pipe(imagemin({
             // verbose: true
         }))
-        .pipe(gulp.dest(config.img.dist))
+        .pipe(dest(config.img.dist))
         .pipe(browserSync.stream());
 };
 
@@ -117,14 +118,14 @@ function img() {
 // --- Fonts ---
 
 function fonts(done) {
-    gulp.src(config.fonts.src.ttf)
+    src(config.fonts.src.ttf)
         .pipe(ttf2woff2({
             ignoreExt: true,
         }))
-        .pipe(gulp.dest(config.fonts.dist))
+        .pipe(dest(config.fonts.dist))
         .pipe(browserSync.stream())
-    gulp.src(config.fonts.src.woff)
-        .pipe(gulp.dest(config.fonts.dist))
+    src(config.fonts.src.woff)
+        .pipe(dest(config.fonts.dist))
         .pipe(browserSync.stream())       
     done();
 };
@@ -133,7 +134,7 @@ function fonts(done) {
 // --- Icons ---
 
 function icons() {
-    return gulp.src(config.icons.src)
+    return src(config.icons.src)
         .pipe(rename('fa5.min.js')) 
         .pipe(production(faMinify(config.faIconSafelist)))
         .pipe(production(terser({
@@ -141,14 +142,14 @@ function icons() {
                 comments: false,
             },
         })))
-        .pipe(gulp.dest(config.js.dist));
+        .pipe(dest(config.js.dist));
 };
 
 
 // --- i18n ---
 
 function domain() {
-    return gulp.src(config.php.watch)
+    return src(config.php.watch)
         .pipe(checktextdomain({
             text_domain: config.textdomain,
             keywords: config.i18n.functions,
@@ -157,11 +158,11 @@ function domain() {
 };
 
 function pot() {
-    return gulp.src(config.php.watch)
+    return src(config.php.watch)
         .pipe(wpPot({
             domain: config.textdomain,
         }))
-        .pipe(gulp.dest(config.i18n.dist+'template.pot'));
+        .pipe(dest(config.i18n.dist+'template.pot'));
 };
 
 
@@ -204,21 +205,21 @@ function clearCache(done) {
 };
 
 function watchFiles(done) {
-    gulp.watch(config.css.watch, gulp.series(css, clearCache, reload));
-    gulp.watch(config.js.watch, gulp.series(js, clearCache, reload));
-    gulp.watch(config.php.watch, gulp.series(clearCache, reload));
-    gulp.watch(config.img.watch, gulp.series(img, clearCache, reload));
-    gulp.watch(config.fonts.watch, gulp.series(fonts, clearCache, reload));
+    watch(config.css.watch, series(css, clearCache, reload));
+    watch(config.js.watch, series(js, clearCache, reload));
+    watch(config.php.watch, series(clearCache, reload));
+    watch(config.img.watch, series(img, clearCache, reload));
+    watch(config.fonts.watch, series(fonts, clearCache, reload));
     done();
 };
 
 
 // --- Tasks ---
 
-const i18n = gulp.series(domain, pot);
-const dev = gulp.series(setDev, clean, gulp.parallel(css, js, img, fonts, icons));
-const build = gulp.series(setProd, clean, gulp.parallel(css, js, img, fonts, icons, gulp.series(domain, pot)));
-const watch = gulp.parallel(browser_sync, watchFiles);
+const i18n = series(domain, pot);
+const dev = series(setDev, clean, parallel(css, js, img, fonts, icons));
+const build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
+const watcher = parallel(browser_sync, watchFiles);
 
-export { css, js, img, fonts, icons, i18n, dev, build, watch };
+export { css, js, img, fonts, icons, i18n, dev, build, watcher as watch };
 export default dev;
