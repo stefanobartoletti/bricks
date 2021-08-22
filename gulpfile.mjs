@@ -6,7 +6,7 @@ const { src, dest, watch, series, parallel } = gulp;
 
 // --- Configuration ---
 
-import config from './bricks.config.js';
+import config from './bricks.config.mjs';
 
 
 // --- Plugins ---
