@@ -1,5 +1,5 @@
 ---
-name: "\U0001FAB2 Bug report"
+name: "\U0001F41B Bug report"
 about: Report a bug to help improve Bricks
 title: ''
 labels: bug
