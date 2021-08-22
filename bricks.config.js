@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
 
     // --- Project variables ---
 
@@ -98,3 +98,5 @@ module.exports = {
     },
 
 }
+
+export default config;
