@@ -3,6 +3,7 @@
   "version": "0.24.0",
   "description": "A modular WordPress starter theme powered by Bootstrap 5 and Gulp",
   "author": "Stefano Bartoletti (https://www.stefanobartoletti.it)",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/stefanobartoletti/bricks"
@@ -28,7 +29,6 @@
     "@rollup/plugin-node-resolve": "^13.0.4",
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
-    "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cache": "^1.1.3",
