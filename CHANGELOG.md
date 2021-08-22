@@ -30,7 +30,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ### Security
 
-- Security update of secondDvary dependencies in yarn.lock
+- Security update of secondary dependencies in yarn.lock
 
 ## [0.23.0] - 2021-07-07
 
