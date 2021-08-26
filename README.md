@@ -10,6 +10,7 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 [![](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks)
 [![](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev)
 [![](https://img.shields.io/codeclimate/maintainability/stefanobartoletti/bricks)](https://codeclimate.com/github/stefanobartoletti/bricks)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/stefanobartoletti/bricks)
 
 <!-- [![](https://img.shields.io/github/contributors/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors) -->
 
