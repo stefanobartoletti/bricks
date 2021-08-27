@@ -5,7 +5,6 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ## [Unreleased]
 
-
 ### Added
 - Added empty localization files for some additional languages
 
@@ -15,6 +14,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 - Converted `gulpfile.js` from CommonJS to ESM
 - Updated localization files
 - Updated Dev Dependencies
+- Moved release-it configuration to package.json
 
 ### Removed
 - Removed TripAdisor icon and custom field (no longer supported by FontAwesome)
