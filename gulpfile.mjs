@@ -1,54 +1,55 @@
 // --- Gulp ---
 
-const { src, dest, watch, series, parallel } = require('gulp');
+import gulp from 'gulp';
+const { src, dest, watch, series, parallel } = gulp;
 
 
 // --- Configuration ---
 
-const config = require('./bricks.config');
+import config from './bricks.config.mjs';
 
 
 // --- Plugins ---
 
 // CSS
-const { sass } = require('@mr-hope/gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const purgecss = require('gulp-purgecss');
-const cleancss = require('gulp-clean-css');
+import { sass } from '@mr-hope/gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
+import purgecss from 'gulp-purgecss';
+import cleancss from 'gulp-clean-css';
 
 // JS
-const rollup = require('@rbnlffl/gulp-rollup');
-const babel = require('@rollup/plugin-babel').babel;
-const commonjs = require('@rollup/plugin-commonjs');
-const resolve = require('@rollup/plugin-node-resolve').nodeResolve;
-const terser = require('gulp-terser');
+import rollup from '@rbnlffl/gulp-rollup';
+import { babel } from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
+import nodeResolve from '@rollup/plugin-node-resolve';
+import terser from 'gulp-terser';
 
 // Images
-const imagemin = require('gulp-imagemin');
+import imagemin from 'gulp-imagemin';
 
 // Fonts
-const ttf2woff2 = require('gulp-ttf2woff2');
+import ttf2woff2 from 'gulp-ttf2woff2';
 
 // Icons
-const faMinify = require('gulp-fa-minify');
+import faMinify from 'gulp-fa-minify';
 
 // i18n
-const checktextdomain = require('gulp-checktextdomain');
-const wpPot = require('gulp-wp-pot');
+import checktextdomain from 'gulp-checktextdomain';
+import wpPot from 'gulp-wp-pot';
 
 // Utils
-const rename = require('gulp-rename');
-const gulpif = require('gulp-if');
-const del = require('del');
-const sourcemaps = require('gulp-sourcemaps');
+import rename from 'gulp-rename';
+import gulpif from 'gulp-if';
+import del from 'del';
+import sourcemaps from 'gulp-sourcemaps';
 
-const environments = require('gulp-environments');
+import environments from 'gulp-environments';
 const development = environments.development;
 const production = environments.production;
 
 // Browser
-const cache = require('gulp-cache');
-const browserSync  = require('browser-sync').create();
+import cache from 'gulp-cache';
+import browserSync from 'browser-sync';
 
 
 // --- CSS ---
@@ -85,7 +86,7 @@ function js(done) {
             plugins: [
                 babel({ babelHelpers: 'bundled' }),
                 commonjs(),
-                resolve()
+                nodeResolve()
             ]},{ format: 'umd' }))
         .pipe(production(terser({
             format: {
@@ -215,13 +216,10 @@ function watchFiles(done) {
 
 // --- Tasks ---
 
-exports.css = css;
-exports.js = js;
-exports.img = img;
-exports.fonts = fonts;
-exports.icons = icons;
-exports.pot = series(domain, pot);
+const i18n = series(domain, pot);
+const dev = series(setDev, clean, parallel(css, js, img, fonts, icons));
+const build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
+const watcher = parallel(browser_sync, watchFiles);
 
-exports.default = series(setDev, clean, parallel(css, js, img, fonts, icons));
-exports.build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
-exports.watch = parallel(browser_sync, watchFiles);
+export { css, js, img, fonts, icons, i18n, dev, build, watcher as watch };
+export default dev;

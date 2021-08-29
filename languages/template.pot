@@ -145,15 +145,15 @@ msgstr ""
 msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
 msgstr ""
 
-#: functions/integrations/acf.php:253, functions/integrations/acf.php:257
+#: functions/integrations/acf.php:244, functions/integrations/acf.php:248
 msgid "Meta"
 msgstr ""
 
-#: functions/integrations/acf.php:264
+#: functions/integrations/acf.php:255
 msgid "Chrome Theme"
 msgstr ""
 
-#: functions/integrations/acf.php:267
+#: functions/integrations/acf.php:258
 msgid "Tab color in Chrome for Android"
 msgstr ""
 

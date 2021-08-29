@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Updated Bootstrap to version 5.1.0
+- Updated FontAwesome to version 5.15.4
+- Converted `gulpfile.js` from CommonJS to ESM
+- Updated localization files
+- Updated Dev Dependencies
+- Moved release-it configuration to package.json
+
+### Removed
+- Removed TripAdisor icon and custom field (no longer supported by FontAwesome)
+
 ## [0.24.0] - 2021-08-04
 
 ### Added
@@ -14,7 +27,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ### Security
 
-- Security update of secondDvary dependencies in yarn.lock
+- Security update of secondary dependencies in yarn.lock
 
 ## [0.23.0] - 2021-07-07
 
