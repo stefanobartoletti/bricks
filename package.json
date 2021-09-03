@@ -19,7 +19,7 @@
     "bootstrap": "^5.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "@mr-hope/gulp-sass": "^2.0.0",
     "@rbnlffl/gulp-rollup": "^0.1.1",
