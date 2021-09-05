@@ -37,7 +37,6 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 
 - [Git](https://git-scm.com/) to clone this repository.
 - [Yarn](https://yarnpkg.com/) as the preferred tool to manage dependencies and run development scripts (you can also use plain [npm](https://nodejs.org/)).
-- [Gulp-cli](https://github.com/gulpjs/gulp-cli) installed globally to run individual sub-tasks (Optional).
 - [Advanced Custom Fields](https://www.advancedcustomfields.com/) (Regular or PRO) to take advantage of its integration with Bricks (Optional but strongly recommended).
 
 ## 📖 Documentation
