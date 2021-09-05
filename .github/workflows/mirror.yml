@@ -1,6 +1,6 @@
 name: Mirroring
 
-on: [ pull_request, push ]
+on: [ push, delete, create ]
 
 # Ensures that only one mirror task will run at a time.
 concurrency:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: wearerequired/git-mirror-action@v1
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.ID_STEFANO }}
+          SSH_PRIVATE_KEY: ${{ secrets.REPO_BRICKS }}
         with:
           source-repo: "git@github.com:stefanobartoletti/bricks.git"
           destination-repo: "git@gitlab.com:stefanobartoletti/bricks.git"
