@@ -1,6 +1,10 @@
 name: Mirroring
 
-on: [ push, delete, create ]
+on: [ pull_request, push ]
+
+# Ensures that only one mirror task will run at a time.
+concurrency:
+  group: git-mirror
 
 jobs:
   git-mirror:
@@ -12,18 +16,3 @@ jobs:
         with:
           source-repo: "git@github.com:stefanobartoletti/bricks.git"
           destination-repo: "git@gitlab.com:stefanobartoletti/bricks.git"
-
-  restart_when_failed:
-    name: Restarts the scheduled run when it failed
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && failure()
-    needs: [git-mirror]
-    steps:
-      - name: Retry the workflow
-        run: |
-          curl -i \
-          -X POST \
-          -H "Accept: application/vnd.github.v3+json" \
-          -H "Authorization: token ${{ secrets.ACTIONS_PAT }}" \
-          https://api.github.com/repos/stefanobartoletti/bricks/actions/workflows/9476994/dispatches \
-          -d '{"ref": "${{ github.ref }}" }'
