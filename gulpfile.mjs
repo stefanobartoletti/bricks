@@ -218,7 +218,7 @@ function watchFiles(done) {
 
 const i18n = series(domain, pot);
 const dev = series(setDev, clean, parallel(css, js, img, fonts, icons));
-const build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
+const build = series(setProd, clean, parallel(css, js, img, fonts, icons, i18n));
 const watcher = parallel(browser_sync, watchFiles);
 
 export { css, js, img, fonts, icons, i18n, dev, build, watcher as watch };
