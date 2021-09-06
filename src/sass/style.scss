@@ -8,13 +8,11 @@
 
 // --- Bootstrap Custom Theme ---
 
-@import "../../node_modules/bootstrap/scss/functions"; 
+@import '../../node_modules/bootstrap/scss/functions';
 @import 'theme'; // Bootstrap custom theme variables
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // --- Integrations ---
 
@@ -23,20 +21,15 @@
 // @import 'integrations/aos';  // required npm packages: 'aos'
 // @import 'integrations/swiper';  // required npm package: 'swiper'
 
-
 // --- WP Core required styles ---
 
 @import 'integrations/wpcore';
 
-
 // --- Custom styles ---
 
 @import 'globals';
-
 @import 'components/backtotop';
-
 @import 'header/header';
-
 @import 'footer/footer';
 // @import 'footer/columns';
 

@@ -11,4 +11,4 @@ module.exports = {
     'scss/at-rule-no-unknown': true,
     'string-quotes': 'single'
   }
-}
+};

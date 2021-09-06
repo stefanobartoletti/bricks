@@ -1,8 +1,8 @@
 /*
  * Bootstrap Custom Theme
- * 
+ *
  * https://getbootstrap.com/docs/5.0/customize/overview/
- * 
+ *
  */
 
 // --- Color system ---
@@ -13,19 +13,18 @@ $secondary: #c83771;
 // $info: #fff;
 // $warning: #fff;
 // $danger: #fff;
-$light: #eeeeee;
-$dark: #333333;
+$light: #eee;
+$dark: #333;
 
 // $body-bg:         $white;
 // $body-color:      $gray-900;
 
-
 // --- Typography ---
 
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      system-ui, -apple-system, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-$font-family-base: Rubik, $font-family-sans-serif;
+$font-family-base: rubik, $font-family-sans-serif;
 
 // $font-size-base:              1rem;
 // $font-size-sm:                $font-size-base * .875;
@@ -73,7 +72,6 @@ $headings-font-weight:           700;   // 500;
 
 // $small-font-size:             .875em;
 
-
 // --- Links ---
 
 // $link-color:                     $primary;
@@ -81,7 +79,6 @@ $link-decoration:                   none; // underline;
 // $link-shade-percentage:          20%;
 // $link-hover-color:               shift-color($link-color, $link-shade-percentage);
 // $link-hover-decoration:          null;
-
 
 // --- Options ---
 
@@ -100,7 +97,6 @@ $link-decoration:                   none; // underline;
 // $enable-negative-margins:     false;
 // $enable-deprecation-messages: true;
 // $enable-important-utilities:  true;
-
 
 // --- Spacers & Grid ---
 
@@ -143,7 +139,6 @@ $link-decoration:                   none; // underline;
 
 // $container-padding-x: $grid-gutter-width * .5;
 
-
 // --- Borders ---
 
 // $border-width:                1px;
@@ -161,7 +156,6 @@ $link-decoration:                   none; // underline;
 // $border-radius-sm:            .2rem;
 // $border-radius-lg:            .3rem;
 // $border-radius-pill:          50rem;
-
 
 // --- Components ---
 

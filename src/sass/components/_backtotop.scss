@@ -1,19 +1,17 @@
 #backtotop {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s;
 
-    position: fixed;
-    bottom: 25px;
-    right:  25px;
-    opacity: 1;
-    z-index: 1;
-    transition: opacity 0.5s;
+  &:focus {
+    box-shadow: none;
+  }
 
-    &:focus {
-        box-shadow: none;
-    }
-
-    &.hidden{
-        opacity: 0;
-        z-index: -1;
-    }
-
+  &.hidden {
+    z-index: -1;
+    opacity: 0;
+  }
 }

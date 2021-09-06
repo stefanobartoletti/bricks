@@ -2,56 +2,66 @@
 
 <main id="content-wrapper">
 
-    <div class="container">
+	<div class="container">
 
-        <?php brk_breadcrumbs(); ?>
+		<?php brk_breadcrumbs(); ?>
 
-        <div class="row py-5">
+		<div class="row py-5">
 
-            <div id="loop-wrapper" class="col">
-                   
-                <h1 class="mb-5 border-bottom">
-                    <?php if ( is_home() ) {
+			<div id="loop-wrapper" class="col">
+				   
+				<h1 class="mb-5 border-bottom">
+					<?php
+					if ( is_home() ) {
 
-                        bloginfo('description');
+						bloginfo( 'description' );
 
-                    } elseif ( is_search() ) {
+					} elseif ( is_search() ) {
 
-                        esc_html_e( 'Results for: ', 'bricks' ); the_search_query();
+						esc_html_e( 'Results for: ', 'bricks' );
+						the_search_query();
 
-                    } else {
+					} else {
 
-                        the_archive_title();
+						the_archive_title();
 
-                    } ?>
-                </h1>
-            
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-                
-                    get_template_part( 'templates/content/loop', '' );
-                                
-                    endwhile;
+					}
+					?>
+				</h1>
+			
+				<?php
+				if ( have_posts() ) :
+					while ( have_posts() ) :
+						the_post();
 
-                    the_posts_pagination(array(
-                        'mid_size'  => 2,
-                        'prev_text' => esc_html__('&laquo; Previous', 'bricks'),
-                        'next_text' => esc_html__('Next &raquo;', 'bricks'),
-                    ));
-            
-                else :
+						get_template_part( 'templates/content/loop', '' );
 
-                    get_template_part( 'templates/content/loop', 'none' );
+					endwhile;
 
-                endif; ?>
-            
-            </div> <!-- #loop-wrapper -->
+					the_posts_pagination(
+						array(
+							'mid_size'  => 2,
+							'prev_text' => esc_html__( '&laquo; Previous', 'bricks' ),
+							'next_text' => esc_html__( 'Next &raquo;', 'bricks' ),
+						)
+					);
 
-            <?php get_sidebar(); ?>
+				else :
 
-        </div>
+					get_template_part( 'templates/content/loop', 'none' );
 
-    </div>
-           
+				endif;
+				?>
+			
+			</div> <!-- #loop-wrapper -->
+
+			<?php get_sidebar(); ?>
+
+		</div>
+
+	</div>
+		   
 </main> <!-- #content-wrapper -->
 
-<?php get_footer();
+<?php
+get_footer();

@@ -1,7 +1,7 @@
 // Smooth scroll
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 // Flex classes on #site-wrapper and #page-wrapper (header.php) are used to force full height on pages with little content
@@ -10,30 +10,30 @@ html {
 
 .admin-bar #site-wrapper,
 .admin-bar #header-wrapper {
-    top: 32px;
+  top: 32px;
 }
 
 // Selected text styles
 
 ::selection {
-    background-color: tint-color($secondary, 15%);
-    color: $light;
+  color: $light;
+  background-color: tint-color($secondary, 15%);
 }
 
 // Utility class to use img tag as a background
 
 .has-img-background {
-    position: relative;
-    // background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.5));
-    background-color: rgba($dark, 0.5);
-    
-    img.is-background {
-        object-fit: cover;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
+  position: relative;
+  // background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.5));
+  background-color: rgba($dark, 0.5);
+
+  img.is-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
