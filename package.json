@@ -11,7 +11,8 @@
     "dev": "gulp default",
     "build": "gulp build",
     "watch": "gulp watch",
-    "lint:js": "eslint --ext js,mjs --fix --ignore-path .gitignore ."
+    "lint:js": "eslint --ext js,mjs --fix --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{scss,css}\" --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -49,7 +50,11 @@
     "gulp-terser": "^2.0.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-wp-pot": "^2.5.0",
-    "rollup": "^2.56.3"
+    "rollup": "^2.56.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recess-order": "^2.5.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.20.1"
   },
   "release-it": {
     "git": {
