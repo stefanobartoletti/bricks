@@ -1,0 +1,19 @@
+{
+    "name": "stefanobartoletti/bricks",
+    "version": "0.25.0",
+    "description": "A modular WordPress starter theme powered by Bootstrap 5 and Gulp",
+    "authors": [
+        {
+            "name": "Stefano Bartoletti",
+            "homepage": "https://www.stefanobartoletti.it"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+    },
+    "scripts": {
+        "lint": "phpcbf"
+    }
+}
