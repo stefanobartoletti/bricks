@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "gulp default",
     "build": "gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "lint:js": "eslint --ext js,mjs --fix --ignore-path .gitignore ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "@mr-hope/gulp-sass": "^2.0.0",
     "@rbnlffl/gulp-rollup": "^0.1.1",
@@ -27,6 +29,11 @@
     "@rollup/plugin-node-resolve": "^13.0.4",
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cache": "^1.1.3",
