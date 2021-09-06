@@ -8,7 +8,6 @@
     "url": "https://github.com/stefanobartoletti/bricks"
   },
   "scripts": {
-    "postinstall": "composer install",
     "dev": "gulp default",
     "build": "gulp build",
     "watch": "gulp watch",
