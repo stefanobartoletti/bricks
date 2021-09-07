@@ -30,7 +30,8 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 - [Font Awesome 5](https://fontawesome.com/) (*SVG with JavaScript* version, parsed and minified by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify))
 - CSS bundling, including [Autoprefixer](https://autoprefixer.github.io/) and [PurgeCSS](https://purgecss.com/)
 - JavaScript bundling with [Rollup](https://www.rollupjs.org/) and [Babel](https://babeljs.io/)
-- [BrowserSync](https://www.browsersync.io/)
+- Code linting with [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) and [phpcs](https://github.com/squizlabs/PHP_CodeSniffer).
+- [BrowserSync](https://www.browsersync.io/) live server.
 - Automatic conversion of custom fonts into *woff2* web format
 - Support for localization by generation of a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/)
 - Support for integration of some optional JavaScript libraries
@@ -39,6 +40,7 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 
 - [Git](https://git-scm.com/) to clone this repository.
 - [Yarn](https://yarnpkg.com/) as the preferred tool to manage dependencies and run development scripts (you can also use plain [npm](https://nodejs.org/)).
+- [Composer](https://getcomposer.org/) to manage PHP dependencies (Optional, used for PHP linting).
 - [Advanced Custom Fields](https://www.advancedcustomfields.com/) (Regular or PRO) to take advantage of its integration with Bricks (Optional but strongly recommended).
 
 ## 📖 Documentation
