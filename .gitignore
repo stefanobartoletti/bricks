@@ -9,5 +9,8 @@
 # NPM
 node_modules
 
+# Composer
+vendor
+
 # Compiled
 dist
