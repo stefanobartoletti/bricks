@@ -36,6 +36,7 @@ add_action( 'wp_enqueue_scripts', 'brk_styles_scripts' );
 // Disable this action if not loading Google Fonts from their external server
 
 function brk_google_fonts_preconnect() {
-	echo '<link rel="preconnect" href="https://fonts.gstatic.com/">' . "\n";
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com">'."\n";
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'."\n"; 
 }
 add_action( 'wp_head', 'brk_google_fonts_preconnect', 7 );
