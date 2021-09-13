@@ -25,6 +25,8 @@
     <rule ref="WordPress-Extra">
         <!-- Exclude any rules here -->
         <exclude name="WordPress.PHP.DisallowShortTernary"/>
+        <exclude name="Squiz.Commenting"/>
+        <exclude name="Generic.Commenting"/>
     </rule>
 
     <!-- Verify that the text_domain is set to the desired text-domain.
