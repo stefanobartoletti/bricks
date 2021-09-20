@@ -1,0 +1,42 @@
+name: Lint
+
+on: [ push, pull_request ]
+
+jobs:
+  yarn-install:
+    name: Yarn Install
+    runs-on: ubuntu-latest
+    steps:
+      - uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 16
+
+  lint-js:
+    name: Lint JS
+    runs-on: ubuntu-latest
+    needs: yarn-install
+    steps:
+      - uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 16
+      - run: yarn eslint --ext js,mjs --ignore-path .gitignore .
+
+  lint-style:
+    name: Lint CSS
+    runs-on: ubuntu-latest
+    needs: yarn-install
+    steps:
+      - uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 16
+      - run: yarn stylelint "**/*.{scss,css}" --ignore-path .gitignore  
+
+  lint-php:
+    name: Lint PHP
+    runs-on: ubuntu-latest
+    needs: yarn-install
+    steps:
+      - uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 16
+      - run: yarn composer phpcs

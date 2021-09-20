@@ -13,6 +13,7 @@
     "watch": "gulp watch",
     "lint:js": "eslint --ext js,mjs --fix --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{scss,css}\" --fix --ignore-path .gitignore",
+    "composer": "composer",
     "lint": "yarn lint:js && yarn lint:style && composer lint"
   },
   "dependencies": {
