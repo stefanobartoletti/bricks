@@ -36,7 +36,13 @@ jobs:
     runs-on: ubuntu-latest
     needs: yarn-install
     steps:
-      - uses: DerYeger/yarn-setup-action@master
+      - name: Composer install 
+        uses: DerYeger/yarn-setup-action@master
         with:
           node-version: 16
-      - run: yarn phpcs
+        run: yarn composer install
+      - name: Composer phpcs 
+        uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 16
+        run: yarn composer phpcs
