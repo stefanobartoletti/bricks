@@ -39,4 +39,5 @@ jobs:
       - uses: DerYeger/yarn-setup-action@master
         with:
           node-version: 16
-      - run: yarn phpcs
+      - run: yarn composer install
+      - run: yarn composer phpcs
