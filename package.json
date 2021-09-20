@@ -11,6 +11,7 @@
     "dev": "gulp default",
     "build": "gulp build",
     "watch": "gulp watch",
+    "composer": "composer",
     "lint:js": "eslint --ext js,mjs --fix --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{scss,css}\" --fix --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style && composer lint"
