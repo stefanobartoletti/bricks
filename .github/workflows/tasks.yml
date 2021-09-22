@@ -1,28 +1,30 @@
-name: Test tasks
+name: Tasks
 
 on: [ pull_request ]
 
 jobs:
-  prepare:
-    name: Prepare
+  yarn-install:
+    name: Yarn Install
     runs-on: ubuntu-latest
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
           node-version: 16
-  dev:
-    name: Dev
+
+  yarn-dev:
+    name: Yarn Dev
     runs-on: ubuntu-latest
-    needs: prepare
+    needs: yarn-install
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
           node-version: 16
       - run: yarn dev
-  build:
-    name: Build
+
+  yarn-build:
+    name: Yarn Build
     runs-on: ubuntu-latest
-    needs: prepare
+    needs: yarn-install
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:

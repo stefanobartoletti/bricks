@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Added
+- Added ESLint for JavaScript code linting and formatting
+- Added Stylelint for CSS/SASS code linting and formatting
+- Added phpcs for PHP code linting and formatting (with WordPress coding standards)
+
+### Changed
+- Updated Dev Dependencies
+
 ## [0.25.0] - 2021-08-29
 
 ### Changed

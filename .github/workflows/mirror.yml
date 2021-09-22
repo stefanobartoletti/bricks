@@ -1,4 +1,4 @@
-name: Mirroring
+name: Mirror
 
 on: [ push, delete, create ]
 

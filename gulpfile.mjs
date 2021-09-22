@@ -1,13 +1,10 @@
 // --- Gulp ---
 
 import gulp from 'gulp';
-const { src, dest, watch, series, parallel } = gulp;
-
 
 // --- Configuration ---
 
 import config from './bricks.config.mjs';
-
 
 // --- Plugins ---
 
@@ -44,182 +41,175 @@ import del from 'del';
 import sourcemaps from 'gulp-sourcemaps';
 
 import environments from 'gulp-environments';
-const development = environments.development;
-const production = environments.production;
 
 // Browser
 import cache from 'gulp-cache';
 import browserSync from 'browser-sync';
-
+const { src, dest, watch, series, parallel } = gulp;
+const development = environments.development;
+const production = environments.production;
 
 // --- CSS ---
 
-function css() {
-    return src(config.css.src)
-        .pipe(development(sourcemaps.init()))
-        .pipe(sass({
-            quietDeps: true
-        }).on("error", sass.logError))
-        .pipe(autoprefixer({
-            cascade: false
-        }))
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(production(gulpif(config.enable.purgecss, purgecss({
-            content: config.css.content,
-            safelist: config.cssSafelist,
-        }))))
-        .pipe(production(cleancss()))
-        .pipe(development(sourcemaps.write('./')))
-        .pipe(dest(config.css.dist))
-        .pipe(browserSync.stream());
+function css () {
+  return src(config.css.src)
+    .pipe(development(sourcemaps.init()))
+    .pipe(sass({
+      quietDeps: true
+    }).on('error', sass.logError))
+    .pipe(autoprefixer({
+      cascade: false
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(production(gulpif(config.enable.purgecss, purgecss({
+      content: config.css.content,
+      safelist: config.cssSafelist
+    }))))
+    .pipe(production(cleancss()))
+    .pipe(development(sourcemaps.write('./')))
+    .pipe(dest(config.css.dist))
+    .pipe(browserSync.stream());
 };
-
 
 // --- JS ---
 
-function js(done) {
-    src(config.js.src)
-        .pipe(development(sourcemaps.init()))
-        .pipe(rollup({
-            plugins: [
-                babel({ babelHelpers: 'bundled' }),
-                commonjs(),
-                nodeResolve()
-            ]},{ format: 'umd' }))
-        .pipe(production(terser({
-            format: {
-                comments: false,
-            },
-        })))
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(development(sourcemaps.write('./')))
-        .pipe(dest(config.js.dist))
-        .pipe(browserSync.stream())
-    done();
+function js (done) {
+  src(config.js.src)
+    .pipe(development(sourcemaps.init()))
+    .pipe(rollup({
+      plugins: [
+        babel({ babelHelpers: 'bundled' }),
+        commonjs(),
+        nodeResolve()
+      ]
+    }, { format: 'umd' }))
+    .pipe(production(terser({
+      format: {
+        comments: false
+      }
+    })))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(development(sourcemaps.write('./')))
+    .pipe(dest(config.js.dist))
+    .pipe(browserSync.stream());
+  done();
 };
-
 
 // --- Images ---
 
-function img() {
-    return src(config.img.src)
-        .pipe(imagemin({
-            // verbose: true
-        }))
-        .pipe(dest(config.img.dist))
-        .pipe(browserSync.stream());
+function img () {
+  return src(config.img.src)
+    .pipe(imagemin({
+      // verbose: true
+    }))
+    .pipe(dest(config.img.dist))
+    .pipe(browserSync.stream());
 };
-
 
 // --- Fonts ---
 
-function fonts(done) {
-    src(config.fonts.src.ttf)
-        .pipe(ttf2woff2({
-            ignoreExt: true,
-        }))
-        .pipe(dest(config.fonts.dist))
-        .pipe(browserSync.stream())
-    src(config.fonts.src.woff)
-        .pipe(dest(config.fonts.dist))
-        .pipe(browserSync.stream())       
-    done();
+function fonts (done) {
+  src(config.fonts.src.ttf)
+    .pipe(ttf2woff2({
+      ignoreExt: true
+    }))
+    .pipe(dest(config.fonts.dist))
+    .pipe(browserSync.stream());
+  src(config.fonts.src.woff)
+    .pipe(dest(config.fonts.dist))
+    .pipe(browserSync.stream());
+  done();
 };
-
 
 // --- Icons ---
 
-function icons() {
-    return src(config.icons.src)
-        .pipe(rename('fa5.min.js')) 
-        .pipe(production(faMinify(config.faIconSafelist)))
-        .pipe(production(terser({
-            format: {
-                comments: false,
-            },
-        })))
-        .pipe(dest(config.js.dist));
+function icons () {
+  return src(config.icons.src)
+    .pipe(rename('fa5.min.js'))
+    .pipe(production(faMinify(config.faIconSafelist)))
+    .pipe(production(terser({
+      format: {
+        comments: false
+      }
+    })))
+    .pipe(dest(config.js.dist));
 };
-
 
 // --- i18n ---
 
-function domain() {
-    return src(config.php.watch)
-        .pipe(checktextdomain({
-            text_domain: config.textdomain,
-            keywords: config.i18n.functions,
-            correct_domain: true,
-        }))
+function domain () {
+  return src(config.php.watch)
+    .pipe(checktextdomain({
+      text_domain: config.textdomain,
+      keywords: config.i18n.functions,
+      correct_domain: true
+    }));
 };
 
-function pot() {
-    return src(config.php.watch)
-        .pipe(wpPot({
-            domain: config.textdomain,
-        }))
-        .pipe(dest(config.i18n.dist+'template.pot'));
+function pot () {
+  return src(config.php.watch)
+    .pipe(wpPot({
+      domain: config.textdomain
+    }))
+    .pipe(dest(config.i18n.dist + 'template.pot'));
 };
-
 
 // --- Utils ---
 
-function setDev(done) {
-    environments.current(development);
-    done();
+function setDev (done) {
+  environments.current(development);
+  done();
 };
 
-function setProd(done) {
-    environments.current(production);
-    done();
+function setProd (done) {
+  environments.current(production);
+  done();
 };
 
-function clean() {
-    return del('dist/**', {force:true});
+function clean () {
+  return del('dist/**', { force: true });
 };
-
 
 // --- Browser ---
 
-function browser_sync(done) {
-	browserSync.init({
-        open: false,
-        injectChanges: true,
-        proxy: config.siteURL,
-    });
-    done();
+function bsInit (done) {
+  browserSync.init({
+    open: false,
+    injectChanges: true,
+    proxy: config.siteURL
+  });
+  done();
 };
 
-function reload(done) {
-    browserSync.reload();
-    done();
+function bsReload (done) {
+  browserSync.reload();
+  done();
 };
 
-function clearCache(done) {
-    cache.clearAll();
-    done();
+function clearCache (done) {
+  cache.clearAll();
+  done();
 };
 
-function watchFiles(done) {
-    watch(config.css.watch, series(css, clearCache, reload));
-    watch(config.js.watch, series(js, clearCache, reload));
-    watch(config.php.watch, series(clearCache, reload));
-    watch(config.img.watch, series(img, clearCache, reload));
-    watch(config.fonts.watch, series(fonts, clearCache, reload));
-    done();
+function watchFiles (done) {
+  watch(config.css.watch, series(css, clearCache, bsReload));
+  watch(config.js.watch, series(js, clearCache, bsReload));
+  watch(config.php.watch, series(clearCache, bsReload));
+  watch(config.img.watch, series(img, clearCache, bsReload));
+  watch(config.fonts.watch, series(fonts, clearCache, bsReload));
+  done();
 };
-
 
 // --- Tasks ---
 
 const i18n = series(domain, pot);
 const dev = series(setDev, clean, parallel(css, js, img, fonts, icons));
-const build = series(setProd, clean, parallel(css, js, img, fonts, icons, series(domain, pot)));
-const watcher = parallel(browser_sync, watchFiles);
+const build = series(setProd, clean, parallel(css, js, img, fonts, icons, i18n));
+const watcher = parallel(bsInit, watchFiles);
 
 export { css, js, img, fonts, icons, i18n, dev, build, watcher as watch };
 export default dev;

@@ -2,7 +2,6 @@
 
 /**
  *  https://developer.wordpress.org/themes/basics/theme-functions/
- * 
  */
 
 require_once get_template_directory() . '/functions/setup.php'; // --- Theme setup ---
@@ -15,7 +14,9 @@ require_once get_template_directory() . '/functions/sidebars.php'; // --- Regist
 
 require_once get_template_directory() . '/functions/lib/class-wp-bootstrap-navwalker.php'; // --- Nav Walker ---
 
-foreach ( glob( get_template_directory() . '/functions/cpt/*.php' ) as $cpt ) { require_once $cpt; }; // --- Register Custom Post Types & Taxonomies ---
+foreach ( glob( get_template_directory() . '/functions/cpt/*.php' ) as $cpt ) {
+	require_once $cpt;
+}; // --- Register Custom Post Types & Taxonomies ---
 
 require_once get_template_directory() . '/functions/global.php'; // --- Various global functions ---
 
