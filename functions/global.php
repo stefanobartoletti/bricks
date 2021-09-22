@@ -55,17 +55,15 @@ function brk_thumbnail_alt() {
 
 function brk_breadcrumbs() {
 
-	// http://yoa.st/breadcrumbs
-
 	if ( function_exists( 'yoast_breadcrumb' ) ) {
+
+		// http://yoa.st/breadcrumbs
 
 		yoast_breadcrumb( '<nav class="breadcrumb mt-3">', '</nav>' );
 
-	}
+	} elseif ( function_exists( 'rank_math_the_breadcrumbs' ) ) {
 
-	// https://s.rankmath.com/breadcrumbs
-
-	elseif ( function_exists( 'rank_math_the_breadcrumbs' ) ) {
+		// https://s.rankmath.com/breadcrumbs
 
 		add_filter(
 			'rank_math/frontend/breadcrumb/args',
