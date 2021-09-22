@@ -76,10 +76,7 @@
         "addVersionUrl": true
       },
       "@release-it/bumper": {
-        "out": {
-          "file": "style.css",
-          "type": "text/css"
-        }
+        "out": ["style.css", "composer.json"]
       }
     }
   }
