@@ -9,8 +9,8 @@ $searchtext = esc_html__( 'Search', 'bricks' );
 	<div class="row g-2">
 
 		<div class="col">
-			<input class="form-control form-control-sm" type="search" placeholder="<?php echo $searchtext; ?>"
-				aria-label="<?php echo $searchtext; ?>" name="s">
+			<input class="form-control form-control-sm" type="search" placeholder="<?php echo esc_attr( $searchtext ); ?>"
+				aria-label="<?php echo esc_attr( $searchtext ); ?>" name="s">
 		</div>
 
 		<div class="col-3">
