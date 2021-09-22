@@ -299,7 +299,7 @@ if ( class_exists( 'ACF' ) ) {
 		$themecolor = get_field( 'meta_theme_color', 'option' );
 
 		if ( $themecolor ) {
-			echo '<meta name="theme-color" content="', $themecolor, '">';
+			echo '<meta name="theme-color" content="', esc_attr( $themecolor ), '">';
 		}
 
 	}
