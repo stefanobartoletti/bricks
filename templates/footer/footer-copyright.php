@@ -15,20 +15,20 @@
 					$idnumber = get_field( 'contacts_id_number', 'option' );
 					$vatnumber = get_field( 'contacts_vat_number', 'option' );
 
-					echo '&#169; ' . date( 'o' );
-					echo $company ? ' | ' . $company : '';
-					echo $address1 ? ' | ' . $address1 : '';
-					echo $address2 ? ', ' . $address2 : '';
-					echo $idnumber ? ' | c.f. ' . $idnumber : '';
-					echo $vatnumber ? ' | p.i. ' . $vatnumber : '';
+					echo '&#169; ' . esc_html( gmdate( 'o' ) );
+					echo $company ? ' | ' . esc_html( $company ) : '';
+					echo $address1 ? ' | ' . esc_html( $address1 ) : '';
+					echo $address2 ? ', ' . esc_html( $address2 ) : '';
+					echo $idnumber ? ' | c.f. ' . esc_html( $idnumber ) : '';
+					echo $vatnumber ? ' | p.i. ' . esc_html( $vatnumber ) : '';
 
 			} ?>
 			
 		</span>
 
 		<span id="brk-signature" class="navbar-text ms-md-auto">
-			<a class="text-white-50" href="<?php echo wp_get_theme()->get( 'ThemeURI' ); ?>" target="_blank">
-				Made with <?php echo file_get_contents( get_template_directory() . '/dist/img/logo-small.svg' ); ?> Bricks
+			<a class="text-white-50" href="<?php echo esc_attr( wp_get_theme()->get( 'ThemeURI' ) ); ?>" target="_blank">
+				Made with <?php echo esc_attr( file_get_contents( get_template_directory() . '/dist/img/logo-small.svg' ) ); ?> Bricks
 			</a>
 		</span>
    

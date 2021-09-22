@@ -45,10 +45,10 @@
 								</div>
 								<div class="flex-grow-1 ms-3">
 									<?php
-									echo $mapurl ? '<a class="nav-link p-0" href="' . $mapurl . '" target="_blank">' : '<p>';
-									echo $company ? $company . ', <br>' : '';
-									echo $address1 ? $address1 : '';
-									echo $address2 ? ', <br>' . $address2 : '';
+									echo $mapurl ? '<a class="nav-link p-0" href="' . esc_html( $mapurl ) . '" target="_blank">' : '<p>';
+									echo $company ? esc_html( $company ) . ', <br>' : '';
+									echo $address1 ? esc_html( $address1 ) : '';
+									echo $address2 ? ', <br>' . esc_html( $address2 ) : '';
 									echo $mapurl ? '</a>' : '<p>';
 									?>
 								</div>
@@ -61,7 +61,7 @@
 									<i class="fas fa-phone fa-fw mt-1 nav-link p-0"></i>
 								</div>
 								<div class="flex-grow-1 ms-3">
-									<a class="nav-link p-0" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+									<a class="nav-link p-0" href="tel:<?php echo esc_attr( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
 								</div>
 							</li>
 
@@ -72,7 +72,7 @@
 									<i class="fas fa-envelope fa-fw mt-1 nav-link p-0"></i>
 								</div>
 								<div class="flex-grow-1 ms-3">
-									<a class="nav-link p-0" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+									<a class="nav-link p-0" href="mailto:<?php echo esc_attr( $email ); ?>"><?php echo esc_html( $email ); ?></a>
 								</div>
 							</li>
 
