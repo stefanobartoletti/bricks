@@ -17,6 +17,23 @@ updates:
     prefix-development: chore
     include: scope
 
+# Fetch and update latest `composer` packages
+- package-ecosystem: composer
+  directory: '/'
+  schedule:
+    interval: daily
+    time: '00:00'
+  target-branch: 'devel'
+  open-pull-requests-limit: 10
+  reviewers:
+    - stefanobartoletti
+  assignees:
+    - stefanobartoletti
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
+
 # Fetch and update latest github actions
 - package-ecosystem: 'github-actions'
   directory: '/'

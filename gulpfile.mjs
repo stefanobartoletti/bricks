@@ -185,7 +185,7 @@ function clean() {
 
 // --- Browser ---
 
-function browser_sync(done) {
+function bsInit(done) {
 	browserSync.init({
         open: false,
         injectChanges: true,
@@ -194,7 +194,7 @@ function browser_sync(done) {
     done();
 };
 
-function reload(done) {
+function bsReload(done) {
     browserSync.reload();
     done();
 };
@@ -205,11 +205,11 @@ function clearCache(done) {
 };
 
 function watchFiles(done) {
-    watch(config.css.watch, series(css, clearCache, reload));
-    watch(config.js.watch, series(js, clearCache, reload));
-    watch(config.php.watch, series(clearCache, reload));
-    watch(config.img.watch, series(img, clearCache, reload));
-    watch(config.fonts.watch, series(fonts, clearCache, reload));
+    watch(config.css.watch, series(css, clearCache, bsReload));
+    watch(config.js.watch, series(js, clearCache, bsReload));
+    watch(config.php.watch, series(clearCache, bsReload));
+    watch(config.img.watch, series(img, clearCache, bsReload));
+    watch(config.fonts.watch, series(fonts, clearCache, bsReload));
     done();
 };
 
@@ -219,7 +219,7 @@ function watchFiles(done) {
 const i18n = series(domain, pot);
 const dev = series(setDev, clean, parallel(css, js, img, fonts, icons));
 const build = series(setProd, clean, parallel(css, js, img, fonts, icons, i18n));
-const watcher = parallel(browser_sync, watchFiles);
+const watcher = parallel(bsInit, watchFiles);
 
 export { css, js, img, fonts, icons, i18n, dev, build, watcher as watch };
 export default dev;

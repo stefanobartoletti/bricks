@@ -5,12 +5,14 @@
 
 _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 
-[![](https://img.shields.io/github/v/release/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/releases/latest)
-[![](https://img.shields.io/github/last-commit/stefanobartoletti/bricks/devel)](https://github.com/stefanobartoletti/bricks/commits/devel)
-[![](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks)
-[![](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev)
-[![](https://img.shields.io/codeclimate/maintainability/stefanobartoletti/bricks)](https://codeclimate.com/github/stefanobartoletti/bricks)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/stefanobartoletti/bricks)
+[![Release](https://img.shields.io/github/v/release/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/releases/latest)
+[![Last Commit](https://img.shields.io/github/last-commit/stefanobartoletti/bricks/devel)](https://github.com/stefanobartoletti/bricks/commits/devel)
+[![David DM](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks)
+[![David DM Dev](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev)
+[![Codacy](https://img.shields.io/codacy/grade/5dc7110e5216467b859b6319faf15d1e)](https://app.codacy.com/gh/stefanobartoletti/bricks-docs)
+![Snyk](https://img.shields.io/snyk/vulnerabilities/github/stefanobartoletti/bricks)
+
+
 
 <!-- [![](https://img.shields.io/github/contributors/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors) -->
 
@@ -28,7 +30,8 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 - [Font Awesome 5](https://fontawesome.com/) (*SVG with JavaScript* version, parsed and minified by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify))
 - CSS bundling, including [Autoprefixer](https://autoprefixer.github.io/) and [PurgeCSS](https://purgecss.com/)
 - JavaScript bundling with [Rollup](https://www.rollupjs.org/) and [Babel](https://babeljs.io/)
-- [BrowserSync](https://www.browsersync.io/)
+- Code linting with [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) and [phpcs](https://github.com/squizlabs/PHP_CodeSniffer).
+- [BrowserSync](https://www.browsersync.io/) live server.
 - Automatic conversion of custom fonts into *woff2* web format
 - Support for localization by generation of a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/)
 - Support for integration of some optional JavaScript libraries
@@ -37,6 +40,7 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 
 - [Git](https://git-scm.com/) to clone this repository.
 - [Yarn](https://yarnpkg.com/) as the preferred tool to manage dependencies and run development scripts (you can also use plain [npm](https://nodejs.org/)).
+- [Composer](https://getcomposer.org/) to manage PHP dependencies (Optional, used for PHP linting).
 - [Advanced Custom Fields](https://www.advancedcustomfields.com/) (Regular or PRO) to take advantage of its integration with Bricks (Optional but strongly recommended).
 
 ## 📖 Documentation

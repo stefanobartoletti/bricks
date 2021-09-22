@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ## [Unreleased]
 
+### Added
+- Added ESLint for JavaScript code linting and formatting
+- Added Stylelint for CSS/SASS code linting and formatting
+- Added phpcs for PHP code linting and formatting (with WordPress coding standards)
+
 ### Changed
 - Updated Dev Dependencies
 
