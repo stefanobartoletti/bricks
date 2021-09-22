@@ -29,43 +29,43 @@ msgstr "Oops, la pagina non può essere trovata"
 msgid "Error 404"
 msgstr "Errore 404"
 
-#: comments.php:11
+#: comments.php:12
 msgid "No comments yet."
 msgstr "Ancora nessun commento."
 
-#: comments.php:12
+#: comments.php:13
 msgid "One comment."
 msgstr "Un commento."
 
-#: comments.php:13
+#: comments.php:14
 msgid "% comments."
 msgstr "% commenti."
 
-#: comments.php:30
+#: comments.php:36
 msgid "Comment navigation"
 msgstr "Navigazione commenti"
 
-#: comments.php:34
+#: comments.php:40
 msgid "&larr; Older Comments"
 msgstr "&larr; Commenti meno recenti"
 
-#: comments.php:38
+#: comments.php:44
 msgid "Newer Comments &rarr;"
 msgstr "Commenti più recenti &rarr;"
 
-#: comments.php:49
+#: comments.php:56
 msgid "Comments are closed."
 msgstr "Commenti disabilitati."
 
-#: index.php:20
+#: index.php:21
 msgid "Results for: "
 msgstr "Risultati della ricerca per: "
 
-#: index.php:37
+#: index.php:44
 msgid "&laquo; Previous"
 msgstr "&laquo; Precedente"
 
-#: index.php:38
+#: index.php:45
 msgid "Next &raquo;"
 msgstr "Seguente &raquo;"
 
@@ -146,11 +146,11 @@ msgstr "Esempio: codice fiscale"
 msgid "VAT Number"
 msgstr "Partita IVA"
 
-#: functions/integrations/acf.php:146, functions/integrations/acf.php:150
+#: functions/integrations/acf.php:148, functions/integrations/acf.php:152
 msgid "Social profiles"
 msgstr "Profili social"
 
-#: functions/integrations/acf.php:153
+#: functions/integrations/acf.php:155
 msgid ""
 "Full social profile addresses. Not all fields are required, only filled "
 "fields will be displayed on the site as icons"
@@ -158,15 +158,15 @@ msgstr ""
 "Indirizzi completi dei profili social. Non è necessario riempire tutti i "
 "campi, solo quelli compilati verranno mostrati nel sito come icone"
 
-#: functions/integrations/acf.php:244, functions/integrations/acf.php:248
+#: functions/integrations/acf.php:248, functions/integrations/acf.php:252
 msgid "Meta"
 msgstr "Meta"
 
-#: functions/integrations/acf.php:255
+#: functions/integrations/acf.php:259
 msgid "Chrome Theme"
 msgstr "Tema Chrome"
 
-#: functions/integrations/acf.php:258
+#: functions/integrations/acf.php:262
 msgid "Tab color in Chrome for Android"
 msgstr "Colore della tab in Chrome per Android"
 
@@ -190,21 +190,21 @@ msgstr ""
 "Spiacente, ma non ci sono riscontri con i tuoi termini di ricerca. Per "
 "favore riprova con altre parole chiavi."
 
-#: templates/content/page.php:18, templates/content/single.php:16
+#: templates/content/page.php:22, templates/content/single.php:18
 msgid "Part:"
 msgstr "Parte:"
 
-#: templates/footer/footer-columns.php:91
+#: templates/footer/footer-columns.php:94
 msgid "Pages"
 msgstr "Pagine"
 
-#: templates/footer/footer-columns.php:108
+#: templates/footer/footer-columns.php:115
 msgid "Privacy"
 msgstr "Privacy"
 
-#: templates/sections/home-cta.php:23, templates/sections/home-news.php:41,
-#: templates/sections/home-services.php:29,
-#: templates/sections/home-slider.php:26
+#: templates/sections/home-cta.php:24, templates/sections/home-news.php:47,
+#: templates/sections/home-services.php:30,
+#: templates/sections/home-slider.php:32
 msgid "Read more"
 msgstr "Leggi tutto"
 
@@ -212,7 +212,7 @@ msgstr "Leggi tutto"
 msgid "News"
 msgstr "News"
 
-#: templates/sections/home-news.php:37
+#: templates/sections/home-news.php:40
 msgid "By "
 msgstr "By "
 

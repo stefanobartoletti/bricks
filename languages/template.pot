@@ -21,43 +21,43 @@ msgstr ""
 msgid "Error 404"
 msgstr ""
 
-#: comments.php:11
+#: comments.php:12
 msgid "No comments yet."
 msgstr ""
 
-#: comments.php:12
+#: comments.php:13
 msgid "One comment."
 msgstr ""
 
-#: comments.php:13
+#: comments.php:14
 msgid "% comments."
 msgstr ""
 
-#: comments.php:30
+#: comments.php:36
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:34
+#: comments.php:40
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: comments.php:38
+#: comments.php:44
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: comments.php:49
+#: comments.php:56
 msgid "Comments are closed."
 msgstr ""
 
-#: index.php:20
+#: index.php:21
 msgid "Results for: "
 msgstr ""
 
-#: index.php:37
+#: index.php:44
 msgid "&laquo; Previous"
 msgstr ""
 
-#: index.php:38
+#: index.php:45
 msgid "Next &raquo;"
 msgstr ""
 
@@ -137,23 +137,23 @@ msgstr ""
 msgid "VAT Number"
 msgstr ""
 
-#: functions/integrations/acf.php:146, functions/integrations/acf.php:150
+#: functions/integrations/acf.php:148, functions/integrations/acf.php:152
 msgid "Social profiles"
 msgstr ""
 
-#: functions/integrations/acf.php:153
+#: functions/integrations/acf.php:155
 msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
 msgstr ""
 
-#: functions/integrations/acf.php:244, functions/integrations/acf.php:248
+#: functions/integrations/acf.php:248, functions/integrations/acf.php:252
 msgid "Meta"
 msgstr ""
 
-#: functions/integrations/acf.php:255
+#: functions/integrations/acf.php:259
 msgid "Chrome Theme"
 msgstr ""
 
-#: functions/integrations/acf.php:258
+#: functions/integrations/acf.php:262
 msgid "Tab color in Chrome for Android"
 msgstr ""
 
@@ -169,19 +169,19 @@ msgstr ""
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: templates/content/page.php:18, templates/content/single.php:16
+#: templates/content/page.php:22, templates/content/single.php:18
 msgid "Part:"
 msgstr ""
 
-#: templates/footer/footer-columns.php:91
+#: templates/footer/footer-columns.php:94
 msgid "Pages"
 msgstr ""
 
-#: templates/footer/footer-columns.php:108
+#: templates/footer/footer-columns.php:115
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/home-cta.php:23, templates/sections/home-news.php:41, templates/sections/home-services.php:29, templates/sections/home-slider.php:26
+#: templates/sections/home-cta.php:24, templates/sections/home-news.php:47, templates/sections/home-services.php:30, templates/sections/home-slider.php:32
 msgid "Read more"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: templates/sections/home-news.php:37
+#: templates/sections/home-news.php:40
 msgid "By "
 msgstr ""
 
