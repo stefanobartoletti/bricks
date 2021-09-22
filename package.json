@@ -1,6 +1,6 @@
 {
   "name": "bricks",
-  "version": "0.25.0",
+  "version": "0.26.0",
   "description": "A modular WordPress starter theme powered by Bootstrap 5 and Gulp",
   "author": "Stefano Bartoletti (https://www.stefanobartoletti.it)",
   "repository": {
@@ -76,10 +76,10 @@
         "addVersionUrl": true
       },
       "@release-it/bumper": {
-        "out": {
-          "file": "style.css",
-          "type": "text/css"
-        }
+        "out": [
+          "style.css",
+          "composer.json"
+        ]
       }
     }
   }
