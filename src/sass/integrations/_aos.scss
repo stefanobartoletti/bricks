@@ -1,16 +1,16 @@
 // load source
 
-@import "../../node_modules/aos/src/sass/aos";
+@import '../../node_modules/aos/src/sass/aos';
 
 // custom animation example
 
-[data-aos="custom-animation"] {
-  transform: rotate(360deg);
+[data-aos='custom-animation'] {
   opacity: 0;
   transition-property: transform, opacity;
+  transform: rotate(360deg);
 
   &.aos-animate {
-    transform: rotate(0);
     opacity: 1;
+    transform: rotate(0);
   }
 }

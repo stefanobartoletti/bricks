@@ -1,13 +1,10 @@
 #sidebar-main-wrapper {
+  ul {
+    padding-left: 0;
+    list-style-type: none;
 
-    ul {
-        list-style-type: none;
-        padding-left: 0rem;
-
-        li {
-            margin-bottom: 0.25rem;
-        }
-    
+    li {
+      margin-bottom: 0.25rem;
     }
-
+  }
 }
