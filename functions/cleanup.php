@@ -75,8 +75,9 @@ function brk_disable_query_strings() {
 }
 
 function brk_jquery_footer() {
+	$theme_version = wp_get_theme()->get( 'Version' );
 	wp_deregister_script( 'jquery' );
-	wp_enqueue_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, null, true );
+	wp_enqueue_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, $theme_version, true );
 }
 
 
