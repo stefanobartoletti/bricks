@@ -20,10 +20,10 @@ function brk_svg_mimetype( $data = null, $file = null, $filename = null, $mimes 
 		$exploded = explode( '.', $filename );
 		$ext      = strtolower( end( $exploded ) );
 	}
-	if ( $ext === 'svg' ) {
+	if ( 'svg' === $ext ) {
 		$data['type'] = 'image/svg+xml';
 		$data['ext']  = 'svg';
-	} elseif ( $ext === 'svgz' ) {
+	} elseif ( 'svgz' === $ext ) {
 		$data['type'] = 'image/svg+xml';
 		$data['ext']  = 'svgz';
 	}
@@ -47,7 +47,7 @@ function brk_excerpt_length( $length ) {
 
 function brk_thumbnail_alt() {
 	$brk_thumbnail_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
-	echo $brk_thumbnail_alt;
+	echo esc_attr( $brk_thumbnail_alt );
 }
 
 

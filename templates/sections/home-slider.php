@@ -19,7 +19,7 @@
 
 		<div class="carousel-item 
 			<?php
-			if ( $brk_slidecount == 1 ) {
+			if ( 1 == $brk_slidecount ) {
 				echo 'active'; }
 			?>
 		">
