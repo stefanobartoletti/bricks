@@ -1,4 +1,4 @@
-![Bricks](https://repository-images.githubusercontent.com/170774557/10d31c80-75ea-11eb-8adc-1b7b7d15f46c)
+![Bricks](.github/bricks-social.png)
 
 
 <div align="center">
