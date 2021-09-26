@@ -11,7 +11,7 @@ assignees: ''
 
 IMPORTANT: BEFORE REPORTING A BUG:
 
-- Make sure to read the documentation -> https://bricks.stefanobartoletti.it
+- Make sure to read the relevant topics on the documentation -> https://bricks.stefanobartoletti.it
 - Search on the issues, your problem may have already be answered or even solved.
 - Describe your issue in a clear and detailed way.
 - Please only use English in your reports.
