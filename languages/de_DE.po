@@ -1,0 +1,220 @@
+# Copyright (C) 2021 bricks
+# This file is distributed under the same license as the bricks package.
+msgid ""
+msgstr ""
+"Project-Id-Version: bricks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: de_DE\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:12
+msgid "Oops, that page can&#39;t be found"
+msgstr "Seite nicht gefunden"
+
+#: 404.php:16
+msgid "Error 404"
+msgstr "Fehler 404"
+
+#: comments.php:12
+msgid "No comments yet."
+msgstr "Keine Kommentare vorhanden."
+
+#: comments.php:13
+msgid "One comment."
+msgstr "Ein Kommentar."
+
+#: comments.php:14
+msgid "% comments."
+msgstr "% Kommentare."
+
+#: comments.php:36
+msgid "Comment navigation"
+msgstr "Kommentarnavigation"
+
+#: comments.php:40
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr "Kommentare sind gesperrt."
+
+#: index.php:21
+msgid "Results for: "
+msgstr "Ergebnisse für: "
+
+#: index.php:44
+msgid "&laquo; Previous"
+msgstr "&laquo; Zurück"
+
+#: index.php:45
+msgid "Next &raquo;"
+msgstr "Weiter &raquo;"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Suche"
+
+#: functions/navmenus.php:13
+msgid "Header Menu"
+msgstr "Header Menü"
+
+#: functions/navmenus.php:14
+msgid "Footer Menu"
+msgstr "Footer Menü"
+
+#: functions/sidebars.php:13, functions/sidebars.php:15
+msgid "Main Sidebar"
+msgstr "Hauptseitenleiste"
+
+#: functions/integrations/acf.php:25, functions/integrations/acf.php:29,
+#: templates/footer/footer-columns.php:23
+msgid "Contacts"
+msgstr "Kontakte"
+
+#: functions/integrations/acf.php:32
+msgid "Displayed in the site footer"
+msgstr "Wird im Footer angezeigt"
+
+#: functions/integrations/acf.php:37
+msgid "Company"
+msgstr "Firma"
+
+#: functions/integrations/acf.php:40
+msgid "Example: Full Company Name"
+msgstr "Beispiel: voller Firmenname"
+
+#: functions/integrations/acf.php:47
+msgid "Address - Line 1"
+msgstr "Adresse - Zeile 1"
+
+#: functions/integrations/acf.php:50
+msgid "Example: Street, Number"
+msgstr "Beispiel: Straße und Hausnummer"
+
+#: functions/integrations/acf.php:57
+msgid "Address - Line 2"
+msgstr "Adresse - Zeile 2"
+
+#: functions/integrations/acf.php:60
+msgid "Example => Postal Code, City, State"
+msgstr "Beispiel => PLZ, Stadt, Bundesland"
+
+#: functions/integrations/acf.php:67
+msgid "Map URL"
+msgstr "Karten URL"
+
+#: functions/integrations/acf.php:70
+msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
+msgstr "Beispiel: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 für Google Maps"
+
+#: functions/integrations/acf.php:77
+msgid "Phone number"
+msgstr "Telefonnummer"
+
+#: functions/integrations/acf.php:86
+msgid "E-mail address"
+msgstr "E-Mail Adresse"
+
+#: functions/integrations/acf.php:95
+msgid "ID Number"
+msgstr "ID Nummer"
+
+#: functions/integrations/acf.php:98
+msgid "Example: Social Security Number, Fiscal Code, etc."
+msgstr "Beispiel: Sozialversicherungsnummer, etc."
+
+#: functions/integrations/acf.php:105
+msgid "VAT Number"
+msgstr "USt-ID Nummer"
+
+#: functions/integrations/acf.php:148, functions/integrations/acf.php:152
+msgid "Social profiles"
+msgstr "Social-Media Profile"
+
+#: functions/integrations/acf.php:155
+msgid ""
+"Full social profile addresses. Not all fields are required, only filled "
+"fields will be displayed on the site as icons"
+msgstr ""
+"Volle Social-Media URLs. Nicht alle Felder werden benötigt, nur gefüllte "
+"Felder werden auf der Seite als Icon angezeigt"
+
+#: functions/integrations/acf.php:248, functions/integrations/acf.php:252
+msgid "Meta"
+msgstr "Meta"
+
+#: functions/integrations/acf.php:259
+msgid "Chrome Theme"
+msgstr "Chrome Theme"
+
+#: functions/integrations/acf.php:262
+msgid "Tab color in Chrome for Android"
+msgstr "Tab-Farbe in Chrome für Android"
+
+#: functions/lib/class-wp-bootstrap-navwalker.php:366,
+#: functions/lib/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr "Menü hinzufügen"
+
+#: templates/content/loop-none.php:10
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Seite konnte nicht gefunden werden. Bitte benutzen Sie die Suche."
+
+#: templates/content/loop-none.php:6
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Leider keine Treffer gefunden. Bitte versuchen Sie es erneut mit anderen "
+"Suchbegriffen."
+
+#: templates/content/page.php:22, templates/content/single.php:18
+msgid "Part:"
+msgstr "Teil:"
+
+#: templates/footer/footer-columns.php:94
+msgid "Pages"
+msgstr "Seiten"
+
+#: templates/footer/footer-columns.php:115
+msgid "Privacy"
+msgstr "Privatsphäre"
+
+#: templates/sections/home-cta.php:24, templates/sections/home-news.php:47,
+#: templates/sections/home-services.php:30,
+#: templates/sections/home-slider.php:32
+msgid "Read more"
+msgstr "Mehr lesen"
+
+#: templates/sections/home-news.php:5
+msgid "News"
+msgstr "Neuigkeiten"
+
+#: templates/sections/home-news.php:40
+msgid "By "
+msgstr "Von "
+
+#: templates/sections/home-services.php:5
+msgid "Services"
+msgstr "Dienste"
