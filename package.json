@@ -52,7 +52,7 @@
     "gulp-terser": "^2.1.0",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-wp-pot": "^2.5.0",
-    "rollup": "^2.57.0",
+    "rollup": "^2.58.0",
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.5.0",
     "stylelint-config-standard": "^22.0.0",
