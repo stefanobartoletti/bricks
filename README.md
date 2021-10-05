@@ -48,11 +48,14 @@ Installation and configuration instructions and all features are documented on t
 
 All updates up to the latest released version are documented in the [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md) file.
 
-## 🙌 Contributors
+## 🤝 Contributing
+
+If you want to contribute to Bricks make sure to read the [Contributing guidelines](https://github.com/stefanobartoletti/bricks/blob/master/.github/CONTRIBUTING.md).
+
+Thanks to all contributors!
 
 [![Contributors Display](https://badges.pufler.dev/contributors/stefanobartoletti/bricks?size=50&padding=5&bots=false)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
 
-[Contributing guidelines](https://github.com/stefanobartoletti/bricks/blob/master/.github/CONTRIBUTING.md)
 
 ## 📝 License
 
