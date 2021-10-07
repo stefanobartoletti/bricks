@@ -1,0 +1,223 @@
+# Copyright (C) 2021 bricks
+# This file is distributed under the same license as the bricks package.
+msgid ""
+msgstr ""
+"Project-Id-Version: bricks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? "
+"0 : n%10>=2 && n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: lt_LT\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:12
+msgid "Oops, that page can&#39;t be found"
+msgstr "Oi, puslapis nerastas"
+
+#: 404.php:16
+msgid "Error 404"
+msgstr "Klaida 404"
+
+#: comments.php:12
+msgid "No comments yet."
+msgstr "Dar be komentarų."
+
+#: comments.php:13
+msgid "One comment."
+msgstr "Vienas komentaras."
+
+#: comments.php:14
+msgid "% comments."
+msgstr "% komentarų."
+
+#: comments.php:36
+msgid "Comment navigation"
+msgstr "Komentarų navigacija"
+
+#: comments.php:40
+msgid "&larr; Older Comments"
+msgstr "&larr; Senesni komentarai"
+
+#: comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr "Naujesni komentarai &rarr;"
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr "Komentavimas uždarytas."
+
+#: index.php:21
+msgid "Results for: "
+msgstr "Rezultatai: "
+
+#: index.php:44
+msgid "&laquo; Previous"
+msgstr "&laquo; Ankstesnis"
+
+#: index.php:45
+msgid "Next &raquo;"
+msgstr "Sekantis &raquo;"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Paieška"
+
+#: functions/navmenus.php:13
+msgid "Header Menu"
+msgstr "Antraštės meniu"
+
+#: functions/navmenus.php:14
+msgid "Footer Menu"
+msgstr "Poraštės meniu"
+
+#: functions/sidebars.php:13, functions/sidebars.php:15
+msgid "Main Sidebar"
+msgstr "Pagrindinė šoninė juosta"
+
+#: functions/integrations/acf.php:25, functions/integrations/acf.php:29,
+#: templates/footer/footer-columns.php:23
+msgid "Contacts"
+msgstr "Kontaktai"
+
+#: functions/integrations/acf.php:32
+msgid "Displayed in the site footer"
+msgstr "Rodoma svetainės poraštėje"
+
+#: functions/integrations/acf.php:37
+msgid "Company"
+msgstr "Kompanija"
+
+#: functions/integrations/acf.php:40
+msgid "Example: Full Company Name"
+msgstr "Pavyzdys: pilnas kompanijos pavadinimas"
+
+#: functions/integrations/acf.php:47
+msgid "Address - Line 1"
+msgstr "Adreso eilutė 1"
+
+#: functions/integrations/acf.php:50
+msgid "Example: Street, Number"
+msgstr "Pavyzdys: gatvė, numeris"
+
+#: functions/integrations/acf.php:57
+msgid "Address - Line 2"
+msgstr "Adreso eilutė 2"
+
+#: functions/integrations/acf.php:60
+msgid "Example => Postal Code, City, State"
+msgstr "Pavyzdys => pašto kodas, miestas, valstija"
+
+#: functions/integrations/acf.php:67
+msgid "Map URL"
+msgstr "Žemėlapio nuoroda"
+
+#: functions/integrations/acf.php:70
+msgid "Example: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
+msgstr ""
+"Pavyzdys: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 skirtas Google Maps"
+
+#: functions/integrations/acf.php:77
+msgid "Phone number"
+msgstr "Telefono numeris"
+
+#: functions/integrations/acf.php:86
+msgid "E-mail address"
+msgstr "El. pašto adresas"
+
+#: functions/integrations/acf.php:95
+msgid "ID Number"
+msgstr "ID numeris"
+
+#: functions/integrations/acf.php:98
+msgid "Example: Social Security Number, Fiscal Code, etc."
+msgstr "Pavyzdys: socialinio draudimo numeris, mokesčių kodas ir kt."
+
+#: functions/integrations/acf.php:105
+msgid "VAT Number"
+msgstr "PVM numeris"
+
+#: functions/integrations/acf.php:148, functions/integrations/acf.php:152
+msgid "Social profiles"
+msgstr "Socialiniai profiliai"
+
+#: functions/integrations/acf.php:155
+msgid ""
+"Full social profile addresses. Not all fields are required, only filled "
+"fields will be displayed on the site as icons"
+msgstr ""
+"Visi socialinio profilio adresai. Ne visi laukai yra privalomi, tik "
+"užpildyti laukai bus rodomi svetainėje kaip piktogramos"
+
+#: functions/integrations/acf.php:248, functions/integrations/acf.php:252
+msgid "Meta"
+msgstr "Meta"
+
+#: functions/integrations/acf.php:259
+msgid "Chrome Theme"
+msgstr "Chrome tema"
+
+#: functions/integrations/acf.php:262
+msgid "Tab color in Chrome for Android"
+msgstr "Kortelės spalva Chrome skirtoje Android"
+
+#: functions/lib/class-wp-bootstrap-navwalker.php:366,
+#: functions/lib/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr "Pridėti meniu"
+
+#: templates/content/loop-none.php:10
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Panašu, kad negalime rasti ko ieškojote. Galbūt paieška galėtų padėti."
+
+#: templates/content/loop-none.php:6
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Atsiprašome, bet niekas neatitiko jūsų paieškos kriterijų. Bandykite dar "
+"kartą naudodami kitus raktinius žodžius."
+
+#: templates/content/page.php:22, templates/content/single.php:18
+msgid "Part:"
+msgstr "Dalis:"
+
+#: templates/footer/footer-columns.php:94
+msgid "Pages"
+msgstr "Puslapiai"
+
+#: templates/footer/footer-columns.php:115
+msgid "Privacy"
+msgstr "Privatumas"
+
+#: templates/sections/home-cta.php:24, templates/sections/home-news.php:47,
+#: templates/sections/home-services.php:30,
+#: templates/sections/home-slider.php:32
+msgid "Read more"
+msgstr "Skaityti daugiau"
+
+#: templates/sections/home-news.php:5
+msgid "News"
+msgstr "Naujienos"
+
+#: templates/sections/home-news.php:40
+msgid "By "
+msgstr "Pagal "
+
+#: templates/sections/home-services.php:5
+msgid "Services"
+msgstr "Paslaugos"
