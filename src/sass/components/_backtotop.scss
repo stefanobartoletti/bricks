@@ -3,7 +3,7 @@
   right: 25px;
   bottom: 25px;
   z-index: 1;
-  opacity: 1;
+  opacity: 100%;
   transition: opacity 0.5s;
 
   &:focus {
@@ -12,6 +12,6 @@
 
   &.hidden {
     z-index: -1;
-    opacity: 0;
+    opacity: 0%;
   }
 }

@@ -21,7 +21,7 @@ $dark: #333;
 
 // --- Typography ---
 
-$font-family-sans-serif:      system-ui, -apple-system, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 $font-family-base: rubik, $font-family-sans-serif;
@@ -51,7 +51,7 @@ $font-family-base: rubik, $font-family-sans-serif;
 
 // $headings-font-family:        null;
 // $headings-font-style:         null;
-$headings-font-weight:           700;   // 500;
+$headings-font-weight: 700;   // 500;
 // $headings-line-height:        1.2;
 // $headings-color:              null;
 
@@ -75,7 +75,7 @@ $headings-font-weight:           700;   // 500;
 // --- Links ---
 
 // $link-color:                     $primary;
-$link-decoration:                   none; // underline;
+$link-decoration: none; // underline;
 // $link-shade-percentage:          20%;
 // $link-hover-color:               shift-color($link-color, $link-shade-percentage);
 // $link-hover-decoration:          null;
