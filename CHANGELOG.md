@@ -7,11 +7,11 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ### Added
 - Added translations for some languages:
-  - 🇨🇿 Czech (contributed by @PapuleX )
-  - 🇫🇷 French (contributed by @Tititesouris )
-  - 🇩🇪 German (contributed by @m1ga )
-  - 🇱🇹 Lithuanian (contributed by @mantasio )
-  - 🇪🇸 Spanish (contributed by @aitorres )
+  - 🇨🇿 Czech (contributed by [PapuleX](https://github.com/PapuleX))
+  - 🇫🇷 French (contributed by [Tititesouris](https://github.com/Tititesouris))
+  - 🇩🇪 German (contributed by [m1ga](https://github.com/m1ga))
+  - 🇱🇹 Lithuanian (contributed by [mantasio](https://github.com/mantasio))
+  - 🇪🇸 Spanish (contributed by [aitorres](https://github.com/aitorres))
 - Added [Contributing](https://github.com/stefanobartoletti/bricks/blob/master/.github/CONTRIBUTING.md) guidelines
 
 ### Changed
