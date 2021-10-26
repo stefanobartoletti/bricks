@@ -7,14 +7,11 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 
 [![Release](https://img.shields.io/github/v/release/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/stefanobartoletti/bricks/devel)](https://github.com/stefanobartoletti/bricks/commits/devel)
+[![Contributors](https://img.shields.io/github/contributors/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
 [![David DM](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks)
 [![David DM Dev](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev)
 [![Codacy](https://img.shields.io/codacy/grade/5dc7110e5216467b859b6319faf15d1e)](https://app.codacy.com/gh/stefanobartoletti/bricks)
 ![Snyk](https://img.shields.io/snyk/vulnerabilities/github/stefanobartoletti/bricks)
-
-
-
-<!-- [![](https://img.shields.io/github/contributors/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors) -->
 
 [Documentation](https://bricks.stefanobartoletti.it/) | [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md)
 
@@ -50,6 +47,15 @@ Installation and configuration instructions and all features are documented on t
 ## 📃 Changelog
 
 All updates up to the latest released version are documented in the [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md) file.
+
+## 🤝 Contributing
+
+If you want to contribute to Bricks make sure to read the [Contributing guidelines](https://github.com/stefanobartoletti/bricks/blob/master/.github/CONTRIBUTING.md).
+
+Thanks to all contributors!
+
+[![Contributors Display](https://badges.pufler.dev/contributors/stefanobartoletti/bricks?size=50&padding=5&bots=false)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
+
 
 ## 📝 License
 

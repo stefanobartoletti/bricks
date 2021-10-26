@@ -28,7 +28,7 @@
 
 		<span id="brk-signature" class="navbar-text ms-md-auto">
 			<a class="text-white-50" href="<?php echo esc_attr( wp_get_theme()->get( 'ThemeURI' ) ); ?>" target="_blank">
-				Made with <?php echo esc_attr( file_get_contents( get_template_directory() . '/dist/img/logo-small.svg' ) ); ?> Bricks
+				Made with <img src="<?php echo esc_attr( get_template_directory_uri() . '/dist/img/logo-small.svg' ); ?>" alt="Bricks WordPress Starter Theme Logo"> Bricks
 			</a>
 		</span>
    
