@@ -6,6 +6,7 @@ module.exports = {
   ],
   plugins: [],
   rules: {
+    'color-function-notation': 'legacy',
     'at-rule-no-unknown': null,
     'string-quotes': 'single',
     'max-line-length': null,
