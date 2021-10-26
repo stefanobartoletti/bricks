@@ -40,9 +40,8 @@ msgid "% comments."
 msgstr "% commentaires."
 
 #: comments.php:36
-#, fuzzy
 msgid "Comment navigation"
-msgstr "Naviguer les commentaires"
+msgstr "Naviguer parmi les commentaires"
 
 #: comments.php:40
 msgid "&larr; Older Comments"
@@ -74,15 +73,15 @@ msgstr "Recherche"
 
 #: functions/navmenus.php:13
 msgid "Header Menu"
-msgstr ""
+msgstr "Menu header"
 
 #: functions/navmenus.php:14
 msgid "Footer Menu"
-msgstr ""
+msgstr "Menu footer"
 
 #: functions/sidebars.php:13, functions/sidebars.php:15
 msgid "Main Sidebar"
-msgstr ""
+msgstr "Sidebar principale"
 
 #: functions/integrations/acf.php:25, functions/integrations/acf.php:29,
 #: templates/footer/footer-columns.php:23
@@ -91,7 +90,7 @@ msgstr "Contacts"
 
 #: functions/integrations/acf.php:32
 msgid "Displayed in the site footer"
-msgstr ""
+msgstr "Visible en bas de page du site"
 
 #: functions/integrations/acf.php:37
 msgid "Company"
@@ -146,13 +145,12 @@ msgid "VAT Number"
 msgstr "Numéro de TVA"
 
 #: functions/integrations/acf.php:148, functions/integrations/acf.php:152
-#, fuzzy
 msgid "Social profiles"
-msgstr "Profils sociaux/Réseaux sociaux"
+msgstr "Réseaux sociaux"
 
 #: functions/integrations/acf.php:155
 msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
-msgstr ""
+msgstr "Adresses complètes des profils sur les réseaux sociaux. Tous les champs ne sont pas obligatoires, seuls les champs remplis seront affichés sur le site sous forme d&#39;icônes"
 
 #: functions/integrations/acf.php:248, functions/integrations/acf.php:252
 msgid "Meta"
@@ -160,11 +158,11 @@ msgstr "Meta"
 
 #: functions/integrations/acf.php:259
 msgid "Chrome Theme"
-msgstr ""
+msgstr "Thème de Chrome"
 
 #: functions/integrations/acf.php:262
 msgid "Tab color in Chrome for Android"
-msgstr ""
+msgstr "Couleur des onglets dans Chrome sur Android"
 
 #: functions/lib/class-wp-bootstrap-navwalker.php:366,
 #: functions/lib/class-wp-bootstrap-navwalker.php:366
@@ -173,14 +171,13 @@ msgstr "Ajouter un menu"
 
 #: templates/content/loop-none.php:10
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
+msgstr "Ce que vous cherchez n&#39;a pas pu être trouvé. Essayez une recherche par mots-clés."
 
 #: templates/content/loop-none.php:6
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
+msgstr "Votre recherche n&#39;a abouti à aucun résultat. Réessayez avec des mots-clés différents."
 
 #: templates/content/page.php:22, templates/content/single.php:18
-#, fuzzy
 msgid "Part:"
 msgstr "Partie :"
 
@@ -189,19 +186,16 @@ msgid "Pages"
 msgstr "Pages"
 
 #: templates/footer/footer-columns.php:115
-#, fuzzy
 msgid "Privacy"
 msgstr "Vie privée"
 
 #: templates/sections/home-cta.php:24, templates/sections/home-news.php:47,
 #: templates/sections/home-services.php:30,
 #: templates/sections/home-slider.php:32
-#, fuzzy
 msgid "Read more"
 msgstr "En savoir plus"
 
 #: templates/sections/home-news.php:5
-#, fuzzy
 msgid "News"
 msgstr "News"
 
