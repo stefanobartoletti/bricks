@@ -16,10 +16,10 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ### Changed
 - Replaced `@mr-hope/gulp-sass` with the updated version of `gulp-sass`, which now uses `dart-sass` instead of the deprecated `node-sass`
+- Updated Dev Dependencies
 
 ### Fixed
 - Minor bug fixes
-
 
 ## [0.26.0] - 2021-09-22
 
