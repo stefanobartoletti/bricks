@@ -79,6 +79,36 @@ $bs_colors = array(
 
 		</div> <!-- #typography -->
 
+		<div id="buttons" class="row pt-5">
+
+			<h2 class="border-bottom mb-5">Buttons</h2>
+
+			<?php foreach ( $bs_colors as $color ) { ?>
+
+			<div class="col-12 col-md-3 pb-5">
+
+				<div class="mb-4">
+					<button type="button" class="btn btn-<?php echo $color; ?>">Button</button>
+					<button type="button" class="btn btn-outline-<?php echo $color; ?>">Button</button>
+				</div>
+
+				<div class="mb-4">
+					<button type="button" class="btn btn-lg btn-<?php echo $color; ?>">Button</button>
+					<button type="button" class="btn btn-lg btn-outline-<?php echo $color; ?>">Button</button>
+				</div>
+
+
+				<div class="mb-4">
+					<button type="button" class="btn btn-sm btn-<?php echo $color; ?>">Button</button>
+					<button type="button" class="btn btn-sm btn-outline-<?php echo $color; ?>">Button</button>
+				</div>
+
+			</div>
+
+			<?php } ?>
+
+		</div> <!-- #buttons -->
+
 	</div>
 
 </main> <!-- #content-wrapper -->
