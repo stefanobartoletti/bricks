@@ -113,6 +113,24 @@ $bs_schemes = array(
 
 		</div> <!-- #buttons -->
 
+		<div id="alerts" class="row pt-5">
+
+			<h2 class="border-bottom mb-5">Alerts</h2>
+
+			<div class="col-12 col-md-6 pb-5">
+
+			<?php foreach ( $bs_colors as $color ) { ?>
+
+				<div class="alert alert-<?php echo $color; ?>" role="alert">
+					A simple <?php echo $color; ?> alert—check it out!
+				</div>
+			
+			<?php } ?>
+			
+			</div>
+
+		</div> <!-- #alerts -->
+
 		<div id="navbars" class="row pt-5">
 
 			<h2 class="border-bottom mb-5">Navbars</h2>
