@@ -6,31 +6,40 @@
 
 get_header();
 
-$bs_colors = array(
+$bs_colors_brand = array(
 	'primary',
 	'secondary',
+);
+
+$bs_colors_scheme = array(
 	'light',
 	'dark',
+);
+
+$bs_colors_main = array_merge(
+	$bs_colors_brand,
+	$bs_colors_scheme,
+);
+
+$bs_colors_semantic = array(
 	'success',
 	'info',
 	'warning',
 	'danger',
 );
 
-$bs_schemes = array(
-	'light',
-	'dark',
-)
+$bs_colors = array_merge(
+	$bs_colors_main,
+	$bs_colors_semantic,
+);
 
 ?>
 
-<main id="content-wrapper">
+<main id="content-wrapper" class="py-5">
 
-	<div class="container py-5">
+	<div id="colors" class="container mb-5">
 
-		<h1 class="border-bottom">Pattern Library</h1>
-
-		<div id="colors" class="row pt-5">
+		<div class="row pt-5">
 
 			<h2 class="border-bottom mb-5">Colors</h2>
 
@@ -43,9 +52,13 @@ $bs_schemes = array(
 
 			<?php } ?>
 
-		</div> <!-- #colors -->
+		</div>
 
-		<div id="typography" class="row pt-5">
+	</div> <!-- #colors -->
+
+	<div id="typography" class="container mb-5">
+
+		<div class="row pt-5">
 
 			<h2 class="border-bottom mb-5">Typography</h2>
 
@@ -81,13 +94,17 @@ $bs_schemes = array(
 				<p class="fst-italic mb-4">ITALIC. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
 			</div>
 
-		</div> <!-- #typography -->
+		</div>
 
-		<div id="buttons" class="row pt-5">
+	</div> <!-- #typography -->
+
+	<div id="buttons" class="container mb-5">
+
+		<div class="row pt-5">
 
 			<h2 class="border-bottom mb-5">Buttons</h2>
 
-			<?php foreach ( $bs_colors as $color ) { ?>
+			<?php foreach ( $bs_colors_main as $color ) { ?>
 
 			<div class="col-12 col-md-3 pb-5">
 
@@ -110,9 +127,52 @@ $bs_schemes = array(
 
 			<?php } ?>
 
-		</div> <!-- #buttons -->
+		</div>
 
-		<div id="forms" class="row pt-5">
+	</div> <!-- #buttons -->
+
+	<div id="blocks" class="container mb-5">
+
+		<h2 class="border-bottom mb-5">Blocks</h2>
+
+		<?php foreach ( $bs_colors_main as $key_1 => $color_1 ) { ?>
+
+			<div class="row mb-4 p-4 bg-<?php echo esc_attr( $color_1 ); ?>">
+
+			<?php foreach ( $bs_colors_main as $key_2 => $color_2 ) { ?>
+
+				<?php if ( $key_1 != $key_2 ) { ?>
+		
+				<div class="col-12 col-md-4 p-5 text-<?php echo esc_attr( $color_2 ); ?>">
+
+					
+
+						<p class="h2 mb-4">Lorem ipsum dolor</p>
+
+						<p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+
+						<div>
+							<button type="button" class="btn btn-<?php echo esc_attr( $color_2 ); ?>">Button</button>
+							<button type="button" class="btn btn-outline-<?php echo esc_attr( $color_2 ); ?>">Button</button>
+						</div>
+
+					
+
+				</div>
+	
+				<?php } ?>	
+			
+			<?php } ?>	
+
+		</div>
+		
+		<?php } ?>	
+		
+	</div> <!-- #blocks -->
+
+	<div id="forms" class="container mb-5">
+
+		<div class="row pt-5">
 
 			<h2 class="border-bottom mb-5">Forms</h2>
 
@@ -252,9 +312,13 @@ $bs_schemes = array(
 
 			</div>
 
-		</div> <!-- #forms -->
+		</div>
 
-		<div id="alerts" class="row pt-5">
+	</div> <!-- #forms -->
+
+	<div id="alerts" class="container mb-5">
+
+		<div class="row pt-5">
 
 			<h2 class="border-bottom mb-5">Alerts</h2>
 
@@ -270,15 +334,19 @@ $bs_schemes = array(
 			
 			</div>
 
-		</div> <!-- #alerts -->
+		</div> 
+	
+	</div> <!-- #alerts -->
 
-		<div id="navbars" class="row pt-5">
+	<div id="navbars" class="container mb-5">
+		
+		<div class="row pt-5">
 
 			<h2 class="border-bottom mb-5">Navbars</h2>
 			
 			<div class="col-12 pb-5">
 
-			<?php foreach ( $bs_schemes as $scheme ) { ?>
+			<?php foreach ( $bs_colors_scheme as $scheme ) { ?>
 
 				<nav class="navbar navbar-expand-lg navbar-<?php echo esc_attr( $scheme ); ?> bg-<?php echo esc_attr( $scheme ); ?> mb-5">
 					<div class="container-fluid">
@@ -324,9 +392,9 @@ $bs_schemes = array(
 
 			<?php } ?>
 
-		</div> <!-- #navbars -->
+		</div>
 
-	</div>
+	</div> <!-- #navbars -->
 
 </main> <!-- #content-wrapper -->
 
