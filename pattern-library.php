@@ -33,6 +33,18 @@ $bs_colors = array_merge(
 	$bs_colors_semantic,
 );
 
+$bs_font_weights = array(
+	'100',
+	'200',
+	'300',
+	'400',
+	'500',
+	'600',
+	'700',
+	'800',
+	'900',
+)
+
 ?>
 
 <main id="content-wrapper" class="py-5">
@@ -72,12 +84,12 @@ $bs_colors = array_merge(
 			</div>
 
 			<div class="col-12 pb-3 pt-5">
-				<p class="display-1 mb-4">Display 1</p>
-				<p class="display-2 mb-4">Display 2</p>
-				<p class="display-3 mb-4">Display 3</p>
-				<p class="display-4 mb-4">Display 4</p>
-				<p class="display-5 mb-4">Display 5</p>
-				<p class="display-6 mb-4">Display 6</p>
+				<p class="h1 display-1 mb-4">Display 1</p>
+				<p class="h1 display-2 mb-4">Display 2</p>
+				<p class="h1 display-3 mb-4">Display 3</p>
+				<p class="h1 display-4 mb-4">Display 4</p>
+				<p class="h1 display-5 mb-4">Display 5</p>
+				<p class="h1 display-6 mb-4">Display 6</p>
 			</div>
 
 			<div class="col-12 col-md-6 pt-5">
@@ -92,6 +104,18 @@ $bs_colors = array_merge(
 				<p class="small mb-4">SMALL. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
 				<p class="fw-bold mb-4">BOLD. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
 				<p class="fst-italic mb-4">ITALIC. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+			</div>
+
+			<div class="col-12 col-md-6 pt-5">
+				<?php foreach ( $bs_font_weights as $weight ) { ?>
+					<p style="font-weight: <?php echo esc_attr( $weight ); ?>;"><?php echo esc_attr( $weight ); ?>. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+				<?php } ?>
+			</div>
+
+			<div class="col-12 col-md-6 pt-5">
+				<?php foreach ( $bs_font_weights as $weight ) { ?>
+				<p style="font-style: italic; font-weight: <?php echo esc_attr( $weight ); ?>;"><?php echo esc_attr( $weight ); ?>. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+				<?php } ?>
 			</div>
 
 		</div>
@@ -143,20 +167,16 @@ $bs_colors = array_merge(
 
 				<?php if ( $key_1 != $key_2 ) { ?>
 		
-				<div class="col-12 col-md-4 p-5 text-<?php echo esc_attr( $color_2 ); ?>">
+				<div class="col-12 col-md-4 p-5 text-<?php echo esc_attr( $color_2 ); ?>">				
 
-					
+					<p class="h2 mb-4">Lorem ipsum dolor</p>
 
-						<p class="h2 mb-4">Lorem ipsum dolor</p>
+					<p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
 
-						<p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
-
-						<div>
-							<button type="button" class="btn btn-<?php echo esc_attr( $color_2 ); ?>">Button</button>
-							<button type="button" class="btn btn-outline-<?php echo esc_attr( $color_2 ); ?>">Button</button>
-						</div>
-
-					
+					<div>
+						<button type="button" class="btn btn-<?php echo esc_attr( $color_2 ); ?>">Button</button>
+						<button type="button" class="btn btn-outline-<?php echo esc_attr( $color_2 ); ?>">Button</button>
+					</div>
 
 				</div>
 	
