@@ -37,9 +37,8 @@ $bs_schemes = array(
 			<?php foreach ( $bs_colors as $color ) { ?>
 
 			<div class="col-12 col-md-3 pb-3">
-				<div class="bg-<?php echo $color; ?> p-5">
-				</div>
-				<p class="text-capitalize"><?php echo $color; ?></p>
+				<div class="bg-<?php echo esc_attr( $color ); ?> p-5"></div>
+				<p class="text-capitalize"><?php echo esc_attr( $color ); ?></p>
 			</div>
 
 			<?php } ?>
@@ -93,18 +92,18 @@ $bs_schemes = array(
 			<div class="col-12 col-md-3 pb-5">
 
 				<div class="mb-4">
-					<button type="button" class="btn btn-<?php echo $color; ?>">Button</button>
-					<button type="button" class="btn btn-outline-<?php echo $color; ?>">Button</button>
+					<button type="button" class="btn btn-<?php echo esc_attr( $color ); ?>">Button</button>
+					<button type="button" class="btn btn-outline-<?php echo esc_attr( $color ); ?>">Button</button>
 				</div>
 
 				<div class="mb-4">
-					<button type="button" class="btn btn-lg btn-<?php echo $color; ?>">Button</button>
-					<button type="button" class="btn btn-lg btn-outline-<?php echo $color; ?>">Button</button>
+					<button type="button" class="btn btn-lg btn-<?php echo esc_attr( $color ); ?>">Button</button>
+					<button type="button" class="btn btn-lg btn-outline-<?php echo esc_attr( $color ); ?>">Button</button>
 				</div>
 
 				<div class="mb-4">
-					<button type="button" class="btn btn-sm btn-<?php echo $color; ?>">Button</button>
-					<button type="button" class="btn btn-sm btn-outline-<?php echo $color; ?>">Button</button>
+					<button type="button" class="btn btn-sm btn-<?php echo esc_attr( $color ); ?>">Button</button>
+					<button type="button" class="btn btn-sm btn-outline-<?php echo esc_attr( $color ); ?>">Button</button>
 				</div>
 
 			</div>
@@ -112,6 +111,148 @@ $bs_schemes = array(
 			<?php } ?>
 
 		</div> <!-- #buttons -->
+
+		<div id="forms" class="row pt-5">
+
+			<h2 class="border-bottom mb-5">Forms</h2>
+
+			<div class="col-12 col-md-6 pb-5">
+
+				<form class="border rounded p-4">
+
+					<div class="mb-4">
+						<label for="input-1" class="form-label">Example input</label>
+						<input type="email" class="form-control" id="input-1" placeholder="name@example.com">
+					</div>
+
+					<div class="mb-4">
+						<label for="select-1" class="form-label">Example select</label>
+						<select class="form-select" aria-label="Default select example" id="select-1">
+							<option selected>Open this select menu</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<div class="mb-4">
+						<label for="textarea-1" class="form-label">Example textarea</label>
+						<textarea class="form-control" id="textarea-1" rows="3"></textarea>
+					</div>
+
+					<div class="mb-4">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="check-01">
+							<label class="form-check-label" for="check-01">Lorem ipsum dolor sit amet.</label>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-primary w-100">Submit</button>
+
+				</form>
+
+			</div>
+
+			<div class="col-12 col-md-6 pb-5">
+
+				<form class="border rounded p-4">
+
+					<div class="mb-4">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="check-1" checked>
+							<label class="form-check-label" for="check-1">Lorem ipsum dolor sit amet.</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="check-2">
+							<label class="form-check-label" for="check-2">Lorem ipsum dolor sit amet.</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="check-3">
+							<label class="form-check-label" for="check-3">Lorem ipsum dolor sit amet.</label>
+						</div>
+					</div>
+
+					<div class="mb-4">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-1" checked>
+							<label class="form-check-label" for="radio-1">Lorem ipsum dolor sit amet.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-2">
+							<label class="form-check-label" for="radio-2">Lorem ipsum dolor sit amet.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-3">
+							<label class="form-check-label" for="radio-3">Lorem ipsum dolor sit amet.</label>
+						</div>
+					</div>
+
+					<div class="mb-4">
+						<div class="form-check form-switch">
+							<input type="checkbox" class="form-check-input" id="switch-1" checked>
+							<label class="form-check-label" for="switch-1">Lorem ipsum dolor sit amet.</label>
+						</div>
+						<div class="form-check form-switch">
+							<input type="checkbox" class="form-check-input" id="switch-2">
+							<label class="form-check-label" for="switch-2">Lorem ipsum dolor sit amet.</label>
+						</div>
+						<div class="form-check form-switch">
+							<input type="checkbox" class="form-check-input" id="switch-3">
+							<label class="form-check-label" for="switch-3">Lorem ipsum dolor sit amet.</label>
+						</div>
+					</div>
+
+					<div class="mb-4">
+						<label for="range-1" class="form-label">Example range</label>
+						<input type="range" class="form-range" id="range-1">
+					</div>
+
+				</form>
+
+			</div>
+	
+			<div class="col-12 col-md-6 pb-5">
+
+				<div class="border rounded p-4">
+
+					<form>
+						<div class="row g-3 mb-5">
+							<div class="col-9">
+								<input type="text" class="form-control" placeholder="First name" aria-label="First name">
+							</div>
+							<div class="col-3">
+								<button type="submit" class="btn btn-primary w-100">Submit</button>
+							</div>
+						</div>
+					</form>
+
+					<form>
+						<div class="row g-3 mb-5">
+							<div class="col-9">
+								<input type="text" class="form-control form-control-lg" placeholder="First name" aria-label="First name">
+							</div>
+							<div class="col-3">
+								<button type="submit" class="btn btn-lg btn-primary w-100">Submit</button>
+							</div>
+						</div>
+					</form>
+
+					<form>
+						<div class="row g-3">
+							<div class="col-9">
+								<input type="text" class="form-control form-control-sm" placeholder="First name" aria-label="First name">
+							</div>
+							<div class="col-3">
+								<button type="submit" class="btn btn-sm btn-primary w-100">Submit</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+
+			</div>
+
+		</div> <!-- #forms -->
 
 		<div id="alerts" class="row pt-5">
 
@@ -121,8 +262,8 @@ $bs_schemes = array(
 
 			<?php foreach ( $bs_colors as $color ) { ?>
 
-				<div class="alert alert-<?php echo $color; ?>" role="alert">
-					A simple <?php echo $color; ?> alert—check it out!
+				<div class="alert alert-<?php echo esc_attr( $color ); ?>" role="alert">
+					A simple <?php echo esc_attr( $color ); ?> alert—check it out!
 				</div>
 			
 			<?php } ?>
@@ -139,15 +280,15 @@ $bs_schemes = array(
 
 			<?php foreach ( $bs_schemes as $scheme ) { ?>
 
-				<nav class="navbar navbar-expand-lg navbar-<?php echo $scheme; ?> bg-<?php echo $scheme; ?> mb-5">
+				<nav class="navbar navbar-expand-lg navbar-<?php echo esc_attr( $scheme ); ?> bg-<?php echo esc_attr( $scheme ); ?> mb-5">
 					<div class="container-fluid">
 						<a class="navbar-brand" href="#">Navbar</a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent<?php echo '-' . $scheme; ?>" aria-controls="navbarSupportedContent<?php echo '-' . $scheme; ?>" aria-expanded="false"
+							data-bs-target="#navbarSupportedContent<?php echo '-' . esc_attr( $scheme ); ?>" aria-controls="navbarSupportedContent<?php echo '-' . esc_attr( $scheme ); ?>" aria-expanded="false"
 							aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent<?php echo '-' . $scheme; ?>">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent<?php echo '-' . esc_attr( $scheme ); ?>">
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 								<li class="nav-item">
 									<a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -156,11 +297,11 @@ $bs_schemes = array(
 									<a class="nav-link" href="#">Link</a>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown<?php echo '-' . $scheme; ?>" role="button"
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown<?php echo '-' . esc_attr( $scheme ); ?>" role="button"
 										data-bs-toggle="dropdown" aria-expanded="false">
 										Dropdown
 									</a>
-									<ul class="dropdown-menu" aria-labelledby="navbarDropdown<?php echo '-' . $scheme; ?>">
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown<?php echo '-' . esc_attr( $scheme ); ?>">
 										<li><a class="dropdown-item" href="#">Action</a></li>
 										<li><a class="dropdown-item" href="#">Another action</a></li>
 										<li>
@@ -180,7 +321,6 @@ $bs_schemes = array(
 						</div>
 					</div>
 				</nav>
-
 
 			<?php } ?>
 
