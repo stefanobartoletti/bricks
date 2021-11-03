@@ -3,11 +3,6 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bricks\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,146 +12,151 @@ msgstr ""
 "esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
 "X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:12
 msgid "Oops, that page can&#39;t be found"
-msgstr "Oops, la pagina non può essere trovata"
+msgstr "Oops, la página no fue encontrada"
 
 #: 404.php:16
 msgid "Error 404"
-msgstr "Errore 404"
+msgstr "Error 404"
 
 #: comments.php:12
 msgid "No comments yet."
-msgstr "Ancora nessun commento."
+msgstr "Sin comentarios."
 
 #: comments.php:13
 msgid "One comment."
-msgstr "Un commento."
+msgstr "Un comentario."
 
 #: comments.php:14
 msgid "% comments."
-msgstr "% commenti."
+msgstr "% comentarios."
 
 #: comments.php:36
 msgid "Comment navigation"
-msgstr "Navigazione commenti"
+msgstr "Navegación de comentarios"
 
 #: comments.php:40
 msgid "&larr; Older Comments"
-msgstr "&larr; Commenti meno recenti"
+msgstr "&larr; Comentarios más antiguos"
 
 #: comments.php:44
 msgid "Newer Comments &rarr;"
-msgstr "Commenti più recenti &rarr;"
+msgstr "Comentarios más recientes &rarr;"
 
 #: comments.php:56
 msgid "Comments are closed."
-msgstr "Commenti disabilitati."
+msgstr "Comentarios cerrados."
 
 #: index.php:21
 msgid "Results for: "
-msgstr "Risultati della ricerca per: "
+msgstr "Resultados para: "
 
 #: index.php:44
 msgid "&laquo; Previous"
-msgstr "&laquo; Precedente"
+msgstr "&laquo; Anterior"
 
 #: index.php:45
 msgid "Next &raquo;"
-msgstr "Seguente &raquo;"
+msgstr "Siguiente &raquo;"
 
 #: searchform.php:3
 msgid "Search"
-msgstr "Cerca"
+msgstr "Buscar"
 
 #: functions/navmenus.php:13
 msgid "Header Menu"
-msgstr "Menu Header"
+msgstr "Menú de cabecera"
 
 #: functions/navmenus.php:14
 msgid "Footer Menu"
-msgstr "Menu Footer"
+msgstr "Menú de pié de página"
 
 #: functions/sidebars.php:13, functions/sidebars.php:15
 msgid "Main Sidebar"
-msgstr "Sidebar Principale"
+msgstr "Barra lateral principal"
 
 #: functions/integrations/acf.php:25, functions/integrations/acf.php:29,
 #: templates/footer/footer-columns.php:23
 msgid "Contacts"
-msgstr "Contatti"
+msgstr "Contactos"
 
 #: functions/integrations/acf.php:32
 msgid "Displayed in the site footer"
-msgstr "Mostrati nel footer del sito"
+msgstr "Mostrado en el pié de página"
 
 #: functions/integrations/acf.php:37
 msgid "Company"
-msgstr "Azienda"
+msgstr "Empresa"
 
 #: functions/integrations/acf.php:40
 msgid "Example: Full Company Name"
-msgstr "Esempio: Nome legale completo dell'azienda"
+msgstr "Ejemplo: Nombre completo de la empresa"
 
 #: functions/integrations/acf.php:47
 msgid "Address - Line 1"
-msgstr "Indirizzo - Linea 1"
+msgstr "Dirección - Línea 1"
 
 #: functions/integrations/acf.php:50
 msgid "Example: Street, Number"
-msgstr "Esempio: Via, Numero"
+msgstr "Ejemplo: Calle, Número"
 
 #: functions/integrations/acf.php:57
 msgid "Address - Line 2"
-msgstr "Indirizzo - Linea 2"
+msgstr "Dirección - Línea 2"
 
 #: functions/integrations/acf.php:60
 msgid "Example => Postal Code, City, State"
-msgstr "Esempio: CAP, Città, Provincia"
+msgstr "Ejemplo: Código postal, Ciudad, Estado"
 
 #: functions/integrations/acf.php:67
 msgid "Map URL"
-msgstr "URL della mappa"
+msgstr "URL del mapa"
 
 #: functions/integrations/acf.php:70
 msgid "Example: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
-msgstr "Esempio: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 per Google Maps"
+msgstr "Ejemplo: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 para Google Maps"
 
 #: functions/integrations/acf.php:77
 msgid "Phone number"
-msgstr "Numero di telefono"
+msgstr "Número de teléfono"
 
 #: functions/integrations/acf.php:86
 msgid "E-mail address"
-msgstr "Indirizzo e-mail"
+msgstr "Dirección de correo electrónico"
 
 #: functions/integrations/acf.php:95
 msgid "ID Number"
-msgstr "Codice Fiscale"
+msgstr "Número de identificación"
 
 #: functions/integrations/acf.php:98
 msgid "Example: Social Security Number, Fiscal Code, etc."
-msgstr "Esempio: codice fiscale"
+msgstr "Ejemplo: código fiscal."
 
 #: functions/integrations/acf.php:105
 msgid "VAT Number"
-msgstr "Partita IVA"
+msgstr "Número VAT"
 
 #: functions/integrations/acf.php:148, functions/integrations/acf.php:152
 msgid "Social profiles"
-msgstr "Profili social"
+msgstr "Perfiles sociales"
 
 #: functions/integrations/acf.php:155
 msgid ""
 "Full social profile addresses. Not all fields are required, only filled "
 "fields will be displayed on the site as icons"
 msgstr ""
-"Indirizzi completi dei profili social. Non è necessario riempire tutti i "
-"campi, solo quelli compilati verranno mostrati nel sito come icone"
+"Dirección completa del perfil social. No todos los campos son "
+"requeridos, sólo los campos llenos se mostrarán en el sitio como íconos"
 
 #: functions/integrations/acf.php:248, functions/integrations/acf.php:252
 msgid "Meta"
@@ -164,31 +164,32 @@ msgstr "Meta"
 
 #: functions/integrations/acf.php:259
 msgid "Chrome Theme"
-msgstr "Tema Chrome"
+msgstr "Tema de Chrome"
 
 #: functions/integrations/acf.php:262
 msgid "Tab color in Chrome for Android"
-msgstr "Colore della tab in Chrome per Android"
+msgstr "Color de pestaña en Chrome para Android"
 
 #: functions/lib/class-wp-bootstrap-navwalker.php:366,
 #: functions/lib/class-wp-bootstrap-navwalker.php:366
 msgid "Add a menu"
-msgstr "Aggiungi un menu"
+msgstr "Agregar un menú"
 
 #: templates/content/loop-none.php:10
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Sembra che non troviamo quello che cerchi. Forse una ricerca può aiutare."
+"No se pudo encontrar lo que está buscando. Quizás una búsqueda podría "
+"ayudar."
 
 #: templates/content/loop-none.php:6
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Spiacente, ma non ci sono riscontri con i tuoi termini di ricerca. Per "
-"favore riprova con altre parole chiavi."
+"Lo sentimos, no se encontraron resultados con sus términos de búsqueda. "
+"Por favor, intente de nuevo con términos distintos."
 
 #: templates/content/page.php:22, templates/content/single.php:18
 msgid "Part:"
@@ -196,26 +197,26 @@ msgstr "Parte:"
 
 #: templates/footer/footer-columns.php:94
 msgid "Pages"
-msgstr "Pagine"
+msgstr "Páginas"
 
 #: templates/footer/footer-columns.php:115
 msgid "Privacy"
-msgstr "Privacy"
+msgstr "Privacidad"
 
 #: templates/sections/home-cta.php:24, templates/sections/home-news.php:47,
 #: templates/sections/home-services.php:30,
 #: templates/sections/home-slider.php:32
 msgid "Read more"
-msgstr "Leggi tutto"
+msgstr "Leer más"
 
 #: templates/sections/home-news.php:5
 msgid "News"
-msgstr "News"
+msgstr "Noticias"
 
 #: templates/sections/home-news.php:40
 msgid "By "
-msgstr "By "
+msgstr "Por "
 
 #: templates/sections/home-services.php:5
 msgid "Services"
-msgstr "Servizi"
+msgstr "Servicios"

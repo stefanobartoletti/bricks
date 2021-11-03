@@ -9,7 +9,8 @@ import config from './bricks.config.mjs';
 // --- Plugins ---
 
 // CSS
-import { sass } from '@mr-hope/gulp-sass';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import purgecss from 'gulp-purgecss';
 import cleancss from 'gulp-clean-css';
@@ -45,7 +46,10 @@ import environments from 'gulp-environments';
 // Browser
 import cache from 'gulp-cache';
 import browserSync from 'browser-sync';
+
+// Consts
 const { src, dest, watch, series, parallel } = gulp;
+const sass = gulpSass(dartSass);
 const development = environments.development;
 const production = environments.production;
 

@@ -123,8 +123,8 @@ msgid "Map URL"
 msgstr "Karten URL"
 
 #: functions/integrations/acf.php:70
-msgid "Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
-msgstr "Beispiel: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 für Google Maps"
+msgid "Example: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps"
+msgstr "Beispiel: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 für Google Maps"
 
 #: functions/integrations/acf.php:77
 msgid "Phone number"

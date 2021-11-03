@@ -3,6 +3,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Added
+- Added translations for some languages:
+  - 🇨🇿 Czech (contributed by [PapuleX](https://github.com/PapuleX))
+  - 🇫🇷 French (contributed by [Tititesouris](https://github.com/Tititesouris))
+  - 🇩🇪 German (contributed by [m1ga](https://github.com/m1ga))
+  - 🇱🇹 Lithuanian (contributed by [mantasio](https://github.com/mantasio))
+  - 🇪🇸 Spanish (contributed by [aitorres](https://github.com/aitorres))
+- Added [Contributing](https://github.com/stefanobartoletti/bricks/blob/master/.github/CONTRIBUTING.md) guidelines
+
+### Changed
+- Replaced `@mr-hope/gulp-sass` with the updated version of `gulp-sass`, which now uses `dart-sass` instead of the deprecated `node-sass`
+- Updated Dev Dependencies
+
+### Fixed
+- Minor bug fixes
+
 ## [0.26.0] - 2021-09-22
 
 ### Added

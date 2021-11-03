@@ -1,7 +1,7 @@
 // src paths are relative to the compiled css file in dist/css/style.min.css
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: Rubik;
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/rubik-regular.woff2') format('woff2');
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: Rubik;
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/rubik-bold.woff2') format('woff2');

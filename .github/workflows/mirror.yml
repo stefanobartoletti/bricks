@@ -1,6 +1,6 @@
 name: Mirror
 
-on: [ push, delete, create ]
+on: [ push ]
 
 # Ensures that only one mirror task will run at a time.
 concurrency:
@@ -8,6 +8,7 @@ concurrency:
 
 jobs:
   git-mirror:
+    if: github.actor!= 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: wearerequired/git-mirror-action@v1

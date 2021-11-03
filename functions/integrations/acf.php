@@ -67,7 +67,7 @@ if ( class_exists( 'ACF' ) ) {
 								'label' => __( 'Map URL', 'bricks' ),
 								'name' => 'map_url',
 								'type' => 'url',
-								'instructions' => __( 'Example: https//goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps', 'bricks' ),
+								'instructions' => __( 'Example: https://goo.gl/maps/sNAFh8SNCLH5cYyL7 for Google Maps', 'bricks' ),
 								'wrapper' => array(
 									'width' => '33',
 								),
