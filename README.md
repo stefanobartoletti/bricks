@@ -30,7 +30,8 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 - Code linting with [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) and [phpcs](https://github.com/squizlabs/PHP_CodeSniffer).
 - [BrowserSync](https://www.browsersync.io/) live server.
 - Automatic conversion of custom fonts into *woff2* web format
-- Support for localization by generation of a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/)
+- Pre-localized templates in several languages ( 🇨🇿 Czech | 🇫🇷 French | 🇩🇪 German | 🇮🇹 Italian | 🇱🇹 Lithuanian | 🇪🇸 Spanish )
+- Support for further localization by generation of a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/)
 - Support for integration of some optional JavaScript libraries
 
 ## ✅ Requirements
