@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
-## [Unreleased]
+## [0.27.0] - 2021-11-03
 
 ### Added
 - Added translations for some languages:
@@ -149,6 +149,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.27.0]: https://github.com/stefanobartoletti/bricks/compare/v0.26.0...v0.27.0
 [0.26.0]: https://github.com/stefanobartoletti/bricks/compare/v0.25.0...v0.26.0
 [0.25.0]: https://github.com/stefanobartoletti/bricks/compare/v0.24.0...v0.25.0
 [0.24.0]: https://github.com/stefanobartoletti/bricks/compare/v0.23.0...v0.24.0
