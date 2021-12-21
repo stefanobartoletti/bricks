@@ -4211,6 +4211,16 @@ gulp-rename@^2.0.0:
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-2.0.0.tgz#9bbc3962b0c0f52fc67cd5eaff6c223ec5b9cf6c"
   integrity sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
 
+gulp-sass-glob@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-sass-glob/-/gulp-sass-glob-1.1.0.tgz#ff4055b8cf20695567d279849fc8c025fd7dd40e"
+  integrity sha512-BYDCjb68iMAxLGt2uuw7jaZ51cnWxAbQ4EtFDOOsMXOc0Ul+SFW1iiMOSI/efpO27ycmX9U8Eb4Clerww5Tf5Q==
+  dependencies:
+    glob "^7.1.4"
+    minimatch "^3.0.4"
+    slash "^3.0.0"
+    through2 "^3.0.1"
+
 gulp-sass@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-5.0.0.tgz#c338fc021e450a51ae977fea9014eda331ce66b7"
