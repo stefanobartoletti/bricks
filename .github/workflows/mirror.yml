@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: wearerequired/git-mirror-action@v1
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.REPO_BRICKS }}
+          SSH_PRIVATE_KEY: ${{ secrets.ID_STEFANO }}
         with:
           source-repo: "git@github.com:stefanobartoletti/bricks.git"
           destination-repo: "git@gitlab.com:stefanobartoletti/bricks.git"
