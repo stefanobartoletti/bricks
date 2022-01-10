@@ -1,4 +1,4 @@
-# Copyright (C) 2021 bricks
+# Copyright (C) 2022 bricks
 # This file is distributed under the same license as the bricks package.
 msgid ""
 msgstr ""
