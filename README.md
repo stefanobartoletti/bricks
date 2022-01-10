@@ -8,10 +8,10 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 [![Release](https://img.shields.io/github/v/release/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/stefanobartoletti/bricks/devel)](https://github.com/stefanobartoletti/bricks/commits/devel)
 [![Contributors](https://img.shields.io/github/contributors/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
-<!-- [![David DM](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks) -->
-<!-- [![David DM Dev](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev) -->
 [![Codacy](https://img.shields.io/codacy/grade/5dc7110e5216467b859b6319faf15d1e)](https://app.codacy.com/gh/stefanobartoletti/bricks)
 ![Snyk](https://img.shields.io/snyk/vulnerabilities/github/stefanobartoletti/bricks)
+<!-- [![David DM](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks) -->
+<!-- [![David DM Dev](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev) -->
 
 [Documentation](https://bricks.stefanobartoletti.it/) | [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md)
 
