@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 16
+          node-version: 14
 
   yarn-dev:
     name: Yarn Dev
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 16
+          node-version: 14
       - run: yarn dev
 
   yarn-build:
@@ -28,5 +28,5 @@ jobs:
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 16
+          node-version: 14
       - run: yarn build
