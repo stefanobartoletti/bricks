@@ -24,8 +24,8 @@ html {
 
 .has-img-background {
   position: relative;
-  // background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.5));
-  background-color: rgba($dark, 50%);
+  // background: linear-gradient(rgba(#000, 0.1), rgba(#000, 0.5));
+  background-color: rgb(#000, 50%);
 
   img.is-background {
     position: absolute;
