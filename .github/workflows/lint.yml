@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 16
+          node-version: 14
 
   lint-js:
     name: Lint JS
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 16
+          node-version: 14
       - run: yarn eslint --ext js,mjs --ignore-path .gitignore .
 
   lint-style:
@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 16
+          node-version: 14
       - run: yarn stylelint "**/*.{scss,css}" --ignore-path .gitignore  
 
   lint-php:
@@ -38,6 +38,6 @@ jobs:
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 16
+          node-version: 14
       - run: yarn composer install
       - run: yarn composer phpcs
