@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
-## [Unreleased]
+## [0.27.3] - 2022-01-24
 
 ### Changed
 - Updated Dev Dependencies
@@ -170,6 +170,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.27.3]: https://github.com/stefanobartoletti/bricks/compare/v0.27.2...v0.27.3
 [0.27.2]: https://github.com/stefanobartoletti/bricks/compare/v0.27.1...v0.27.2
 [0.27.1]: https://github.com/stefanobartoletti/bricks/compare/v0.27.0...v0.27.1
 [0.27.0]: https://github.com/stefanobartoletti/bricks/compare/v0.26.0...v0.27.0
