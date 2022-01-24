@@ -22,7 +22,7 @@
     "bootstrap": "^5.1.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.10",
+    "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
     "@babel/preset-env": "^7.16.11",
     "@rbnlffl/gulp-rollup": "^0.1.1",
