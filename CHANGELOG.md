@@ -3,14 +3,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Updated Dev Dependencies
+
+### Security
+- Secondary dependencies security updates
+
 ## [0.27.2] - 2022-01-17
 
 ### Changed
 - Updated Dev Dependencies
 
 ### Security
-- Secondary dependecies security updates
-
+- Secondary dependencies security updates
 
 ## [0.27.1] - 2022-01-10
 
