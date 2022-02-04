@@ -16,5 +16,10 @@
     "scripts": {
         "lint": "phpcbf",
         "phpcs": "phpcs"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
