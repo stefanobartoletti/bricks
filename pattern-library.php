@@ -43,7 +43,11 @@ $bs_font_weights = array(
 	'700',
 	'800',
 	'900',
-)
+);
+
+$lorem_short = 'Lorem ipsum dolor sit amet';
+
+$lorem_long = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.'
 
 ?>
 
@@ -75,12 +79,12 @@ $bs_font_weights = array(
 			<h2 class="border-bottom mb-5">Typography</h2>
 
 			<div class="col-12 pb-3">
-				<p class="h1 mb-4">h1. Lorem ipsum dolor sit amet</p>
-				<p class="h2 mb-4">h2. Lorem ipsum dolor sit amet</p>
-				<p class="h3 mb-4">h3. Lorem ipsum dolor sit amet</p>
-				<p class="h4 mb-4">h4. Lorem ipsum dolor sit amet</p>
-				<p class="h5 mb-4">h5. Lorem ipsum dolor sit amet</p>
-				<p class="h6 mb-4">h6. Lorem ipsum dolor sit amet</p>
+				<p class="h1 mb-4">h1. <?php echo $lorem_short; ?></p>
+				<p class="h2 mb-4">h2. <?php echo $lorem_short; ?></p>
+				<p class="h3 mb-4">h3. <?php echo $lorem_short; ?></p>
+				<p class="h4 mb-4">h4. <?php echo $lorem_short; ?></p>
+				<p class="h5 mb-4">h5. <?php echo $lorem_short; ?></p>
+				<p class="h6 mb-4">h6. <?php echo $lorem_short; ?></p>
 			</div>
 
 			<div class="col-12 pb-3 pt-5">
@@ -93,28 +97,28 @@ $bs_font_weights = array(
 			</div>
 
 			<div class="col-12 col-md-6 pt-5">
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+				<p><?php echo $lorem_long; ?></p>
+				<p><?php echo $lorem_long; ?></p>
+				<p><?php echo $lorem_long; ?></p>
+				<p><?php echo $lorem_long; ?></p>
 			</div>
 
 			<div class="col-12 col-md-6 pt-5">
-				<p class="lead mb-4">LEAD. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
-				<p class="small mb-4">SMALL. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
-				<p class="fw-bold mb-4">BOLD. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
-				<p class="fst-italic mb-4">ITALIC. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+				<p class="lead mb-4">LEAD. <?php echo $lorem_long; ?></p>
+				<p class="small mb-4">SMALL. <?php echo $lorem_long; ?></p>
+				<p class="fw-bold mb-4">BOLD. <?php echo $lorem_long; ?></p>
+				<p class="fst-italic mb-4">ITALIC. <?php echo $lorem_long; ?></p>
 			</div>
 
 			<div class="col-12 col-md-6 pt-5">
 				<?php foreach ( $bs_font_weights as $weight ) { ?>
-					<p style="font-weight: <?php echo esc_attr( $weight ); ?>;"><?php echo esc_attr( $weight ); ?>. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+					<p style="font-weight: <?php echo esc_attr( $weight ); ?>;"><?php echo esc_attr( $weight ); ?>. <?php echo $lorem_long; ?></p>
 				<?php } ?>
 			</div>
 
 			<div class="col-12 col-md-6 pt-5">
 				<?php foreach ( $bs_font_weights as $weight ) { ?>
-				<p style="font-style: italic; font-weight: <?php echo esc_attr( $weight ); ?>;"><?php echo esc_attr( $weight ); ?>. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+				<p style="font-style: italic; font-weight: <?php echo esc_attr( $weight ); ?>;"><?php echo esc_attr( $weight ); ?>. <?php echo $lorem_long; ?></p>
 				<?php } ?>
 			</div>
 
@@ -171,7 +175,7 @@ $bs_font_weights = array(
 
 					<p class="h2 mb-4">Lorem ipsum dolor</p>
 
-					<p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.</p>
+					<p class="mb-4"><?php echo $lorem_long; ?></p>
 
 					<div>
 						<button type="button" class="btn btn-<?php echo esc_attr( $color_2 ); ?>">Button</button>
@@ -223,7 +227,7 @@ $bs_font_weights = array(
 					<div class="mb-4">
 						<div class="form-check">
 							<input type="checkbox" class="form-check-input" id="check-01">
-							<label class="form-check-label" for="check-01">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="check-01"><?php echo $lorem_short; ?>.</label>
 						</div>
 					</div>
 
@@ -240,45 +244,45 @@ $bs_font_weights = array(
 					<div class="mb-4">
 						<div class="form-check">
 							<input type="checkbox" class="form-check-input" id="check-1" checked>
-							<label class="form-check-label" for="check-1">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="check-1"><?php echo $lorem_short; ?>.</label>
 						</div>
 						<div class="form-check">
 							<input type="checkbox" class="form-check-input" id="check-2">
-							<label class="form-check-label" for="check-2">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="check-2"><?php echo $lorem_short; ?>.</label>
 						</div>
 						<div class="form-check">
 							<input type="checkbox" class="form-check-input" id="check-3">
-							<label class="form-check-label" for="check-3">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="check-3"><?php echo $lorem_short; ?>.</label>
 						</div>
 					</div>
 
 					<div class="mb-4">
 						<div class="form-check">
 							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-1" checked>
-							<label class="form-check-label" for="radio-1">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="radio-1"><?php echo $lorem_short; ?>.</label>
 						</div>
 						<div class="form-check">
 							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-2">
-							<label class="form-check-label" for="radio-2">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="radio-2"><?php echo $lorem_short; ?>.</label>
 						</div>
 						<div class="form-check">
 							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-3">
-							<label class="form-check-label" for="radio-3">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="radio-3"><?php echo $lorem_short; ?>.</label>
 						</div>
 					</div>
 
 					<div class="mb-4">
 						<div class="form-check form-switch">
 							<input type="checkbox" class="form-check-input" id="switch-1" checked>
-							<label class="form-check-label" for="switch-1">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="switch-1"><?php echo $lorem_short; ?>.</label>
 						</div>
 						<div class="form-check form-switch">
 							<input type="checkbox" class="form-check-input" id="switch-2">
-							<label class="form-check-label" for="switch-2">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="switch-2"><?php echo $lorem_short; ?>.</label>
 						</div>
 						<div class="form-check form-switch">
 							<input type="checkbox" class="form-check-input" id="switch-3">
-							<label class="form-check-label" for="switch-3">Lorem ipsum dolor sit amet.</label>
+							<label class="form-check-label" for="switch-3"><?php echo $lorem_short; ?>.</label>
 						</div>
 					</div>
 
