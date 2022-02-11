@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Updated FontAwesome to version 6
+- Updated Dev Dependencies
+
+### Fixed
+- Fixed flex layout in the footer
+
 ## [0.27.3] - 2022-01-24
 
 ### Changed
