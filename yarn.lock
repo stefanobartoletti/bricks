@@ -3311,10 +3311,10 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-fa-minify@5.8.2:
-  version "5.8.2"
-  resolved "https://registry.yarnpkg.com/fa-minify/-/fa-minify-5.8.2.tgz#1b6c145df85878e5175296134ab75971fd97c59b"
-  integrity sha512-Zofcp2Evyek7MHAV+ycPA2FyFfLP2l+aGPpGtTcWpYnDpeyJUMk2yMg5uHd8GYU+3HJ5NKHqnXbcYA6yA8gAlQ==
+fa-minify@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/fa-minify/-/fa-minify-6.0.1.tgz#6afca778ea690dfa5e7ce3f3cc9375ef07269232"
+  integrity sha512-oyGgv7+pyJTvnN968fblDCA/JeRSdd+SvoolzuEbmecITBGzkeOEZAC7WnJWEWF/hQLXZES8qZ6wDAXlLJ/ylA==
 
 fancy-log@^1.3.2, fancy-log@^1.3.3:
   version "1.3.3"
@@ -4060,14 +4060,14 @@ gulp-environments@^1.0.1:
     gulp-if "^2.0.1"
     yargs "^15.0.1"
 
-gulp-fa-minify@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/gulp-fa-minify/-/gulp-fa-minify-1.2.2.tgz#90bcf6d4292b5e798c006331312671ca85b36b1b"
-  integrity sha512-tauPzlxl2x1IUE1uzCATDbkyFVpUsbxMNNyNOGnfqmNO0F4vHTtB0AGtjYFPk42jJHuvWg6P71GfrI3R7vgkAA==
+gulp-fa-minify@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/gulp-fa-minify/-/gulp-fa-minify-6.0.1.tgz#a5a846b6c8d8485ba5b8a55acde2cd5ebf1db3be"
+  integrity sha512-BoOZXSKhzDVq35UaMYwWpbk+H9etYo8Nlvy4RVP7OHDrcC8x1hjUZS7r/rrsDsk000WDV9yvPlw9AsF1Dvz0dQ==
   dependencies:
-    fa-minify "5.8.2"
-    plugin-error "1.0.1"
-    through2 "2.0.3"
+    fa-minify "^6.0.1"
+    plugin-error "^1.0.1"
+    through2 "^4.0.2"
 
 gulp-if@^2.0.1:
   version "2.0.2"
@@ -7731,14 +7731,6 @@ through2-filter@^3.0.0:
   dependencies:
     through2 "~2.0.0"
     xtend "~4.0.0"
-
-through2@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
-  integrity sha1-AARWmzfHx0ujnEPzzteNGtlBQL4=
-  dependencies:
-    readable-stream "^2.1.5"
-    xtend "~4.0.1"
 
 through2@3.0.1:
   version "3.0.1"
