@@ -23,7 +23,7 @@ const config = {
     far: [],
     fas: [
       'angle-up',
-      'search'
+      'magnifying-glass'
     ],
     fab: [
       'facebook-f',

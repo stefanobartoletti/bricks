@@ -42,7 +42,7 @@
     "gulp-checktextdomain": "^2.2.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-environments": "^1.0.1",
-    "gulp-fa-minify": "^1.2.2",
+    "gulp-fa-minify": "^6.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-purgecss": "^4.1.3",
