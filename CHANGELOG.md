@@ -6,7 +6,9 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 
 ### Changed
-- Updated Font Awesome to version 6, including the [new syntax](https://fontawesome.com/docs/web/setup/upgrade/whats-changed) for including icons in the templates
+- Updated Font Awesome to version 6
+- Updated templates to use the [new Font Awesome 6 syntax](https://fontawesome.com/docs/web/setup/upgrade/whats-changed) 
+- Renamed the compiled Font Awesome file from `fa5.min.js` to `fontawesome.min.js`
 - Updated Dev Dependencies
 
 ### Fixed
