@@ -41,7 +41,7 @@
 
 							<li class="d-flex mb-3">
 								<div class="flex-shrink-0">
-									<i class="fas fa-map-marker-alt fa-fw mt-1 nav-link p-0"></i>
+									<i class="fa-solid fa-location-dot fa-fw mt-1 nav-link p-0"></i>
 								</div>
 								<div class="flex-grow-1 ms-3">
 									<?php
@@ -58,7 +58,7 @@
 
 							<li class="d-flex mb-3">
 								<div class="flex-shrink-0">
-									<i class="fas fa-phone fa-fw mt-1 nav-link p-0"></i>
+									<i class="fa-solid fa-phone fa-fw mt-1 nav-link p-0"></i>
 								</div>
 								<div class="flex-grow-1 ms-3">
 									<a class="nav-link p-0" href="tel:<?php echo esc_attr( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
@@ -69,7 +69,7 @@
 
 							<li class="d-flex mb-3">
 								<div class="flex-shrink-0">
-									<i class="fas fa-envelope fa-fw mt-1 nav-link p-0"></i>
+									<i class="fa-solid fa-envelope fa-fw mt-1 nav-link p-0"></i>
 								</div>
 								<div class="flex-grow-1 ms-3">
 									<a class="nav-link p-0" href="mailto:<?php echo esc_attr( $email ); ?>"><?php echo esc_html( $email ); ?></a>

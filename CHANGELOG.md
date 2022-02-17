@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Updated Font Awesome to version 6
+- Updated templates to use the [new Font Awesome 6 syntax](https://fontawesome.com/docs/web/setup/upgrade/whats-changed) 
+- Renamed the compiled Font Awesome file from `fa5.min.js` to `fontawesome.min.js`
+- Updated Dev Dependencies
+
+### Fixed
+- Fixed flex layout in the footer
+
 ## [0.27.3] - 2022-01-24
 
 ### Changed
@@ -56,7 +67,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ### Changed
 - Updated Bootstrap to version 5.1.0
-- Updated FontAwesome to version 5.15.4
+- Updated Font Awesome to version 5.15.4
 - Converted `gulpfile.js` from CommonJS to ESM
 - Updated localization files
 - Updated Dev Dependencies
