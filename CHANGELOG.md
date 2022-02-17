@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 
 ### Changed
-- Updated FontAwesome to version 6
+- Updated Font Awesome to version 6, including the [new syntax](https://fontawesome.com/docs/web/setup/upgrade/whats-changed) for including icons in the templates
 - Updated Dev Dependencies
 
 ### Fixed
@@ -65,7 +65,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ### Changed
 - Updated Bootstrap to version 5.1.0
-- Updated FontAwesome to version 5.15.4
+- Updated Font Awesome to version 5.15.4
 - Converted `gulpfile.js` from CommonJS to ESM
 - Updated localization files
 - Updated Dev Dependencies
