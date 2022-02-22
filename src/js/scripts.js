@@ -8,5 +8,5 @@ import './integrations/bootstrap'; // integrates some bootstrap classes into wor
 
 // --- Custom components ---
 
-import './components/backtotop';
-import './header/headerscroll';
+// glob import with rollup-plugin-glob-import
+import './components/*.js';
