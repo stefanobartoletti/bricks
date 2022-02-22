@@ -18,7 +18,7 @@ if ( ! function_exists( 'brk_styles_scripts' ) ) {
 
 		// --- JS ---
 
-		wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/dist/js/fa5.min.js', false, $theme_version, true );
+		wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/dist/js/fontawesome.min.js', false, $theme_version, true );
 
 		wp_enqueue_script( 'bootstrap-bundle', get_template_directory_uri() . '/dist/js/bootstrap.min.js', false, $theme_version, true );
 

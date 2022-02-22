@@ -135,7 +135,7 @@ function fonts (done) {
 
 function icons () {
   return src(config.icons.src)
-    .pipe(rename('fa5.min.js'))
+    .pipe(rename('fontawesome.min.js'))
     .pipe(production(faMinify(config.faIconSafelist)))
     .pipe(production(terser({
       format: {
