@@ -25,16 +25,12 @@
 
 @import 'integrations/wpcore';
 
-// --- Custom styles ---
+// --- Components ---
+
+// glob import with gulp-sass-glob
 
 @import 'globals';
-@import 'components/backtotop';
-@import 'header/header';
-@import 'footer/footer';
-// @import 'footer/columns';
+@import 'components/*';
 
-@import 'templates/homepage';
-@import 'templates/sidebar';
-@import 'templates/comments';
 
 /* purgecss end ignore */
