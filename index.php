@@ -14,7 +14,7 @@
 					<?php
 					if ( is_home() ) {
 
-						echo get_the_title( get_option('page_for_posts', true) );
+						echo get_the_title( get_option( 'page_for_posts', true ) );
 
 					} elseif ( is_search() ) {
 
