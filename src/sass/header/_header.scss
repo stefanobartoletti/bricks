@@ -1,3 +1,19 @@
+
+.home {
+  #header-wrapper {
+      position: fixed;
+      right: 0;
+      left: 0;
+      background-color: transparent !important;
+
+      &.header-scrolled {
+        background-color: $dark !important;   
+      }
+  }
+
+
+}
+
 #header-wrapper {
   .custom-logo {
     width: auto;
@@ -14,4 +30,7 @@
       height: 50px;
     }
   }
+
 }
+
+

@@ -1,3 +1,37 @@
+.mouse-wheel {
+  width: 26px;
+  height: 45px;
+  border: 2px solid $light;
+  border-radius: 13px;
+  margin: 0 auto 3rem;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $light;
+    margin: 6px auto 0;
+    animation: mouseWheel 1s infinite ease-out;
+  }
+}
+
+@keyframes mouseWheel {
+
+  from {
+      margin-top: 6px;
+      opacity: 0;
+  }
+
+  to {
+      margin-top: 15px;
+      opacity: 1;
+  }
+  
+}
+
+
 $slider-height: 500px;
 
 #section-slider {
