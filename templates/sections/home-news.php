@@ -44,7 +44,7 @@
 		
 					<div class="card-text"><?php the_excerpt(); ?></div>
 		
-					<a href="<?php the_permalink(); ?>" class="card-link"><?php esc_html_e( 'Read more', 'bricks' ); ?></a>
+					<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php esc_html_e( 'Read more', 'bricks' ); ?></a>
 		
 				</div>
 		
