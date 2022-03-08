@@ -6,7 +6,7 @@
 
 		<div class="col-12 text-center">
 		
-			<h1><?php echo get_bloginfo( 'name' ); ?></h1>
+			<h1><?php echo esc_html( get_bloginfo( 'name' ) ); ?></h1>
 
 			<hr class="border border-light mx-auto mt-0 w-25 opacity-50" />
 
@@ -14,7 +14,7 @@
 
 		<div class="col-12 col-md-6">
 			
-			<p class="h4"><?php echo get_bloginfo( 'description' ); ?></p>
+			<p class="h4"><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
 
 		</div>      
 	
