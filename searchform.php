@@ -14,7 +14,7 @@ $searchtext = esc_html__( 'Search', 'bricks' );
 		</div>
 
 		<div class="col-3">
-			<button class="btn btn-sm btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+			<button class="btn btn-sm btn-outline-primary" type="submit" aria-label="<?php echo esc_attr( $searchtext ); ?>"><i class="fa-solid fa-magnifying-glass"></i></button>
 		</div>
 
 	</div>
