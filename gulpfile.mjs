@@ -69,6 +69,7 @@ function css () {
     }))
     .pipe(production(gulpif(config.enable.purgecss, purgecss({
       content: config.css.content,
+      skippedContentGlobs: config.css.exclude,
       safelist: config.cssSafelist
     }))))
     .pipe(production(cleancss()))
