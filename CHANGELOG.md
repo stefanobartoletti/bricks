@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Added
+- Added a new Pattern Library page to test and showcase Bootstrap custom theme
+
+### Changed
+- Redesigned Homepage
+- Updated Dev Dependencies
+
 ## [0.28.0] - 2022-02-17
 
 ### Changed

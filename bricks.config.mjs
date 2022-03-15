@@ -42,6 +42,9 @@ const config = {
     content: [
       './**/*.php',
       './src/js/**/*.js'
+    ],
+    exclude: [
+      'pattern-library.php'
     ]
   },
 
