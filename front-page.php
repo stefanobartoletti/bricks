@@ -2,20 +2,15 @@
 
 <main id="content-wrapper">
 
-	<section id="section-slider">
+	<section id="section-hero" class="has-img-background" >
 
 		<?php
 
-		$args = array(
-			'post_type' => 'post',
-			'posts_per_page'    => 3,
-		);
-
-		get_template_part( 'templates/sections/home', 'slider', $args );
+		get_template_part( 'templates/sections/home', 'hero' );
 
 		?>
 
-	</section> <!-- #section-slider -->
+	</section> <!-- #section-hero -->
 
 	<section id="section-services">
 
@@ -32,20 +27,20 @@
 
 	</section> <!-- #section-services -->
 
-	<section id="section-cta">
+	<section id="section-slider">
 
 		<?php
 
 		$args = array(
 			'post_type' => 'post',
-			'posts_per_page'    => 1,
+			'posts_per_page'    => 3,
 		);
 
-		get_template_part( 'templates/sections/home', 'cta', $args );
+		get_template_part( 'templates/sections/home', 'slider', $args );
 
 		?>
 
-	</section> <!-- #section-news -->
+	</section> <!-- #section-slider -->
  
 	<section id="section-news">
 
@@ -61,6 +56,21 @@
 		?>
 
 	</section> <!-- #section-news -->
+
+	<section id="section-cta">
+
+		<?php
+
+		$args = array(
+			'post_type' => 'post',
+			'posts_per_page'    => 1,
+		);
+
+		get_template_part( 'templates/sections/home', 'cta', $args );
+
+		?>
+
+	</section> <!-- #section-cta -->
  
 </main> <!-- #content-wrapper -->
 
