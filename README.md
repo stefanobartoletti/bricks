@@ -3,7 +3,7 @@
 
 <div align="center">
 
-_A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
+_Модульная стартовая тема WordPress на основе Bootstrap 5 и Gulp_
 
 [![Release](https://img.shields.io/github/v/release/stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/stefanobartoletti/bricks/devel)](https://github.com/stefanobartoletti/bricks/commits/devel)
@@ -13,53 +13,53 @@ _A modular WordPress starter theme powered by Bootstrap 5 and Gulp_
 <!-- [![David DM](https://img.shields.io/david/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks) -->
 <!-- [![David DM Dev](https://img.shields.io/david/dev/stefanobartoletti/bricks)](https://david-dm.org/stefanobartoletti/bricks?type=dev) -->
 
-[Documentation](https://bricks.stefanobartoletti.it/) | [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md)
+[Документация](https://bricks.stefanobartoletti.it/) | [История версий](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md)
 
 ---
 
 </div>
 
-## 🌟 Features
+## 🌟 Преимущества
 
-- [Bootstrap 5](https://getbootstrap.com/) (compiled from source Sass and JavaScript files)
-- [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
-- Custom [Gulp](https://gulpjs.com/) tasks
-- [Font Awesome 6](https://fontawesome.com/) (*SVG with JavaScript* version, parsed and minified by [gulp-fa-minify](https://github.com/FA-Minify/gulp-fa-minify))
-- CSS bundling, including [Autoprefixer](https://autoprefixer.github.io/) and [PurgeCSS](https://purgecss.com/)
-- JavaScript bundling with [Rollup](https://www.rollupjs.org/) and [Babel](https://babeljs.io/)
-- Code linting with [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) and [phpcs](https://github.com/squizlabs/PHP_CodeSniffer).
-- [BrowserSync](https://www.browsersync.io/) live server.
-- Automatic conversion of custom fonts into *woff2* web format
-- Pre-localized templates in several languages ( 🇨🇿 Czech | 🇫🇷 French | 🇩🇪 German | 🇮🇹 Italian | 🇱🇹 Lithuanian | 🇪🇸 Spanish )
-- Support for further localization by generation of a `.pot` [template file](https://developer.wordpress.org/themes/functionality/internationalization/)
-- Support for integration of some optional JavaScript libraries
+- [Bootstrap 5](https://getbootstrap.com/) (скомпилировано из исходных файлов Sass и JavaScript)
+- [WP Bootstrap Navwalker] (https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
+- Пользовательские задачи [Gulp](https://gulpjs.com/)
+- [Font Awesome 6](https://fontawesome.com/) (версия *SVG с JavaScript*, обработанная и уменьшенная с помощью [gulp-fa-minify](https://github.com/FA-Minify/gulp- фа-минимизировать))
+- Связка CSS, включая [Autoprefixer] (https://autoprefixer.github.io/) и [PurgeCSS] (https://purgecss.com/)
+- JavaScript в комплекте с [Rollup](https://www.rollupjs.org/) и [Babel](https://babeljs.io/)
+- Анализ кода с помощью [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) и [phpcs](https://github.com/squizlabs/PHP_CodeSniffer).
+- [BrowserSync] (https://www.browsersync.io/) живой сервер.
+- Автоматическое преобразование пользовательских шрифтов в веб-формат *woff2*
+- Предварительно локализованные шаблоны на нескольких языках ( 🇨🇿 Чешский | 🇫🇷 Французский | 🇩🇪 Немецкий | 🇮🇹 Итальянский | 🇱🇹 Литовский | 🇪🇸 Испанский)
+- Поддержка дальнейшей локализации путем создания `.pot` [файла шаблона] (https://developer.wordpress.org/themes/functionality/internationalization/)
+- Поддержка интеграции некоторых дополнительных библиотек JavaScript.
 
-## ✅ Requirements
+## ✅ Требования
 
-- [Git](https://git-scm.com/) to clone this repository.
-- [Yarn](https://yarnpkg.com/) as the preferred tool to manage dependencies and run development scripts (you can also use plain [npm](https://nodejs.org/)).
-- [Composer](https://getcomposer.org/) to manage PHP dependencies (Optional, used for PHP linting).
-- [Advanced Custom Fields](https://www.advancedcustomfields.com/) (Regular or PRO) to take advantage of its integration with Bricks (Optional but strongly recommended).
+- [Git](https://git-scm.com/), чтобы клонировать этот репозиторий.
+- [Yarn](https://yarnpkg.com/) в качестве предпочтительного инструмента для управления зависимостями и запуска сценариев разработки (вы также можете использовать простой [npm](https://nodejs.org/)).
+- [Composer](https://getcomposer.org/) для управления зависимостями PHP (необязательно, используется для линтинга PHP).
+- [Advanced Custom Fields] (https://www.advancedcustomfields.com/) (бесплатная или PRO - версия), чтобы воспользоваться преимуществами интеграции с Bricks (необязательно, но настоятельно рекомендуется).
 
-## 📖 Documentation
+## 📖 Документация
 
-Installation and configuration instructions and all features are documented on the [Bricks Documentation](https://bricks.stefanobartoletti.it/) website.
+Инструкции по установке и настройке, а также все функции задокументированы на веб-сайте [Bricks Documentation] (https://bricks.stefanobartoletti.it/).
 
-## 📃 Changelog
+## 📃 Список версий
 
-All updates up to the latest released version are documented in the [Changelog](https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md) file.
+Все обновления до последней выпущенной версии задокументированы в файле [Журнал изменений] (https://github.com/stefanobartoletti/bricks/blob/master/CHANGELOG.md).
 
-## 🤝 Contributing
+## 🤝 Содействие
 
-If you want to contribute to Bricks make sure to read the [Contributing guidelines](https://github.com/stefanobartoletti/bricks/blob/master/.github/CONTRIBUTING.md).
+Если вы хотите внести свой вклад в Bricks, обязательно прочитайте [Руководство по участию] (https://github.com/stefanobartoletti/bricks/blob/master/.github/CONTRIBUTING.md).
 
-Thanks to all contributors!
+Спасибо всем участникам!
 
-[![Contributors Display](https://badges.pufler.dev/contributors/stefanobartoletti/bricks?size=50&padding=5&bots=false)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
+[![Отображение авторов](https://badges.pufler.dev/contributors/stefanobartoletti/bricks?size=50&padding=5&bots=false)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
 
 
-## 📝 License
+## 📝 Лицензия
 
-[GNU GPLv3](https://github.com/stefanobartoletti/bricks/blob/master/LICENSE.txt)
+[GNU GPLv3] (https://github.com/stefanobartoletti/bricks/blob/master/LICENSE.txt)
 
-Copyright © 2021-present [Stefano Bartoletti](https://github.com/stefanobartoletti)
+Copyright © 2021-настоящее время [Стефано Бартолетти] (https://github.com/stefanobartoletti)
