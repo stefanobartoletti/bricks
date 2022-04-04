@@ -88,7 +88,7 @@ function brk_breadcrumbs() {
 
 // --- Nav Walker attributes fix for Bootstrap 5 ---
 
-function brk_bs5_navwalker_fix( $atts ) {
+function brk_bs5_toggle_fix( $atts ) {
 
 	if ( array_key_exists( 'data-toggle', $atts ) ) {
 		unset( $atts['data-toggle'] );
@@ -97,4 +97,42 @@ function brk_bs5_navwalker_fix( $atts ) {
 	return $atts;
 
 }
-add_filter( 'nav_menu_link_attributes', 'brk_bs5_navwalker_fix' );
+add_filter( 'nav_menu_link_attributes', 'brk_bs5_toggle_fix' );
+
+
+function brk_is_active_nav_item( $item, $args ) {
+	if ( ! property_exists( $args, 'walker' ) || ! is_a( $args->walker, 'WP_Bootstrap_Navwalker' ) ) {
+		return false;
+	}
+	if ( ! $item->current && ! $item->current_item_ancestor ) {
+		return false;
+	}
+
+	return true;
+}
+
+function brk_add_active_class_to_anchor( $atts, $item, $args ) {
+	if ( false === brk_is_active_nav_item( $item, $args ) ) {
+		return $atts;
+	}
+
+	if ( isset( $atts['class'] ) ) {
+		$atts['class'] .= ' active';
+	} else {
+		$atts['class'] = 'active';
+	}
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'brk_add_active_class_to_anchor', 10, 3 );
+
+
+function brk_remove_active_class_from_li( $classes, $item, $args ) {
+	if ( false === brk_is_active_nav_item( $item, $args ) ) {
+		return $classes;
+	}
+
+	return array_diff( $classes, array( 'active' ) );
+}
+add_filter( 'nav_menu_css_class', 'brk_remove_active_class_from_li', 10, 3 );
+
+
