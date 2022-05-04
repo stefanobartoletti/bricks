@@ -214,15 +214,15 @@ $bs_lorem_long = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
 
 		<h2 class="border-bottom mb-5">Images</h2>
 
-		<div class="row mb-5"><?php echo $cols; ?></div>
+		<div class="row mb-5"><?php echo esc_html( $cols ); ?></div>
 	
-		<div class="row row-cols-md-2 mb-5"><?php echo $cols; ?></div>	
+		<div class="row row-cols-md-2 mb-5"><?php echo esc_html( $cols ); ?></div>	
 
-		<div class="row row-cols-md-3 mb-5"><?php echo $cols; ?></div>
+		<div class="row row-cols-md-3 mb-5"><?php echo esc_html( $cols ); ?></div>
 	
-		<div class="row row-cols-md-2 row-cols-lg-4 mb-5"><?php echo $cols; ?></div>	
+		<div class="row row-cols-md-2 row-cols-lg-4 mb-5"><?php echo esc_html( $cols ); ?></div>	
 
-		<div class="row row-cols-md-3 row-cols-lg-6 mb-5"><?php echo $cols; ?></div>
+		<div class="row row-cols-md-3 row-cols-lg-6 mb-5"><?php echo esc_html( $cols ); ?></div>
 
 		<script>
 			const imagesRows = document.querySelectorAll('#images .row');
