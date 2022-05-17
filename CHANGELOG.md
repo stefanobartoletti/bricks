@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [0.30.1] - 2022-05-17
+
+### Fixed
+- Fixed Pattern Library syntax
+
 ## [0.30.0] - 2022-05-17
 
 ### Added
@@ -208,6 +213,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.30.1]: https://github.com/stefanobartoletti/bricks/compare/v0.30.0...v0.30.1
 [0.30.0]: https://github.com/stefanobartoletti/bricks/compare/v0.29.1...v0.30.0
 [0.29.1]: https://github.com/stefanobartoletti/bricks/compare/v0.29.0...v0.29.1
 [0.29.0]: https://github.com/stefanobartoletti/bricks/compare/v0.28.0...v0.29.0
@@ -230,4 +236,4 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 [0.20.1]: https://github.com/stefanobartoletti/bricks/compare/v0.20.0...v0.20.1
 [0.20.0]: https://github.com/stefanobartoletti/bricks/releases/v0.20.0
 
-[unreleased]: https://github.com/stefanobartoletti/bricks/compare/v0.30.0...HEAD
+[unreleased]: https://github.com/stefanobartoletti/bricks/compare/v0.30.1...HEAD
