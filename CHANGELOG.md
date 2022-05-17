@@ -5,8 +5,12 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 
 ## [Unreleased]
 
+### Added
+- Added support to configure compression value for images
+
 ### Changed
 - Added responsive image examples to the pattern library
+- Moved image sizes functions out from the default setup to their own action
 - Updated Dependencies
 
 ### Fixed
