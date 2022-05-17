@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Added
+- Added support to configure compression value for images
+
+### Changed
+- Added responsive image examples to the pattern library
+- Moved image sizes functions out from the default setup to their own action
+- Updated Dependencies
+
+### Fixed
+- Added filter to properly style active items on nav-menus with Bootstrap Nav-Walker
+
 ## [0.29.1] - 2022-04-04
 
 ### Security
