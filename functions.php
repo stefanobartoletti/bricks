@@ -8,6 +8,8 @@ require_once get_template_directory() . '/functions/setup.php'; // --- Theme set
 
 require_once get_template_directory() . '/functions/enqueues.php'; // --- Include CSS & JavaScript ---
 
+require_once get_template_directory() . '/functions/images.php'; // --- Image settings ---
+
 require_once get_template_directory() . '/functions/navmenus.php'; // --- Register navmenus ---
 
 require_once get_template_directory() . '/functions/sidebars.php'; // --- Register sidebars ---
