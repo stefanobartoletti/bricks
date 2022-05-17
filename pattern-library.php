@@ -196,33 +196,33 @@ $bs_lorem_long = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
 
 	<div id="images" class="container mb-5">
 
-		<?php
-
-		$cols = '
-		<div class="col position-relative">
-			<img class="img-fluid" src="https://dummyimage.com/1920x1080.jpg">
-			<div class="img-details position-absolute top-0 mt-1 ms-1 px-2 py-1 bg-light">
-				<p class="natural-width mb-0"></p>
-				<p class="client-width mb-0"></p>
-				<p class="percent-width mb-0"></p>
-				<p class="screen-width mb-0"></p>
-			</div>
-		</div>
-		'
-
-		?>
-
 		<h2 class="border-bottom mb-5">Images</h2>
 
-		<div class="row mb-5"><?php echo esc_html( $cols ); ?></div>
-	
-		<div class="row row-cols-md-2 mb-5"><?php echo esc_html( $cols ); ?></div>	
+		<?php
 
-		<div class="row row-cols-md-3 mb-5"><?php echo esc_html( $cols ); ?></div>
-	
-		<div class="row row-cols-md-2 row-cols-lg-4 mb-5"><?php echo esc_html( $cols ); ?></div>	
+		$row_cols = array(
+			'',
+			'row-cols-md-2',
+			'row-cols-md-3',
+			'row-cols-md-2 row-cols-lg-4',
+			'row-cols-md-3 row-cols-lg-6',
+		);
 
-		<div class="row row-cols-md-3 row-cols-lg-6 mb-5"><?php echo esc_html( $cols ); ?></div>
+		foreach ( $row_cols as $row_col ) { ?>
+
+		<div class="row <?php echo esc_attr( $row_col ); ?> mb-5">
+			<div class="col position-relative">
+				<img class="img-fluid" src="https://dummyimage.com/1920x1080.jpg">
+				<div class="img-details position-absolute top-0 mt-1 ms-1 px-2 py-1 bg-light">
+					<p class="natural-width mb-0"></p>
+					<p class="client-width mb-0"></p>
+					<p class="percent-width mb-0"></p>
+					<p class="screen-width mb-0"></p>
+				</div>
+			</div>
+		</div>
+
+		<?php } ?>
 
 		<script>
 			const imagesRows = document.querySelectorAll('#images .row');
