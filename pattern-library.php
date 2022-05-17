@@ -47,7 +47,15 @@ $bs_font_weights = array(
 
 $bs_lorem_short = 'Lorem ipsum dolor sit amet';
 
-$bs_lorem_long = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.'
+$bs_lorem_long = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut. Repudiandae excepturi sequi quaerat ex eos dicta earum, fuga deleniti amet accusantium recusandae quia aperiam aut assumenda, quas ratione laborum.';
+
+$bs_images_cols = array(
+	'',
+	'row-cols-md-2',
+	'row-cols-md-3',
+	'row-cols-md-2 row-cols-lg-4',
+	'row-cols-md-3 row-cols-lg-6',
+);
 
 ?>
 
@@ -198,19 +206,9 @@ $bs_lorem_long = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
 
 		<h2 class="border-bottom mb-5">Images</h2>
 
-		<?php
+		<?php foreach ( $bs_images_cols as $col ) { ?>
 
-		$row_cols = array(
-			'',
-			'row-cols-md-2',
-			'row-cols-md-3',
-			'row-cols-md-2 row-cols-lg-4',
-			'row-cols-md-3 row-cols-lg-6',
-		);
-
-		foreach ( $row_cols as $row_col ) { ?>
-
-		<div class="row <?php echo esc_attr( $row_col ); ?> mb-5">
+		<div class="row <?php echo esc_attr( $col ); ?> mb-5">
 			<div class="col position-relative">
 				<img class="img-fluid" src="https://dummyimage.com/1920x1080.jpg">
 				<div class="img-details position-absolute top-0 mt-1 ms-1 px-2 py-1 bg-light">
