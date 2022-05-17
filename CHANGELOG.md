@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Added responsive image examples to the pattern library
+- Updated Dependencies
+
+### Fixed
+- Added filter to properly style active items on nav-menus with Bootstrap Nav-Walker
+
 ## [0.29.1] - 2022-04-04
 
 ### Security
