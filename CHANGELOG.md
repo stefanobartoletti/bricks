@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Fixed
+- Fixed Pattern Library syntax
+
 ## [0.30.0] - 2022-05-17
 
 ### Added
