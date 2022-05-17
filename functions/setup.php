@@ -35,9 +35,6 @@ if ( ! function_exists( 'brk_setup_theme' ) ) {
 		// Enable Widgets refresh from Customizer
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
-		// Define custom image sizes
-		require_once get_template_directory() . '/functions/imagesizes.php';
-
 		// Set max content width (embedded)
 		if ( ! isset( $content_width ) ) {
 			$content_width = 1400;}
