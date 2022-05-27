@@ -13,6 +13,7 @@
     "build": "gulp build",
     "buildR": "rollup -c --environment BUILD:production",
     "watch": "gulp watch",
+    "watchR": "rollup -c -w",
     "composer": "composer",
     "lint:js": "eslint --ext js,mjs --fix --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{scss,css}\" --fix --ignore-path .gitignore",

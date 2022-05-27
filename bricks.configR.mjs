@@ -49,7 +49,7 @@ const config = {
   },
 
   js: {
-    src: ['./src/js/scripts.js', './src/js/bootstrap.js'],
+    src: ['./src/js/*.js'],
     dist: './dist/',
     watch: './src/js/**/*.js'
   },
