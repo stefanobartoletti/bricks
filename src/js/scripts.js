@@ -1,5 +1,9 @@
 'use strict';
 
+// --- Rollup imports ---
+
+import '../sass/style.scss'
+
 // --- Integrations ---
 
 import './integrations/bootstrap'; // integrates some bootstrap classes into wordpress
