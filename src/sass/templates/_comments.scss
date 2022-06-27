@@ -1,24 +1,17 @@
-%comment-list {
+.comment-list {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-%comment-single {
-  margin-bottom: 20px;
-}
-
-.comment-list {
-  @extend %comment-list;
 
   article {
-    @extend %comment-single;
+    margin-bottom: 20px;
   }
 
   ol {
-    @extend %comment-list;
-
+    padding: 0;
+    margin: 0;
     margin-left: 20px;
+    list-style-type: none;
   }
 
   .bypostauthor > article {
