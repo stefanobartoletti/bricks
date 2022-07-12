@@ -4,9 +4,8 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import multiInput from 'rollup-plugin-multi-input';
 import scss from 'rollup-plugin-scss';
-import postcss from 'postcss'
-import autoprefixer from 'autoprefixer'
-
+import postcss from 'postcss';
+import autoprefixer from 'autoprefixer';
 
 import config from './bricks.configR.mjs';
 const production = (process.env.BUILD === 'production');
@@ -28,7 +27,7 @@ export default {
       // include: ['./src/sass/style.scss']
       sourceMap: !production && true,
       processor: () => postcss([autoprefixer({ cascade: false })]),
-      outputStyle: production ? 'compressed' : 'expanded',
-    }),
+      outputStyle: production ? 'compressed' : 'expanded'
+    })
   ]
 };

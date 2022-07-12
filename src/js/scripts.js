@@ -2,7 +2,7 @@
 
 // --- Rollup imports ---
 
-import '../sass/style.scss'
+import '../sass/style.scss';
 
 // --- Integrations ---
 
