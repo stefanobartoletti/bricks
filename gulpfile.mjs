@@ -38,7 +38,7 @@ import wpPot from 'gulp-wp-pot';
 // Utils
 import rename from 'gulp-rename';
 import gulpif from 'gulp-if';
-import del from 'del';
+import { deleteAsync } from 'del';
 import sourcemaps from 'gulp-sourcemaps';
 
 import environments from 'gulp-environments';
@@ -176,7 +176,7 @@ function setProd (done) {
 };
 
 function clean () {
-  return del('dist/**', { force: true });
+  return deleteAsync('dist/**', { force: true });
 };
 
 // --- Browser ---
