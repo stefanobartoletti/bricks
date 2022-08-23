@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [Unreleased]
+
+### Changed
+- Updated function to remove unwanted Gutenberg stuff from the header
+- Updated Dependencies
+
 ## [0.30.3] - 2022-07-21
 
 ### Changed
