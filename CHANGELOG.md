@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
-## [Unreleased]
+## [0.30.4] - 2022-08-23
 
 ### Changed
 - Updated function to remove unwanted Gutenberg stuff from the header
@@ -229,6 +229,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.30.4]: https://github.com/stefanobartoletti/bricks/compare/v0.30.3...v0.30.4
 [0.30.3]: https://github.com/stefanobartoletti/bricks/compare/v0.30.2...v0.30.3
 [0.30.2]: https://github.com/stefanobartoletti/bricks/compare/v0.30.1...v0.30.2
 [0.30.1]: https://github.com/stefanobartoletti/bricks/compare/v0.30.0...v0.30.1
@@ -254,4 +255,4 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 [0.20.1]: https://github.com/stefanobartoletti/bricks/compare/v0.20.0...v0.20.1
 [0.20.0]: https://github.com/stefanobartoletti/bricks/releases/v0.20.0
 
-[unreleased]: https://github.com/stefanobartoletti/bricks/compare/v0.30.3...HEAD
+[unreleased]: https://github.com/stefanobartoletti/bricks/compare/v0.30.4...HEAD
