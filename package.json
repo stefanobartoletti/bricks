@@ -54,7 +54,7 @@
     "gulp-wp-pot": "^2.5.0",
     "rollup": "^2.79.0",
     "sass": "^1.54.9",
-    "stylelint": "^14.12.0",
+    "stylelint": "^14.12.1",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^28.0.0",
     "stylelint-config-standard-scss": "^5.0.0"
