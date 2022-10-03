@@ -13,10 +13,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
-"esc_html_x:1,2c\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -88,7 +89,8 @@ msgstr "Menu zápatí"
 msgid "Main Sidebar"
 msgstr "Hlavní postranní panel"
 
-#: functions/integrations/acf.php:25, functions/integrations/acf.php:29, templates/footer/footer-columns.php:23
+#: functions/integrations/acf.php:25, functions/integrations/acf.php:29,
+#: templates/footer/footer-columns.php:23
 msgid "Contacts"
 msgstr "Kontakty"
 
@@ -153,8 +155,12 @@ msgid "Social profiles"
 msgstr "Profily na sociálních sítích"
 
 #: functions/integrations/acf.php:155
-msgid "Full social profile addresses. Not all fields are required, only filled fields will be displayed on the site as icons"
-msgstr "Úplné adresy k profilům na sociálních sítích. Všechna pole nejsou vyžadovaná. Na stránce budou zobrazená pouze vyplněná pole v podobě ikon"
+msgid ""
+"Full social profile addresses. Not all fields are required, only filled "
+"fields will be displayed on the site as icons"
+msgstr ""
+"Úplné adresy k profilům na sociálních sítích. Všechna pole nejsou "
+"vyžadovaná. Na stránce budou zobrazená pouze vyplněná pole v podobě ikon"
 
 #: functions/integrations/acf.php:248, functions/integrations/acf.php:252
 msgid "Meta"
@@ -168,7 +174,8 @@ msgstr "Motiv prohlížeče Chrome"
 msgid "Tab color in Chrome for Android"
 msgstr "Barva karty v prohlížeči Chrome pro Android"
 
-#: functions/lib/class-wp-bootstrap-navwalker.php:366, functions/lib/class-wp-bootstrap-navwalker.php:366
+#: functions/lib/class-wp-bootstrap-navwalker.php:366,
+#: functions/lib/class-wp-bootstrap-navwalker.php:366
 msgid "Add a menu"
 msgstr "Přidat menu"
 
@@ -177,12 +184,20 @@ msgid "Back to top"
 msgstr "Zpátky nahoru"
 
 #: templates/content/loop-none.php:10
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Vypadá to, že se nám nepodařilo najít, co hledáte. Možná vyhledávání by mohlo pomoci."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Vypadá to, že se nám nepodařilo najít, co hledáte. Možná vyhledávání by "
+"mohlo pomoci."
 
 #: templates/content/loop-none.php:6
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Omlouváme se, ale vašim vyhledávacím výrazům nic neodpovídá. Zkuste to prosím znovu s jinými klíčovými slovy."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Omlouváme se, ale vašim vyhledávacím výrazům nic neodpovídá. Zkuste to "
+"prosím znovu s jinými klíčovými slovy."
 
 #: templates/content/page.php:22, templates/content/single.php:18
 msgid "Part:"
@@ -196,7 +211,9 @@ msgstr "Stránky"
 msgid "Privacy"
 msgstr "Soukromí"
 
-#: templates/sections/home-cta.php:24, templates/sections/home-news.php:47, templates/sections/home-services.php:30, templates/sections/home-slider.php:32
+#: templates/sections/home-cta.php:24, templates/sections/home-news.php:47,
+#: templates/sections/home-services.php:30,
+#: templates/sections/home-slider.php:32
 msgid "Read more"
 msgstr "Čtěte více"
 
