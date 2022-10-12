@@ -19,6 +19,7 @@ import cleancss from 'gulp-clean-css';
 import rollup from '@rbnlffl/gulp-rollup';
 import { babel } from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
+import globImport  from 'rollup-plugin-glob-import';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import terser from 'gulp-terser';
 
@@ -87,7 +88,8 @@ function js (done) {
       plugins: [
         babel({ babelHelpers: 'bundled' }),
         commonjs(),
-        nodeResolve()
+        nodeResolve(),
+        globImport()
       ]
     }, { format: 'umd' }))
     .pipe(production(terser({
