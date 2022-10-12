@@ -22,6 +22,7 @@
     "bootstrap": "^5.1.3"
   },
   "devDependencies": {
+    "@artprog/gulp-sass-glob": "^0.1.1",
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.19.4",

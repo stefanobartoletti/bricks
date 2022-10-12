@@ -11,6 +11,7 @@ import config from './bricks.config.mjs';
 // CSS
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
+import sassGlob from '@artprog/gulp-sass-glob';
 import autoprefixer from 'gulp-autoprefixer';
 import purgecss from 'gulp-purgecss';
 import cleancss from 'gulp-clean-css';
@@ -59,6 +60,7 @@ const production = environments.production;
 function css () {
   return src(config.css.src)
     .pipe(development(sourcemaps.init()))
+    .pipe(sassGlob())
     .pipe(sass({
       quietDeps: true
     }).on('error', sass.logError))
