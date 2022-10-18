@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 ## [Unreleased]
 ### Changed
 - Updated German translation (contributed by [m1ga](https://github.com/m1ga))
+- Updated Czech translation (contributed by [PapuleX](https://github.com/PapuleX))
+- Updated Spanish translation (contributed by [aitorres](https://github.com/aitorres))
+- Updated Lithuanian translation (contributed by [mantasio](https://github.com/mantasio))
 - Updated Dependencies
 
 ## [0.30.5] - 2022-09-09
