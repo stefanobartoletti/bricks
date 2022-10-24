@@ -1,4 +1,4 @@
-# Copyright (C) 2021 bricks
+# Copyright (C) 2022 bricks
 # This file is distributed under the same license as the bricks package.
 msgid ""
 msgstr ""
@@ -71,7 +71,7 @@ msgstr "Siguiente &raquo;"
 
 #: pattern-library.php:3
 msgid "Pattern Library"
-msgstr ""
+msgstr "Librería de Patrones"
 
 #: searchform.php:3
 msgid "Search"
@@ -120,7 +120,7 @@ msgstr "Dirección - Línea 2"
 
 #: functions/integrations/acf.php:60
 msgid "Example => Postal Code, City, State"
-msgstr "Ejemplo: Código postal, Ciudad, Estado"
+msgstr "Ejemplo => Código postal, Ciudad, Estado"
 
 #: functions/integrations/acf.php:67
 msgid "Map URL"
@@ -181,7 +181,7 @@ msgstr "Agregar un menú"
 
 #: templates/components/backtotop.php:1
 msgid "Back to top"
-msgstr ""
+msgstr "Volver al inicio"
 
 #: templates/content/loop-none.php:10
 msgid ""

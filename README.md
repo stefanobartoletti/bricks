@@ -55,8 +55,7 @@ If you want to contribute to Bricks make sure to read the [Contributing guidelin
 
 Thanks to all contributors!
 
-[![Contributors Display](https://badges.pufler.dev/contributors/stefanobartoletti/bricks?size=50&padding=5&bots=false)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
-
+[![Contributors Display](https://contrib.rocks/image?repo=stefanobartoletti/bricks)](https://github.com/stefanobartoletti/bricks/graphs/contributors)
 
 ## 📝 License
 
