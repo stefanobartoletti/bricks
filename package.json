@@ -39,7 +39,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cache": "^1.1.3",
-    "gulp-checktextdomain": "^2.2.2",
+    "gulp-checktextdomain": "^2.3.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-environments": "^1.0.1",
     "gulp-fa-minify": "^6.0.1",
