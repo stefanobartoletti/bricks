@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog] and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [0.30.7] - 2022-12-05
+### Changed
+- Updated Dependencies
+
 ## [0.30.6] - 2022-10-24
 ### Changed
 - Updated German translation (contributed by [m1ga](https://github.com/m1ga))
@@ -241,6 +245,7 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 <!-- Versions -->
 [Unreleased]: https://github.com/stefanobartoletti/bricks/compare/master...devel
 
+[0.30.7]: https://github.com/stefanobartoletti/bricks/compare/v0.30.6...v0.30.7
 [0.30.6]: https://github.com/stefanobartoletti/bricks/compare/v0.30.5...v0.30.6
 [0.30.5]: https://github.com/stefanobartoletti/bricks/compare/v0.30.4...v0.30.5
 [0.30.4]: https://github.com/stefanobartoletti/bricks/compare/v0.30.3...v0.30.4
@@ -269,4 +274,4 @@ The format is based on [Keep a Changelog][Keep a Changelog] and this project adh
 [0.20.1]: https://github.com/stefanobartoletti/bricks/compare/v0.20.0...v0.20.1
 [0.20.0]: https://github.com/stefanobartoletti/bricks/releases/v0.20.0
 
-[unreleased]: https://github.com/stefanobartoletti/bricks/compare/v0.30.6...HEAD
+[unreleased]: https://github.com/stefanobartoletti/bricks/compare/v0.30.7...HEAD
