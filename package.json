@@ -53,7 +53,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-wp-pot": "^2.5.0",
     "rollup": "^3.18.0",
-    "sass": "^1.58.3",
+    "sass": "^1.68.0",
     "stylelint": "^15.2.0",
     "stylelint-config-recess-order": "^4.0.0",
     "stylelint-config-standard": "^30.0.1",
