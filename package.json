@@ -25,7 +25,7 @@
     "@babel/core": "^7.21.0",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
-    "@rbnlffl/gulp-rollup": "^0.2.0",
+    "@rbnlffl/gulp-rollup": "^0.2.2",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
