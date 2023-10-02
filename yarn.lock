@@ -1104,13 +1104,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
   integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
 
-"@rbnlffl/gulp-rollup@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@rbnlffl/gulp-rollup/-/gulp-rollup-0.2.0.tgz#fbd6d5320f7e1c67f61af25ee1027ceef4bc6343"
-  integrity sha512-5cBDYLXcQsCAKw+03+gOHY19ZJ4wH5/dU1JL6gK+VVFqpsmR62EMN+N8gKqhGtFbPA7wKKUbO6YY1amA7w2IuA==
-  dependencies:
-    plugin-error "^1.0.1"
-    vinyl-sourcemaps-apply "^0.2.1"
+"@rbnlffl/gulp-rollup@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@rbnlffl/gulp-rollup/-/gulp-rollup-0.2.2.tgz#e1335b14c949cc8ae4af6aa432cd3b8ba3df4257"
+  integrity sha512-C9UQ5F7JqXswlmdr6iaKHHm4YoW2X/kkO+gRUlC6LoKLYj4tE/kODv1zZlI7KTalNfsybfSp2NB3CjNoVA0VJw==
 
 "@rollup/plugin-babel@^6.0.3":
   version "6.0.3"
