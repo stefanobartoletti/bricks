@@ -28,7 +28,7 @@
     "@rbnlffl/gulp-rollup": "^0.2.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "browser-sync": "^2.28.3",
     "del": "^7.0.0",
     "eslint": "^8.35.0",
